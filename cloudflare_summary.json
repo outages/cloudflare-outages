@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2021-11-05T17:09:31.571Z"
+    "updated_at": "2021-11-05T17:41:57.118Z"
   },
   "components": [
     {
@@ -2650,9 +2650,9 @@
     {
       "id": "mvbjk0vw3krv",
       "name": "Miami, FL, United States - (MIA)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T20:31:43.401Z",
-      "updated_at": "2021-11-05T10:00:14.863Z",
+      "updated_at": "2021-11-05T17:41:57.050Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -3295,9 +3295,9 @@
     {
       "id": "t3d07wlg67nl",
       "name": "Mumbai, India - (BOM)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2015-10-27T20:12:43.833Z",
-      "updated_at": "2021-11-03T01:02:22.809Z",
+      "updated_at": "2021-11-05T17:30:48.523Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -3595,9 +3595,9 @@
     {
       "id": "pkzjg0k7vjsj",
       "name": "Osaka, Japan - (KIX)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2015-06-11T13:06:20.755Z",
-      "updated_at": "2021-11-02T12:08:13.950Z",
+      "updated_at": "2021-11-05T17:39:49.361Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -4448,7 +4448,133 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "0c9m0zdytf6z",
+      "name": "Browser Isolation Availability Issues in Miami Datacenter",
+      "status": "investigating",
+      "created_at": "2021-11-05T17:41:57.004Z",
+      "updated_at": "2021-11-05T17:41:57.114Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/4sjds3vfh8j4",
+      "started_at": "2021-11-05T17:41:56.991Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "bbzs03qb4drl",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with the Browser Isolation service. Customers that use Browser Isolation may observe errors when attempting to load sites through the service.  This issue does not affect any other Cloudflare services.\r\n\r\nWe are working to mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "0c9m0zdytf6z",
+          "created_at": "2021-11-05T17:41:57.111Z",
+          "updated_at": "2021-11-05T17:41:57.111Z",
+          "display_at": "2021-11-05T17:41:57.111Z",
+          "affected_components": [
+            {
+              "code": "q0dfbn0p6hyt",
+              "name": "Cloudflare Sites and Services - Browser Isolation",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "mvbjk0vw3krv",
+              "name": "North America - Miami, FL, United States - (MIA)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mvbjk0vw3krv",
+          "name": "Miami, FL, United States - (MIA)",
+          "status": "degraded_performance",
+          "created_at": "2014-10-27T20:31:43.401Z",
+          "updated_at": "2021-11-05T17:41:57.050Z",
+          "position": 22,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "q0dfbn0p6hyt",
+          "name": "Browser Isolation",
+          "status": "operational",
+          "created_at": "2021-08-10T19:01:26.692Z",
+          "updated_at": "2021-10-28T07:54:40.834Z",
+          "position": 41,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-08-10",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
+      "id": "v53bzp6ph909",
+      "name": "Customer Impacting Issue",
+      "status": "investigating",
+      "created_at": "2021-11-05T17:30:48.497Z",
+      "updated_at": "2021-11-05T17:30:48.568Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/6jhktyt4bqr6",
+      "started_at": "2021-11-05T17:30:48.490Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "yp1zspkss43l",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue which potentially impacts multiple customers. Further detail will be provided as more information becomes available.",
+          "incident_id": "v53bzp6ph909",
+          "created_at": "2021-11-05T17:30:48.566Z",
+          "updated_at": "2021-11-05T17:30:48.566Z",
+          "display_at": "2021-11-05T17:30:48.566Z",
+          "affected_components": [
+            {
+              "code": "t3d07wlg67nl",
+              "name": "Asia - Mumbai, India - (BOM)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "t3d07wlg67nl",
+          "name": "Mumbai, India - (BOM)",
+          "status": "degraded_performance",
+          "created_at": "2015-10-27T20:12:43.833Z",
+          "updated_at": "2021-11-05T17:30:48.523Z",
+          "position": 31,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "1bs6494hs25s",
