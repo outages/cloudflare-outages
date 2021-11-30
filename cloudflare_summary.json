@@ -4,13 +4,13 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2021-11-30T14:18:02.299Z"
+    "updated_at": "2021-11-30T14:38:19.507Z"
   },
   "components": [
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1556,9 +1556,9 @@
     {
       "id": "0dtt4htlgpdh",
       "name": "Muscat, Oman - (MCT)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2015-08-04T00:56:44.345Z",
-      "updated_at": "2021-11-30T14:18:02.295Z",
+      "updated_at": "2021-11-30T14:38:19.186Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -2006,9 +2006,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Cloudflare Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2021-10-05T18:21:20.439Z",
+      "updated_at": "2021-11-30T14:31:48.368Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -3221,9 +3221,9 @@
     {
       "id": "ss09y7v3wzwd",
       "name": "Manila, Philippines - (MNL)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-04-29T12:14:56.581Z",
-      "updated_at": "2021-11-30T14:17:27.263Z",
+      "updated_at": "2021-11-30T14:38:19.504Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -4464,7 +4464,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "c3nw000ynl86",
+      "name": "Cloudflare Pages build delays",
+      "status": "investigating",
+      "created_at": "2021-11-30T14:31:48.337Z",
+      "updated_at": "2021-11-30T14:31:48.416Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/7jfkt3zqlp9j",
+      "started_at": "2021-11-30T14:31:48.329Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "4jxq2v8kqjm1",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating an issue with Cloudflare Pages build delays which potentially impacts multiple customers. Further detail will be provided as more information becomes available.",
+          "incident_id": "c3nw000ynl86",
+          "created_at": "2021-11-30T14:31:48.414Z",
+          "updated_at": "2021-11-30T14:31:48.414Z",
+          "display_at": "2021-11-30T14:31:48.414Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Cloudflare Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Cloudflare Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2021-11-30T14:31:48.368Z",
+          "position": 15,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
