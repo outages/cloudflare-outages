@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2021-12-10T16:00:31.091Z"
+    "updated_at": "2021-12-10T16:50:54.685Z"
   },
   "components": [
     {
@@ -70,7 +70,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -390,9 +390,9 @@
     {
       "id": "76swzd6htswh",
       "name": "Baku, Azerbaijan - (GYD)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-04-29T13:18:47.916Z",
-      "updated_at": "2021-12-10T05:35:15.272Z",
+      "updated_at": "2021-12-10T16:50:54.683Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1453,9 +1453,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Cloudflare Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2021-11-16T23:10:14.867Z",
+      "updated_at": "2021-12-10T16:36:56.340Z",
       "position": 9,
       "description": "Cloudflare's JavaScript and WebAssembly execution service",
       "showcase": false,
@@ -3838,9 +3838,9 @@
     {
       "id": "5scwd3vmnsyj",
       "name": "Distributed Web Gateway",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-13T16:15:53.832Z",
-      "updated_at": "2021-12-03T21:19:30.177Z",
+      "updated_at": "2021-12-10T16:33:19.499Z",
       "position": 38,
       "description": "Cloudflare's Distributed Web Gateway - https://developers.cloudflare.com/distributed-web/",
       "showcase": false,
@@ -4496,7 +4496,132 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "0kn2wgd1lks6",
+      "name": "Worker delays",
+      "status": "investigating",
+      "created_at": "2021-12-10T16:36:56.298Z",
+      "updated_at": "2021-12-10T16:40:38.797Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/k4zt2t37dg91",
+      "started_at": "2021-12-10T16:36:56.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "m886rrxvvf3s",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "0kn2wgd1lks6",
+          "created_at": "2021-12-10T16:40:38.793Z",
+          "updated_at": "2021-12-10T16:40:38.793Z",
+          "display_at": "2021-12-10T16:40:38.793Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Cloudflare Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "yggxfzp7qw0n",
+          "status": "investigating",
+          "body": "Workers customers may experience delays deploying Workers changes. This does not impact uptime for Workers at the edge.",
+          "incident_id": "0kn2wgd1lks6",
+          "created_at": "2021-12-10T16:36:56.399Z",
+          "updated_at": "2021-12-10T16:40:14.202Z",
+          "display_at": "2021-12-10T16:36:56.000Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Cloudflare Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Cloudflare Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2021-12-10T16:36:56.340Z",
+          "position": 9,
+          "description": "Cloudflare's JavaScript and WebAssembly execution service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
+      "id": "hrmbfxqxbw05",
+      "name": "IPFS Gateway Issues",
+      "status": "investigating",
+      "created_at": "2021-12-10T16:33:19.462Z",
+      "updated_at": "2021-12-10T16:33:19.555Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/mjknmcpny76l",
+      "started_at": "2021-12-10T16:33:19.454Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "6t8vyzp6ngl4",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with its IPFS Gateway. Access to view content on the Distributed Web Gateway may be impacted.\n\nWe are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "hrmbfxqxbw05",
+          "created_at": "2021-12-10T16:33:19.552Z",
+          "updated_at": "2021-12-10T16:33:19.552Z",
+          "display_at": "2021-12-10T16:33:19.552Z",
+          "affected_components": [
+            {
+              "code": "5scwd3vmnsyj",
+              "name": "Cloudflare Sites and Services - Distributed Web Gateway",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5scwd3vmnsyj",
+          "name": "Distributed Web Gateway",
+          "status": "degraded_performance",
+          "created_at": "2021-04-13T16:15:53.832Z",
+          "updated_at": "2021-12-10T16:33:19.499Z",
+          "position": 38,
+          "description": "Cloudflare's Distributed Web Gateway - https://developers.cloudflare.com/distributed-web/",
+          "showcase": false,
+          "start_date": "2021-04-13",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
