@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2021-12-22T03:43:22.219Z"
+    "updated_at": "2021-12-22T03:51:26.385Z"
   },
   "components": [
     {
@@ -70,7 +70,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -143,9 +143,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Cloudflare Dashboard",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2021-12-22T02:49:34.916Z",
+      "updated_at": "2021-12-22T03:46:18.526Z",
       "position": 1,
       "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -1173,9 +1173,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "Cloudflare API",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2021-12-22T02:49:34.933Z",
+      "updated_at": "2021-12-22T03:46:18.551Z",
       "position": 7,
       "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -2998,9 +2998,9 @@
     {
       "id": "jdn42y3nlhjm",
       "name": "Ribeirao Preto, Brazil - (RAO)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-13T13:59:09.219Z",
-      "updated_at": "2021-12-21T21:43:09.015Z",
+      "updated_at": "2021-12-22T03:51:26.382Z",
       "position": 27,
       "description": null,
       "showcase": false,
@@ -4499,17 +4499,43 @@
   "incidents": [
     {
       "id": "95v6vjl2h41r",
-      "name": "\"Cloudflare IPs API endpoint errors",
+      "name": "Cloudflare IPs API endpoint errors",
       "status": "identified",
       "created_at": "2021-12-22T02:49:34.883Z",
-      "updated_at": "2021-12-22T03:43:22.215Z",
+      "updated_at": "2021-12-22T03:47:19.010Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/nmc3z1pd431g",
-      "started_at": "2021-12-22T02:49:34.874Z",
+      "started_at": "2021-12-22T02:49:34.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "jhfq5vxkvxzx",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "95v6vjl2h41r",
+          "created_at": "2021-12-22T03:46:18.597Z",
+          "updated_at": "2021-12-22T03:46:18.597Z",
+          "display_at": "2021-12-22T03:46:18.597Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Cloudflare Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - Cloudflare API",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "l66n7v9hc29g",
           "status": "identified",
@@ -4539,11 +4565,11 @@
         {
           "id": "bb03lrk6c104",
           "status": "investigating",
-          "body": "Cloudflare is investigating issues with Cloudflare Dashboard and related APIs.\r\n\r\nThese issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge.\r\n\r\nCustomers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
+          "body": "The API endpoint for retrieving Cloudflare IPs is currently returning an error when certain filter parameters are provided.",
           "incident_id": "95v6vjl2h41r",
           "created_at": "2021-12-22T02:49:34.977Z",
-          "updated_at": "2021-12-22T02:49:34.977Z",
-          "display_at": "2021-12-22T02:49:34.977Z",
+          "updated_at": "2021-12-22T03:44:20.424Z",
+          "display_at": "2021-12-22T02:49:34.000Z",
           "affected_components": [
             {
               "code": "3sq3s4d20ywk",
@@ -4567,9 +4593,9 @@
         {
           "id": "3sq3s4d20ywk",
           "name": "Cloudflare Dashboard",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2014-10-09T03:32:07.173Z",
-          "updated_at": "2021-12-22T02:49:34.916Z",
+          "updated_at": "2021-12-22T03:46:18.526Z",
           "position": 1,
           "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
           "showcase": false,
@@ -4582,9 +4608,9 @@
         {
           "id": "g4tb35rs9yw7",
           "name": "Cloudflare API",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2014-10-09T03:32:07.158Z",
-          "updated_at": "2021-12-22T02:49:34.933Z",
+          "updated_at": "2021-12-22T03:46:18.551Z",
           "position": 7,
           "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
           "showcase": false,
