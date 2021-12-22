@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2021-12-22T02:40:49.968Z"
+    "updated_at": "2021-12-22T03:11:05.833Z"
   },
   "components": [
     {
@@ -70,7 +70,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -141,6 +141,21 @@
       "only_show_if_degraded": false
     },
     {
+      "id": "3sq3s4d20ywk",
+      "name": "Cloudflare Dashboard",
+      "status": "degraded_performance",
+      "created_at": "2014-10-09T03:32:07.173Z",
+      "updated_at": "2021-12-22T02:49:34.916Z",
+      "position": 1,
+      "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+      "showcase": false,
+      "start_date": null,
+      "group_id": "1km35smx8p41",
+      "page_id": "yh6f0r4529hb",
+      "group": false,
+      "only_show_if_degraded": false
+    },
+    {
       "id": "y12kn5nkvb44",
       "name": "Amman, Jordan - (AMM)",
       "status": "operational",
@@ -151,21 +166,6 @@
       "showcase": false,
       "start_date": null,
       "group_id": "m3639x4txd08",
-      "page_id": "yh6f0r4529hb",
-      "group": false,
-      "only_show_if_degraded": false
-    },
-    {
-      "id": "3sq3s4d20ywk",
-      "name": "Cloudflare Dashboard",
-      "status": "operational",
-      "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2021-11-26T17:46:17.241Z",
-      "position": 1,
-      "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
-      "showcase": false,
-      "start_date": null,
-      "group_id": "1km35smx8p41",
       "page_id": "yh6f0r4529hb",
       "group": false,
       "only_show_if_degraded": false
@@ -1173,9 +1173,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "Cloudflare API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2021-12-20T16:39:54.953Z",
+      "updated_at": "2021-12-22T02:49:34.933Z",
       "position": 7,
       "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -4213,9 +4213,9 @@
     {
       "id": "lfp6vhw43pt3",
       "name": "Vienna, Austria - (VIE)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-27T21:41:22.043Z",
-      "updated_at": "2021-12-22T02:40:49.966Z",
+      "updated_at": "2021-12-22T03:06:03.366Z",
       "position": 46,
       "description": null,
       "showcase": false,
@@ -4318,9 +4318,9 @@
     {
       "id": "5ynnmbhcqkv2",
       "name": "Vientiane, Laos - (VTE)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2020-02-28T01:51:41.837Z",
-      "updated_at": "2021-12-21T18:36:24.886Z",
+      "updated_at": "2021-12-22T03:11:05.829Z",
       "position": 48,
       "description": null,
       "showcase": false,
@@ -4496,7 +4496,107 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "95v6vjl2h41r",
+      "name": "Cloudflare Dashboard and Cloudflare API service issues",
+      "status": "identified",
+      "created_at": "2021-12-22T02:49:34.883Z",
+      "updated_at": "2021-12-22T02:58:42.705Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/nmc3z1pd431g",
+      "started_at": "2021-12-22T02:49:34.874Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "l66n7v9hc29g",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "95v6vjl2h41r",
+          "created_at": "2021-12-22T02:58:42.702Z",
+          "updated_at": "2021-12-22T02:58:42.702Z",
+          "display_at": "2021-12-22T02:58:42.702Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Cloudflare Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - Cloudflare API",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "bb03lrk6c104",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare Dashboard and related APIs.\r\n\r\nThese issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge.\r\n\r\nCustomers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
+          "incident_id": "95v6vjl2h41r",
+          "created_at": "2021-12-22T02:49:34.977Z",
+          "updated_at": "2021-12-22T02:49:34.977Z",
+          "display_at": "2021-12-22T02:49:34.977Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Cloudflare Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - Cloudflare API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Cloudflare Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2021-12-22T02:49:34.916Z",
+          "position": 1,
+          "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "Cloudflare API",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2021-12-22T02:49:34.933Z",
+          "position": 7,
+          "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "d9zkgk3f67vb",
