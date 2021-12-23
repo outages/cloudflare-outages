@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2021-12-23T18:40:36.119Z"
+    "updated_at": "2021-12-23T19:07:04.976Z"
   },
   "components": [
     {
@@ -2683,9 +2683,9 @@
     {
       "id": "gw1cztbpft9b",
       "name": "Kathmandu, Nepal - (KTM)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2021-12-23T07:50:07.044Z",
+      "updated_at": "2021-12-23T19:00:45.616Z",
       "position": 23,
       "description": null,
       "showcase": false,
@@ -2698,9 +2698,9 @@
     {
       "id": "shcqh0p22750",
       "name": "London, United Kingdom - (LHR)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T20:36:04.069Z",
-      "updated_at": "2021-12-13T05:31:09.411Z",
+      "updated_at": "2021-12-23T19:07:04.922Z",
       "position": 23,
       "description": null,
       "showcase": false,
@@ -2846,21 +2846,6 @@
       "only_show_if_degraded": false
     },
     {
-      "id": "32xn25hmmkbf",
-      "name": "Port-Au-Prince, Haiti - (PAP)",
-      "status": "operational",
-      "created_at": "2019-07-10T03:51:16.837Z",
-      "updated_at": "2021-12-19T12:51:08.301Z",
-      "position": 25,
-      "description": null,
-      "showcase": false,
-      "start_date": null,
-      "group_id": "91blz4ztt7dm",
-      "page_id": "yh6f0r4529hb",
-      "group": false,
-      "only_show_if_degraded": false
-    },
-    {
       "id": "4tw744y7kfmw",
       "name": "Geo-Key Manager",
       "status": "operational",
@@ -2871,6 +2856,21 @@
       "showcase": false,
       "start_date": null,
       "group_id": "1km35smx8p41",
+      "page_id": "yh6f0r4529hb",
+      "group": false,
+      "only_show_if_degraded": false
+    },
+    {
+      "id": "32xn25hmmkbf",
+      "name": "Port-Au-Prince, Haiti - (PAP)",
+      "status": "operational",
+      "created_at": "2019-07-10T03:51:16.837Z",
+      "updated_at": "2021-12-19T12:51:08.301Z",
+      "position": 25,
+      "description": null,
+      "showcase": false,
+      "start_date": null,
+      "group_id": "91blz4ztt7dm",
       "page_id": "yh6f0r4529hb",
       "group": false,
       "only_show_if_degraded": false
@@ -3208,9 +3208,9 @@
     {
       "id": "ss09y7v3wzwd",
       "name": "Manila, Philippines - (MNL)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-04-29T12:14:56.581Z",
-      "updated_at": "2021-12-23T06:39:29.991Z",
+      "updated_at": "2021-12-23T18:50:39.956Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -4138,9 +4138,9 @@
     {
       "id": "vspvmhx4wx21",
       "name": "Thimphu, Bhutan - (PBH)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-12-04T08:57:27.273Z",
-      "updated_at": "2021-12-23T18:40:35.669Z",
+      "updated_at": "2021-12-23T19:05:48.069Z",
       "position": 44,
       "description": null,
       "showcase": false,
@@ -4496,7 +4496,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "9pfmn7f0p2xm",
+      "name": "Possible Network Congestion in London, UK",
+      "status": "investigating",
+      "created_at": "2021-12-23T19:07:04.893Z",
+      "updated_at": "2021-12-23T19:07:04.974Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/15lllhm6plt3",
+      "started_at": "2021-12-23T19:07:04.886Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "1n3tm3psnhyl",
+          "status": "investigating",
+          "body": "Cloudflare is observing possible network congestion in London LHR Datacenter. Users may experience errors.\n\nWe are working to mitigate impact to Internet users in this region.",
+          "incident_id": "9pfmn7f0p2xm",
+          "created_at": "2021-12-23T19:07:04.972Z",
+          "updated_at": "2021-12-23T19:07:04.972Z",
+          "display_at": "2021-12-23T19:07:04.972Z",
+          "affected_components": [
+            {
+              "code": "shcqh0p22750",
+              "name": "Europe - London, United Kingdom - (LHR)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "shcqh0p22750",
+          "name": "London, United Kingdom - (LHR)",
+          "status": "degraded_performance",
+          "created_at": "2014-10-27T20:36:04.069Z",
+          "updated_at": "2021-12-23T19:07:04.922Z",
+          "position": 23,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "d9zkgk3f67vb",
