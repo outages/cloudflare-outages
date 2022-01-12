@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-01-12T22:43:21.811Z"
+    "updated_at": "2022-01-12T23:13:41.333Z"
   },
   "components": [
     {
@@ -70,7 +70,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -405,9 +405,9 @@
     {
       "id": "qppslrvlmbvt",
       "name": "Asunción, Paraguay - (ASU)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-06-05T14:07:10.591Z",
-      "updated_at": "2022-01-12T19:26:21.534Z",
+      "updated_at": "2022-01-12T23:08:37.764Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1993,9 +1993,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Cloudflare Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2021-12-09T06:30:48.875Z",
+      "updated_at": "2022-01-12T23:03:29.896Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -2023,9 +2023,9 @@
     {
       "id": "1qbk4p1tr5zf",
       "name": "Goiânia, Brazil - (GYN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-11-02T16:47:51.148Z",
-      "updated_at": "2022-01-12T00:44:19.429Z",
+      "updated_at": "2022-01-12T23:13:41.330Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -4496,7 +4496,80 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "qwfz03b53y8j",
+      "name": "Cloudflare Pages Build Delays",
+      "status": "identified",
+      "created_at": "2022-01-12T23:03:29.848Z",
+      "updated_at": "2022-01-12T23:11:33.227Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/478nqr8bkwgz",
+      "started_at": "2022-01-12T23:03:29.839Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "5st1m3cn8nx8",
+          "status": "identified",
+          "body": "The issue has been identified, and a fix is being implemented.",
+          "incident_id": "qwfz03b53y8j",
+          "created_at": "2022-01-12T23:11:33.224Z",
+          "updated_at": "2022-01-12T23:11:33.224Z",
+          "display_at": "2022-01-12T23:11:33.224Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Cloudflare Pages",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "rgvkzpvtl874",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating an issue with Cloudflare Pages build delays which potentially impacts multiple customers. Further detail will be provided as more information becomes available.",
+          "incident_id": "qwfz03b53y8j",
+          "created_at": "2022-01-12T23:03:29.964Z",
+          "updated_at": "2022-01-12T23:03:29.964Z",
+          "display_at": "2022-01-12T23:03:29.964Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Cloudflare Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Cloudflare Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2022-01-12T23:03:29.896Z",
+          "position": 15,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
