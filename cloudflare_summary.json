@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-01-19T05:01:52.677Z"
+    "updated_at": "2022-01-19T05:27:10.549Z"
   },
   "components": [
     {
@@ -55,9 +55,9 @@
     {
       "id": "y12kn5nkvb44",
       "name": "Amman, Jordan - (AMM)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-04-02T06:42:27.907Z",
-      "updated_at": "2022-01-19T01:39:46.897Z",
+      "updated_at": "2022-01-19T05:11:59.164Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -100,7 +100,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -543,9 +543,9 @@
     {
       "id": "qppslrvlmbvt",
       "name": "Asunción, Paraguay - (ASU)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-06-05T14:07:10.591Z",
-      "updated_at": "2022-01-19T05:01:52.673Z",
+      "updated_at": "2022-01-19T05:27:10.546Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1070,9 +1070,9 @@
     {
       "id": "5gyhgcprd739",
       "name": "Cebu, Philippines - (CEB)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-03-26T07:11:02.086Z",
-      "updated_at": "2022-01-19T04:51:00.257Z",
+      "updated_at": "2022-01-19T05:27:10.223Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -1924,9 +1924,9 @@
     {
       "id": "k0mgxrls5y1b",
       "name": "Cloudflare Logs",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2016-03-20T18:49:07.613Z",
-      "updated_at": "2021-12-23T00:49:33.894Z",
+      "updated_at": "2022-01-19T05:04:10.696Z",
       "position": 14,
       "description": "Cloudflare's Enterprise Log pull and Log push service",
       "showcase": false,
@@ -4832,7 +4832,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "972qg8db9wss",
+      "name": "Cloudflare Logs Availability Issues",
+      "status": "investigating",
+      "created_at": "2022-01-19T05:04:10.651Z",
+      "updated_at": "2022-01-19T05:04:10.764Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/f14n2h9r4qxf",
+      "started_at": "2022-01-19T05:04:10.641Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "7c2q9y23k8dv",
+          "status": "investigating",
+          "body": "Cloudflare is observing issues that may impact some users when updating/creating LogPush/Logstream jobs.\nThe existing jobs should see no impact\n\nWe are currently working on a resolution. More updates to follow shortly.",
+          "incident_id": "972qg8db9wss",
+          "created_at": "2022-01-19T05:04:10.760Z",
+          "updated_at": "2022-01-19T05:04:10.760Z",
+          "display_at": "2022-01-19T05:04:10.760Z",
+          "affected_components": [
+            {
+              "code": "k0mgxrls5y1b",
+              "name": "Cloudflare Sites and Services - Cloudflare Logs",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k0mgxrls5y1b",
+          "name": "Cloudflare Logs",
+          "status": "degraded_performance",
+          "created_at": "2016-03-20T18:49:07.613Z",
+          "updated_at": "2022-01-19T05:04:10.696Z",
+          "position": 14,
+          "description": "Cloudflare's Enterprise Log pull and Log push service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
