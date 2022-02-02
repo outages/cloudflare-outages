@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-02-02T23:36:29.838Z"
+    "updated_at": "2022-02-02T23:46:36.684Z"
   },
   "components": [
     {
@@ -55,7 +55,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -144,9 +144,9 @@
     {
       "id": "y12kn5nkvb44",
       "name": "Amman, Jordan - (AMM)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-04-02T06:42:27.907Z",
-      "updated_at": "2022-02-02T22:35:48.080Z",
+      "updated_at": "2022-02-02T23:41:33.128Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1942,9 +1942,9 @@
     {
       "id": "shqj304834s4",
       "name": "Tel Aviv, Israel - (TLV)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-03-13T14:28:48.746Z",
-      "updated_at": "2022-02-02T10:59:59.343Z",
+      "updated_at": "2022-02-02T23:46:36.680Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -3532,9 +3532,9 @@
     {
       "id": "k04jkcpzxn94",
       "name": "WARP",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-09-30T09:25:38.587Z",
-      "updated_at": "2021-07-13T17:30:31.335Z",
+      "updated_at": "2022-02-02T23:43:27.037Z",
       "position": 34,
       "description": null,
       "showcase": false,
@@ -4880,7 +4880,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "cfg8ygt2xzxf",
+      "name": "WARP Client reports missing registration when joined to Zero Trust organization",
+      "status": "investigating",
+      "created_at": "2022-02-02T23:43:26.997Z",
+      "updated_at": "2022-02-02T23:43:27.100Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/znl1x0m0s7cr",
+      "started_at": "2022-02-02T23:43:26.988Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "szr6n5pxk1d8",
+          "status": "investigating",
+          "body": "Cloudflare Zero Trust users running the WARP Client may be impacted by a missing registration error. \n\nWe are working to understand the full impact and mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "cfg8ygt2xzxf",
+          "created_at": "2022-02-02T23:43:27.097Z",
+          "updated_at": "2022-02-02T23:43:27.097Z",
+          "display_at": "2022-02-02T23:43:27.097Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k04jkcpzxn94",
+          "name": "WARP",
+          "status": "degraded_performance",
+          "created_at": "2019-09-30T09:25:38.587Z",
+          "updated_at": "2022-02-02T23:43:27.037Z",
+          "position": 34,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
