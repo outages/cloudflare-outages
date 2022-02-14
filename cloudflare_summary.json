@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-02-14T13:37:24.301Z"
+    "updated_at": "2022-02-14T14:14:47.606Z"
   },
   "components": [
     {
@@ -3385,9 +3385,9 @@
     {
       "id": "tn97mzj8b3bt",
       "name": "Jashore, Bangladesh - (JSR)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2020-11-04T02:36:10.854Z",
-      "updated_at": "2022-02-13T23:02:08.745Z",
+      "updated_at": "2022-02-14T14:14:47.603Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -3595,9 +3595,9 @@
     {
       "id": "3hdcvfzv4qbc",
       "name": "São José do Rio Preto, Brazil - (SJP)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-09-21T17:42:47.447Z",
-      "updated_at": "2022-02-14T13:27:18.594Z",
+      "updated_at": "2022-02-14T13:56:45.931Z",
       "position": 34,
       "description": null,
       "showcase": false,
@@ -4270,9 +4270,9 @@
     {
       "id": "tws4xpyksdfq",
       "name": "Macau - (MFM)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-03-12T04:07:56.557Z",
-      "updated_at": "2022-02-12T14:31:59.454Z",
+      "updated_at": "2022-02-14T14:05:54.362Z",
       "position": 44,
       "description": null,
       "showcase": false,
@@ -4750,9 +4750,9 @@
     {
       "id": "vspvmhx4wx21",
       "name": "Thimphu, Bhutan - (PBH)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-12-04T08:57:27.273Z",
-      "updated_at": "2022-02-14T11:16:00.666Z",
+      "updated_at": "2022-02-14T14:06:52.068Z",
       "position": 65,
       "description": null,
       "showcase": false,
@@ -4928,7 +4928,107 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "m8htr8201kw4",
+      "name": "Firewall Events Errors in Dashboard & GraphQL API",
+      "status": "monitoring",
+      "created_at": "2022-02-14T13:51:34.442Z",
+      "updated_at": "2022-02-14T14:04:16.008Z",
+      "monitoring_at": "2022-02-14T14:04:15.991Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/2m9jlydfqjmx",
+      "started_at": "2022-02-14T13:51:34.432Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "06wk8gqh0ztz",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "m8htr8201kw4",
+          "created_at": "2022-02-14T14:04:15.991Z",
+          "updated_at": "2022-02-14T14:04:15.991Z",
+          "display_at": "2022-02-14T14:04:15.991Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Cloudflare Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - Cloudflare API",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "mqpzy8cyt56x",
+          "status": "identified",
+          "body": "Some customers are experiencing errors in the firewall events GraphQL API and in the dashboard.\n\nWe are working to mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "m8htr8201kw4",
+          "created_at": "2022-02-14T13:51:34.510Z",
+          "updated_at": "2022-02-14T13:51:34.510Z",
+          "display_at": "2022-02-14T13:51:34.510Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Cloudflare Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - Cloudflare API",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Cloudflare Dashboard",
+          "status": "operational",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2022-01-26T18:39:48.324Z",
+          "position": 1,
+          "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "Cloudflare API",
+          "status": "operational",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2022-01-26T18:39:48.341Z",
+          "position": 7,
+          "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
