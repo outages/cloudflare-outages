@@ -4,13 +4,13 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-03-01T11:37:58.334Z"
+    "updated_at": "2022-03-01T12:28:24.966Z"
   },
   "components": [
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -220,9 +220,9 @@
     {
       "id": "gxjcfyf5pht1",
       "name": "Baghdad, Iraq - (BGW)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-03-12T14:18:23.436Z",
-      "updated_at": "2022-03-01T11:31:45.815Z",
+      "updated_at": "2022-03-01T12:24:49.092Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1032,7 +1032,7 @@
     {
       "id": "m3639x4txd08",
       "name": "Middle East",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2015-06-18T15:21:54.436Z",
       "updated_at": "2020-11-04T02:34:50.855Z",
       "position": 6,
@@ -2038,9 +2038,9 @@
     {
       "id": "shqj304834s4",
       "name": "Tel Aviv, Israel - (TLV)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-03-13T14:28:48.746Z",
-      "updated_at": "2022-03-01T11:37:58.331Z",
+      "updated_at": "2022-03-01T12:14:43.880Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -2863,9 +2863,9 @@
     {
       "id": "9p2qlpt19nqb",
       "name": "SSL for SaaS Provisioning",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:56:30.714Z",
-      "updated_at": "2021-07-13T17:30:31.235Z",
+      "updated_at": "2022-03-01T12:28:24.905Z",
       "position": 24,
       "description": "Cloudflare's SSL for SaaS certificate provisioning service (custom hostnames)",
       "showcase": false,
@@ -3898,9 +3898,9 @@
     {
       "id": "v4yshrzwkvyd",
       "name": "Krasnoyarsk, Russia - (KJA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-09-22T09:43:29.298Z",
-      "updated_at": "2022-02-22T21:19:56.040Z",
+      "updated_at": "2022-03-01T12:19:29.918Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -4976,7 +4976,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "1msg9qq5h4sb",
+      "name": "Issue with SSL for SaaS - Custom Hostnames not provisioning",
+      "status": "investigating",
+      "created_at": "2022-03-01T12:28:24.869Z",
+      "updated_at": "2022-03-01T12:28:24.963Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/404ldqwb2vbw",
+      "started_at": "2022-03-01T12:28:24.861Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8jw41xj4x1c5",
+          "status": "investigating",
+          "body": "Cloudflare is investigating reports of SSL for SaaS customers seeing issues with custom hostnames not provisioning",
+          "incident_id": "1msg9qq5h4sb",
+          "created_at": "2022-03-01T12:28:24.961Z",
+          "updated_at": "2022-03-01T12:28:24.961Z",
+          "display_at": "2022-03-01T12:28:24.961Z",
+          "affected_components": [
+            {
+              "code": "9p2qlpt19nqb",
+              "name": "Cloudflare Sites and Services - SSL for SaaS Provisioning",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9p2qlpt19nqb",
+          "name": "SSL for SaaS Provisioning",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:56:30.714Z",
+          "updated_at": "2022-03-01T12:28:24.905Z",
+          "position": 24,
+          "description": "Cloudflare's SSL for SaaS certificate provisioning service (custom hostnames)",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
