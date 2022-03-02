@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-03-02T20:49:48.457Z"
+    "updated_at": "2022-03-02T21:10:00.088Z"
   },
   "components": [
     {
@@ -607,7 +607,7 @@
     {
       "id": "zqxhg7y54vy8",
       "name": "Europe",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2014-10-27T23:56:21.815Z",
       "updated_at": "2020-11-04T02:34:50.835Z",
       "position": 4,
@@ -2068,9 +2068,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Cloudflare Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2022-01-13T00:14:57.930Z",
+      "updated_at": "2022-03-02T20:59:33.592Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -4498,9 +4498,9 @@
     {
       "id": "w337283spffw",
       "name": "Yekaterinburg, Russia - (SVX)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-09-14T08:26:33.033Z",
-      "updated_at": "2022-03-02T20:49:48.455Z",
+      "updated_at": "2022-03-02T20:54:51.592Z",
       "position": 49,
       "description": null,
       "showcase": false,
@@ -4588,9 +4588,9 @@
     {
       "id": "8xc65dbhbrd5",
       "name": "Phnom Penh, Cambodia - (PNH)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-02-09T20:38:28.093Z",
-      "updated_at": "2022-03-02T18:47:44.733Z",
+      "updated_at": "2022-03-02T21:10:00.085Z",
       "position": 52,
       "description": null,
       "showcase": false,
@@ -4723,9 +4723,9 @@
     {
       "id": "p0kyqpgsp6p9",
       "name": "Surat Thani, Thailand - (URT)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-09-03T05:50:51.865Z",
-      "updated_at": "2022-01-20T14:11:57.331Z",
+      "updated_at": "2022-03-02T21:04:57.618Z",
       "position": 61,
       "description": null,
       "showcase": false,
@@ -4979,10 +4979,10 @@
   "incidents": [
     {
       "id": "1bplb49k2ctv",
-      "name": "Cloudflare is experiencing delays with updates to Workers scripts at the edge.",
+      "name": "Cloudflare is experiencing delays with updates to Workers scripts. This is also affecting deployments for Pages users.",
       "status": "investigating",
       "created_at": "2022-03-02T20:49:29.952Z",
-      "updated_at": "2022-03-02T20:49:30.071Z",
+      "updated_at": "2022-03-02T20:59:33.653Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -4990,6 +4990,32 @@
       "started_at": "2022-03-02T20:49:29.942Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "2tbvr6zdy599",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "1bplb49k2ctv",
+          "created_at": "2022-03-02T20:59:33.649Z",
+          "updated_at": "2022-03-02T20:59:33.649Z",
+          "display_at": "2022-03-02T20:59:33.649Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Cloudflare Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Cloudflare Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "mxhzmz6wlqk9",
           "status": "investigating",
@@ -5022,6 +5048,21 @@
           "description": "Cloudflare's JavaScript and WebAssembly execution service",
           "showcase": false,
           "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Cloudflare Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2022-03-02T20:59:33.592Z",
+          "position": 15,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
