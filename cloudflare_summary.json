@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-03-09T11:33:16.461Z"
+    "updated_at": "2022-03-09T11:39:45.187Z"
   },
   "components": [
     {
@@ -85,7 +85,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2368,9 +2368,9 @@
     {
       "id": "4c231tkdlpcl",
       "name": "Analytics",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-11-13T11:54:10.191Z",
-      "updated_at": "2021-12-14T13:09:50.632Z",
+      "updated_at": "2022-03-09T11:39:45.131Z",
       "position": 18,
       "description": "Cloudflare customer analytics aggregation service",
       "showcase": false,
@@ -4976,7 +4976,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "j5nwmypprntq",
+      "name": "Cloudflare Analytics Delays",
+      "status": "investigating",
+      "created_at": "2022-03-09T11:39:45.098Z",
+      "updated_at": "2022-03-09T11:39:45.184Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/vj6599q64zp7",
+      "started_at": "2022-03-09T11:39:45.090Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "r9qcfxknl650",
+          "status": "investigating",
+          "body": "Cloudflare customers in Eastern North America regions might experience delays in retrieving zone analytics and cache analytics.",
+          "incident_id": "j5nwmypprntq",
+          "created_at": "2022-03-09T11:39:45.182Z",
+          "updated_at": "2022-03-09T11:39:45.182Z",
+          "display_at": "2022-03-09T11:39:45.182Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "degraded_performance",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2022-03-09T11:39:45.131Z",
+          "position": 18,
+          "description": "Cloudflare customer analytics aggregation service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
