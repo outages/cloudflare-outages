@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-03-18T10:18:23.679Z"
+    "updated_at": "2022-03-18T10:35:44.020Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -145,9 +145,9 @@
     {
       "id": "y12kn5nkvb44",
       "name": "Amman, Jordan - (AMM)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-04-02T06:42:27.907Z",
-      "updated_at": "2022-03-18T10:11:08.273Z",
+      "updated_at": "2022-03-18T10:33:34.326Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2598,9 +2598,9 @@
     {
       "id": "5wnz34mhfhrk",
       "name": "CDN/Cache",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-25T19:03:33.850Z",
-      "updated_at": "2022-01-27T11:45:08.572Z",
+      "updated_at": "2022-03-18T10:21:46.348Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -4878,9 +4878,9 @@
     {
       "id": "vspvmhx4wx21",
       "name": "Thimphu, Bhutan - (PBH)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-12-04T08:57:27.273Z",
-      "updated_at": "2022-03-18T10:08:16.465Z",
+      "updated_at": "2022-03-18T10:33:34.695Z",
       "position": 71,
       "description": null,
       "showcase": false,
@@ -5056,7 +5056,80 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "8h6zh5dr4y9b",
+      "name": "HTTP timeouts in European locations",
+      "status": "identified",
+      "created_at": "2022-03-18T10:21:46.312Z",
+      "updated_at": "2022-03-18T10:33:36.536Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/tqpqwybq95ck",
+      "started_at": "2022-03-18T10:21:46.304Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "bs2vrcswmvl7",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "8h6zh5dr4y9b",
+          "created_at": "2022-03-18T10:33:36.534Z",
+          "updated_at": "2022-03-18T10:33:36.534Z",
+          "display_at": "2022-03-18T10:33:36.534Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xwplr3svsm4s",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue which potentially impacts some customers causing HTTP connection timeouts on European locations. Further detail will be provided as more information becomes available.",
+          "incident_id": "8h6zh5dr4y9b",
+          "created_at": "2022-03-18T10:21:46.404Z",
+          "updated_at": "2022-03-18T10:21:46.404Z",
+          "display_at": "2022-03-18T10:21:46.404Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5wnz34mhfhrk",
+          "name": "CDN/Cache",
+          "status": "degraded_performance",
+          "created_at": "2020-03-25T19:03:33.850Z",
+          "updated_at": "2022-03-18T10:21:46.348Z",
+          "position": 21,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
