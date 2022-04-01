@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-04-01T01:19:32.081Z"
+    "updated_at": "2022-04-01T02:54:03.390Z"
   },
   "components": [
     {
@@ -12,7 +12,7 @@
       "name": "Americana, Brazil - (QWJ)",
       "status": "operational",
       "created_at": "2021-08-25T14:19:59.231Z",
-      "updated_at": "2022-03-31T18:14:30.041Z",
+      "updated_at": "2022-04-01T02:43:57.286Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -40,7 +40,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -378,9 +378,9 @@
     {
       "id": "qk5t7j00dgkj",
       "name": "Brisbane, QLD, Australia - (BNE)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-09-23T20:59:56.455Z",
-      "updated_at": "2022-04-01T00:49:14.475Z",
+      "updated_at": "2022-04-01T02:54:03.006Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1210,9 +1210,9 @@
     {
       "id": "xg9bdljrlnfd",
       "name": "Perth, WA, Australia - (PER)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-05-27T10:34:03.915Z",
-      "updated_at": "2022-04-01T00:50:00.319Z",
+      "updated_at": "2022-04-01T02:54:03.387Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -1315,7 +1315,7 @@
     {
       "id": "q6qm6fvkst4h",
       "name": "Oceania",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2014-10-28T00:12:04.846Z",
       "updated_at": "2020-11-04T02:34:50.873Z",
       "position": 8,
@@ -2675,9 +2675,9 @@
     {
       "id": "5wnz34mhfhrk",
       "name": "CDN/Cache",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-25T19:03:33.850Z",
-      "updated_at": "2022-03-18T13:43:50.073Z",
+      "updated_at": "2022-04-01T02:47:22.097Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -4595,9 +4595,9 @@
     {
       "id": "ss09y7v3wzwd",
       "name": "Manila, Philippines - (MNL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-04-29T12:14:56.581Z",
-      "updated_at": "2022-03-29T18:46:15.493Z",
+      "updated_at": "2022-04-01T01:48:23.612Z",
       "position": 51,
       "description": null,
       "showcase": false,
@@ -4910,9 +4910,9 @@
     {
       "id": "vspvmhx4wx21",
       "name": "Thimphu, Bhutan - (PBH)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-12-04T08:57:27.273Z",
-      "updated_at": "2022-04-01T01:19:32.078Z",
+      "updated_at": "2022-04-01T02:18:42.164Z",
       "position": 71,
       "description": null,
       "showcase": false,
@@ -5088,7 +5088,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "w8kcl8hnqsyx",
+      "name": "Elevated rate of 520 errors in some regions",
+      "status": "investigating",
+      "created_at": "2022-04-01T02:47:22.062Z",
+      "updated_at": "2022-04-01T02:47:22.170Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/yxpmk3m5w9w6",
+      "started_at": "2022-04-01T02:47:22.054Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "gtzy0lg3c7hc",
+          "status": "investigating",
+          "body": "Cloudflare is investigating elevated rate of 520 errors in some regions.\n\nWe are working to analyse and mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "w8kcl8hnqsyx",
+          "created_at": "2022-04-01T02:47:22.168Z",
+          "updated_at": "2022-04-01T02:47:22.168Z",
+          "display_at": "2022-04-01T02:47:22.168Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5wnz34mhfhrk",
+          "name": "CDN/Cache",
+          "status": "degraded_performance",
+          "created_at": "2020-03-25T19:03:33.850Z",
+          "updated_at": "2022-04-01T02:47:22.097Z",
+          "position": 21,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
