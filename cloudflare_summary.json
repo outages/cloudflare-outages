@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-04-06T13:11:48.352Z"
+    "updated_at": "2022-04-06T13:37:04.138Z"
   },
   "components": [
     {
@@ -55,7 +55,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -115,9 +115,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Cloudflare Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2022-04-06T10:50:59.254Z",
+      "updated_at": "2022-04-06T13:14:51.798Z",
       "position": 1,
       "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -1760,9 +1760,9 @@
     {
       "id": "tdwwnvf8nv6h",
       "name": "Kigali, Rwanda - (KGL)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-06-17T03:27:21.977Z",
-      "updated_at": "2022-04-06T12:36:24.648Z",
+      "updated_at": "2022-04-06T13:21:54.506Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -3140,9 +3140,9 @@
     {
       "id": "gw5dtkqqr4lv",
       "name": "Ho Chi Minh City, Vietnam - (SGN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-12-06T09:28:02.817Z",
-      "updated_at": "2022-04-06T08:33:52.227Z",
+      "updated_at": "2022-04-06T13:37:04.134Z",
       "position": 27,
       "description": null,
       "showcase": false,
@@ -5088,7 +5088,80 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "xtft3hn7spgc",
+      "name": "Cloudflare Dashboard issues - Publication of Host Header override Page Rules",
+      "status": "identified",
+      "created_at": "2022-04-06T13:14:51.754Z",
+      "updated_at": "2022-04-06T13:26:05.254Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/cl58180mb34l",
+      "started_at": "2022-04-06T13:14:51.744Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "vq78sl4bv68c",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "xtft3hn7spgc",
+          "created_at": "2022-04-06T13:26:05.252Z",
+          "updated_at": "2022-04-06T13:26:05.252Z",
+          "display_at": "2022-04-06T13:26:05.252Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Cloudflare Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "sntmwqdc1mq0",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with publication of Host Header override Page Rules.\n\nCustomers may see errors displayed when publishing Host Header override Page Rules. \nThis affects the creation and update.\n\nCreated Page Rules still work as expected.",
+          "incident_id": "xtft3hn7spgc",
+          "created_at": "2022-04-06T13:14:51.873Z",
+          "updated_at": "2022-04-06T13:14:51.873Z",
+          "display_at": "2022-04-06T13:14:51.873Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Cloudflare Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Cloudflare Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2022-04-06T13:14:51.798Z",
+          "position": 1,
+          "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
