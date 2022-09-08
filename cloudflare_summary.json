@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-09-08T22:43:46.202Z"
+    "updated_at": "2022-09-08T22:49:53.756Z"
   },
   "components": [
     {
@@ -5362,6 +5362,105 @@
   ],
   "incidents": [
     {
+      "id": "rqfn078qp8c1",
+      "name": "R2 Storage",
+      "status": "identified",
+      "created_at": "2022-09-08T21:19:04.940Z",
+      "updated_at": "2022-09-08T22:49:53.749Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/trt9gjxtwpx3",
+      "started_at": "2022-09-08T21:19:04.929Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "stslrqzl52r9",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "rqfn078qp8c1",
+          "created_at": "2022-09-08T21:38:57.188Z",
+          "updated_at": "2022-09-08T21:38:57.188Z",
+          "display_at": "2022-09-08T21:38:57.188Z",
+          "affected_components": [
+            {
+              "code": "ll1x88wwz4fq",
+              "name": "Cloudflare Sites and Services - Billing",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "04882gj3wlt7",
+          "status": "investigating",
+          "body": "R2 Storage customers may receive elevated 500 HTTP status code responses. Additionally   https://pkg.cloudflare.com is impacted and may be unavailable to some users. \n\nWe are currently investigating the root cause.",
+          "incident_id": "rqfn078qp8c1",
+          "created_at": "2022-09-08T21:19:05.057Z",
+          "updated_at": "2022-09-08T22:49:53.745Z",
+          "display_at": "2022-09-08T21:19:05.000Z",
+          "affected_components": [
+            {
+              "code": "ll1x88wwz4fq",
+              "name": "Cloudflare Sites and Services - Billing",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ll1x88wwz4fq",
+          "name": "Billing",
+          "status": "operational",
+          "created_at": "2016-05-09T21:12:38.309Z",
+          "updated_at": "2022-08-30T19:31:04.151Z",
+          "position": 19,
+          "description": "Cloudflare's Billing and Payment service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2022-09-08T21:19:04.995Z",
+          "position": 45,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "5mmcz5qn3b17",
       "name": "Cloudflare Custom name servers",
       "status": "identified",
@@ -5428,105 +5527,6 @@
         }
       ],
       "components": []
-    },
-    {
-      "id": "rqfn078qp8c1",
-      "name": "R2 Storage",
-      "status": "identified",
-      "created_at": "2022-09-08T21:19:04.940Z",
-      "updated_at": "2022-09-08T21:38:57.191Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/trt9gjxtwpx3",
-      "started_at": "2022-09-08T21:19:04.929Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "stslrqzl52r9",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "rqfn078qp8c1",
-          "created_at": "2022-09-08T21:38:57.188Z",
-          "updated_at": "2022-09-08T21:38:57.188Z",
-          "display_at": "2022-09-08T21:38:57.188Z",
-          "affected_components": [
-            {
-              "code": "ll1x88wwz4fq",
-              "name": "Cloudflare Sites and Services - Billing",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "04882gj3wlt7",
-          "status": "investigating",
-          "body": "R2 Storage customers may receive elevated 500 HTTP status code responses. We are currently investigating the root cause.",
-          "incident_id": "rqfn078qp8c1",
-          "created_at": "2022-09-08T21:19:05.057Z",
-          "updated_at": "2022-09-08T21:19:05.057Z",
-          "display_at": "2022-09-08T21:19:05.057Z",
-          "affected_components": [
-            {
-              "code": "ll1x88wwz4fq",
-              "name": "Cloudflare Sites and Services - Billing",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ll1x88wwz4fq",
-          "name": "Billing",
-          "status": "operational",
-          "created_at": "2016-05-09T21:12:38.309Z",
-          "updated_at": "2022-08-30T19:31:04.151Z",
-          "position": 19,
-          "description": "Cloudflare's Billing and Payment service",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "hb7g5sq2zz0h",
-          "name": "R2",
-          "status": "degraded_performance",
-          "created_at": "2022-07-05T10:55:24.503Z",
-          "updated_at": "2022-09-08T21:19:04.995Z",
-          "position": 45,
-          "description": "High-performance storage for files and objects with zero egress charges",
-          "showcase": false,
-          "start_date": "2022-07-05",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
     }
   ],
   "scheduled_maintenances": [],
