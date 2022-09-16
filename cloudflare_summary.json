@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-09-16T02:10:00.576Z"
+    "updated_at": "2022-09-16T04:23:30.043Z"
   },
   "components": [
     {
@@ -1464,9 +1464,9 @@
     {
       "id": "26gznn8sts5z",
       "name": "Buenos Aires, Argentina - (EZE)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2015-04-01T11:05:40.089Z",
-      "updated_at": "2022-09-14T08:23:49.734Z",
+      "updated_at": "2022-09-16T04:00:58.026Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -2244,9 +2244,9 @@
     {
       "id": "rbnhbzgld936",
       "name": "Frankfurt, Germany - (FRA)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T20:37:25.480Z",
-      "updated_at": "2022-08-24T05:36:28.066Z",
+      "updated_at": "2022-09-16T02:36:50.366Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -3264,9 +3264,9 @@
     {
       "id": "m755h52vlsrn",
       "name": "Neuquén, Argentina - (NQN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-03-25T14:03:04.703Z",
-      "updated_at": "2022-09-15T08:25:36.431Z",
+      "updated_at": "2022-09-16T03:45:50.818Z",
       "position": 28,
       "description": null,
       "showcase": false,
@@ -5392,7 +5392,152 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "mdzrr4p5372d",
+      "name": "Issues writing to Workers Analytics Engine",
+      "status": "investigating",
+      "created_at": "2022-09-16T04:19:15.171Z",
+      "updated_at": "2022-09-16T04:19:15.228Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "none",
+      "shortlink": "https://stspg.io/brddk6pxtj7g",
+      "started_at": "2022-09-16T04:19:15.163Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "tysbm5vhs8my",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue  writing to Workers Analytics Engine which potentially impacts multiple customers. Further detail will be provided as more information becomes available.",
+          "incident_id": "mdzrr4p5372d",
+          "created_at": "2022-09-16T04:19:15.226Z",
+          "updated_at": "2022-09-16T04:19:15.226Z",
+          "display_at": "2022-09-16T04:19:15.226Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Cloudflare Workers",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Cloudflare Workers",
+          "status": "operational",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2022-08-26T16:14:33.196Z",
+          "position": 9,
+          "description": "Cloudflare's JavaScript and WebAssembly execution service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
+      "id": "wgql0rgjs06q",
+      "name": "Network Performance Issues in Frankfurt, Germany",
+      "status": "monitoring",
+      "created_at": "2022-09-16T02:36:50.000Z",
+      "updated_at": "2022-09-16T03:22:29.187Z",
+      "monitoring_at": "2022-09-16T03:22:29.174Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/7plx2ycd8hkx",
+      "started_at": "2022-09-16T02:36:50.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "79p7dyfrmc94",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "wgql0rgjs06q",
+          "created_at": "2022-09-16T03:22:29.174Z",
+          "updated_at": "2022-09-16T03:22:29.174Z",
+          "display_at": "2022-09-16T03:22:29.174Z",
+          "affected_components": [
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "b5vy9xyby6d2",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "wgql0rgjs06q",
+          "created_at": "2022-09-16T02:42:26.200Z",
+          "updated_at": "2022-09-16T02:42:26.200Z",
+          "display_at": "2022-09-16T02:42:26.200Z",
+          "affected_components": [
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "98frn948850l",
+          "status": "investigating",
+          "body": "Cloudflare is investigating network hardware failure in Frankfurt, Germany - (FRA).\n\nWe are working to analyze and mitigate the problem.  More updates to follow shortly.",
+          "incident_id": "wgql0rgjs06q",
+          "created_at": "2022-09-16T02:36:50.428Z",
+          "updated_at": "2022-09-16T02:37:55.902Z",
+          "display_at": "2022-09-16T02:36:50.000Z",
+          "affected_components": [
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rbnhbzgld936",
+          "name": "Frankfurt, Germany - (FRA)",
+          "status": "degraded_performance",
+          "created_at": "2014-10-27T20:37:25.480Z",
+          "updated_at": "2022-09-16T02:36:50.366Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
