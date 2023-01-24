@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-01-24T16:21:50.327Z"
+    "updated_at": "2023-01-24T16:41:04.410Z"
   },
   "components": [
     {
@@ -5794,32 +5794,38 @@
   ],
   "incidents": [
     {
-      "id": "qlkvxxgs72bk",
-      "name": "Turnstile API Latency",
-      "status": "monitoring",
-      "created_at": "2023-01-24T15:58:00.192Z",
-      "updated_at": "2023-01-24T16:21:50.325Z",
-      "monitoring_at": "2023-01-24T16:21:50.311Z",
+      "id": "9d0qzvrkw5j5",
+      "name": "Cloudflare Analytics Delays",
+      "status": "investigating",
+      "created_at": "2023-01-24T16:19:36.836Z",
+      "updated_at": "2023-01-24T16:39:54.912Z",
+      "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/xdsf5t4rfhj2",
-      "started_at": "2023-01-24T15:58:00.185Z",
+      "shortlink": "https://stspg.io/zrmwchk66nnc",
+      "started_at": "2023-01-24T16:19:36.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "q77dksk0drkx",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "qlkvxxgs72bk",
-          "created_at": "2023-01-24T16:21:50.311Z",
-          "updated_at": "2023-01-24T16:21:50.311Z",
-          "display_at": "2023-01-24T16:21:50.311Z",
+          "id": "hj3rgr6k1z4q",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "9d0qzvrkw5j5",
+          "created_at": "2023-01-24T16:39:54.908Z",
+          "updated_at": "2023-01-24T16:39:54.908Z",
+          "display_at": "2023-01-24T16:39:54.908Z",
           "affected_components": [
             {
               "code": "g4tb35rs9yw7",
               "name": "Cloudflare Sites and Services - API",
-              "old_status": "degraded_performance",
+              "old_status": "operational",
               "new_status": "operational"
+            },
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -5827,65 +5833,13 @@
           "tweet_id": null
         },
         {
-          "id": "2v77jhc5gyzp",
-          "status": "investigating",
-          "body": "Cloudflare is investigating an increased latency when interacting with Turnstile API  \n\nCustomers might experience longer wait times on Turnstile endpoints, when deploying changes\n\nConfigurations that are already running in production are not affected. More updates to follow shortly.",
-          "incident_id": "qlkvxxgs72bk",
-          "created_at": "2023-01-24T15:58:00.276Z",
-          "updated_at": "2023-01-24T15:58:00.276Z",
-          "display_at": "2023-01-24T15:58:00.276Z",
-          "affected_components": [
-            {
-              "code": "g4tb35rs9yw7",
-              "name": "Cloudflare Sites and Services - API",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "g4tb35rs9yw7",
-          "name": "API",
-          "status": "operational",
-          "created_at": "2014-10-09T03:32:07.158Z",
-          "updated_at": "2023-01-24T16:21:50.275Z",
-          "position": 7,
-          "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
-    {
-      "id": "9d0qzvrkw5j5",
-      "name": "Cloudflare Images API and Analytics Delays",
-      "status": "investigating",
-      "created_at": "2023-01-24T16:19:36.836Z",
-      "updated_at": "2023-01-24T16:19:36.926Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/zrmwchk66nnc",
-      "started_at": "2023-01-24T16:19:36.826Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
           "id": "0wx848d4f08b",
           "status": "investigating",
-          "body": "Cloudflare Analytics processing is running behind. This affects timely delivery of customer data.\n\nThe Cloudflare Images API uploads are currently seeing an elevated error rate.\n\nCloudflare is aware of, and investigating an issue which potentially impacts multiple customers. Further detail will be provided as more information becomes available.",
+          "body": "Cloudflare Analytics processing is running behind. This affects timely delivery of customer data.\n\nCloudflare is aware of, and investigating an issue which potentially impacts multiple customers. Further detail will be provided as more information becomes available.",
           "incident_id": "9d0qzvrkw5j5",
           "created_at": "2023-01-24T16:19:36.921Z",
-          "updated_at": "2023-01-24T16:19:36.921Z",
-          "display_at": "2023-01-24T16:19:36.921Z",
+          "updated_at": "2023-01-24T16:39:40.502Z",
+          "display_at": "2023-01-24T16:19:36.000Z",
           "affected_components": [
             {
               "code": "g4tb35rs9yw7",
