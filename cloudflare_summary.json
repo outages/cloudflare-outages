@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-07T16:47:48.645Z"
+    "updated_at": "2023-02-07T17:33:48.142Z"
   },
   "components": [
     {
@@ -6167,14 +6167,46 @@
       "name": "Maintenance impacting SSL API availability and certificate issuance",
       "status": "scheduled",
       "created_at": "2023-01-26T10:38:32.859Z",
-      "updated_at": "2023-02-07T13:30:33.609Z",
+      "updated_at": "2023-02-07T17:33:48.139Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://stspg.io/5whyqscf6r20",
-      "started_at": "2023-01-26T10:38:32.847Z",
+      "started_at": "2023-01-26T10:38:32.940Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "01vbhsqgmmv8",
+          "status": "scheduled",
+          "body": "We will be undergoing scheduled maintenance during this time.",
+          "incident_id": "l4gjk0x5b2bh",
+          "created_at": "2023-02-07T17:31:46.992Z",
+          "updated_at": "2023-02-07T17:31:46.992Z",
+          "display_at": "2023-02-07T17:31:46.992Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "cghykwlwsmn5",
+              "name": "Cloudflare Sites and Services - SSL Certificate Provisioning",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "9p2qlpt19nqb",
+              "name": "Cloudflare Sites and Services - SSL for SaaS Provisioning",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "nf2j0mqp0rh9",
           "status": "scheduled",
@@ -6213,7 +6245,7 @@
           "body": "On February 14th, 2023, Cloudflare will be doing database maintenance that will impact SSL API availability and may result in certificate issuance delays. The scheduled maintenance will be on February 14, 2023, 14:00 - 16:00 UTC.\n\nDuring the maintenance window, SSL-related APIs (listed below) will return 500 responses for write and read requests and certificate order processing requests will be delayed. Any API requests made during that time will fail and will need to be retried. \n\nAffected Services: \n1) Advanced Certificate Order API: customers will not be able to order Advanced certificates or fetch information about Advanced certificates;\n2) Certificate Packs API: customers will not be able to use the API to get information about certificate packs;\n3) Custom Hostname API: customers will not be able to create new custom hostnames or fetch information about existing custom hostnames;\n4) Custom SSL API: customers will not be able to upload Custom certificates or fetch information about Custom certificates;\n5) Universal SSL API: customers will not be able to edit Universal SSL settings.\n\nIn order to avoid any impact, we recommend to:\n— schedule certificate issuances or custom hostname creations to occur outside the maintenance window;\n— re-submit any failed API requests after the maintenance window;\n— expect certificate issuance delays during the maintenance window.\n\nWe apologise for any inconvenience this maintenance might cause.",
           "incident_id": "l4gjk0x5b2bh",
           "created_at": "2023-01-26T10:38:32.940Z",
-          "updated_at": "2023-01-26T10:38:32.940Z",
+          "updated_at": "2023-02-07T17:33:34.320Z",
           "display_at": "2023-01-26T10:38:32.940Z",
           "affected_components": [
             {
@@ -6287,8 +6319,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-02-14T14:00:00.000Z",
-      "scheduled_until": "2023-02-14T16:00:00.000Z"
+      "scheduled_for": "2023-02-14T08:00:00.000Z",
+      "scheduled_until": "2023-02-14T10:00:00.000Z"
     },
     {
       "id": "c3lzy1g4np0c",
