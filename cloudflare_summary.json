@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-09T23:43:00.227Z"
+    "updated_at": "2023-02-10T01:00:33.522Z"
   },
   "components": [
     {
@@ -410,9 +410,9 @@
     {
       "id": "gxjcfyf5pht1",
       "name": "Baghdad, Iraq - (BGW)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-03-12T14:18:23.436Z",
-      "updated_at": "2023-02-09T23:06:34.718Z",
+      "updated_at": "2023-02-10T00:08:32.592Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1470,9 +1470,9 @@
     {
       "id": "h3smcpzt8hq6",
       "name": "Dubai, United Arab Emirates - (DXB)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2015-07-23T02:23:36.617Z",
-      "updated_at": "2023-02-08T12:39:13.147Z",
+      "updated_at": "2023-02-10T00:13:41.377Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -2760,9 +2760,9 @@
     {
       "id": "1njzngd1wdrj",
       "name": "Istanbul, Turkey - (IST)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-02-28T13:32:42.674Z",
-      "updated_at": "2023-02-02T16:06:52.463Z",
+      "updated_at": "2023-02-10T00:44:38.495Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -4110,9 +4110,9 @@
     {
       "id": "mslkxsqftrnn",
       "name": "Kolkata, India - (CCU)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-08-12T14:37:30.005Z",
-      "updated_at": "2023-02-09T20:57:45.576Z",
+      "updated_at": "2023-02-10T00:44:37.890Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -5732,16 +5732,36 @@
     {
       "id": "sbm3dmwsszv5",
       "name": "Cloudflare Logs Availability Issues",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2023-02-09T22:46:13.841Z",
-      "updated_at": "2023-02-09T23:32:47.304Z",
-      "monitoring_at": null,
+      "updated_at": "2023-02-10T00:09:03.266Z",
+      "monitoring_at": "2023-02-10T00:01:49.000Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/67fx7cxl5g38",
       "started_at": "2023-02-09T22:46:13.832Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "p6d79pd06ntm",
+          "status": "monitoring",
+          "body": "At 21:00 UTC logs stopped pushing for most customers but some customers were still receiving a very small amount. During this time a small amount of logs may have been lost. However, the delayed logs are in the process of being delivered within the next couple of hours. A fix has been implemented and we are monitoring the results.",
+          "incident_id": "sbm3dmwsszv5",
+          "created_at": "2023-02-10T00:01:49.385Z",
+          "updated_at": "2023-02-10T00:09:03.245Z",
+          "display_at": "2023-02-10T00:01:49.000Z",
+          "affected_components": [
+            {
+              "code": "k0mgxrls5y1b",
+              "name": "Cloudflare Sites and Services - Logs",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "8qm3tfq3xnqp",
           "status": "identified",
@@ -5803,60 +5823,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "87wp923jbv4z",
-      "name": "VIE (Vienna) on 2023-02-10",
-      "status": "scheduled",
-      "created_at": "2023-02-08T04:20:26.541Z",
-      "updated_at": "2023-02-08T04:20:26.594Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/vrx8hq907c37",
-      "started_at": "2023-02-08T04:20:26.535Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "nkq6n5s3814r",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in VIE (Vienna) datacenter on 2023-02-10 between 01:00 and 06:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "87wp923jbv4z",
-          "created_at": "2023-02-08T04:20:26.592Z",
-          "updated_at": "2023-02-08T04:20:26.592Z",
-          "display_at": "2023-02-08T04:20:26.592Z",
-          "affected_components": [
-            {
-              "code": "lfp6vhw43pt3",
-              "name": "Europe - Vienna, Austria - (VIE)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "lfp6vhw43pt3",
-          "name": "Vienna, Austria - (VIE)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:41:22.043Z",
-          "updated_at": "2023-01-11T08:30:11.523Z",
-          "position": 51,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-02-10T01:00:00.000Z",
-      "scheduled_until": "2023-02-10T06:00:00.000Z"
-    },
     {
       "id": "22mf6qcl61cn",
       "name": "DFW (Dallas) on 2023-02-13",
@@ -6468,6 +6434,86 @@
       ],
       "scheduled_for": "2023-02-20T17:00:00.000Z",
       "scheduled_until": "2023-02-20T23:00:00.000Z"
+    },
+    {
+      "id": "87wp923jbv4z",
+      "name": "VIE (Vienna) on 2023-02-10",
+      "status": "in_progress",
+      "created_at": "2023-02-08T04:20:26.541Z",
+      "updated_at": "2023-02-10T01:00:33.503Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/vrx8hq907c37",
+      "started_at": "2023-02-08T04:20:26.535Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "6hxxyk1682wl",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "87wp923jbv4z",
+          "created_at": "2023-02-10T01:00:33.498Z",
+          "updated_at": "2023-02-10T01:00:33.498Z",
+          "display_at": "2023-02-10T01:00:33.498Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "109yd5dbwpjb",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "87wp923jbv4z",
+          "created_at": "2023-02-09T23:59:57.196Z",
+          "updated_at": "2023-02-09T23:59:57.196Z",
+          "display_at": "2023-02-09T23:59:57.196Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "nkq6n5s3814r",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in VIE (Vienna) datacenter on 2023-02-10 between 01:00 and 06:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "87wp923jbv4z",
+          "created_at": "2023-02-08T04:20:26.592Z",
+          "updated_at": "2023-02-08T04:20:26.592Z",
+          "display_at": "2023-02-08T04:20:26.592Z",
+          "affected_components": [
+            {
+              "code": "lfp6vhw43pt3",
+              "name": "Europe - Vienna, Austria - (VIE)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lfp6vhw43pt3",
+          "name": "Vienna, Austria - (VIE)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:41:22.043Z",
+          "updated_at": "2023-01-11T08:30:11.523Z",
+          "position": 51,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-02-10T01:00:00.000Z",
+      "scheduled_until": "2023-02-10T06:00:00.000Z"
     }
   ],
   "status": {
