@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-11T07:05:58.221Z"
+    "updated_at": "2023-02-11T07:32:44.032Z"
   },
   "components": [
     {
@@ -55,7 +55,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1530,9 +1530,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2023-02-04T00:47:05.105Z",
+      "updated_at": "2023-02-11T07:24:21.656Z",
       "position": 9,
       "description": "Cloudflare's JavaScript and WebAssembly execution service",
       "showcase": false,
@@ -5728,7 +5728,80 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "hv65p4x7cjr1",
+      "name": "Cloudflare Workers Availability Issues in China",
+      "status": "monitoring",
+      "created_at": "2023-02-11T07:24:21.000Z",
+      "updated_at": "2023-02-11T07:32:44.030Z",
+      "monitoring_at": "2023-02-11T07:32:44.018Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/srmbbsp5n1hx",
+      "started_at": "2023-02-11T07:24:21.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "6b48771prmjw",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "hv65p4x7cjr1",
+          "created_at": "2023-02-11T07:32:44.018Z",
+          "updated_at": "2023-02-11T07:32:44.018Z",
+          "display_at": "2023-02-11T07:32:44.018Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "kk824vvm26pt",
+          "status": "investigating",
+          "body": "Cloudflare is investigating availability issues with Cloudflare Workers in China. \n\nVisitors may encounter errors when attempting to load a site with Cloudflare Workers enabled.\n\nThis issue does not affect any other Cloudflare services.\n\nWe are working to mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "hv65p4x7cjr1",
+          "created_at": "2023-02-11T07:24:21.702Z",
+          "updated_at": "2023-02-11T07:25:34.233Z",
+          "display_at": "2023-02-11T07:24:21.000Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2023-02-11T07:24:21.656Z",
+          "position": 9,
+          "description": "Cloudflare's JavaScript and WebAssembly execution service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "22mf6qcl61cn",
