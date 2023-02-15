@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-15T11:43:00.845Z"
+    "updated_at": "2023-02-15T12:14:25.124Z"
   },
   "components": [
     {
@@ -178,7 +178,7 @@
       "name": "Accra, Ghana - (ACC)",
       "status": "partial_outage",
       "created_at": "2022-02-11T11:46:37.349Z",
-      "updated_at": "2023-02-15T08:10:32.145Z",
+      "updated_at": "2023-02-15T12:13:03.255Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2385,9 +2385,9 @@
     {
       "id": "2fy0n0pw01nm",
       "name": "Fortaleza, Brazil - (FOR)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-04-01T15:16:43.011Z",
-      "updated_at": "2023-02-15T06:06:33.858Z",
+      "updated_at": "2023-02-15T12:13:02.946Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -2850,9 +2850,9 @@
     {
       "id": "mvbjk0vw3krv",
       "name": "Miami, FL, United States - (MIA)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2014-10-27T20:31:43.401Z",
-      "updated_at": "2023-02-15T09:27:57.465Z",
+      "updated_at": "2023-02-15T11:57:34.758Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -5730,6 +5730,105 @@
   ],
   "incidents": [
     {
+      "id": "ybhdllm083xs",
+      "name": "Cloudflare Tunnel, IPSec and Magic WAN Availability Issues",
+      "status": "monitoring",
+      "created_at": "2023-02-15T10:54:42.783Z",
+      "updated_at": "2023-02-15T12:14:25.122Z",
+      "monitoring_at": "2023-02-15T12:14:25.106Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/ks8lwjhp8wy8",
+      "started_at": "2023-02-15T10:54:42.775Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "xjjpnv96yldw",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "ybhdllm083xs",
+          "created_at": "2023-02-15T12:14:25.106Z",
+          "updated_at": "2023-02-15T12:14:25.106Z",
+          "display_at": "2023-02-15T12:14:25.106Z",
+          "affected_components": [
+            {
+              "code": "y98zlwj1d7zh",
+              "name": "Cloudflare Sites and Services - Tunnel",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Magic WAN",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "93jmv3rb60wr",
+          "status": "investigating",
+          "body": "Cloudflare Tunnels, IPSec Tunnels and Magic WAN are experiencing lag in new connections established to Cloudflare Global Network. Existing connections will be working fine, but new ones will not work.\n\nWe are working to mitigate this problem. More updates to follow shortly.",
+          "incident_id": "ybhdllm083xs",
+          "created_at": "2023-02-15T10:54:42.878Z",
+          "updated_at": "2023-02-15T10:54:42.878Z",
+          "display_at": "2023-02-15T10:54:42.878Z",
+          "affected_components": [
+            {
+              "code": "y98zlwj1d7zh",
+              "name": "Cloudflare Sites and Services - Tunnel",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Magic WAN",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "y98zlwj1d7zh",
+          "name": "Tunnel",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:28:05.466Z",
+          "updated_at": "2023-02-15T10:54:42.816Z",
+          "position": 16,
+          "description": "Cloudflare's encrypted origin server tunnel service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qgnxz00j1f2v",
+          "name": "Magic WAN",
+          "status": "degraded_performance",
+          "created_at": "2022-12-22T09:51:36.130Z",
+          "updated_at": "2023-02-15T10:54:42.833Z",
+          "position": 53,
+          "description": "Magic WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
+          "showcase": false,
+          "start_date": "2022-12-22",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "k3249mmr5n7h",
       "name": "Unexpected rate limiting errors",
       "status": "identified",
@@ -5814,79 +5913,6 @@
           "description": null,
           "showcase": false,
           "start_date": "2020-09-04",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
-    {
-      "id": "ybhdllm083xs",
-      "name": "Cloudflare Tunnel, IPSec and Magic WAN Availability Issues",
-      "status": "investigating",
-      "created_at": "2023-02-15T10:54:42.783Z",
-      "updated_at": "2023-02-15T10:54:42.880Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/ks8lwjhp8wy8",
-      "started_at": "2023-02-15T10:54:42.775Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "93jmv3rb60wr",
-          "status": "investigating",
-          "body": "Cloudflare Tunnels, IPSec Tunnels and Magic WAN are experiencing lag in new connections established to Cloudflare Global Network. Existing connections will be working fine, but new ones will not work.\n\nWe are working to mitigate this problem. More updates to follow shortly.",
-          "incident_id": "ybhdllm083xs",
-          "created_at": "2023-02-15T10:54:42.878Z",
-          "updated_at": "2023-02-15T10:54:42.878Z",
-          "display_at": "2023-02-15T10:54:42.878Z",
-          "affected_components": [
-            {
-              "code": "y98zlwj1d7zh",
-              "name": "Cloudflare Sites and Services - Tunnel",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "qgnxz00j1f2v",
-              "name": "Cloudflare Sites and Services - Magic WAN",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "y98zlwj1d7zh",
-          "name": "Tunnel",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:28:05.466Z",
-          "updated_at": "2023-02-15T10:54:42.816Z",
-          "position": 16,
-          "description": "Cloudflare's encrypted origin server tunnel service",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "qgnxz00j1f2v",
-          "name": "Magic WAN",
-          "status": "degraded_performance",
-          "created_at": "2022-12-22T09:51:36.130Z",
-          "updated_at": "2023-02-15T10:54:42.833Z",
-          "position": 53,
-          "description": "Magic WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
-          "showcase": false,
-          "start_date": "2022-12-22",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -6773,86 +6799,6 @@
       ],
       "scheduled_for": "2023-03-02T08:00:00.000Z",
       "scheduled_until": "2023-03-02T10:00:00.000Z"
-    },
-    {
-      "id": "t8k8vzrw4p0x",
-      "name": "ORD (Chicago) on 2023-02-15",
-      "status": "in_progress",
-      "created_at": "2023-02-07T18:00:23.671Z",
-      "updated_at": "2023-02-15T09:30:06.869Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/zjw3jb5tk3qd",
-      "started_at": "2023-02-07T18:00:23.663Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "dvbdpbd65zrs",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "t8k8vzrw4p0x",
-          "created_at": "2023-02-15T09:30:06.865Z",
-          "updated_at": "2023-02-15T09:30:06.865Z",
-          "display_at": "2023-02-15T09:30:06.865Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "k2xbtw34q4qg",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "t8k8vzrw4p0x",
-          "created_at": "2023-02-15T08:29:57.631Z",
-          "updated_at": "2023-02-15T08:29:57.631Z",
-          "display_at": "2023-02-15T08:29:57.631Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "d4jyplwls6kq",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ORD (Chicago) datacenter on 2023-02-15 between 09:30 and 12:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "t8k8vzrw4p0x",
-          "created_at": "2023-02-07T18:00:23.725Z",
-          "updated_at": "2023-02-07T18:00:23.725Z",
-          "display_at": "2023-02-07T18:00:23.725Z",
-          "affected_components": [
-            {
-              "code": "z9v8znl25w0f",
-              "name": "North America - Chicago, IL, United States - (ORD)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "z9v8znl25w0f",
-          "name": "Chicago, IL, United States - (ORD)",
-          "status": "operational",
-          "created_at": "2014-10-27T19:57:04.863Z",
-          "updated_at": "2023-02-14T19:25:45.090Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-02-15T09:30:00.000Z",
-      "scheduled_until": "2023-02-15T12:00:00.000Z"
     }
   ],
   "status": {
