@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-16T23:13:10.644Z"
+    "updated_at": "2023-02-17T01:21:45.987Z"
   },
   "components": [
     {
@@ -1890,9 +1890,9 @@
     {
       "id": "ltrzj6s2hx78",
       "name": "Concepción, Chile   - (CCP)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-08-26T18:43:17.574Z",
-      "updated_at": "2023-02-15T20:17:50.824Z",
+      "updated_at": "2023-02-17T01:21:45.984Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -2807,7 +2807,7 @@
       "name": "CDN/Cache",
       "status": "degraded_performance",
       "created_at": "2020-03-25T19:03:33.850Z",
-      "updated_at": "2023-02-14T20:25:06.345Z",
+      "updated_at": "2023-02-17T00:24:07.069Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -3645,9 +3645,9 @@
     {
       "id": "32xn25hmmkbf",
       "name": "Port-Au-Prince, Haiti - (PAP)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-07-10T03:51:16.837Z",
-      "updated_at": "2023-01-25T08:57:46.285Z",
+      "updated_at": "2023-02-17T01:11:29.084Z",
       "position": 32,
       "description": null,
       "showcase": false,
@@ -4725,9 +4725,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2023-02-15T19:50:47.593Z",
+      "updated_at": "2023-02-17T00:24:07.081Z",
       "position": 46,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -5730,6 +5730,105 @@
   ],
   "incidents": [
     {
+      "id": "gx3897cpcrm7",
+      "name": "Reduced availability for R2, Durable Objects and Cache Reserve",
+      "status": "investigating",
+      "created_at": "2023-02-17T00:18:21.118Z",
+      "updated_at": "2023-02-17T00:24:07.115Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/6wg6b8k2wz6y",
+      "started_at": "2023-02-17T00:18:21.109Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "nv7p4kptkd7g",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "gx3897cpcrm7",
+          "created_at": "2023-02-17T00:24:07.113Z",
+          "updated_at": "2023-02-17T00:24:07.113Z",
+          "display_at": "2023-02-17T00:24:07.113Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ql04n0cdtnll",
+          "status": "investigating",
+          "body": "Reduced availability for R2, Durable Objects and Cache Reserve",
+          "incident_id": "gx3897cpcrm7",
+          "created_at": "2023-02-17T00:18:21.204Z",
+          "updated_at": "2023-02-17T00:18:21.204Z",
+          "display_at": "2023-02-17T00:18:21.204Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5wnz34mhfhrk",
+          "name": "CDN/Cache",
+          "status": "degraded_performance",
+          "created_at": "2020-03-25T19:03:33.850Z",
+          "updated_at": "2023-02-17T00:24:07.069Z",
+          "position": 21,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2023-02-17T00:24:07.081Z",
+          "position": 46,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "q7sc4qf131pp",
       "name": "Investigating Cache Reserve Expiry Issues",
       "status": "identified",
@@ -5829,7 +5928,7 @@
           "name": "CDN/Cache",
           "status": "degraded_performance",
           "created_at": "2020-03-25T19:03:33.850Z",
-          "updated_at": "2023-02-14T20:25:06.345Z",
+          "updated_at": "2023-02-17T00:24:07.069Z",
           "position": 21,
           "description": null,
           "showcase": false,
@@ -5843,60 +5942,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "8y82h7ylr3pp",
-      "name": "LOS (Lagos) on 2023-02-17",
-      "status": "scheduled",
-      "created_at": "2023-02-16T09:40:14.890Z",
-      "updated_at": "2023-02-16T09:40:14.972Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/q0tmgnwxqpbx",
-      "started_at": "2023-02-16T09:40:14.884Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "3fqgbq0m5j2c",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LOS (Lagos) datacenter on 2023-02-17 between 01:00 and 04:05 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "8y82h7ylr3pp",
-          "created_at": "2023-02-16T09:40:14.970Z",
-          "updated_at": "2023-02-16T09:40:14.970Z",
-          "display_at": "2023-02-16T09:40:14.970Z",
-          "affected_components": [
-            {
-              "code": "rq86nd41r4t4",
-              "name": "Africa - Lagos, Nigeria - (LOS)",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rq86nd41r4t4",
-          "name": "Lagos, Nigeria - (LOS)",
-          "status": "partial_outage",
-          "created_at": "2018-10-31T23:12:02.203Z",
-          "updated_at": "2023-02-16T09:44:41.345Z",
-          "position": 14,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "00gpj4s37mz4",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-02-17T01:00:00.000Z",
-      "scheduled_until": "2023-02-17T04:05:00.000Z"
-    },
     {
       "id": "ltpzh2dlcfbs",
       "name": "LAX (Los Angeles) on 2023-02-17",
@@ -6628,6 +6673,86 @@
       ],
       "scheduled_for": "2023-03-02T08:00:00.000Z",
       "scheduled_until": "2023-03-02T10:00:00.000Z"
+    },
+    {
+      "id": "8y82h7ylr3pp",
+      "name": "LOS (Lagos) on 2023-02-17",
+      "status": "in_progress",
+      "created_at": "2023-02-16T09:40:14.890Z",
+      "updated_at": "2023-02-17T01:00:29.133Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/q0tmgnwxqpbx",
+      "started_at": "2023-02-16T09:40:14.884Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "gq0w6krkd657",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "8y82h7ylr3pp",
+          "created_at": "2023-02-17T01:00:29.129Z",
+          "updated_at": "2023-02-17T01:00:29.129Z",
+          "display_at": "2023-02-17T01:00:29.129Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "361wcq1zlt4g",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "8y82h7ylr3pp",
+          "created_at": "2023-02-17T00:00:05.061Z",
+          "updated_at": "2023-02-17T00:00:05.061Z",
+          "display_at": "2023-02-17T00:00:05.061Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3fqgbq0m5j2c",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LOS (Lagos) datacenter on 2023-02-17 between 01:00 and 04:05 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "8y82h7ylr3pp",
+          "created_at": "2023-02-16T09:40:14.970Z",
+          "updated_at": "2023-02-16T09:40:14.970Z",
+          "display_at": "2023-02-16T09:40:14.970Z",
+          "affected_components": [
+            {
+              "code": "rq86nd41r4t4",
+              "name": "Africa - Lagos, Nigeria - (LOS)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rq86nd41r4t4",
+          "name": "Lagos, Nigeria - (LOS)",
+          "status": "partial_outage",
+          "created_at": "2018-10-31T23:12:02.203Z",
+          "updated_at": "2023-02-16T09:44:41.345Z",
+          "position": 14,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "00gpj4s37mz4",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-02-17T01:00:00.000Z",
+      "scheduled_until": "2023-02-17T04:05:00.000Z"
     }
   ],
   "status": {
