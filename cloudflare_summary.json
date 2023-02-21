@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-21T06:20:44.909Z"
+    "updated_at": "2023-02-21T06:41:22.353Z"
   },
   "components": [
     {
@@ -55,7 +55,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "major_outage",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -125,7 +125,8 @@
         "4n0gb0kh02gf",
         "8qwmwg7ytljv",
         "m4jywscr0n0k",
-        "h2p0jj4ltvcq"
+        "h2p0jj4ltvcq",
+        "7yyjz9qdsjbx"
       ]
     },
     {
@@ -1965,9 +1966,9 @@
     {
       "id": "47xg28c02lnk",
       "name": "Stream",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:53:34.953Z",
-      "updated_at": "2023-01-31T06:51:33.390Z",
+      "updated_at": "2023-02-21T06:38:57.431Z",
       "position": 13,
       "description": "Cloudflare's on-demand end-to-end CDN video streaming service",
       "showcase": false,
@@ -5413,6 +5414,21 @@
       "only_show_if_degraded": false
     },
     {
+      "id": "7yyjz9qdsjbx",
+      "name": "Ethereum Gateway",
+      "status": "major_outage",
+      "created_at": "2023-02-21T06:27:24.516Z",
+      "updated_at": "2023-02-21T06:38:57.451Z",
+      "position": 61,
+      "description": "https://developers.cloudflare.com/web3/ethereum-gateway/",
+      "showcase": true,
+      "start_date": "2023-02-21",
+      "group_id": "1km35smx8p41",
+      "page_id": "yh6f0r4529hb",
+      "group": false,
+      "only_show_if_degraded": false
+    },
+    {
       "id": "3txd44719yr9",
       "name": "Tashkent, Uzbekistan - (TAS)",
       "status": "partial_outage",
@@ -5730,32 +5746,44 @@
   ],
   "incidents": [
     {
-      "id": "9c750qb0g9zv",
-      "name": "SSL pipeline delays for TLS configuration changes and Universal SSL order delays",
+      "id": "tjy4cvybppzd",
+      "name": "Investigating availability issues for multiple products",
       "status": "investigating",
-      "created_at": "2023-02-21T06:05:57.815Z",
-      "updated_at": "2023-02-21T06:05:57.948Z",
+      "created_at": "2023-02-21T06:38:57.386Z",
+      "updated_at": "2023-02-21T06:38:57.510Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/x1965r8wt5kt",
-      "started_at": "2023-02-21T06:05:57.804Z",
+      "impact": "major",
+      "shortlink": "https://stspg.io/3pb2njjpq75d",
+      "started_at": "2023-02-21T06:38:57.375Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "7vw8v8rdp7sp",
+          "id": "gq0cb8llwfsy",
           "status": "investigating",
-          "body": "Cloudflare is investigating SSL pipeline delays for TLS settings changes and Universal SSL order delays.\n\nSSL certificates and existing TLS settings already in production at the edge remain unaffected and are operating normally.",
-          "incident_id": "9c750qb0g9zv",
-          "created_at": "2023-02-21T06:05:57.944Z",
-          "updated_at": "2023-02-21T06:05:57.944Z",
-          "display_at": "2023-02-21T06:05:57.944Z",
+          "body": "We are currently investigating an issue impacting multiple products.",
+          "incident_id": "tjy4cvybppzd",
+          "created_at": "2023-02-21T06:38:57.507Z",
+          "updated_at": "2023-02-21T06:38:57.507Z",
+          "display_at": "2023-02-21T06:38:57.507Z",
           "affected_components": [
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
             {
               "code": "cghykwlwsmn5",
               "name": "Cloudflare Sites and Services - SSL Certificate Provisioning",
-              "old_status": "operational",
+              "old_status": "degraded_performance",
               "new_status": "degraded_performance"
+            },
+            {
+              "code": "7yyjz9qdsjbx",
+              "name": "Cloudflare Sites and Services - Ethereum Gateway",
+              "old_status": "operational",
+              "new_status": "major_outage"
             }
           ],
           "deliver_notifications": true,
@@ -5764,6 +5792,21 @@
         }
       ],
       "components": [
+        {
+          "id": "47xg28c02lnk",
+          "name": "Stream",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:53:34.953Z",
+          "updated_at": "2023-02-21T06:38:57.431Z",
+          "position": 13,
+          "description": "Cloudflare's on-demand end-to-end CDN video streaming service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
         {
           "id": "cghykwlwsmn5",
           "name": "SSL Certificate Provisioning",
@@ -5774,6 +5817,21 @@
           "description": "Cloudflare's SSL certificate provisioning service (Universal and Dedicated SSL)",
           "showcase": false,
           "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7yyjz9qdsjbx",
+          "name": "Ethereum Gateway",
+          "status": "major_outage",
+          "created_at": "2023-02-21T06:27:24.516Z",
+          "updated_at": "2023-02-21T06:38:57.451Z",
+          "position": 61,
+          "description": "https://developers.cloudflare.com/web3/ethereum-gateway/",
+          "showcase": true,
+          "start_date": "2023-02-21",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -7057,7 +7115,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "major",
+    "description": "Partial System Outage"
   }
 }
