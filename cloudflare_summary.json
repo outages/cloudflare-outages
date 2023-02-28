@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-28T16:43:10.425Z"
+    "updated_at": "2023-02-28T17:00:19.847Z"
   },
   "components": [
     {
@@ -4397,9 +4397,9 @@
     {
       "id": "tjzqsc1nvdxt",
       "name": "St. George's, Grenada - (GND)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-12-10T00:17:42.014Z",
-      "updated_at": "2023-02-28T16:04:06.742Z",
+      "updated_at": "2023-02-28T16:55:25.778Z",
       "position": 42,
       "description": null,
       "showcase": false,
@@ -5762,6 +5762,120 @@
   ],
   "incidents": [
     {
+      "id": "jbzt5k67sb65",
+      "name": "Increased Latency in retrieving Objects from R2",
+      "status": "monitoring",
+      "created_at": "2023-02-28T16:37:24.844Z",
+      "updated_at": "2023-02-28T16:59:51.675Z",
+      "monitoring_at": "2023-02-28T16:59:51.659Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/fvppj3n8jq1y",
+      "started_at": "2023-02-28T16:37:24.836Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "fytnkhskzpqh",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "jbzt5k67sb65",
+          "created_at": "2023-02-28T16:59:51.659Z",
+          "updated_at": "2023-02-28T16:59:51.659Z",
+          "display_at": "2023-02-28T16:59:51.659Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "r7l06q0x330c",
+          "status": "investigating",
+          "body": "Some customers attempting to retrieve objects from R2 may experience increased latency. We are currently investigating.",
+          "incident_id": "jbzt5k67sb65",
+          "created_at": "2023-02-28T16:37:24.941Z",
+          "updated_at": "2023-02-28T16:37:24.941Z",
+          "display_at": "2023-02-28T16:37:24.941Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2023-02-28T16:37:24.880Z",
+          "position": 46,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
+      "id": "2rfr4k8b7gcs",
+      "name": "Turnstile elevated 5xx errors",
+      "status": "monitoring",
+      "created_at": "2023-02-28T16:33:41.000Z",
+      "updated_at": "2023-02-28T16:57:29.889Z",
+      "monitoring_at": "2023-02-28T16:57:29.877Z",
+      "resolved_at": null,
+      "impact": "none",
+      "shortlink": "https://stspg.io/q8hgf4sh1w5f",
+      "started_at": "2023-02-28T16:33:41.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "xglj7wdfgskn",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "2rfr4k8b7gcs",
+          "created_at": "2023-02-28T16:57:29.877Z",
+          "updated_at": "2023-02-28T16:57:29.877Z",
+          "display_at": "2023-02-28T16:57:29.877Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "wh3cpcpld270",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue that started at 15:48 UTC, regarding Turnstile running in a degraded state. Embedded Turnstile widgets on websites and on our interstitial Managed Challenge pages are affected.\nFurther detail will be provided as more information becomes available.",
+          "incident_id": "2rfr4k8b7gcs",
+          "created_at": "2023-02-28T16:33:41.275Z",
+          "updated_at": "2023-02-28T16:34:54.013Z",
+          "display_at": "2023-02-28T16:33:41.000Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    },
+    {
       "id": "cx215c2tx7yw",
       "name": "Cloudflare Workers Issues",
       "status": "investigating",
@@ -5812,148 +5926,34 @@
           "only_show_if_degraded": false
         }
       ]
-    },
-    {
-      "id": "jbzt5k67sb65",
-      "name": "Increased Latency in retrieving Objects from R2",
-      "status": "investigating",
-      "created_at": "2023-02-28T16:37:24.844Z",
-      "updated_at": "2023-02-28T16:37:24.944Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/fvppj3n8jq1y",
-      "started_at": "2023-02-28T16:37:24.836Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "r7l06q0x330c",
-          "status": "investigating",
-          "body": "Some customers attempting to retrieve objects from R2 may experience increased latency. We are currently investigating.",
-          "incident_id": "jbzt5k67sb65",
-          "created_at": "2023-02-28T16:37:24.941Z",
-          "updated_at": "2023-02-28T16:37:24.941Z",
-          "display_at": "2023-02-28T16:37:24.941Z",
-          "affected_components": [
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hb7g5sq2zz0h",
-          "name": "R2",
-          "status": "degraded_performance",
-          "created_at": "2022-07-05T10:55:24.503Z",
-          "updated_at": "2023-02-28T16:37:24.880Z",
-          "position": 46,
-          "description": "High-performance storage for files and objects with zero egress charges",
-          "showcase": false,
-          "start_date": "2022-07-05",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
-    {
-      "id": "2rfr4k8b7gcs",
-      "name": "Turnstile elevated 5xx errors",
-      "status": "investigating",
-      "created_at": "2023-02-28T16:33:41.232Z",
-      "updated_at": "2023-02-28T16:34:54.017Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "none",
-      "shortlink": "https://stspg.io/q8hgf4sh1w5f",
-      "started_at": "2023-02-28T16:33:41.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "wh3cpcpld270",
-          "status": "investigating",
-          "body": "Cloudflare is investigating an issue that started at 15:48 UTC, regarding Turnstile running in a degraded state. Embedded Turnstile widgets on websites and on our interstitial Managed Challenge pages are affected.\nFurther detail will be provided as more information becomes available.",
-          "incident_id": "2rfr4k8b7gcs",
-          "created_at": "2023-02-28T16:33:41.275Z",
-          "updated_at": "2023-02-28T16:34:54.013Z",
-          "display_at": "2023-02-28T16:33:41.000Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": []
     }
   ],
   "scheduled_maintenances": [
     {
-      "id": "51yrkd3t617k",
-      "name": "SJC (San Jose) on 2023-02-28",
+      "id": "8wlpjtn475d6",
+      "name": "DUS (Düsseldorf) on 2023-03-01",
       "status": "scheduled",
-      "created_at": "2023-02-23T19:20:49.460Z",
-      "updated_at": "2023-02-28T15:59:58.981Z",
+      "created_at": "2023-02-22T15:20:48.929Z",
+      "updated_at": "2023-02-22T15:20:49.030Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/tmvzsdcpm6cg",
-      "started_at": "2023-02-23T19:20:49.453Z",
+      "shortlink": "https://stspg.io/w7b8ns7qt5jm",
+      "started_at": "2023-02-22T15:20:48.920Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "f3l8gxqz8sns",
+          "id": "ryh7whsc2rf8",
           "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "51yrkd3t617k",
-          "created_at": "2023-02-28T15:59:58.874Z",
-          "updated_at": "2023-02-28T15:59:58.874Z",
-          "display_at": "2023-02-28T15:59:58.874Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "fcsl8gt93xtx",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SJC (San Jose) datacenter between 2023-02-28 17:00 and 2023-03-01 02:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "51yrkd3t617k",
-          "created_at": "2023-02-28T07:20:32.021Z",
-          "updated_at": "2023-02-28T07:20:32.021Z",
-          "display_at": "2023-02-28T07:20:32.021Z",
+          "body": "We will be performing scheduled maintenance in DUS (Düsseldorf) datacenter on 2023-03-01 between 00:00 and 07:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "8wlpjtn475d6",
+          "created_at": "2023-02-22T15:20:49.026Z",
+          "updated_at": "2023-02-22T15:20:49.026Z",
+          "display_at": "2023-02-22T15:20:49.026Z",
           "affected_components": [
             {
-              "code": "4xvd68d7k70c",
-              "name": "North America - San Jose, CA, United States - (SJC)",
-              "old_status": "under_maintenance",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "v1g9dk1mrxzr",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SJC (San Jose) datacenter between 2023-02-28 16:30 and 2023-03-01 02:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "51yrkd3t617k",
-          "created_at": "2023-02-23T19:20:49.544Z",
-          "updated_at": "2023-02-23T19:20:49.544Z",
-          "display_at": "2023-02-23T19:20:49.544Z",
-          "affected_components": [
-            {
-              "code": "4xvd68d7k70c",
-              "name": "North America - San Jose, CA, United States - (SJC)",
+              "code": "7h95kvc52rn6",
+              "name": "Europe - Düsseldorf, Germany - (DUS)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -5965,23 +5965,23 @@
       ],
       "components": [
         {
-          "id": "4xvd68d7k70c",
-          "name": "San Jose, CA, United States - (SJC)",
-          "status": "under_maintenance",
-          "created_at": "2014-10-16T04:33:22.992Z",
-          "updated_at": "2023-02-28T07:21:04.036Z",
-          "position": 40,
+          "id": "7h95kvc52rn6",
+          "name": "Düsseldorf, Germany - (DUS)",
+          "status": "partial_outage",
+          "created_at": "2015-03-05T01:45:25.931Z",
+          "updated_at": "2023-02-28T00:10:32.792Z",
+          "position": 14,
           "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "4l01sk5cdn5c",
+          "group_id": "zqxhg7y54vy8",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-02-28T17:00:00.000Z",
-      "scheduled_until": "2023-03-01T02:30:00.000Z"
+      "scheduled_for": "2023-03-01T00:00:00.000Z",
+      "scheduled_until": "2023-03-01T07:00:00.000Z"
     },
     {
       "id": "0khkdrp2822y",
@@ -6056,60 +6056,6 @@
       ],
       "scheduled_for": "2023-03-01T00:00:00.000Z",
       "scheduled_until": "2023-03-01T10:00:00.000Z"
-    },
-    {
-      "id": "8wlpjtn475d6",
-      "name": "DUS (Düsseldorf) on 2023-03-01",
-      "status": "scheduled",
-      "created_at": "2023-02-22T15:20:48.929Z",
-      "updated_at": "2023-02-22T15:20:49.030Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/w7b8ns7qt5jm",
-      "started_at": "2023-02-22T15:20:48.920Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "ryh7whsc2rf8",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DUS (Düsseldorf) datacenter on 2023-03-01 between 00:00 and 07:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "8wlpjtn475d6",
-          "created_at": "2023-02-22T15:20:49.026Z",
-          "updated_at": "2023-02-22T15:20:49.026Z",
-          "display_at": "2023-02-22T15:20:49.026Z",
-          "affected_components": [
-            {
-              "code": "7h95kvc52rn6",
-              "name": "Europe - Düsseldorf, Germany - (DUS)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7h95kvc52rn6",
-          "name": "Düsseldorf, Germany - (DUS)",
-          "status": "partial_outage",
-          "created_at": "2015-03-05T01:45:25.931Z",
-          "updated_at": "2023-02-28T00:10:32.792Z",
-          "position": 14,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-01T00:00:00.000Z",
-      "scheduled_until": "2023-03-01T07:00:00.000Z"
     },
     {
       "id": "yd1q5j3zv6xf",
@@ -6598,114 +6544,6 @@
       "scheduled_until": "2023-03-01T23:00:00.000Z"
     },
     {
-      "id": "hpc1rjjrdtbm",
-      "name": "JNB (Johannesburg) on 2023-03-02",
-      "status": "scheduled",
-      "created_at": "2023-02-28T05:40:29.398Z",
-      "updated_at": "2023-02-28T05:40:29.455Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/dm12g26jtctl",
-      "started_at": "2023-02-28T05:40:29.391Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "yk4s3p9m4g1k",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in JNB (Johannesburg) datacenter on 2023-03-02 between 01:00 and 03:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "hpc1rjjrdtbm",
-          "created_at": "2023-02-28T05:40:29.453Z",
-          "updated_at": "2023-02-28T05:40:29.453Z",
-          "display_at": "2023-02-28T05:40:29.453Z",
-          "affected_components": [
-            {
-              "code": "2661q193p08w",
-              "name": "Africa - Johannesburg, South Africa - (JNB)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "2661q193p08w",
-          "name": "Johannesburg, South Africa - (JNB)",
-          "status": "partial_outage",
-          "created_at": "2014-12-04T20:38:08.839Z",
-          "updated_at": "2023-02-28T15:02:34.062Z",
-          "position": 12,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "00gpj4s37mz4",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-02T01:00:00.000Z",
-      "scheduled_until": "2023-03-02T03:30:00.000Z"
-    },
-    {
-      "id": "ccwm9qchlbqh",
-      "name": "AMS (Amsterdam) on 2023-03-02",
-      "status": "scheduled",
-      "created_at": "2023-02-28T07:40:32.148Z",
-      "updated_at": "2023-02-28T07:40:32.244Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/slwcs74cqqf0",
-      "started_at": "2023-02-28T07:40:32.139Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "r19bm65tbzq0",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in AMS (Amsterdam) datacenter on 2023-03-02 between 01:00 and 04:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "ccwm9qchlbqh",
-          "created_at": "2023-02-28T07:40:32.240Z",
-          "updated_at": "2023-02-28T07:40:32.240Z",
-          "display_at": "2023-02-28T07:40:32.240Z",
-          "affected_components": [
-            {
-              "code": "57ctn3f2qsyj",
-              "name": "Europe - Amsterdam, Netherlands - (AMS)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "57ctn3f2qsyj",
-          "name": "Amsterdam, Netherlands - (AMS)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:35:05.259Z",
-          "updated_at": "2023-02-24T12:34:26.982Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-02T01:00:00.000Z",
-      "scheduled_until": "2023-03-02T04:00:00.000Z"
-    },
-    {
       "id": "nqx5l2z73gcq",
       "name": "MRS (Marseille) on 2023-03-02",
       "status": "scheduled",
@@ -6812,6 +6650,114 @@
       ],
       "scheduled_for": "2023-03-02T01:00:00.000Z",
       "scheduled_until": "2023-03-02T04:00:00.000Z"
+    },
+    {
+      "id": "ccwm9qchlbqh",
+      "name": "AMS (Amsterdam) on 2023-03-02",
+      "status": "scheduled",
+      "created_at": "2023-02-28T07:40:32.148Z",
+      "updated_at": "2023-02-28T07:40:32.244Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/slwcs74cqqf0",
+      "started_at": "2023-02-28T07:40:32.139Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "r19bm65tbzq0",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in AMS (Amsterdam) datacenter on 2023-03-02 between 01:00 and 04:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "ccwm9qchlbqh",
+          "created_at": "2023-02-28T07:40:32.240Z",
+          "updated_at": "2023-02-28T07:40:32.240Z",
+          "display_at": "2023-02-28T07:40:32.240Z",
+          "affected_components": [
+            {
+              "code": "57ctn3f2qsyj",
+              "name": "Europe - Amsterdam, Netherlands - (AMS)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57ctn3f2qsyj",
+          "name": "Amsterdam, Netherlands - (AMS)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:35:05.259Z",
+          "updated_at": "2023-02-24T12:34:26.982Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-02T01:00:00.000Z",
+      "scheduled_until": "2023-03-02T04:00:00.000Z"
+    },
+    {
+      "id": "hpc1rjjrdtbm",
+      "name": "JNB (Johannesburg) on 2023-03-02",
+      "status": "scheduled",
+      "created_at": "2023-02-28T05:40:29.398Z",
+      "updated_at": "2023-02-28T05:40:29.455Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/dm12g26jtctl",
+      "started_at": "2023-02-28T05:40:29.391Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "yk4s3p9m4g1k",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in JNB (Johannesburg) datacenter on 2023-03-02 between 01:00 and 03:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "hpc1rjjrdtbm",
+          "created_at": "2023-02-28T05:40:29.453Z",
+          "updated_at": "2023-02-28T05:40:29.453Z",
+          "display_at": "2023-02-28T05:40:29.453Z",
+          "affected_components": [
+            {
+              "code": "2661q193p08w",
+              "name": "Africa - Johannesburg, South Africa - (JNB)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2661q193p08w",
+          "name": "Johannesburg, South Africa - (JNB)",
+          "status": "partial_outage",
+          "created_at": "2014-12-04T20:38:08.839Z",
+          "updated_at": "2023-02-28T15:02:34.062Z",
+          "position": 12,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "00gpj4s37mz4",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-02T01:00:00.000Z",
+      "scheduled_until": "2023-03-02T03:30:00.000Z"
     },
     {
       "id": "l4gjk0x5b2bh",
@@ -7619,6 +7565,106 @@
       ],
       "scheduled_for": "2023-03-09T10:30:00.000Z",
       "scheduled_until": "2023-03-09T13:00:00.000Z"
+    },
+    {
+      "id": "51yrkd3t617k",
+      "name": "SJC (San Jose) on 2023-02-28",
+      "status": "in_progress",
+      "created_at": "2023-02-23T19:20:49.460Z",
+      "updated_at": "2023-02-28T17:00:19.824Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/tmvzsdcpm6cg",
+      "started_at": "2023-02-23T19:20:49.453Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "6vxbwwg40ckn",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "51yrkd3t617k",
+          "created_at": "2023-02-28T17:00:19.819Z",
+          "updated_at": "2023-02-28T17:00:19.819Z",
+          "display_at": "2023-02-28T17:00:19.819Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "f3l8gxqz8sns",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "51yrkd3t617k",
+          "created_at": "2023-02-28T15:59:58.874Z",
+          "updated_at": "2023-02-28T15:59:58.874Z",
+          "display_at": "2023-02-28T15:59:58.874Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "fcsl8gt93xtx",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SJC (San Jose) datacenter between 2023-02-28 17:00 and 2023-03-01 02:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "51yrkd3t617k",
+          "created_at": "2023-02-28T07:20:32.021Z",
+          "updated_at": "2023-02-28T07:20:32.021Z",
+          "display_at": "2023-02-28T07:20:32.021Z",
+          "affected_components": [
+            {
+              "code": "4xvd68d7k70c",
+              "name": "North America - San Jose, CA, United States - (SJC)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "v1g9dk1mrxzr",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SJC (San Jose) datacenter between 2023-02-28 16:30 and 2023-03-01 02:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "51yrkd3t617k",
+          "created_at": "2023-02-23T19:20:49.544Z",
+          "updated_at": "2023-02-23T19:20:49.544Z",
+          "display_at": "2023-02-23T19:20:49.544Z",
+          "affected_components": [
+            {
+              "code": "4xvd68d7k70c",
+              "name": "North America - San Jose, CA, United States - (SJC)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4xvd68d7k70c",
+          "name": "San Jose, CA, United States - (SJC)",
+          "status": "under_maintenance",
+          "created_at": "2014-10-16T04:33:22.992Z",
+          "updated_at": "2023-02-28T07:21:04.036Z",
+          "position": 40,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-02-28T17:00:00.000Z",
+      "scheduled_until": "2023-03-01T02:30:00.000Z"
     }
   ],
   "status": {
