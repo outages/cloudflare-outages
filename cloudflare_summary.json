@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-28T17:31:19.880Z"
+    "updated_at": "2023-02-28T18:12:25.295Z"
   },
   "components": [
     {
@@ -777,9 +777,9 @@
     {
       "id": "5wtvzd626rd8",
       "name": "Bangkok, Thailand - (BKK)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-04-21T05:37:43.134Z",
-      "updated_at": "2023-02-28T15:28:12.495Z",
+      "updated_at": "2023-02-28T18:02:07.671Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -792,9 +792,9 @@
     {
       "id": "b9yrxv93hhrc",
       "name": "Calgary, AB, Canada - (YYC)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-03-15T19:43:31.836Z",
-      "updated_at": "2023-02-28T10:41:07.173Z",
+      "updated_at": "2023-02-28T18:12:25.291Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -4727,9 +4727,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2023-02-28T16:37:24.880Z",
+      "updated_at": "2023-02-28T17:56:57.887Z",
       "position": 46,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -5357,9 +5357,9 @@
     {
       "id": "18p6r93swmbl",
       "name": "Singapore, Singapore - (SIN)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-27T21:44:15.897Z",
-      "updated_at": "2023-02-16T08:58:27.784Z",
+      "updated_at": "2023-02-28T17:57:00.747Z",
       "position": 59,
       "description": null,
       "showcase": false,
@@ -5762,30 +5762,30 @@
   ],
   "incidents": [
     {
-      "id": "jbzt5k67sb65",
-      "name": "Increased Latency in retrieving Objects from R2",
-      "status": "monitoring",
-      "created_at": "2023-02-28T16:37:24.844Z",
-      "updated_at": "2023-02-28T16:59:51.675Z",
-      "monitoring_at": "2023-02-28T16:59:51.659Z",
+      "id": "cx215c2tx7yw",
+      "name": "Cloudflare Workers Issues",
+      "status": "identified",
+      "created_at": "2023-02-28T16:38:37.837Z",
+      "updated_at": "2023-02-28T18:01:06.692Z",
+      "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/fvppj3n8jq1y",
-      "started_at": "2023-02-28T16:37:24.836Z",
+      "shortlink": "https://stspg.io/2l4vcz73yw9q",
+      "started_at": "2023-02-28T16:38:37.829Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "fytnkhskzpqh",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "jbzt5k67sb65",
-          "created_at": "2023-02-28T16:59:51.659Z",
-          "updated_at": "2023-02-28T16:59:51.659Z",
-          "display_at": "2023-02-28T16:59:51.659Z",
+          "id": "mbzq46dxvf61",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "cx215c2tx7yw",
+          "created_at": "2023-02-28T18:01:06.689Z",
+          "updated_at": "2023-02-28T18:01:06.689Z",
+          "display_at": "2023-02-28T18:01:06.689Z",
           "affected_components": [
             {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
               "old_status": "degraded_performance",
               "new_status": "degraded_performance"
             }
@@ -5794,100 +5794,6 @@
           "custom_tweet": null,
           "tweet_id": null
         },
-        {
-          "id": "r7l06q0x330c",
-          "status": "investigating",
-          "body": "Some customers attempting to retrieve objects from R2 may experience increased latency. We are currently investigating.",
-          "incident_id": "jbzt5k67sb65",
-          "created_at": "2023-02-28T16:37:24.941Z",
-          "updated_at": "2023-02-28T16:37:24.941Z",
-          "display_at": "2023-02-28T16:37:24.941Z",
-          "affected_components": [
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hb7g5sq2zz0h",
-          "name": "R2",
-          "status": "degraded_performance",
-          "created_at": "2022-07-05T10:55:24.503Z",
-          "updated_at": "2023-02-28T16:37:24.880Z",
-          "position": 46,
-          "description": "High-performance storage for files and objects with zero egress charges",
-          "showcase": false,
-          "start_date": "2022-07-05",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
-    {
-      "id": "2rfr4k8b7gcs",
-      "name": "Turnstile elevated 5xx errors",
-      "status": "monitoring",
-      "created_at": "2023-02-28T16:33:41.000Z",
-      "updated_at": "2023-02-28T16:57:29.889Z",
-      "monitoring_at": "2023-02-28T16:57:29.877Z",
-      "resolved_at": null,
-      "impact": "none",
-      "shortlink": "https://stspg.io/q8hgf4sh1w5f",
-      "started_at": "2023-02-28T16:33:41.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "xglj7wdfgskn",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "2rfr4k8b7gcs",
-          "created_at": "2023-02-28T16:57:29.877Z",
-          "updated_at": "2023-02-28T16:57:29.877Z",
-          "display_at": "2023-02-28T16:57:29.877Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "wh3cpcpld270",
-          "status": "investigating",
-          "body": "Cloudflare is investigating an issue that started at 15:48 UTC, regarding Turnstile running in a degraded state. Embedded Turnstile widgets on websites and on our interstitial Managed Challenge pages are affected.\nFurther detail will be provided as more information becomes available.",
-          "incident_id": "2rfr4k8b7gcs",
-          "created_at": "2023-02-28T16:33:41.275Z",
-          "updated_at": "2023-02-28T16:34:54.013Z",
-          "display_at": "2023-02-28T16:33:41.000Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": []
-    },
-    {
-      "id": "cx215c2tx7yw",
-      "name": "Cloudflare Workers Issues",
-      "status": "investigating",
-      "created_at": "2023-02-28T16:38:37.837Z",
-      "updated_at": "2023-02-28T16:38:37.922Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/2l4vcz73yw9q",
-      "started_at": "2023-02-28T16:38:37.829Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
         {
           "id": "g2b4cz7vbzn7",
           "status": "investigating",
@@ -7205,9 +7111,9 @@
         {
           "id": "b9yrxv93hhrc",
           "name": "Calgary, AB, Canada - (YYC)",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2018-03-15T19:43:31.836Z",
-          "updated_at": "2023-02-28T10:41:07.173Z",
+          "updated_at": "2023-02-28T18:12:25.291Z",
           "position": 5,
           "description": null,
           "showcase": false,
