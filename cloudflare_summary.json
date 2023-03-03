@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-03T14:09:44.507Z"
+    "updated_at": "2023-03-03T14:29:24.492Z"
   },
   "components": [
     {
@@ -3137,9 +3137,9 @@
     {
       "id": "bnjvsmmllkb9",
       "name": "Lima, Peru - (LIM)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2014-12-03T20:29:25.140Z",
-      "updated_at": "2023-03-03T09:01:12.655Z",
+      "updated_at": "2023-03-03T14:20:20.467Z",
       "position": 25,
       "description": null,
       "showcase": false,
@@ -5764,9 +5764,9 @@
     {
       "id": "7c2b84cblqvd",
       "name": "Issues adding new zones to Cloudflare",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2023-03-03T14:09:44.439Z",
-      "updated_at": "2023-03-03T14:09:44.504Z",
+      "updated_at": "2023-03-03T14:29:24.483Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -5774,6 +5774,26 @@
       "started_at": "2023-03-03T14:09:44.430Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "4j5xmmmhk1rt",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "7c2b84cblqvd",
+          "created_at": "2023-03-03T14:29:24.481Z",
+          "updated_at": "2023-03-03T14:29:24.481Z",
+          "display_at": "2023-03-03T14:29:24.481Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "y7lln4lf78pc",
           "status": "investigating",
@@ -6326,60 +6346,6 @@
       "scheduled_until": "2023-03-07T04:00:00.000Z"
     },
     {
-      "id": "n73666nx1mmb",
-      "name": "MRS (Marseille) on 2023-03-07",
-      "status": "scheduled",
-      "created_at": "2023-03-03T06:40:13.122Z",
-      "updated_at": "2023-03-03T06:40:13.205Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/q8qmlkjyg243",
-      "started_at": "2023-03-03T06:40:13.115Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "p4lhvrm9wrqf",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MRS (Marseille) datacenter on 2023-03-07 between 01:00 and 06:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "n73666nx1mmb",
-          "created_at": "2023-03-03T06:40:13.202Z",
-          "updated_at": "2023-03-03T06:40:13.202Z",
-          "display_at": "2023-03-03T06:40:13.202Z",
-          "affected_components": [
-            {
-              "code": "3wk2ykcwwd76",
-              "name": "Europe - Marseille, France - (MRS)",
-              "old_status": "under_maintenance",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "3wk2ykcwwd76",
-          "name": "Marseille, France - (MRS)",
-          "status": "operational",
-          "created_at": "2015-07-06T20:57:52.190Z",
-          "updated_at": "2023-03-03T06:49:14.974Z",
-          "position": 29,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-07T01:00:00.000Z",
-      "scheduled_until": "2023-03-07T06:00:00.000Z"
-    },
-    {
       "id": "lpd4y11dd978",
       "name": "ALG (Algiers) on 2023-03-07",
       "status": "scheduled",
@@ -6432,6 +6398,60 @@
       ],
       "scheduled_for": "2023-03-07T01:00:00.000Z",
       "scheduled_until": "2023-03-07T03:05:00.000Z"
+    },
+    {
+      "id": "n73666nx1mmb",
+      "name": "MRS (Marseille) on 2023-03-07",
+      "status": "scheduled",
+      "created_at": "2023-03-03T06:40:13.122Z",
+      "updated_at": "2023-03-03T06:40:13.205Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/q8qmlkjyg243",
+      "started_at": "2023-03-03T06:40:13.115Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "p4lhvrm9wrqf",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MRS (Marseille) datacenter on 2023-03-07 between 01:00 and 06:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "n73666nx1mmb",
+          "created_at": "2023-03-03T06:40:13.202Z",
+          "updated_at": "2023-03-03T06:40:13.202Z",
+          "display_at": "2023-03-03T06:40:13.202Z",
+          "affected_components": [
+            {
+              "code": "3wk2ykcwwd76",
+              "name": "Europe - Marseille, France - (MRS)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3wk2ykcwwd76",
+          "name": "Marseille, France - (MRS)",
+          "status": "operational",
+          "created_at": "2015-07-06T20:57:52.190Z",
+          "updated_at": "2023-03-03T06:49:14.974Z",
+          "position": 29,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-07T01:00:00.000Z",
+      "scheduled_until": "2023-03-07T06:00:00.000Z"
     },
     {
       "id": "6yw63b4zdh4t",
@@ -6596,6 +6616,60 @@
       "scheduled_until": "2023-03-07T09:00:00.000Z"
     },
     {
+      "id": "w3qvjjdqx386",
+      "name": "MEX (Mexico City) on 2023-03-07",
+      "status": "scheduled",
+      "created_at": "2023-03-03T11:40:13.696Z",
+      "updated_at": "2023-03-03T11:40:13.794Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/fkw38hkvtm1p",
+      "started_at": "2023-03-03T11:40:13.686Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "0t25clwqltdd",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MEX (Mexico City) datacenter on 2023-03-07 between 09:00 and 11:20 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "w3qvjjdqx386",
+          "created_at": "2023-03-03T11:40:13.790Z",
+          "updated_at": "2023-03-03T11:40:13.790Z",
+          "display_at": "2023-03-03T11:40:13.790Z",
+          "affected_components": [
+            {
+              "code": "y3r9ft7k1mmw",
+              "name": "North America - Mexico City, Mexico - (MEX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "y3r9ft7k1mmw",
+          "name": "Mexico City, Mexico - (MEX)",
+          "status": "operational",
+          "created_at": "2018-04-02T02:10:52.729Z",
+          "updated_at": "2023-02-23T12:50:58.303Z",
+          "position": 21,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-07T09:00:00.000Z",
+      "scheduled_until": "2023-03-07T11:20:00.000Z"
+    },
+    {
       "id": "qqb0gfx4srd3",
       "name": "EZE (Buenos Aires) on 2023-03-07",
       "status": "scheduled",
@@ -6650,30 +6724,84 @@
       "scheduled_until": "2023-03-07T11:00:00.000Z"
     },
     {
-      "id": "w3qvjjdqx386",
-      "name": "MEX (Mexico City) on 2023-03-07",
+      "id": "03f6z0pk8krg",
+      "name": "LIM (Lima) on 2023-03-07",
       "status": "scheduled",
-      "created_at": "2023-03-03T11:40:13.696Z",
-      "updated_at": "2023-03-03T11:40:13.794Z",
+      "created_at": "2023-03-03T14:20:20.391Z",
+      "updated_at": "2023-03-03T14:20:20.524Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/fkw38hkvtm1p",
-      "started_at": "2023-03-03T11:40:13.686Z",
+      "shortlink": "https://stspg.io/n7v5cr1gwxg2",
+      "started_at": "2023-03-03T14:20:20.381Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "0t25clwqltdd",
+          "id": "shhhdzh70vtz",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MEX (Mexico City) datacenter on 2023-03-07 between 09:00 and 11:20 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "w3qvjjdqx386",
-          "created_at": "2023-03-03T11:40:13.790Z",
-          "updated_at": "2023-03-03T11:40:13.790Z",
-          "display_at": "2023-03-03T11:40:13.790Z",
+          "body": "We will be performing scheduled maintenance in LIM (Lima) datacenter on 2023-03-07 between 10:00 and 12:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "03f6z0pk8krg",
+          "created_at": "2023-03-03T14:20:20.520Z",
+          "updated_at": "2023-03-03T14:20:20.520Z",
+          "display_at": "2023-03-03T14:20:20.520Z",
           "affected_components": [
             {
-              "code": "y3r9ft7k1mmw",
-              "name": "North America - Mexico City, Mexico - (MEX)",
+              "code": "bnjvsmmllkb9",
+              "name": "Latin America & the Caribbean - Lima, Peru - (LIM)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bnjvsmmllkb9",
+          "name": "Lima, Peru - (LIM)",
+          "status": "operational",
+          "created_at": "2014-12-03T20:29:25.140Z",
+          "updated_at": "2023-03-03T14:20:20.467Z",
+          "position": 25,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-07T10:00:00.000Z",
+      "scheduled_until": "2023-03-07T12:00:00.000Z"
+    },
+    {
+      "id": "zbvmqzwx7b54",
+      "name": "FLN (Florianopolis) on 2023-03-07",
+      "status": "scheduled",
+      "created_at": "2023-03-03T14:20:19.543Z",
+      "updated_at": "2023-03-03T14:20:19.601Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/mmhplx5d5805",
+      "started_at": "2023-03-03T14:20:19.534Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "m3wj1p5hhwpp",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in FLN (Florianopolis) datacenter on 2023-03-07 between 10:00 and 12:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "zbvmqzwx7b54",
+          "created_at": "2023-03-03T14:20:19.599Z",
+          "updated_at": "2023-03-03T14:20:19.599Z",
+          "display_at": "2023-03-03T14:20:19.599Z",
+          "affected_components": [
+            {
+              "code": "4br57n5x6881",
+              "name": "Latin America & the Caribbean - Florianopolis, Brazil - (FLN)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -6685,23 +6813,23 @@
       ],
       "components": [
         {
-          "id": "y3r9ft7k1mmw",
-          "name": "Mexico City, Mexico - (MEX)",
+          "id": "4br57n5x6881",
+          "name": "Florianopolis, Brazil - (FLN)",
           "status": "operational",
-          "created_at": "2018-04-02T02:10:52.729Z",
-          "updated_at": "2023-02-23T12:50:58.303Z",
-          "position": 21,
+          "created_at": "2021-07-22T14:05:12.793Z",
+          "updated_at": "2023-03-03T09:36:46.979Z",
+          "position": 16,
           "description": null,
           "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
+          "start_date": "2021-07-22",
+          "group_id": "91blz4ztt7dm",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-03-07T09:00:00.000Z",
-      "scheduled_until": "2023-03-07T11:20:00.000Z"
+      "scheduled_for": "2023-03-07T10:00:00.000Z",
+      "scheduled_until": "2023-03-07T12:00:00.000Z"
     },
     {
       "id": "p225zjg493ks",
