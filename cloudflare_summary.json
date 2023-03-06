@@ -4,15 +4,15 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-06T22:43:21.034Z"
+    "updated_at": "2023-03-06T23:13:46.675Z"
   },
   "components": [
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2023-03-06T22:24:40.952Z",
+      "updated_at": "2023-03-06T23:13:46.586Z",
       "position": 1,
       "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -55,7 +55,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1067,9 +1067,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2023-03-06T22:24:40.981Z",
+      "updated_at": "2023-03-06T23:13:46.622Z",
       "position": 7,
       "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -5760,66 +5760,48 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [
+  "incidents": [],
+  "scheduled_maintenances": [
     {
-      "id": "xvscgzs0d6tq",
-      "name": "Some Pre-defined DLP profiles not showing name on Cloudflare dashboard",
-      "status": "identified",
-      "created_at": "2023-03-06T22:24:40.898Z",
-      "updated_at": "2023-03-06T22:43:21.027Z",
+      "id": "fqlsry83vkp1",
+      "name": "BCN (Barcelona) on 2023-03-07",
+      "status": "scheduled",
+      "created_at": "2023-03-06T23:00:37.761Z",
+      "updated_at": "2023-03-06T23:00:57.600Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/1stnnqprtjtk",
-      "started_at": "2023-03-06T22:24:40.887Z",
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/bs0m10npswv8",
+      "started_at": "2023-03-06T23:00:37.753Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "v439xtlscx77",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "xvscgzs0d6tq",
-          "created_at": "2023-03-06T22:43:21.025Z",
-          "updated_at": "2023-03-06T22:43:21.025Z",
-          "display_at": "2023-03-06T22:43:21.025Z",
-          "affected_components": [
-            {
-              "code": "3sq3s4d20ywk",
-              "name": "Cloudflare Sites and Services - Dashboard",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "g4tb35rs9yw7",
-              "name": "Cloudflare Sites and Services - API",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
+          "id": "4s6d0qb9m55k",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "fqlsry83vkp1",
+          "created_at": "2023-03-06T23:00:57.397Z",
+          "updated_at": "2023-03-06T23:00:57.397Z",
+          "display_at": "2023-03-06T23:00:57.397Z",
+          "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "dcxx5vsp581v",
-          "status": "investigating",
-          "body": "Name is blank for some pre-defined DLP profiles on Cloudflare dashboard.",
-          "incident_id": "xvscgzs0d6tq",
-          "created_at": "2023-03-06T22:24:41.064Z",
-          "updated_at": "2023-03-06T22:24:41.064Z",
-          "display_at": "2023-03-06T22:24:41.064Z",
+          "id": "1qj8lf5mp0sd",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in BCN (Barcelona) datacenter on 2023-03-07 between 00:00 and 01:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "fqlsry83vkp1",
+          "created_at": "2023-03-06T23:00:37.829Z",
+          "updated_at": "2023-03-06T23:00:37.829Z",
+          "display_at": "2023-03-06T23:00:37.829Z",
           "affected_components": [
             {
-              "code": "3sq3s4d20ywk",
-              "name": "Cloudflare Sites and Services - Dashboard",
+              "code": "3lsyxp2s1khw",
+              "name": "Europe - Barcelona, Spain - (BCN)",
               "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "g4tb35rs9yw7",
-              "name": "Cloudflare Sites and Services - API",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -5829,45 +5811,30 @@
       ],
       "components": [
         {
-          "id": "3sq3s4d20ywk",
-          "name": "Dashboard",
-          "status": "degraded_performance",
-          "created_at": "2014-10-09T03:32:07.173Z",
-          "updated_at": "2023-03-06T22:24:40.952Z",
-          "position": 1,
-          "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "id": "3lsyxp2s1khw",
+          "name": "Barcelona, Spain - (BCN)",
+          "status": "operational",
+          "created_at": "2016-10-10T21:36:13.143Z",
+          "updated_at": "2023-03-06T04:01:24.957Z",
+          "position": 3,
+          "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "g4tb35rs9yw7",
-          "name": "API",
-          "status": "degraded_performance",
-          "created_at": "2014-10-09T03:32:07.158Z",
-          "updated_at": "2023-03-06T22:24:40.981Z",
-          "position": 7,
-          "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
+          "group_id": "zqxhg7y54vy8",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
-      ]
-    }
-  ],
-  "scheduled_maintenances": [
+      ],
+      "scheduled_for": "2023-03-07T00:00:00.000Z",
+      "scheduled_until": "2023-03-07T01:00:00.000Z"
+    },
     {
       "id": "zfrpdkz94nc8",
       "name": "DUS (Düsseldorf) on 2023-03-07",
       "status": "scheduled",
       "created_at": "2023-03-06T22:40:33.713Z",
-      "updated_at": "2023-03-06T22:40:33.776Z",
+      "updated_at": "2023-03-06T22:59:59.980Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -5875,6 +5842,19 @@
       "started_at": "2023-03-06T22:40:33.705Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "qtsl3nqqdkd1",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "zfrpdkz94nc8",
+          "created_at": "2023-03-06T22:59:59.792Z",
+          "updated_at": "2023-03-06T22:59:59.792Z",
+          "display_at": "2023-03-06T22:59:59.792Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "qkhtrtjgyy1s",
           "status": "scheduled",
@@ -5917,11 +5897,227 @@
       "scheduled_until": "2023-03-07T03:00:00.000Z"
     },
     {
+      "id": "lpd4y11dd978",
+      "name": "ALG (Algiers) on 2023-03-07",
+      "status": "scheduled",
+      "created_at": "2023-03-01T08:20:30.126Z",
+      "updated_at": "2023-03-01T08:20:30.178Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/dscz4m6v5tgk",
+      "started_at": "2023-03-01T08:20:30.119Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "qq9g1cqxv4md",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in ALG (Algiers) datacenter on 2023-03-07 between 01:00 and 03:05 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "lpd4y11dd978",
+          "created_at": "2023-03-01T08:20:30.176Z",
+          "updated_at": "2023-03-01T08:20:30.176Z",
+          "display_at": "2023-03-01T08:20:30.176Z",
+          "affected_components": [
+            {
+              "code": "rfkpkllgfmrq",
+              "name": "Africa - Algiers, Algeria - (ALG)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rfkpkllgfmrq",
+          "name": "Algiers, Algeria - (ALG)",
+          "status": "operational",
+          "created_at": "2021-08-06T15:49:20.304Z",
+          "updated_at": "2023-02-22T01:23:39.994Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-08-06",
+          "group_id": "00gpj4s37mz4",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-07T01:00:00.000Z",
+      "scheduled_until": "2023-03-07T03:05:00.000Z"
+    },
+    {
+      "id": "6yw63b4zdh4t",
+      "name": "CDG (Paris) on 2023-03-07",
+      "status": "scheduled",
+      "created_at": "2023-03-03T02:40:19.702Z",
+      "updated_at": "2023-03-03T02:40:19.812Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/gqtcc2dxhpjx",
+      "started_at": "2023-03-03T02:40:19.692Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "wlg9x3ypf7k5",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in CDG (Paris) datacenter on 2023-03-07 between 01:00 and 04:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "6yw63b4zdh4t",
+          "created_at": "2023-03-03T02:40:19.808Z",
+          "updated_at": "2023-03-03T02:40:19.808Z",
+          "display_at": "2023-03-03T02:40:19.808Z",
+          "affected_components": [
+            {
+              "code": "w1br383gmlwj",
+              "name": "Europe - Paris, France - (CDG)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "w1br383gmlwj",
+          "name": "Paris, France - (CDG)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:36:46.182Z",
+          "updated_at": "2023-03-03T03:46:51.326Z",
+          "position": 37,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-07T01:00:00.000Z",
+      "scheduled_until": "2023-03-07T04:00:00.000Z"
+    },
+    {
+      "id": "m90624r4qfk2",
+      "name": "MAD (Madrid) on 2023-03-07",
+      "status": "scheduled",
+      "created_at": "2023-03-06T23:00:37.120Z",
+      "updated_at": "2023-03-06T23:00:37.179Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/s7dsv5t3byfv",
+      "started_at": "2023-03-06T23:00:37.112Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "92ylkxbbbk6t",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MAD (Madrid) datacenter on 2023-03-07 between 01:00 and 04:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "m90624r4qfk2",
+          "created_at": "2023-03-06T23:00:37.177Z",
+          "updated_at": "2023-03-06T23:00:37.177Z",
+          "display_at": "2023-03-06T23:00:37.177Z",
+          "affected_components": [
+            {
+              "code": "qwrpqdwqxy7r",
+              "name": "Europe - Madrid, Spain - (MAD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qwrpqdwqxy7r",
+          "name": "Madrid, Spain - (MAD)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:41:47.350Z",
+          "updated_at": "2023-03-02T04:14:27.178Z",
+          "position": 27,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-07T01:00:00.000Z",
+      "scheduled_until": "2023-03-07T04:00:00.000Z"
+    },
+    {
+      "id": "n73666nx1mmb",
+      "name": "MRS (Marseille) on 2023-03-07",
+      "status": "scheduled",
+      "created_at": "2023-03-03T06:40:13.122Z",
+      "updated_at": "2023-03-03T06:40:13.205Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/q8qmlkjyg243",
+      "started_at": "2023-03-03T06:40:13.115Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "p4lhvrm9wrqf",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MRS (Marseille) datacenter on 2023-03-07 between 01:00 and 06:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "n73666nx1mmb",
+          "created_at": "2023-03-03T06:40:13.202Z",
+          "updated_at": "2023-03-03T06:40:13.202Z",
+          "display_at": "2023-03-03T06:40:13.202Z",
+          "affected_components": [
+            {
+              "code": "3wk2ykcwwd76",
+              "name": "Europe - Marseille, France - (MRS)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3wk2ykcwwd76",
+          "name": "Marseille, France - (MRS)",
+          "status": "operational",
+          "created_at": "2015-07-06T20:57:52.190Z",
+          "updated_at": "2023-03-03T06:49:14.974Z",
+          "position": 29,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-07T01:00:00.000Z",
+      "scheduled_until": "2023-03-07T06:00:00.000Z"
+    },
+    {
       "id": "z25n7gwbjb8z",
       "name": "LHR (London) on 2023-03-07",
       "status": "scheduled",
       "created_at": "2023-03-06T01:40:30.303Z",
-      "updated_at": "2023-03-06T18:00:36.270Z",
+      "updated_at": "2023-03-06T23:00:36.130Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -5929,6 +6125,26 @@
       "started_at": "2023-03-06T01:40:30.295Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "k1j3mx4jkvzf",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LHR (London) datacenter on 2023-03-07 between 01:45 and 13:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "z25n7gwbjb8z",
+          "created_at": "2023-03-06T23:00:36.128Z",
+          "updated_at": "2023-03-06T23:00:36.128Z",
+          "display_at": "2023-03-06T23:00:36.128Z",
+          "affected_components": [
+            {
+              "code": "shcqh0p22750",
+              "name": "Europe - London, United Kingdom - (LHR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "4ldtkvc5tk8j",
           "status": "scheduled",
@@ -6027,170 +6243,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-03-07T01:00:00.000Z",
+      "scheduled_for": "2023-03-07T01:45:00.000Z",
       "scheduled_until": "2023-03-07T13:00:00.000Z"
-    },
-    {
-      "id": "6yw63b4zdh4t",
-      "name": "CDG (Paris) on 2023-03-07",
-      "status": "scheduled",
-      "created_at": "2023-03-03T02:40:19.702Z",
-      "updated_at": "2023-03-03T02:40:19.812Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/gqtcc2dxhpjx",
-      "started_at": "2023-03-03T02:40:19.692Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "wlg9x3ypf7k5",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in CDG (Paris) datacenter on 2023-03-07 between 01:00 and 04:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "6yw63b4zdh4t",
-          "created_at": "2023-03-03T02:40:19.808Z",
-          "updated_at": "2023-03-03T02:40:19.808Z",
-          "display_at": "2023-03-03T02:40:19.808Z",
-          "affected_components": [
-            {
-              "code": "w1br383gmlwj",
-              "name": "Europe - Paris, France - (CDG)",
-              "old_status": "under_maintenance",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "w1br383gmlwj",
-          "name": "Paris, France - (CDG)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:36:46.182Z",
-          "updated_at": "2023-03-03T03:46:51.326Z",
-          "position": 37,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-07T01:00:00.000Z",
-      "scheduled_until": "2023-03-07T04:00:00.000Z"
-    },
-    {
-      "id": "lpd4y11dd978",
-      "name": "ALG (Algiers) on 2023-03-07",
-      "status": "scheduled",
-      "created_at": "2023-03-01T08:20:30.126Z",
-      "updated_at": "2023-03-01T08:20:30.178Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/dscz4m6v5tgk",
-      "started_at": "2023-03-01T08:20:30.119Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "qq9g1cqxv4md",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ALG (Algiers) datacenter on 2023-03-07 between 01:00 and 03:05 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "lpd4y11dd978",
-          "created_at": "2023-03-01T08:20:30.176Z",
-          "updated_at": "2023-03-01T08:20:30.176Z",
-          "display_at": "2023-03-01T08:20:30.176Z",
-          "affected_components": [
-            {
-              "code": "rfkpkllgfmrq",
-              "name": "Africa - Algiers, Algeria - (ALG)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rfkpkllgfmrq",
-          "name": "Algiers, Algeria - (ALG)",
-          "status": "operational",
-          "created_at": "2021-08-06T15:49:20.304Z",
-          "updated_at": "2023-02-22T01:23:39.994Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-08-06",
-          "group_id": "00gpj4s37mz4",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-07T01:00:00.000Z",
-      "scheduled_until": "2023-03-07T03:05:00.000Z"
-    },
-    {
-      "id": "n73666nx1mmb",
-      "name": "MRS (Marseille) on 2023-03-07",
-      "status": "scheduled",
-      "created_at": "2023-03-03T06:40:13.122Z",
-      "updated_at": "2023-03-03T06:40:13.205Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/q8qmlkjyg243",
-      "started_at": "2023-03-03T06:40:13.115Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "p4lhvrm9wrqf",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MRS (Marseille) datacenter on 2023-03-07 between 01:00 and 06:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "n73666nx1mmb",
-          "created_at": "2023-03-03T06:40:13.202Z",
-          "updated_at": "2023-03-03T06:40:13.202Z",
-          "display_at": "2023-03-03T06:40:13.202Z",
-          "affected_components": [
-            {
-              "code": "3wk2ykcwwd76",
-              "name": "Europe - Marseille, France - (MRS)",
-              "old_status": "under_maintenance",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "3wk2ykcwwd76",
-          "name": "Marseille, France - (MRS)",
-          "status": "operational",
-          "created_at": "2015-07-06T20:57:52.190Z",
-          "updated_at": "2023-03-03T06:49:14.974Z",
-          "position": 29,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-07T01:00:00.000Z",
-      "scheduled_until": "2023-03-07T06:00:00.000Z"
     },
     {
       "id": "05nfsj45jkyj",
@@ -6301,60 +6355,6 @@
       "scheduled_until": "2023-03-07T09:00:00.000Z"
     },
     {
-      "id": "qqb0gfx4srd3",
-      "name": "EZE (Buenos Aires) on 2023-03-07",
-      "status": "scheduled",
-      "created_at": "2023-03-01T13:40:48.798Z",
-      "updated_at": "2023-03-01T13:40:48.888Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/lpwg8kh9tj2r",
-      "started_at": "2023-03-01T13:40:48.791Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "8klvm2k44mrw",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in EZE (Buenos Aires) datacenter on 2023-03-07 between 09:00 and 11:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "qqb0gfx4srd3",
-          "created_at": "2023-03-01T13:40:48.886Z",
-          "updated_at": "2023-03-01T13:40:48.886Z",
-          "display_at": "2023-03-01T13:40:48.886Z",
-          "affected_components": [
-            {
-              "code": "26gznn8sts5z",
-              "name": "Latin America & the Caribbean - Buenos Aires, Argentina - (EZE)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "26gznn8sts5z",
-          "name": "Buenos Aires, Argentina - (EZE)",
-          "status": "operational",
-          "created_at": "2015-04-01T11:05:40.089Z",
-          "updated_at": "2023-02-20T03:33:02.760Z",
-          "position": 9,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-07T09:00:00.000Z",
-      "scheduled_until": "2023-03-07T11:00:00.000Z"
-    },
-    {
       "id": "w3qvjjdqx386",
       "name": "MEX (Mexico City) on 2023-03-07",
       "status": "scheduled",
@@ -6427,6 +6427,60 @@
       ],
       "scheduled_for": "2023-03-07T09:00:00.000Z",
       "scheduled_until": "2023-03-07T10:50:00.000Z"
+    },
+    {
+      "id": "qqb0gfx4srd3",
+      "name": "EZE (Buenos Aires) on 2023-03-07",
+      "status": "scheduled",
+      "created_at": "2023-03-01T13:40:48.798Z",
+      "updated_at": "2023-03-01T13:40:48.888Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/lpwg8kh9tj2r",
+      "started_at": "2023-03-01T13:40:48.791Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8klvm2k44mrw",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in EZE (Buenos Aires) datacenter on 2023-03-07 between 09:00 and 11:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "qqb0gfx4srd3",
+          "created_at": "2023-03-01T13:40:48.886Z",
+          "updated_at": "2023-03-01T13:40:48.886Z",
+          "display_at": "2023-03-01T13:40:48.886Z",
+          "affected_components": [
+            {
+              "code": "26gznn8sts5z",
+              "name": "Latin America & the Caribbean - Buenos Aires, Argentina - (EZE)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "26gznn8sts5z",
+          "name": "Buenos Aires, Argentina - (EZE)",
+          "status": "operational",
+          "created_at": "2015-04-01T11:05:40.089Z",
+          "updated_at": "2023-02-20T03:33:02.760Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-07T09:00:00.000Z",
+      "scheduled_until": "2023-03-07T11:00:00.000Z"
     },
     {
       "id": "zrc119x50rgc",
@@ -6773,6 +6827,100 @@
       "scheduled_until": "2023-03-07T22:45:00.000Z"
     },
     {
+      "id": "nj3jw2ts16sm",
+      "name": "LHR (London) on 2023-03-08",
+      "status": "scheduled",
+      "created_at": "2023-03-06T17:20:36.476Z",
+      "updated_at": "2023-03-06T23:00:36.505Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/4q9nkgddj0js",
+      "started_at": "2023-03-06T17:20:36.469Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "fqzzsjv5wjsg",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LHR (London) datacenter on 2023-03-08 between 00:45 and 13:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "nj3jw2ts16sm",
+          "created_at": "2023-03-06T23:00:36.502Z",
+          "updated_at": "2023-03-06T23:00:36.502Z",
+          "display_at": "2023-03-06T23:00:36.502Z",
+          "affected_components": [
+            {
+              "code": "shcqh0p22750",
+              "name": "Europe - London, United Kingdom - (LHR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "p45ph2ntqr6k",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LHR (London) datacenter on 2023-03-08 between 05:00 and 13:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "nj3jw2ts16sm",
+          "created_at": "2023-03-06T18:00:36.695Z",
+          "updated_at": "2023-03-06T18:00:36.695Z",
+          "display_at": "2023-03-06T18:00:36.695Z",
+          "affected_components": [
+            {
+              "code": "shcqh0p22750",
+              "name": "Europe - London, United Kingdom - (LHR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "11n91h47xx2p",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LHR (London) datacenter on 2023-03-08 between 09:00 and 17:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "nj3jw2ts16sm",
+          "created_at": "2023-03-06T17:20:36.524Z",
+          "updated_at": "2023-03-06T17:20:36.524Z",
+          "display_at": "2023-03-06T17:20:36.524Z",
+          "affected_components": [
+            {
+              "code": "shcqh0p22750",
+              "name": "Europe - London, United Kingdom - (LHR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "shcqh0p22750",
+          "name": "London, United Kingdom - (LHR)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:36:04.069Z",
+          "updated_at": "2023-03-03T18:17:20.596Z",
+          "position": 25,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-08T00:45:00.000Z",
+      "scheduled_until": "2023-03-08T13:00:00.000Z"
+    },
+    {
       "id": "0l2t6g3yl3zr",
       "name": "WAW (Warsaw) on 2023-03-08",
       "status": "scheduled",
@@ -6989,80 +7137,6 @@
       "scheduled_until": "2023-03-08T04:00:00.000Z"
     },
     {
-      "id": "nj3jw2ts16sm",
-      "name": "LHR (London) on 2023-03-08",
-      "status": "scheduled",
-      "created_at": "2023-03-06T17:20:36.476Z",
-      "updated_at": "2023-03-06T18:00:36.699Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/4q9nkgddj0js",
-      "started_at": "2023-03-06T17:20:36.469Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "p45ph2ntqr6k",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LHR (London) datacenter on 2023-03-08 between 05:00 and 13:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "nj3jw2ts16sm",
-          "created_at": "2023-03-06T18:00:36.695Z",
-          "updated_at": "2023-03-06T18:00:36.695Z",
-          "display_at": "2023-03-06T18:00:36.695Z",
-          "affected_components": [
-            {
-              "code": "shcqh0p22750",
-              "name": "Europe - London, United Kingdom - (LHR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "11n91h47xx2p",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LHR (London) datacenter on 2023-03-08 between 09:00 and 17:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "nj3jw2ts16sm",
-          "created_at": "2023-03-06T17:20:36.524Z",
-          "updated_at": "2023-03-06T17:20:36.524Z",
-          "display_at": "2023-03-06T17:20:36.524Z",
-          "affected_components": [
-            {
-              "code": "shcqh0p22750",
-              "name": "Europe - London, United Kingdom - (LHR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "shcqh0p22750",
-          "name": "London, United Kingdom - (LHR)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:36:04.069Z",
-          "updated_at": "2023-03-03T18:17:20.596Z",
-          "position": 25,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-08T05:00:00.000Z",
-      "scheduled_until": "2023-03-08T13:00:00.000Z"
-    },
-    {
       "id": "8dsm602xk8jr",
       "name": "Custom Error Pages API Maintenance",
       "status": "scheduled",
@@ -7106,9 +7180,9 @@
         {
           "id": "3sq3s4d20ywk",
           "name": "Dashboard",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2014-10-09T03:32:07.173Z",
-          "updated_at": "2023-03-06T22:24:40.952Z",
+          "updated_at": "2023-03-06T23:13:46.586Z",
           "position": 1,
           "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
           "showcase": false,
@@ -7121,68 +7195,14 @@
         {
           "id": "g4tb35rs9yw7",
           "name": "API",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2014-10-09T03:32:07.158Z",
-          "updated_at": "2023-03-06T22:24:40.981Z",
+          "updated_at": "2023-03-06T23:13:46.622Z",
           "position": 7,
           "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
           "showcase": false,
           "start_date": null,
           "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-08T09:00:00.000Z",
-      "scheduled_until": "2023-03-08T11:00:00.000Z"
-    },
-    {
-      "id": "szgbpwdmtjsh",
-      "name": "LIM (Lima) on 2023-03-08",
-      "status": "scheduled",
-      "created_at": "2023-03-05T14:00:39.308Z",
-      "updated_at": "2023-03-05T14:00:39.377Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/wyyflzhg3d28",
-      "started_at": "2023-03-05T14:00:39.299Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "h9t541l4gvhg",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LIM (Lima) datacenter on 2023-03-08 between 09:00 and 11:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "szgbpwdmtjsh",
-          "created_at": "2023-03-05T14:00:39.373Z",
-          "updated_at": "2023-03-05T14:00:39.373Z",
-          "display_at": "2023-03-05T14:00:39.373Z",
-          "affected_components": [
-            {
-              "code": "bnjvsmmllkb9",
-              "name": "Latin America & the Caribbean - Lima, Peru - (LIM)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "bnjvsmmllkb9",
-          "name": "Lima, Peru - (LIM)",
-          "status": "operational",
-          "created_at": "2014-12-03T20:29:25.140Z",
-          "updated_at": "2023-03-03T14:20:20.467Z",
-          "position": 25,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
@@ -7236,6 +7256,60 @@
           "description": null,
           "showcase": false,
           "start_date": "2021-07-22",
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-08T09:00:00.000Z",
+      "scheduled_until": "2023-03-08T11:00:00.000Z"
+    },
+    {
+      "id": "szgbpwdmtjsh",
+      "name": "LIM (Lima) on 2023-03-08",
+      "status": "scheduled",
+      "created_at": "2023-03-05T14:00:39.308Z",
+      "updated_at": "2023-03-05T14:00:39.377Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/wyyflzhg3d28",
+      "started_at": "2023-03-05T14:00:39.299Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "h9t541l4gvhg",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LIM (Lima) datacenter on 2023-03-08 between 09:00 and 11:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "szgbpwdmtjsh",
+          "created_at": "2023-03-05T14:00:39.373Z",
+          "updated_at": "2023-03-05T14:00:39.373Z",
+          "display_at": "2023-03-05T14:00:39.373Z",
+          "affected_components": [
+            {
+              "code": "bnjvsmmllkb9",
+              "name": "Latin America & the Caribbean - Lima, Peru - (LIM)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bnjvsmmllkb9",
+          "name": "Lima, Peru - (LIM)",
+          "status": "operational",
+          "created_at": "2014-12-03T20:29:25.140Z",
+          "updated_at": "2023-03-03T14:20:20.467Z",
+          "position": 25,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
           "group_id": "91blz4ztt7dm",
           "page_id": "yh6f0r4529hb",
           "group": false,
