@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-07T18:47:44.755Z"
+    "updated_at": "2023-03-07T19:08:47.039Z"
   },
   "components": [
     {
@@ -55,7 +55,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -4832,9 +4832,9 @@
     {
       "id": "ss09y7v3wzwd",
       "name": "Manila, Philippines - (MNL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-04-29T12:14:56.581Z",
-      "updated_at": "2023-03-07T18:12:09.845Z",
+      "updated_at": "2023-03-07T18:57:55.648Z",
       "position": 48,
       "description": null,
       "showcase": false,
@@ -5192,9 +5192,9 @@
     {
       "id": "gyx2yygg7lmd",
       "name": "Gateway",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-10T09:28:36.367Z",
-      "updated_at": "2023-02-08T18:15:25.318Z",
+      "updated_at": "2023-03-07T19:03:43.958Z",
       "position": 54,
       "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
       "showcase": false,
@@ -5760,7 +5760,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "ss2mkjxr6c3s",
+      "name": "Gateway Policies issue",
+      "status": "investigating",
+      "created_at": "2023-03-07T19:03:43.922Z",
+      "updated_at": "2023-03-07T19:08:47.031Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/q2s70vzqsfl3",
+      "started_at": "2023-03-07T19:03:43.914Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "pljq9fx5j06h",
+          "status": "investigating",
+          "body": "Gateway team is investigating impact to policies with more than two conditions in a single wirefilter category (traffic, identity, device posture). First instance of this issue was on February 28th.",
+          "incident_id": "ss2mkjxr6c3s",
+          "created_at": "2023-03-07T19:03:44.013Z",
+          "updated_at": "2023-03-07T19:08:47.027Z",
+          "display_at": "2023-03-07T19:03:44.000Z",
+          "affected_components": [
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gyx2yygg7lmd",
+          "name": "Gateway",
+          "status": "degraded_performance",
+          "created_at": "2023-01-10T09:28:36.367Z",
+          "updated_at": "2023-03-07T19:03:43.958Z",
+          "position": 54,
+          "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
+          "showcase": false,
+          "start_date": "2023-01-10",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "69vtdylsc7sg",
