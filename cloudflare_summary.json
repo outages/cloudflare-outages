@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-07T16:43:01.456Z"
+    "updated_at": "2023-03-07T17:04:36.281Z"
   },
   "components": [
     {
@@ -1682,9 +1682,9 @@
     {
       "id": "fvqfrchfl8yc",
       "name": "Sydney, NSW, Australia - (SYD)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-27T21:45:36.735Z",
-      "updated_at": "2022-08-04T16:13:07.284Z",
+      "updated_at": "2023-03-07T16:56:54.582Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -4832,9 +4832,9 @@
     {
       "id": "ss09y7v3wzwd",
       "name": "Manila, Philippines - (MNL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-04-29T12:14:56.581Z",
-      "updated_at": "2023-03-04T18:15:07.761Z",
+      "updated_at": "2023-03-07T17:01:55.895Z",
       "position": 48,
       "description": null,
       "showcase": false,
@@ -5764,16 +5764,36 @@
     {
       "id": "dsms6c6059rq",
       "name": "R2 performance in Asia Pacific region",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2023-03-07T15:43:25.764Z",
-      "updated_at": "2023-03-07T15:43:25.851Z",
-      "monitoring_at": null,
+      "updated_at": "2023-03-07T17:04:36.278Z",
+      "monitoring_at": "2023-03-07T17:04:36.258Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/fpktv9zxtm97",
       "started_at": "2023-03-07T15:43:25.757Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "bkvtcvyg1cfp",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "dsms6c6059rq",
+          "created_at": "2023-03-07T17:04:36.258Z",
+          "updated_at": "2023-03-07T17:04:36.258Z",
+          "display_at": "2023-03-07T17:04:36.258Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "472l58sj2n8k",
           "status": "investigating",
@@ -5815,73 +5835,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "d8xg0dj9wqdm",
-      "name": "SJC (San Jose) on 2023-03-07",
-      "status": "scheduled",
-      "created_at": "2023-03-06T23:20:36.214Z",
-      "updated_at": "2023-03-07T15:59:57.815Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/xwv4bjzw4vf7",
-      "started_at": "2023-03-06T23:20:36.205Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "xnbyss0nfvzb",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "d8xg0dj9wqdm",
-          "created_at": "2023-03-07T15:59:57.544Z",
-          "updated_at": "2023-03-07T15:59:57.544Z",
-          "display_at": "2023-03-07T15:59:57.544Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "tyjxp34gy3dr",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SJC (San Jose) datacenter on 2023-03-07 between 17:00 and 21:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "d8xg0dj9wqdm",
-          "created_at": "2023-03-06T23:20:36.279Z",
-          "updated_at": "2023-03-06T23:20:36.279Z",
-          "display_at": "2023-03-06T23:20:36.279Z",
-          "affected_components": [
-            {
-              "code": "4xvd68d7k70c",
-              "name": "North America - San Jose, CA, United States - (SJC)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "4xvd68d7k70c",
-          "name": "San Jose, CA, United States - (SJC)",
-          "status": "operational",
-          "created_at": "2014-10-16T04:33:22.992Z",
-          "updated_at": "2023-03-07T13:13:52.856Z",
-          "position": 40,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-07T17:00:00.000Z",
-      "scheduled_until": "2023-03-07T21:00:00.000Z"
-    },
     {
       "id": "x6cq8q9pt6st",
       "name": "DUS (Düsseldorf) on 2023-03-07",
@@ -6051,60 +6004,6 @@
       "scheduled_until": "2023-03-08T17:00:00.000Z"
     },
     {
-      "id": "00r84v9hlh5y",
-      "name": "HEL (Helsinki) on 2023-03-08",
-      "status": "scheduled",
-      "created_at": "2023-02-28T08:40:31.417Z",
-      "updated_at": "2023-02-28T08:40:31.485Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/nw13s2ybfwvq",
-      "started_at": "2023-02-28T08:40:31.409Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "8v9jyf15gz4v",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in HEL (Helsinki) datacenter on 2023-03-08 between 01:00 and 04:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "00r84v9hlh5y",
-          "created_at": "2023-02-28T08:40:31.482Z",
-          "updated_at": "2023-02-28T08:40:31.482Z",
-          "display_at": "2023-02-28T08:40:31.482Z",
-          "affected_components": [
-            {
-              "code": "7nm9m8m9txmf",
-              "name": "Europe - Helsinki, Finland - (HEL)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7nm9m8m9txmf",
-          "name": "Helsinki, Finland - (HEL)",
-          "status": "operational",
-          "created_at": "2016-09-12T14:38:09.479Z",
-          "updated_at": "2022-11-19T00:35:22.288Z",
-          "position": 20,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-08T01:00:00.000Z",
-      "scheduled_until": "2023-03-08T04:00:00.000Z"
-    },
-    {
       "id": "r07dtn7qpnky",
       "name": "PRG (Prague) on 2023-03-08",
       "status": "scheduled",
@@ -6146,6 +6045,60 @@
           "created_at": "2014-10-27T21:42:32.096Z",
           "updated_at": "2022-12-27T10:01:39.868Z",
           "position": 38,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-08T01:00:00.000Z",
+      "scheduled_until": "2023-03-08T04:00:00.000Z"
+    },
+    {
+      "id": "00r84v9hlh5y",
+      "name": "HEL (Helsinki) on 2023-03-08",
+      "status": "scheduled",
+      "created_at": "2023-02-28T08:40:31.417Z",
+      "updated_at": "2023-02-28T08:40:31.485Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/nw13s2ybfwvq",
+      "started_at": "2023-02-28T08:40:31.409Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8v9jyf15gz4v",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in HEL (Helsinki) datacenter on 2023-03-08 between 01:00 and 04:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "00r84v9hlh5y",
+          "created_at": "2023-02-28T08:40:31.482Z",
+          "updated_at": "2023-02-28T08:40:31.482Z",
+          "display_at": "2023-02-28T08:40:31.482Z",
+          "affected_components": [
+            {
+              "code": "7nm9m8m9txmf",
+              "name": "Europe - Helsinki, Finland - (HEL)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7nm9m8m9txmf",
+          "name": "Helsinki, Finland - (HEL)",
+          "status": "operational",
+          "created_at": "2016-09-12T14:38:09.479Z",
+          "updated_at": "2022-11-19T00:35:22.288Z",
+          "position": 20,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -6503,60 +6456,6 @@
       "scheduled_until": "2023-03-08T12:00:00.000Z"
     },
     {
-      "id": "1yws299s2j50",
-      "name": "POA (Porto Alegre) on 2023-03-08",
-      "status": "scheduled",
-      "created_at": "2023-03-07T13:01:21.150Z",
-      "updated_at": "2023-03-07T13:01:21.217Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/j3ppvyj7m2t0",
-      "started_at": "2023-03-07T13:01:21.142Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "skc4fcjdgwpt",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in POA (Porto Alegre) datacenter on 2023-03-08 between 09:00 and 12:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "1yws299s2j50",
-          "created_at": "2023-03-07T13:01:21.214Z",
-          "updated_at": "2023-03-07T13:01:21.214Z",
-          "display_at": "2023-03-07T13:01:21.214Z",
-          "affected_components": [
-            {
-              "code": "7k05x28lndzb",
-              "name": "Latin America & the Caribbean - Porto Alegre, Brazil - (POA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7k05x28lndzb",
-          "name": "Porto Alegre, Brazil - (POA)",
-          "status": "operational",
-          "created_at": "2019-04-01T16:32:01.138Z",
-          "updated_at": "2023-03-07T04:04:54.782Z",
-          "position": 31,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-08T09:00:00.000Z",
-      "scheduled_until": "2023-03-08T12:00:00.000Z"
-    },
-    {
       "id": "szgbpwdmtjsh",
       "name": "LIM (Lima) on 2023-03-08",
       "status": "scheduled",
@@ -6618,6 +6517,60 @@
           "created_at": "2014-12-03T20:29:25.140Z",
           "updated_at": "2023-03-03T14:20:20.467Z",
           "position": 25,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-08T09:00:00.000Z",
+      "scheduled_until": "2023-03-08T12:00:00.000Z"
+    },
+    {
+      "id": "1yws299s2j50",
+      "name": "POA (Porto Alegre) on 2023-03-08",
+      "status": "scheduled",
+      "created_at": "2023-03-07T13:01:21.150Z",
+      "updated_at": "2023-03-07T13:01:21.217Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/j3ppvyj7m2t0",
+      "started_at": "2023-03-07T13:01:21.142Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "skc4fcjdgwpt",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in POA (Porto Alegre) datacenter on 2023-03-08 between 09:00 and 12:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "1yws299s2j50",
+          "created_at": "2023-03-07T13:01:21.214Z",
+          "updated_at": "2023-03-07T13:01:21.214Z",
+          "display_at": "2023-03-07T13:01:21.214Z",
+          "affected_components": [
+            {
+              "code": "7k05x28lndzb",
+              "name": "Latin America & the Caribbean - Porto Alegre, Brazil - (POA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7k05x28lndzb",
+          "name": "Porto Alegre, Brazil - (POA)",
+          "status": "operational",
+          "created_at": "2019-04-01T16:32:01.138Z",
+          "updated_at": "2023-03-07T04:04:54.782Z",
+          "position": 31,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -7844,6 +7797,86 @@
       ],
       "scheduled_for": "2023-03-14T07:00:00.000Z",
       "scheduled_until": "2023-03-14T13:00:00.000Z"
+    },
+    {
+      "id": "d8xg0dj9wqdm",
+      "name": "SJC (San Jose) on 2023-03-07",
+      "status": "in_progress",
+      "created_at": "2023-03-06T23:20:36.214Z",
+      "updated_at": "2023-03-07T17:01:31.185Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/xwv4bjzw4vf7",
+      "started_at": "2023-03-06T23:20:36.205Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "2jsx2k9pv3d7",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "d8xg0dj9wqdm",
+          "created_at": "2023-03-07T17:01:31.180Z",
+          "updated_at": "2023-03-07T17:01:31.180Z",
+          "display_at": "2023-03-07T17:01:31.180Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xnbyss0nfvzb",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "d8xg0dj9wqdm",
+          "created_at": "2023-03-07T15:59:57.544Z",
+          "updated_at": "2023-03-07T15:59:57.544Z",
+          "display_at": "2023-03-07T15:59:57.544Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "tyjxp34gy3dr",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SJC (San Jose) datacenter on 2023-03-07 between 17:00 and 21:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "d8xg0dj9wqdm",
+          "created_at": "2023-03-06T23:20:36.279Z",
+          "updated_at": "2023-03-06T23:20:36.279Z",
+          "display_at": "2023-03-06T23:20:36.279Z",
+          "affected_components": [
+            {
+              "code": "4xvd68d7k70c",
+              "name": "North America - San Jose, CA, United States - (SJC)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4xvd68d7k70c",
+          "name": "San Jose, CA, United States - (SJC)",
+          "status": "operational",
+          "created_at": "2014-10-16T04:33:22.992Z",
+          "updated_at": "2023-03-07T13:13:52.856Z",
+          "position": 40,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-07T17:00:00.000Z",
+      "scheduled_until": "2023-03-07T21:00:00.000Z"
     }
   ],
   "status": {
