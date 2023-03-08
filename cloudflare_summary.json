@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-08T15:34:43.832Z"
+    "updated_at": "2023-03-08T15:45:49.450Z"
   },
   "components": [
     {
@@ -5764,16 +5764,36 @@
     {
       "id": "by6l2p9hhx3h",
       "name": "Cloudflare Zero Trust Authentication Issues",
-      "status": "identified",
-      "created_at": "2023-03-08T13:06:19.386Z",
-      "updated_at": "2023-03-08T15:34:19.632Z",
-      "monitoring_at": null,
+      "status": "monitoring",
+      "created_at": "2023-03-08T13:06:19.000Z",
+      "updated_at": "2023-03-08T15:45:49.448Z",
+      "monitoring_at": "2023-03-08T15:45:49.435Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/n5c7k56hl0hg",
       "started_at": "2023-03-08T13:06:19.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "thrkjrn862x4",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "by6l2p9hhx3h",
+          "created_at": "2023-03-08T15:45:49.435Z",
+          "updated_at": "2023-03-08T15:45:49.435Z",
+          "display_at": "2023-03-08T15:45:49.435Z",
+          "affected_components": [
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "8cbwsdptcf18",
           "status": "identified",
@@ -5836,16 +5856,48 @@
     {
       "id": "whfrm9qh7jz1",
       "name": "Cloudflare Pages & Access issues",
-      "status": "identified",
-      "created_at": "2023-03-08T12:44:32.372Z",
-      "updated_at": "2023-03-08T15:28:36.116Z",
-      "monitoring_at": null,
+      "status": "monitoring",
+      "created_at": "2023-03-08T12:44:32.000Z",
+      "updated_at": "2023-03-08T15:43:54.762Z",
+      "monitoring_at": "2023-03-08T15:43:54.746Z",
       "resolved_at": null,
       "impact": "critical",
       "shortlink": "https://stspg.io/2slsfftym7kx",
       "started_at": "2023-03-08T12:44:32.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "cjzrm940jfqw",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "whfrm9qh7jz1",
+          "created_at": "2023-03-08T15:43:54.746Z",
+          "updated_at": "2023-03-08T15:43:54.746Z",
+          "display_at": "2023-03-08T15:43:54.746Z",
+          "affected_components": [
+            {
+              "code": "tmh50tx2nprs",
+              "name": "Cloudflare Sites and Services - Storage",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "pblzrzhy735c",
           "status": "identified",
@@ -6079,6 +6131,60 @@
     }
   ],
   "scheduled_maintenances": [
+    {
+      "id": "yy1ndgk275cv",
+      "name": "SIN (Singapore) on 2023-03-08",
+      "status": "scheduled",
+      "created_at": "2023-03-08T15:40:29.689Z",
+      "updated_at": "2023-03-08T15:40:29.746Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/sngs3cmclb1v",
+      "started_at": "2023-03-08T15:40:29.682Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "1z25mk8r47mt",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SIN (Singapore) datacenter on 2023-03-08 between 18:00 and 23:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "yy1ndgk275cv",
+          "created_at": "2023-03-08T15:40:29.743Z",
+          "updated_at": "2023-03-08T15:40:29.743Z",
+          "display_at": "2023-03-08T15:40:29.743Z",
+          "affected_components": [
+            {
+              "code": "18p6r93swmbl",
+              "name": "Asia - Singapore, Singapore - (SIN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "18p6r93swmbl",
+          "name": "Singapore, Singapore - (SIN)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:44:15.897Z",
+          "updated_at": "2023-03-03T18:57:51.257Z",
+          "position": 59,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-08T18:00:00.000Z",
+      "scheduled_until": "2023-03-08T23:00:00.000Z"
+    },
     {
       "id": "3q4q8qdfmsr4",
       "name": "IST (Istanbul) on 2023-03-09",
@@ -6430,6 +6536,60 @@
       "scheduled_until": "2023-03-09T04:45:00.000Z"
     },
     {
+      "id": "9fyttvkfv3rx",
+      "name": "FOR (Fortaleza) on 2023-03-09",
+      "status": "scheduled",
+      "created_at": "2023-03-06T14:20:40.150Z",
+      "updated_at": "2023-03-06T14:20:40.229Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/ftpvg8nqyftq",
+      "started_at": "2023-03-06T14:20:40.140Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ycrsgtk5nyrq",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in FOR (Fortaleza) datacenter on 2023-03-09 between 09:00 and 11:20 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "9fyttvkfv3rx",
+          "created_at": "2023-03-06T14:20:40.225Z",
+          "updated_at": "2023-03-06T14:20:40.225Z",
+          "display_at": "2023-03-06T14:20:40.225Z",
+          "affected_components": [
+            {
+              "code": "2fy0n0pw01nm",
+              "name": "Latin America & the Caribbean - Fortaleza, Brazil - (FOR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2fy0n0pw01nm",
+          "name": "Fortaleza, Brazil - (FOR)",
+          "status": "partial_outage",
+          "created_at": "2019-04-01T15:16:43.011Z",
+          "updated_at": "2023-03-08T15:34:34.450Z",
+          "position": 17,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-09T09:00:00.000Z",
+      "scheduled_until": "2023-03-09T11:20:00.000Z"
+    },
+    {
       "id": "vbr44w3srfxg",
       "name": "SDQ (Santo Domingo) on 2023-03-09",
       "status": "scheduled",
@@ -6590,60 +6750,6 @@
       ],
       "scheduled_for": "2023-03-09T09:00:00.000Z",
       "scheduled_until": "2023-03-09T11:30:00.000Z"
-    },
-    {
-      "id": "9fyttvkfv3rx",
-      "name": "FOR (Fortaleza) on 2023-03-09",
-      "status": "scheduled",
-      "created_at": "2023-03-06T14:20:40.150Z",
-      "updated_at": "2023-03-06T14:20:40.229Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/ftpvg8nqyftq",
-      "started_at": "2023-03-06T14:20:40.140Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "ycrsgtk5nyrq",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in FOR (Fortaleza) datacenter on 2023-03-09 between 09:00 and 11:20 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "9fyttvkfv3rx",
-          "created_at": "2023-03-06T14:20:40.225Z",
-          "updated_at": "2023-03-06T14:20:40.225Z",
-          "display_at": "2023-03-06T14:20:40.225Z",
-          "affected_components": [
-            {
-              "code": "2fy0n0pw01nm",
-              "name": "Latin America & the Caribbean - Fortaleza, Brazil - (FOR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "2fy0n0pw01nm",
-          "name": "Fortaleza, Brazil - (FOR)",
-          "status": "partial_outage",
-          "created_at": "2019-04-01T15:16:43.011Z",
-          "updated_at": "2023-03-08T15:34:34.450Z",
-          "position": 17,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-09T09:00:00.000Z",
-      "scheduled_until": "2023-03-09T11:20:00.000Z"
     },
     {
       "id": "vt82zf8ndm11",
