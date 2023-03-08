@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-08T17:20:27.680Z"
+    "updated_at": "2023-03-08T17:37:04.319Z"
   },
   "components": [
     {
@@ -55,7 +55,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1067,9 +1067,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2023-03-08T10:19:20.337Z",
+      "updated_at": "2023-03-08T17:37:04.268Z",
       "position": 7,
       "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -5760,7 +5760,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "5f86yzt9pz75",
+      "name": "Custom Error Pages API issue",
+      "status": "investigating",
+      "created_at": "2023-03-08T17:37:04.239Z",
+      "updated_at": "2023-03-08T17:37:04.317Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/tldqxg0fk617",
+      "started_at": "2023-03-08T17:37:04.233Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "w7cbzqr7mh24",
+          "status": "investigating",
+          "body": "Cloudflare is investigating a problem regarding custom error pages retrieval at zone level. Requests to custom pages API may return a 403 response. Note that current Custom Error Pages are not affected and will still show up.",
+          "incident_id": "5f86yzt9pz75",
+          "created_at": "2023-03-08T17:37:04.315Z",
+          "updated_at": "2023-03-08T17:37:04.315Z",
+          "display_at": "2023-03-08T17:37:04.315Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2023-03-08T17:37:04.268Z",
+          "position": 7,
+          "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "yy1ndgk275cv",
