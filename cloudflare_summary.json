@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-10T17:39:36.575Z"
+    "updated_at": "2023-03-10T17:48:44.951Z"
   },
   "components": [
     {
@@ -3467,9 +3467,9 @@
     {
       "id": "bjlxcss20fsl",
       "name": "Magic Transit",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2020-12-17T09:48:10.912Z",
-      "updated_at": "2023-03-10T11:48:15.834Z",
+      "updated_at": "2023-03-10T17:48:44.894Z",
       "position": 29,
       "description": null,
       "showcase": false,
@@ -5659,7 +5659,7 @@
       "name": "Cagayan de Oro, Philippines - (CGY)",
       "status": "partial_outage",
       "created_at": "2022-09-08T13:18:32.118Z",
-      "updated_at": "2023-03-10T17:39:36.572Z",
+      "updated_at": "2023-03-10T17:44:40.490Z",
       "position": 80,
       "description": null,
       "showcase": false,
@@ -5832,74 +5832,36 @@
           "only_show_if_degraded": false
         }
       ]
-    },
+    }
+  ],
+  "scheduled_maintenances": [
     {
-      "id": "6xns780fxxjy",
-      "name": "Unplanned extension for CNI maintenance in Ashburn",
-      "status": "identified",
-      "created_at": "2023-03-10T11:48:15.793Z",
-      "updated_at": "2023-03-10T15:10:28.358Z",
+      "id": "v2k8h7dykckh",
+      "name": "CGY (Cagayan de Oro) on 2023-03-10",
+      "status": "scheduled",
+      "created_at": "2023-03-10T17:40:24.123Z",
+      "updated_at": "2023-03-10T17:40:24.209Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/5w9jjkjjypzb",
-      "started_at": "2023-03-10T11:48:15.784Z",
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/g6b6rfn32kqn",
+      "started_at": "2023-03-10T17:40:24.115Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "8spw4dfwx11v",
-          "status": "identified",
-          "body": "The fix is being implemented now.",
-          "incident_id": "6xns780fxxjy",
-          "created_at": "2023-03-10T15:10:28.355Z",
-          "updated_at": "2023-03-10T15:10:28.355Z",
-          "display_at": "2023-03-10T15:10:28.355Z",
+          "id": "r0pvgyf3z2w1",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in CGY (Cagayan de Oro) datacenter on 2023-03-10 between 18:00 and 19:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "v2k8h7dykckh",
+          "created_at": "2023-03-10T17:40:24.205Z",
+          "updated_at": "2023-03-10T17:40:24.205Z",
+          "display_at": "2023-03-10T17:40:24.205Z",
           "affected_components": [
             {
-              "code": "bjlxcss20fsl",
-              "name": "Cloudflare Sites and Services - Magic Transit",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "5k9l97vv2223",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "6xns780fxxjy",
-          "created_at": "2023-03-10T11:51:01.133Z",
-          "updated_at": "2023-03-10T11:51:01.133Z",
-          "display_at": "2023-03-10T11:51:01.133Z",
-          "affected_components": [
-            {
-              "code": "bjlxcss20fsl",
-              "name": "Cloudflare Sites and Services - Magic Transit",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "tpbqb9q4ghh6",
-          "status": "investigating",
-          "body": "Cloudflare Network Interconnect (CNI) customers who have interconnects in Ashburn will see their links down in Ashburn for longer than the predefined maintenance window.",
-          "incident_id": "6xns780fxxjy",
-          "created_at": "2023-03-10T11:48:15.895Z",
-          "updated_at": "2023-03-10T11:48:15.895Z",
-          "display_at": "2023-03-10T11:48:15.895Z",
-          "affected_components": [
-            {
-              "code": "bjlxcss20fsl",
-              "name": "Cloudflare Sites and Services - Magic Transit",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
+              "code": "wyq8p07mvlkf",
+              "name": "Asia - Cagayan de Oro, Philippines - (CGY)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -5909,24 +5871,24 @@
       ],
       "components": [
         {
-          "id": "bjlxcss20fsl",
-          "name": "Magic Transit",
-          "status": "degraded_performance",
-          "created_at": "2020-12-17T09:48:10.912Z",
-          "updated_at": "2023-03-10T11:48:15.834Z",
-          "position": 29,
+          "id": "wyq8p07mvlkf",
+          "name": "Cagayan de Oro, Philippines - (CGY)",
+          "status": "partial_outage",
+          "created_at": "2022-09-08T13:18:32.118Z",
+          "updated_at": "2023-03-10T17:44:40.490Z",
+          "position": 80,
           "description": null,
           "showcase": false,
-          "start_date": "2020-12-17",
-          "group_id": "1km35smx8p41",
+          "start_date": "2022-09-08",
+          "group_id": "77867vxkttgw",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
-      ]
-    }
-  ],
-  "scheduled_maintenances": [
+      ],
+      "scheduled_for": "2023-03-10T18:00:00.000Z",
+      "scheduled_until": "2023-03-10T19:00:00.000Z"
+    },
     {
       "id": "20g6xrgq3d9v",
       "name": "MFM (Macau) on 2023-03-10",
@@ -6252,60 +6214,6 @@
       "scheduled_until": "2023-03-13T12:00:00.000Z"
     },
     {
-      "id": "vv1jh1xttvz8",
-      "name": "EZE (Buenos Aires) on 2023-03-13",
-      "status": "scheduled",
-      "created_at": "2023-03-08T10:40:23.963Z",
-      "updated_at": "2023-03-08T10:40:24.022Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/xh0qhmm0h0yc",
-      "started_at": "2023-03-08T10:40:23.957Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "2wnygc7p0lzf",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in EZE (Buenos Aires) datacenter on 2023-03-13 between 09:30 and 12:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "vv1jh1xttvz8",
-          "created_at": "2023-03-08T10:40:24.020Z",
-          "updated_at": "2023-03-08T10:40:24.020Z",
-          "display_at": "2023-03-08T10:40:24.020Z",
-          "affected_components": [
-            {
-              "code": "26gznn8sts5z",
-              "name": "Latin America & the Caribbean - Buenos Aires, Argentina - (EZE)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "26gznn8sts5z",
-          "name": "Buenos Aires, Argentina - (EZE)",
-          "status": "operational",
-          "created_at": "2015-04-01T11:05:40.089Z",
-          "updated_at": "2023-03-09T10:15:04.724Z",
-          "position": 9,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-13T09:30:00.000Z",
-      "scheduled_until": "2023-03-13T12:30:00.000Z"
-    },
-    {
       "id": "rygg9y6vk8v9",
       "name": "BSB (Brasilia) on 2023-03-13",
       "status": "scheduled",
@@ -6350,6 +6258,60 @@
           "description": null,
           "showcase": false,
           "start_date": "2021-05-24",
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-13T09:30:00.000Z",
+      "scheduled_until": "2023-03-13T12:30:00.000Z"
+    },
+    {
+      "id": "vv1jh1xttvz8",
+      "name": "EZE (Buenos Aires) on 2023-03-13",
+      "status": "scheduled",
+      "created_at": "2023-03-08T10:40:23.963Z",
+      "updated_at": "2023-03-08T10:40:24.022Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/xh0qhmm0h0yc",
+      "started_at": "2023-03-08T10:40:23.957Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "2wnygc7p0lzf",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in EZE (Buenos Aires) datacenter on 2023-03-13 between 09:30 and 12:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "vv1jh1xttvz8",
+          "created_at": "2023-03-08T10:40:24.020Z",
+          "updated_at": "2023-03-08T10:40:24.020Z",
+          "display_at": "2023-03-08T10:40:24.020Z",
+          "affected_components": [
+            {
+              "code": "26gznn8sts5z",
+              "name": "Latin America & the Caribbean - Buenos Aires, Argentina - (EZE)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "26gznn8sts5z",
+          "name": "Buenos Aires, Argentina - (EZE)",
+          "status": "operational",
+          "created_at": "2015-04-01T11:05:40.089Z",
+          "updated_at": "2023-03-09T10:15:04.724Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
           "group_id": "91blz4ztt7dm",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -7278,60 +7240,6 @@
       "scheduled_until": "2023-03-16T11:00:00.000Z"
     },
     {
-      "id": "xt14vvk5kzg3",
-      "name": "SCL (Santiago) on 2023-03-16",
-      "status": "scheduled",
-      "created_at": "2023-03-08T10:40:26.246Z",
-      "updated_at": "2023-03-08T10:40:26.306Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/cyjtxhnsg516",
-      "started_at": "2023-03-08T10:40:26.236Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "ds7780hf16hg",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SCL (Santiago) datacenter on 2023-03-16 between 09:30 and 12:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "xt14vvk5kzg3",
-          "created_at": "2023-03-08T10:40:26.303Z",
-          "updated_at": "2023-03-08T10:40:26.303Z",
-          "display_at": "2023-03-08T10:40:26.303Z",
-          "affected_components": [
-            {
-              "code": "wg0b1zzm2f2w",
-              "name": "Latin America & the Caribbean - Santiago, Chile - (SCL)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "wg0b1zzm2f2w",
-          "name": "Santiago, Chile - (SCL)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:47:59.478Z",
-          "updated_at": "2023-03-06T06:58:24.620Z",
-          "position": 38,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-16T09:30:00.000Z",
-      "scheduled_until": "2023-03-16T12:30:00.000Z"
-    },
-    {
       "id": "6707kcwgss6z",
       "name": "GEO (Georgetown) on 2023-03-16",
       "status": "scheduled",
@@ -7376,6 +7284,60 @@
           "description": null,
           "showcase": false,
           "start_date": "2022-05-25",
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-16T09:30:00.000Z",
+      "scheduled_until": "2023-03-16T12:30:00.000Z"
+    },
+    {
+      "id": "xt14vvk5kzg3",
+      "name": "SCL (Santiago) on 2023-03-16",
+      "status": "scheduled",
+      "created_at": "2023-03-08T10:40:26.246Z",
+      "updated_at": "2023-03-08T10:40:26.306Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/cyjtxhnsg516",
+      "started_at": "2023-03-08T10:40:26.236Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ds7780hf16hg",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SCL (Santiago) datacenter on 2023-03-16 between 09:30 and 12:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "xt14vvk5kzg3",
+          "created_at": "2023-03-08T10:40:26.303Z",
+          "updated_at": "2023-03-08T10:40:26.303Z",
+          "display_at": "2023-03-08T10:40:26.303Z",
+          "affected_components": [
+            {
+              "code": "wg0b1zzm2f2w",
+              "name": "Latin America & the Caribbean - Santiago, Chile - (SCL)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "wg0b1zzm2f2w",
+          "name": "Santiago, Chile - (SCL)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:47:59.478Z",
+          "updated_at": "2023-03-06T06:58:24.620Z",
+          "position": 38,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
           "group_id": "91blz4ztt7dm",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -7764,60 +7726,6 @@
       "scheduled_until": "2023-03-17T13:30:00.000Z"
     },
     {
-      "id": "p5xszfnhq0y8",
-      "name": "SJP (São José do Rio Preto) on 2023-03-24",
-      "status": "scheduled",
-      "created_at": "2023-03-08T10:40:27.024Z",
-      "updated_at": "2023-03-08T10:40:27.088Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/5hzqvhyzxzgp",
-      "started_at": "2023-03-08T10:40:27.018Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "3xd204sxsw5p",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SJP (São José do Rio Preto) datacenter on 2023-03-24 between 09:30 and 12:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "p5xszfnhq0y8",
-          "created_at": "2023-03-08T10:40:27.086Z",
-          "updated_at": "2023-03-08T10:40:27.086Z",
-          "display_at": "2023-03-08T10:40:27.086Z",
-          "affected_components": [
-            {
-              "code": "3hdcvfzv4qbc",
-              "name": "Latin America & the Caribbean - São José do Rio Preto, Brazil - (SJP)",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "3hdcvfzv4qbc",
-          "name": "São José do Rio Preto, Brazil - (SJP)",
-          "status": "operational",
-          "created_at": "2021-09-21T17:42:47.447Z",
-          "updated_at": "2023-03-10T08:12:54.124Z",
-          "position": 39,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-09-21",
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-24T09:30:00.000Z",
-      "scheduled_until": "2023-03-24T12:30:00.000Z"
-    },
-    {
       "id": "5vg31zd4sq8x",
       "name": "CGB (Cuiaba) on 2023-03-24",
       "status": "scheduled",
@@ -7862,6 +7770,60 @@
           "description": null,
           "showcase": false,
           "start_date": "2022-06-28",
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-24T09:30:00.000Z",
+      "scheduled_until": "2023-03-24T12:30:00.000Z"
+    },
+    {
+      "id": "p5xszfnhq0y8",
+      "name": "SJP (São José do Rio Preto) on 2023-03-24",
+      "status": "scheduled",
+      "created_at": "2023-03-08T10:40:27.024Z",
+      "updated_at": "2023-03-08T10:40:27.088Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/5hzqvhyzxzgp",
+      "started_at": "2023-03-08T10:40:27.018Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "3xd204sxsw5p",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SJP (São José do Rio Preto) datacenter on 2023-03-24 between 09:30 and 12:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "p5xszfnhq0y8",
+          "created_at": "2023-03-08T10:40:27.086Z",
+          "updated_at": "2023-03-08T10:40:27.086Z",
+          "display_at": "2023-03-08T10:40:27.086Z",
+          "affected_components": [
+            {
+              "code": "3hdcvfzv4qbc",
+              "name": "Latin America & the Caribbean - São José do Rio Preto, Brazil - (SJP)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3hdcvfzv4qbc",
+          "name": "São José do Rio Preto, Brazil - (SJP)",
+          "status": "operational",
+          "created_at": "2021-09-21T17:42:47.447Z",
+          "updated_at": "2023-03-10T08:12:54.124Z",
+          "position": 39,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-09-21",
           "group_id": "91blz4ztt7dm",
           "page_id": "yh6f0r4529hb",
           "group": false,
