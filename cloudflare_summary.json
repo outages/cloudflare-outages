@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-10T22:38:09.077Z"
+    "updated_at": "2023-03-10T22:48:50.118Z"
   },
   "components": [
     {
@@ -55,7 +55,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1532,9 +1532,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2023-03-08T20:25:23.403Z",
+      "updated_at": "2023-03-10T22:48:50.038Z",
       "position": 9,
       "description": "Cloudflare's JavaScript and WebAssembly execution service",
       "showcase": false,
@@ -2237,9 +2237,9 @@
     {
       "id": "rbnhbzgld936",
       "name": "Frankfurt, Germany - (FRA)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T20:37:25.480Z",
-      "updated_at": "2023-03-09T05:57:11.970Z",
+      "updated_at": "2023-03-10T22:48:50.058Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -4712,9 +4712,9 @@
     {
       "id": "lc19ck0jpzs5",
       "name": "Malé, Maldives - (MLE)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-08-21T01:51:26.198Z",
-      "updated_at": "2023-03-09T16:34:12.529Z",
+      "updated_at": "2023-03-10T22:43:12.809Z",
       "position": 46,
       "description": null,
       "showcase": false,
@@ -5764,16 +5764,42 @@
     {
       "id": "6pkk0mmfp7tj",
       "name": "Cloudflare Worker issues",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2023-03-10T21:32:10.578Z",
-      "updated_at": "2023-03-10T21:32:10.643Z",
+      "updated_at": "2023-03-10T22:48:50.110Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "none",
+      "impact": "minor",
       "shortlink": "https://stspg.io/8nzy0h0lx0pp",
       "started_at": "2023-03-10T21:32:10.566Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "68r51yx3c5n9",
+          "status": "identified",
+          "body": "Cloudflare has traced the cause of the issues in the Frankfurt, Germany region to the incident previously reported here: https://www.cloudflarestatus.com/incidents/whfrm9qh7jz1. We have identified a fix and are preparing a remediation.",
+          "incident_id": "6pkk0mmfp7tj",
+          "created_at": "2023-03-10T22:48:50.108Z",
+          "updated_at": "2023-03-10T22:48:50.108Z",
+          "display_at": "2023-03-10T22:48:50.108Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "g71ls329sd7m",
           "status": "investigating",
@@ -5805,9 +5831,9 @@
         {
           "id": "57srcl8zcn7c",
           "name": "Workers",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2023-03-08T20:25:23.403Z",
+          "updated_at": "2023-03-10T22:48:50.038Z",
           "position": 9,
           "description": "Cloudflare's JavaScript and WebAssembly execution service",
           "showcase": false,
@@ -5820,9 +5846,9 @@
         {
           "id": "rbnhbzgld936",
           "name": "Frankfurt, Germany - (FRA)",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2014-10-27T20:37:25.480Z",
-          "updated_at": "2023-03-09T05:57:11.970Z",
+          "updated_at": "2023-03-10T22:48:50.058Z",
           "position": 16,
           "description": null,
           "showcase": false,
@@ -6725,7 +6751,7 @@
       "name": "SYD (Sydney) on 2023-03-14",
       "status": "scheduled",
       "created_at": "2023-03-09T23:40:28.046Z",
-      "updated_at": "2023-03-09T23:40:28.098Z",
+      "updated_at": "2023-03-10T22:40:23.208Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -6733,6 +6759,26 @@
       "started_at": "2023-03-09T23:40:28.040Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "5h70yg9s5d9p",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SYD (Sydney) datacenter on 2023-03-14 between 15:30 and 19:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "q7qgl85y7c50",
+          "created_at": "2023-03-10T22:40:23.205Z",
+          "updated_at": "2023-03-10T22:40:23.205Z",
+          "display_at": "2023-03-10T22:40:23.205Z",
+          "affected_components": [
+            {
+              "code": "fvqfrchfl8yc",
+              "name": "Oceania - Sydney, NSW, Australia - (SYD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "0q93s643fptc",
           "status": "scheduled",
@@ -6772,7 +6818,61 @@
         }
       ],
       "scheduled_for": "2023-03-14T15:30:00.000Z",
-      "scheduled_until": "2023-03-14T18:30:00.000Z"
+      "scheduled_until": "2023-03-14T19:30:00.000Z"
+    },
+    {
+      "id": "6zspr3fpflhw",
+      "name": "BOM (Mumbai) on 2023-03-14",
+      "status": "scheduled",
+      "created_at": "2023-03-10T22:40:22.754Z",
+      "updated_at": "2023-03-10T22:40:22.820Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/j3trt1qjmnbx",
+      "started_at": "2023-03-10T22:40:22.745Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "99593cmsxmb3",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in BOM (Mumbai) datacenter between 2023-03-14 20:00 and 2023-03-15 00:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "6zspr3fpflhw",
+          "created_at": "2023-03-10T22:40:22.817Z",
+          "updated_at": "2023-03-10T22:40:22.817Z",
+          "display_at": "2023-03-10T22:40:22.817Z",
+          "affected_components": [
+            {
+              "code": "t3d07wlg67nl",
+              "name": "Asia - Mumbai, India - (BOM)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "t3d07wlg67nl",
+          "name": "Mumbai, India - (BOM)",
+          "status": "operational",
+          "created_at": "2015-10-27T20:12:43.833Z",
+          "updated_at": "2023-03-10T00:25:54.459Z",
+          "position": 49,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-14T20:00:00.000Z",
+      "scheduled_until": "2023-03-15T00:00:00.000Z"
     },
     {
       "id": "ddsm7r1v2jz7",
