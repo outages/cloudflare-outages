@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-13T06:43:03.974Z"
+    "updated_at": "2023-03-13T07:11:50.339Z"
   },
   "components": [
     {
@@ -55,7 +55,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2462,9 +2462,9 @@
     {
       "id": "4c231tkdlpcl",
       "name": "Analytics",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-11-13T11:54:10.191Z",
-      "updated_at": "2023-02-28T10:02:14.449Z",
+      "updated_at": "2023-03-13T06:54:51.656Z",
       "position": 18,
       "description": "Cloudflare customer analytics aggregation service",
       "showcase": false,
@@ -5760,142 +5760,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "ghhmg2ppzd9r",
+      "name": "DNS Analytics API Queries Issue",
+      "status": "monitoring",
+      "created_at": "2023-03-13T06:54:51.622Z",
+      "updated_at": "2023-03-13T07:11:50.337Z",
+      "monitoring_at": "2023-03-13T07:11:50.323Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/0rr6y59mv0hl",
+      "started_at": "2023-03-13T06:54:51.613Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "5gl45019k1w1",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "ghhmg2ppzd9r",
+          "created_at": "2023-03-13T07:11:50.323Z",
+          "updated_at": "2023-03-13T07:11:50.323Z",
+          "display_at": "2023-03-13T07:11:50.323Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "gvrcpkqrqm3n",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue with DNS Analytics API. Customers that use DNS Analytics API may observe increased errors.",
+          "incident_id": "ghhmg2ppzd9r",
+          "created_at": "2023-03-13T06:54:51.720Z",
+          "updated_at": "2023-03-13T06:54:51.720Z",
+          "display_at": "2023-03-13T06:54:51.720Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "degraded_performance",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2023-03-13T06:54:51.656Z",
+          "position": 18,
+          "description": "Cloudflare customer analytics aggregation service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
-    {
-      "id": "tjj6yb644bf2",
-      "name": "MIA (Miami) on 2023-03-13",
-      "status": "scheduled",
-      "created_at": "2023-03-13T04:00:52.292Z",
-      "updated_at": "2023-03-13T05:59:58.996Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/6145bwxlyl06",
-      "started_at": "2023-03-13T04:00:52.286Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "969418529ts0",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "tjj6yb644bf2",
-          "created_at": "2023-03-13T05:59:58.882Z",
-          "updated_at": "2023-03-13T05:59:58.882Z",
-          "display_at": "2023-03-13T05:59:58.882Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "r6ghqnw5234w",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MIA (Miami) datacenter on 2023-03-13 between 07:00 and 08:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "tjj6yb644bf2",
-          "created_at": "2023-03-13T04:00:52.360Z",
-          "updated_at": "2023-03-13T04:00:52.360Z",
-          "display_at": "2023-03-13T04:00:52.360Z",
-          "affected_components": [
-            {
-              "code": "mvbjk0vw3krv",
-              "name": "North America - Miami, FL, United States - (MIA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "mvbjk0vw3krv",
-          "name": "Miami, FL, United States - (MIA)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:31:43.401Z",
-          "updated_at": "2023-03-10T08:07:48.044Z",
-          "position": 22,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-13T07:00:00.000Z",
-      "scheduled_until": "2023-03-13T08:30:00.000Z"
-    },
-    {
-      "id": "qrc6dss07d5h",
-      "name": "BOG (Bogotá) on 2023-03-13",
-      "status": "scheduled",
-      "created_at": "2023-03-03T09:40:15.666Z",
-      "updated_at": "2023-03-13T05:59:57.189Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/0g3flgkz2s4q",
-      "started_at": "2023-03-03T09:40:15.659Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "33yrm37s4n57",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "qrc6dss07d5h",
-          "created_at": "2023-03-13T05:59:57.061Z",
-          "updated_at": "2023-03-13T05:59:57.061Z",
-          "display_at": "2023-03-13T05:59:57.061Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "93s1b1z0ttjz",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BOG (Bogotá) datacenter on 2023-03-13 between 07:00 and 12:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "qrc6dss07d5h",
-          "created_at": "2023-03-03T09:40:15.719Z",
-          "updated_at": "2023-03-03T09:40:15.719Z",
-          "display_at": "2023-03-03T09:40:15.719Z",
-          "affected_components": [
-            {
-              "code": "171wlzvlxttk",
-              "name": "Latin America & the Caribbean - Bogotá, Colombia - (BOG)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "171wlzvlxttk",
-          "name": "Bogotá, Colombia - (BOG)",
-          "status": "operational",
-          "created_at": "2018-03-28T06:25:42.210Z",
-          "updated_at": "2023-02-28T03:09:51.395Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-13T07:00:00.000Z",
-      "scheduled_until": "2023-03-13T12:00:00.000Z"
-    },
     {
       "id": "6m01wxwvy0fx",
       "name": "SEA (Seattle) on 2023-03-13",
@@ -5951,60 +5890,6 @@
       "scheduled_until": "2023-03-13T12:00:00.000Z"
     },
     {
-      "id": "vv1jh1xttvz8",
-      "name": "EZE (Buenos Aires) on 2023-03-13",
-      "status": "scheduled",
-      "created_at": "2023-03-08T10:40:23.963Z",
-      "updated_at": "2023-03-08T10:40:24.022Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/xh0qhmm0h0yc",
-      "started_at": "2023-03-08T10:40:23.957Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "2wnygc7p0lzf",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in EZE (Buenos Aires) datacenter on 2023-03-13 between 09:30 and 12:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "vv1jh1xttvz8",
-          "created_at": "2023-03-08T10:40:24.020Z",
-          "updated_at": "2023-03-08T10:40:24.020Z",
-          "display_at": "2023-03-08T10:40:24.020Z",
-          "affected_components": [
-            {
-              "code": "26gznn8sts5z",
-              "name": "Latin America & the Caribbean - Buenos Aires, Argentina - (EZE)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "26gznn8sts5z",
-          "name": "Buenos Aires, Argentina - (EZE)",
-          "status": "operational",
-          "created_at": "2015-04-01T11:05:40.089Z",
-          "updated_at": "2023-03-09T10:15:04.724Z",
-          "position": 9,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-13T09:30:00.000Z",
-      "scheduled_until": "2023-03-13T12:30:00.000Z"
-    },
-    {
       "id": "rygg9y6vk8v9",
       "name": "BSB (Brasilia) on 2023-03-13",
       "status": "scheduled",
@@ -6049,6 +5934,60 @@
           "description": null,
           "showcase": false,
           "start_date": "2021-05-24",
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-13T09:30:00.000Z",
+      "scheduled_until": "2023-03-13T12:30:00.000Z"
+    },
+    {
+      "id": "vv1jh1xttvz8",
+      "name": "EZE (Buenos Aires) on 2023-03-13",
+      "status": "scheduled",
+      "created_at": "2023-03-08T10:40:23.963Z",
+      "updated_at": "2023-03-08T10:40:24.022Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/xh0qhmm0h0yc",
+      "started_at": "2023-03-08T10:40:23.957Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "2wnygc7p0lzf",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in EZE (Buenos Aires) datacenter on 2023-03-13 between 09:30 and 12:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "vv1jh1xttvz8",
+          "created_at": "2023-03-08T10:40:24.020Z",
+          "updated_at": "2023-03-08T10:40:24.020Z",
+          "display_at": "2023-03-08T10:40:24.020Z",
+          "affected_components": [
+            {
+              "code": "26gznn8sts5z",
+              "name": "Latin America & the Caribbean - Buenos Aires, Argentina - (EZE)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "26gznn8sts5z",
+          "name": "Buenos Aires, Argentina - (EZE)",
+          "status": "operational",
+          "created_at": "2015-04-01T11:05:40.089Z",
+          "updated_at": "2023-03-09T10:15:04.724Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
           "group_id": "91blz4ztt7dm",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -7859,6 +7798,166 @@
       ],
       "scheduled_for": "2023-03-24T09:30:00.000Z",
       "scheduled_until": "2023-03-24T12:30:00.000Z"
+    },
+    {
+      "id": "tjj6yb644bf2",
+      "name": "MIA (Miami) on 2023-03-13",
+      "status": "in_progress",
+      "created_at": "2023-03-13T04:00:52.292Z",
+      "updated_at": "2023-03-13T07:01:12.991Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/6145bwxlyl06",
+      "started_at": "2023-03-13T04:00:52.286Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "zmmdprxlbgd7",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "tjj6yb644bf2",
+          "created_at": "2023-03-13T07:01:12.987Z",
+          "updated_at": "2023-03-13T07:01:12.987Z",
+          "display_at": "2023-03-13T07:01:12.987Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "969418529ts0",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "tjj6yb644bf2",
+          "created_at": "2023-03-13T05:59:58.882Z",
+          "updated_at": "2023-03-13T05:59:58.882Z",
+          "display_at": "2023-03-13T05:59:58.882Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "r6ghqnw5234w",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MIA (Miami) datacenter on 2023-03-13 between 07:00 and 08:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "tjj6yb644bf2",
+          "created_at": "2023-03-13T04:00:52.360Z",
+          "updated_at": "2023-03-13T04:00:52.360Z",
+          "display_at": "2023-03-13T04:00:52.360Z",
+          "affected_components": [
+            {
+              "code": "mvbjk0vw3krv",
+              "name": "North America - Miami, FL, United States - (MIA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mvbjk0vw3krv",
+          "name": "Miami, FL, United States - (MIA)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:31:43.401Z",
+          "updated_at": "2023-03-10T08:07:48.044Z",
+          "position": 22,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-13T07:00:00.000Z",
+      "scheduled_until": "2023-03-13T08:30:00.000Z"
+    },
+    {
+      "id": "qrc6dss07d5h",
+      "name": "BOG (Bogotá) on 2023-03-13",
+      "status": "in_progress",
+      "created_at": "2023-03-03T09:40:15.666Z",
+      "updated_at": "2023-03-13T07:00:28.713Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/0g3flgkz2s4q",
+      "started_at": "2023-03-03T09:40:15.659Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "gtwwrb5j9r8f",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "qrc6dss07d5h",
+          "created_at": "2023-03-13T07:00:28.708Z",
+          "updated_at": "2023-03-13T07:00:28.708Z",
+          "display_at": "2023-03-13T07:00:28.708Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "33yrm37s4n57",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "qrc6dss07d5h",
+          "created_at": "2023-03-13T05:59:57.061Z",
+          "updated_at": "2023-03-13T05:59:57.061Z",
+          "display_at": "2023-03-13T05:59:57.061Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "93s1b1z0ttjz",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in BOG (Bogotá) datacenter on 2023-03-13 between 07:00 and 12:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "qrc6dss07d5h",
+          "created_at": "2023-03-03T09:40:15.719Z",
+          "updated_at": "2023-03-03T09:40:15.719Z",
+          "display_at": "2023-03-03T09:40:15.719Z",
+          "affected_components": [
+            {
+              "code": "171wlzvlxttk",
+              "name": "Latin America & the Caribbean - Bogotá, Colombia - (BOG)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "171wlzvlxttk",
+          "name": "Bogotá, Colombia - (BOG)",
+          "status": "operational",
+          "created_at": "2018-03-28T06:25:42.210Z",
+          "updated_at": "2023-02-28T03:09:51.395Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-13T07:00:00.000Z",
+      "scheduled_until": "2023-03-13T12:00:00.000Z"
     }
   ],
   "status": {
