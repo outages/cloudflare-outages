@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-17T10:12:11.703Z"
+    "updated_at": "2023-03-17T10:33:20.524Z"
   },
   "components": [
     {
@@ -4353,9 +4353,9 @@
     {
       "id": "3hdcvfzv4qbc",
       "name": "São José do Rio Preto, Brazil - (SJP)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-09-21T17:42:47.447Z",
-      "updated_at": "2023-03-17T09:36:46.330Z",
+      "updated_at": "2023-03-17T10:22:19.652Z",
       "position": 41,
       "description": null,
       "showcase": false,
@@ -5776,7 +5776,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "8t1m7drctt1x",
+      "name": "Cloudflare One agent new devices registration issues",
+      "status": "investigating",
+      "created_at": "2023-03-17T10:32:59.018Z",
+      "updated_at": "2023-03-17T10:33:20.516Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5p5qxntdcfmj",
+      "started_at": "2023-03-17T10:32:59.009Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "3dvvgc07955y",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues registering new devices into Cloudflare One accounts through the Cloudflare One agent. Devices already registered are not impacted.\n\nWe are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "8t1m7drctt1x",
+          "created_at": "2023-03-17T10:32:59.088Z",
+          "updated_at": "2023-03-17T10:32:59.088Z",
+          "display_at": "2023-03-17T10:32:59.088Z",
+          "affected_components": [
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kf0ktv29xrfy",
+          "name": "Zero Trust",
+          "status": "operational",
+          "created_at": "2021-04-08T15:53:09.058Z",
+          "updated_at": "2023-03-14T23:21:09.520Z",
+          "position": 38,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "9m4kmmlxhtpt",
@@ -7423,106 +7476,6 @@
       ],
       "scheduled_for": "2023-03-17T09:00:00.000Z",
       "scheduled_until": "2023-03-17T12:00:00.000Z"
-    },
-    {
-      "id": "xywkhwbhg0z4",
-      "name": "DEN (Denver) on 2023-03-17",
-      "status": "in_progress",
-      "created_at": "2023-03-13T23:20:57.769Z",
-      "updated_at": "2023-03-17T07:30:08.015Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/xtp1d2td29qx",
-      "started_at": "2023-03-13T23:20:57.761Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "2l0zybz7j6g6",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "xywkhwbhg0z4",
-          "created_at": "2023-03-17T07:30:08.011Z",
-          "updated_at": "2023-03-17T07:30:08.011Z",
-          "display_at": "2023-03-17T07:30:08.011Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "mxq8r6xj1qb5",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "xywkhwbhg0z4",
-          "created_at": "2023-03-17T06:29:57.482Z",
-          "updated_at": "2023-03-17T06:29:57.482Z",
-          "display_at": "2023-03-17T06:29:57.482Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "rt5vf37yh16z",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DEN (Denver) datacenter on 2023-03-17 between 07:30 and 10:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "xywkhwbhg0z4",
-          "created_at": "2023-03-15T22:01:06.395Z",
-          "updated_at": "2023-03-15T22:01:06.395Z",
-          "display_at": "2023-03-15T22:01:06.395Z",
-          "affected_components": [
-            {
-              "code": "6s4lzp8vmxr5",
-              "name": "North America - Denver, CO, United States - (DEN)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "fdmj136zcfvx",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DEN (Denver) datacenter on 2023-03-17 between 09:00 and 12:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "xywkhwbhg0z4",
-          "created_at": "2023-03-13T23:20:57.848Z",
-          "updated_at": "2023-03-13T23:20:57.848Z",
-          "display_at": "2023-03-13T23:20:57.848Z",
-          "affected_components": [
-            {
-              "code": "6s4lzp8vmxr5",
-              "name": "North America - Denver, CO, United States - (DEN)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "6s4lzp8vmxr5",
-          "name": "Denver, CO, United States - (DEN)",
-          "status": "partial_outage",
-          "created_at": "2016-06-13T10:58:02.694Z",
-          "updated_at": "2023-03-17T07:50:31.250Z",
-          "position": 10,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-17T07:30:00.000Z",
-      "scheduled_until": "2023-03-17T10:30:00.000Z"
     }
   ],
   "status": {
