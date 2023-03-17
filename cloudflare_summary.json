@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-17T16:21:05.683Z"
+    "updated_at": "2023-03-17T16:43:01.194Z"
   },
   "components": [
     {
@@ -2523,9 +2523,9 @@
     {
       "id": "4shr6kl4nszm",
       "name": "Fukuoka, Japan - (FUK)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-01-13T00:50:58.781Z",
-      "updated_at": "2023-02-15T23:07:47.711Z",
+      "updated_at": "2023-03-17T16:29:05.639Z",
       "position": 18,
       "description": null,
       "showcase": false,
@@ -3063,9 +3063,9 @@
     {
       "id": "gw5dtkqqr4lv",
       "name": "Ho Chi Minh City, Vietnam - (SGN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-12-06T09:28:02.817Z",
-      "updated_at": "2023-03-17T16:21:05.626Z",
+      "updated_at": "2023-03-17T16:24:03.414Z",
       "position": 24,
       "description": null,
       "showcase": false,
@@ -4833,9 +4833,9 @@
     {
       "id": "ss09y7v3wzwd",
       "name": "Manila, Philippines - (MNL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-04-29T12:14:56.581Z",
-      "updated_at": "2023-03-17T16:21:04.889Z",
+      "updated_at": "2023-03-17T16:24:03.070Z",
       "position": 48,
       "description": null,
       "showcase": false,
@@ -5780,16 +5780,36 @@
     {
       "id": "w78mw7mrq1c0",
       "name": "Cloudflare Zero Trust: Gateway Issues",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2023-03-17T14:41:09.899Z",
-      "updated_at": "2023-03-17T16:06:09.527Z",
-      "monitoring_at": null,
+      "updated_at": "2023-03-17T16:28:47.838Z",
+      "monitoring_at": "2023-03-17T16:28:47.824Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/q9n1hv5zyq9p",
       "started_at": "2023-03-17T14:41:09.887Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "d7z2yb6mxblp",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "w78mw7mrq1c0",
+          "created_at": "2023-03-17T16:28:47.824Z",
+          "updated_at": "2023-03-17T16:28:47.824Z",
+          "display_at": "2023-03-17T16:28:47.824Z",
+          "affected_components": [
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "4pq4qtj36qy1",
           "status": "identified",
@@ -5851,114 +5871,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "gzdthpzkyp8p",
-      "name": "MNL (Manila) on 2023-03-17",
-      "status": "scheduled",
-      "created_at": "2023-03-17T16:21:04.850Z",
-      "updated_at": "2023-03-17T16:21:04.936Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/99ww92mryqv6",
-      "started_at": "2023-03-17T16:21:04.842Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "b5lkg416mvwq",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MNL (Manila) datacenter on 2023-03-17 between 16:30 and 21:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "gzdthpzkyp8p",
-          "created_at": "2023-03-17T16:21:04.933Z",
-          "updated_at": "2023-03-17T16:21:04.933Z",
-          "display_at": "2023-03-17T16:21:04.933Z",
-          "affected_components": [
-            {
-              "code": "ss09y7v3wzwd",
-              "name": "Asia - Manila, Philippines - (MNL)",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ss09y7v3wzwd",
-          "name": "Manila, Philippines - (MNL)",
-          "status": "operational",
-          "created_at": "2016-04-29T12:14:56.581Z",
-          "updated_at": "2023-03-17T16:21:04.889Z",
-          "position": 48,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-17T16:30:00.000Z",
-      "scheduled_until": "2023-03-17T21:00:00.000Z"
-    },
-    {
-      "id": "424w4z4fnrn6",
-      "name": "SGN (Ho Chi Minh City) on 2023-03-17",
-      "status": "scheduled",
-      "created_at": "2023-03-17T16:21:05.582Z",
-      "updated_at": "2023-03-17T16:21:05.679Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/rnrwcgfrn19r",
-      "started_at": "2023-03-17T16:21:05.573Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "s0qqb0mdtkhc",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SGN (Ho Chi Minh City) datacenter on 2023-03-17 between 16:30 and 21:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "424w4z4fnrn6",
-          "created_at": "2023-03-17T16:21:05.676Z",
-          "updated_at": "2023-03-17T16:21:05.676Z",
-          "display_at": "2023-03-17T16:21:05.676Z",
-          "affected_components": [
-            {
-              "code": "gw5dtkqqr4lv",
-              "name": "Asia - Ho Chi Minh City, Vietnam - (SGN)",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "gw5dtkqqr4lv",
-          "name": "Ho Chi Minh City, Vietnam - (SGN)",
-          "status": "operational",
-          "created_at": "2018-12-06T09:28:02.817Z",
-          "updated_at": "2023-03-17T16:21:05.626Z",
-          "position": 24,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-17T16:30:00.000Z",
-      "scheduled_until": "2023-03-17T21:00:00.000Z"
-    },
     {
       "id": "80rzymt51pbm",
       "name": "BKK (Bangkok) on 2023-03-17",
@@ -6284,60 +6196,6 @@
       "scheduled_until": "2023-03-20T14:00:00.000Z"
     },
     {
-      "id": "55rpy3fzz3j8",
-      "name": "HKG (Hong Kong) on 2023-03-20",
-      "status": "scheduled",
-      "created_at": "2023-03-14T20:41:21.618Z",
-      "updated_at": "2023-03-14T20:41:21.671Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/9j9vm568dvsf",
-      "started_at": "2023-03-14T20:41:21.611Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "79gplf30sq00",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in HKG (Hong Kong) datacenter on 2023-03-20 between 18:00 and 20:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "55rpy3fzz3j8",
-          "created_at": "2023-03-14T20:41:21.669Z",
-          "updated_at": "2023-03-14T20:41:21.669Z",
-          "display_at": "2023-03-14T20:41:21.669Z",
-          "affected_components": [
-            {
-              "code": "wf2gdmxg7cv3",
-              "name": "Asia - Hong Kong - (HKG)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "wf2gdmxg7cv3",
-          "name": "Hong Kong - (HKG)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:46:42.606Z",
-          "updated_at": "2023-03-08T23:22:31.006Z",
-          "position": 25,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-20T18:00:00.000Z",
-      "scheduled_until": "2023-03-20T20:00:00.000Z"
-    },
-    {
       "id": "3nhnwfdmt6ng",
       "name": "SIN (Singapore) on 2023-03-20",
       "status": "scheduled",
@@ -6390,6 +6248,60 @@
       ],
       "scheduled_for": "2023-03-20T18:00:00.000Z",
       "scheduled_until": "2023-03-20T20:15:00.000Z"
+    },
+    {
+      "id": "55rpy3fzz3j8",
+      "name": "HKG (Hong Kong) on 2023-03-20",
+      "status": "scheduled",
+      "created_at": "2023-03-14T20:41:21.618Z",
+      "updated_at": "2023-03-14T20:41:21.671Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/9j9vm568dvsf",
+      "started_at": "2023-03-14T20:41:21.611Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "79gplf30sq00",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in HKG (Hong Kong) datacenter on 2023-03-20 between 18:00 and 20:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "55rpy3fzz3j8",
+          "created_at": "2023-03-14T20:41:21.669Z",
+          "updated_at": "2023-03-14T20:41:21.669Z",
+          "display_at": "2023-03-14T20:41:21.669Z",
+          "affected_components": [
+            {
+              "code": "wf2gdmxg7cv3",
+              "name": "Asia - Hong Kong - (HKG)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "wf2gdmxg7cv3",
+          "name": "Hong Kong - (HKG)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:46:42.606Z",
+          "updated_at": "2023-03-08T23:22:31.006Z",
+          "position": 25,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-20T18:00:00.000Z",
+      "scheduled_until": "2023-03-20T20:00:00.000Z"
     },
     {
       "id": "h0j47tvyn8lt",
@@ -6984,6 +6896,140 @@
       ],
       "scheduled_for": "2023-03-23T18:00:00.000Z",
       "scheduled_until": "2023-03-23T20:00:00.000Z"
+    },
+    {
+      "id": "gzdthpzkyp8p",
+      "name": "MNL (Manila) on 2023-03-17",
+      "status": "in_progress",
+      "created_at": "2023-03-17T16:21:04.850Z",
+      "updated_at": "2023-03-17T16:30:21.931Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/99ww92mryqv6",
+      "started_at": "2023-03-17T16:21:04.842Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "kdvj52v3nlnf",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "gzdthpzkyp8p",
+          "created_at": "2023-03-17T16:30:21.929Z",
+          "updated_at": "2023-03-17T16:30:21.929Z",
+          "display_at": "2023-03-17T16:30:21.929Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "b5lkg416mvwq",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MNL (Manila) datacenter on 2023-03-17 between 16:30 and 21:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "gzdthpzkyp8p",
+          "created_at": "2023-03-17T16:21:04.933Z",
+          "updated_at": "2023-03-17T16:21:04.933Z",
+          "display_at": "2023-03-17T16:21:04.933Z",
+          "affected_components": [
+            {
+              "code": "ss09y7v3wzwd",
+              "name": "Asia - Manila, Philippines - (MNL)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ss09y7v3wzwd",
+          "name": "Manila, Philippines - (MNL)",
+          "status": "partial_outage",
+          "created_at": "2016-04-29T12:14:56.581Z",
+          "updated_at": "2023-03-17T16:24:03.070Z",
+          "position": 48,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-17T16:30:00.000Z",
+      "scheduled_until": "2023-03-17T21:00:00.000Z"
+    },
+    {
+      "id": "424w4z4fnrn6",
+      "name": "SGN (Ho Chi Minh City) on 2023-03-17",
+      "status": "in_progress",
+      "created_at": "2023-03-17T16:21:05.582Z",
+      "updated_at": "2023-03-17T16:30:21.496Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/rnrwcgfrn19r",
+      "started_at": "2023-03-17T16:21:05.573Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8t7wwxrpsnpk",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "424w4z4fnrn6",
+          "created_at": "2023-03-17T16:30:21.492Z",
+          "updated_at": "2023-03-17T16:30:21.492Z",
+          "display_at": "2023-03-17T16:30:21.492Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "s0qqb0mdtkhc",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SGN (Ho Chi Minh City) datacenter on 2023-03-17 between 16:30 and 21:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "424w4z4fnrn6",
+          "created_at": "2023-03-17T16:21:05.676Z",
+          "updated_at": "2023-03-17T16:21:05.676Z",
+          "display_at": "2023-03-17T16:21:05.676Z",
+          "affected_components": [
+            {
+              "code": "gw5dtkqqr4lv",
+              "name": "Asia - Ho Chi Minh City, Vietnam - (SGN)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gw5dtkqqr4lv",
+          "name": "Ho Chi Minh City, Vietnam - (SGN)",
+          "status": "partial_outage",
+          "created_at": "2018-12-06T09:28:02.817Z",
+          "updated_at": "2023-03-17T16:24:03.414Z",
+          "position": 24,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-17T16:30:00.000Z",
+      "scheduled_until": "2023-03-17T21:00:00.000Z"
     },
     {
       "id": "w84bndb8w49f",
