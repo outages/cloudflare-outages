@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-22T17:49:12.593Z"
+    "updated_at": "2023-03-22T18:09:26.895Z"
   },
   "components": [
     {
@@ -55,7 +55,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -411,9 +411,9 @@
     {
       "id": "gxjcfyf5pht1",
       "name": "Baghdad, Iraq - (BGW)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-03-12T14:18:23.436Z",
-      "updated_at": "2023-03-22T17:13:45.554Z",
+      "updated_at": "2023-03-22T18:09:26.892Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -4023,9 +4023,9 @@
     {
       "id": "d1r0plwsl5qb",
       "name": "Firewall",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-09-04T17:53:26.383Z",
-      "updated_at": "2023-03-06T21:37:55.633Z",
+      "updated_at": "2023-03-22T18:03:54.635Z",
       "position": 37,
       "description": null,
       "showcase": false,
@@ -4323,9 +4323,9 @@
     {
       "id": "d2yzjq2bnj2w",
       "name": "Lahore, Pakistan - (LHE)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-02-11T03:02:39.931Z",
-      "updated_at": "2023-03-22T17:33:59.911Z",
+      "updated_at": "2023-03-22T18:04:22.918Z",
       "position": 41,
       "description": null,
       "showcase": false,
@@ -5358,9 +5358,9 @@
     {
       "id": "m4jywscr0n0k",
       "name": "Turnstile",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-19T17:03:40.590Z",
-      "updated_at": "2023-01-19T17:03:40.590Z",
+      "updated_at": "2023-03-22T18:03:54.659Z",
       "position": 58,
       "description": "Turnstile is a user-friendly, privacy-preserving alternative to CAPTCHA.",
       "showcase": false,
@@ -5776,7 +5776,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "ccls5k2f1jlw",
+      "name": "Increase in challenges for traffic from TOR exit nodes",
+      "status": "investigating",
+      "created_at": "2023-03-22T18:03:54.589Z",
+      "updated_at": "2023-03-22T18:03:54.751Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/836qc2dyphjd",
+      "started_at": "2023-03-22T18:03:54.578Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "xbn3q14rd1fb",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an increase in challenges for traffic originating from TOR exit nodes. Some visitors may also be misidentified as TOR traffic.",
+          "incident_id": "ccls5k2f1jlw",
+          "created_at": "2023-03-22T18:03:54.748Z",
+          "updated_at": "2023-03-22T18:03:54.748Z",
+          "display_at": "2023-03-22T18:03:54.748Z",
+          "affected_components": [
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "m4jywscr0n0k",
+              "name": "Cloudflare Sites and Services - Turnstile",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d1r0plwsl5qb",
+          "name": "Firewall",
+          "status": "degraded_performance",
+          "created_at": "2020-09-04T17:53:26.383Z",
+          "updated_at": "2023-03-22T18:03:54.635Z",
+          "position": 37,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-09-04",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "m4jywscr0n0k",
+          "name": "Turnstile",
+          "status": "degraded_performance",
+          "created_at": "2023-01-19T17:03:40.590Z",
+          "updated_at": "2023-03-22T18:03:54.659Z",
+          "position": 58,
+          "description": "Turnstile is a user-friendly, privacy-preserving alternative to CAPTCHA.",
+          "showcase": false,
+          "start_date": "2023-01-19",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "d4smn7k579r8",
@@ -6767,86 +6841,6 @@
       ],
       "scheduled_for": "2023-03-22T17:30:00.000Z",
       "scheduled_until": "2023-03-22T21:00:00.000Z"
-    },
-    {
-      "id": "tnvl6s8wj9b5",
-      "name": "LHR (London) on 2023-03-22",
-      "status": "in_progress",
-      "created_at": "2023-03-20T23:41:21.712Z",
-      "updated_at": "2023-03-22T05:00:12.703Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/j1q5b4tbnr41",
-      "started_at": "2023-03-20T23:41:21.703Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "0skq7m7yws3z",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "tnvl6s8wj9b5",
-          "created_at": "2023-03-22T05:00:12.697Z",
-          "updated_at": "2023-03-22T05:00:12.697Z",
-          "display_at": "2023-03-22T05:00:12.697Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "1xfxdjk9vjrl",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "tnvl6s8wj9b5",
-          "created_at": "2023-03-22T04:00:01.085Z",
-          "updated_at": "2023-03-22T04:00:01.085Z",
-          "display_at": "2023-03-22T04:00:01.085Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "074clfm3cfy3",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LHR (London) datacenter on 2023-03-22 between 05:00 and 18:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "tnvl6s8wj9b5",
-          "created_at": "2023-03-20T23:41:21.790Z",
-          "updated_at": "2023-03-20T23:41:21.790Z",
-          "display_at": "2023-03-20T23:41:21.790Z",
-          "affected_components": [
-            {
-              "code": "shcqh0p22750",
-              "name": "Europe - London, United Kingdom - (LHR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "shcqh0p22750",
-          "name": "London, United Kingdom - (LHR)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:36:04.069Z",
-          "updated_at": "2023-03-22T16:48:25.383Z",
-          "position": 25,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-22T05:00:00.000Z",
-      "scheduled_until": "2023-03-22T18:00:00.000Z"
     }
   ],
   "status": {
