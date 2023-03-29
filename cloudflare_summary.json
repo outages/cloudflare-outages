@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-29T14:50:29.137Z"
+    "updated_at": "2023-03-29T17:05:14.021Z"
   },
   "components": [
     {
@@ -55,7 +55,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2466,9 +2466,9 @@
     {
       "id": "4c231tkdlpcl",
       "name": "Analytics",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-11-13T11:54:10.191Z",
-      "updated_at": "2023-03-28T21:48:11.180Z",
+      "updated_at": "2023-03-29T17:05:13.965Z",
       "position": 18,
       "description": "Cloudflare customer analytics aggregation service",
       "showcase": false,
@@ -3456,9 +3456,9 @@
     {
       "id": "tn97mzj8b3bt",
       "name": "Jashore, Bangladesh - (JSR)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2020-11-04T02:36:10.854Z",
-      "updated_at": "2023-03-14T17:05:15.509Z",
+      "updated_at": "2023-03-29T16:37:02.266Z",
       "position": 29,
       "description": null,
       "showcase": false,
@@ -4281,9 +4281,9 @@
     {
       "id": "5jlj98tc49b6",
       "name": "Santo Domingo, Dominican Republic - (SDQ)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-09-08T13:18:31.667Z",
-      "updated_at": "2023-03-29T07:59:36.121Z",
+      "updated_at": "2023-03-29T15:10:47.234Z",
       "position": 40,
       "description": null,
       "showcase": false,
@@ -4386,9 +4386,9 @@
     {
       "id": "73mbn78m0yzm",
       "name": "São Paulo, Brazil - (GRU)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-27T21:45:14.885Z",
-      "updated_at": "2023-03-29T14:50:29.135Z",
+      "updated_at": "2023-03-29T15:00:38.377Z",
       "position": 42,
       "description": null,
       "showcase": false,
@@ -5824,35 +5824,34 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "6lbvvd7qy6vr",
-      "name": "ICN (Seoul) on 2023-03-29",
-      "status": "scheduled",
-      "created_at": "2023-03-24T08:20:08.679Z",
-      "updated_at": "2023-03-24T08:20:08.744Z",
+      "id": "wftkn94h2212",
+      "name": "Reporting and Analytics Delayed",
+      "status": "investigating",
+      "created_at": "2023-03-29T17:05:13.928Z",
+      "updated_at": "2023-03-29T17:05:14.018Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/qcdf13r9ww5l",
-      "started_at": "2023-03-24T08:20:08.672Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/n99mh88wn5jw",
+      "started_at": "2023-03-29T17:05:13.921Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "4qfnmjtdfmdb",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ICN (Seoul) datacenter on 2023-03-29 between 17:00 and 23:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "6lbvvd7qy6vr",
-          "created_at": "2023-03-24T08:20:08.741Z",
-          "updated_at": "2023-03-24T08:20:08.741Z",
-          "display_at": "2023-03-24T08:20:08.741Z",
+          "id": "m8j7jpd15b4n",
+          "status": "investigating",
+          "body": "Reporting and analytics for many Cloudflare products are delayed. Services at the edge are still fully operational while analytics are degraded.\n\nWe are working to mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "wftkn94h2212",
+          "created_at": "2023-03-29T17:05:14.016Z",
+          "updated_at": "2023-03-29T17:05:14.016Z",
+          "display_at": "2023-03-29T17:05:14.016Z",
           "affected_components": [
             {
-              "code": "v4s7np92f0dh",
-              "name": "Asia - Seoul, South Korea - (ICN)",
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -5862,24 +5861,24 @@
       ],
       "components": [
         {
-          "id": "v4s7np92f0dh",
-          "name": "Seoul, South Korea - (ICN)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:43:15.944Z",
-          "updated_at": "2023-03-28T19:23:01.514Z",
-          "position": 57,
-          "description": null,
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "degraded_performance",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2023-03-29T17:05:13.965Z",
+          "position": 18,
+          "description": "Cloudflare customer analytics aggregation service",
           "showcase": false,
           "start_date": null,
-          "group_id": "77867vxkttgw",
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
-      ],
-      "scheduled_for": "2023-03-29T17:00:00.000Z",
-      "scheduled_until": "2023-03-29T23:00:00.000Z"
-    },
+      ]
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "ymp453tdmm3d",
       "name": "DAC (Dhaka) on 2023-03-29",
@@ -6043,60 +6042,6 @@
       "scheduled_until": "2023-04-04T06:30:00.000Z"
     },
     {
-      "id": "6x6w54q5fwql",
-      "name": "MAD (Madrid) on 2023-04-04",
-      "status": "scheduled",
-      "created_at": "2023-03-24T14:20:18.251Z",
-      "updated_at": "2023-03-24T14:20:18.307Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/xtms41nt1rsy",
-      "started_at": "2023-03-24T14:20:18.245Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "g7pvy426h1hd",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MAD (Madrid) datacenter on 2023-04-04 between 07:00 and 16:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "6x6w54q5fwql",
-          "created_at": "2023-03-24T14:20:18.305Z",
-          "updated_at": "2023-03-24T14:20:18.305Z",
-          "display_at": "2023-03-24T14:20:18.305Z",
-          "affected_components": [
-            {
-              "code": "qwrpqdwqxy7r",
-              "name": "Europe - Madrid, Spain - (MAD)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qwrpqdwqxy7r",
-          "name": "Madrid, Spain - (MAD)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:41:47.350Z",
-          "updated_at": "2023-03-15T04:55:23.146Z",
-          "position": 27,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-04-04T07:00:00.000Z",
-      "scheduled_until": "2023-04-04T16:00:00.000Z"
-    },
-    {
       "id": "vrymj37krv35",
       "name": "STL (St. Louis) on 2023-04-04",
       "status": "scheduled",
@@ -6149,6 +6094,60 @@
       ],
       "scheduled_for": "2023-04-04T07:00:00.000Z",
       "scheduled_until": "2023-04-04T11:00:00.000Z"
+    },
+    {
+      "id": "6x6w54q5fwql",
+      "name": "MAD (Madrid) on 2023-04-04",
+      "status": "scheduled",
+      "created_at": "2023-03-24T14:20:18.251Z",
+      "updated_at": "2023-03-24T14:20:18.307Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/xtms41nt1rsy",
+      "started_at": "2023-03-24T14:20:18.245Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "g7pvy426h1hd",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MAD (Madrid) datacenter on 2023-04-04 between 07:00 and 16:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "6x6w54q5fwql",
+          "created_at": "2023-03-24T14:20:18.305Z",
+          "updated_at": "2023-03-24T14:20:18.305Z",
+          "display_at": "2023-03-24T14:20:18.305Z",
+          "affected_components": [
+            {
+              "code": "qwrpqdwqxy7r",
+              "name": "Europe - Madrid, Spain - (MAD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qwrpqdwqxy7r",
+          "name": "Madrid, Spain - (MAD)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:41:47.350Z",
+          "updated_at": "2023-03-15T04:55:23.146Z",
+          "position": 27,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-04-04T07:00:00.000Z",
+      "scheduled_until": "2023-04-04T16:00:00.000Z"
     },
     {
       "id": "c30s4zym6gb7",
@@ -6205,6 +6204,114 @@
       "scheduled_until": "2023-04-04T13:00:00.000Z"
     },
     {
+      "id": "7r2p2x2l9nj5",
+      "name": "CMH (Columbus) on 2023-04-04",
+      "status": "scheduled",
+      "created_at": "2023-03-29T16:40:29.713Z",
+      "updated_at": "2023-03-29T16:40:29.772Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/3687b06typsb",
+      "started_at": "2023-03-29T16:40:29.706Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "nxqkcnhc8wzy",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in CMH (Columbus) datacenter on 2023-04-04 between 16:30 and 22:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "7r2p2x2l9nj5",
+          "created_at": "2023-03-29T16:40:29.769Z",
+          "updated_at": "2023-03-29T16:40:29.769Z",
+          "display_at": "2023-03-29T16:40:29.769Z",
+          "affected_components": [
+            {
+              "code": "rq16k3q6yz17",
+              "name": "North America - Columbus, OH, United States - (CMH)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rq16k3q6yz17",
+          "name": "Columbus, OH, United States - (CMH)",
+          "status": "operational",
+          "created_at": "2019-01-23T08:27:40.920Z",
+          "updated_at": "2023-03-02T10:12:05.245Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-04-04T16:30:00.000Z",
+      "scheduled_until": "2023-04-04T22:00:00.000Z"
+    },
+    {
+      "id": "ryhr96zydjkj",
+      "name": "AMS (Amsterdam) on 2023-04-05",
+      "status": "scheduled",
+      "created_at": "2023-03-29T16:20:33.086Z",
+      "updated_at": "2023-03-29T16:20:33.124Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/mgzzzwzg12vh",
+      "started_at": "2023-03-29T16:20:33.081Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "qvqmzsn4mfcw",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in AMS (Amsterdam) datacenter on 2023-04-05 between 00:30 and 06:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "ryhr96zydjkj",
+          "created_at": "2023-03-29T16:20:33.123Z",
+          "updated_at": "2023-03-29T16:20:33.123Z",
+          "display_at": "2023-03-29T16:20:33.123Z",
+          "affected_components": [
+            {
+              "code": "57ctn3f2qsyj",
+              "name": "Europe - Amsterdam, Netherlands - (AMS)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57ctn3f2qsyj",
+          "name": "Amsterdam, Netherlands - (AMS)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:35:05.259Z",
+          "updated_at": "2023-03-10T13:36:43.168Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-04-05T00:30:00.000Z",
+      "scheduled_until": "2023-04-05T06:00:00.000Z"
+    },
+    {
       "id": "bhrh6stnff0w",
       "name": "HEL (Helsinki) on 2023-04-06",
       "status": "scheduled",
@@ -6259,60 +6366,6 @@
       "scheduled_until": "2023-04-06T06:00:00.000Z"
     },
     {
-      "id": "p1m38p9xy304",
-      "name": "AMS (Amsterdam) on 2023-04-06",
-      "status": "scheduled",
-      "created_at": "2023-03-29T11:40:18.964Z",
-      "updated_at": "2023-03-29T11:40:19.048Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/t3fs33q5d654",
-      "started_at": "2023-03-29T11:40:18.956Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "xjl0n43htrvm",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in AMS (Amsterdam) datacenter on 2023-04-06 between 00:30 and 05:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "p1m38p9xy304",
-          "created_at": "2023-03-29T11:40:19.044Z",
-          "updated_at": "2023-03-29T11:40:19.044Z",
-          "display_at": "2023-03-29T11:40:19.044Z",
-          "affected_components": [
-            {
-              "code": "57ctn3f2qsyj",
-              "name": "Europe - Amsterdam, Netherlands - (AMS)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "57ctn3f2qsyj",
-          "name": "Amsterdam, Netherlands - (AMS)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:35:05.259Z",
-          "updated_at": "2023-03-10T13:36:43.168Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-04-06T00:30:00.000Z",
-      "scheduled_until": "2023-04-06T05:00:00.000Z"
-    },
-    {
       "id": "vtj7x75qx5rp",
       "name": "IAH (Houston) on 2023-04-06",
       "status": "scheduled",
@@ -6365,6 +6418,86 @@
       ],
       "scheduled_for": "2023-04-06T07:00:00.000Z",
       "scheduled_until": "2023-04-06T13:00:00.000Z"
+    },
+    {
+      "id": "6lbvvd7qy6vr",
+      "name": "ICN (Seoul) on 2023-03-29",
+      "status": "in_progress",
+      "created_at": "2023-03-24T08:20:08.679Z",
+      "updated_at": "2023-03-29T17:00:23.790Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/qcdf13r9ww5l",
+      "started_at": "2023-03-24T08:20:08.672Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "m8ml1hb8nm4q",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "6lbvvd7qy6vr",
+          "created_at": "2023-03-29T17:00:23.786Z",
+          "updated_at": "2023-03-29T17:00:23.786Z",
+          "display_at": "2023-03-29T17:00:23.786Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "gnd5mdd83mp1",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "6lbvvd7qy6vr",
+          "created_at": "2023-03-29T15:59:56.858Z",
+          "updated_at": "2023-03-29T15:59:56.858Z",
+          "display_at": "2023-03-29T15:59:56.858Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4qfnmjtdfmdb",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in ICN (Seoul) datacenter on 2023-03-29 between 17:00 and 23:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "6lbvvd7qy6vr",
+          "created_at": "2023-03-24T08:20:08.741Z",
+          "updated_at": "2023-03-24T08:20:08.741Z",
+          "display_at": "2023-03-24T08:20:08.741Z",
+          "affected_components": [
+            {
+              "code": "v4s7np92f0dh",
+              "name": "Asia - Seoul, South Korea - (ICN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "v4s7np92f0dh",
+          "name": "Seoul, South Korea - (ICN)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:43:15.944Z",
+          "updated_at": "2023-03-28T19:23:01.514Z",
+          "position": 57,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-29T17:00:00.000Z",
+      "scheduled_until": "2023-03-29T23:00:00.000Z"
     },
     {
       "id": "frt8qhgtjhvl",
