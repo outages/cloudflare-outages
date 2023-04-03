@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-03T10:43:51.117Z"
+    "updated_at": "2023-04-03T12:19:53.138Z"
   },
   "components": [
     {
@@ -2106,9 +2106,9 @@
     {
       "id": "3796s01hm2hj",
       "name": "Chittagong, Bangladesh - (CGP)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-10-29T19:05:17.659Z",
-      "updated_at": "2023-04-03T06:44:08.193Z",
+      "updated_at": "2023-04-03T12:19:53.135Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -3186,9 +3186,9 @@
     {
       "id": "v2fkx130pc7t",
       "name": "Luxembourg City, Luxembourg - (LUX)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2018-04-06T09:40:03.991Z",
-      "updated_at": "2023-03-28T20:44:22.968Z",
+      "updated_at": "2023-04-03T11:56:05.226Z",
       "position": 26,
       "description": null,
       "showcase": false,
@@ -5631,9 +5631,9 @@
     {
       "id": "56zs2vmr81l0",
       "name": "Yerevan, Armenia - (EVN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2017-03-06T05:40:56.147Z",
-      "updated_at": "2023-03-27T17:23:00.324Z",
+      "updated_at": "2023-04-03T12:04:44.365Z",
       "position": 72,
       "description": null,
       "showcase": false,
@@ -5824,35 +5824,34 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "xchrbs6qkfzs",
-      "name": "MNL (Manila) on 2023-04-03",
-      "status": "scheduled",
-      "created_at": "2023-03-30T22:00:32.699Z",
-      "updated_at": "2023-03-30T22:00:32.759Z",
+      "id": "8qmx05t46zz3",
+      "name": "issues with Cloudflare APIs in LUX data centre",
+      "status": "investigating",
+      "created_at": "2023-04-03T11:56:05.190Z",
+      "updated_at": "2023-04-03T11:56:05.278Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/4f556xws55k4",
-      "started_at": "2023-03-30T22:00:32.692Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/lskdj4lh7jxw",
+      "started_at": "2023-04-03T11:56:05.182Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "bwjmhw7lg2sw",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MNL (Manila) datacenter on 2023-04-03 between 18:00 and 19:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "xchrbs6qkfzs",
-          "created_at": "2023-03-30T22:00:32.756Z",
-          "updated_at": "2023-03-30T22:00:32.756Z",
-          "display_at": "2023-03-30T22:00:32.756Z",
+          "id": "14649bv3pdz8",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare APIs in its LUX data centre.\n\nThese issues do not affect any product working at the Cloudflare Edge.\n\nCustomers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
+          "incident_id": "8qmx05t46zz3",
+          "created_at": "2023-04-03T11:56:05.275Z",
+          "updated_at": "2023-04-03T11:56:05.275Z",
+          "display_at": "2023-04-03T11:56:05.275Z",
           "affected_components": [
             {
-              "code": "ss09y7v3wzwd",
-              "name": "Asia - Manila, Philippines - (MNL)",
+              "code": "v2fkx130pc7t",
+              "name": "Europe - Luxembourg City, Luxembourg - (LUX)",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -5862,24 +5861,24 @@
       ],
       "components": [
         {
-          "id": "ss09y7v3wzwd",
-          "name": "Manila, Philippines - (MNL)",
-          "status": "operational",
-          "created_at": "2016-04-29T12:14:56.581Z",
-          "updated_at": "2023-04-01T18:30:40.525Z",
-          "position": 48,
+          "id": "v2fkx130pc7t",
+          "name": "Luxembourg City, Luxembourg - (LUX)",
+          "status": "degraded_performance",
+          "created_at": "2018-04-06T09:40:03.991Z",
+          "updated_at": "2023-04-03T11:56:05.226Z",
+          "position": 26,
           "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "77867vxkttgw",
+          "group_id": "zqxhg7y54vy8",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
-      ],
-      "scheduled_for": "2023-04-03T18:00:00.000Z",
-      "scheduled_until": "2023-04-03T19:00:00.000Z"
-    },
+      ]
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "jl7vxqb29dc4",
       "name": "TPE (Taipei) on 2023-04-03",
@@ -5933,6 +5932,60 @@
       ],
       "scheduled_for": "2023-04-03T18:00:00.000Z",
       "scheduled_until": "2023-04-03T21:00:00.000Z"
+    },
+    {
+      "id": "xchrbs6qkfzs",
+      "name": "MNL (Manila) on 2023-04-03",
+      "status": "scheduled",
+      "created_at": "2023-03-30T22:00:32.699Z",
+      "updated_at": "2023-03-30T22:00:32.759Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/4f556xws55k4",
+      "started_at": "2023-03-30T22:00:32.692Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "bwjmhw7lg2sw",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MNL (Manila) datacenter on 2023-04-03 between 18:00 and 19:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "xchrbs6qkfzs",
+          "created_at": "2023-03-30T22:00:32.756Z",
+          "updated_at": "2023-03-30T22:00:32.756Z",
+          "display_at": "2023-03-30T22:00:32.756Z",
+          "affected_components": [
+            {
+              "code": "ss09y7v3wzwd",
+              "name": "Asia - Manila, Philippines - (MNL)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ss09y7v3wzwd",
+          "name": "Manila, Philippines - (MNL)",
+          "status": "operational",
+          "created_at": "2016-04-29T12:14:56.581Z",
+          "updated_at": "2023-04-01T18:30:40.525Z",
+          "position": 48,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-04-03T18:00:00.000Z",
+      "scheduled_until": "2023-04-03T19:00:00.000Z"
     },
     {
       "id": "z3jvj3n72blm",
@@ -6257,6 +6310,60 @@
       ],
       "scheduled_for": "2023-04-04T08:00:00.000Z",
       "scheduled_until": "2023-04-04T11:00:00.000Z"
+    },
+    {
+      "id": "mxv86jt4j12l",
+      "name": "YVR (Vancouver) on 2023-04-04",
+      "status": "scheduled",
+      "created_at": "2023-04-03T12:01:22.358Z",
+      "updated_at": "2023-04-03T12:01:22.428Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/1qfpxmvm8mlg",
+      "started_at": "2023-04-03T12:01:22.349Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "7kybr6kks366",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in YVR (Vancouver) datacenter on 2023-04-04 between 09:00 and 12:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "mxv86jt4j12l",
+          "created_at": "2023-04-03T12:01:22.425Z",
+          "updated_at": "2023-04-03T12:01:22.425Z",
+          "display_at": "2023-04-03T12:01:22.425Z",
+          "affected_components": [
+            {
+              "code": "5141vc6fcrgp",
+              "name": "North America - Vancouver, BC, Canada - (YVR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5141vc6fcrgp",
+          "name": "Vancouver, BC, Canada - (YVR)",
+          "status": "operational",
+          "created_at": "2015-11-10T23:20:20.843Z",
+          "updated_at": "2023-03-22T14:06:19.305Z",
+          "position": 48,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-04-04T09:00:00.000Z",
+      "scheduled_until": "2023-04-04T12:00:00.000Z"
     },
     {
       "id": "c30s4zym6gb7",
