@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-05T21:09:02.263Z"
+    "updated_at": "2023-04-05T21:19:08.990Z"
   },
   "components": [
     {
@@ -40,7 +40,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2527,9 +2527,9 @@
     {
       "id": "4shr6kl4nszm",
       "name": "Fukuoka, Japan - (FUK)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-01-13T00:50:58.781Z",
-      "updated_at": "2023-04-05T18:47:08.463Z",
+      "updated_at": "2023-04-05T21:19:08.987Z",
       "position": 18,
       "description": null,
       "showcase": false,
@@ -4972,9 +4972,9 @@
     {
       "id": "cghykwlwsmn5",
       "name": "SSL Certificate Provisioning",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2016-03-17T15:27:39.778Z",
-      "updated_at": "2023-04-05T20:48:18.575Z",
+      "updated_at": "2023-04-05T21:16:50.913Z",
       "position": 50,
       "description": "Cloudflare's SSL certificate provisioning service (Universal and Dedicated SSL)",
       "showcase": false,
@@ -5844,16 +5844,80 @@
     {
       "id": "b3rh86sp2f2x",
       "name": "Network Performance Issues",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2023-04-05T21:01:49.846Z",
-      "updated_at": "2023-04-05T21:01:49.961Z",
-      "monitoring_at": null,
+      "updated_at": "2023-04-05T21:17:54.387Z",
+      "monitoring_at": "2023-04-05T21:17:54.373Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/rb97vtgznp6d",
       "started_at": "2023-04-05T21:01:49.836Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "mpck4j68d9lk",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "b3rh86sp2f2x",
+          "created_at": "2023-04-05T21:17:54.373Z",
+          "updated_at": "2023-04-05T21:17:54.373Z",
+          "display_at": "2023-04-05T21:17:54.373Z",
+          "affected_components": [
+            {
+              "code": "p7pz0whjjmss",
+              "name": "Europe - Belgrade, Serbia - (BEG)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "w3hq2xmx91ll",
+              "name": "Europe - Cork, Ireland -  (ORK)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "v2fkx130pc7t",
+              "name": "Europe - Luxembourg City, Luxembourg - (LUX)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "qzzpdf33qk5c",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "b3rh86sp2f2x",
+          "created_at": "2023-04-05T21:17:49.716Z",
+          "updated_at": "2023-04-05T21:17:49.716Z",
+          "display_at": "2023-04-05T21:17:49.716Z",
+          "affected_components": [
+            {
+              "code": "p7pz0whjjmss",
+              "name": "Europe - Belgrade, Serbia - (BEG)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "w3hq2xmx91ll",
+              "name": "Europe - Cork, Ireland -  (ORK)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "v2fkx130pc7t",
+              "name": "Europe - Luxembourg City, Luxembourg - (LUX)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "x6q95vsmpy5d",
           "status": "investigating",
@@ -5929,6 +5993,78 @@
           "showcase": false,
           "start_date": null,
           "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
+      "id": "p0m9zswhrh17",
+      "name": "Advanced Certificate Manager orders having TLS termination failures with ECDSA ciphers",
+      "status": "identified",
+      "created_at": "2023-04-05T21:16:50.874Z",
+      "updated_at": "2023-04-05T21:17:03.326Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5k8khr3m21y3",
+      "started_at": "2023-04-05T21:16:50.865Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "760gybsz5tz5",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "p0m9zswhrh17",
+          "created_at": "2023-04-05T21:17:03.323Z",
+          "updated_at": "2023-04-05T21:17:03.323Z",
+          "display_at": "2023-04-05T21:17:03.323Z",
+          "affected_components": [
+            {
+              "code": "cghykwlwsmn5",
+              "name": "Cloudflare Sites and Services - SSL Certificate Provisioning",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "wt28ps64xyx3",
+          "status": "investigating",
+          "body": "Cloudflare has identified an issue with Advanced Certificate Manager SSL orders that have only SHA256wRSA certificates and are missing ECDSAwSHA256 certificates.",
+          "incident_id": "p0m9zswhrh17",
+          "created_at": "2023-04-05T21:16:50.974Z",
+          "updated_at": "2023-04-05T21:16:50.974Z",
+          "display_at": "2023-04-05T21:16:50.974Z",
+          "affected_components": [
+            {
+              "code": "cghykwlwsmn5",
+              "name": "Cloudflare Sites and Services - SSL Certificate Provisioning",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "cghykwlwsmn5",
+          "name": "SSL Certificate Provisioning",
+          "status": "degraded_performance",
+          "created_at": "2016-03-17T15:27:39.778Z",
+          "updated_at": "2023-04-05T21:16:50.913Z",
+          "position": 50,
+          "description": "Cloudflare's SSL certificate provisioning service (Universal and Dedicated SSL)",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
