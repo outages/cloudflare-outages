@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-10T12:41:26.427Z"
+    "updated_at": "2023-04-10T13:01:21.200Z"
   },
   "components": [
     {
@@ -40,7 +40,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -369,9 +369,9 @@
     {
       "id": "4c231tkdlpcl",
       "name": "Analytics",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-11-13T11:54:10.191Z",
-      "updated_at": "2023-04-06T04:49:19.979Z",
+      "updated_at": "2023-04-10T12:53:28.713Z",
       "position": 3,
       "description": "Cloudflare customer analytics aggregation service",
       "showcase": false,
@@ -4570,7 +4570,7 @@
       "name": "St. George's, Grenada - (GND)",
       "status": "operational",
       "created_at": "2019-12-10T00:17:42.014Z",
-      "updated_at": "2023-04-10T10:46:50.915Z",
+      "updated_at": "2023-04-10T12:58:30.426Z",
       "position": 44,
       "description": null,
       "showcase": false,
@@ -5856,48 +5856,34 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "stk8k9vnt2ql",
-      "name": "EZE (Buenos Aires) on 2023-04-10",
-      "status": "scheduled",
-      "created_at": "2023-04-10T09:41:07.061Z",
-      "updated_at": "2023-04-10T11:59:58.120Z",
+      "id": "hkjmq9xt4nb7",
+      "name": "DNS Analytics Delays",
+      "status": "investigating",
+      "created_at": "2023-04-10T12:53:28.670Z",
+      "updated_at": "2023-04-10T12:53:28.777Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/zpypt2zchnwf",
-      "started_at": "2023-04-10T09:41:07.055Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/g89pxty4jp86",
+      "started_at": "2023-04-10T12:53:28.661Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "nvjd7dhljzqn",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "stk8k9vnt2ql",
-          "created_at": "2023-04-10T11:59:57.970Z",
-          "updated_at": "2023-04-10T11:59:57.970Z",
-          "display_at": "2023-04-10T11:59:57.970Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "14jnh60dx1f6",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in EZE (Buenos Aires) datacenter on 2023-04-10 between 13:00 and 14:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "stk8k9vnt2ql",
-          "created_at": "2023-04-10T09:41:07.103Z",
-          "updated_at": "2023-04-10T09:41:07.103Z",
-          "display_at": "2023-04-10T09:41:07.103Z",
+          "id": "vfzhd8jh30w8",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue with data in DNS Analytics which may be delayed or lost for some customers.\nThis issue only impacts the Analytics for the DNS operations. DNS queries and name resolution, as well as updates to DNS records, are not impacted.",
+          "incident_id": "hkjmq9xt4nb7",
+          "created_at": "2023-04-10T12:53:28.774Z",
+          "updated_at": "2023-04-10T12:53:28.774Z",
+          "display_at": "2023-04-10T12:53:28.774Z",
           "affected_components": [
             {
-              "code": "26gznn8sts5z",
-              "name": "Latin America & the Caribbean - Buenos Aires, Argentina - (EZE)",
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -5907,24 +5893,24 @@
       ],
       "components": [
         {
-          "id": "26gznn8sts5z",
-          "name": "Buenos Aires, Argentina - (EZE)",
-          "status": "operational",
-          "created_at": "2015-04-01T11:05:40.089Z",
-          "updated_at": "2023-04-10T09:00:34.480Z",
-          "position": 9,
-          "description": null,
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "degraded_performance",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2023-04-10T12:53:28.713Z",
+          "position": 3,
+          "description": "Cloudflare customer analytics aggregation service",
           "showcase": false,
           "start_date": null,
-          "group_id": "91blz4ztt7dm",
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
-      ],
-      "scheduled_for": "2023-04-10T13:00:00.000Z",
-      "scheduled_until": "2023-04-10T14:30:00.000Z"
-    },
+      ]
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "2b6c7njq2plr",
       "name": "ICN (Seoul) on 2023-04-10",
@@ -6734,6 +6720,86 @@
       ],
       "scheduled_for": "2023-04-18T07:00:00.000Z",
       "scheduled_until": "2023-04-18T14:00:00.000Z"
+    },
+    {
+      "id": "stk8k9vnt2ql",
+      "name": "EZE (Buenos Aires) on 2023-04-10",
+      "status": "in_progress",
+      "created_at": "2023-04-10T09:41:07.061Z",
+      "updated_at": "2023-04-10T13:01:21.179Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/zpypt2zchnwf",
+      "started_at": "2023-04-10T09:41:07.055Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "6slwcftmx0qv",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "stk8k9vnt2ql",
+          "created_at": "2023-04-10T13:01:21.174Z",
+          "updated_at": "2023-04-10T13:01:21.174Z",
+          "display_at": "2023-04-10T13:01:21.174Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "nvjd7dhljzqn",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "stk8k9vnt2ql",
+          "created_at": "2023-04-10T11:59:57.970Z",
+          "updated_at": "2023-04-10T11:59:57.970Z",
+          "display_at": "2023-04-10T11:59:57.970Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "14jnh60dx1f6",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in EZE (Buenos Aires) datacenter on 2023-04-10 between 13:00 and 14:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "stk8k9vnt2ql",
+          "created_at": "2023-04-10T09:41:07.103Z",
+          "updated_at": "2023-04-10T09:41:07.103Z",
+          "display_at": "2023-04-10T09:41:07.103Z",
+          "affected_components": [
+            {
+              "code": "26gznn8sts5z",
+              "name": "Latin America & the Caribbean - Buenos Aires, Argentina - (EZE)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "26gznn8sts5z",
+          "name": "Buenos Aires, Argentina - (EZE)",
+          "status": "operational",
+          "created_at": "2015-04-01T11:05:40.089Z",
+          "updated_at": "2023-04-10T09:00:34.480Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-04-10T13:00:00.000Z",
+      "scheduled_until": "2023-04-10T14:30:00.000Z"
     }
   ],
   "status": {
