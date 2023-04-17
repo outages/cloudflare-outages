@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-17T15:49:03.632Z"
+    "updated_at": "2023-04-17T16:13:08.433Z"
   },
   "components": [
     {
@@ -40,7 +40,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -5394,9 +5394,9 @@
     {
       "id": "k04jkcpzxn94",
       "name": "WARP",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-09-30T09:25:38.587Z",
-      "updated_at": "2023-04-05T20:48:18.631Z",
+      "updated_at": "2023-04-17T16:10:44.706Z",
       "position": 57,
       "description": null,
       "showcase": false,
@@ -5872,7 +5872,80 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "jp09dt398v7w",
+      "name": "Warp and Zero Trust Connection Issues in Some Regions",
+      "status": "identified",
+      "created_at": "2023-04-17T16:10:44.630Z",
+      "updated_at": "2023-04-17T16:13:08.430Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/cj8f0x2ngpbb",
+      "started_at": "2023-04-17T16:10:44.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "wx6psfty5fvx",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "jp09dt398v7w",
+          "created_at": "2023-04-17T16:11:16.045Z",
+          "updated_at": "2023-04-17T16:11:16.045Z",
+          "display_at": "2023-04-17T16:11:16.045Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "mdyvxs96455d",
+          "status": "investigating",
+          "body": "WARP and Zero Trust users may experience connectivity issues in LIS, IAH, KUL, BLR, FOC, FUO, SFO, SLC.",
+          "incident_id": "jp09dt398v7w",
+          "created_at": "2023-04-17T16:10:44.821Z",
+          "updated_at": "2023-04-17T16:13:08.387Z",
+          "display_at": "2023-04-17T16:10:44.000Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k04jkcpzxn94",
+          "name": "WARP",
+          "status": "degraded_performance",
+          "created_at": "2019-09-30T09:25:38.587Z",
+          "updated_at": "2023-04-17T16:10:44.706Z",
+          "position": 57,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "f5kgfnpzc2lf",
