@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-26T16:40:04.417Z"
+    "updated_at": "2023-04-26T16:49:13.084Z"
   },
   "components": [
     {
@@ -40,7 +40,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3730,9 +3730,9 @@
     {
       "id": "k0mgxrls5y1b",
       "name": "Logs",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2016-03-20T18:49:07.613Z",
-      "updated_at": "2023-04-05T20:48:24.326Z",
+      "updated_at": "2023-04-26T16:49:13.036Z",
       "position": 33,
       "description": "Cloudflare's Enterprise Log pull and Log push service",
       "showcase": false,
@@ -5888,7 +5888,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "r237vk030djx",
+      "name": "Cloudflare Logpush Issues",
+      "status": "investigating",
+      "created_at": "2023-04-26T16:49:13.009Z",
+      "updated_at": "2023-04-26T16:49:13.081Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/nyvy3b491mlc",
+      "started_at": "2023-04-26T16:49:13.002Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "f45jzq9x74vd",
+          "status": "investigating",
+          "body": "Some customers may experience an issue viewing Logpush jobs in the UI. Existing Logpush jobs and their data are unaffected.",
+          "incident_id": "r237vk030djx",
+          "created_at": "2023-04-26T16:49:13.079Z",
+          "updated_at": "2023-04-26T16:49:13.079Z",
+          "display_at": "2023-04-26T16:49:13.079Z",
+          "affected_components": [
+            {
+              "code": "k0mgxrls5y1b",
+              "name": "Cloudflare Sites and Services - Logs",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k0mgxrls5y1b",
+          "name": "Logs",
+          "status": "degraded_performance",
+          "created_at": "2016-03-20T18:49:07.613Z",
+          "updated_at": "2023-04-26T16:49:13.036Z",
+          "position": 33,
+          "description": "Cloudflare's Enterprise Log pull and Log push service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "14fn5s99yl7n",
