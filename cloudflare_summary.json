@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-05-03T21:43:08.613Z"
+    "updated_at": "2023-05-03T22:11:57.114Z"
   },
   "components": [
     {
@@ -40,7 +40,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -119,9 +119,9 @@
     {
       "id": "w4k8yvhfb3vp",
       "name": "Access",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2018-02-09T21:46:39.049Z",
-      "updated_at": "2023-04-17T21:05:02.481Z",
+      "updated_at": "2023-05-03T22:11:57.033Z",
       "position": 1,
       "description": "Cloudflare's cloud identity & access management service",
       "showcase": false,
@@ -5888,48 +5888,34 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "ztp8f6fhlgb2",
-      "name": "MAD (Madrid) on 2023-05-03",
-      "status": "scheduled",
-      "created_at": "2023-05-02T08:20:52.113Z",
-      "updated_at": "2023-05-03T20:59:57.549Z",
+      "id": "v2b87lsw7x81",
+      "name": "Cloudflare Access One Time Pin failures",
+      "status": "investigating",
+      "created_at": "2023-05-03T22:11:56.978Z",
+      "updated_at": "2023-05-03T22:11:57.110Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/wx526z58szsc",
-      "started_at": "2023-05-02T08:20:52.107Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/qdly6lgxnrnr",
+      "started_at": "2023-05-03T22:11:56.968Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "xsbcdrj36jw0",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "ztp8f6fhlgb2",
-          "created_at": "2023-05-03T20:59:57.468Z",
-          "updated_at": "2023-05-03T20:59:57.468Z",
-          "display_at": "2023-05-03T20:59:57.468Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "9m59rl8fd73d",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MAD (Madrid) datacenter between 2023-05-03 22:00 and 2023-05-04 06:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "ztp8f6fhlgb2",
-          "created_at": "2023-05-02T08:20:52.173Z",
-          "updated_at": "2023-05-02T08:20:52.173Z",
-          "display_at": "2023-05-02T08:20:52.173Z",
+          "id": "6dp2dfx8h1py",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue causing Access One Time Pin codes to not be sent to some users. Other Access Authentication methods are not impacted at this time.",
+          "incident_id": "v2b87lsw7x81",
+          "created_at": "2023-05-03T22:11:57.106Z",
+          "updated_at": "2023-05-03T22:11:57.106Z",
+          "display_at": "2023-05-03T22:11:57.106Z",
           "affected_components": [
             {
-              "code": "qwrpqdwqxy7r",
-              "name": "Europe - Madrid, Spain - (MAD)",
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -5939,24 +5925,24 @@
       ],
       "components": [
         {
-          "id": "qwrpqdwqxy7r",
-          "name": "Madrid, Spain - (MAD)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:41:47.350Z",
-          "updated_at": "2023-04-27T04:25:29.175Z",
-          "position": 27,
-          "description": null,
+          "id": "w4k8yvhfb3vp",
+          "name": "Access",
+          "status": "degraded_performance",
+          "created_at": "2018-02-09T21:46:39.049Z",
+          "updated_at": "2023-05-03T22:11:57.033Z",
+          "position": 1,
+          "description": "Cloudflare's cloud identity & access management service",
           "showcase": false,
           "start_date": null,
-          "group_id": "zqxhg7y54vy8",
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
-      ],
-      "scheduled_for": "2023-05-03T22:00:00.000Z",
-      "scheduled_until": "2023-05-04T06:00:00.000Z"
-    },
+      ]
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "54tv0w20jj02",
       "name": "ICN (Seoul) on 2023-05-04",
@@ -6536,6 +6522,86 @@
       ],
       "scheduled_for": "2023-05-12T06:00:00.000Z",
       "scheduled_until": "2023-05-12T10:00:00.000Z"
+    },
+    {
+      "id": "ztp8f6fhlgb2",
+      "name": "MAD (Madrid) on 2023-05-03",
+      "status": "in_progress",
+      "created_at": "2023-05-02T08:20:52.113Z",
+      "updated_at": "2023-05-03T22:00:17.261Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/wx526z58szsc",
+      "started_at": "2023-05-02T08:20:52.107Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "2zyx7zdr4m9j",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "ztp8f6fhlgb2",
+          "created_at": "2023-05-03T22:00:17.252Z",
+          "updated_at": "2023-05-03T22:00:17.252Z",
+          "display_at": "2023-05-03T22:00:17.252Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xsbcdrj36jw0",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "ztp8f6fhlgb2",
+          "created_at": "2023-05-03T20:59:57.468Z",
+          "updated_at": "2023-05-03T20:59:57.468Z",
+          "display_at": "2023-05-03T20:59:57.468Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "9m59rl8fd73d",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MAD (Madrid) datacenter between 2023-05-03 22:00 and 2023-05-04 06:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "ztp8f6fhlgb2",
+          "created_at": "2023-05-02T08:20:52.173Z",
+          "updated_at": "2023-05-02T08:20:52.173Z",
+          "display_at": "2023-05-02T08:20:52.173Z",
+          "affected_components": [
+            {
+              "code": "qwrpqdwqxy7r",
+              "name": "Europe - Madrid, Spain - (MAD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qwrpqdwqxy7r",
+          "name": "Madrid, Spain - (MAD)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:41:47.350Z",
+          "updated_at": "2023-04-27T04:25:29.175Z",
+          "position": 27,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-05-03T22:00:00.000Z",
+      "scheduled_until": "2023-05-04T06:00:00.000Z"
     }
   ],
   "status": {
