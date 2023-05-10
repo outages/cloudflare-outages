@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-05-10T15:48:59.595Z"
+    "updated_at": "2023-05-10T16:39:33.335Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -871,9 +871,9 @@
     {
       "id": "r9zwq4014pcq",
       "name": "Christchurch, New Zealand - (CHC)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-08-04T16:10:23.354Z",
-      "updated_at": "2023-05-10T11:46:30.374Z",
+      "updated_at": "2023-05-10T16:24:22.574Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1439,7 +1439,7 @@
     {
       "id": "q6qm6fvkst4h",
       "name": "Oceania",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2014-10-28T00:12:04.846Z",
       "updated_at": "2022-04-26T19:49:08.623Z",
       "position": 9,
@@ -1468,9 +1468,9 @@
     {
       "id": "26gznn8sts5z",
       "name": "Buenos Aires, Argentina - (EZE)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2015-04-01T11:05:40.089Z",
-      "updated_at": "2023-05-10T14:33:14.791Z",
+      "updated_at": "2023-05-10T16:39:33.037Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -3268,9 +3268,9 @@
     {
       "id": "d1r0plwsl5qb",
       "name": "Firewall",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-09-04T17:53:26.383Z",
-      "updated_at": "2023-04-05T20:48:32.492Z",
+      "updated_at": "2023-05-10T16:30:02.362Z",
       "position": 26,
       "description": null,
       "showcase": false,
@@ -3508,9 +3508,9 @@
     {
       "id": "tn97mzj8b3bt",
       "name": "Jashore, Bangladesh - (JSR)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2020-11-04T02:36:10.854Z",
-      "updated_at": "2023-05-10T15:48:59.593Z",
+      "updated_at": "2023-05-10T16:09:12.777Z",
       "position": 29,
       "description": null,
       "showcase": false,
@@ -3868,9 +3868,9 @@
     {
       "id": "gqhgn4jwr94s",
       "name": "Recife - (REC)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-01-23T16:01:02.693Z",
-      "updated_at": "2023-05-10T15:03:32.738Z",
+      "updated_at": "2023-05-10T16:39:33.332Z",
       "position": 34,
       "description": null,
       "showcase": false,
@@ -4725,7 +4725,7 @@
       "name": "Tallinn, Estonia - (TLL)",
       "status": "operational",
       "created_at": "2018-03-30T17:48:33.402Z",
-      "updated_at": "2023-05-10T04:30:38.359Z",
+      "updated_at": "2023-05-10T16:24:22.884Z",
       "position": 46,
       "description": null,
       "showcase": false,
@@ -5936,7 +5936,100 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "9xqg3wvf58tj",
+      "name": "Custom Error Pages API failures",
+      "status": "monitoring",
+      "created_at": "2023-05-10T16:30:02.328Z",
+      "updated_at": "2023-05-10T16:33:24.173Z",
+      "monitoring_at": "2023-05-10T16:33:24.160Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/gw3z3vk0hvv4",
+      "started_at": "2023-05-10T16:30:02.320Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "9sdl8pwrnw3g",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "9xqg3wvf58tj",
+          "created_at": "2023-05-10T16:33:24.160Z",
+          "updated_at": "2023-05-10T16:33:24.160Z",
+          "display_at": "2023-05-10T16:33:24.160Z",
+          "affected_components": [
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "7dp1gn30qgpy",
+          "status": "identified",
+          "body": "NEL configuration is also impacted. More updates to follow.",
+          "incident_id": "9xqg3wvf58tj",
+          "created_at": "2023-05-10T16:31:31.546Z",
+          "updated_at": "2023-05-10T16:31:31.546Z",
+          "display_at": "2023-05-10T16:31:31.546Z",
+          "affected_components": [
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "f9bv4pnsqtlm",
+          "status": "investigating",
+          "body": "We are currently investigating an issue with the API for managing Custom Error Pages. Users may encounter errors when trying to upload or fetch a custom error page, both at account and zone level.",
+          "incident_id": "9xqg3wvf58tj",
+          "created_at": "2023-05-10T16:30:02.416Z",
+          "updated_at": "2023-05-10T16:30:02.416Z",
+          "display_at": "2023-05-10T16:30:02.416Z",
+          "affected_components": [
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d1r0plwsl5qb",
+          "name": "Firewall",
+          "status": "degraded_performance",
+          "created_at": "2020-09-04T17:53:26.383Z",
+          "updated_at": "2023-05-10T16:30:02.362Z",
+          "position": 26,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-09-04",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "5mytlr3vyc83",
