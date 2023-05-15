@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-05-15T18:02:03.035Z"
+    "updated_at": "2023-05-15T18:32:21.815Z"
   },
   "components": [
     {
@@ -340,9 +340,9 @@
     {
       "id": "5nlf038vr3n8",
       "name": "Almaty, Kazakhstan - (ALA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-11-02T12:04:47.034Z",
-      "updated_at": "2023-05-10T21:12:14.735Z",
+      "updated_at": "2023-05-15T18:32:21.812Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -3509,9 +3509,9 @@
     {
       "id": "tn97mzj8b3bt",
       "name": "Jashore, Bangladesh - (JSR)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2020-11-04T02:36:10.854Z",
-      "updated_at": "2023-05-14T18:01:14.154Z",
+      "updated_at": "2023-05-15T18:32:21.519Z",
       "position": 29,
       "description": null,
       "showcase": false,
@@ -6729,6 +6729,81 @@
       ],
       "scheduled_for": "2023-05-23T23:00:00.000Z",
       "scheduled_until": "2023-05-24T06:00:00.000Z"
+    },
+    {
+      "id": "l0ds1nj98js8",
+      "name": "Dashboard and API Maintenance",
+      "status": "scheduled",
+      "created_at": "2023-05-15T18:31:22.554Z",
+      "updated_at": "2023-05-15T18:31:22.616Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/g223w18qdshk",
+      "started_at": "2023-05-15T18:31:22.546Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "dp3m31bz6q2t",
+          "status": "scheduled",
+          "body": "Over the past several months, Cloudflare has undertaken an overhaul of some of our critical configuration data systems to improve security and reliability. There are 3 remaining upgrades that need to take place. Each of these will result in a few minutes of intermittent availability for some of our APIs. None of these upgrades will impact the serving of traffic on the edge.\n\n\nThese APIs will have an elevated error rate during each of these upgrades. In all cases, we expect normal operations to resume after 3-5 minutes of intermittent errors, and any failed operations can be retried when service is restored.\n\nBelow is a list of the Impacted Cloudflare products. In each case you will find the API Impact described and confirmation of the parts of Cloudflare’s Edge that will continue to function as normal.\n\n\nThe creation/deletion of D1 databases - Already deployed D1 databases will continue to function as normal across Cloudflare’s network\n\n\nThe creation and deletion of Workers Pages Projects - Already deployed Pages sites/deployments will function as normal across Cloudflare’s network\n\n\nAPI Shield and Page Shield configuration changes - Both API Shield and Page Shield will continue to function as normal across Cloudflare’s network\n\n\nBot Management and Bot Fight Mode configuration changes - Both Bot Management and Bot Fight Mode will continue to function as normal across Cloudflare’s network\n\n\nSome Cache Configuration changes including Smart Tiered Cache, Max HTTP Version to origins, and Cache Reserve settings will not be able to be changed during the upgrade - These features will continue to work normally across Cloudflare’s network\n\n\nUploading new Images or modifying existing images or image variants - Images will continue to be served normally across Cloudflare’s network\n\n\nCreating/deleting/changing Logpush jobs - Existing Logpush jobs will continue to run as normal\n\nEnabling or disabling AMP Real URL - AMP URL will continue to work normally on enabled zones across Cloudflare’s network\n\n\nCreating/deleting/changing Cloudflare Tunnels, new Tunnel registration, and new Warp Device registration - Existing Tunnels and Warp device connections will be uninterrupted unless network connectivity is dropped and a reconnect is attempted.\nCloudflare Radar may be intermittently available\n\n\nCreation/modification of DDoS overrides - DDoS protection will be fully functional across Cloudflare’s network\n\n\nCreation of new Zaraz configurations and/or modification of existing Zaraz configurations, including adding tools, fields, actions, triggers, variables and/or settings - Existing configuration will be fully functional across Cloudflare’s network\n\n\nCreation and modification of any waiting room configuration settings - Existing configuration will be fully functional across Cloudflare’s network\n\n\nTurnstile configuration changes - Existing configuration will be fully functional across Cloudflare’s network\n\n\nCreation, modification and processing of live inputs, video uploads and new live streams - Existing streams will function as usual across Cloudflare’s network\n\n\nFor new accounts that signed up for R2 during this maintenance window, expect S3 API access to temporarily fail until the upgrade is complete - Existing accounts will function as usual across Cloudflare’s network\n\n\nPub/Sub: Creation of new namespaces, brokers, modification of existing brokers, and generation of new client keys - Existing brokers and message delivery. Publishing to a topic, subscribing to a topic and any on-publish Worker hooks will continue to work as usual across Cloudflare’s network\n\nWe will post more information about the 2nd and 3rd parts of the updates soon.",
+          "incident_id": "l0ds1nj98js8",
+          "created_at": "2023-05-15T18:31:22.612Z",
+          "updated_at": "2023-05-15T18:31:22.612Z",
+          "display_at": "2023-05-15T18:31:22.612Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "operational",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2023-05-11T21:08:12.424Z",
+          "position": 4,
+          "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "operational",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2023-05-12T18:24:51.037Z",
+          "position": 18,
+          "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-06-10T03:00:00.000Z",
+      "scheduled_until": "2023-06-10T03:45:00.000Z"
     },
     {
       "id": "rrcrzqvsjn82",
