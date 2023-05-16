@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-05-16T06:02:17.479Z"
+    "updated_at": "2023-05-16T07:10:57.911Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1127,9 +1127,9 @@
     {
       "id": "b9yrxv93hhrc",
       "name": "Calgary, AB, Canada - (YYC)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-03-15T19:43:31.836Z",
-      "updated_at": "2023-05-05T18:24:46.875Z",
+      "updated_at": "2023-05-16T07:10:57.909Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -1769,9 +1769,9 @@
     {
       "id": "hk0blp1nxsk6",
       "name": "Harare, Zimbabwe - (HRE)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-09-27T09:45:27.900Z",
-      "updated_at": "2023-05-15T11:11:43.785Z",
+      "updated_at": "2023-05-16T06:55:47.633Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -1994,9 +1994,9 @@
     {
       "id": "5wnz34mhfhrk",
       "name": "CDN/Cache",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-25T19:03:33.850Z",
-      "updated_at": "2023-04-29T07:08:34.381Z",
+      "updated_at": "2023-05-16T07:05:05.948Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -5952,7 +5952,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "bmd4c601slrr",
+      "name": "Performance Issues in multiple locations.",
+      "status": "investigating",
+      "created_at": "2023-05-16T07:05:05.916Z",
+      "updated_at": "2023-05-16T07:05:05.997Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/gktzymczr73r",
+      "started_at": "2023-05-16T07:05:05.909Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "dwhkr70p9685",
+          "status": "investigating",
+          "body": "Cloudflare is investigating intermittent issues with performance affecting a small subset of requests.\n\nWe are working to analyse and mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "bmd4c601slrr",
+          "created_at": "2023-05-16T07:05:05.995Z",
+          "updated_at": "2023-05-16T07:05:05.995Z",
+          "display_at": "2023-05-16T07:05:05.995Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5wnz34mhfhrk",
+          "name": "CDN/Cache",
+          "status": "degraded_performance",
+          "created_at": "2020-03-25T19:03:33.850Z",
+          "updated_at": "2023-05-16T07:05:05.948Z",
+          "position": 13,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "k1m22bhf0cd4",
