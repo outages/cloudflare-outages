@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-05-19T14:21:04.013Z"
+    "updated_at": "2023-05-19T14:27:22.460Z"
   },
   "components": [
     {
@@ -5505,9 +5505,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2023-04-16T13:57:56.797Z",
+      "updated_at": "2023-05-19T14:27:22.398Z",
       "position": 58,
       "description": "Cloudflare's JavaScript and WebAssembly execution service",
       "showcase": false,
@@ -5969,6 +5969,58 @@
     }
   ],
   "incidents": [
+    {
+      "id": "pg9ms2p91nsf",
+      "name": "Cloudflare Workers Cron Triggers Issues",
+      "status": "investigating",
+      "created_at": "2023-05-19T14:27:22.358Z",
+      "updated_at": "2023-05-19T14:27:22.457Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/gyc7l8rffp7v",
+      "started_at": "2023-05-19T14:27:22.350Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "jp3fb8wh7jc9",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue whereby Workers Cron Triggers may be getting executed multiple times.\n\nWe are working to analyse and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "pg9ms2p91nsf",
+          "created_at": "2023-05-19T14:27:22.454Z",
+          "updated_at": "2023-05-19T14:27:22.454Z",
+          "display_at": "2023-05-19T14:27:22.454Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2023-05-19T14:27:22.398Z",
+          "position": 58,
+          "description": "Cloudflare's JavaScript and WebAssembly execution service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "qfd7t6gcwrs3",
       "name": "Load Balancing analytical data delayed",
