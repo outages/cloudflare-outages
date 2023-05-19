@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-05-19T21:45:00.854Z"
+    "updated_at": "2023-05-19T22:10:18.813Z"
   },
   "components": [
     {
@@ -782,9 +782,9 @@
     {
       "id": "5wtvzd626rd8",
       "name": "Bangkok, Thailand - (BKK)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-04-21T05:37:43.134Z",
-      "updated_at": "2023-05-19T18:43:13.774Z",
+      "updated_at": "2023-05-19T22:10:15.894Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -5968,7 +5968,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "7fzmklxlbkjb",
+      "name": "User deletion results in 500 response code",
+      "status": "investigating",
+      "created_at": "2023-05-19T22:10:18.772Z",
+      "updated_at": "2023-05-19T22:10:18.811Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "none",
+      "shortlink": "https://stspg.io/38368ll0zrth",
+      "started_at": "2023-05-19T22:10:18.767Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "qsk3km0bllsp",
+          "status": "investigating",
+          "body": "User deletion requests are currently returning a 500 status code. Engineers are investigating.",
+          "incident_id": "7fzmklxlbkjb",
+          "created_at": "2023-05-19T22:10:18.810Z",
+          "updated_at": "2023-05-19T22:10:18.810Z",
+          "display_at": "2023-05-19T22:10:18.810Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "operational",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2023-05-12T18:24:51.037Z",
+          "position": 18,
+          "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "s9pd08g79mgv",
@@ -7184,86 +7237,6 @@
       ],
       "scheduled_for": "2023-06-10T03:00:00.000Z",
       "scheduled_until": "2023-06-10T03:45:00.000Z"
-    },
-    {
-      "id": "k1m22bhf0cd4",
-      "name": "MIA (Miami) on 2023-05-16",
-      "status": "in_progress",
-      "created_at": "2023-05-16T01:00:17.980Z",
-      "updated_at": "2023-05-16T12:00:19.085Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/k81z67ksbnb6",
-      "started_at": "2023-05-16T01:00:17.975Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "qr5fbf2wfcxr",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "k1m22bhf0cd4",
-          "created_at": "2023-05-16T12:00:19.078Z",
-          "updated_at": "2023-05-16T12:00:19.078Z",
-          "display_at": "2023-05-16T12:00:19.078Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "qspxpmnfnb2h",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "k1m22bhf0cd4",
-          "created_at": "2023-05-16T11:00:00.869Z",
-          "updated_at": "2023-05-16T11:00:00.869Z",
-          "display_at": "2023-05-16T11:00:00.869Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "6vlv60xv3tg1",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MIA (Miami) datacenter between 2023-05-16 12:00 and 2023-05-19 22:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "k1m22bhf0cd4",
-          "created_at": "2023-05-16T01:00:18.025Z",
-          "updated_at": "2023-05-16T01:00:18.025Z",
-          "display_at": "2023-05-16T01:00:18.025Z",
-          "affected_components": [
-            {
-              "code": "mvbjk0vw3krv",
-              "name": "North America - Miami, FL, United States - (MIA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "mvbjk0vw3krv",
-          "name": "Miami, FL, United States - (MIA)",
-          "status": "under_maintenance",
-          "created_at": "2014-10-27T20:31:43.401Z",
-          "updated_at": "2023-05-16T15:26:26.596Z",
-          "position": 24,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-05-16T12:00:00.000Z",
-      "scheduled_until": "2023-05-19T22:00:00.000Z"
     }
   ],
   "status": {
