@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-03T19:42:57.859Z"
+    "updated_at": "2023-06-03T20:13:09.238Z"
   },
   "components": [
     {
@@ -2281,9 +2281,9 @@
     {
       "id": "3mfmstzmyp8r",
       "name": "Maputo, Mozambique - (MPM)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-06-27T06:54:32.139Z",
-      "updated_at": "2023-06-03T19:22:09.912Z",
+      "updated_at": "2023-06-03T20:08:02.485Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2581,9 +2581,9 @@
     {
       "id": "gg8xxj0j3d32",
       "name": "Riyadh, Saudi Arabia - (RUH)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-03-07T02:32:33.544Z",
-      "updated_at": "2023-06-02T17:56:51.885Z",
+      "updated_at": "2023-06-03T20:13:08.394Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -2776,9 +2776,9 @@
     {
       "id": "v4lr1tmw0jsf",
       "name": "Port Louis, Mauritius - (MRU)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-02-12T12:35:05.181Z",
-      "updated_at": "2023-06-03T19:27:16.083Z",
+      "updated_at": "2023-06-03T20:08:01.949Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -3076,9 +3076,9 @@
     {
       "id": "gw5dtkqqr4lv",
       "name": "Ho Chi Minh City, Vietnam - (SGN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-12-06T09:28:02.817Z",
-      "updated_at": "2023-05-29T22:24:11.833Z",
+      "updated_at": "2023-06-03T20:13:08.808Z",
       "position": 24,
       "description": null,
       "showcase": false,
@@ -3258,7 +3258,7 @@
       "name": "Hyderabad, India - (HYD)",
       "status": "partial_outage",
       "created_at": "2019-01-11T08:19:48.090Z",
-      "updated_at": "2023-06-03T18:41:16.923Z",
+      "updated_at": "2023-06-03T20:13:09.236Z",
       "position": 26,
       "description": null,
       "showcase": false,
@@ -5626,9 +5626,9 @@
     {
       "id": "276xk3r83js7",
       "name": "Zero Trust Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-19T18:51:08.811Z",
-      "updated_at": "2023-04-05T20:48:14.120Z",
+      "updated_at": "2023-06-03T19:56:26.572Z",
       "position": 62,
       "description": "Cloudflare Zero Trust Dashboard where customers can view and make changes to their Cloudflare Gateway configurations at https://dash.teams.cloudflare.com",
       "showcase": false,
@@ -5701,9 +5701,9 @@
     {
       "id": "xk1sjvzmjp6t",
       "name": "Ulaanbaatar, Mongolia - (ULN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-09-19T09:48:26.066Z",
-      "updated_at": "2023-06-03T19:06:51.479Z",
+      "updated_at": "2023-06-03T20:02:56.968Z",
       "position": 66,
       "description": null,
       "showcase": false,
@@ -5985,6 +5985,58 @@
     }
   ],
   "incidents": [
+    {
+      "id": "gffs6jd0735t",
+      "name": "Increased errors with Zero Trust Dashboard and Gateway API's",
+      "status": "investigating",
+      "created_at": "2023-06-03T19:56:26.545Z",
+      "updated_at": "2023-06-03T19:56:26.617Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/2hgbrt73yfg4",
+      "started_at": "2023-06-03T19:56:26.539Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "m2j2rt6jk9bz",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Zero Trust Dashboard and Gateway APIs. These issues do not affect connectivity through Gateway HTTP proxy or other security features at the Cloudflare Edge. Customers using the Zero Trust Dashboard and Cloudflare Gateway APIs are impacted as requests might fail and/or errors may be displayed.",
+          "incident_id": "gffs6jd0735t",
+          "created_at": "2023-06-03T19:56:26.615Z",
+          "updated_at": "2023-06-03T19:56:26.615Z",
+          "display_at": "2023-06-03T19:56:26.615Z",
+          "affected_components": [
+            {
+              "code": "276xk3r83js7",
+              "name": "Cloudflare Sites and Services - Zero Trust Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "276xk3r83js7",
+          "name": "Zero Trust Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2020-03-19T18:51:08.811Z",
+          "updated_at": "2023-06-03T19:56:26.572Z",
+          "position": 62,
+          "description": "Cloudflare Zero Trust Dashboard where customers can view and make changes to their Cloudflare Gateway configurations at https://dash.teams.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "s2pgdtydv1p6",
       "name": "Cloudflare GraphQL API delays",
