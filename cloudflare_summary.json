@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-03T23:21:33.355Z"
+    "updated_at": "2023-06-03T23:32:45.139Z"
   },
   "components": [
     {
@@ -3421,9 +3421,9 @@
     {
       "id": "m755h52vlsrn",
       "name": "Neuquén, Argentina - (NQN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-03-25T14:03:04.703Z",
-      "updated_at": "2023-06-03T22:45:49.822Z",
+      "updated_at": "2023-06-03T23:31:42.663Z",
       "position": 28,
       "description": null,
       "showcase": false,
@@ -4141,9 +4141,9 @@
     {
       "id": "mslkxsqftrnn",
       "name": "Kolkata, India - (CCU)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-08-12T14:37:30.005Z",
-      "updated_at": "2023-06-03T22:56:01.829Z",
+      "updated_at": "2023-06-03T23:26:37.407Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -5986,6 +5986,78 @@
   ],
   "incidents": [
     {
+      "id": "gffs6jd0735t",
+      "name": "Increased errors with Zero Trust Dashboard and Gateway API's",
+      "status": "identified",
+      "created_at": "2023-06-03T19:56:26.545Z",
+      "updated_at": "2023-06-03T23:32:45.133Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/2hgbrt73yfg4",
+      "started_at": "2023-06-03T19:56:26.539Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "zzn8vyhkrk84",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "gffs6jd0735t",
+          "created_at": "2023-06-03T23:32:45.131Z",
+          "updated_at": "2023-06-03T23:32:45.131Z",
+          "display_at": "2023-06-03T23:32:45.131Z",
+          "affected_components": [
+            {
+              "code": "276xk3r83js7",
+              "name": "Cloudflare Sites and Services - Zero Trust Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "m2j2rt6jk9bz",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Zero Trust Dashboard and Gateway APIs. These issues do not affect connectivity through Gateway HTTP proxy or other security features at the Cloudflare Edge. Customers using the Zero Trust Dashboard and Cloudflare Gateway APIs are impacted as requests might fail and/or errors may be displayed.",
+          "incident_id": "gffs6jd0735t",
+          "created_at": "2023-06-03T19:56:26.615Z",
+          "updated_at": "2023-06-03T19:56:26.615Z",
+          "display_at": "2023-06-03T19:56:26.615Z",
+          "affected_components": [
+            {
+              "code": "276xk3r83js7",
+              "name": "Cloudflare Sites and Services - Zero Trust Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "276xk3r83js7",
+          "name": "Zero Trust Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2020-03-19T18:51:08.811Z",
+          "updated_at": "2023-06-03T19:56:26.572Z",
+          "position": 62,
+          "description": "Cloudflare Zero Trust Dashboard where customers can view and make changes to their Cloudflare Gateway configurations at https://dash.teams.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "s2pgdtydv1p6",
       "name": "Cloudflare GraphQL API delays",
       "status": "monitoring",
@@ -6048,58 +6120,6 @@
           "updated_at": "2023-06-03T19:22:31.359Z",
           "position": 3,
           "description": "Cloudflare customer analytics aggregation service",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
-    {
-      "id": "gffs6jd0735t",
-      "name": "Increased errors with Zero Trust Dashboard and Gateway API's",
-      "status": "investigating",
-      "created_at": "2023-06-03T19:56:26.545Z",
-      "updated_at": "2023-06-03T19:56:26.617Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/2hgbrt73yfg4",
-      "started_at": "2023-06-03T19:56:26.539Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "m2j2rt6jk9bz",
-          "status": "investigating",
-          "body": "Cloudflare is investigating issues with Zero Trust Dashboard and Gateway APIs. These issues do not affect connectivity through Gateway HTTP proxy or other security features at the Cloudflare Edge. Customers using the Zero Trust Dashboard and Cloudflare Gateway APIs are impacted as requests might fail and/or errors may be displayed.",
-          "incident_id": "gffs6jd0735t",
-          "created_at": "2023-06-03T19:56:26.615Z",
-          "updated_at": "2023-06-03T19:56:26.615Z",
-          "display_at": "2023-06-03T19:56:26.615Z",
-          "affected_components": [
-            {
-              "code": "276xk3r83js7",
-              "name": "Cloudflare Sites and Services - Zero Trust Dashboard",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "276xk3r83js7",
-          "name": "Zero Trust Dashboard",
-          "status": "degraded_performance",
-          "created_at": "2020-03-19T18:51:08.811Z",
-          "updated_at": "2023-06-03T19:56:26.572Z",
-          "position": 62,
-          "description": "Cloudflare Zero Trust Dashboard where customers can view and make changes to their Cloudflare Gateway configurations at https://dash.teams.cloudflare.com",
           "showcase": false,
           "start_date": null,
           "group_id": "1km35smx8p41",
