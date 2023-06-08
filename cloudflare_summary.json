@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-08T09:19:12.837Z"
+    "updated_at": "2023-06-08T09:35:26.763Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1563,9 +1563,9 @@
     {
       "id": "j4k6p2srcl3v",
       "name": "Noumea, New Caledonia - (NOU)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-07-23T06:52:15.924Z",
-      "updated_at": "2023-06-07T12:33:23.166Z",
+      "updated_at": "2023-06-08T09:29:24.756Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -2988,9 +2988,9 @@
     {
       "id": "7j656z7tqk7f",
       "name": "DNS Updates",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:50:20.772Z",
-      "updated_at": "2023-04-05T20:48:41.682Z",
+      "updated_at": "2023-06-08T09:35:26.701Z",
       "position": 23,
       "description": "Cloudflare's DNS update service pushing customer DNS changes out to all data centers",
       "showcase": false,
@@ -3423,9 +3423,9 @@
     {
       "id": "m755h52vlsrn",
       "name": "Neuquén, Argentina - (NQN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-03-25T14:03:04.703Z",
-      "updated_at": "2023-06-08T08:58:54.868Z",
+      "updated_at": "2023-06-08T09:24:20.139Z",
       "position": 28,
       "description": null,
       "showcase": false,
@@ -5463,9 +5463,9 @@
     {
       "id": "v4s7np92f0dh",
       "name": "Seoul, South Korea - (ICN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-27T21:43:15.944Z",
-      "updated_at": "2023-06-07T15:00:52.636Z",
+      "updated_at": "2023-06-08T09:29:25.377Z",
       "position": 57,
       "description": null,
       "showcase": false,
@@ -6016,7 +6016,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "m9dsb2bj7070",
+      "name": "DNS Update Delays",
+      "status": "investigating",
+      "created_at": "2023-06-08T09:35:26.669Z",
+      "updated_at": "2023-06-08T09:35:26.760Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/zg5hqs84r0tj",
+      "started_at": "2023-06-08T09:35:26.662Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "chl7xdmyfwxr",
+          "status": "investigating",
+          "body": "Cloudflare is investigating delays in propagation of updates to DNS records for some free plan websites. More updates to follow shortly.",
+          "incident_id": "m9dsb2bj7070",
+          "created_at": "2023-06-08T09:35:26.758Z",
+          "updated_at": "2023-06-08T09:35:26.758Z",
+          "display_at": "2023-06-08T09:35:26.758Z",
+          "affected_components": [
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7j656z7tqk7f",
+          "name": "DNS Updates",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:50:20.772Z",
+          "updated_at": "2023-06-08T09:35:26.701Z",
+          "position": 23,
+          "description": "Cloudflare's DNS update service pushing customer DNS changes out to all data centers",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "ngspmz0s1mw8",
