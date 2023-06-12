@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-12T14:27:34.177Z"
+    "updated_at": "2023-06-12T14:47:51.077Z"
   },
   "components": [
     {
@@ -2359,9 +2359,9 @@
     {
       "id": "sbk2cql7ktgz",
       "name": "Mombasa, Kenya - (MBA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2015-08-25T23:48:50.991Z",
-      "updated_at": "2023-06-09T18:45:23.057Z",
+      "updated_at": "2023-06-12T14:42:46.647Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -3784,9 +3784,9 @@
     {
       "id": "bss3xc7lbmgw",
       "name": "Philadelphia, United States - (PHL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-08-09T14:40:06.536Z",
-      "updated_at": "2023-06-09T20:47:28.365Z",
+      "updated_at": "2023-06-12T14:47:51.076Z",
       "position": 33,
       "description": null,
       "showcase": false,
@@ -5359,9 +5359,9 @@
     {
       "id": "8xc65dbhbrd5",
       "name": "Phnom Penh, Cambodia - (PNH)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-02-09T20:38:28.093Z",
-      "updated_at": "2023-06-12T13:51:58.884Z",
+      "updated_at": "2023-06-12T14:37:42.274Z",
       "position": 55,
       "description": null,
       "showcase": false,
@@ -6035,10 +6035,10 @@
   "incidents": [
     {
       "id": "z4lmb920dm09",
-      "name": "Cloudflare R2 Availability Issues",
+      "name": "Cloudflare R2, Waiting Room, Durable Objects, Queues and Stream Live Availability Issues",
       "status": "investigating",
       "created_at": "2023-06-12T11:27:06.937Z",
-      "updated_at": "2023-06-12T13:21:07.494Z",
+      "updated_at": "2023-06-12T14:46:37.433Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -6046,6 +6046,38 @@
       "started_at": "2023-06-12T11:27:06.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "4cqblwjzj59w",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "z4lmb920dm09",
+          "created_at": "2023-06-12T14:46:37.430Z",
+          "updated_at": "2023-06-12T14:46:37.430Z",
+          "display_at": "2023-06-12T14:46:37.430Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "9c7cbxnhk1dq",
+              "name": "Cloudflare Sites and Services - Waiting Room",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "0gvr2kcnf250",
           "status": "investigating",
@@ -6069,10 +6101,10 @@
         {
           "id": "py2nksn98kqq",
           "status": "investigating",
-          "body": "Cloudflare is investigating issues with R2 and Durable Objects availability. Subset of customers that use Cloudflare R2 and Durable Objects may observe HTTP 500 errors (R2) or “Network connection lost” errors (Durable Objects). This issue does not affect any other Cloudflare services.\n\nWe are working to mitigate this problem. More updates to follow shortly.",
+          "body": "Cloudflare is investigating issues with R2, Durable Objects, Queues and Stream Live availability.\n\nSubset of customers that use Cloudflare R2, Waiting Room, Stream Live or Queues may observe HTTP 500 errors or “Network connection lost” errors when making requests to Durable Objects. VOD is unimpacted.\n\nWe are working to mitigate this problem. More updates to follow shortly.",
           "incident_id": "z4lmb920dm09",
           "created_at": "2023-06-12T11:27:06.995Z",
-          "updated_at": "2023-06-12T12:19:35.545Z",
+          "updated_at": "2023-06-12T14:46:05.875Z",
           "display_at": "2023-06-12T11:27:06.000Z",
           "affected_components": [
             {
@@ -6098,6 +6130,36 @@
           "description": "High-performance storage for files and objects with zero egress charges",
           "showcase": false,
           "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "47xg28c02lnk",
+          "name": "Stream",
+          "status": "operational",
+          "created_at": "2019-01-24T16:53:34.953Z",
+          "updated_at": "2023-04-20T19:46:25.677Z",
+          "position": 49,
+          "description": "Cloudflare's on-demand end-to-end CDN video streaming service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "9c7cbxnhk1dq",
+          "name": "Waiting Room",
+          "status": "operational",
+          "created_at": "2023-01-10T09:59:32.683Z",
+          "updated_at": "2023-05-30T14:06:12.025Z",
+          "position": 56,
+          "description": "Cloudflare Waiting Room protects websites by queueing site visitors when a website experiences unmanageable surges in legitimate traffic that may otherwise bring an application down.",
+          "showcase": false,
+          "start_date": "2023-01-10",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -6165,9 +6227,9 @@
         {
           "id": "bss3xc7lbmgw",
           "name": "Philadelphia, United States - (PHL)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2019-08-09T14:40:06.536Z",
-          "updated_at": "2023-06-09T20:47:28.365Z",
+          "updated_at": "2023-06-12T14:47:51.076Z",
           "position": 33,
           "description": null,
           "showcase": false,
