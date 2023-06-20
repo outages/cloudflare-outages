@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-20T14:42:58.938Z"
+    "updated_at": "2023-06-20T15:02:23.558Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -434,9 +434,9 @@
     {
       "id": "gxjcfyf5pht1",
       "name": "Baghdad, Iraq - (BGW)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-03-12T14:18:23.436Z",
-      "updated_at": "2023-06-20T14:27:01.202Z",
+      "updated_at": "2023-06-20T15:02:22.847Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2483,9 +2483,9 @@
     {
       "id": "lbpzs70mty4t",
       "name": "Ramallah - (ZDM)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-03-29T04:42:32.213Z",
-      "updated_at": "2023-06-20T14:37:06.901Z",
+      "updated_at": "2023-06-20T14:57:19.408Z",
       "position": 18,
       "description": null,
       "showcase": false,
@@ -3128,9 +3128,9 @@
     {
       "id": "qrvlk1ck1dv2",
       "name": "Kinshasa - (FIH)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-04-08T15:01:16.430Z",
-      "updated_at": "2023-06-20T14:27:00.787Z",
+      "updated_at": "2023-06-20T14:52:17.082Z",
       "position": 24,
       "description": null,
       "showcase": false,
@@ -3968,9 +3968,9 @@
     {
       "id": "jdn42y3nlhjm",
       "name": "Ribeirao Preto, Brazil - (RAO)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-13T13:59:09.219Z",
-      "updated_at": "2023-06-20T07:32:11.970Z",
+      "updated_at": "2023-06-20T15:02:23.557Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -3998,9 +3998,9 @@
     {
       "id": "7rvrsd9g0f1v",
       "name": "Rio de Janeiro, Brazil - (GIG)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2017-06-22T22:19:02.210Z",
-      "updated_at": "2023-06-20T07:32:11.557Z",
+      "updated_at": "2023-06-20T15:02:23.172Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -4988,9 +4988,9 @@
     {
       "id": "kn2xkt469vyh",
       "name": "Registrar",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-07-31T14:19:17.585Z",
-      "updated_at": "2023-06-15T12:33:16.739Z",
+      "updated_at": "2023-06-20T14:54:23.521Z",
       "position": 49,
       "description": "Cloudflare Registrar securely registers and manages customer domain names",
       "showcase": false,
@@ -6096,14 +6096,67 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "rwkn8jv4wxsv",
+      "name": "Cloudflare Registrar unable to process operations for Identity Digital TLD domains",
+      "status": "investigating",
+      "created_at": "2023-06-20T14:54:23.496Z",
+      "updated_at": "2023-06-20T14:54:23.561Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/99qqhkbh2sl1",
+      "started_at": "2023-06-20T14:54:23.490Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "lb8hzpynpb62",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with its Registrar services that impact some customers with Identity Digital TLD domains for new registrations, transfers and renewals operations.\n\nSee https://www.cloudflare.com/tld-policies/ for the list of Identity Digital TLDs.\n\nRegistration services for other TLDs are not impacted.\n\nWe are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "rwkn8jv4wxsv",
+          "created_at": "2023-06-20T14:54:23.559Z",
+          "updated_at": "2023-06-20T14:54:23.559Z",
+          "display_at": "2023-06-20T14:54:23.559Z",
+          "affected_components": [
+            {
+              "code": "kn2xkt469vyh",
+              "name": "Cloudflare Sites and Services - Registrar",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kn2xkt469vyh",
+          "name": "Registrar",
+          "status": "degraded_performance",
+          "created_at": "2019-07-31T14:19:17.585Z",
+          "updated_at": "2023-06-20T14:54:23.521Z",
+          "position": 49,
+          "description": "Cloudflare Registrar securely registers and manages customer domain names",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "y6gw4brpycpk",
       "name": "VNO (Vilnius) on 2023-06-20",
       "status": "scheduled",
       "created_at": "2023-06-20T04:00:50.188Z",
-      "updated_at": "2023-06-20T04:00:50.249Z",
+      "updated_at": "2023-06-20T14:59:57.630Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -6111,6 +6164,19 @@
       "started_at": "2023-06-20T04:00:50.182Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "k66hv8q63b10",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "y6gw4brpycpk",
+          "created_at": "2023-06-20T14:59:57.477Z",
+          "updated_at": "2023-06-20T14:59:57.477Z",
+          "display_at": "2023-06-20T14:59:57.477Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "3k3tkdmhg2sn",
           "status": "scheduled",
@@ -6157,7 +6223,7 @@
       "name": "ORF (Norfolk) on 2023-06-20",
       "status": "scheduled",
       "created_at": "2023-06-20T04:00:49.874Z",
-      "updated_at": "2023-06-20T04:00:49.944Z",
+      "updated_at": "2023-06-20T15:00:00.130Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -6165,6 +6231,19 @@
       "started_at": "2023-06-20T04:00:49.865Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "srmnj94fhvj9",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "c0g8885544dy",
+          "created_at": "2023-06-20T15:00:00.019Z",
+          "updated_at": "2023-06-20T15:00:00.019Z",
+          "display_at": "2023-06-20T15:00:00.019Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "qzr8k3bh455j",
           "status": "scheduled",
@@ -6315,60 +6394,6 @@
       "scheduled_until": "2023-06-21T04:00:00.000Z"
     },
     {
-      "id": "yy31lqlg620f",
-      "name": "LHR (London) on 2023-06-21",
-      "status": "scheduled",
-      "created_at": "2023-06-20T09:00:12.543Z",
-      "updated_at": "2023-06-20T09:00:12.619Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/5nfnghr2y9tq",
-      "started_at": "2023-06-20T09:00:12.536Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "ryb113lsmx6x",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LHR (London) datacenter on 2023-06-21 between 00:00 and 06:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "yy31lqlg620f",
-          "created_at": "2023-06-20T09:00:12.616Z",
-          "updated_at": "2023-06-20T09:00:12.616Z",
-          "display_at": "2023-06-20T09:00:12.616Z",
-          "affected_components": [
-            {
-              "code": "shcqh0p22750",
-              "name": "Europe - London, United Kingdom - (LHR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "shcqh0p22750",
-          "name": "London, United Kingdom - (LHR)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:36:04.069Z",
-          "updated_at": "2023-06-09T06:08:26.166Z",
-          "position": 25,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-06-21T00:00:00.000Z",
-      "scheduled_until": "2023-06-21T06:00:00.000Z"
-    },
-    {
       "id": "hzhg449lynl0",
       "name": "DME (Moscow) on 2023-06-21",
       "status": "scheduled",
@@ -6421,6 +6446,60 @@
       ],
       "scheduled_for": "2023-06-21T00:00:00.000Z",
       "scheduled_until": "2023-06-21T03:00:00.000Z"
+    },
+    {
+      "id": "yy31lqlg620f",
+      "name": "LHR (London) on 2023-06-21",
+      "status": "scheduled",
+      "created_at": "2023-06-20T09:00:12.543Z",
+      "updated_at": "2023-06-20T09:00:12.619Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/5nfnghr2y9tq",
+      "started_at": "2023-06-20T09:00:12.536Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ryb113lsmx6x",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LHR (London) datacenter on 2023-06-21 between 00:00 and 06:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "yy31lqlg620f",
+          "created_at": "2023-06-20T09:00:12.616Z",
+          "updated_at": "2023-06-20T09:00:12.616Z",
+          "display_at": "2023-06-20T09:00:12.616Z",
+          "affected_components": [
+            {
+              "code": "shcqh0p22750",
+              "name": "Europe - London, United Kingdom - (LHR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "shcqh0p22750",
+          "name": "London, United Kingdom - (LHR)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:36:04.069Z",
+          "updated_at": "2023-06-09T06:08:26.166Z",
+          "position": 25,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-06-21T00:00:00.000Z",
+      "scheduled_until": "2023-06-21T06:00:00.000Z"
     },
     {
       "id": "y14sw6g5k0sd",
