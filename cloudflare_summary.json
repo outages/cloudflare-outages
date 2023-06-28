@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-28T22:11:58.339Z"
+    "updated_at": "2023-06-28T22:27:09.656Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2481,9 +2481,9 @@
     {
       "id": "qgh1bfr4hxrl",
       "name": "Community Site",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2021-07-13T17:30:04.906Z",
-      "updated_at": "2023-06-15T12:33:16.516Z",
+      "updated_at": "2023-06-28T22:21:17.597Z",
       "position": 18,
       "description": "Cloudflare's Community forums where customers can interact, ask questions and get help at https://community.cloudflare.com",
       "showcase": false,
@@ -4791,9 +4791,9 @@
     {
       "id": "x30v8nw2h4ck",
       "name": "Tbilisi, Georgia - (TBS)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2020-10-30T04:23:39.756Z",
-      "updated_at": "2023-06-28T19:35:29.093Z",
+      "updated_at": "2023-06-28T22:27:09.653Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -6064,7 +6064,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "78jqy5rkqw39",
+      "name": "Support Community Site Availability issues",
+      "status": "investigating",
+      "created_at": "2023-06-28T22:21:17.571Z",
+      "updated_at": "2023-06-28T22:21:17.639Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "critical",
+      "shortlink": "https://stspg.io/x4z9b8k5vk17",
+      "started_at": "2023-06-28T22:21:17.565Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "rk3q99m5slbb",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with availability of the Cloudflare community (community.cloudflare.com). \n\nWe are working to understand the full impact and mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "78jqy5rkqw39",
+          "created_at": "2023-06-28T22:21:17.637Z",
+          "updated_at": "2023-06-28T22:21:17.637Z",
+          "display_at": "2023-06-28T22:21:17.637Z",
+          "affected_components": [
+            {
+              "code": "qgh1bfr4hxrl",
+              "name": "Cloudflare Sites and Services - Community Site",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qgh1bfr4hxrl",
+          "name": "Community Site",
+          "status": "major_outage",
+          "created_at": "2021-07-13T17:30:04.906Z",
+          "updated_at": "2023-06-28T22:21:17.597Z",
+          "position": 18,
+          "description": "Cloudflare's Community forums where customers can interact, ask questions and get help at https://community.cloudflare.com",
+          "showcase": false,
+          "start_date": "2021-07-13",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "fjw5bkkxwsbj",
@@ -6359,7 +6412,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "major",
+    "description": "Partial System Outage"
   }
 }
