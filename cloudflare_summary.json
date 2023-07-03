@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-07-03T09:42:34.586Z"
+    "updated_at": "2023-07-03T10:33:09.578Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1150,9 +1150,9 @@
     {
       "id": "z9w398bsjvnq",
       "name": "Argo Smart Routing",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-31T03:46:12.547Z",
-      "updated_at": "2023-06-15T12:33:16.437Z",
+      "updated_at": "2023-07-03T10:23:13.571Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -4281,9 +4281,9 @@
     {
       "id": "17x9hc6l3qzd",
       "name": "Riga, Latvia - (RIX)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-03-27T12:54:32.203Z",
-      "updated_at": "2023-06-30T09:29:29.365Z",
+      "updated_at": "2023-07-03T10:28:06.536Z",
       "position": 40,
       "description": null,
       "showcase": false,
@@ -4793,7 +4793,7 @@
       "name": "Tbilisi, Georgia - (TBS)",
       "status": "operational",
       "created_at": "2020-10-30T04:23:39.756Z",
-      "updated_at": "2023-07-03T07:51:14.058Z",
+      "updated_at": "2023-07-03T10:33:09.575Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -6064,7 +6064,80 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "9f67wgqrpy6y",
+      "name": "Argo Smart Routing Availability Issues",
+      "status": "identified",
+      "created_at": "2023-07-03T10:23:13.537Z",
+      "updated_at": "2023-07-03T10:33:00.516Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/2thsjvxnnpdp",
+      "started_at": "2023-07-03T10:23:13.529Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "5glk37jmjlgg",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "9f67wgqrpy6y",
+          "created_at": "2023-07-03T10:33:00.513Z",
+          "updated_at": "2023-07-03T10:33:00.513Z",
+          "display_at": "2023-07-03T10:33:00.513Z",
+          "affected_components": [
+            {
+              "code": "z9w398bsjvnq",
+              "name": "Cloudflare Sites and Services - Argo Smart Routing",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "llr9jgsg9gsn",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Argo Smart Routing and Tiered Caching. Customers that use Argo Smart Routing may observe reduced performance improvement during this time. This issue may affect other Cloudflare services and dashboards.\n\nWe are working to mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "9f67wgqrpy6y",
+          "created_at": "2023-07-03T10:23:13.639Z",
+          "updated_at": "2023-07-03T10:23:13.639Z",
+          "display_at": "2023-07-03T10:23:13.639Z",
+          "affected_components": [
+            {
+              "code": "z9w398bsjvnq",
+              "name": "Cloudflare Sites and Services - Argo Smart Routing",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "z9w398bsjvnq",
+          "name": "Argo Smart Routing",
+          "status": "degraded_performance",
+          "created_at": "2020-03-31T03:46:12.547Z",
+          "updated_at": "2023-07-03T10:23:13.571Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "ygmzbmgkv3g4",
