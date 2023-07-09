@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-07-09T13:59:57.393Z"
+    "updated_at": "2023-07-09T15:00:11.166Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -464,9 +464,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2023-06-20T11:41:04.195Z",
+      "updated_at": "2023-07-09T15:00:10.991Z",
       "position": 4,
       "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -2629,9 +2629,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2023-06-19T16:07:37.848Z",
+      "updated_at": "2023-07-09T15:00:11.028Z",
       "position": 20,
       "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -6188,94 +6188,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "yl2z61jk7xhj",
-      "name": "Dashboard and API Maintenance",
-      "status": "scheduled",
-      "created_at": "2023-06-19T17:56:19.065Z",
-      "updated_at": "2023-07-09T13:59:57.379Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/wwmm93q6dgc8",
-      "started_at": "2023-06-19T17:56:19.055Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "glrx08y722zx",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "yl2z61jk7xhj",
-          "created_at": "2023-07-09T13:59:57.081Z",
-          "updated_at": "2023-07-09T13:59:57.081Z",
-          "display_at": "2023-07-09T13:59:57.081Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "xmvr1qs497hz",
-          "status": "scheduled",
-          "body": "Over the past several months, Cloudflare has undertaken an overhaul of some of our critical configuration data systems to improve security and reliability. There are 2 remaining upgrades that need to take place. Each of these will result in a few minutes of intermittent availability for some of our APIs. None of these upgrades will impact the serving of traffic on the edge.\n\n\nThese APIs will have an elevated error rate during each of these upgrades. In all cases, we expect normal operations to resume after 3-5 minutes of intermittent errors, and any failed operations can be retried when service is restored.\n\nBelow is a list of the Impacted Cloudflare products. In each case you will find the API Impact described and confirmation of the parts of Cloudflare’s Edge that will continue to function as normal.\n\nThe creation and modification of Cloudflare Workers (including adding or modifying bindings, environment variables, triggers, deployment rollbacks), dispatch namespaces, as well as Workers KV namespaces and namespace bindings - Already deployed Workers will function as usual.\n\nThe creation of Pages projects and deployment of Pages Functions. Already deployed Pages projects & Functions will function as usual.\n\nThe creation and modification of Zero Trust products, including Cloudflare Access policies will be intermittently available. Logouts may need to be retried, and audit logs will be delayed - Authentication/logins will function as normal across Cloudflare’s network.\n\nArgo Smart Routing configuration changes, including enabling/disabling Argo Smart Routing - Argo Smart Routing will continue to function as usual across Cloudflare’s network.\n\nTurning on/off the Data Localization Suite for accounts and hostnames.\n\nCreation and modification of zone transfer configurations as well as incoming and outgoing zone transfers - This will not impact DNS resolution of existing DNS records, and Cloudflare nameservers will continue to respond to DNS queries.\n\nThe creation/modification of DDoS overrides - DDoS protection will be fully functional across Cloudflare’s network.\n\nThe creation/configuration of Durable Object classes will be intermittently available - This will not impact communicating with or instantiating instances for already configured Durable Object classes.\n\nCreation, modification, and deletion of Gateway policies or configurations - Existing Gateway policies will function as normal across Cloudflare’s network.\n\nThe creation, modification, and deletion of Health Checks. Existing Health Checks will continue to function as normal across Cloudflare’s network.\n\nThe creation, modification, and deletion of Load Balancers, Pools, Origins, and Health Monitors - Existing configuration will continue to function as normal across Cloudflare’s network.\n\nThe ability to run scans in Infrastructure or Security Insights.\n\nCreation of new notifications or any notification destinations (ex. PagerDuty, Webhooks) - Existing notifications will be processed as normal.\n\nCreation of a waiting room or modification of any existing waiting room configuration will see delays in propagation - Existing configuration will continue to function as normal across Cloudflare’s network.\n\nCreation, deletion and editing of Spectrum applications - Existing configuration will continue to function as normal across Cloudflare’s network.\n\nCreation and modification of rules engine-based products including but not limited to WAF, Transform Rules, Configuration Rules, Origin Rules, Cache Rules, Waiting Room Bypass Rules, Dynamic Redirects, Bulk Redirects, URL normalization, DDoS L4/L7 Rules, Super Bot Fight Mode, Rate Limiting and more (https://developers.cloudflare.com/ruleset-engine/reference/phases-list/) - \n Existing configuration will continue to function as normal across Cloudflare’s network.\n\nCreation of new queues, modification of existing queues, and/or adding new consumer bindings - Existing queues and message delivery will not be affected. Sending to and consuming from existing queues will continue to function as normal across Cloudflare’s network.\n\nWe will post more information on the 3rd part of the update soon.",
-          "incident_id": "yl2z61jk7xhj",
-          "created_at": "2023-06-19T17:56:19.126Z",
-          "updated_at": "2023-07-07T21:13:47.865Z",
-          "display_at": "2023-06-19T17:56:19.126Z",
-          "affected_components": [
-            {
-              "code": "g4tb35rs9yw7",
-              "name": "Cloudflare Sites and Services - API",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "3sq3s4d20ywk",
-              "name": "Cloudflare Sites and Services - Dashboard",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "g4tb35rs9yw7",
-          "name": "API",
-          "status": "operational",
-          "created_at": "2014-10-09T03:32:07.158Z",
-          "updated_at": "2023-06-20T11:41:04.195Z",
-          "position": 4,
-          "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "3sq3s4d20ywk",
-          "name": "Dashboard",
-          "status": "operational",
-          "created_at": "2014-10-09T03:32:07.173Z",
-          "updated_at": "2023-06-19T16:07:37.848Z",
-          "position": 20,
-          "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-07-09T15:00:00.000Z",
-      "scheduled_until": "2023-07-09T15:45:00.000Z"
-    },
-    {
       "id": "8hjw8ydmrrv1",
       "name": "HEL (Helsinki) on 2023-07-10",
       "status": "scheduled",
@@ -6544,6 +6456,120 @@
       ],
       "scheduled_for": "2023-07-12T17:00:00.000Z",
       "scheduled_until": "2023-07-12T22:00:00.000Z"
+    },
+    {
+      "id": "yl2z61jk7xhj",
+      "name": "Dashboard and API Maintenance",
+      "status": "in_progress",
+      "created_at": "2023-06-19T17:56:19.065Z",
+      "updated_at": "2023-07-09T15:00:11.151Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/wwmm93q6dgc8",
+      "started_at": "2023-06-19T17:56:19.055Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "nhtxkh191lg6",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "yl2z61jk7xhj",
+          "created_at": "2023-07-09T15:00:11.142Z",
+          "updated_at": "2023-07-09T15:00:11.142Z",
+          "display_at": "2023-07-09T15:00:11.142Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "glrx08y722zx",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "yl2z61jk7xhj",
+          "created_at": "2023-07-09T13:59:57.081Z",
+          "updated_at": "2023-07-09T13:59:57.081Z",
+          "display_at": "2023-07-09T13:59:57.081Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xmvr1qs497hz",
+          "status": "scheduled",
+          "body": "Over the past several months, Cloudflare has undertaken an overhaul of some of our critical configuration data systems to improve security and reliability. There are 2 remaining upgrades that need to take place. Each of these will result in a few minutes of intermittent availability for some of our APIs. None of these upgrades will impact the serving of traffic on the edge.\n\n\nThese APIs will have an elevated error rate during each of these upgrades. In all cases, we expect normal operations to resume after 3-5 minutes of intermittent errors, and any failed operations can be retried when service is restored.\n\nBelow is a list of the Impacted Cloudflare products. In each case you will find the API Impact described and confirmation of the parts of Cloudflare’s Edge that will continue to function as normal.\n\nThe creation and modification of Cloudflare Workers (including adding or modifying bindings, environment variables, triggers, deployment rollbacks), dispatch namespaces, as well as Workers KV namespaces and namespace bindings - Already deployed Workers will function as usual.\n\nThe creation of Pages projects and deployment of Pages Functions. Already deployed Pages projects & Functions will function as usual.\n\nThe creation and modification of Zero Trust products, including Cloudflare Access policies will be intermittently available. Logouts may need to be retried, and audit logs will be delayed - Authentication/logins will function as normal across Cloudflare’s network.\n\nArgo Smart Routing configuration changes, including enabling/disabling Argo Smart Routing - Argo Smart Routing will continue to function as usual across Cloudflare’s network.\n\nTurning on/off the Data Localization Suite for accounts and hostnames.\n\nCreation and modification of zone transfer configurations as well as incoming and outgoing zone transfers - This will not impact DNS resolution of existing DNS records, and Cloudflare nameservers will continue to respond to DNS queries.\n\nThe creation/modification of DDoS overrides - DDoS protection will be fully functional across Cloudflare’s network.\n\nThe creation/configuration of Durable Object classes will be intermittently available - This will not impact communicating with or instantiating instances for already configured Durable Object classes.\n\nCreation, modification, and deletion of Gateway policies or configurations - Existing Gateway policies will function as normal across Cloudflare’s network.\n\nThe creation, modification, and deletion of Health Checks. Existing Health Checks will continue to function as normal across Cloudflare’s network.\n\nThe creation, modification, and deletion of Load Balancers, Pools, Origins, and Health Monitors - Existing configuration will continue to function as normal across Cloudflare’s network.\n\nThe ability to run scans in Infrastructure or Security Insights.\n\nCreation of new notifications or any notification destinations (ex. PagerDuty, Webhooks) - Existing notifications will be processed as normal.\n\nCreation of a waiting room or modification of any existing waiting room configuration will see delays in propagation - Existing configuration will continue to function as normal across Cloudflare’s network.\n\nCreation, deletion and editing of Spectrum applications - Existing configuration will continue to function as normal across Cloudflare’s network.\n\nCreation and modification of rules engine-based products including but not limited to WAF, Transform Rules, Configuration Rules, Origin Rules, Cache Rules, Waiting Room Bypass Rules, Dynamic Redirects, Bulk Redirects, URL normalization, DDoS L4/L7 Rules, Super Bot Fight Mode, Rate Limiting and more (https://developers.cloudflare.com/ruleset-engine/reference/phases-list/) - \n Existing configuration will continue to function as normal across Cloudflare’s network.\n\nCreation of new queues, modification of existing queues, and/or adding new consumer bindings - Existing queues and message delivery will not be affected. Sending to and consuming from existing queues will continue to function as normal across Cloudflare’s network.\n\nWe will post more information on the 3rd part of the update soon.",
+          "incident_id": "yl2z61jk7xhj",
+          "created_at": "2023-06-19T17:56:19.126Z",
+          "updated_at": "2023-07-07T21:13:47.865Z",
+          "display_at": "2023-06-19T17:56:19.126Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "under_maintenance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2023-07-09T15:00:10.991Z",
+          "position": 4,
+          "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "under_maintenance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2023-07-09T15:00:11.028Z",
+          "position": 20,
+          "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-07-09T15:00:00.000Z",
+      "scheduled_until": "2023-07-09T15:45:00.000Z"
     }
   ],
   "status": {
