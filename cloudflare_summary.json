@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-07-10T14:49:35.310Z"
+    "updated_at": "2023-07-10T15:36:42.885Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1984,9 +1984,9 @@
     {
       "id": "1xnjfx08wn5v",
       "name": "Córdoba, Argentina - (COR)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-05-31T15:34:24.032Z",
-      "updated_at": "2023-07-04T01:23:35.156Z",
+      "updated_at": "2023-07-10T15:34:35.186Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2106,7 +2106,7 @@
       "name": "Cache Reserve",
       "status": "operational",
       "created_at": "2023-06-12T16:52:52.754Z",
-      "updated_at": "2023-06-15T12:33:16.487Z",
+      "updated_at": "2023-07-10T15:33:25.464Z",
       "position": 14,
       "description": "Cache Reserve is a large, persistent data store implemented on top of R2. By pushing a single button in the dashboard, your website’s cacheable content will be written to Cache Reserve.",
       "showcase": false,
@@ -2211,7 +2211,7 @@
       "name": "CDN/Cache",
       "status": "operational",
       "created_at": "2020-03-25T19:03:33.850Z",
-      "updated_at": "2023-07-07T15:17:07.522Z",
+      "updated_at": "2023-07-10T15:33:25.480Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -3771,7 +3771,7 @@
       "name": "Images",
       "status": "operational",
       "created_at": "2022-02-25T17:30:01.272Z",
-      "updated_at": "2023-06-15T12:33:16.622Z",
+      "updated_at": "2023-07-10T15:33:25.496Z",
       "position": 33,
       "description": "Cloudflare service to build a scalable image pipeline to store, resize, optimize and deliver images in a fast and secure manner.",
       "showcase": false,
@@ -3951,7 +3951,7 @@
       "name": "Logs",
       "status": "operational",
       "created_at": "2016-03-20T18:49:07.613Z",
-      "updated_at": "2023-06-27T03:45:42.163Z",
+      "updated_at": "2023-07-10T15:33:25.512Z",
       "position": 36,
       "description": "Cloudflare's Enterprise Log pull and Log push service",
       "showcase": false,
@@ -4656,7 +4656,7 @@
       "name": "R2",
       "status": "operational",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2023-07-06T15:29:52.367Z",
+      "updated_at": "2023-07-10T15:33:25.526Z",
       "position": 45,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -5164,9 +5164,9 @@
     {
       "id": "47xg28c02lnk",
       "name": "Stream",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:53:34.953Z",
-      "updated_at": "2023-06-19T23:55:52.851Z",
+      "updated_at": "2023-07-10T15:36:42.832Z",
       "position": 52,
       "description": "Cloudflare's on-demand end-to-end CDN video streaming service",
       "showcase": false,
@@ -6032,7 +6032,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "jdx6w1y9z5t3",
+      "name": "Stream video upload issues",
+      "status": "investigating",
+      "created_at": "2023-07-10T15:36:42.802Z",
+      "updated_at": "2023-07-10T15:36:42.882Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/dgwswb0tq38m",
+      "started_at": "2023-07-10T15:36:42.795Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "mtgg132kvqvj",
+          "status": "investigating",
+          "body": "Cloudflare Stream: Degraded performance for uploading new videos using a URL. Video playback and live/real-time video features not impacted.",
+          "incident_id": "jdx6w1y9z5t3",
+          "created_at": "2023-07-10T15:36:42.880Z",
+          "updated_at": "2023-07-10T15:36:42.880Z",
+          "display_at": "2023-07-10T15:36:42.880Z",
+          "affected_components": [
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "47xg28c02lnk",
+          "name": "Stream",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:53:34.953Z",
+          "updated_at": "2023-07-10T15:36:42.832Z",
+          "position": 52,
+          "description": "Cloudflare's on-demand end-to-end CDN video streaming service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "t7rqtpq8cwtc",
