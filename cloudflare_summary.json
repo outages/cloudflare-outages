@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-01T14:07:30.863Z"
+    "updated_at": "2023-08-01T14:32:53.099Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -408,9 +408,9 @@
     {
       "id": "3lsyxp2s1khw",
       "name": "Barcelona, Spain - (BCN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-10-10T21:36:13.143Z",
-      "updated_at": "2023-07-19T05:30:29.992Z",
+      "updated_at": "2023-08-01T14:32:48.127Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1388,9 +1388,9 @@
     {
       "id": "2469qcw8rvjp",
       "name": "Audit Logs",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-08-01T04:49:28.841Z",
-      "updated_at": "2023-06-15T12:33:16.444Z",
+      "updated_at": "2023-08-01T14:32:53.041Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -6080,7 +6080,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "k5yzyd1hbrj0",
+      "name": "Audit Logs Issues.",
+      "status": "investigating",
+      "created_at": "2023-08-01T14:32:53.005Z",
+      "updated_at": "2023-08-01T14:32:53.096Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/wt238nb81lnz",
+      "started_at": "2023-08-01T14:32:52.998Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "3chvstlzswyl",
+          "status": "investigating",
+          "body": "Cloudflare Audit Logs are reporting audit data occasionally with wrong User information.\n\nMore updates to follow shortly.",
+          "incident_id": "k5yzyd1hbrj0",
+          "created_at": "2023-08-01T14:32:53.094Z",
+          "updated_at": "2023-08-01T14:32:53.094Z",
+          "display_at": "2023-08-01T14:32:53.094Z",
+          "affected_components": [
+            {
+              "code": "2469qcw8rvjp",
+              "name": "Cloudflare Sites and Services - Audit Logs",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2469qcw8rvjp",
+          "name": "Audit Logs",
+          "status": "degraded_performance",
+          "created_at": "2022-08-01T04:49:28.841Z",
+          "updated_at": "2023-08-01T14:32:53.041Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-08-01",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "q4bd90wrzwsd",
