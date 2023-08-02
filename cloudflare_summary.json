@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-02T18:31:25.407Z"
+    "updated_at": "2023-08-02T19:21:30.622Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2152,9 +2152,9 @@
     {
       "id": "dk64qkf6mlmk",
       "name": "Houston, TX, United States - (IAH)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2018-03-20T07:50:27.681Z",
-      "updated_at": "2023-07-19T13:51:46.049Z",
+      "updated_at": "2023-08-02T19:21:30.527Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -3052,9 +3052,9 @@
     {
       "id": "qshn45g5q59m",
       "name": "Lisbon, Portugal - (LIS)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2016-10-18T20:43:36.754Z",
-      "updated_at": "2023-07-18T14:50:01.918Z",
+      "updated_at": "2023-08-02T19:21:30.545Z",
       "position": 24,
       "description": null,
       "showcase": false,
@@ -5017,9 +5017,9 @@
     {
       "id": "8w536gxk7dvq",
       "name": "Recursive DNS",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:51:39.639Z",
-      "updated_at": "2023-08-01T12:16:17.539Z",
+      "updated_at": "2023-08-02T19:21:30.563Z",
       "position": 50,
       "description": "Cloudflare's free recursive DNS service at 1.1.1.1 and 1.0.0.1",
       "showcase": false,
@@ -6080,7 +6080,102 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "60hxsmpl7lpm",
+      "name": "Increased rates of HTTP 530 errors",
+      "status": "investigating",
+      "created_at": "2023-08-02T19:21:30.486Z",
+      "updated_at": "2023-08-02T19:21:30.619Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/ltswbpkb2sqw",
+      "started_at": "2023-08-02T19:21:30.472Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "fymmqzgf7n8p",
+          "status": "investigating",
+          "body": "We are investigating reports of increased rates of HTTP 530 error responses originating from our Lisbon and Houston facilities.",
+          "incident_id": "60hxsmpl7lpm",
+          "created_at": "2023-08-02T19:21:30.616Z",
+          "updated_at": "2023-08-02T19:21:30.616Z",
+          "display_at": "2023-08-02T19:21:30.616Z",
+          "affected_components": [
+            {
+              "code": "8w536gxk7dvq",
+              "name": "Cloudflare Sites and Services - Recursive DNS",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "dk64qkf6mlmk",
+              "name": "North America - Houston, TX, United States - (IAH)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "qshn45g5q59m",
+              "name": "Europe - Lisbon, Portugal - (LIS)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "dk64qkf6mlmk",
+          "name": "Houston, TX, United States - (IAH)",
+          "status": "degraded_performance",
+          "created_at": "2018-03-20T07:50:27.681Z",
+          "updated_at": "2023-08-02T19:21:30.527Z",
+          "position": 15,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qshn45g5q59m",
+          "name": "Lisbon, Portugal - (LIS)",
+          "status": "degraded_performance",
+          "created_at": "2016-10-18T20:43:36.754Z",
+          "updated_at": "2023-08-02T19:21:30.545Z",
+          "position": 24,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "8w536gxk7dvq",
+          "name": "Recursive DNS",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:51:39.639Z",
+          "updated_at": "2023-08-02T19:21:30.563Z",
+          "position": 50,
+          "description": "Cloudflare's free recursive DNS service at 1.1.1.1 and 1.0.0.1",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "9mps90cfznbz",
@@ -6174,9 +6269,9 @@
         {
           "id": "qshn45g5q59m",
           "name": "Lisbon, Portugal - (LIS)",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2016-10-18T20:43:36.754Z",
-          "updated_at": "2023-07-18T14:50:01.918Z",
+          "updated_at": "2023-08-02T19:21:30.545Z",
           "position": 24,
           "description": null,
           "showcase": false,
