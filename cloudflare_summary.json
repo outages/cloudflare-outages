@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-04T15:01:26.069Z"
+    "updated_at": "2023-08-04T15:16:00.160Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3981,9 +3981,9 @@
     {
       "id": "8sn2w5kyxfnp",
       "name": "Load Balancing and Monitoring",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:54:07.994Z",
-      "updated_at": "2023-07-14T08:21:34.542Z",
+      "updated_at": "2023-08-04T15:16:00.109Z",
       "position": 36,
       "description": "Cloudflare's load balancing and failover service including origin server monitoring",
       "showcase": false,
@@ -6064,7 +6064,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "cx141zv0rfd8",
+      "name": "Load Balancers connectivity issues",
+      "status": "investigating",
+      "created_at": "2023-08-04T15:16:00.080Z",
+      "updated_at": "2023-08-04T15:16:00.157Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5bb8tz2h7tpg",
+      "started_at": "2023-08-04T15:16:00.073Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "3plrssd5q16w",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Load Balancers.\n\nUsers may experience connectivity issues or a degraded experience due to HTTP 400 errors.",
+          "incident_id": "cx141zv0rfd8",
+          "created_at": "2023-08-04T15:16:00.154Z",
+          "updated_at": "2023-08-04T15:16:00.154Z",
+          "display_at": "2023-08-04T15:16:00.154Z",
+          "affected_components": [
+            {
+              "code": "8sn2w5kyxfnp",
+              "name": "Cloudflare Sites and Services - Load Balancing and Monitoring",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "8sn2w5kyxfnp",
+          "name": "Load Balancing and Monitoring",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:54:07.994Z",
+          "updated_at": "2023-08-04T15:16:00.109Z",
+          "position": 36,
+          "description": "Cloudflare's load balancing and failover service including origin server monitoring",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "6n31lpsqgcpy",
