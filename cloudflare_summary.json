@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-16T15:48:02.495Z"
+    "updated_at": "2023-08-16T16:06:58.641Z"
   },
   "components": [
     {
@@ -1973,9 +1973,9 @@
     {
       "id": "1xnjfx08wn5v",
       "name": "Córdoba, Argentina - (COR)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-05-31T15:34:24.032Z",
-      "updated_at": "2023-08-16T15:35:49.409Z",
+      "updated_at": "2023-08-16T16:01:25.716Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2873,9 +2873,9 @@
     {
       "id": "vl0s9mnn4gfb",
       "name": "Hanoi, Vietnam - (HAN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-12-18T06:51:18.979Z",
-      "updated_at": "2023-08-16T13:33:05.519Z",
+      "updated_at": "2023-08-16T16:01:26.549Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -3398,9 +3398,9 @@
     {
       "id": "m755h52vlsrn",
       "name": "Neuquén, Argentina - (NQN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-03-25T14:03:04.703Z",
-      "updated_at": "2023-08-16T15:35:49.837Z",
+      "updated_at": "2023-08-16T16:01:26.162Z",
       "position": 28,
       "description": null,
       "showcase": false,
@@ -6100,24 +6100,44 @@
     {
       "id": "c26w5tx0jhqk",
       "name": "Unable to update Cloudflare Access Policies in the Dashboard",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2023-08-16T15:46:13.579Z",
-      "updated_at": "2023-08-16T15:48:02.486Z",
+      "updated_at": "2023-08-16T16:06:58.632Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/dxd6l7bqnwgf",
-      "started_at": "2023-08-16T15:46:13.571Z",
+      "started_at": "2023-08-16T15:46:13.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
+          "id": "knxbb31k71vz",
+          "status": "identified",
+          "body": "We have determined that this specifically affects updating policies with a rule action of Service Auth and Bypass. This impact is observed across the dashboard, API and Terraform.",
+          "incident_id": "c26w5tx0jhqk",
+          "created_at": "2023-08-16T16:06:58.629Z",
+          "updated_at": "2023-08-16T16:06:58.629Z",
+          "display_at": "2023-08-16T16:06:58.629Z",
+          "affected_components": [
+            {
+              "code": "276xk3r83js7",
+              "name": "Cloudflare Sites and Services - Zero Trust Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
           "id": "ktv6qqsbdv7c",
           "status": "investigating",
-          "body": "Cloudflare is investigating issues with Cloudflare Access. User might observe error when updating a policy. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "body": "Cloudflare is still investigating issues with Cloudflare Access. User might observe error when updating a policy. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
           "incident_id": "c26w5tx0jhqk",
           "created_at": "2023-08-16T15:48:02.484Z",
-          "updated_at": "2023-08-16T15:48:02.484Z",
-          "display_at": "2023-08-16T15:48:02.484Z",
+          "updated_at": "2023-08-16T16:03:30.535Z",
+          "display_at": "2023-08-16T15:48:02.000Z",
           "affected_components": [
             {
               "code": "276xk3r83js7",
@@ -6133,11 +6153,11 @@
         {
           "id": "43t20r5y6hyb",
           "status": "investigating",
-          "body": "Cloudflare engineering is investigating an issue preventing users from saving valid Access Policies in the Zero Trust Dashboard. Updating Access Policies via the API and Terraform are not affected at this time. User authentication and policy enforcement are also not affected.",
+          "body": "Cloudflare is investigating an issue preventing users from saving valid Access Policies in the Zero Trust Dashboard. Updating Access Policies via the API and Terraform are not affected at this time. User authentication and policy enforcement are also not affected.",
           "incident_id": "c26w5tx0jhqk",
           "created_at": "2023-08-16T15:46:13.667Z",
-          "updated_at": "2023-08-16T15:46:13.667Z",
-          "display_at": "2023-08-16T15:46:13.667Z",
+          "updated_at": "2023-08-16T16:03:07.098Z",
+          "display_at": "2023-08-16T15:46:13.000Z",
           "affected_components": [
             {
               "code": "276xk3r83js7",
