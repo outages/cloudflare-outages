@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-16T21:38:26.410Z"
+    "updated_at": "2023-08-16T22:00:50.629Z"
   },
   "components": [
     {
@@ -2198,9 +2198,9 @@
     {
       "id": "5wnz34mhfhrk",
       "name": "CDN/Cache",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-25T19:03:33.850Z",
-      "updated_at": "2023-08-11T05:43:30.563Z",
+      "updated_at": "2023-08-16T21:59:19.699Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -6098,6 +6098,58 @@
   ],
   "incidents": [
     {
+      "id": "m34xg4y64k4q",
+      "name": "Increased HTTP/3 request timeouts with Google Chrome",
+      "status": "investigating",
+      "created_at": "2023-08-16T21:59:19.666Z",
+      "updated_at": "2023-08-16T21:59:19.751Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/4yg2qtj589j8",
+      "started_at": "2023-08-16T21:59:19.658Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "p8q6hbcqymk6",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue where HTTP/3 requests may occasionally stall on Google Chrome. Customers with HTTP/3 enabled may see requests timing out under certain circumstances.",
+          "incident_id": "m34xg4y64k4q",
+          "created_at": "2023-08-16T21:59:19.749Z",
+          "updated_at": "2023-08-16T21:59:19.749Z",
+          "display_at": "2023-08-16T21:59:19.749Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5wnz34mhfhrk",
+          "name": "CDN/Cache",
+          "status": "degraded_performance",
+          "created_at": "2020-03-25T19:03:33.850Z",
+          "updated_at": "2023-08-16T21:59:19.699Z",
+          "position": 15,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "hv7zgjzcdf60",
       "name": "Network Connectivity Issues in South America region",
       "status": "investigating",
@@ -6173,65 +6225,11 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "4m3zy5553b3q",
-      "name": "JNB (Johannesburg) on 2023-08-16",
-      "status": "scheduled",
-      "created_at": "2023-08-15T16:20:54.516Z",
-      "updated_at": "2023-08-15T16:20:54.608Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/jst0j67vym2t",
-      "started_at": "2023-08-15T16:20:54.508Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "0qhmnrh37rz8",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in JNB (Johannesburg) datacenter between 2023-08-16 23:00 and 2023-08-17 07:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "4m3zy5553b3q",
-          "created_at": "2023-08-15T16:20:54.605Z",
-          "updated_at": "2023-08-15T16:20:54.605Z",
-          "display_at": "2023-08-15T16:20:54.605Z",
-          "affected_components": [
-            {
-              "code": "2661q193p08w",
-              "name": "Africa - Johannesburg, South Africa - (JNB)",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "2661q193p08w",
-          "name": "Johannesburg, South Africa - (JNB)",
-          "status": "partial_outage",
-          "created_at": "2014-12-04T20:38:08.839Z",
-          "updated_at": "2023-08-15T16:25:41.935Z",
-          "position": 13,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "00gpj4s37mz4",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-08-16T23:00:00.000Z",
-      "scheduled_until": "2023-08-17T07:00:00.000Z"
-    },
-    {
       "id": "85cgppflkb00",
       "name": "AUS (Austin) on 2023-08-16",
       "status": "scheduled",
       "created_at": "2023-08-15T15:40:46.926Z",
-      "updated_at": "2023-08-15T16:20:49.526Z",
+      "updated_at": "2023-08-16T22:00:00.600Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -6239,6 +6237,19 @@
       "started_at": "2023-08-15T15:40:46.919Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "948f7bwdml9n",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "85cgppflkb00",
+          "created_at": "2023-08-16T22:00:00.362Z",
+          "updated_at": "2023-08-16T22:00:00.362Z",
+          "display_at": "2023-08-16T22:00:00.362Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "1nz5ypkknrjn",
           "status": "scheduled",
@@ -6301,6 +6312,73 @@
       "scheduled_until": "2023-08-17T07:00:00.000Z"
     },
     {
+      "id": "4m3zy5553b3q",
+      "name": "JNB (Johannesburg) on 2023-08-16",
+      "status": "scheduled",
+      "created_at": "2023-08-15T16:20:54.516Z",
+      "updated_at": "2023-08-16T21:59:56.710Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/jst0j67vym2t",
+      "started_at": "2023-08-15T16:20:54.508Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "qy23kt96xth8",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "4m3zy5553b3q",
+          "created_at": "2023-08-16T21:59:56.524Z",
+          "updated_at": "2023-08-16T21:59:56.524Z",
+          "display_at": "2023-08-16T21:59:56.524Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "0qhmnrh37rz8",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in JNB (Johannesburg) datacenter between 2023-08-16 23:00 and 2023-08-17 07:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "4m3zy5553b3q",
+          "created_at": "2023-08-15T16:20:54.605Z",
+          "updated_at": "2023-08-15T16:20:54.605Z",
+          "display_at": "2023-08-15T16:20:54.605Z",
+          "affected_components": [
+            {
+              "code": "2661q193p08w",
+              "name": "Africa - Johannesburg, South Africa - (JNB)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2661q193p08w",
+          "name": "Johannesburg, South Africa - (JNB)",
+          "status": "partial_outage",
+          "created_at": "2014-12-04T20:38:08.839Z",
+          "updated_at": "2023-08-15T16:25:41.935Z",
+          "position": 13,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "00gpj4s37mz4",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-08-16T23:00:00.000Z",
+      "scheduled_until": "2023-08-17T07:00:00.000Z"
+    },
+    {
       "id": "dr3xwx2s6v51",
       "name": "MAN (Manchester) on 2023-08-17",
       "status": "scheduled",
@@ -6353,6 +6431,60 @@
       ],
       "scheduled_for": "2023-08-17T00:00:00.000Z",
       "scheduled_until": "2023-08-17T04:30:00.000Z"
+    },
+    {
+      "id": "l717c56z6xc1",
+      "name": "ATL (Atlanta) on 2023-08-17",
+      "status": "scheduled",
+      "created_at": "2023-08-16T22:00:50.575Z",
+      "updated_at": "2023-08-16T22:00:50.626Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/gmjrdvqfwv3t",
+      "started_at": "2023-08-16T22:00:50.569Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "7v3wd4vfxdrn",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in ATL (Atlanta) datacenter between 2023-08-17 05:00 and 2023-08-18 22:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "l717c56z6xc1",
+          "created_at": "2023-08-16T22:00:50.624Z",
+          "updated_at": "2023-08-16T22:00:50.624Z",
+          "display_at": "2023-08-16T22:00:50.624Z",
+          "affected_components": [
+            {
+              "code": "03wwgmh4vbnl",
+              "name": "North America - Atlanta, GA, United States - (ATL)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "03wwgmh4vbnl",
+          "name": "Atlanta, GA, United States - (ATL)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:33:06.198Z",
+          "updated_at": "2023-08-15T05:46:18.698Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-08-17T05:00:00.000Z",
+      "scheduled_until": "2023-08-18T22:00:00.000Z"
     },
     {
       "id": "1lpnw4xs1nqc",
