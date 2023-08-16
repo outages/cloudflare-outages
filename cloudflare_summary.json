@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-16T11:35:32.064Z"
+    "updated_at": "2023-08-16T11:50:53.373Z"
   },
   "components": [
     {
@@ -2873,9 +2873,9 @@
     {
       "id": "vl0s9mnn4gfb",
       "name": "Hanoi, Vietnam - (HAN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-12-18T06:51:18.979Z",
-      "updated_at": "2023-08-16T11:25:19.465Z",
+      "updated_at": "2023-08-16T11:50:53.371Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -4868,9 +4868,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2023-08-16T10:56:17.352Z",
+      "updated_at": "2023-08-16T11:48:30.745Z",
       "position": 48,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -6098,18 +6098,90 @@
   ],
   "incidents": [
     {
+      "id": "vwgh3bktbx50",
+      "name": "Issues with Data Migration to R2",
+      "status": "investigating",
+      "created_at": "2023-08-16T11:48:30.719Z",
+      "updated_at": "2023-08-16T11:48:30.790Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/4j9grrqmyf37",
+      "started_at": "2023-08-16T11:48:30.713Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "38jv1g57w6xv",
+          "status": "investigating",
+          "body": "Cloudflare is aware of an issue with data migrations to R2 using Super Slurper. Users accessing R2 > Data Migration section of the dashboard may experience errors. \n\nR2 product itself is not affected. We are working to analyse and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "vwgh3bktbx50",
+          "created_at": "2023-08-16T11:48:30.788Z",
+          "updated_at": "2023-08-16T11:48:30.788Z",
+          "display_at": "2023-08-16T11:48:30.788Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2023-08-16T11:48:30.745Z",
+          "position": 48,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "z5y56d1505lw",
       "name": "Page Shield customers experiencing a delay in receiving malicious alerts",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2023-08-16T10:45:36.036Z",
-      "updated_at": "2023-08-16T10:58:19.296Z",
-      "monitoring_at": null,
+      "updated_at": "2023-08-16T11:42:12.965Z",
+      "monitoring_at": "2023-08-16T11:42:12.955Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/pc9xz30qnkt6",
       "started_at": "2023-08-16T10:45:36.028Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "ktp925tkkv6j",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "z5y56d1505lw",
+          "created_at": "2023-08-16T11:42:12.955Z",
+          "updated_at": "2023-08-16T11:42:12.955Z",
+          "display_at": "2023-08-16T11:42:12.955Z",
+          "affected_components": [
+            {
+              "code": "hk5dqm69klkp",
+              "name": "Cloudflare Sites and Services - Page Shield",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "r5mg8x5bq432",
           "status": "identified",
