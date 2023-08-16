@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-16T17:18:06.366Z"
+    "updated_at": "2023-08-16T18:33:23.495Z"
   },
   "components": [
     {
@@ -6096,8 +6096,115 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "0srxgmtk8cyf",
+      "name": "Increased false positives for API Shield Schema Validation",
+      "status": "investigating",
+      "created_at": "2023-08-16T18:33:23.410Z",
+      "updated_at": "2023-08-16T18:33:23.487Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/d01wqh987m90",
+      "started_at": "2023-08-16T18:33:23.402Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "1x7g1065yvkl",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue with API Shield. Customers using Schema Validation may in some cases see unintentionally blocked requests.",
+          "incident_id": "0srxgmtk8cyf",
+          "created_at": "2023-08-16T18:33:23.472Z",
+          "updated_at": "2023-08-16T18:33:23.472Z",
+          "display_at": "2023-08-16T18:33:23.472Z",
+          "affected_components": [
+            {
+              "code": "g9yx473yjk9t",
+              "name": "Cloudflare Sites and Services - API Shield",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g9yx473yjk9t",
+          "name": "API Shield",
+          "status": "degraded_performance",
+          "created_at": "2023-06-15T12:32:28.663Z",
+          "updated_at": "2023-08-16T10:45:36.072Z",
+          "position": 5,
+          "description": "A range of products to help identify and address API vulnerabilities.",
+          "showcase": false,
+          "start_date": "2023-06-15",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
+    {
+      "id": "v8m3f6g47ftr",
+      "name": "MAA (Chennai) on 2023-08-16",
+      "status": "scheduled",
+      "created_at": "2023-08-16T18:20:46.536Z",
+      "updated_at": "2023-08-16T18:20:46.605Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/lmlr1kkn0y5c",
+      "started_at": "2023-08-16T18:20:46.526Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "v3dxcyr3dcn3",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MAA (Chennai) datacenter between 2023-08-16 19:00 and 2023-08-17 01:30 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "v8m3f6g47ftr",
+          "created_at": "2023-08-16T18:20:46.602Z",
+          "updated_at": "2023-08-16T18:20:46.602Z",
+          "display_at": "2023-08-16T18:20:46.602Z",
+          "affected_components": [
+            {
+              "code": "d9znrq17k6ny",
+              "name": "Asia - Chennai, India - (MAA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d9znrq17k6ny",
+          "name": "Chennai, India - (MAA)",
+          "status": "operational",
+          "created_at": "2015-11-12T05:20:52.737Z",
+          "updated_at": "2023-08-10T11:02:58.289Z",
+          "position": 12,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-08-16T19:00:00.000Z",
+      "scheduled_until": "2023-08-17T01:30:00.000Z"
+    },
     {
       "id": "4m3zy5553b3q",
       "name": "JNB (Johannesburg) on 2023-08-16",
