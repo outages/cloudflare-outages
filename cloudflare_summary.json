@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-16T16:47:25.071Z"
+    "updated_at": "2023-08-16T17:07:53.053Z"
   },
   "components": [
     {
@@ -2123,9 +2123,9 @@
     {
       "id": "p6skg25yj69j",
       "name": "Colombo, Sri Lanka - (CMB)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2017-05-02T05:52:26.698Z",
-      "updated_at": "2023-08-15T16:05:17.480Z",
+      "updated_at": "2023-08-16T16:57:37.291Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -3593,9 +3593,9 @@
     {
       "id": "7k05x28lndzb",
       "name": "Porto Alegre, Brazil - (POA)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-04-01T16:32:01.138Z",
-      "updated_at": "2023-08-16T16:47:25.068Z",
+      "updated_at": "2023-08-16T17:07:53.051Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -5828,9 +5828,9 @@
     {
       "id": "276xk3r83js7",
       "name": "Zero Trust Dashboard",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2020-03-19T18:51:08.811Z",
-      "updated_at": "2023-08-16T15:46:13.614Z",
+      "updated_at": "2023-08-16T16:53:19.786Z",
       "position": 70,
       "description": "Cloudflare Zero Trust Dashboard where customers can view and make changes to their Cloudflare Gateway configurations at https://dash.teams.cloudflare.com",
       "showcase": false,
@@ -6096,120 +6096,7 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [
-    {
-      "id": "c26w5tx0jhqk",
-      "name": "Unable to update Cloudflare Access Policies in the Dashboard",
-      "status": "monitoring",
-      "created_at": "2023-08-16T15:46:13.000Z",
-      "updated_at": "2023-08-16T16:46:35.645Z",
-      "monitoring_at": "2023-08-16T16:46:35.630Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/dxd6l7bqnwgf",
-      "started_at": "2023-08-16T15:46:13.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "5r1cqpnkq9bs",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "c26w5tx0jhqk",
-          "created_at": "2023-08-16T16:46:35.630Z",
-          "updated_at": "2023-08-16T16:46:35.630Z",
-          "display_at": "2023-08-16T16:46:35.630Z",
-          "affected_components": [
-            {
-              "code": "276xk3r83js7",
-              "name": "Cloudflare Sites and Services - Zero Trust Dashboard",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "knxbb31k71vz",
-          "status": "identified",
-          "body": "We have determined that this specifically affects updating policies with a rule action of Service Auth and Bypass. This impact is observed across the dashboard, API and Terraform.",
-          "incident_id": "c26w5tx0jhqk",
-          "created_at": "2023-08-16T16:06:58.629Z",
-          "updated_at": "2023-08-16T16:06:58.629Z",
-          "display_at": "2023-08-16T16:06:58.629Z",
-          "affected_components": [
-            {
-              "code": "276xk3r83js7",
-              "name": "Cloudflare Sites and Services - Zero Trust Dashboard",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "ktv6qqsbdv7c",
-          "status": "investigating",
-          "body": "Cloudflare is still investigating issues with Cloudflare Access. User might observe error when updating a policy. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
-          "incident_id": "c26w5tx0jhqk",
-          "created_at": "2023-08-16T15:48:02.484Z",
-          "updated_at": "2023-08-16T16:03:30.535Z",
-          "display_at": "2023-08-16T15:48:02.000Z",
-          "affected_components": [
-            {
-              "code": "276xk3r83js7",
-              "name": "Cloudflare Sites and Services - Zero Trust Dashboard",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "43t20r5y6hyb",
-          "status": "investigating",
-          "body": "Cloudflare is investigating an issue preventing users from saving valid Access Policies in the Zero Trust Dashboard. Updating Access Policies via the API and Terraform are not affected at this time. User authentication and policy enforcement are also not affected.",
-          "incident_id": "c26w5tx0jhqk",
-          "created_at": "2023-08-16T15:46:13.667Z",
-          "updated_at": "2023-08-16T16:03:07.098Z",
-          "display_at": "2023-08-16T15:46:13.000Z",
-          "affected_components": [
-            {
-              "code": "276xk3r83js7",
-              "name": "Cloudflare Sites and Services - Zero Trust Dashboard",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "276xk3r83js7",
-          "name": "Zero Trust Dashboard",
-          "status": "degraded_performance",
-          "created_at": "2020-03-19T18:51:08.811Z",
-          "updated_at": "2023-08-16T15:46:13.614Z",
-          "position": 70,
-          "description": "Cloudflare Zero Trust Dashboard where customers can view and make changes to their Cloudflare Gateway configurations at https://dash.teams.cloudflare.com",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "4m3zy5553b3q",
