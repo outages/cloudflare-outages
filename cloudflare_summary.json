@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-17T13:23:14.870Z"
+    "updated_at": "2023-08-17T13:32:48.119Z"
   },
   "components": [
     {
@@ -112,9 +112,9 @@
     {
       "id": "w4k8yvhfb3vp",
       "name": "Access",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2018-02-09T21:46:39.049Z",
-      "updated_at": "2023-06-15T06:45:06.504Z",
+      "updated_at": "2023-08-17T13:32:48.063Z",
       "position": 1,
       "description": "Cloudflare's cloud identity & access management service",
       "showcase": false,
@@ -6096,7 +6096,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "lb7jzy0q12gz",
+      "name": "Cloudflare Zero Trust: Access Applications",
+      "status": "investigating",
+      "created_at": "2023-08-17T13:32:48.026Z",
+      "updated_at": "2023-08-17T13:32:48.116Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/r5jx954bxjgb",
+      "started_at": "2023-08-17T13:32:48.018Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "j7nhf59mng81",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue preventing users from creating new Access applications in the Zero Trust Dashboard. Application authentication to existing applications is not impacted at this time.\n\nWe are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "lb7jzy0q12gz",
+          "created_at": "2023-08-17T13:32:48.113Z",
+          "updated_at": "2023-08-17T13:32:48.113Z",
+          "display_at": "2023-08-17T13:32:48.113Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "w4k8yvhfb3vp",
+          "name": "Access",
+          "status": "degraded_performance",
+          "created_at": "2018-02-09T21:46:39.049Z",
+          "updated_at": "2023-08-17T13:32:48.063Z",
+          "position": 1,
+          "description": "Cloudflare's cloud identity & access management service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "kf0ktv29xrfy",
+          "name": "Zero Trust",
+          "status": "operational",
+          "created_at": "2021-04-08T15:53:09.058Z",
+          "updated_at": "2023-08-16T10:56:17.484Z",
+          "position": 69,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "zln7mvrpjrgb",
