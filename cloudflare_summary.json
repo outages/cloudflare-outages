@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-24T11:55:42.573Z"
+    "updated_at": "2023-08-24T12:20:48.176Z"
   },
   "components": [
     {
@@ -439,9 +439,9 @@
     {
       "id": "qppslrvlmbvt",
       "name": "Asunción, Paraguay - (ASU)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-06-05T14:07:10.591Z",
-      "updated_at": "2023-08-24T08:14:08.366Z",
+      "updated_at": "2023-08-24T11:58:51.864Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1029,7 +1029,7 @@
       "name": "Hagatna, Guam - (GUM)",
       "status": "partial_outage",
       "created_at": "2022-05-05T08:28:03.157Z",
-      "updated_at": "2023-08-24T11:07:45.584Z",
+      "updated_at": "2023-08-24T12:19:17.747Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -5441,9 +5441,9 @@
     {
       "id": "cghykwlwsmn5",
       "name": "SSL Certificate Provisioning",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2016-03-17T15:27:39.778Z",
-      "updated_at": "2023-08-16T10:56:17.409Z",
+      "updated_at": "2023-08-24T12:07:10.652Z",
       "position": 57,
       "description": "Cloudflare's SSL certificate provisioning service (Universal and Dedicated SSL)",
       "showcase": false,
@@ -5501,9 +5501,9 @@
     {
       "id": "9p2qlpt19nqb",
       "name": "SSL for SaaS Provisioning",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:56:30.714Z",
-      "updated_at": "2023-08-16T10:56:17.415Z",
+      "updated_at": "2023-08-24T12:07:10.674Z",
       "position": 58,
       "description": "Cloudflare's SSL for SaaS certificate provisioning service (custom hostnames)",
       "showcase": false,
@@ -6150,7 +6150,7 @@
       "name": "Cloudflare Dashboard Issues - 500 Errors on the SSL Certificate Page",
       "status": "investigating",
       "created_at": "2023-08-24T11:22:05.709Z",
-      "updated_at": "2023-08-24T11:55:42.566Z",
+      "updated_at": "2023-08-24T12:07:10.742Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -6158,6 +6158,38 @@
       "started_at": "2023-08-24T11:22:05.700Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "h6y5bsd9z8h9",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "qqgmk21tdb2z",
+          "created_at": "2023-08-24T12:07:10.739Z",
+          "updated_at": "2023-08-24T12:07:10.739Z",
+          "display_at": "2023-08-24T12:07:10.739Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "cghykwlwsmn5",
+              "name": "Cloudflare Sites and Services - SSL Certificate Provisioning",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "9p2qlpt19nqb",
+              "name": "Cloudflare Sites and Services - SSL for SaaS Provisioning",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "4g2f9tjssv97",
           "status": "investigating",
@@ -6208,6 +6240,36 @@
           "updated_at": "2023-08-24T11:22:05.751Z",
           "position": 21,
           "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "cghykwlwsmn5",
+          "name": "SSL Certificate Provisioning",
+          "status": "degraded_performance",
+          "created_at": "2016-03-17T15:27:39.778Z",
+          "updated_at": "2023-08-24T12:07:10.652Z",
+          "position": 57,
+          "description": "Cloudflare's SSL certificate provisioning service (Universal and Dedicated SSL)",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "9p2qlpt19nqb",
+          "name": "SSL for SaaS Provisioning",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:56:30.714Z",
+          "updated_at": "2023-08-24T12:07:10.674Z",
+          "position": 58,
+          "description": "Cloudflare's SSL for SaaS certificate provisioning service (custom hostnames)",
           "showcase": false,
           "start_date": null,
           "group_id": "1km35smx8p41",
@@ -6272,6 +6334,60 @@
       ],
       "scheduled_for": "2023-08-24T16:00:00.000Z",
       "scheduled_until": "2023-08-25T22:00:00.000Z"
+    },
+    {
+      "id": "ll26xdx0y0v8",
+      "name": "LHR (London) on 2023-08-25",
+      "status": "scheduled",
+      "created_at": "2023-08-24T12:20:48.099Z",
+      "updated_at": "2023-08-24T12:20:48.172Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/6n3smctxjnzt",
+      "started_at": "2023-08-24T12:20:48.090Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "7txcy4xjb9pv",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LHR (London) datacenter on 2023-08-25 between 01:00 and 05:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "ll26xdx0y0v8",
+          "created_at": "2023-08-24T12:20:48.168Z",
+          "updated_at": "2023-08-24T12:20:48.168Z",
+          "display_at": "2023-08-24T12:20:48.168Z",
+          "affected_components": [
+            {
+              "code": "shcqh0p22750",
+              "name": "Europe - London, United Kingdom - (LHR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "shcqh0p22750",
+          "name": "London, United Kingdom - (LHR)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:36:04.069Z",
+          "updated_at": "2023-08-10T04:47:43.507Z",
+          "position": 25,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-08-25T01:00:00.000Z",
+      "scheduled_until": "2023-08-25T05:00:00.000Z"
     },
     {
       "id": "2kbfr2c0zk9c",
