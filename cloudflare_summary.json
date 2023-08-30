@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-30T10:39:40.034Z"
+    "updated_at": "2023-08-30T11:01:03.703Z"
   },
   "components": [
     {
@@ -1980,9 +1980,9 @@
     {
       "id": "1xnjfx08wn5v",
       "name": "Córdoba, Argentina - (COR)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-05-31T15:34:24.032Z",
-      "updated_at": "2023-08-30T10:39:40.032Z",
+      "updated_at": "2023-08-30T11:00:07.820Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -6210,6 +6210,105 @@
   ],
   "incidents": [
     {
+      "id": "qrmwjz62slyf",
+      "name": "Cloudflare Dashboard and Cloudflare API service issues",
+      "status": "identified",
+      "created_at": "2023-08-30T09:19:01.146Z",
+      "updated_at": "2023-08-30T10:52:58.412Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/vjkmfjdfpzxd",
+      "started_at": "2023-08-30T09:19:01.139Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "rq3q01txv7vk",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "qrmwjz62slyf",
+          "created_at": "2023-08-30T10:52:58.410Z",
+          "updated_at": "2023-08-30T10:52:58.410Z",
+          "display_at": "2023-08-30T10:52:58.410Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "lrkrjgqnq6c3",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare Dashboard and related APIs.\nThese issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge.\nCustomers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
+          "incident_id": "qrmwjz62slyf",
+          "created_at": "2023-08-30T09:19:01.218Z",
+          "updated_at": "2023-08-30T09:19:01.218Z",
+          "display_at": "2023-08-30T09:19:01.218Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2023-08-30T09:19:01.169Z",
+          "position": 4,
+          "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2023-08-30T09:19:01.181Z",
+          "position": 21,
+          "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "2mkwcmdgmj8h",
       "name": "Elevated 5xx/499s errors",
       "status": "monitoring",
@@ -6534,79 +6633,6 @@
           "description": null,
           "showcase": false,
           "start_date": "2023-01-13",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
-    {
-      "id": "qrmwjz62slyf",
-      "name": "Cloudflare Dashboard and Cloudflare API service issues",
-      "status": "investigating",
-      "created_at": "2023-08-30T09:19:01.146Z",
-      "updated_at": "2023-08-30T09:19:01.220Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/vjkmfjdfpzxd",
-      "started_at": "2023-08-30T09:19:01.139Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "lrkrjgqnq6c3",
-          "status": "investigating",
-          "body": "Cloudflare is investigating issues with Cloudflare Dashboard and related APIs.\nThese issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge.\nCustomers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
-          "incident_id": "qrmwjz62slyf",
-          "created_at": "2023-08-30T09:19:01.218Z",
-          "updated_at": "2023-08-30T09:19:01.218Z",
-          "display_at": "2023-08-30T09:19:01.218Z",
-          "affected_components": [
-            {
-              "code": "g4tb35rs9yw7",
-              "name": "Cloudflare Sites and Services - API",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "3sq3s4d20ywk",
-              "name": "Cloudflare Sites and Services - Dashboard",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "g4tb35rs9yw7",
-          "name": "API",
-          "status": "degraded_performance",
-          "created_at": "2014-10-09T03:32:07.158Z",
-          "updated_at": "2023-08-30T09:19:01.169Z",
-          "position": 4,
-          "description": "Cloudflare's API where customers can read from and write to their configurations at https://api.cloudflare.com",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "3sq3s4d20ywk",
-          "name": "Dashboard",
-          "status": "degraded_performance",
-          "created_at": "2014-10-09T03:32:07.173Z",
-          "updated_at": "2023-08-30T09:19:01.181Z",
-          "position": 21,
-          "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
-          "showcase": false,
-          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -7045,86 +7071,6 @@
       ],
       "scheduled_for": "2023-08-30T07:00:00.000Z",
       "scheduled_until": "2023-08-30T14:00:00.000Z"
-    },
-    {
-      "id": "xnfbhf4zzbrr",
-      "name": "IAD (Ashburn) on 2023-08-30",
-      "status": "in_progress",
-      "created_at": "2023-08-30T04:40:33.025Z",
-      "updated_at": "2023-08-30T06:00:23.014Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/97fq1d2fqq61",
-      "started_at": "2023-08-30T04:40:33.018Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "jyymj6tsz8d0",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "xnfbhf4zzbrr",
-          "created_at": "2023-08-30T06:00:23.006Z",
-          "updated_at": "2023-08-30T06:00:23.006Z",
-          "display_at": "2023-08-30T06:00:23.006Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "36xpsgd6m395",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "xnfbhf4zzbrr",
-          "created_at": "2023-08-30T04:59:56.878Z",
-          "updated_at": "2023-08-30T04:59:56.878Z",
-          "display_at": "2023-08-30T04:59:56.878Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "gztjkf40p6rm",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in IAD (Ashburn) datacenter on 2023-08-30 between 06:00 and 11:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "xnfbhf4zzbrr",
-          "created_at": "2023-08-30T04:40:33.098Z",
-          "updated_at": "2023-08-30T04:40:33.098Z",
-          "display_at": "2023-08-30T04:40:33.098Z",
-          "affected_components": [
-            {
-              "code": "3t0npclljyyg",
-              "name": "North America - Ashburn, VA, United States - (IAD)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "3t0npclljyyg",
-          "name": "Ashburn, VA, United States - (IAD)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:30:01.380Z",
-          "updated_at": "2023-08-23T18:56:48.109Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-08-30T06:00:00.000Z",
-      "scheduled_until": "2023-08-30T11:00:00.000Z"
     }
   ],
   "status": {
