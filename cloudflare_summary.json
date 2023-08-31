@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-31T11:42:58.189Z"
+    "updated_at": "2023-08-31T12:23:02.233Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2055,9 +2055,9 @@
     {
       "id": "3796s01hm2hj",
       "name": "Chittagong, Bangladesh - (CGP)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-10-29T19:05:17.659Z",
-      "updated_at": "2023-08-22T00:58:01.547Z",
+      "updated_at": "2023-08-31T12:19:44.555Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -2415,9 +2415,9 @@
     {
       "id": "x0tkn0hzrtw7",
       "name": "Challenge Platform",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2023-07-14T08:21:02.759Z",
-      "updated_at": "2023-08-31T11:01:57.026Z",
+      "updated_at": "2023-08-31T12:21:30.732Z",
       "position": 17,
       "description": "When a website is protected by Cloudflare, there are several occasions when it will challenge visitor traffic. If the visitor passes the challenge, their request is allowed. If they fail, the request will be blocked.",
       "showcase": false,
@@ -2805,9 +2805,9 @@
     {
       "id": "55x4rmjlwfq8",
       "name": "Guayaquil, Ecuador - (GYE)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-05T16:18:47.146Z",
-      "updated_at": "2023-08-31T11:18:26.981Z",
+      "updated_at": "2023-08-31T12:04:25.619Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -6212,16 +6212,36 @@
     {
       "id": "4c9w04j0qznr",
       "name": "Issues passing Challenge Pages",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2023-08-31T11:01:56.988Z",
-      "updated_at": "2023-08-31T11:01:57.087Z",
-      "monitoring_at": null,
+      "updated_at": "2023-08-31T12:23:02.230Z",
+      "monitoring_at": "2023-08-31T12:21:30.000Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/bvrq2349wsdj",
       "started_at": "2023-08-31T11:01:56.980Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "91prbm8w7wqf",
+          "status": "monitoring",
+          "body": "This issue only affected a small subset of visitors that landed on Custom Error Pages created by Cloudflare customers that contained additional meta tag with name=\"referrer\" and content=\"never\" attributes. Removing this meta tag from your Custom Error Pages solves this problem.",
+          "incident_id": "4c9w04j0qznr",
+          "created_at": "2023-08-31T12:21:30.766Z",
+          "updated_at": "2023-08-31T12:23:02.211Z",
+          "display_at": "2023-08-31T12:21:30.000Z",
+          "affected_components": [
+            {
+              "code": "x0tkn0hzrtw7",
+              "name": "Cloudflare Sites and Services - Challenge Platform",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "zy85j935ny1y",
           "status": "investigating",
@@ -6247,9 +6267,9 @@
         {
           "id": "x0tkn0hzrtw7",
           "name": "Challenge Platform",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2023-07-14T08:21:02.759Z",
-          "updated_at": "2023-08-31T11:01:57.026Z",
+          "updated_at": "2023-08-31T12:21:30.732Z",
           "position": 17,
           "description": "When a website is protected by Cloudflare, there are several occasions when it will challenge visitor traffic. If the visitor passes the challenge, their request is allowed. If they fail, the request will be blocked.",
           "showcase": false,
