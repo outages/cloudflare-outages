@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-05T16:32:19.779Z"
+    "updated_at": "2023-09-05T17:07:54.300Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1635,9 +1635,9 @@
     {
       "id": "ry378yzsq7kp",
       "name": "Caçador, Brazil - (CFC)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-08T07:57:05.268Z",
-      "updated_at": "2023-09-05T16:32:19.324Z",
+      "updated_at": "2023-09-05T17:02:57.220Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -4110,9 +4110,9 @@
     {
       "id": "cgpftq0mp2h5",
       "name": "Richmond, VA, United States - (RIC)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-06-28T11:32:08.646Z",
-      "updated_at": "2023-09-05T15:36:11.362Z",
+      "updated_at": "2023-09-05T16:52:44.318Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -4800,9 +4800,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2023-09-05T16:06:21.797Z",
+      "updated_at": "2023-09-05T17:07:54.243Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -5820,9 +5820,9 @@
     {
       "id": "tmh50tx2nprs",
       "name": "Workers KV",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:32.394Z",
-      "updated_at": "2023-08-16T10:56:17.471Z",
+      "updated_at": "2023-09-05T17:07:54.256Z",
       "position": 67,
       "description": "Cloudflare's KV data store",
       "showcase": false,
@@ -6208,48 +6208,40 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "ldlvmyck5f8j",
-      "name": "SIN (Singapore) on 2023-09-05",
-      "status": "scheduled",
-      "created_at": "2023-09-04T04:20:20.691Z",
-      "updated_at": "2023-09-05T16:00:14.225Z",
+      "id": "cqc1wqf3qkw8",
+      "name": "Cloudflare Pages deployment failures and elevated KV errors",
+      "status": "investigating",
+      "created_at": "2023-09-05T17:07:54.214Z",
+      "updated_at": "2023-09-05T17:07:54.298Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/wd907jf15qy4",
-      "started_at": "2023-09-04T04:20:20.687Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/brg84p94c2lj",
+      "started_at": "2023-09-05T17:07:54.206Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "x5q8yzsmp9s8",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "ldlvmyck5f8j",
-          "created_at": "2023-09-05T16:00:13.468Z",
-          "updated_at": "2023-09-05T16:00:13.468Z",
-          "display_at": "2023-09-05T16:00:13.468Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "tg2dvvhklj8k",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SIN (Singapore) datacenter on 2023-09-05 between 17:00 and 22:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "ldlvmyck5f8j",
-          "created_at": "2023-09-04T04:20:20.732Z",
-          "updated_at": "2023-09-04T04:20:20.732Z",
-          "display_at": "2023-09-04T04:20:20.732Z",
+          "id": "q070b2m5tsg4",
+          "status": "investigating",
+          "body": "Workers KV users may experience increased latency and error rates when writing or reading through the Cloudflare API.  We are currently investigating the issue. Cloudflare services impacted include Cloudflare Pages deployments.",
+          "incident_id": "cqc1wqf3qkw8",
+          "created_at": "2023-09-05T17:07:54.296Z",
+          "updated_at": "2023-09-05T17:07:54.296Z",
+          "display_at": "2023-09-05T17:07:54.296Z",
           "affected_components": [
             {
-              "code": "18p6r93swmbl",
-              "name": "Asia - Singapore, Singapore - (SIN)",
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "tmh50tx2nprs",
+              "name": "Cloudflare Sites and Services - Workers KV",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -6259,24 +6251,39 @@
       ],
       "components": [
         {
-          "id": "18p6r93swmbl",
-          "name": "Singapore, Singapore - (SIN)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:44:15.897Z",
-          "updated_at": "2023-08-04T18:29:39.070Z",
-          "position": 59,
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2023-09-05T17:07:54.243Z",
+          "position": 47,
           "description": null,
           "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "tmh50tx2nprs",
+          "name": "Workers KV",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:32.394Z",
+          "updated_at": "2023-09-05T17:07:54.256Z",
+          "position": 67,
+          "description": "Cloudflare's KV data store",
+          "showcase": false,
           "start_date": null,
-          "group_id": "77867vxkttgw",
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
-      ],
-      "scheduled_for": "2023-09-05T17:00:00.000Z",
-      "scheduled_until": "2023-09-05T22:00:00.000Z"
-    },
+      ]
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "pfmvgtnrlwyh",
       "name": "DEN (Denver) on 2023-09-06",
@@ -6710,57 +6717,57 @@
       "scheduled_until": "2023-09-13T12:00:00.000Z"
     },
     {
-      "id": "xzdv0k1dgx6p",
-      "name": "TLL (Tallinn) on 2023-09-04",
+      "id": "ldlvmyck5f8j",
+      "name": "SIN (Singapore) on 2023-09-05",
       "status": "in_progress",
-      "created_at": "2023-09-01T08:20:14.142Z",
-      "updated_at": "2023-09-04T08:00:21.986Z",
+      "created_at": "2023-09-04T04:20:20.691Z",
+      "updated_at": "2023-09-05T17:01:09.922Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/669mhp7t76yn",
-      "started_at": "2023-09-01T08:20:14.136Z",
+      "shortlink": "https://stspg.io/wd907jf15qy4",
+      "started_at": "2023-09-04T04:20:20.687Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "zrr1q0551ybg",
+          "id": "mx3bymy4yy2t",
           "status": "in_progress",
           "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "xzdv0k1dgx6p",
-          "created_at": "2023-09-04T08:00:21.980Z",
-          "updated_at": "2023-09-04T08:00:21.980Z",
-          "display_at": "2023-09-04T08:00:21.980Z",
+          "incident_id": "ldlvmyck5f8j",
+          "created_at": "2023-09-05T17:01:09.916Z",
+          "updated_at": "2023-09-05T17:01:09.916Z",
+          "display_at": "2023-09-05T17:01:09.916Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "8q53bx8j77n8",
+          "id": "x5q8yzsmp9s8",
           "status": "scheduled",
           "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "xzdv0k1dgx6p",
-          "created_at": "2023-09-04T07:00:57.059Z",
-          "updated_at": "2023-09-04T07:00:57.059Z",
-          "display_at": "2023-09-04T07:00:57.059Z",
+          "incident_id": "ldlvmyck5f8j",
+          "created_at": "2023-09-05T16:00:13.468Z",
+          "updated_at": "2023-09-05T16:00:13.468Z",
+          "display_at": "2023-09-05T16:00:13.468Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "ljvdmgxvzlfc",
+          "id": "tg2dvvhklj8k",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in TLL (Tallinn) datacenter between 2023-09-04 08:00 and 2023-09-05 17:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "xzdv0k1dgx6p",
-          "created_at": "2023-09-01T08:20:14.212Z",
-          "updated_at": "2023-09-01T08:20:14.212Z",
-          "display_at": "2023-09-01T08:20:14.212Z",
+          "body": "We will be performing scheduled maintenance in SIN (Singapore) datacenter on 2023-09-05 between 17:00 and 22:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "ldlvmyck5f8j",
+          "created_at": "2023-09-04T04:20:20.732Z",
+          "updated_at": "2023-09-04T04:20:20.732Z",
+          "display_at": "2023-09-04T04:20:20.732Z",
           "affected_components": [
             {
-              "code": "fymk47068y1s",
-              "name": "Europe - Tallinn, Estonia - (TLL)",
-              "old_status": "partial_outage",
+              "code": "18p6r93swmbl",
+              "name": "Asia - Singapore, Singapore - (SIN)",
+              "old_status": "operational",
               "new_status": "operational"
             }
           ],
@@ -6771,23 +6778,23 @@
       ],
       "components": [
         {
-          "id": "fymk47068y1s",
-          "name": "Tallinn, Estonia - (TLL)",
+          "id": "18p6r93swmbl",
+          "name": "Singapore, Singapore - (SIN)",
           "status": "operational",
-          "created_at": "2018-03-30T17:48:33.402Z",
-          "updated_at": "2023-09-05T12:42:25.788Z",
-          "position": 46,
+          "created_at": "2014-10-27T21:44:15.897Z",
+          "updated_at": "2023-08-04T18:29:39.070Z",
+          "position": 59,
           "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "zqxhg7y54vy8",
+          "group_id": "77867vxkttgw",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-09-04T08:00:00.000Z",
-      "scheduled_until": "2023-09-05T17:00:00.000Z"
+      "scheduled_for": "2023-09-05T17:00:00.000Z",
+      "scheduled_until": "2023-09-05T22:00:00.000Z"
     }
   ],
   "status": {
