@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-05T17:21:49.674Z"
+    "updated_at": "2023-09-05T17:34:04.422Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1635,9 +1635,9 @@
     {
       "id": "ry378yzsq7kp",
       "name": "Caçador, Brazil - (CFC)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-08T07:57:05.268Z",
-      "updated_at": "2023-09-05T17:02:57.220Z",
+      "updated_at": "2023-09-05T17:33:34.344Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -4800,9 +4800,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2023-09-05T17:07:54.243Z",
+      "updated_at": "2023-09-05T17:34:04.359Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -5820,9 +5820,9 @@
     {
       "id": "tmh50tx2nprs",
       "name": "Workers KV",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:49:32.394Z",
-      "updated_at": "2023-09-05T17:07:54.256Z",
+      "updated_at": "2023-09-05T17:34:04.374Z",
       "position": 67,
       "description": "Cloudflare's KV data store",
       "showcase": false,
@@ -6208,107 +6208,7 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [
-    {
-      "id": "cqc1wqf3qkw8",
-      "name": "Workers KV Increased Errors and Latency Through Cloudflare API",
-      "status": "monitoring",
-      "created_at": "2023-09-05T17:07:54.214Z",
-      "updated_at": "2023-09-05T17:21:49.672Z",
-      "monitoring_at": "2023-09-05T17:21:49.656Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/brg84p94c2lj",
-      "started_at": "2023-09-05T17:07:54.206Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "08yx51qg813f",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "cqc1wqf3qkw8",
-          "created_at": "2023-09-05T17:21:49.656Z",
-          "updated_at": "2023-09-05T17:21:49.656Z",
-          "display_at": "2023-09-05T17:21:49.656Z",
-          "affected_components": [
-            {
-              "code": "vgxj684rcw7t",
-              "name": "Cloudflare Sites and Services - Pages",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "tmh50tx2nprs",
-              "name": "Cloudflare Sites and Services - Workers KV",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "q070b2m5tsg4",
-          "status": "investigating",
-          "body": "Workers KV users may experience increased latency and error rates when writing or reading through the Cloudflare API.  We are currently investigating the issue. Cloudflare services impacted include Cloudflare Pages deployments.",
-          "incident_id": "cqc1wqf3qkw8",
-          "created_at": "2023-09-05T17:07:54.296Z",
-          "updated_at": "2023-09-05T17:07:54.296Z",
-          "display_at": "2023-09-05T17:07:54.296Z",
-          "affected_components": [
-            {
-              "code": "vgxj684rcw7t",
-              "name": "Cloudflare Sites and Services - Pages",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "tmh50tx2nprs",
-              "name": "Cloudflare Sites and Services - Workers KV",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "vgxj684rcw7t",
-          "name": "Pages",
-          "status": "degraded_performance",
-          "created_at": "2021-04-16T21:04:08.018Z",
-          "updated_at": "2023-09-05T17:07:54.243Z",
-          "position": 47,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-04-16",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "tmh50tx2nprs",
-          "name": "Workers KV",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:49:32.394Z",
-          "updated_at": "2023-09-05T17:07:54.256Z",
-          "position": 67,
-          "description": "Cloudflare's KV data store",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "pfmvgtnrlwyh",
