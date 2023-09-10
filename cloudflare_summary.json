@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-10T16:07:10.675Z"
+    "updated_at": "2023-09-10T16:35:39.119Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -4890,9 +4890,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2023-08-16T12:55:40.772Z",
+      "updated_at": "2023-09-10T16:35:39.077Z",
       "position": 48,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -6208,7 +6208,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "2nw53fbvz2zt",
+      "name": "Decreased R2 availability in the Asia Pacific region.",
+      "status": "investigating",
+      "created_at": "2023-09-10T16:35:39.055Z",
+      "updated_at": "2023-09-10T16:35:39.117Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/ch4wynz20ntq",
+      "started_at": "2023-09-10T16:35:39.050Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "pd8wfkwz3gyl",
+          "status": "investigating",
+          "body": "Customers making requests to R2 buckets in our APAC region will observe elevated error rates. We are currently working to resolve these issues.",
+          "incident_id": "2nw53fbvz2zt",
+          "created_at": "2023-09-10T16:35:39.115Z",
+          "updated_at": "2023-09-10T16:35:39.115Z",
+          "display_at": "2023-09-10T16:35:39.115Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2023-09-10T16:35:39.077Z",
+          "position": 48,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "rml5y485418j",
