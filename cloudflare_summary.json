@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-12T08:17:16.678Z"
+    "updated_at": "2023-09-12T08:22:25.118Z"
   },
   "components": [
     {
@@ -1937,7 +1937,7 @@
       "name": "Dublin, Ireland - (DUB)",
       "status": "partial_outage",
       "created_at": "2015-07-29T22:47:54.870Z",
-      "updated_at": "2023-09-12T08:17:16.675Z",
+      "updated_at": "2023-09-12T08:22:24.116Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -4245,9 +4245,9 @@
     {
       "id": "hr78s04g1r5b",
       "name": "Kuala Lumpur, Malaysia - (KUL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2015-08-31T01:11:27.364Z",
-      "updated_at": "2023-09-11T23:55:49.420Z",
+      "updated_at": "2023-09-12T08:22:25.115Z",
       "position": 40,
       "description": null,
       "showcase": false,
@@ -6212,16 +6212,42 @@
     {
       "id": "rzl6x2chrnz4",
       "name": "Magic Transit Degraded Performance in Dublin",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2023-09-12T08:12:10.327Z",
-      "updated_at": "2023-09-12T08:13:32.966Z",
-      "monitoring_at": null,
+      "updated_at": "2023-09-12T08:19:04.574Z",
+      "monitoring_at": "2023-09-12T08:19:04.557Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/39v07m8jjlx8",
       "started_at": "2023-09-12T08:12:10.318Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "vn3jl0y8rddn",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "rzl6x2chrnz4",
+          "created_at": "2023-09-12T08:19:04.557Z",
+          "updated_at": "2023-09-12T08:19:04.557Z",
+          "display_at": "2023-09-12T08:19:04.557Z",
+          "affected_components": [
+            {
+              "code": "bjlxcss20fsl",
+              "name": "Cloudflare Sites and Services - Magic Transit",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "wc7ysl06xslc",
+              "name": "Europe - Dublin, Ireland - (DUB)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "b90xd60w8kbx",
           "status": "investigating",
@@ -6281,7 +6307,7 @@
           "name": "Dublin, Ireland - (DUB)",
           "status": "partial_outage",
           "created_at": "2015-07-29T22:47:54.870Z",
-          "updated_at": "2023-09-12T08:17:16.675Z",
+          "updated_at": "2023-09-12T08:22:24.116Z",
           "position": 13,
           "description": null,
           "showcase": false,
@@ -6538,60 +6564,6 @@
       ],
       "scheduled_for": "2023-09-13T04:00:00.000Z",
       "scheduled_until": "2023-09-13T10:00:00.000Z"
-    },
-    {
-      "id": "mrqmnx4nwqhd",
-      "name": "ORD (Chicago) on 2023-09-13",
-      "status": "scheduled",
-      "created_at": "2023-09-05T15:21:01.607Z",
-      "updated_at": "2023-09-05T15:21:01.683Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/gpp76t4p2792",
-      "started_at": "2023-09-05T15:21:01.599Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "5xw3ndks3nhq",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ORD (Chicago) datacenter on 2023-09-13 between 08:00 and 12:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "mrqmnx4nwqhd",
-          "created_at": "2023-09-05T15:21:01.680Z",
-          "updated_at": "2023-09-05T15:21:01.680Z",
-          "display_at": "2023-09-05T15:21:01.680Z",
-          "affected_components": [
-            {
-              "code": "z9v8znl25w0f",
-              "name": "North America - Chicago, IL, United States - (ORD)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "z9v8znl25w0f",
-          "name": "Chicago, IL, United States - (ORD)",
-          "status": "operational",
-          "created_at": "2014-10-27T19:57:04.863Z",
-          "updated_at": "2023-09-07T16:08:29.264Z",
-          "position": 9,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-09-13T08:00:00.000Z",
-      "scheduled_until": "2023-09-13T12:00:00.000Z"
     },
     {
       "id": "szy8r8sky5rk",
