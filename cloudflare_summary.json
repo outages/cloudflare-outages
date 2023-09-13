@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-13T21:27:32.871Z"
+    "updated_at": "2023-09-13T21:42:59.031Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2745,9 +2745,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2023-09-12T16:47:17.026Z",
+      "updated_at": "2023-09-13T21:41:43.019Z",
       "position": 21,
       "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -6208,7 +6208,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "1c9h33ys7tw1",
+      "name": "Unable to create Gateway Egress Policies in the Zero Trust Dashboard",
+      "status": "investigating",
+      "created_at": "2023-09-13T21:41:42.986Z",
+      "updated_at": "2023-09-13T21:41:43.071Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/bs4sl6xgj1k3",
+      "started_at": "2023-09-13T21:41:42.978Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "br63x2d8zk7j",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue preventing users from creating Gateway Egress Policies in the Zero Trust Dashboard. Existing Egress Policies and Gateway Policy enforcement are not impacted at this time.",
+          "incident_id": "1c9h33ys7tw1",
+          "created_at": "2023-09-13T21:41:43.069Z",
+          "updated_at": "2023-09-13T21:41:43.069Z",
+          "display_at": "2023-09-13T21:41:43.069Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2023-09-13T21:41:43.019Z",
+          "position": 21,
+          "description": "Cloudflare's Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "gyx2yygg7lmd",
+          "name": "Gateway",
+          "status": "operational",
+          "created_at": "2023-01-10T09:28:36.367Z",
+          "updated_at": "2023-07-28T21:43:53.638Z",
+          "position": 31,
+          "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
+          "showcase": false,
+          "start_date": "2023-01-10",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "wb66k129wldh",
