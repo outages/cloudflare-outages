@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-18T09:42:58.075Z"
+    "updated_at": "2023-09-18T10:15:09.066Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1411,9 +1411,9 @@
     {
       "id": "z9v8znl25w0f",
       "name": "Chicago, IL, United States - (ORD)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T19:57:04.863Z",
-      "updated_at": "2023-09-18T09:23:34.664Z",
+      "updated_at": "2023-09-18T09:58:17.221Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -5895,9 +5895,9 @@
     {
       "id": "276xk3r83js7",
       "name": "Zero Trust Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-19T18:51:08.811Z",
-      "updated_at": "2023-08-16T16:53:19.786Z",
+      "updated_at": "2023-09-18T10:14:45.312Z",
       "position": 70,
       "description": "Cloudflare Zero Trust Dashboard where customers can view and make changes to their Cloudflare Gateway configurations at https://dash.teams.cloudflare.com",
       "showcase": false,
@@ -6105,9 +6105,9 @@
     {
       "id": "n332jkf8s56z",
       "name": "Denpasar, Indonesia - (DPS)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-06-06T11:00:58.091Z",
-      "updated_at": "2023-09-15T02:39:38.813Z",
+      "updated_at": "2023-09-18T09:54:12.266Z",
       "position": 89,
       "description": null,
       "showcase": false,
@@ -6208,14 +6208,141 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "c3594n18xhwn",
+      "name": "Increase of 504 errors in CASB sections of Zero Trust dashboard",
+      "status": "investigating",
+      "created_at": "2023-09-18T10:14:45.287Z",
+      "updated_at": "2023-09-18T10:15:09.061Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/6krz780v391c",
+      "started_at": "2023-09-18T10:14:45.281Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "nrn9fdybhkyr",
+          "status": "investigating",
+          "body": "Cloudflare is investigating failures loading the CASB integrations and findings pages within the Zero Trust dashboard. Impact is limited to fetching results and does not impact existing integrations.",
+          "incident_id": "c3594n18xhwn",
+          "created_at": "2023-09-18T10:14:45.355Z",
+          "updated_at": "2023-09-18T10:14:45.355Z",
+          "display_at": "2023-09-18T10:14:45.355Z",
+          "affected_components": [
+            {
+              "code": "276xk3r83js7",
+              "name": "Cloudflare Sites and Services - Zero Trust Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "276xk3r83js7",
+          "name": "Zero Trust Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2020-03-19T18:51:08.811Z",
+          "updated_at": "2023-09-18T10:14:45.312Z",
+          "position": 70,
+          "description": "Cloudflare Zero Trust Dashboard where customers can view and make changes to their Cloudflare Gateway configurations at https://dash.teams.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "72nbrtrt2myd",
+      "name": "Elevated number of errors in Chicago (ORD)",
+      "status": "monitoring",
+      "created_at": "2023-09-18T09:58:17.193Z",
+      "updated_at": "2023-09-18T10:14:04.013Z",
+      "monitoring_at": "2023-09-18T10:14:04.000Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/kqmy558jspgw",
+      "started_at": "2023-09-18T09:58:17.187Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "pdg0rgydwsd4",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "72nbrtrt2myd",
+          "created_at": "2023-09-18T10:14:04.000Z",
+          "updated_at": "2023-09-18T10:14:04.000Z",
+          "display_at": "2023-09-18T10:14:04.000Z",
+          "affected_components": [
+            {
+              "code": "z9v8znl25w0f",
+              "name": "North America - Chicago, IL, United States - (ORD)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "1flrm5xd2w7f",
+          "status": "investigating",
+          "body": "Customers reaching Chicago (ORD) could experience an elevated number of errors.\nWe are working to analyse and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "72nbrtrt2myd",
+          "created_at": "2023-09-18T09:58:17.263Z",
+          "updated_at": "2023-09-18T09:58:17.263Z",
+          "display_at": "2023-09-18T09:58:17.263Z",
+          "affected_components": [
+            {
+              "code": "z9v8znl25w0f",
+              "name": "North America - Chicago, IL, United States - (ORD)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "z9v8znl25w0f",
+          "name": "Chicago, IL, United States - (ORD)",
+          "status": "degraded_performance",
+          "created_at": "2014-10-27T19:57:04.863Z",
+          "updated_at": "2023-09-18T09:58:17.221Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "jlxjslk8l2vp",
       "name": "EWR (Newark) on 2023-09-18",
       "status": "scheduled",
       "created_at": "2023-09-15T21:20:13.112Z",
-      "updated_at": "2023-09-18T09:00:46.944Z",
+      "updated_at": "2023-09-18T09:59:59.398Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -6223,6 +6350,19 @@
       "started_at": "2023-09-15T21:20:13.105Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "xhj1fpbtqczf",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "jlxjslk8l2vp",
+          "created_at": "2023-09-18T09:59:58.895Z",
+          "updated_at": "2023-09-18T09:59:58.895Z",
+          "display_at": "2023-09-18T09:59:58.895Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "1fxd5c47225l",
           "status": "scheduled",
@@ -6942,9 +7082,9 @@
         {
           "id": "z9v8znl25w0f",
           "name": "Chicago, IL, United States - (ORD)",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2014-10-27T19:57:04.863Z",
-          "updated_at": "2023-09-18T09:23:34.664Z",
+          "updated_at": "2023-09-18T09:58:17.221Z",
           "position": 9,
           "description": null,
           "showcase": false,
@@ -6957,86 +7097,6 @@
       ],
       "scheduled_for": "2023-09-18T08:00:00.000Z",
       "scheduled_until": "2023-09-18T10:30:00.000Z"
-    },
-    {
-      "id": "ym0bdqw5vh0z",
-      "name": "GIG (Rio de Janeiro) on 2023-09-18",
-      "status": "in_progress",
-      "created_at": "2023-09-16T19:20:53.213Z",
-      "updated_at": "2023-09-18T04:01:19.723Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/kf4gq03cnjck",
-      "started_at": "2023-09-16T19:20:53.206Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "v0fgr09flvcx",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "ym0bdqw5vh0z",
-          "created_at": "2023-09-18T04:01:19.720Z",
-          "updated_at": "2023-09-18T04:01:19.720Z",
-          "display_at": "2023-09-18T04:01:19.720Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "gwr4h61yzbrf",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "ym0bdqw5vh0z",
-          "created_at": "2023-09-18T02:59:57.964Z",
-          "updated_at": "2023-09-18T02:59:57.964Z",
-          "display_at": "2023-09-18T02:59:57.964Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "hck5pdswcdhm",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in GIG (Rio de Janeiro) datacenter on 2023-09-18 between 04:00 and 10:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "ym0bdqw5vh0z",
-          "created_at": "2023-09-16T19:20:53.266Z",
-          "updated_at": "2023-09-16T19:20:53.266Z",
-          "display_at": "2023-09-16T19:20:53.266Z",
-          "affected_components": [
-            {
-              "code": "7rvrsd9g0f1v",
-              "name": "Latin America & the Caribbean - Rio de Janeiro, Brazil - (GIG)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7rvrsd9g0f1v",
-          "name": "Rio de Janeiro, Brazil - (GIG)",
-          "status": "operational",
-          "created_at": "2017-06-22T22:19:02.210Z",
-          "updated_at": "2023-09-18T07:46:07.956Z",
-          "position": 36,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-09-18T04:00:00.000Z",
-      "scheduled_until": "2023-09-18T10:00:00.000Z"
     },
     {
       "id": "w0ty5lb4rmfy",
@@ -7122,9 +7182,9 @@
         {
           "id": "z9v8znl25w0f",
           "name": "Chicago, IL, United States - (ORD)",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2014-10-27T19:57:04.863Z",
-          "updated_at": "2023-09-18T09:23:34.664Z",
+          "updated_at": "2023-09-18T09:58:17.221Z",
           "position": 9,
           "description": null,
           "showcase": false,
