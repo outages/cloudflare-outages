@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-18T14:24:45.959Z"
+    "updated_at": "2023-09-18T15:12:36.976Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3346,9 +3346,9 @@
     {
       "id": "46b99ptn6wdt",
       "name": "Islamabad, Pakistan - (ISB)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-01-30T07:36:19.547Z",
-      "updated_at": "2023-09-18T14:14:21.562Z",
+      "updated_at": "2023-09-18T15:05:34.643Z",
       "position": 27,
       "description": null,
       "showcase": false,
@@ -5836,9 +5836,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2023-09-11T14:08:10.458Z",
+      "updated_at": "2023-09-18T15:12:36.918Z",
       "position": 66,
       "description": "Cloudflare's JavaScript and WebAssembly execution service",
       "showcase": false,
@@ -6224,7 +6224,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "kxk0t627ft2b",
+      "name": "Cloudflare Workers Issues",
+      "status": "investigating",
+      "created_at": "2023-09-18T15:12:36.884Z",
+      "updated_at": "2023-09-18T15:12:36.973Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/0gnxp7gktmmh",
+      "started_at": "2023-09-18T15:12:36.877Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "152s86h74j3z",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an increased level of 503 errors for customers running Workers scripts.\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "kxk0t627ft2b",
+          "created_at": "2023-09-18T15:12:36.970Z",
+          "updated_at": "2023-09-18T15:12:36.970Z",
+          "display_at": "2023-09-18T15:12:36.970Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2023-09-18T15:12:36.918Z",
+          "position": 66,
+          "description": "Cloudflare's JavaScript and WebAssembly execution service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "hvr7ktjrlqkd",
@@ -6389,30 +6443,30 @@
       "scheduled_until": "2023-09-19T23:00:00.000Z"
     },
     {
-      "id": "t4ncj55pqmc6",
-      "name": "GIG (Rio de Janeiro) on 2023-09-20",
+      "id": "cdckx1p28pcv",
+      "name": "MAN (Manchester) on 2023-09-20",
       "status": "scheduled",
-      "created_at": "2023-09-18T10:20:45.895Z",
-      "updated_at": "2023-09-18T10:20:45.972Z",
+      "created_at": "2023-09-18T15:00:42.126Z",
+      "updated_at": "2023-09-18T15:00:42.195Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/22dhdwdjm8dn",
-      "started_at": "2023-09-18T10:20:45.885Z",
+      "shortlink": "https://stspg.io/3r5vs79sqtyh",
+      "started_at": "2023-09-18T15:00:42.118Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "qft6380r6fx1",
+          "id": "g9g5thtc7pyf",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in GIG (Rio de Janeiro) datacenter on 2023-09-20 between 08:00 and 10:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
-          "incident_id": "t4ncj55pqmc6",
-          "created_at": "2023-09-18T10:20:45.968Z",
-          "updated_at": "2023-09-18T10:20:45.968Z",
-          "display_at": "2023-09-18T10:20:45.968Z",
+          "body": "We will be performing scheduled maintenance in MAN (Manchester) datacenter on 2023-09-20 between 00:15 and 04:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "cdckx1p28pcv",
+          "created_at": "2023-09-18T15:00:42.192Z",
+          "updated_at": "2023-09-18T15:00:42.192Z",
+          "display_at": "2023-09-18T15:00:42.192Z",
           "affected_components": [
             {
-              "code": "7rvrsd9g0f1v",
-              "name": "Latin America & the Caribbean - Rio de Janeiro, Brazil - (GIG)",
+              "code": "7z1q346n4s38",
+              "name": "Europe - Manchester, United Kingdom - (MAN)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -6424,23 +6478,23 @@
       ],
       "components": [
         {
-          "id": "7rvrsd9g0f1v",
-          "name": "Rio de Janeiro, Brazil - (GIG)",
+          "id": "7z1q346n4s38",
+          "name": "Manchester, United Kingdom - (MAN)",
           "status": "operational",
-          "created_at": "2017-06-22T22:19:02.210Z",
-          "updated_at": "2023-09-18T07:46:07.956Z",
-          "position": 36,
+          "created_at": "2015-10-05T03:57:10.538Z",
+          "updated_at": "2023-09-18T05:48:33.226Z",
+          "position": 28,
           "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "91blz4ztt7dm",
+          "group_id": "zqxhg7y54vy8",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-09-20T08:00:00.000Z",
-      "scheduled_until": "2023-09-20T10:00:00.000Z"
+      "scheduled_for": "2023-09-20T00:15:00.000Z",
+      "scheduled_until": "2023-09-20T04:00:00.000Z"
     },
     {
       "id": "wk6f9mt9bkpc",
@@ -6487,6 +6541,60 @@
           "description": null,
           "showcase": false,
           "start_date": "2022-02-11",
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-09-20T08:00:00.000Z",
+      "scheduled_until": "2023-09-20T10:00:00.000Z"
+    },
+    {
+      "id": "t4ncj55pqmc6",
+      "name": "GIG (Rio de Janeiro) on 2023-09-20",
+      "status": "scheduled",
+      "created_at": "2023-09-18T10:20:45.895Z",
+      "updated_at": "2023-09-18T10:20:45.972Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/22dhdwdjm8dn",
+      "started_at": "2023-09-18T10:20:45.885Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "qft6380r6fx1",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in GIG (Rio de Janeiro) datacenter on 2023-09-20 between 08:00 and 10:00 UTC. Traffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.",
+          "incident_id": "t4ncj55pqmc6",
+          "created_at": "2023-09-18T10:20:45.968Z",
+          "updated_at": "2023-09-18T10:20:45.968Z",
+          "display_at": "2023-09-18T10:20:45.968Z",
+          "affected_components": [
+            {
+              "code": "7rvrsd9g0f1v",
+              "name": "Latin America & the Caribbean - Rio de Janeiro, Brazil - (GIG)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7rvrsd9g0f1v",
+          "name": "Rio de Janeiro, Brazil - (GIG)",
+          "status": "operational",
+          "created_at": "2017-06-22T22:19:02.210Z",
+          "updated_at": "2023-09-18T07:46:07.956Z",
+          "position": 36,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
           "group_id": "91blz4ztt7dm",
           "page_id": "yh6f0r4529hb",
           "group": false,
