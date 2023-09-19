@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-19T01:42:59.628Z"
+    "updated_at": "2023-09-19T02:32:11.575Z"
   },
   "components": [
     {
@@ -5145,9 +5145,9 @@
     {
       "id": "kn2xkt469vyh",
       "name": "Registrar",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-07-31T14:19:17.585Z",
-      "updated_at": "2023-08-16T10:56:17.377Z",
+      "updated_at": "2023-09-19T02:32:11.523Z",
       "position": 52,
       "description": "Cloudflare Registrar securely registers and manages customer domain names",
       "showcase": false,
@@ -6209,6 +6209,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "5n0xscr5jtt0",
+      "name": "Cloudflare Registrar New Registration Failures",
+      "status": "investigating",
+      "created_at": "2023-09-19T02:32:11.493Z",
+      "updated_at": "2023-09-19T02:32:11.572Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5b754773gdcn",
+      "started_at": "2023-09-19T02:32:11.486Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "n1dm0503gxzf",
+          "status": "investigating",
+          "body": "Cloudflare is aware of Registrar customers unable to register a new domain, and investigating an issue which potentially impacts multiple customers. Further detail will be provided as more information becomes available.",
+          "incident_id": "5n0xscr5jtt0",
+          "created_at": "2023-09-19T02:32:11.570Z",
+          "updated_at": "2023-09-19T02:32:11.570Z",
+          "display_at": "2023-09-19T02:32:11.570Z",
+          "affected_components": [
+            {
+              "code": "kn2xkt469vyh",
+              "name": "Cloudflare Sites and Services - Registrar",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kn2xkt469vyh",
+          "name": "Registrar",
+          "status": "degraded_performance",
+          "created_at": "2019-07-31T14:19:17.585Z",
+          "updated_at": "2023-09-19T02:32:11.523Z",
+          "position": 52,
+          "description": "Cloudflare Registrar securely registers and manages customer domain names",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "kxk0t627ft2b",
       "name": "Cloudflare Workers Issues",
