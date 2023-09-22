@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-21T23:49:45.766Z"
+    "updated_at": "2023-09-22T01:01:21.888Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2042,9 +2042,9 @@
     {
       "id": "3796s01hm2hj",
       "name": "Chittagong, Bangladesh - (CGP)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-10-29T19:05:17.659Z",
-      "updated_at": "2023-09-21T20:35:15.636Z",
+      "updated_at": "2023-09-22T00:20:27.815Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -2537,9 +2537,9 @@
     {
       "id": "wtc1p207n9kv",
       "name": "Las Vegas, NV, United States - (LAS)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-09-27T05:49:35.652Z",
-      "updated_at": "2023-09-18T23:51:55.521Z",
+      "updated_at": "2023-09-21T23:54:52.487Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -2762,9 +2762,9 @@
     {
       "id": "1njzngd1wdrj",
       "name": "Istanbul, Turkey - (IST)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-02-28T13:32:42.674Z",
-      "updated_at": "2023-09-07T08:01:10.619Z",
+      "updated_at": "2023-09-22T00:20:28.125Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -3602,9 +3602,9 @@
     {
       "id": "7k05x28lndzb",
       "name": "Porto Alegre, Brazil - (POA)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-04-01T16:32:01.138Z",
-      "updated_at": "2023-09-21T23:49:45.764Z",
+      "updated_at": "2023-09-22T00:10:13.275Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -3917,9 +3917,9 @@
     {
       "id": "8qwmwg7ytljv",
       "name": "Infrastructure",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-13T13:39:55.351Z",
-      "updated_at": "2023-09-21T21:50:18.292Z",
+      "updated_at": "2023-09-22T00:08:23.232Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -6240,35 +6240,77 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "wb7tb8v1njdg",
-      "name": "GIG (Rio de Janeiro) on 2023-09-22",
-      "status": "scheduled",
-      "created_at": "2023-09-20T14:00:50.423Z",
-      "updated_at": "2023-09-21T20:21:02.438Z",
+      "id": "gln4z740q3wp",
+      "name": "Elevated TLS handshake errors for customers on Chrome",
+      "status": "identified",
+      "created_at": "2023-09-22T00:59:14.547Z",
+      "updated_at": "2023-09-22T00:59:33.368Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/t7v783mgvv8n",
-      "started_at": "2023-09-20T14:00:50.416Z",
+      "impact": "none",
+      "shortlink": "https://stspg.io/lh42nb7ltzbd",
+      "started_at": "2023-09-22T00:59:14.541Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "mwk6l8n3v7mk",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in GIG (Rio de Janeiro) datacenter on 2023-09-22 between 01:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "wb7tb8v1njdg",
-          "created_at": "2023-09-21T20:21:02.436Z",
-          "updated_at": "2023-09-21T20:21:02.436Z",
-          "display_at": "2023-09-21T20:21:02.436Z",
+          "id": "sgdfw4sz0qb8",
+          "status": "identified",
+          "body": "Root cause has been identified. Cloudflare is in the process of rolling out a fix.",
+          "incident_id": "gln4z740q3wp",
+          "created_at": "2023-09-22T00:59:33.366Z",
+          "updated_at": "2023-09-22T00:59:33.366Z",
+          "display_at": "2023-09-22T00:59:33.366Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ys8jl961z3zx",
+          "status": "investigating",
+          "body": "Cloudflare is seeing elevated TLS handshake failures for Chrome browsers attempting to use Encrypted Client Hello to perform a TLS negotiation.",
+          "incident_id": "gln4z740q3wp",
+          "created_at": "2023-09-22T00:59:14.590Z",
+          "updated_at": "2023-09-22T00:59:14.590Z",
+          "display_at": "2023-09-22T00:59:14.590Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "reminder_intervals": null
+    },
+    {
+      "id": "2n51msydpw39",
+      "name": "Network Performance Issues",
+      "status": "monitoring",
+      "created_at": "2023-09-22T00:08:23.183Z",
+      "updated_at": "2023-09-22T00:50:03.262Z",
+      "monitoring_at": "2023-09-22T00:50:03.249Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/2q1dxt4wfvny",
+      "started_at": "2023-09-22T00:08:23.171Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "3trt98504qws",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "2n51msydpw39",
+          "created_at": "2023-09-22T00:50:03.249Z",
+          "updated_at": "2023-09-22T00:50:03.249Z",
+          "display_at": "2023-09-22T00:50:03.249Z",
           "affected_components": [
             {
-              "code": "7rvrsd9g0f1v",
-              "name": "Latin America & the Caribbean - Rio de Janeiro, Brazil - (GIG)",
-              "old_status": "operational",
-              "new_status": "operational"
+              "code": "8qwmwg7ytljv",
+              "name": "Cloudflare Sites and Services - Infrastructure",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -6276,19 +6318,19 @@
           "tweet_id": null
         },
         {
-          "id": "m6230q1qlz12",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in GIG (Rio de Janeiro) datacenter on 2023-09-22 between 05:00 and 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "wb7tb8v1njdg",
-          "created_at": "2023-09-20T14:00:50.471Z",
-          "updated_at": "2023-09-20T14:00:50.471Z",
-          "display_at": "2023-09-20T14:00:50.471Z",
+          "id": "69jdqsfpvq5s",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with network performance.  Customers may see increased 5xx errors and/or latency.\n\nWe are working to analyse and mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "2n51msydpw39",
+          "created_at": "2023-09-22T00:08:23.307Z",
+          "updated_at": "2023-09-22T00:08:23.307Z",
+          "display_at": "2023-09-22T00:08:23.307Z",
           "affected_components": [
             {
-              "code": "7rvrsd9g0f1v",
-              "name": "Latin America & the Caribbean - Rio de Janeiro, Brazil - (GIG)",
+              "code": "8qwmwg7ytljv",
+              "name": "Cloudflare Sites and Services - Infrastructure",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -6298,24 +6340,25 @@
       ],
       "components": [
         {
-          "id": "7rvrsd9g0f1v",
-          "name": "Rio de Janeiro, Brazil - (GIG)",
-          "status": "operational",
-          "created_at": "2017-06-22T22:19:02.210Z",
-          "updated_at": "2023-09-20T09:09:01.519Z",
-          "position": 36,
+          "id": "8qwmwg7ytljv",
+          "name": "Infrastructure",
+          "status": "degraded_performance",
+          "created_at": "2023-01-13T13:39:55.351Z",
+          "updated_at": "2023-09-22T00:08:23.232Z",
+          "position": 35,
           "description": null,
           "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
+          "start_date": "2023-01-13",
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-09-22T01:00:00.000Z",
-      "scheduled_until": "2023-09-22T05:00:00.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "z6gfmcgckfvv",
       "name": "ORD (Chicago) on 2023-09-22",
@@ -6801,6 +6844,106 @@
       ],
       "scheduled_for": "2023-10-10T03:30:00.000Z",
       "scheduled_until": "2023-10-10T10:00:00.000Z"
+    },
+    {
+      "id": "wb7tb8v1njdg",
+      "name": "GIG (Rio de Janeiro) on 2023-09-22",
+      "status": "in_progress",
+      "created_at": "2023-09-20T14:00:50.423Z",
+      "updated_at": "2023-09-22T01:01:21.857Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/t7v783mgvv8n",
+      "started_at": "2023-09-20T14:00:50.416Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "gnhfcp7j2djj",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "wb7tb8v1njdg",
+          "created_at": "2023-09-22T01:01:21.849Z",
+          "updated_at": "2023-09-22T01:01:21.849Z",
+          "display_at": "2023-09-22T01:01:21.849Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "k203j2bvcwqv",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "wb7tb8v1njdg",
+          "created_at": "2023-09-22T00:00:17.909Z",
+          "updated_at": "2023-09-22T00:00:17.909Z",
+          "display_at": "2023-09-22T00:00:17.909Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "mwk6l8n3v7mk",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in GIG (Rio de Janeiro) datacenter on 2023-09-22 between 01:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "wb7tb8v1njdg",
+          "created_at": "2023-09-21T20:21:02.436Z",
+          "updated_at": "2023-09-21T20:21:02.436Z",
+          "display_at": "2023-09-21T20:21:02.436Z",
+          "affected_components": [
+            {
+              "code": "7rvrsd9g0f1v",
+              "name": "Latin America & the Caribbean - Rio de Janeiro, Brazil - (GIG)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "m6230q1qlz12",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in GIG (Rio de Janeiro) datacenter on 2023-09-22 between 05:00 and 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "wb7tb8v1njdg",
+          "created_at": "2023-09-20T14:00:50.471Z",
+          "updated_at": "2023-09-20T14:00:50.471Z",
+          "display_at": "2023-09-20T14:00:50.471Z",
+          "affected_components": [
+            {
+              "code": "7rvrsd9g0f1v",
+              "name": "Latin America & the Caribbean - Rio de Janeiro, Brazil - (GIG)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7rvrsd9g0f1v",
+          "name": "Rio de Janeiro, Brazil - (GIG)",
+          "status": "operational",
+          "created_at": "2017-06-22T22:19:02.210Z",
+          "updated_at": "2023-09-20T09:09:01.519Z",
+          "position": 36,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-09-22T01:00:00.000Z",
+      "scheduled_until": "2023-09-22T05:00:00.000Z"
     },
     {
       "id": "f979nl8xpzny",
