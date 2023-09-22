@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-22T11:36:51.652Z"
+    "updated_at": "2023-09-22T12:23:03.607Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2627,9 +2627,9 @@
     {
       "id": "38w4zp21dlkc",
       "name": "Los Angeles, CA, United States - (LAX)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-27T19:24:27.591Z",
-      "updated_at": "2023-09-22T11:21:29.405Z",
+      "updated_at": "2023-09-22T12:12:44.736Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -3632,9 +3632,9 @@
     {
       "id": "gyx2yygg7lmd",
       "name": "Gateway",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-10T09:28:36.367Z",
-      "updated_at": "2023-07-28T21:43:53.638Z",
+      "updated_at": "2023-09-22T11:57:09.672Z",
       "position": 31,
       "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
       "showcase": false,
@@ -4727,9 +4727,9 @@
     {
       "id": "jzkf1cwss7kt",
       "name": "Tegucigalpa, Honduras - (TGU)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2020-03-30T19:59:53.603Z",
-      "updated_at": "2023-09-22T09:54:23.590Z",
+      "updated_at": "2023-09-22T12:23:03.605Z",
       "position": 46,
       "description": null,
       "showcase": false,
@@ -6242,6 +6242,80 @@
   ],
   "incidents": [
     {
+      "id": "k9jn582qdyry",
+      "name": "Cloudflare Zero Trust: Issues with Access App",
+      "status": "investigating",
+      "created_at": "2023-09-22T11:57:09.642Z",
+      "updated_at": "2023-09-22T11:57:09.718Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/hz0z266gs7s6",
+      "started_at": "2023-09-22T11:57:09.633Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "kv3c5y8zm8l2",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with creating new Private Network Access Applications in the dashboard. \nExisting applications are unaffected.\n\nWe are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "k9jn582qdyry",
+          "created_at": "2023-09-22T11:57:09.716Z",
+          "updated_at": "2023-09-22T11:57:09.716Z",
+          "display_at": "2023-09-22T11:57:09.716Z",
+          "affected_components": [
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gyx2yygg7lmd",
+          "name": "Gateway",
+          "status": "degraded_performance",
+          "created_at": "2023-01-10T09:28:36.367Z",
+          "updated_at": "2023-09-22T11:57:09.672Z",
+          "position": 31,
+          "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
+          "showcase": false,
+          "start_date": "2023-01-10",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "kf0ktv29xrfy",
+          "name": "Zero Trust",
+          "status": "operational",
+          "created_at": "2021-04-08T15:53:09.058Z",
+          "updated_at": "2023-09-13T07:54:17.887Z",
+          "position": 69,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "2n51msydpw39",
       "name": "Network Performance Issues",
       "status": "monitoring",
@@ -6818,9 +6892,9 @@
         {
           "id": "38w4zp21dlkc",
           "name": "Los Angeles, CA, United States - (LAX)",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2014-10-27T19:24:27.591Z",
-          "updated_at": "2023-09-22T11:21:29.405Z",
+          "updated_at": "2023-09-22T12:12:44.736Z",
           "position": 20,
           "description": null,
           "showcase": false,
