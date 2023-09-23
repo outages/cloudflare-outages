@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-22T23:44:41.288Z"
+    "updated_at": "2023-09-23T00:40:57.695Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1562,9 +1562,9 @@
     {
       "id": "xg9bdljrlnfd",
       "name": "Perth, WA, Australia - (PER)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-05-27T10:34:03.915Z",
-      "updated_at": "2023-09-22T23:44:41.286Z",
+      "updated_at": "2023-09-23T00:40:57.693Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -3917,9 +3917,9 @@
     {
       "id": "8qwmwg7ytljv",
       "name": "Infrastructure",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2023-01-13T13:39:55.351Z",
-      "updated_at": "2023-09-22T15:36:30.233Z",
+      "updated_at": "2023-09-22T23:56:38.189Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -4217,9 +4217,9 @@
     {
       "id": "v4yshrzwkvyd",
       "name": "Krasnoyarsk, Russia - (KJA)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-09-22T09:43:29.298Z",
-      "updated_at": "2023-09-22T19:02:30.260Z",
+      "updated_at": "2023-09-23T00:25:35.386Z",
       "position": 39,
       "description": null,
       "showcase": false,
@@ -6244,16 +6244,36 @@
     {
       "id": "2d2q5vst0v98",
       "name": "Cloudflare Spectrum Logpush Delays",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2023-09-22T18:51:59.048Z",
-      "updated_at": "2023-09-22T19:21:54.413Z",
-      "monitoring_at": null,
+      "updated_at": "2023-09-23T00:08:55.493Z",
+      "monitoring_at": "2023-09-23T00:08:55.473Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/50zxg0hgz2dc",
       "started_at": "2023-09-22T18:51:59.040Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "z52y0m8hrwbk",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "2d2q5vst0v98",
+          "created_at": "2023-09-23T00:08:55.473Z",
+          "updated_at": "2023-09-23T00:08:55.473Z",
+          "display_at": "2023-09-23T00:08:55.473Z",
+          "affected_components": [
+            {
+              "code": "k0mgxrls5y1b",
+              "name": "Cloudflare Sites and Services - Logs",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "1sxgrjq00s6d",
           "status": "identified",
@@ -6306,199 +6326,6 @@
           "description": "Cloudflare's Enterprise Log pull and Log push service",
           "showcase": false,
           "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "2n51msydpw39",
-      "name": "Network Performance Issues",
-      "status": "monitoring",
-      "created_at": "2023-09-22T00:08:23.183Z",
-      "updated_at": "2023-09-22T17:31:17.955Z",
-      "monitoring_at": "2023-09-22T00:50:03.249Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/2q1dxt4wfvny",
-      "started_at": "2023-09-22T00:08:23.171Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "5gsss1vmg92g",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "2n51msydpw39",
-          "created_at": "2023-09-22T17:31:17.952Z",
-          "updated_at": "2023-09-22T17:31:17.952Z",
-          "display_at": "2023-09-22T17:31:17.952Z",
-          "affected_components": [
-            {
-              "code": "8qwmwg7ytljv",
-              "name": "Cloudflare Sites and Services - Infrastructure",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "wmy1lk31nv39",
-          "status": "identified",
-          "body": "We are continuing to investigate issues with network performance. Customers may see a subset of requests failing with 5xx errors or completing with increased latency starting from 15:00 UTC today.\n\nOur engineering team is mitigating this problem. More updates to follow shortly.",
-          "incident_id": "2n51msydpw39",
-          "created_at": "2023-09-22T15:36:30.274Z",
-          "updated_at": "2023-09-22T15:36:30.274Z",
-          "display_at": "2023-09-22T15:36:30.274Z",
-          "affected_components": [
-            {
-              "code": "8qwmwg7ytljv",
-              "name": "Cloudflare Sites and Services - Infrastructure",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "7lkspmcsmkbg",
-          "status": "monitoring",
-          "body": "We are keeping an eye out for any additional problems and will post updates on the status page as we go along.",
-          "incident_id": "2n51msydpw39",
-          "created_at": "2023-09-22T14:33:48.347Z",
-          "updated_at": "2023-09-22T14:33:48.347Z",
-          "display_at": "2023-09-22T14:33:48.347Z",
-          "affected_components": [
-            {
-              "code": "8qwmwg7ytljv",
-              "name": "Cloudflare Sites and Services - Infrastructure",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "c4h9yj02w5vn",
-          "status": "monitoring",
-          "body": "We are actively monitoring for any further issues and will provide updates as necessary on the status page.",
-          "incident_id": "2n51msydpw39",
-          "created_at": "2023-09-22T10:01:39.287Z",
-          "updated_at": "2023-09-22T10:01:39.287Z",
-          "display_at": "2023-09-22T10:01:39.287Z",
-          "affected_components": [
-            {
-              "code": "8qwmwg7ytljv",
-              "name": "Cloudflare Sites and Services - Infrastructure",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "y0hk2sg59pfx",
-          "status": "monitoring",
-          "body": "We are continuing to monitor for any further issues.",
-          "incident_id": "2n51msydpw39",
-          "created_at": "2023-09-22T04:59:49.795Z",
-          "updated_at": "2023-09-22T04:59:49.795Z",
-          "display_at": "2023-09-22T04:59:49.795Z",
-          "affected_components": [
-            {
-              "code": "8qwmwg7ytljv",
-              "name": "Cloudflare Sites and Services - Infrastructure",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "cy8rlymby61j",
-          "status": "monitoring",
-          "body": "We are continuing to monitor for any further issues.",
-          "incident_id": "2n51msydpw39",
-          "created_at": "2023-09-22T02:44:26.662Z",
-          "updated_at": "2023-09-22T02:44:26.662Z",
-          "display_at": "2023-09-22T02:44:26.662Z",
-          "affected_components": [
-            {
-              "code": "8qwmwg7ytljv",
-              "name": "Cloudflare Sites and Services - Infrastructure",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "3trt98504qws",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "2n51msydpw39",
-          "created_at": "2023-09-22T00:50:03.249Z",
-          "updated_at": "2023-09-22T00:50:03.249Z",
-          "display_at": "2023-09-22T00:50:03.249Z",
-          "affected_components": [
-            {
-              "code": "8qwmwg7ytljv",
-              "name": "Cloudflare Sites and Services - Infrastructure",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "69jdqsfpvq5s",
-          "status": "investigating",
-          "body": "Cloudflare is investigating issues with network performance.  Customers may see increased 5xx errors and/or latency.\n\nWe are working to analyse and mitigate this problem.  More updates to follow shortly.",
-          "incident_id": "2n51msydpw39",
-          "created_at": "2023-09-22T00:08:23.307Z",
-          "updated_at": "2023-09-22T00:08:23.307Z",
-          "display_at": "2023-09-22T00:08:23.307Z",
-          "affected_components": [
-            {
-              "code": "8qwmwg7ytljv",
-              "name": "Cloudflare Sites and Services - Infrastructure",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "8qwmwg7ytljv",
-          "name": "Infrastructure",
-          "status": "degraded_performance",
-          "created_at": "2023-01-13T13:39:55.351Z",
-          "updated_at": "2023-09-22T15:36:30.233Z",
-          "position": 35,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-01-13",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
