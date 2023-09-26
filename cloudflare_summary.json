@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-25T23:42:58.855Z"
+    "updated_at": "2023-09-26T00:34:29.987Z"
   },
   "components": [
     {
@@ -1517,9 +1517,9 @@
     {
       "id": "dp8ppfycqxcs",
       "name": "Authoritative DNS",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:53:09.337Z",
-      "updated_at": "2023-09-25T23:01:43.525Z",
+      "updated_at": "2023-09-26T00:15:42.259Z",
       "position": 9,
       "description": "Cloudflare's authoritative DNS service",
       "showcase": false,
@@ -1937,9 +1937,9 @@
     {
       "id": "bbx7ndl66dmp",
       "name": "Detroit, MI, United States - (DTW)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2017-04-10T16:40:13.626Z",
-      "updated_at": "2023-09-25T23:12:55.688Z",
+      "updated_at": "2023-09-26T00:34:29.983Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2357,9 +2357,9 @@
     {
       "id": "3mfmstzmyp8r",
       "name": "Maputo, Mozambique - (MPM)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-06-27T06:54:32.139Z",
-      "updated_at": "2023-09-24T21:05:52.975Z",
+      "updated_at": "2023-09-25T23:58:47.850Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -6242,89 +6242,16 @@
   ],
   "incidents": [
     {
-      "id": "7hkhj6myt5c5",
-      "name": "Issues with Secondary DNS",
-      "status": "monitoring",
-      "created_at": "2023-09-25T23:01:43.492Z",
-      "updated_at": "2023-09-25T23:30:32.805Z",
-      "monitoring_at": "2023-09-25T23:30:32.786Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/ld4lpvgj9qjx",
-      "started_at": "2023-09-25T23:01:43.485Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "w931sct9fs8k",
-          "status": "monitoring",
-          "body": "The cause of this issue has been identified and a fix implemented. We are currently monitoring the results.",
-          "incident_id": "7hkhj6myt5c5",
-          "created_at": "2023-09-25T23:30:32.786Z",
-          "updated_at": "2023-09-25T23:30:32.786Z",
-          "display_at": "2023-09-25T23:30:32.786Z",
-          "affected_components": [
-            {
-              "code": "dp8ppfycqxcs",
-              "name": "Cloudflare Sites and Services - Authoritative DNS",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "sjnnlypdh6fn",
-          "status": "investigating",
-          "body": "We are investigating an issue with our Secondary DNS service. Currently, Secondary DNS records cannot be added or updated, but existing records will continue to be served normally.",
-          "incident_id": "7hkhj6myt5c5",
-          "created_at": "2023-09-25T23:01:43.576Z",
-          "updated_at": "2023-09-25T23:01:43.576Z",
-          "display_at": "2023-09-25T23:01:43.576Z",
-          "affected_components": [
-            {
-              "code": "dp8ppfycqxcs",
-              "name": "Cloudflare Sites and Services - Authoritative DNS",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "dp8ppfycqxcs",
-          "name": "Authoritative DNS",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:53:09.337Z",
-          "updated_at": "2023-09-25T23:01:43.525Z",
-          "position": 9,
-          "description": "Cloudflare's authoritative DNS service",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
       "id": "7n3cbjm73590",
       "name": "Issues with Early Hints",
       "status": "identified",
       "created_at": "2023-09-25T09:01:27.204Z",
-      "updated_at": "2023-09-25T22:25:26.133Z",
+      "updated_at": "2023-09-26T00:32:40.769Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "none",
       "shortlink": "https://stspg.io/xm86p3nzqjpg",
-      "started_at": "2023-09-25T09:01:27.195Z",
+      "started_at": "2023-09-25T09:01:27.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -6350,11 +6277,11 @@
         {
           "id": "vzmqwqssplzb",
           "status": "investigating",
-          "body": "Cloudflare is aware of, and investigating an issue with Early Hints which potentially impacts a subset of customers. In certain scenarios Cloudflare might not asynchronously look up and emit a cached 103 Early Hints response ahead of a main response.\n\nFurther details will be provided as more information becomes available.",
+          "body": "Cloudflare is currently monitoring request maintenance and has temporarily disabled early hints. In certain scenarios Cloudflare might not asynchronously look up and emit a cached 103 Early Hints response ahead of a main response.",
           "incident_id": "7n3cbjm73590",
           "created_at": "2023-09-25T09:01:27.267Z",
-          "updated_at": "2023-09-25T09:01:27.267Z",
-          "display_at": "2023-09-25T09:01:27.267Z",
+          "updated_at": "2023-09-26T00:32:40.725Z",
+          "display_at": "2023-09-25T09:01:27.000Z",
           "affected_components": [
             {
               "code": "5wnz34mhfhrk",
@@ -6392,7 +6319,7 @@
       "name": "Network Performance Issues",
       "status": "monitoring",
       "created_at": "2023-09-24T15:03:41.004Z",
-      "updated_at": "2023-09-25T17:49:15.719Z",
+      "updated_at": "2023-09-26T00:14:29.813Z",
       "monitoring_at": "2023-09-25T02:25:34.967Z",
       "resolved_at": null,
       "impact": "minor",
@@ -6400,6 +6327,26 @@
       "started_at": "2023-09-24T15:03:40.998Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "gw4hrv621hg7",
+          "status": "monitoring",
+          "body": "Cloudflare continues to investigate ongoing impact caused by unusual traffic activity that is causing 5xx errors, such as 502s, to be returned to some requests.",
+          "incident_id": "7j0gb2ws3df3",
+          "created_at": "2023-09-26T00:14:29.810Z",
+          "updated_at": "2023-09-26T00:14:29.810Z",
+          "display_at": "2023-09-26T00:14:29.810Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "9875v4rb5w5j",
           "status": "monitoring",
