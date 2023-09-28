@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-28T07:09:46.899Z"
+    "updated_at": "2023-09-28T07:32:40.249Z"
   },
   "components": [
     {
@@ -410,9 +410,9 @@
     {
       "id": "3lsyxp2s1khw",
       "name": "Barcelona, Spain - (BCN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-10-10T21:36:13.143Z",
-      "updated_at": "2023-09-28T07:09:46.898Z",
+      "updated_at": "2023-09-28T07:25:11.860Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -6262,7 +6262,7 @@
       "name": "Network Performance Issues",
       "status": "monitoring",
       "created_at": "2023-09-24T15:03:41.004Z",
-      "updated_at": "2023-09-28T01:31:16.319Z",
+      "updated_at": "2023-09-28T07:32:40.241Z",
       "monitoring_at": "2023-09-25T02:25:34.967Z",
       "resolved_at": null,
       "impact": "minor",
@@ -6270,6 +6270,26 @@
       "started_at": "2023-09-24T15:03:40.998Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "b2j767bxgplz",
+          "status": "monitoring",
+          "body": "Cloudflare continues to investigate ongoing impact caused by unusual traffic activity that is causing 5xx errors, such as 502s, to be returned to some requests.",
+          "incident_id": "7j0gb2ws3df3",
+          "created_at": "2023-09-28T07:32:40.238Z",
+          "updated_at": "2023-09-28T07:32:40.238Z",
+          "display_at": "2023-09-28T07:32:40.238Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "m56qjpt5dpq2",
           "status": "monitoring",
@@ -6726,73 +6746,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "gfzpwhrc8mm4",
-      "name": "DOH (Doha) on 2023-09-28",
-      "status": "scheduled",
-      "created_at": "2023-09-26T15:40:31.719Z",
-      "updated_at": "2023-09-28T06:29:57.769Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/0lt15y19ssz0",
-      "started_at": "2023-09-26T15:40:31.713Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "gbsjt1myd7gb",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "gfzpwhrc8mm4",
-          "created_at": "2023-09-28T06:29:57.680Z",
-          "updated_at": "2023-09-28T06:29:57.680Z",
-          "display_at": "2023-09-28T06:29:57.680Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "3jmmg0f4dnhr",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DOH (Doha) datacenter between 2023-09-28 07:30 and 2023-09-29 17:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "gfzpwhrc8mm4",
-          "created_at": "2023-09-26T15:40:31.783Z",
-          "updated_at": "2023-09-26T15:40:31.783Z",
-          "display_at": "2023-09-26T15:40:31.783Z",
-          "affected_components": [
-            {
-              "code": "h02k6rrcwpbr",
-              "name": "Middle East - Doha, Qatar - (DOH)",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "h02k6rrcwpbr",
-          "name": "Doha, Qatar - (DOH)",
-          "status": "partial_outage",
-          "created_at": "2015-06-18T15:21:54.451Z",
-          "updated_at": "2023-09-26T15:41:39.220Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "m3639x4txd08",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-09-28T07:30:00.000Z",
-      "scheduled_until": "2023-09-29T17:30:00.000Z"
-    },
-    {
       "id": "1q4h9vby2yyp",
       "name": "IAD (Ashburn) on 2023-10-02",
       "status": "scheduled",
@@ -7061,6 +7014,86 @@
       ],
       "scheduled_for": "2023-10-10T03:30:00.000Z",
       "scheduled_until": "2023-10-10T10:00:00.000Z"
+    },
+    {
+      "id": "gfzpwhrc8mm4",
+      "name": "DOH (Doha) on 2023-09-28",
+      "status": "in_progress",
+      "created_at": "2023-09-26T15:40:31.719Z",
+      "updated_at": "2023-09-28T07:30:06.911Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/0lt15y19ssz0",
+      "started_at": "2023-09-26T15:40:31.713Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "kzw7rgc4xtxg",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "gfzpwhrc8mm4",
+          "created_at": "2023-09-28T07:30:06.906Z",
+          "updated_at": "2023-09-28T07:30:06.906Z",
+          "display_at": "2023-09-28T07:30:06.906Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "gbsjt1myd7gb",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "gfzpwhrc8mm4",
+          "created_at": "2023-09-28T06:29:57.680Z",
+          "updated_at": "2023-09-28T06:29:57.680Z",
+          "display_at": "2023-09-28T06:29:57.680Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3jmmg0f4dnhr",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in DOH (Doha) datacenter between 2023-09-28 07:30 and 2023-09-29 17:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "gfzpwhrc8mm4",
+          "created_at": "2023-09-26T15:40:31.783Z",
+          "updated_at": "2023-09-26T15:40:31.783Z",
+          "display_at": "2023-09-26T15:40:31.783Z",
+          "affected_components": [
+            {
+              "code": "h02k6rrcwpbr",
+              "name": "Middle East - Doha, Qatar - (DOH)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "h02k6rrcwpbr",
+          "name": "Doha, Qatar - (DOH)",
+          "status": "partial_outage",
+          "created_at": "2015-06-18T15:21:54.451Z",
+          "updated_at": "2023-09-26T15:41:39.220Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "m3639x4txd08",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-09-28T07:30:00.000Z",
+      "scheduled_until": "2023-09-29T17:30:00.000Z"
     }
   ],
   "status": {
