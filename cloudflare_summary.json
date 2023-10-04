@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-04T08:00:15.410Z"
+    "updated_at": "2023-10-04T08:25:38.020Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -4788,9 +4788,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2023-09-11T21:41:47.821Z",
+      "updated_at": "2023-10-04T08:25:37.970Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -5073,9 +5073,9 @@
     {
       "id": "8w536gxk7dvq",
       "name": "Recursive DNS",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:51:39.639Z",
-      "updated_at": "2023-08-16T10:56:17.371Z",
+      "updated_at": "2023-10-04T08:19:04.086Z",
       "position": 51,
       "description": "Cloudflare's free recursive DNS service at 1.1.1.1 and 1.0.0.1",
       "showcase": false,
@@ -5778,9 +5778,9 @@
     {
       "id": "k04jkcpzxn94",
       "name": "WARP",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-09-30T09:25:38.587Z",
-      "updated_at": "2023-08-16T10:56:17.453Z",
+      "updated_at": "2023-10-04T08:19:04.100Z",
       "position": 64,
       "description": null,
       "showcase": false,
@@ -6256,7 +6256,129 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "j3h00yhjyw6p",
+      "name": "Issues with 1.1.1.1 public resolver and WARP",
+      "status": "investigating",
+      "created_at": "2023-10-04T08:19:04.043Z",
+      "updated_at": "2023-10-04T08:25:38.012Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/y88r2gwzkprx",
+      "started_at": "2023-10-04T08:19:04.032Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "55k0thzcf68k",
+          "status": "investigating",
+          "body": "Cloudflare is also aware of increased Pages build failures as a result.",
+          "incident_id": "j3h00yhjyw6p",
+          "created_at": "2023-10-04T08:25:38.010Z",
+          "updated_at": "2023-10-04T08:25:38.010Z",
+          "display_at": "2023-10-04T08:25:38.010Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "8w536gxk7dvq",
+              "name": "Cloudflare Sites and Services - Recursive DNS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "9ncxl91hyb11",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating, DNS resolution issues which potentially impacts multiple users using 1.1.1.1 public resolver and/or WARP. \n\nFurther detail will be provided as more information becomes available.",
+          "incident_id": "j3h00yhjyw6p",
+          "created_at": "2023-10-04T08:19:04.141Z",
+          "updated_at": "2023-10-04T08:19:04.141Z",
+          "display_at": "2023-10-04T08:19:04.141Z",
+          "affected_components": [
+            {
+              "code": "8w536gxk7dvq",
+              "name": "Cloudflare Sites and Services - Recursive DNS",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2023-10-04T08:25:37.970Z",
+          "position": 47,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "8w536gxk7dvq",
+          "name": "Recursive DNS",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:51:39.639Z",
+          "updated_at": "2023-10-04T08:19:04.086Z",
+          "position": 51,
+          "description": "Cloudflare's free recursive DNS service at 1.1.1.1 and 1.0.0.1",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "k04jkcpzxn94",
+          "name": "WARP",
+          "status": "degraded_performance",
+          "created_at": "2019-09-30T09:25:38.587Z",
+          "updated_at": "2023-10-04T08:19:04.100Z",
+          "position": 64,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "kt34g246sny7",
