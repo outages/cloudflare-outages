@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-08T18:26:03.421Z"
+    "updated_at": "2023-10-08T20:09:56.652Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -4788,9 +4788,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2023-10-04T11:00:56.949Z",
+      "updated_at": "2023-10-08T20:09:56.593Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -5403,9 +5403,9 @@
     {
       "id": "47xg28c02lnk",
       "name": "Stream",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:53:34.953Z",
-      "updated_at": "2023-09-15T19:03:48.581Z",
+      "updated_at": "2023-10-08T20:09:56.609Z",
       "position": 56,
       "description": "Cloudflare's on-demand end-to-end CDN video streaming service",
       "showcase": false,
@@ -6256,7 +6256,103 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "64wsqjxnljn3",
+      "name": "Elevated 5xx HTTP Errors and Availability Issues",
+      "status": "investigating",
+      "created_at": "2023-10-08T20:09:56.555Z",
+      "updated_at": "2023-10-08T20:09:56.651Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/0rx05tbnz8l9",
+      "started_at": "2023-10-08T20:09:56.545Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "s3c6dc43w2m3",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue which potentially impacts multiple customers. \n\nFurther detail will be provided as more information becomes available.",
+          "incident_id": "64wsqjxnljn3",
+          "created_at": "2023-10-08T20:09:56.649Z",
+          "updated_at": "2023-10-08T20:09:56.649Z",
+          "display_at": "2023-10-08T20:09:56.649Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4n0gb0kh02gf",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2023-01-13T13:39:19.804Z",
+          "updated_at": "2023-10-06T11:16:26.206Z",
+          "position": 43,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-01-13",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2023-10-08T20:09:56.593Z",
+          "position": 47,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "47xg28c02lnk",
+          "name": "Stream",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:53:34.953Z",
+          "updated_at": "2023-10-08T20:09:56.609Z",
+          "position": 56,
+          "description": "Cloudflare's on-demand end-to-end CDN video streaming service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "fv3p4w984ll6",
