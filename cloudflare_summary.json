@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-09T10:33:31.148Z"
+    "updated_at": "2023-10-09T10:47:06.801Z"
   },
   "components": [
     {
@@ -6257,6 +6257,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "8q3p31tfp5yg",
+      "name": "Issues with IPSec tunnels in Magic Transit and Magic WAN",
+      "status": "monitoring",
+      "created_at": "2023-10-09T10:47:06.725Z",
+      "updated_at": "2023-10-09T10:47:06.799Z",
+      "monitoring_at": "2023-10-09T10:47:06.784Z",
+      "resolved_at": null,
+      "impact": "none",
+      "shortlink": "https://stspg.io/lf6243zyklzg",
+      "started_at": "2023-10-09T10:47:06.715Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "zs65tcrfd7gn",
+          "status": "monitoring",
+          "body": "Cloudflare is currently investigating issues related to IPSec tunnels in Magic Transit and Magic WAN products. Impacted customers may have experienced problems with Internet Key Exchange (IKE) and Internet Protocol Security (IPSec) negotiation and authentication starting from 2023-10-08 19:30 UTC. \n\nThe root cause of the issue has been mitigated around 2023-10-09 05:45 UTC, however some tunnels may still remain impacted due to the way IKE renegotiation works. If your tunnels are still affected, please bounce your tunnel interface to reestablish the connection.",
+          "incident_id": "8q3p31tfp5yg",
+          "created_at": "2023-10-09T10:47:06.784Z",
+          "updated_at": "2023-10-09T10:47:06.784Z",
+          "display_at": "2023-10-09T10:47:06.784Z",
+          "affected_components": [
+            {
+              "code": "bjlxcss20fsl",
+              "name": "Cloudflare Sites and Services - Magic Transit",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Magic WAN",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bjlxcss20fsl",
+          "name": "Magic Transit",
+          "status": "operational",
+          "created_at": "2020-12-17T09:48:10.912Z",
+          "updated_at": "2023-10-05T21:14:02.507Z",
+          "position": 39,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-12-17",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qgnxz00j1f2v",
+          "name": "Magic WAN",
+          "status": "operational",
+          "created_at": "2022-12-22T09:51:36.130Z",
+          "updated_at": "2023-08-12T06:45:38.694Z",
+          "position": 40,
+          "description": "Magic WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
+          "showcase": false,
+          "start_date": "2022-12-22",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "msghx93bcjjd",
       "name": "Intermittent API failures for Cloudflare Pages, Workers and Images",
