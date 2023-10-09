@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-09T10:47:06.801Z"
+    "updated_at": "2023-10-09T11:06:09.368Z"
   },
   "components": [
     {
@@ -6258,92 +6258,114 @@
   ],
   "incidents": [
     {
-      "id": "8q3p31tfp5yg",
-      "name": "Issues with IPSec tunnels in Magic Transit and Magic WAN",
-      "status": "monitoring",
-      "created_at": "2023-10-09T10:47:06.725Z",
-      "updated_at": "2023-10-09T10:47:06.799Z",
-      "monitoring_at": "2023-10-09T10:47:06.784Z",
-      "resolved_at": null,
-      "impact": "none",
-      "shortlink": "https://stspg.io/lf6243zyklzg",
-      "started_at": "2023-10-09T10:47:06.715Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "zs65tcrfd7gn",
-          "status": "monitoring",
-          "body": "Cloudflare is currently investigating issues related to IPSec tunnels in Magic Transit and Magic WAN products. Impacted customers may have experienced problems with Internet Key Exchange (IKE) and Internet Protocol Security (IPSec) negotiation and authentication starting from 2023-10-08 19:30 UTC. \n\nThe root cause of the issue has been mitigated around 2023-10-09 05:45 UTC, however some tunnels may still remain impacted due to the way IKE renegotiation works. If your tunnels are still affected, please bounce your tunnel interface to reestablish the connection.",
-          "incident_id": "8q3p31tfp5yg",
-          "created_at": "2023-10-09T10:47:06.784Z",
-          "updated_at": "2023-10-09T10:47:06.784Z",
-          "display_at": "2023-10-09T10:47:06.784Z",
-          "affected_components": [
-            {
-              "code": "bjlxcss20fsl",
-              "name": "Cloudflare Sites and Services - Magic Transit",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "qgnxz00j1f2v",
-              "name": "Cloudflare Sites and Services - Magic WAN",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "bjlxcss20fsl",
-          "name": "Magic Transit",
-          "status": "operational",
-          "created_at": "2020-12-17T09:48:10.912Z",
-          "updated_at": "2023-10-05T21:14:02.507Z",
-          "position": 39,
-          "description": null,
-          "showcase": false,
-          "start_date": "2020-12-17",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "qgnxz00j1f2v",
-          "name": "Magic WAN",
-          "status": "operational",
-          "created_at": "2022-12-22T09:51:36.130Z",
-          "updated_at": "2023-08-12T06:45:38.694Z",
-          "position": 40,
-          "description": "Magic WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
-          "showcase": false,
-          "start_date": "2022-12-22",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
       "id": "msghx93bcjjd",
       "name": "Intermittent API failures for Cloudflare Pages, Workers and Images",
-      "status": "investigating",
-      "created_at": "2023-10-09T06:36:24.640Z",
-      "updated_at": "2023-10-09T08:49:19.927Z",
-      "monitoring_at": null,
+      "status": "identified",
+      "created_at": "2023-10-09T06:00:24.000Z",
+      "updated_at": "2023-10-09T11:06:09.359Z",
+      "monitoring_at": "2023-10-09T10:56:53.807Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/xndq6fxn8ln6",
       "started_at": "2023-10-09T06:00:24.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "v3b1z20r28j6",
+          "status": "identified",
+          "body": "A fix has been implemented for Cloudflare Pages issues and we are monitoring the results. We are continuing to work on a fix for Cloudflare Images.",
+          "incident_id": "msghx93bcjjd",
+          "created_at": "2023-10-09T11:06:09.356Z",
+          "updated_at": "2023-10-09T11:06:09.356Z",
+          "display_at": "2023-10-09T11:06:09.356Z",
+          "affected_components": [
+            {
+              "code": "3lbj8lp3d750",
+              "name": "Cloudflare Sites and Services - Images",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "f0px8ybk5j4n",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "msghx93bcjjd",
+          "created_at": "2023-10-09T10:56:53.807Z",
+          "updated_at": "2023-10-09T10:56:53.807Z",
+          "display_at": "2023-10-09T10:56:53.807Z",
+          "affected_components": [
+            {
+              "code": "3lbj8lp3d750",
+              "name": "Cloudflare Sites and Services - Images",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "rtrs848x9crd",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "msghx93bcjjd",
+          "created_at": "2023-10-09T10:52:57.648Z",
+          "updated_at": "2023-10-09T10:52:57.648Z",
+          "display_at": "2023-10-09T10:52:57.648Z",
+          "affected_components": [
+            {
+              "code": "3lbj8lp3d750",
+              "name": "Cloudflare Sites and Services - Images",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "wzp56grdpcqs",
           "status": "investigating",
@@ -6451,6 +6473,80 @@
         }
       ],
       "reminder_intervals": "[]"
+    },
+    {
+      "id": "8q3p31tfp5yg",
+      "name": "Issues with IPSec tunnels in Magic Transit and Magic WAN",
+      "status": "monitoring",
+      "created_at": "2023-10-09T10:47:06.725Z",
+      "updated_at": "2023-10-09T10:47:06.799Z",
+      "monitoring_at": "2023-10-09T10:47:06.784Z",
+      "resolved_at": null,
+      "impact": "none",
+      "shortlink": "https://stspg.io/lf6243zyklzg",
+      "started_at": "2023-10-09T10:47:06.715Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "zs65tcrfd7gn",
+          "status": "monitoring",
+          "body": "Cloudflare is currently investigating issues related to IPSec tunnels in Magic Transit and Magic WAN products. Impacted customers may have experienced problems with Internet Key Exchange (IKE) and Internet Protocol Security (IPSec) negotiation and authentication starting from 2023-10-08 19:30 UTC. \n\nThe root cause of the issue has been mitigated around 2023-10-09 05:45 UTC, however some tunnels may still remain impacted due to the way IKE renegotiation works. If your tunnels are still affected, please bounce your tunnel interface to reestablish the connection.",
+          "incident_id": "8q3p31tfp5yg",
+          "created_at": "2023-10-09T10:47:06.784Z",
+          "updated_at": "2023-10-09T10:47:06.784Z",
+          "display_at": "2023-10-09T10:47:06.784Z",
+          "affected_components": [
+            {
+              "code": "bjlxcss20fsl",
+              "name": "Cloudflare Sites and Services - Magic Transit",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Magic WAN",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bjlxcss20fsl",
+          "name": "Magic Transit",
+          "status": "operational",
+          "created_at": "2020-12-17T09:48:10.912Z",
+          "updated_at": "2023-10-05T21:14:02.507Z",
+          "position": 39,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-12-17",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qgnxz00j1f2v",
+          "name": "Magic WAN",
+          "status": "operational",
+          "created_at": "2022-12-22T09:51:36.130Z",
+          "updated_at": "2023-08-12T06:45:38.694Z",
+          "position": 40,
+          "description": "Magic WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
+          "showcase": false,
+          "start_date": "2022-12-22",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
     }
   ],
   "scheduled_maintenances": [
