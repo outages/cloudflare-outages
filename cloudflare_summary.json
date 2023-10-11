@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-11T14:45:06.318Z"
+    "updated_at": "2023-10-11T15:08:43.775Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1625,7 +1625,7 @@
       "name": "Caçador, Brazil - (CFC)",
       "status": "partial_outage",
       "created_at": "2021-07-08T07:57:05.268Z",
-      "updated_at": "2023-10-11T13:00:46.917Z",
+      "updated_at": "2023-10-11T15:08:43.773Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -2765,7 +2765,7 @@
       "name": "Istanbul, Turkey - (IST)",
       "status": "partial_outage",
       "created_at": "2018-02-28T13:32:42.674Z",
-      "updated_at": "2023-10-10T23:07:06.762Z",
+      "updated_at": "2023-10-11T15:03:36.431Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -3573,9 +3573,9 @@
     {
       "id": "d1r0plwsl5qb",
       "name": "Firewall",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2020-09-04T17:53:26.383Z",
-      "updated_at": "2023-10-11T14:36:12.264Z",
+      "updated_at": "2023-10-11T14:52:08.558Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -6256,74 +6256,35 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [
+  "incidents": [],
+  "scheduled_maintenances": [
     {
-      "id": "rrxgwsmywxdg",
-      "name": "Publishing of Lists updates delayed to the edge",
-      "status": "monitoring",
-      "created_at": "2023-10-11T14:36:12.238Z",
-      "updated_at": "2023-10-11T14:45:06.316Z",
-      "monitoring_at": "2023-10-11T14:45:06.301Z",
+      "id": "p8ggv7wmhcwx",
+      "name": "IST (Istanbul) on 2023-10-11",
+      "status": "scheduled",
+      "created_at": "2023-10-11T15:00:22.518Z",
+      "updated_at": "2023-10-11T15:00:22.594Z",
+      "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/qj28gfytvhz4",
-      "started_at": "2023-10-11T14:36:12.232Z",
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/9z0rdtm4bcm3",
+      "started_at": "2023-10-11T15:00:22.511Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "tx409dztb05d",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "rrxgwsmywxdg",
-          "created_at": "2023-10-11T14:45:06.301Z",
-          "updated_at": "2023-10-11T14:45:06.301Z",
-          "display_at": "2023-10-11T14:45:06.301Z",
+          "id": "8vb6z6ymg8hp",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in IST (Istanbul) datacenter between 2023-10-11 20:00 and 2023-10-12 13:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "p8ggv7wmhcwx",
+          "created_at": "2023-10-11T15:00:22.591Z",
+          "updated_at": "2023-10-11T15:00:22.591Z",
+          "display_at": "2023-10-11T15:00:22.591Z",
           "affected_components": [
             {
-              "code": "d1r0plwsl5qb",
-              "name": "Cloudflare Sites and Services - Firewall",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "byv2zwd3pkvb",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "rrxgwsmywxdg",
-          "created_at": "2023-10-11T14:44:55.216Z",
-          "updated_at": "2023-10-11T14:44:55.216Z",
-          "display_at": "2023-10-11T14:44:55.216Z",
-          "affected_components": [
-            {
-              "code": "d1r0plwsl5qb",
-              "name": "Cloudflare Sites and Services - Firewall",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "44ykl6d4p2sp",
-          "status": "investigating",
-          "body": "Customer might experience delay in publishing updates for changes to IP, Redirect, ASN and Hostname lists.",
-          "incident_id": "rrxgwsmywxdg",
-          "created_at": "2023-10-11T14:36:12.303Z",
-          "updated_at": "2023-10-11T14:36:12.303Z",
-          "display_at": "2023-10-11T14:36:12.303Z",
-          "affected_components": [
-            {
-              "code": "d1r0plwsl5qb",
-              "name": "Cloudflare Sites and Services - Firewall",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
+              "code": "1njzngd1wdrj",
+              "name": "Europe - Istanbul, Turkey - (IST)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -6333,25 +6294,24 @@
       ],
       "components": [
         {
-          "id": "d1r0plwsl5qb",
-          "name": "Firewall",
-          "status": "degraded_performance",
-          "created_at": "2020-09-04T17:53:26.383Z",
-          "updated_at": "2023-10-11T14:36:12.264Z",
-          "position": 30,
+          "id": "1njzngd1wdrj",
+          "name": "Istanbul, Turkey - (IST)",
+          "status": "partial_outage",
+          "created_at": "2018-02-28T13:32:42.674Z",
+          "updated_at": "2023-10-11T15:03:36.431Z",
+          "position": 21,
           "description": null,
           "showcase": false,
-          "start_date": "2020-09-04",
-          "group_id": "1km35smx8p41",
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "reminder_intervals": null
-    }
-  ],
-  "scheduled_maintenances": [
+      "scheduled_for": "2023-10-11T20:00:00.000Z",
+      "scheduled_until": "2023-10-12T13:00:00.000Z"
+    },
     {
       "id": "7mhv50r0b46x",
       "name": "LAX (Los Angeles) on 2023-10-12",
@@ -6407,60 +6367,6 @@
       "scheduled_until": "2023-10-12T06:45:00.000Z"
     },
     {
-      "id": "mgjqnft97z43",
-      "name": "CPH (Copenhagen) on 2023-10-12",
-      "status": "scheduled",
-      "created_at": "2023-10-09T16:40:47.440Z",
-      "updated_at": "2023-10-09T16:40:47.516Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/tnwgqjszp6x5",
-      "started_at": "2023-10-09T16:40:47.432Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "kntxr3rcx8ct",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in CPH (Copenhagen) datacenter on 2023-10-12 between 07:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "mgjqnft97z43",
-          "created_at": "2023-10-09T16:40:47.514Z",
-          "updated_at": "2023-10-09T16:40:47.514Z",
-          "display_at": "2023-10-09T16:40:47.514Z",
-          "affected_components": [
-            {
-              "code": "gt279m9y3f8q",
-              "name": "Europe - Copenhagen, Denmark - (CPH)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "gt279m9y3f8q",
-          "name": "Copenhagen, Denmark - (CPH)",
-          "status": "operational",
-          "created_at": "2015-11-03T02:10:58.762Z",
-          "updated_at": "2023-03-15T09:23:56.107Z",
-          "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-10-12T07:00:00.000Z",
-      "scheduled_until": "2023-10-12T12:00:00.000Z"
-    },
-    {
       "id": "02nnj1t22byx",
       "name": "HKG (Hong Kong) on 2023-10-12",
       "status": "scheduled",
@@ -6506,6 +6412,60 @@
           "showcase": false,
           "start_date": null,
           "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-10-12T07:00:00.000Z",
+      "scheduled_until": "2023-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "mgjqnft97z43",
+      "name": "CPH (Copenhagen) on 2023-10-12",
+      "status": "scheduled",
+      "created_at": "2023-10-09T16:40:47.440Z",
+      "updated_at": "2023-10-09T16:40:47.516Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/tnwgqjszp6x5",
+      "started_at": "2023-10-09T16:40:47.432Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "kntxr3rcx8ct",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in CPH (Copenhagen) datacenter on 2023-10-12 between 07:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "mgjqnft97z43",
+          "created_at": "2023-10-09T16:40:47.514Z",
+          "updated_at": "2023-10-09T16:40:47.514Z",
+          "display_at": "2023-10-09T16:40:47.514Z",
+          "affected_components": [
+            {
+              "code": "gt279m9y3f8q",
+              "name": "Europe - Copenhagen, Denmark - (CPH)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gt279m9y3f8q",
+          "name": "Copenhagen, Denmark - (CPH)",
+          "status": "operational",
+          "created_at": "2015-11-03T02:10:58.762Z",
+          "updated_at": "2023-03-15T09:23:56.107Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
