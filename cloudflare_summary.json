@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-12T12:39:31.943Z"
+    "updated_at": "2023-10-12T13:01:26.614Z"
   },
   "components": [
     {
@@ -1623,9 +1623,9 @@
     {
       "id": "ry378yzsq7kp",
       "name": "Caçador, Brazil - (CFC)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-08T07:57:05.268Z",
-      "updated_at": "2023-10-12T12:14:03.141Z",
+      "updated_at": "2023-10-12T12:59:54.496Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -6260,16 +6260,36 @@
     {
       "id": "b7x4yzgywlln",
       "name": "Cloudflare Workers Issues",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2023-10-12T10:24:43.501Z",
-      "updated_at": "2023-10-12T10:24:43.610Z",
-      "monitoring_at": null,
+      "updated_at": "2023-10-12T12:59:26.221Z",
+      "monitoring_at": "2023-10-12T12:59:26.203Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/0ngr8dn8h7wv",
       "started_at": "2023-10-12T10:24:43.491Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "lmzb88bpygd7",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "b7x4yzgywlln",
+          "created_at": "2023-10-12T12:59:26.203Z",
+          "updated_at": "2023-10-12T12:59:26.203Z",
+          "display_at": "2023-10-12T12:59:26.203Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "qr48lycgj510",
           "status": "identified",
@@ -6977,86 +6997,6 @@
       ],
       "scheduled_for": "2023-10-12T10:00:00.000Z",
       "scheduled_until": "2023-10-12T18:30:00.000Z"
-    },
-    {
-      "id": "p8ggv7wmhcwx",
-      "name": "IST (Istanbul) on 2023-10-11",
-      "status": "in_progress",
-      "created_at": "2023-10-11T15:00:22.518Z",
-      "updated_at": "2023-10-11T20:00:30.147Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/9z0rdtm4bcm3",
-      "started_at": "2023-10-11T15:00:22.511Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "mv7tgwwq0p03",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "p8ggv7wmhcwx",
-          "created_at": "2023-10-11T20:00:30.142Z",
-          "updated_at": "2023-10-11T20:00:30.142Z",
-          "display_at": "2023-10-11T20:00:30.142Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "k3m84mccy10c",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "p8ggv7wmhcwx",
-          "created_at": "2023-10-11T18:59:59.290Z",
-          "updated_at": "2023-10-11T18:59:59.290Z",
-          "display_at": "2023-10-11T18:59:59.290Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "8vb6z6ymg8hp",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in IST (Istanbul) datacenter between 2023-10-11 20:00 and 2023-10-12 13:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "p8ggv7wmhcwx",
-          "created_at": "2023-10-11T15:00:22.591Z",
-          "updated_at": "2023-10-11T15:00:22.591Z",
-          "display_at": "2023-10-11T15:00:22.591Z",
-          "affected_components": [
-            {
-              "code": "1njzngd1wdrj",
-              "name": "Europe - Istanbul, Turkey - (IST)",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "1njzngd1wdrj",
-          "name": "Istanbul, Turkey - (IST)",
-          "status": "partial_outage",
-          "created_at": "2018-02-28T13:32:42.674Z",
-          "updated_at": "2023-10-11T15:03:36.431Z",
-          "position": 21,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-10-11T20:00:00.000Z",
-      "scheduled_until": "2023-10-12T13:00:00.000Z"
     }
   ],
   "status": {
