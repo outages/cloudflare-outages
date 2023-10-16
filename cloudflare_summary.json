@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-16T15:29:57.845Z"
+    "updated_at": "2023-10-16T16:18:24.749Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2163,9 +2163,9 @@
     {
       "id": "rq86nd41r4t4",
       "name": "Lagos, Nigeria - (LOS)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-10-31T23:12:02.203Z",
-      "updated_at": "2023-10-10T22:51:39.448Z",
+      "updated_at": "2023-10-16T16:18:24.747Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -4203,9 +4203,9 @@
     {
       "id": "bjlxcss20fsl",
       "name": "Magic Transit",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-12-17T09:48:10.912Z",
-      "updated_at": "2023-10-05T21:14:02.507Z",
+      "updated_at": "2023-10-16T16:16:00.449Z",
       "position": 39,
       "description": null,
       "showcase": false,
@@ -4293,9 +4293,9 @@
     {
       "id": "qgnxz00j1f2v",
       "name": "Magic WAN",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-12-22T09:51:36.130Z",
-      "updated_at": "2023-08-12T06:45:38.694Z",
+      "updated_at": "2023-10-16T16:16:00.463Z",
       "position": 40,
       "description": "Magic WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
       "showcase": false,
@@ -6256,7 +6256,82 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "jvphdytp8165",
+      "name": "Issues with updating static routes in Magic products",
+      "status": "investigating",
+      "created_at": "2023-10-16T16:16:00.424Z",
+      "updated_at": "2023-10-16T16:16:00.503Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/ds0v9pq9sxv3",
+      "started_at": "2023-10-16T16:16:00.416Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "17nsnmt3ldgc",
+          "status": "investigating",
+          "body": "Cloudflare is currently investigating issues related to updating static routes in Magic Transit and Magic WAN products. Impacted customers may not be able to add, delete or change their static routes in Magic products using dashboard or API.\n\nWe are working to mitigate the impact to Magic Transit and Magic WAN customers. More updates to follow shortly.",
+          "incident_id": "jvphdytp8165",
+          "created_at": "2023-10-16T16:16:00.501Z",
+          "updated_at": "2023-10-16T16:16:00.501Z",
+          "display_at": "2023-10-16T16:16:00.501Z",
+          "affected_components": [
+            {
+              "code": "bjlxcss20fsl",
+              "name": "Cloudflare Sites and Services - Magic Transit",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Magic WAN",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bjlxcss20fsl",
+          "name": "Magic Transit",
+          "status": "degraded_performance",
+          "created_at": "2020-12-17T09:48:10.912Z",
+          "updated_at": "2023-10-16T16:16:00.449Z",
+          "position": 39,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-12-17",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qgnxz00j1f2v",
+          "name": "Magic WAN",
+          "status": "degraded_performance",
+          "created_at": "2022-12-22T09:51:36.130Z",
+          "updated_at": "2023-10-16T16:16:00.463Z",
+          "position": 40,
+          "description": "Magic WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
+          "showcase": false,
+          "start_date": "2022-12-22",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "y9fc0jcdt7qd",
