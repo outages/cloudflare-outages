@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-17T22:48:49.573Z"
+    "updated_at": "2023-10-17T23:09:14.604Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2028,9 +2028,9 @@
     {
       "id": "tdwwnvf8nv6h",
       "name": "Kigali, Rwanda - (KGL)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-06-17T03:27:21.977Z",
-      "updated_at": "2023-10-17T21:16:56.616Z",
+      "updated_at": "2023-10-17T23:09:14.600Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -4323,9 +4323,9 @@
     {
       "id": "pxfjpfczss60",
       "name": "San Diego, CA, United States - (SAN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2017-05-09T22:07:46.925Z",
-      "updated_at": "2023-10-17T19:09:09.032Z",
+      "updated_at": "2023-10-17T22:59:01.508Z",
       "position": 41,
       "description": null,
       "showcase": false,
@@ -4788,9 +4788,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2023-10-09T16:53:15.222Z",
+      "updated_at": "2023-10-17T22:53:03.124Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -5838,9 +5838,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2023-10-12T13:18:47.574Z",
+      "updated_at": "2023-10-17T22:53:03.141Z",
       "position": 66,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -6256,7 +6256,82 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "jslzg96cp29x",
+      "name": "Cloudflare Pages/Workers Delays",
+      "status": "investigating",
+      "created_at": "2023-10-17T22:53:03.080Z",
+      "updated_at": "2023-10-17T22:53:03.191Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/1h8q04wwzxqf",
+      "started_at": "2023-10-17T22:53:03.072Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "mw4x8fptmprs",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating an issue with Cloudflare Pages build delays and worker deployments. \n\nThis does not affect existing deployments, we are currently investigating.",
+          "incident_id": "jslzg96cp29x",
+          "created_at": "2023-10-17T22:53:03.189Z",
+          "updated_at": "2023-10-17T22:53:03.189Z",
+          "display_at": "2023-10-17T22:53:03.189Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2023-10-17T22:53:03.124Z",
+          "position": 47,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2023-10-17T22:53:03.141Z",
+          "position": 66,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "p51c5x79j9vq",
@@ -6527,93 +6602,6 @@
       ],
       "scheduled_for": "2023-10-19T13:00:00.000Z",
       "scheduled_until": "2023-10-19T21:00:00.000Z"
-    },
-    {
-      "id": "zmkwlfzbwdk2",
-      "name": "BUF (Buffalo) on 2023-10-17",
-      "status": "in_progress",
-      "created_at": "2023-10-16T21:00:36.444Z",
-      "updated_at": "2023-10-17T14:45:16.329Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/v0nkj86z7kzq",
-      "started_at": "2023-10-16T21:00:36.438Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "vywfkp6k3ffr",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "zmkwlfzbwdk2",
-          "created_at": "2023-10-17T14:45:16.326Z",
-          "updated_at": "2023-10-17T14:45:16.326Z",
-          "display_at": "2023-10-17T14:45:16.326Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "jjwvkz8fbpnc",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BUF (Buffalo) datacenter on 2023-10-17 between 14:45 and 23:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "zmkwlfzbwdk2",
-          "created_at": "2023-10-17T14:40:40.655Z",
-          "updated_at": "2023-10-17T14:40:40.655Z",
-          "display_at": "2023-10-17T14:40:40.655Z",
-          "affected_components": [
-            {
-              "code": "bz9bt1q3m2jy",
-              "name": "North America - Buffalo, NY, United States - (BUF)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "9x34tm3pjfyp",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BUF (Buffalo) datacenter on 2023-10-17 between 16:00 and 23:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "zmkwlfzbwdk2",
-          "created_at": "2023-10-16T21:00:36.485Z",
-          "updated_at": "2023-10-16T21:00:36.485Z",
-          "display_at": "2023-10-16T21:00:36.485Z",
-          "affected_components": [
-            {
-              "code": "bz9bt1q3m2jy",
-              "name": "North America - Buffalo, NY, United States - (BUF)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "bz9bt1q3m2jy",
-          "name": "Buffalo, NY, United States - (BUF)",
-          "status": "partial_outage",
-          "created_at": "2019-04-15T18:28:27.006Z",
-          "updated_at": "2023-10-17T14:50:21.898Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-10-17T14:45:00.000Z",
-      "scheduled_until": "2023-10-17T23:00:00.000Z"
     }
   ],
   "status": {
