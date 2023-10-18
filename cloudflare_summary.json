@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-18T12:00:01.612Z"
+    "updated_at": "2023-10-18T13:10:59.179Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3963,9 +3963,9 @@
     {
       "id": "gw1cztbpft9b",
       "name": "Kathmandu, Nepal - (KTM)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2023-10-13T07:14:56.773Z",
+      "updated_at": "2023-10-18T13:03:52.954Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -5583,9 +5583,9 @@
     {
       "id": "jzcwkvrc4w4q",
       "name": "Support Site",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-06-19T19:45:34.946Z",
-      "updated_at": "2023-10-10T12:19:10.788Z",
+      "updated_at": "2023-10-18T13:10:59.108Z",
       "position": 59,
       "description": "Knowledge base and support ticket portal at https://support.cloudflare.com",
       "showcase": false,
@@ -6256,48 +6256,34 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "364k13mhkqdy",
-      "name": "RIC (Richmond) on 2023-10-18",
-      "status": "scheduled",
-      "created_at": "2023-10-16T23:40:30.260Z",
-      "updated_at": "2023-10-18T12:00:01.599Z",
+      "id": "c3p59mc7mh5w",
+      "name": "Cloudflare Support Website having service issues",
+      "status": "investigating",
+      "created_at": "2023-10-18T13:10:59.065Z",
+      "updated_at": "2023-10-18T13:10:59.175Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/9wj34zfd9d1s",
-      "started_at": "2023-10-16T23:40:30.253Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5wprkd7nb7fj",
+      "started_at": "2023-10-18T13:10:59.056Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "n9tgt7xkcd26",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "364k13mhkqdy",
-          "created_at": "2023-10-18T12:00:01.342Z",
-          "updated_at": "2023-10-18T12:00:01.342Z",
-          "display_at": "2023-10-18T12:00:01.342Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "twbh7xbx5npx",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in RIC (Richmond) datacenter on 2023-10-18 between 13:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "364k13mhkqdy",
-          "created_at": "2023-10-16T23:40:30.323Z",
-          "updated_at": "2023-10-16T23:40:30.323Z",
-          "display_at": "2023-10-16T23:40:30.323Z",
+          "id": "ywt23n9x61l1",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with our support portal (support.cloudflare.com) returning 526 errors.\nCustomers may not be able to create new tickets using this method. Other support options are available, you may use the means described in:\nhttps://developers.cloudflare.com/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/\n\nMore updates to follow.",
+          "incident_id": "c3p59mc7mh5w",
+          "created_at": "2023-10-18T13:10:59.172Z",
+          "updated_at": "2023-10-18T13:10:59.172Z",
+          "display_at": "2023-10-18T13:10:59.172Z",
           "affected_components": [
             {
-              "code": "cgpftq0mp2h5",
-              "name": "North America - Richmond, VA, United States - (RIC)",
+              "code": "jzcwkvrc4w4q",
+              "name": "Cloudflare Sites and Services - Support Site",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -6307,24 +6293,25 @@
       ],
       "components": [
         {
-          "id": "cgpftq0mp2h5",
-          "name": "Richmond, VA, United States - (RIC)",
-          "status": "operational",
-          "created_at": "2018-06-28T11:32:08.646Z",
-          "updated_at": "2023-09-28T08:11:32.610Z",
-          "position": 38,
-          "description": null,
+          "id": "jzcwkvrc4w4q",
+          "name": "Support Site",
+          "status": "degraded_performance",
+          "created_at": "2020-06-19T19:45:34.946Z",
+          "updated_at": "2023-10-18T13:10:59.108Z",
+          "position": 59,
+          "description": "Knowledge base and support ticket portal at https://support.cloudflare.com",
           "showcase": false,
           "start_date": null,
-          "group_id": "4l01sk5cdn5c",
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-10-18T13:00:00.000Z",
-      "scheduled_until": "2023-10-18T21:00:00.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "h5cbmrrrp412",
       "name": "CLE (Cleveland) on 2023-10-19",
@@ -6488,56 +6475,56 @@
       "scheduled_until": "2023-10-19T21:00:00.000Z"
     },
     {
-      "id": "p51c5x79j9vq",
-      "name": "BNA (Nashville) on 2023-10-18",
+      "id": "364k13mhkqdy",
+      "name": "RIC (Richmond) on 2023-10-18",
       "status": "in_progress",
-      "created_at": "2023-10-13T03:41:02.892Z",
-      "updated_at": "2023-10-18T06:00:42.686Z",
+      "created_at": "2023-10-16T23:40:30.260Z",
+      "updated_at": "2023-10-18T13:00:18.718Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/fsp22sy487p4",
-      "started_at": "2023-10-13T03:41:02.886Z",
+      "shortlink": "https://stspg.io/9wj34zfd9d1s",
+      "started_at": "2023-10-16T23:40:30.253Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "cprtng839z48",
+          "id": "07vsn5tbhjh5",
           "status": "in_progress",
           "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "p51c5x79j9vq",
-          "created_at": "2023-10-18T06:00:42.670Z",
-          "updated_at": "2023-10-18T06:00:42.670Z",
-          "display_at": "2023-10-18T06:00:42.670Z",
+          "incident_id": "364k13mhkqdy",
+          "created_at": "2023-10-18T13:00:18.713Z",
+          "updated_at": "2023-10-18T13:00:18.713Z",
+          "display_at": "2023-10-18T13:00:18.713Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "qvg6h27y93pg",
+          "id": "n9tgt7xkcd26",
           "status": "scheduled",
           "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "p51c5x79j9vq",
-          "created_at": "2023-10-18T05:00:31.098Z",
-          "updated_at": "2023-10-18T05:00:31.098Z",
-          "display_at": "2023-10-18T05:00:31.098Z",
+          "incident_id": "364k13mhkqdy",
+          "created_at": "2023-10-18T12:00:01.342Z",
+          "updated_at": "2023-10-18T12:00:01.342Z",
+          "display_at": "2023-10-18T12:00:01.342Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "f7lgdrxq7pbd",
+          "id": "twbh7xbx5npx",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BNA (Nashville) datacenter on 2023-10-18 between 06:00 and 13:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "p51c5x79j9vq",
-          "created_at": "2023-10-13T03:41:02.944Z",
-          "updated_at": "2023-10-13T03:41:02.944Z",
-          "display_at": "2023-10-13T03:41:02.944Z",
+          "body": "We will be performing scheduled maintenance in RIC (Richmond) datacenter on 2023-10-18 between 13:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "364k13mhkqdy",
+          "created_at": "2023-10-16T23:40:30.323Z",
+          "updated_at": "2023-10-16T23:40:30.323Z",
+          "display_at": "2023-10-16T23:40:30.323Z",
           "affected_components": [
             {
-              "code": "vwctw131s16t",
-              "name": "North America - Nashville, United States - (BNA)",
+              "code": "cgpftq0mp2h5",
+              "name": "North America - Richmond, VA, United States - (RIC)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -6549,23 +6536,23 @@
       ],
       "components": [
         {
-          "id": "vwctw131s16t",
-          "name": "Nashville, United States - (BNA)",
+          "id": "cgpftq0mp2h5",
+          "name": "Richmond, VA, United States - (RIC)",
           "status": "operational",
-          "created_at": "2022-10-27T16:35:27.722Z",
-          "updated_at": "2023-10-18T07:46:17.509Z",
-          "position": 28,
+          "created_at": "2018-06-28T11:32:08.646Z",
+          "updated_at": "2023-09-28T08:11:32.610Z",
+          "position": 38,
           "description": null,
           "showcase": false,
-          "start_date": "2022-10-27",
+          "start_date": null,
           "group_id": "4l01sk5cdn5c",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-10-18T06:00:00.000Z",
-      "scheduled_until": "2023-10-18T13:00:00.000Z"
+      "scheduled_for": "2023-10-18T13:00:00.000Z",
+      "scheduled_until": "2023-10-18T21:00:00.000Z"
     }
   ],
   "status": {
