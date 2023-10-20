@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-20T11:31:06.716Z"
+    "updated_at": "2023-10-20T12:22:24.506Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2195,9 +2195,9 @@
     {
       "id": "5wnz34mhfhrk",
       "name": "CDN/Cache",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-25T19:03:33.850Z",
-      "updated_at": "2023-10-10T21:18:36.606Z",
+      "updated_at": "2023-10-20T12:22:24.448Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -3335,9 +3335,9 @@
     {
       "id": "46b99ptn6wdt",
       "name": "Islamabad, Pakistan - (ISB)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-01-30T07:36:19.547Z",
-      "updated_at": "2023-10-19T23:27:31.704Z",
+      "updated_at": "2023-10-20T12:10:13.838Z",
       "position": 27,
       "description": null,
       "showcase": false,
@@ -5030,9 +5030,9 @@
     {
       "id": "q17w3zhnl69c",
       "name": "Tver, Russian Federation - (KLD)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-09-08T13:18:32.600Z",
-      "updated_at": "2023-10-06T02:16:55.477Z",
+      "updated_at": "2023-10-20T11:54:23.098Z",
       "position": 50,
       "description": null,
       "showcase": false,
@@ -5435,9 +5435,9 @@
     {
       "id": "fs7l9rdk9kq5",
       "name": "Albuquerque, United States - (ABQ)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-05-04T12:40:26.621Z",
-      "updated_at": "2023-10-20T10:29:03.720Z",
+      "updated_at": "2023-10-20T11:56:43.955Z",
       "position": 56,
       "description": null,
       "showcase": false,
@@ -5495,9 +5495,9 @@
     {
       "id": "wnbl5c6vrmv6",
       "name": "Guadalajara, Mexico - (GDL)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-06-07T11:00:38.478Z",
-      "updated_at": "2023-10-20T10:23:56.820Z",
+      "updated_at": "2023-10-20T11:51:35.158Z",
       "position": 57,
       "description": null,
       "showcase": false,
@@ -6288,7 +6288,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "9548jjpnvhsh",
+      "name": "Issues with WebSockets Performance",
+      "status": "investigating",
+      "created_at": "2023-10-20T12:22:24.413Z",
+      "updated_at": "2023-10-20T12:22:24.504Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/s2j0rm3rz8sd",
+      "started_at": "2023-10-20T12:22:24.405Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "k14nmg3025bg",
+          "status": "investigating",
+          "body": "Cloudflare is investigating potential issues with WebSockets performance. Affected WebSockets connections may fail at the start or terminate at a rate that is higher than expected.\n\nWe are working to analyse and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "9548jjpnvhsh",
+          "created_at": "2023-10-20T12:22:24.501Z",
+          "updated_at": "2023-10-20T12:22:24.501Z",
+          "display_at": "2023-10-20T12:22:24.501Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5wnz34mhfhrk",
+          "name": "CDN/Cache",
+          "status": "degraded_performance",
+          "created_at": "2020-03-25T19:03:33.850Z",
+          "updated_at": "2023-10-20T12:22:24.448Z",
+          "position": 15,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "njlkgqcs04j4",
