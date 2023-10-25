@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-25T15:32:38.093Z"
+    "updated_at": "2023-10-25T15:50:06.000Z"
   },
   "components": [
     {
@@ -664,9 +664,9 @@
     {
       "id": "d4nfj71p66fy",
       "name": "Belém, Brazil - (BEL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-08-19T14:52:39.395Z",
-      "updated_at": "2023-10-08T00:28:30.246Z",
+      "updated_at": "2023-10-25T15:44:25.995Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -3890,9 +3890,9 @@
     {
       "id": "f95c4c2zcg0t",
       "name": "Karachi, Pakistan - (KHI)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-12-04T16:17:59.275Z",
-      "updated_at": "2023-10-24T23:35:32.839Z",
+      "updated_at": "2023-10-25T15:44:08.662Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -5675,9 +5675,9 @@
     {
       "id": "y98zlwj1d7zh",
       "name": "Tunnel",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:28:05.466Z",
-      "updated_at": "2023-10-10T12:19:41.052Z",
+      "updated_at": "2023-10-25T15:50:05.908Z",
       "position": 61,
       "description": "Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address",
       "showcase": false,
@@ -5930,9 +5930,9 @@
     {
       "id": "kf0ktv29xrfy",
       "name": "Zero Trust",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-08T15:53:09.058Z",
-      "updated_at": "2023-10-18T16:52:38.213Z",
+      "updated_at": "2023-10-25T15:50:05.931Z",
       "position": 70,
       "description": null,
       "showcase": false,
@@ -6294,7 +6294,7 @@
       "name": "Cloudflare Dashboard and Cloudflare API service issues",
       "status": "investigating",
       "created_at": "2023-10-25T15:17:31.470Z",
-      "updated_at": "2023-10-25T15:32:38.085Z",
+      "updated_at": "2023-10-25T15:50:05.989Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "critical",
@@ -6302,6 +6302,44 @@
       "started_at": "2023-10-25T15:17:31.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "tylyjcl96mdv",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "s1hkh315y9s9",
+          "created_at": "2023-10-25T15:50:05.986Z",
+          "updated_at": "2023-10-25T15:50:05.986Z",
+          "display_at": "2023-10-25T15:50:05.986Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "y98zlwj1d7zh",
+              "name": "Cloudflare Sites and Services - Tunnel",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "sbwfggwj36yz",
           "status": "investigating",
@@ -6331,10 +6369,10 @@
         {
           "id": "cgy6g95n1y82",
           "status": "investigating",
-          "body": "Cloudflare is investigating issues with Cloudflare Dashboard and related APIs.\n\nThese issues do not affect the serving of cached files via the Cloudflare CDN, or other security, zero trust or developer platform features running at the Cloudflare Edge.\n\nCustomers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
+          "body": "Cloudflare is investigating issues with Cloudflare Dashboard and related APIs.\n\nThese issues also affect Zero Trust, WARP, Cloudflare Tunnel and Device Posture.\n\nCustomers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
           "incident_id": "s1hkh315y9s9",
           "created_at": "2023-10-25T15:17:31.572Z",
-          "updated_at": "2023-10-25T15:31:51.552Z",
+          "updated_at": "2023-10-25T15:49:42.046Z",
           "display_at": "2023-10-25T15:17:31.000Z",
           "affected_components": [
             {
@@ -6381,6 +6419,36 @@
           "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
           "showcase": false,
           "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "y98zlwj1d7zh",
+          "name": "Tunnel",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:28:05.466Z",
+          "updated_at": "2023-10-25T15:50:05.908Z",
+          "position": 61,
+          "description": "Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "kf0ktv29xrfy",
+          "name": "Zero Trust",
+          "status": "degraded_performance",
+          "created_at": "2021-04-08T15:53:09.058Z",
+          "updated_at": "2023-10-25T15:50:05.931Z",
+          "position": 70,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-08",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
