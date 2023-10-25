@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-25T15:50:06.000Z"
+    "updated_at": "2023-10-25T16:04:56.250Z"
   },
   "components": [
     {
@@ -413,7 +413,7 @@
       "name": "Barcelona, Spain - (BCN)",
       "status": "partial_outage",
       "created_at": "2016-10-10T21:36:13.143Z",
-      "updated_at": "2023-10-25T01:12:40.449Z",
+      "updated_at": "2023-10-25T16:04:56.247Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -3335,9 +3335,9 @@
     {
       "id": "46b99ptn6wdt",
       "name": "Islamabad, Pakistan - (ISB)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-01-30T07:36:19.547Z",
-      "updated_at": "2023-10-25T10:41:08.533Z",
+      "updated_at": "2023-10-25T15:54:42.223Z",
       "position": 27,
       "description": null,
       "showcase": false,
@@ -4205,9 +4205,9 @@
     {
       "id": "bjlxcss20fsl",
       "name": "Magic Transit",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-12-17T09:48:10.912Z",
-      "updated_at": "2023-10-23T18:24:41.630Z",
+      "updated_at": "2023-10-25T15:55:46.506Z",
       "position": 39,
       "description": null,
       "showcase": false,
@@ -4295,9 +4295,9 @@
     {
       "id": "qgnxz00j1f2v",
       "name": "Magic WAN",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-12-22T09:51:36.130Z",
-      "updated_at": "2023-10-16T16:33:55.952Z",
+      "updated_at": "2023-10-25T15:55:46.525Z",
       "position": 40,
       "description": "Magic WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
       "showcase": false,
@@ -4595,9 +4595,9 @@
     {
       "id": "5xvn0m7tthlf",
       "name": "Notifications",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-09-13T12:50:58.081Z",
-      "updated_at": "2023-07-14T08:21:28.836Z",
+      "updated_at": "2023-10-25T15:55:46.540Z",
       "position": 44,
       "description": null,
       "showcase": false,
@@ -4790,9 +4790,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2023-10-20T16:45:39.289Z",
+      "updated_at": "2023-10-25T15:55:46.556Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -5855,9 +5855,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2023-10-20T16:45:39.302Z",
+      "updated_at": "2023-10-25T15:55:46.572Z",
       "position": 66,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -6294,7 +6294,7 @@
       "name": "Cloudflare Dashboard and Cloudflare API service issues",
       "status": "investigating",
       "created_at": "2023-10-25T15:17:31.470Z",
-      "updated_at": "2023-10-25T15:50:05.989Z",
+      "updated_at": "2023-10-25T16:04:32.332Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "critical",
@@ -6302,6 +6302,74 @@
       "started_at": "2023-10-25T15:17:31.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "mxsr47965b30",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.\n\nThis issue is impacting all services that rely on our API infrastructure including Alerts, Dashboard functionality, Zero Trust, WARP, Cloudflared, Waiting Room, Gateway, Stream, Magic WAN, API Shield, Pages, Workers.",
+          "incident_id": "s1hkh315y9s9",
+          "created_at": "2023-10-25T15:55:46.615Z",
+          "updated_at": "2023-10-25T16:04:32.328Z",
+          "display_at": "2023-10-25T15:55:46.000Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "bjlxcss20fsl",
+              "name": "Cloudflare Sites and Services - Magic Transit",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Magic WAN",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "5xvn0m7tthlf",
+              "name": "Cloudflare Sites and Services - Notifications",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "y98zlwj1d7zh",
+              "name": "Cloudflare Sites and Services - Tunnel",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "tylyjcl96mdv",
           "status": "investigating",
@@ -6369,10 +6437,10 @@
         {
           "id": "cgy6g95n1y82",
           "status": "investigating",
-          "body": "Cloudflare is investigating issues with Cloudflare Dashboard and related APIs.\n\nThese issues also affect Zero Trust, WARP, Cloudflare Tunnel and Device Posture.\n\nCustomers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
+          "body": "Cloudflare is investigating issues with Cloudflare Dashboard and related APIs.\n\nThis issue is impacting all services that rely on our API infrastructure including Alerts, Dashboard functionality, Zero Trust, WARP, Cloudflared, Waiting Room, Gateway, Stream, Magic WAN, API Shield, Pages, Workers. \nCustomers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
           "incident_id": "s1hkh315y9s9",
           "created_at": "2023-10-25T15:17:31.572Z",
-          "updated_at": "2023-10-25T15:49:42.046Z",
+          "updated_at": "2023-10-25T16:04:31.217Z",
           "display_at": "2023-10-25T15:17:31.000Z",
           "affected_components": [
             {
@@ -6425,6 +6493,66 @@
           "only_show_if_degraded": false
         },
         {
+          "id": "bjlxcss20fsl",
+          "name": "Magic Transit",
+          "status": "degraded_performance",
+          "created_at": "2020-12-17T09:48:10.912Z",
+          "updated_at": "2023-10-25T15:55:46.506Z",
+          "position": 39,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-12-17",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qgnxz00j1f2v",
+          "name": "Magic WAN",
+          "status": "degraded_performance",
+          "created_at": "2022-12-22T09:51:36.130Z",
+          "updated_at": "2023-10-25T15:55:46.525Z",
+          "position": 40,
+          "description": "Magic WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
+          "showcase": false,
+          "start_date": "2022-12-22",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5xvn0m7tthlf",
+          "name": "Notifications",
+          "status": "degraded_performance",
+          "created_at": "2022-09-13T12:50:58.081Z",
+          "updated_at": "2023-10-25T15:55:46.540Z",
+          "position": 44,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-09-13",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2023-10-25T15:55:46.556Z",
+          "position": 47,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
           "id": "y98zlwj1d7zh",
           "name": "Tunnel",
           "status": "degraded_performance",
@@ -6432,6 +6560,21 @@
           "updated_at": "2023-10-25T15:50:05.908Z",
           "position": 61,
           "description": "Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2023-10-25T15:55:46.572Z",
+          "position": 66,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
           "showcase": false,
           "start_date": null,
           "group_id": "1km35smx8p41",
@@ -6460,43 +6603,30 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "jjxh8q6sqjtt",
-      "name": "SYD (Sydney) on 2023-10-25",
+      "id": "hn129dt9k4kn",
+      "name": "VNO (Vilnius) on 2023-10-26",
       "status": "scheduled",
-      "created_at": "2023-10-24T20:20:19.031Z",
-      "updated_at": "2023-10-25T15:00:06.696Z",
+      "created_at": "2023-10-23T19:40:15.560Z",
+      "updated_at": "2023-10-23T19:40:15.602Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/89yzz6yd0f1r",
-      "started_at": "2023-10-24T20:20:19.021Z",
+      "shortlink": "https://stspg.io/5s484npt1kc6",
+      "started_at": "2023-10-23T19:40:15.555Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "khmvll6gthkq",
+          "id": "6x0vjqhsnv4z",
           "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "jjxh8q6sqjtt",
-          "created_at": "2023-10-25T15:00:06.395Z",
-          "updated_at": "2023-10-25T15:00:06.395Z",
-          "display_at": "2023-10-25T15:00:06.395Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "zcp05lhkcg2q",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SYD (Sydney) datacenter between 2023-10-25 16:00 and 2023-10-26 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "jjxh8q6sqjtt",
-          "created_at": "2023-10-24T20:20:19.099Z",
-          "updated_at": "2023-10-24T20:20:19.099Z",
-          "display_at": "2023-10-24T20:20:19.099Z",
+          "body": "We will be performing scheduled maintenance in VNO (Vilnius) datacenter on 2023-10-26 between 01:00 and 16:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "hn129dt9k4kn",
+          "created_at": "2023-10-23T19:40:15.601Z",
+          "updated_at": "2023-10-23T19:40:15.601Z",
+          "display_at": "2023-10-23T19:40:15.601Z",
           "affected_components": [
             {
-              "code": "fvqfrchfl8yc",
-              "name": "Oceania - Sydney, NSW, Australia - (SYD)",
+              "code": "6yvl5n02skmm",
+              "name": "Europe - Vilnius, Lithuania - (VNO)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -6508,23 +6638,23 @@
       ],
       "components": [
         {
-          "id": "fvqfrchfl8yc",
-          "name": "Sydney, NSW, Australia - (SYD)",
+          "id": "6yvl5n02skmm",
+          "name": "Vilnius, Lithuania - (VNO)",
           "status": "operational",
-          "created_at": "2014-10-27T21:45:36.735Z",
-          "updated_at": "2023-07-24T16:52:08.068Z",
-          "position": 11,
+          "created_at": "2018-03-28T09:29:13.363Z",
+          "updated_at": "2023-10-06T14:08:33.999Z",
+          "position": 52,
           "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "q6qm6fvkst4h",
+          "group_id": "zqxhg7y54vy8",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-10-25T16:00:00.000Z",
-      "scheduled_until": "2023-10-26T21:00:00.000Z"
+      "scheduled_for": "2023-10-26T01:00:00.000Z",
+      "scheduled_until": "2023-10-26T16:00:00.000Z"
     },
     {
       "id": "brp467mp4c07",
@@ -6579,60 +6709,6 @@
       ],
       "scheduled_for": "2023-10-26T01:00:00.000Z",
       "scheduled_until": "2023-10-26T05:00:00.000Z"
-    },
-    {
-      "id": "hn129dt9k4kn",
-      "name": "VNO (Vilnius) on 2023-10-26",
-      "status": "scheduled",
-      "created_at": "2023-10-23T19:40:15.560Z",
-      "updated_at": "2023-10-23T19:40:15.602Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/5s484npt1kc6",
-      "started_at": "2023-10-23T19:40:15.555Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "6x0vjqhsnv4z",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in VNO (Vilnius) datacenter on 2023-10-26 between 01:00 and 16:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "hn129dt9k4kn",
-          "created_at": "2023-10-23T19:40:15.601Z",
-          "updated_at": "2023-10-23T19:40:15.601Z",
-          "display_at": "2023-10-23T19:40:15.601Z",
-          "affected_components": [
-            {
-              "code": "6yvl5n02skmm",
-              "name": "Europe - Vilnius, Lithuania - (VNO)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "6yvl5n02skmm",
-          "name": "Vilnius, Lithuania - (VNO)",
-          "status": "operational",
-          "created_at": "2018-03-28T09:29:13.363Z",
-          "updated_at": "2023-10-06T14:08:33.999Z",
-          "position": 52,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-10-26T01:00:00.000Z",
-      "scheduled_until": "2023-10-26T16:00:00.000Z"
     },
     {
       "id": "y6qtxqwjrdjn",
@@ -6797,6 +6873,60 @@
       "scheduled_until": "2023-10-28T02:00:00.000Z"
     },
     {
+      "id": "gdb8xpzt8112",
+      "name": "BCN (Barcelona) on 2023-10-27",
+      "status": "scheduled",
+      "created_at": "2023-10-25T16:00:39.599Z",
+      "updated_at": "2023-10-25T16:00:39.686Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/7ckffbq3mpcl",
+      "started_at": "2023-10-25T16:00:39.592Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "7xdd1p580v7n",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in BCN (Barcelona) datacenter on 2023-10-27 between 19:00 and 23:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "gdb8xpzt8112",
+          "created_at": "2023-10-25T16:00:39.682Z",
+          "updated_at": "2023-10-25T16:00:39.682Z",
+          "display_at": "2023-10-25T16:00:39.682Z",
+          "affected_components": [
+            {
+              "code": "3lsyxp2s1khw",
+              "name": "Europe - Barcelona, Spain - (BCN)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3lsyxp2s1khw",
+          "name": "Barcelona, Spain - (BCN)",
+          "status": "partial_outage",
+          "created_at": "2016-10-10T21:36:13.143Z",
+          "updated_at": "2023-10-25T16:04:56.247Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-10-27T19:00:00.000Z",
+      "scheduled_until": "2023-10-27T23:00:00.000Z"
+    },
+    {
       "id": "0v324d1qv6ky",
       "name": "MNL (Manila) on 2023-11-17",
       "status": "scheduled",
@@ -6849,6 +6979,86 @@
       ],
       "scheduled_for": "2023-11-17T17:00:00.000Z",
       "scheduled_until": "2023-11-18T02:00:00.000Z"
+    },
+    {
+      "id": "jjxh8q6sqjtt",
+      "name": "SYD (Sydney) on 2023-10-25",
+      "status": "in_progress",
+      "created_at": "2023-10-24T20:20:19.031Z",
+      "updated_at": "2023-10-25T16:00:37.145Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/89yzz6yd0f1r",
+      "started_at": "2023-10-24T20:20:19.021Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "fmp4hvnvlzvs",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "jjxh8q6sqjtt",
+          "created_at": "2023-10-25T16:00:37.140Z",
+          "updated_at": "2023-10-25T16:00:37.140Z",
+          "display_at": "2023-10-25T16:00:37.140Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "khmvll6gthkq",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "jjxh8q6sqjtt",
+          "created_at": "2023-10-25T15:00:06.395Z",
+          "updated_at": "2023-10-25T15:00:06.395Z",
+          "display_at": "2023-10-25T15:00:06.395Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "zcp05lhkcg2q",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SYD (Sydney) datacenter between 2023-10-25 16:00 and 2023-10-26 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "jjxh8q6sqjtt",
+          "created_at": "2023-10-24T20:20:19.099Z",
+          "updated_at": "2023-10-24T20:20:19.099Z",
+          "display_at": "2023-10-24T20:20:19.099Z",
+          "affected_components": [
+            {
+              "code": "fvqfrchfl8yc",
+              "name": "Oceania - Sydney, NSW, Australia - (SYD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "fvqfrchfl8yc",
+          "name": "Sydney, NSW, Australia - (SYD)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:45:36.735Z",
+          "updated_at": "2023-07-24T16:52:08.068Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "q6qm6fvkst4h",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-10-25T16:00:00.000Z",
+      "scheduled_until": "2023-10-26T21:00:00.000Z"
     }
   ],
   "status": {
