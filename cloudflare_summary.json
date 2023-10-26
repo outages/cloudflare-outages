@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-26T21:17:55.124Z"
+    "updated_at": "2023-10-26T21:28:09.341Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -769,9 +769,9 @@
     {
       "id": "5wtvzd626rd8",
       "name": "Bangkok, Thailand - (BKK)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-04-21T05:37:43.134Z",
-      "updated_at": "2023-10-26T17:42:50.703Z",
+      "updated_at": "2023-10-26T21:28:08.910Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3965,9 +3965,9 @@
     {
       "id": "gw1cztbpft9b",
       "name": "Kathmandu, Nepal - (KTM)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2023-10-24T04:03:41.711Z",
+      "updated_at": "2023-10-26T21:28:09.339Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -4880,9 +4880,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2023-10-05T19:55:10.202Z",
+      "updated_at": "2023-10-26T21:26:47.258Z",
       "position": 48,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -5990,9 +5990,9 @@
     {
       "id": "56zs2vmr81l0",
       "name": "Yerevan, Armenia - (EVN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2017-03-06T05:40:56.147Z",
-      "updated_at": "2023-10-23T11:45:34.622Z",
+      "updated_at": "2023-10-26T21:23:00.022Z",
       "position": 72,
       "description": null,
       "showcase": false,
@@ -6288,7 +6288,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "bc7rz9j0tjmc",
+      "name": "Delay in provisioning new R2 users",
+      "status": "investigating",
+      "created_at": "2023-10-26T21:26:47.230Z",
+      "updated_at": "2023-10-26T21:26:47.307Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/3spgssyksk3d",
+      "started_at": "2023-10-26T21:26:47.223Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "07h43twjd23c",
+          "status": "investigating",
+          "body": "We're currently experiencing a delay provisioning new R2 users. Customers who sign up will experience a delay on being able to use the service after signing up.",
+          "incident_id": "bc7rz9j0tjmc",
+          "created_at": "2023-10-26T21:26:47.305Z",
+          "updated_at": "2023-10-26T21:26:47.305Z",
+          "display_at": "2023-10-26T21:26:47.305Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2023-10-26T21:26:47.258Z",
+          "position": 48,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "lmqlrf8jjh3v",
