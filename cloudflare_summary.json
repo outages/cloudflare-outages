@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-27T03:50:47.113Z"
+    "updated_at": "2023-10-27T04:03:23.762Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -411,9 +411,9 @@
     {
       "id": "3lsyxp2s1khw",
       "name": "Barcelona, Spain - (BCN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-10-10T21:36:13.143Z",
-      "updated_at": "2023-10-25T23:46:36.170Z",
+      "updated_at": "2023-10-27T04:01:04.372Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -664,9 +664,9 @@
     {
       "id": "d4nfj71p66fy",
       "name": "Belém, Brazil - (BEL)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-08-19T14:52:39.395Z",
-      "updated_at": "2023-10-25T21:02:34.767Z",
+      "updated_at": "2023-10-27T04:01:04.843Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -957,9 +957,9 @@
     {
       "id": "dg4qcxyqfrn9",
       "name": "Casablanca, Morocco - (CMN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-01-17T13:29:26.394Z",
-      "updated_at": "2023-10-26T02:51:01.648Z",
+      "updated_at": "2023-10-27T04:01:03.918Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -5105,9 +5105,9 @@
     {
       "id": "mgy83jclb7m0",
       "name": "Campos dos Goytacazes, Brazil - (CAW)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-05-16T13:20:28.221Z",
-      "updated_at": "2023-10-10T22:31:13.108Z",
+      "updated_at": "2023-10-27T03:55:57.338Z",
       "position": 51,
       "description": null,
       "showcase": false,
@@ -5765,9 +5765,9 @@
     {
       "id": "9c7cbxnhk1dq",
       "name": "Waiting Room",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-10T09:59:32.683Z",
-      "updated_at": "2023-09-08T08:26:32.059Z",
+      "updated_at": "2023-10-27T04:03:23.694Z",
       "position": 63,
       "description": "Cloudflare Waiting Room protects websites by queueing site visitors when a website experiences unmanageable surges in legitimate traffic that may otherwise bring an application down.",
       "showcase": false,
@@ -6288,7 +6288,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "2p42p11lz395",
+      "name": "Cloudflare Waiting Room Issues",
+      "status": "investigating",
+      "created_at": "2023-10-27T04:03:23.653Z",
+      "updated_at": "2023-10-27T04:03:23.758Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/rr7n27bjgj8r",
+      "started_at": "2023-10-27T04:03:23.643Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "qc33zd0lnhj9",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Waiting Room. Customers that use Waiting Room may observe errors/delays when creating or editing Waiting Room settings during this time. \nThis issue does not affect the operation of existing Waiting Room deployments.\n\nWe are working to mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "2p42p11lz395",
+          "created_at": "2023-10-27T04:03:23.755Z",
+          "updated_at": "2023-10-27T04:03:23.755Z",
+          "display_at": "2023-10-27T04:03:23.755Z",
+          "affected_components": [
+            {
+              "code": "9c7cbxnhk1dq",
+              "name": "Cloudflare Sites and Services - Waiting Room",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9c7cbxnhk1dq",
+          "name": "Waiting Room",
+          "status": "degraded_performance",
+          "created_at": "2023-01-10T09:59:32.683Z",
+          "updated_at": "2023-10-27T04:03:23.694Z",
+          "position": 63,
+          "description": "Cloudflare Waiting Room protects websites by queueing site visitors when a website experiences unmanageable surges in legitimate traffic that may otherwise bring an application down.",
+          "showcase": false,
+          "start_date": "2023-01-10",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "ksppvd3ybq2k",
@@ -6559,86 +6613,6 @@
       ],
       "scheduled_for": "2023-11-17T17:00:00.000Z",
       "scheduled_until": "2023-11-18T02:00:00.000Z"
-    },
-    {
-      "id": "lmqlrf8jjh3v",
-      "name": "DME (Moscow) on 2023-10-27",
-      "status": "in_progress",
-      "created_at": "2023-10-25T10:20:09.510Z",
-      "updated_at": "2023-10-27T01:00:26.575Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/j98b81nlz789",
-      "started_at": "2023-10-25T10:20:09.501Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "v3mnnq0r98sl",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "lmqlrf8jjh3v",
-          "created_at": "2023-10-27T01:00:26.569Z",
-          "updated_at": "2023-10-27T01:00:26.569Z",
-          "display_at": "2023-10-27T01:00:26.569Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "j6lrjyfs7t7c",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "lmqlrf8jjh3v",
-          "created_at": "2023-10-27T00:00:10.125Z",
-          "updated_at": "2023-10-27T00:00:10.125Z",
-          "display_at": "2023-10-27T00:00:10.125Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "lpx1453dlgzm",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DME (Moscow) datacenter on 2023-10-27 between 01:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "lmqlrf8jjh3v",
-          "created_at": "2023-10-25T10:20:09.585Z",
-          "updated_at": "2023-10-25T10:20:09.585Z",
-          "display_at": "2023-10-25T10:20:09.585Z",
-          "affected_components": [
-            {
-              "code": "03jl43mg92tk",
-              "name": "Europe - Moscow, Russia - (DME)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "03jl43mg92tk",
-          "name": "Moscow, Russia - (DME)",
-          "status": "operational",
-          "created_at": "2016-06-03T08:22:22.678Z",
-          "updated_at": "2023-10-21T15:42:24.568Z",
-          "position": 32,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-10-27T01:00:00.000Z",
-      "scheduled_until": "2023-10-27T04:00:00.000Z"
     }
   ],
   "status": {
