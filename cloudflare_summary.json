@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-30T23:31:23.586Z"
+    "updated_at": "2023-10-31T01:00:28.789Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2090,9 +2090,9 @@
     {
       "id": "3q1jnbdbn845",
       "name": "Cache Reserve",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-06-12T16:52:52.754Z",
-      "updated_at": "2023-10-05T16:56:11.020Z",
+      "updated_at": "2023-10-31T00:56:07.768Z",
       "position": 14,
       "description": "Cache Reserve is a large, persistent data store implemented on top of R2. By pushing a single button in the dashboard, your website’s cacheable content will be written to Cache Reserve.",
       "showcase": false,
@@ -2120,9 +2120,9 @@
     {
       "id": "p6skg25yj69j",
       "name": "Colombo, Sri Lanka - (CMB)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2017-05-02T05:52:26.698Z",
-      "updated_at": "2023-10-30T20:05:14.245Z",
+      "updated_at": "2023-10-31T00:01:06.884Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -2465,9 +2465,9 @@
     {
       "id": "w8pgyc1hh9hw",
       "name": "Gothenburg, Sweden - (GOT)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-04-11T10:13:11.497Z",
-      "updated_at": "2023-10-30T05:22:39.361Z",
+      "updated_at": "2023-10-31T00:11:22.471Z",
       "position": 18,
       "description": null,
       "showcase": false,
@@ -3380,9 +3380,9 @@
     {
       "id": "gdywyg76bgy3",
       "name": "Jakarta, Indonesia - (CGK)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-08-21T06:55:28.100Z",
-      "updated_at": "2023-10-30T17:23:12.459Z",
+      "updated_at": "2023-10-30T23:56:00.096Z",
       "position": 28,
       "description": null,
       "showcase": false,
@@ -4550,9 +4550,9 @@
     {
       "id": "755n430pjn1s",
       "name": "Stockholm, Sweden - (ARN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-27T20:36:25.956Z",
-      "updated_at": "2023-08-22T03:21:03.223Z",
+      "updated_at": "2023-10-31T00:11:22.799Z",
       "position": 44,
       "description": null,
       "showcase": false,
@@ -4880,9 +4880,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2023-10-26T23:42:13.098Z",
+      "updated_at": "2023-10-31T00:29:10.810Z",
       "position": 48,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -6288,89 +6288,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "7n3y1qq571bc",
-      "name": "ARN (Stockholm) on 2023-10-31",
-      "status": "scheduled",
-      "created_at": "2023-10-30T07:00:27.388Z",
-      "updated_at": "2023-10-30T07:00:27.448Z",
+      "id": "zycx96mxwmgt",
+      "name": "R2 degraded availability on buckets located in Europe",
+      "status": "investigating",
+      "created_at": "2023-10-31T00:29:10.772Z",
+      "updated_at": "2023-10-31T00:56:07.819Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/cshk6h2jq7bh",
-      "started_at": "2023-10-30T07:00:27.381Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/cyttn178t7ks",
+      "started_at": "2023-10-31T00:29:10.762Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "zb1ql30p8j59",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ARN (Stockholm) datacenter on 2023-10-31 between 01:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "7n3y1qq571bc",
-          "created_at": "2023-10-30T07:00:27.446Z",
-          "updated_at": "2023-10-30T07:00:27.446Z",
-          "display_at": "2023-10-30T07:00:27.446Z",
+          "id": "g7b9qmzm5gk3",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "zycx96mxwmgt",
+          "created_at": "2023-10-31T00:56:07.815Z",
+          "updated_at": "2023-10-31T00:56:07.815Z",
+          "display_at": "2023-10-31T00:56:07.815Z",
           "affected_components": [
             {
-              "code": "755n430pjn1s",
-              "name": "Europe - Stockholm, Sweden - (ARN)",
+              "code": "3q1jnbdbn845",
+              "name": "Cloudflare Sites and Services - Cache Reserve",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
-        }
-      ],
-      "components": [
+        },
         {
-          "id": "755n430pjn1s",
-          "name": "Stockholm, Sweden - (ARN)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:36:25.956Z",
-          "updated_at": "2023-08-22T03:21:03.223Z",
-          "position": 44,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-10-31T01:00:00.000Z",
-      "scheduled_until": "2023-10-31T04:00:00.000Z"
-    },
-    {
-      "id": "jxwz7jmpw5q9",
-      "name": "BLR (Bangalore) on 2023-10-31",
-      "status": "scheduled",
-      "created_at": "2023-10-30T08:00:25.813Z",
-      "updated_at": "2023-10-30T08:00:25.881Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/3x4hqwcc6clh",
-      "started_at": "2023-10-30T08:00:25.807Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "fjj7ldrsgzkx",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BLR (Bangalore) datacenter on 2023-10-31 between 05:00 and 08:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "jxwz7jmpw5q9",
-          "created_at": "2023-10-30T08:00:25.879Z",
-          "updated_at": "2023-10-30T08:00:25.879Z",
-          "display_at": "2023-10-30T08:00:25.879Z",
+          "id": "rv7tm80wzbj3",
+          "status": "investigating",
+          "body": "R2 users will see elevated HTTP 500 response rates for buckets located in Europe. We're currently investigating the cause of the issue.",
+          "incident_id": "zycx96mxwmgt",
+          "created_at": "2023-10-31T00:29:10.865Z",
+          "updated_at": "2023-10-31T00:29:10.865Z",
+          "display_at": "2023-10-31T00:29:10.865Z",
           "affected_components": [
             {
-              "code": "vhpdc0y3qty9",
-              "name": "Asia - Bangalore, India - (BLR)",
-              "old_status": "partial_outage",
-              "new_status": "operational"
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -6380,24 +6351,40 @@
       ],
       "components": [
         {
-          "id": "vhpdc0y3qty9",
-          "name": "Bangalore, India - (BLR)",
-          "status": "partial_outage",
-          "created_at": "2019-10-03T23:15:06.784Z",
-          "updated_at": "2023-10-30T08:00:30.773Z",
-          "position": 4,
-          "description": null,
+          "id": "3q1jnbdbn845",
+          "name": "Cache Reserve",
+          "status": "degraded_performance",
+          "created_at": "2023-06-12T16:52:52.754Z",
+          "updated_at": "2023-10-31T00:56:07.768Z",
+          "position": 14,
+          "description": "Cache Reserve is a large, persistent data store implemented on top of R2. By pushing a single button in the dashboard, your website’s cacheable content will be written to Cache Reserve.",
           "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
+          "start_date": "2023-06-12",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2023-10-31T00:29:10.810Z",
+          "position": 48,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-10-31T05:00:00.000Z",
-      "scheduled_until": "2023-10-31T08:00:00.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "05nrwkrw8dqs",
       "name": "SYD (Sydney) on 2023-10-31",
@@ -6723,6 +6710,86 @@
       "scheduled_until": "2023-11-20T22:00:00.000Z"
     },
     {
+      "id": "7n3y1qq571bc",
+      "name": "ARN (Stockholm) on 2023-10-31",
+      "status": "in_progress",
+      "created_at": "2023-10-30T07:00:27.388Z",
+      "updated_at": "2023-10-31T01:00:28.772Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/cshk6h2jq7bh",
+      "started_at": "2023-10-30T07:00:27.381Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "spg7htyt9fb7",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "7n3y1qq571bc",
+          "created_at": "2023-10-31T01:00:28.766Z",
+          "updated_at": "2023-10-31T01:00:28.766Z",
+          "display_at": "2023-10-31T01:00:28.766Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "lp213fymsbdz",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "7n3y1qq571bc",
+          "created_at": "2023-10-31T00:00:57.805Z",
+          "updated_at": "2023-10-31T00:00:57.805Z",
+          "display_at": "2023-10-31T00:00:57.805Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "zb1ql30p8j59",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in ARN (Stockholm) datacenter on 2023-10-31 between 01:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "7n3y1qq571bc",
+          "created_at": "2023-10-30T07:00:27.446Z",
+          "updated_at": "2023-10-30T07:00:27.446Z",
+          "display_at": "2023-10-30T07:00:27.446Z",
+          "affected_components": [
+            {
+              "code": "755n430pjn1s",
+              "name": "Europe - Stockholm, Sweden - (ARN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "755n430pjn1s",
+          "name": "Stockholm, Sweden - (ARN)",
+          "status": "partial_outage",
+          "created_at": "2014-10-27T20:36:25.956Z",
+          "updated_at": "2023-10-31T00:11:22.799Z",
+          "position": 44,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-10-31T01:00:00.000Z",
+      "scheduled_until": "2023-10-31T04:00:00.000Z"
+    },
+    {
       "id": "d5q7dqpb22pj",
       "name": "ARN (Stockholm) on 2023-10-30",
       "status": "in_progress",
@@ -6786,9 +6853,9 @@
         {
           "id": "755n430pjn1s",
           "name": "Stockholm, Sweden - (ARN)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2014-10-27T20:36:25.956Z",
-          "updated_at": "2023-08-22T03:21:03.223Z",
+          "updated_at": "2023-10-31T00:11:22.799Z",
           "position": 44,
           "description": null,
           "showcase": false,
