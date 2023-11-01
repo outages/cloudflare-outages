@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-01T14:07:22.594Z"
+    "updated_at": "2023-11-01T15:29:56.036Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "under_maintenance",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -381,9 +381,9 @@
     {
       "id": "4c231tkdlpcl",
       "name": "Analytics",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-11-13T11:54:10.191Z",
-      "updated_at": "2023-10-13T14:08:50.060Z",
+      "updated_at": "2023-11-01T15:29:55.934Z",
       "position": 3,
       "description": "Customer analytics aggregation service",
       "showcase": false,
@@ -4024,9 +4024,9 @@
     {
       "id": "k0mgxrls5y1b",
       "name": "Logs",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2016-03-20T18:49:07.613Z",
-      "updated_at": "2023-10-10T12:14:14.277Z",
+      "updated_at": "2023-11-01T15:29:55.953Z",
       "position": 37,
       "description": "Enterprise Logpull and Logpush services",
       "showcase": false,
@@ -6273,6 +6273,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "k9z7ft0y2k32",
+      "name": "Cloudflare Logs and Analytics Delays",
+      "status": "investigating",
+      "created_at": "2023-11-01T15:29:55.898Z",
+      "updated_at": "2023-11-01T15:29:56.033Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/vv0jbhmj6p86",
+      "started_at": "2023-11-01T15:29:55.890Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "s02bgql3v73n",
+          "status": "investigating",
+          "body": "Cloudflare is currently observing delays in processing Cloudflare logs (formerly ELS) and also Analytics data.\n\nWe are working to analyse and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "k9z7ft0y2k32",
+          "created_at": "2023-11-01T15:29:56.031Z",
+          "updated_at": "2023-11-01T15:29:56.031Z",
+          "display_at": "2023-11-01T15:29:56.031Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "k0mgxrls5y1b",
+              "name": "Cloudflare Sites and Services - Logs",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "degraded_performance",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2023-11-01T15:29:55.934Z",
+          "position": 3,
+          "description": "Customer analytics aggregation service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "k0mgxrls5y1b",
+          "name": "Logs",
+          "status": "degraded_performance",
+          "created_at": "2016-03-20T18:49:07.613Z",
+          "updated_at": "2023-11-01T15:29:55.953Z",
+          "position": 37,
+          "description": "Enterprise Logpull and Logpush services",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "5gxykrgdpnl0",
       "name": "Cloudflare Cloud Access Security Broker (CASB) Issues",
