@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-03T04:29:52.594Z"
+    "updated_at": "2023-11-03T06:43:43.476Z"
   },
   "components": [
     {
@@ -471,9 +471,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2023-11-03T02:40:48.254Z",
+      "updated_at": "2023-11-03T06:42:27.964Z",
       "position": 4,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -3244,9 +3244,9 @@
     {
       "id": "7j656z7tqk7f",
       "name": "DNS Updates",
-      "status": "major_outage",
+      "status": "operational",
       "created_at": "2019-01-24T16:50:20.772Z",
-      "updated_at": "2023-11-02T13:58:40.406Z",
+      "updated_at": "2023-11-03T06:42:28.011Z",
       "position": 26,
       "description": "DNS update service pushing customer DNS changes out to all data centers",
       "showcase": false,
@@ -5764,9 +5764,9 @@
     {
       "id": "9c7cbxnhk1dq",
       "name": "Waiting Room",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2023-01-10T09:59:32.683Z",
-      "updated_at": "2023-11-03T00:54:43.445Z",
+      "updated_at": "2023-11-03T06:42:28.028Z",
       "position": 63,
       "description": "Cloudflare Waiting Room protects websites by queueing site visitors when a website experiences unmanageable surges in legitimate traffic that may otherwise bring an application down.",
       "showcase": false,
@@ -5929,9 +5929,9 @@
     {
       "id": "kf0ktv29xrfy",
       "name": "Zero Trust",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-04-08T15:53:09.058Z",
-      "updated_at": "2023-11-03T00:54:43.514Z",
+      "updated_at": "2023-11-03T06:42:28.045Z",
       "position": 70,
       "description": null,
       "showcase": false,
@@ -6278,7 +6278,7 @@
       "name": "Cloudflare Dashboard and Cloudflare API service issues",
       "status": "identified",
       "created_at": "2023-11-02T11:54:59.854Z",
-      "updated_at": "2023-11-03T04:29:52.586Z",
+      "updated_at": "2023-11-03T06:43:43.467Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "critical",
@@ -6286,6 +6286,310 @@
       "started_at": "2023-11-02T13:18:31.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "g1pqmy1rkcw3",
+          "status": "identified",
+          "body": "Cloudflare is seeing a gradual improvement to affected services.\n\nData plane impact (i.e. full product functionality is either fully impacted or partially impacted): \n* Logpush: more jobs are being restored\n* Cloudflare Dash: degraded availability but accessible\n* Stream API: not available\n* Healthchecks: not available\n* Radar: Degraded\n\nControl plane impact (i.e. product functionality is online however changes to configuration is impacted): \n* ZT Gateway: restored\n* Cloudflare API: restored\n* Waiting Room: restored\n* DNS Secondary: restored\n* Magic Transit: not available to make changes\n* Magic WAN: not available to make changes\n* Argo Smart Routing: configuration now working, smart updates and analytics are offline\n* Billing API: Degraded\n\nLogs\nSome Logpush logs and analytics data were lost during the incident. Logs created towards the end of the incident may be recoverable; as the incident is ongoing, we do not yet know the full scope of impact.",
+          "incident_id": "hm7491k53ppg",
+          "created_at": "2023-11-03T06:43:01.218Z",
+          "updated_at": "2023-11-03T06:43:43.462Z",
+          "display_at": "2023-11-03T06:43:01.000Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "g9yx473yjk9t",
+              "name": "Cloudflare Sites and Services - API Shield",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "z9w398bsjvnq",
+              "name": "Cloudflare Sites and Services - Argo Smart Routing",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "dp8ppfycqxcs",
+              "name": "Cloudflare Sites and Services - Authoritative DNS",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ll1x88wwz4fq",
+              "name": "Cloudflare Sites and Services - Billing",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "3lbj8lp3d750",
+              "name": "Cloudflare Sites and Services - Images",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "8sn2w5kyxfnp",
+              "name": "Cloudflare Sites and Services - Load Balancing and Monitoring",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "k0mgxrls5y1b",
+              "name": "Cloudflare Sites and Services - Logs",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "bjlxcss20fsl",
+              "name": "Cloudflare Sites and Services - Magic Transit",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Magic WAN",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "0fw91jq1bzxx",
+              "name": "Cloudflare Sites and Services - Radar",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "y98zlwj1d7zh",
+              "name": "Cloudflare Sites and Services - Tunnel",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "9c7cbxnhk1dq",
+              "name": "Cloudflare Sites and Services - Waiting Room",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "tmh50tx2nprs",
+              "name": "Cloudflare Sites and Services - Workers KV",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "r0qybcbmhzfx",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "hm7491k53ppg",
+          "created_at": "2023-11-03T06:42:28.085Z",
+          "updated_at": "2023-11-03T06:42:28.085Z",
+          "display_at": "2023-11-03T06:42:28.085Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "g9yx473yjk9t",
+              "name": "Cloudflare Sites and Services - API Shield",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "z9w398bsjvnq",
+              "name": "Cloudflare Sites and Services - Argo Smart Routing",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "dp8ppfycqxcs",
+              "name": "Cloudflare Sites and Services - Authoritative DNS",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ll1x88wwz4fq",
+              "name": "Cloudflare Sites and Services - Billing",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "3lbj8lp3d750",
+              "name": "Cloudflare Sites and Services - Images",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "8sn2w5kyxfnp",
+              "name": "Cloudflare Sites and Services - Load Balancing and Monitoring",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "k0mgxrls5y1b",
+              "name": "Cloudflare Sites and Services - Logs",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "bjlxcss20fsl",
+              "name": "Cloudflare Sites and Services - Magic Transit",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Magic WAN",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "0fw91jq1bzxx",
+              "name": "Cloudflare Sites and Services - Radar",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "y98zlwj1d7zh",
+              "name": "Cloudflare Sites and Services - Tunnel",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "9c7cbxnhk1dq",
+              "name": "Cloudflare Sites and Services - Waiting Room",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "tmh50tx2nprs",
+              "name": "Cloudflare Sites and Services - Workers KV",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "bn2df9btn33k",
           "status": "identified",
@@ -8681,9 +8985,9 @@
         {
           "id": "g4tb35rs9yw7",
           "name": "API",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2014-10-09T03:32:07.158Z",
-          "updated_at": "2023-11-03T02:40:48.254Z",
+          "updated_at": "2023-11-03T06:42:27.964Z",
           "position": 4,
           "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
           "showcase": false,
@@ -8771,9 +9075,9 @@
         {
           "id": "7j656z7tqk7f",
           "name": "DNS Updates",
-          "status": "major_outage",
+          "status": "operational",
           "created_at": "2019-01-24T16:50:20.772Z",
-          "updated_at": "2023-11-02T13:58:40.406Z",
+          "updated_at": "2023-11-03T06:42:28.011Z",
           "position": 26,
           "description": "DNS update service pushing customer DNS changes out to all data centers",
           "showcase": false,
@@ -8951,9 +9255,9 @@
         {
           "id": "9c7cbxnhk1dq",
           "name": "Waiting Room",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2023-01-10T09:59:32.683Z",
-          "updated_at": "2023-11-03T00:54:43.445Z",
+          "updated_at": "2023-11-03T06:42:28.028Z",
           "position": 63,
           "description": "Cloudflare Waiting Room protects websites by queueing site visitors when a website experiences unmanageable surges in legitimate traffic that may otherwise bring an application down.",
           "showcase": false,
@@ -9011,9 +9315,9 @@
         {
           "id": "kf0ktv29xrfy",
           "name": "Zero Trust",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2021-04-08T15:53:09.058Z",
-          "updated_at": "2023-11-03T00:54:43.514Z",
+          "updated_at": "2023-11-03T06:42:28.045Z",
           "position": 70,
           "description": null,
           "showcase": false,
