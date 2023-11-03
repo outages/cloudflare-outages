@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-03T02:00:24.546Z"
+    "updated_at": "2023-11-03T02:40:48.379Z"
   },
   "components": [
     {
@@ -471,9 +471,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2023-11-03T00:54:43.323Z",
+      "updated_at": "2023-11-03T02:40:48.254Z",
       "position": 4,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -1549,9 +1549,9 @@
     {
       "id": "ll1x88wwz4fq",
       "name": "Billing",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2016-05-09T21:12:38.309Z",
-      "updated_at": "2023-10-10T12:08:33.354Z",
+      "updated_at": "2023-11-03T02:40:48.273Z",
       "position": 10,
       "description": "Billing and payment service",
       "showcase": false,
@@ -4789,9 +4789,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2023-11-03T00:54:43.394Z",
+      "updated_at": "2023-11-03T02:40:48.291Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -4939,9 +4939,9 @@
     {
       "id": "0fw91jq1bzxx",
       "name": "Radar",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-11-03T10:12:19.800Z",
-      "updated_at": "2023-08-16T10:56:17.358Z",
+      "updated_at": "2023-11-03T02:40:48.309Z",
       "position": 49,
       "description": null,
       "showcase": false,
@@ -6278,7 +6278,7 @@
       "name": "Cloudflare Dashboard and Cloudflare API service issues",
       "status": "identified",
       "created_at": "2023-11-02T11:54:59.854Z",
-      "updated_at": "2023-11-03T01:15:36.993Z",
+      "updated_at": "2023-11-03T02:40:48.369Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "critical",
@@ -6286,6 +6286,158 @@
       "started_at": "2023-11-02T13:18:31.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "tlgl2c7tpd1l",
+          "status": "identified",
+          "body": "Here is the latest update:\nData plane impact (i.e. full product functionality is either fully impacted or partially impacted): \n* Cloudflare Dash: degraded availability but accessible\n* Stream API: not available\n* Healthchecks: not available\n* Radar: Degraded\n\nControl plane impact (i.e. product functionality is online however changes to configuration is impacted): \n* Cloudflare Pages: restored\n* Magic Transit: not available\n* Magic WAN: not available\n* Argo Smart Routing: configuration now working, smart updates and analytics are offline\n* Waiting Room: configuration updates are propagating with delay\n* ZT Gateway: degraded but online\n* DNS Secondary: not available\n* Billing API: Degraded\n* Cloudflare API: degraded but accessible",
+          "incident_id": "hm7491k53ppg",
+          "created_at": "2023-11-03T02:40:48.365Z",
+          "updated_at": "2023-11-03T02:40:48.365Z",
+          "display_at": "2023-11-03T02:40:48.365Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "g9yx473yjk9t",
+              "name": "Cloudflare Sites and Services - API Shield",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "z9w398bsjvnq",
+              "name": "Cloudflare Sites and Services - Argo Smart Routing",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "dp8ppfycqxcs",
+              "name": "Cloudflare Sites and Services - Authoritative DNS",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ll1x88wwz4fq",
+              "name": "Cloudflare Sites and Services - Billing",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "3lbj8lp3d750",
+              "name": "Cloudflare Sites and Services - Images",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "8sn2w5kyxfnp",
+              "name": "Cloudflare Sites and Services - Load Balancing and Monitoring",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "k0mgxrls5y1b",
+              "name": "Cloudflare Sites and Services - Logs",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "bjlxcss20fsl",
+              "name": "Cloudflare Sites and Services - Magic Transit",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Magic WAN",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "0fw91jq1bzxx",
+              "name": "Cloudflare Sites and Services - Radar",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "y98zlwj1d7zh",
+              "name": "Cloudflare Sites and Services - Tunnel",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "9c7cbxnhk1dq",
+              "name": "Cloudflare Sites and Services - Waiting Room",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "tmh50tx2nprs",
+              "name": "Cloudflare Sites and Services - Workers KV",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "rk73qxbvp5zx",
           "status": "identified",
@@ -8225,9 +8377,9 @@
         {
           "id": "g4tb35rs9yw7",
           "name": "API",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2014-10-09T03:32:07.158Z",
-          "updated_at": "2023-11-03T00:54:43.323Z",
+          "updated_at": "2023-11-03T02:40:48.254Z",
           "position": 4,
           "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
           "showcase": false,
@@ -8275,6 +8427,21 @@
           "updated_at": "2023-11-02T13:58:40.392Z",
           "position": 9,
           "description": "Cloudflare DNS is an enterprise-grade authoritative DNS service that offers the fastest response time, unparalleled redundancy, and advanced security with built-in DDoS mitigation and DNSSEC",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "ll1x88wwz4fq",
+          "name": "Billing",
+          "status": "degraded_performance",
+          "created_at": "2016-05-09T21:12:38.309Z",
+          "updated_at": "2023-11-03T02:40:48.273Z",
+          "position": 10,
+          "description": "Billing and payment service",
           "showcase": false,
           "start_date": null,
           "group_id": "1km35smx8p41",
@@ -8420,13 +8587,28 @@
         {
           "id": "vgxj684rcw7t",
           "name": "Pages",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2021-04-16T21:04:08.018Z",
-          "updated_at": "2023-11-03T00:54:43.394Z",
+          "updated_at": "2023-11-03T02:40:48.291Z",
           "position": 47,
           "description": null,
           "showcase": false,
           "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "0fw91jq1bzxx",
+          "name": "Radar",
+          "status": "degraded_performance",
+          "created_at": "2022-11-03T10:12:19.800Z",
+          "updated_at": "2023-11-03T02:40:48.309Z",
+          "position": 49,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-11-03",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
