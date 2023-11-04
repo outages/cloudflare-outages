@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-04T15:11:07.056Z"
+    "updated_at": "2023-11-04T15:32:15.579Z"
   },
   "components": [
     {
@@ -3485,9 +3485,9 @@
     {
       "id": "tn97mzj8b3bt",
       "name": "Jashore, Bangladesh - (JSR)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2020-11-04T02:36:10.854Z",
-      "updated_at": "2023-11-04T06:51:13.696Z",
+      "updated_at": "2023-11-04T15:32:15.576Z",
       "position": 29,
       "description": null,
       "showcase": false,
@@ -6290,11 +6290,104 @@
   ],
   "incidents": [
     {
+      "id": "gx41btmhkf9m",
+      "name": "Authentication Errors On New R2 Tokens",
+      "status": "monitoring",
+      "created_at": "2023-11-04T11:57:25.000Z",
+      "updated_at": "2023-11-04T15:25:38.329Z",
+      "monitoring_at": "2023-11-04T15:25:38.314Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5mchtjmzt94x",
+      "started_at": "2023-11-04T11:57:25.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "dr8n4h0kyzpf",
+          "status": "monitoring",
+          "body": "We have mitigated the impact for newly created tokens. Any R2 tokens created between 2023-11-03 00:44:51 UTC and 2023-11-04 13:21:34 UTC may still experience problems. We are working to restore these tokens, but it may take some time. Please recreate or roll any tokens that you identify may not be working.",
+          "incident_id": "gx41btmhkf9m",
+          "created_at": "2023-11-04T15:25:38.314Z",
+          "updated_at": "2023-11-04T15:25:38.314Z",
+          "display_at": "2023-11-04T15:25:38.314Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "0ltsb59rkx1x",
+          "status": "identified",
+          "body": "We have mitigated the impact for newly created tokens. Any R2 tokens created between 2023-11-03 00:44:51 UTC and 2023-11-04 13:21:34 UTC may still experience problems. We are working to restore these tokens, but it may take some time. Please recreate or roll any tokens that you identify may not be working.",
+          "incident_id": "gx41btmhkf9m",
+          "created_at": "2023-11-04T15:23:07.350Z",
+          "updated_at": "2023-11-04T15:23:07.350Z",
+          "display_at": "2023-11-04T15:23:07.350Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "19dqdpf332k2",
+          "status": "investigating",
+          "body": "Customers creating new R2 tokens, or refreshing existing tokens, may experience authentication errors when using R2’s S3 API.\n\nExisting, unedited tokens are unaffected.",
+          "incident_id": "gx41btmhkf9m",
+          "created_at": "2023-11-04T11:57:25.978Z",
+          "updated_at": "2023-11-04T12:46:13.676Z",
+          "display_at": "2023-11-04T11:57:25.000Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2023-11-04T12:49:41.988Z",
+          "position": 49,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "2l0yghlk3z79",
       "name": "Analytics Showing Incorrect Data",
       "status": "investigating",
       "created_at": "2023-11-04T15:11:06.926Z",
-      "updated_at": "2023-11-04T15:11:07.053Z",
+      "updated_at": "2023-11-04T15:23:20.649Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -6305,11 +6398,11 @@
         {
           "id": "65k9s8rzwxkd",
           "status": "investigating",
-          "body": "We are currently investigating this issue. Analytics section of dashboard, as well as Legacy traffic, Workers KV, Argo Analytics and Rate Limiting Analytics returned via Dashboard or by GraphQL API (httpRequests1mByColoGroups or httpRequests1dByColoGroups) may return incorrect data.",
+          "body": "We are currently investigating this issue. Analytics section of dashboard, as well as Legacy traffic, Workers KV and Rate Limiting Analytics returned via Dashboard or by GraphQL API (httpRequests1mByColoGroups or httpRequests1dByColoGroups) may return incorrect data.",
           "incident_id": "2l0yghlk3z79",
           "created_at": "2023-11-04T15:11:07.049Z",
-          "updated_at": "2023-11-04T15:11:07.049Z",
-          "display_at": "2023-11-04T15:11:07.049Z",
+          "updated_at": "2023-11-04T15:23:20.647Z",
+          "display_at": "2023-11-04T15:11:07.000Z",
           "affected_components": [
             {
               "code": "4c231tkdlpcl",
@@ -16021,59 +16114,6 @@
           "description": null,
           "showcase": false,
           "start_date": "2021-04-08",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "gx41btmhkf9m",
-      "name": "Authentication Errors On New R2 Tokens",
-      "status": "investigating",
-      "created_at": "2023-11-04T11:57:25.903Z",
-      "updated_at": "2023-11-04T12:46:13.738Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/5mchtjmzt94x",
-      "started_at": "2023-11-04T11:57:25.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "19dqdpf332k2",
-          "status": "investigating",
-          "body": "Customers creating new R2 tokens, or refreshing existing tokens, may experience authentication errors when using R2’s S3 API.\n\nExisting, unedited tokens are unaffected.",
-          "incident_id": "gx41btmhkf9m",
-          "created_at": "2023-11-04T11:57:25.978Z",
-          "updated_at": "2023-11-04T12:46:13.676Z",
-          "display_at": "2023-11-04T11:57:25.000Z",
-          "affected_components": [
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hb7g5sq2zz0h",
-          "name": "R2",
-          "status": "degraded_performance",
-          "created_at": "2022-07-05T10:55:24.503Z",
-          "updated_at": "2023-11-04T12:49:41.988Z",
-          "position": 49,
-          "description": "High-performance storage for files and objects with zero egress charges",
-          "showcase": false,
-          "start_date": "2022-07-05",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
