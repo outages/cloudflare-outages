@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-04T12:14:29.926Z"
+    "updated_at": "2023-11-04T12:46:13.744Z"
   },
   "components": [
     {
@@ -107,7 +107,8 @@
         "tmh50tx2nprs",
         "qgt2kv10g1yn",
         "kf0ktv29xrfy",
-        "276xk3r83js7"
+        "276xk3r83js7",
+        "tfnrx45s2b48"
       ]
     },
     {
@@ -2839,9 +2840,9 @@
     {
       "id": "v4lr1tmw0jsf",
       "name": "Port Louis, Mauritius - (MRU)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-02-12T12:35:05.181Z",
-      "updated_at": "2023-11-04T12:09:25.997Z",
+      "updated_at": "2023-11-04T12:33:00.991Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -5659,9 +5660,9 @@
     {
       "id": "hk319v924h0m",
       "name": "Taipei, Taiwan - (TPE)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-03-15T11:51:08.712Z",
-      "updated_at": "2023-11-04T12:09:26.360Z",
+      "updated_at": "2023-11-04T12:32:15.952Z",
       "position": 61,
       "description": null,
       "showcase": false,
@@ -6002,6 +6003,21 @@
       "only_show_if_degraded": false
     },
     {
+      "id": "tfnrx45s2b48",
+      "name": "Lists",
+      "status": "operational",
+      "created_at": "2023-11-04T12:45:35.436Z",
+      "updated_at": "2023-11-04T12:45:35.436Z",
+      "position": 72,
+      "description": "Lists of IP addresses, hostnames and ASNs",
+      "showcase": false,
+      "start_date": "2023-11-04",
+      "group_id": "1km35smx8p41",
+      "page_id": "yh6f0r4529hb",
+      "group": false,
+      "only_show_if_degraded": false
+    },
+    {
       "id": "yrlfvdv9yv53",
       "name": "Yogyakarta, Indonesia - (JOG)",
       "status": "partial_outage",
@@ -6274,6 +6290,59 @@
   ],
   "incidents": [
     {
+      "id": "gx41btmhkf9m",
+      "name": "Authentication Errors On New R2 Tokens",
+      "status": "investigating",
+      "created_at": "2023-11-04T11:57:25.903Z",
+      "updated_at": "2023-11-04T12:46:13.738Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5mchtjmzt94x",
+      "started_at": "2023-11-04T11:57:25.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "19dqdpf332k2",
+          "status": "investigating",
+          "body": "Customers creating new R2 tokens, or refreshing existing tokens, may experience authentication errors when using R2’s S3 API.\n\nExisting, unedited tokens are unaffected.",
+          "incident_id": "gx41btmhkf9m",
+          "created_at": "2023-11-04T11:57:25.978Z",
+          "updated_at": "2023-11-04T12:46:13.676Z",
+          "display_at": "2023-11-04T11:57:25.000Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2023-11-04T11:57:25.930Z",
+          "position": 48,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "k27bk6fc4n14",
       "name": "Some new zones not resolving via DNS",
       "status": "monitoring",
@@ -6358,59 +6427,6 @@
           "description": "DNS update service pushing customer DNS changes out to all data centers",
           "showcase": false,
           "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "gx41btmhkf9m",
-      "name": "Authentication Errors On New R2 Tokens",
-      "status": "investigating",
-      "created_at": "2023-11-04T11:57:25.903Z",
-      "updated_at": "2023-11-04T11:59:28.448Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/5mchtjmzt94x",
-      "started_at": "2023-11-04T11:57:25.895Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "19dqdpf332k2",
-          "status": "investigating",
-          "body": "Customers creating new R2 tokens may experience authentication errors when using R2’s S3 API. Existing tokens are unaffected.",
-          "incident_id": "gx41btmhkf9m",
-          "created_at": "2023-11-04T11:57:25.978Z",
-          "updated_at": "2023-11-04T11:57:25.978Z",
-          "display_at": "2023-11-04T11:57:25.978Z",
-          "affected_components": [
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hb7g5sq2zz0h",
-          "name": "R2",
-          "status": "degraded_performance",
-          "created_at": "2022-07-05T10:55:24.503Z",
-          "updated_at": "2023-11-04T11:57:25.930Z",
-          "position": 48,
-          "description": "High-performance storage for files and objects with zero egress charges",
-          "showcase": false,
-          "start_date": "2022-07-05",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
