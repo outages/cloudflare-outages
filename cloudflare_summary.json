@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-04T18:42:57.669Z"
+    "updated_at": "2023-11-04T19:09:19.477Z"
   },
   "components": [
     {
@@ -1865,9 +1865,9 @@
     {
       "id": "652rf3j94nfv",
       "name": "Jeddah, Saudi Arabia - (JED)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-06-08T13:59:14.645Z",
-      "updated_at": "2023-11-04T14:36:23.528Z",
+      "updated_at": "2023-11-04T19:01:56.406Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -4670,9 +4670,9 @@
     {
       "id": "62rk8nsdbjg1",
       "name": "Stuttgart, Germany   - (STR)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-01-05T17:31:45.013Z",
-      "updated_at": "2023-11-04T18:30:30.712Z",
+      "updated_at": "2023-11-04T19:09:19.474Z",
       "position": 45,
       "description": null,
       "showcase": false,
@@ -6289,6 +6289,132 @@
     }
   ],
   "incidents": [
+    {
+      "id": "sb113znkcc9g",
+      "name": "Cloudflare Workers Issues",
+      "status": "monitoring",
+      "created_at": "2023-11-04T17:16:14.557Z",
+      "updated_at": "2023-11-04T18:56:11.548Z",
+      "monitoring_at": "2023-11-04T18:56:11.536Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/s6vzmjkvh8n9",
+      "started_at": "2023-11-04T17:16:14.541Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "glnn766pkjkf",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "sb113znkcc9g",
+          "created_at": "2023-11-04T18:56:11.536Z",
+          "updated_at": "2023-11-04T18:56:11.536Z",
+          "display_at": "2023-11-04T18:56:11.536Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "kt2h1sbhxthw",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "sb113znkcc9g",
+          "created_at": "2023-11-04T17:44:48.783Z",
+          "updated_at": "2023-11-04T17:44:48.783Z",
+          "display_at": "2023-11-04T17:44:48.783Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "rhkhsd9j49sg",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an increased level of errors for customers running Workers scripts, mostly in the Frankfurt region.\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "sb113znkcc9g",
+          "created_at": "2023-11-04T17:16:14.664Z",
+          "updated_at": "2023-11-04T17:16:14.664Z",
+          "display_at": "2023-11-04T17:16:14.664Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rbnhbzgld936",
+          "name": "Frankfurt, Germany - (FRA)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:37:25.480Z",
+          "updated_at": "2023-09-21T20:16:12.242Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "operational",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2023-11-04T17:16:14.613Z",
+          "position": 67,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "hm7491k53ppg",
       "name": "Cloudflare Dashboard and Cloudflare API service issues",
@@ -16816,106 +16942,6 @@
           "description": null,
           "showcase": false,
           "start_date": "2021-04-08",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "sb113znkcc9g",
-      "name": "Cloudflare Workers Issues",
-      "status": "identified",
-      "created_at": "2023-11-04T17:16:14.557Z",
-      "updated_at": "2023-11-04T17:44:48.786Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/s6vzmjkvh8n9",
-      "started_at": "2023-11-04T17:16:14.541Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "kt2h1sbhxthw",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "sb113znkcc9g",
-          "created_at": "2023-11-04T17:44:48.783Z",
-          "updated_at": "2023-11-04T17:44:48.783Z",
-          "display_at": "2023-11-04T17:44:48.783Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "rbnhbzgld936",
-              "name": "Europe - Frankfurt, Germany - (FRA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "rhkhsd9j49sg",
-          "status": "investigating",
-          "body": "Cloudflare is investigating an increased level of errors for customers running Workers scripts, mostly in the Frankfurt region.\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
-          "incident_id": "sb113znkcc9g",
-          "created_at": "2023-11-04T17:16:14.664Z",
-          "updated_at": "2023-11-04T17:16:14.664Z",
-          "display_at": "2023-11-04T17:16:14.664Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            },
-            {
-              "code": "rbnhbzgld936",
-              "name": "Europe - Frankfurt, Germany - (FRA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rbnhbzgld936",
-          "name": "Frankfurt, Germany - (FRA)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:37:25.480Z",
-          "updated_at": "2023-09-21T20:16:12.242Z",
-          "position": 16,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "57srcl8zcn7c",
-          "name": "Workers",
-          "status": "operational",
-          "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2023-11-04T17:16:14.613Z",
-          "position": 67,
-          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
-          "showcase": false,
-          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
