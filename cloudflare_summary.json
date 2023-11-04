@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-04T14:12:54.776Z"
+    "updated_at": "2023-11-04T14:31:18.584Z"
   },
   "components": [
     {
@@ -1190,9 +1190,9 @@
     {
       "id": "09dl2rf7d3cx",
       "name": "Hobart, Australia - (HBA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-06-17T14:17:27.050Z",
-      "updated_at": "2023-11-04T06:45:37.632Z",
+      "updated_at": "2023-11-04T14:31:18.581Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -4715,9 +4715,9 @@
     {
       "id": "lc19ck0jpzs5",
       "name": "Malé, Maldives - (MLE)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-08-21T01:51:26.198Z",
-      "updated_at": "2023-11-04T09:32:24.923Z",
+      "updated_at": "2023-11-04T14:28:00.454Z",
       "position": 46,
       "description": null,
       "showcase": false,
@@ -6290,157 +6290,11 @@
   ],
   "incidents": [
     {
-      "id": "gx41btmhkf9m",
-      "name": "Authentication Errors On New R2 Tokens",
-      "status": "investigating",
-      "created_at": "2023-11-04T11:57:25.903Z",
-      "updated_at": "2023-11-04T12:46:13.738Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/5mchtjmzt94x",
-      "started_at": "2023-11-04T11:57:25.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "19dqdpf332k2",
-          "status": "investigating",
-          "body": "Customers creating new R2 tokens, or refreshing existing tokens, may experience authentication errors when using R2’s S3 API.\n\nExisting, unedited tokens are unaffected.",
-          "incident_id": "gx41btmhkf9m",
-          "created_at": "2023-11-04T11:57:25.978Z",
-          "updated_at": "2023-11-04T12:46:13.676Z",
-          "display_at": "2023-11-04T11:57:25.000Z",
-          "affected_components": [
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hb7g5sq2zz0h",
-          "name": "R2",
-          "status": "degraded_performance",
-          "created_at": "2022-07-05T10:55:24.503Z",
-          "updated_at": "2023-11-04T12:49:41.988Z",
-          "position": 49,
-          "description": "High-performance storage for files and objects with zero egress charges",
-          "showcase": false,
-          "start_date": "2022-07-05",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "k27bk6fc4n14",
-      "name": "Some new zones not resolving via DNS",
-      "status": "monitoring",
-      "created_at": "2023-11-04T11:14:29.253Z",
-      "updated_at": "2023-11-04T12:05:30.959Z",
-      "monitoring_at": "2023-11-04T12:05:30.938Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/cykxhyq28g3w",
-      "started_at": "2023-11-04T11:14:29.246Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "gtr746vc4xl4",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "k27bk6fc4n14",
-          "created_at": "2023-11-04T12:05:30.938Z",
-          "updated_at": "2023-11-04T12:05:30.938Z",
-          "display_at": "2023-11-04T12:05:30.938Z",
-          "affected_components": [
-            {
-              "code": "7j656z7tqk7f",
-              "name": "Cloudflare Sites and Services - DNS Updates",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "hpfbxdrxzzfg",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "k27bk6fc4n14",
-          "created_at": "2023-11-04T11:14:53.520Z",
-          "updated_at": "2023-11-04T11:14:53.520Z",
-          "display_at": "2023-11-04T11:14:53.520Z",
-          "affected_components": [
-            {
-              "code": "7j656z7tqk7f",
-              "name": "Cloudflare Sites and Services - DNS Updates",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "p11dybjgs454",
-          "status": "investigating",
-          "body": "Cloudflare is aware of an issue where some new zones do not resolve via DNS.  Engineers are working on a fix.",
-          "incident_id": "k27bk6fc4n14",
-          "created_at": "2023-11-04T11:14:29.329Z",
-          "updated_at": "2023-11-04T11:14:29.329Z",
-          "display_at": "2023-11-04T11:14:29.329Z",
-          "affected_components": [
-            {
-              "code": "7j656z7tqk7f",
-              "name": "Cloudflare Sites and Services - DNS Updates",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7j656z7tqk7f",
-          "name": "DNS Updates",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:50:20.772Z",
-          "updated_at": "2023-11-04T11:14:29.281Z",
-          "position": 26,
-          "description": "DNS update service pushing customer DNS changes out to all data centers",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
       "id": "hm7491k53ppg",
       "name": "Cloudflare Dashboard and Cloudflare API service issues",
       "status": "monitoring",
       "created_at": "2023-11-02T11:54:59.854Z",
-      "updated_at": "2023-11-04T07:58:19.482Z",
+      "updated_at": "2023-11-04T14:28:47.874Z",
       "monitoring_at": "2023-11-04T06:42:50.533Z",
       "resolved_at": null,
       "impact": "minor",
@@ -6448,6 +6302,218 @@
       "started_at": "2023-11-02T13:18:31.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "fy34792mv8g7",
+          "status": "monitoring",
+          "body": "All services have been restored to operational status. We're continuing to monitor stability and edge cases.",
+          "incident_id": "hm7491k53ppg",
+          "created_at": "2023-11-04T14:28:20.827Z",
+          "updated_at": "2023-11-04T14:28:47.868Z",
+          "display_at": "2023-11-04T14:28:20.000Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "g9yx473yjk9t",
+              "name": "Cloudflare Sites and Services - API Shield",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "z9w398bsjvnq",
+              "name": "Cloudflare Sites and Services - Argo Smart Routing",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "dp8ppfycqxcs",
+              "name": "Cloudflare Sites and Services - Authoritative DNS",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ll1x88wwz4fq",
+              "name": "Cloudflare Sites and Services - Billing",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "h2p0jj4ltvcq",
+              "name": "Cloudflare Sites and Services - Cloud Access Security Broker (CASB)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "nmp96vgn1hpl",
+              "name": "Cloudflare Sites and Services - Digital Experience Monitoring (DEX)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "gjb0yzvvrpf6",
+              "name": "Cloudflare Sites and Services - Email Routing",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3lbj8lp3d750",
+              "name": "Cloudflare Sites and Services - Images",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "8sn2w5kyxfnp",
+              "name": "Cloudflare Sites and Services - Load Balancing and Monitoring",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "tfnrx45s2b48",
+              "name": "Cloudflare Sites and Services - Lists",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "k0mgxrls5y1b",
+              "name": "Cloudflare Sites and Services - Logs",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "bjlxcss20fsl",
+              "name": "Cloudflare Sites and Services - Magic Transit",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Magic WAN",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "0fw91jq1bzxx",
+              "name": "Cloudflare Sites and Services - Radar",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "kn2xkt469vyh",
+              "name": "Cloudflare Sites and Services - Registrar",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "9p2qlpt19nqb",
+              "name": "Cloudflare Sites and Services - SSL for SaaS Provisioning",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "jzcwkvrc4w4q",
+              "name": "Cloudflare Sites and Services - Support Site",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "y98zlwj1d7zh",
+              "name": "Cloudflare Sites and Services - Tunnel",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "9c7cbxnhk1dq",
+              "name": "Cloudflare Sites and Services - Waiting Room",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qt59p3cr1grx",
+              "name": "Cloudflare Sites and Services - Web Analytics",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "tmh50tx2nprs",
+              "name": "Cloudflare Sites and Services - Workers KV",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "dv57r07t7qh7",
           "status": "monitoring",
@@ -15653,6 +15719,21 @@
           "only_show_if_degraded": false
         },
         {
+          "id": "tfnrx45s2b48",
+          "name": "Lists",
+          "status": "degraded_performance",
+          "created_at": "2023-11-04T12:45:35.436Z",
+          "updated_at": "2023-11-04T12:49:41.888Z",
+          "position": 37,
+          "description": "Lists of IP addresses, hostnames and ASNs",
+          "showcase": false,
+          "start_date": "2023-11-04",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
           "id": "k0mgxrls5y1b",
           "name": "Logs",
           "status": "operational",
@@ -15887,6 +15968,152 @@
           "description": null,
           "showcase": false,
           "start_date": "2021-04-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "gx41btmhkf9m",
+      "name": "Authentication Errors On New R2 Tokens",
+      "status": "investigating",
+      "created_at": "2023-11-04T11:57:25.903Z",
+      "updated_at": "2023-11-04T12:46:13.738Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5mchtjmzt94x",
+      "started_at": "2023-11-04T11:57:25.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "19dqdpf332k2",
+          "status": "investigating",
+          "body": "Customers creating new R2 tokens, or refreshing existing tokens, may experience authentication errors when using R2’s S3 API.\n\nExisting, unedited tokens are unaffected.",
+          "incident_id": "gx41btmhkf9m",
+          "created_at": "2023-11-04T11:57:25.978Z",
+          "updated_at": "2023-11-04T12:46:13.676Z",
+          "display_at": "2023-11-04T11:57:25.000Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2023-11-04T12:49:41.988Z",
+          "position": 49,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "k27bk6fc4n14",
+      "name": "Some new zones not resolving via DNS",
+      "status": "monitoring",
+      "created_at": "2023-11-04T11:14:29.253Z",
+      "updated_at": "2023-11-04T12:05:30.959Z",
+      "monitoring_at": "2023-11-04T12:05:30.938Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/cykxhyq28g3w",
+      "started_at": "2023-11-04T11:14:29.246Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "gtr746vc4xl4",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "k27bk6fc4n14",
+          "created_at": "2023-11-04T12:05:30.938Z",
+          "updated_at": "2023-11-04T12:05:30.938Z",
+          "display_at": "2023-11-04T12:05:30.938Z",
+          "affected_components": [
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "hpfbxdrxzzfg",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "k27bk6fc4n14",
+          "created_at": "2023-11-04T11:14:53.520Z",
+          "updated_at": "2023-11-04T11:14:53.520Z",
+          "display_at": "2023-11-04T11:14:53.520Z",
+          "affected_components": [
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "p11dybjgs454",
+          "status": "investigating",
+          "body": "Cloudflare is aware of an issue where some new zones do not resolve via DNS.  Engineers are working on a fix.",
+          "incident_id": "k27bk6fc4n14",
+          "created_at": "2023-11-04T11:14:29.329Z",
+          "updated_at": "2023-11-04T11:14:29.329Z",
+          "display_at": "2023-11-04T11:14:29.329Z",
+          "affected_components": [
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7j656z7tqk7f",
+          "name": "DNS Updates",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:50:20.772Z",
+          "updated_at": "2023-11-04T11:14:29.281Z",
+          "position": 26,
+          "description": "DNS update service pushing customer DNS changes out to all data centers",
+          "showcase": false,
+          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
