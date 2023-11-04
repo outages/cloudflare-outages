@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-04T17:08:07.167Z"
+    "updated_at": "2023-11-04T17:18:46.949Z"
   },
   "components": [
     {
@@ -814,9 +814,9 @@
     {
       "id": "6vll3w5p50f9",
       "name": "Belo Horizonte, Brazil - (CNF)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-13T13:51:00.191Z",
-      "updated_at": "2023-11-04T16:12:55.722Z",
+      "updated_at": "2023-11-04T17:17:38.658Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -5870,9 +5870,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2023-11-04T17:06:38.051Z",
+      "updated_at": "2023-11-04T17:16:14.613Z",
       "position": 67,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -6289,6 +6289,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "sb113znkcc9g",
+      "name": "Cloudflare Workers Issues",
+      "status": "investigating",
+      "created_at": "2023-11-04T17:16:14.557Z",
+      "updated_at": "2023-11-04T17:16:14.668Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/s6vzmjkvh8n9",
+      "started_at": "2023-11-04T17:16:14.541Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "rhkhsd9j49sg",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an increased level of errors for customers running Workers scripts, mostly in the Frankfurt region.\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "sb113znkcc9g",
+          "created_at": "2023-11-04T17:16:14.664Z",
+          "updated_at": "2023-11-04T17:16:14.664Z",
+          "display_at": "2023-11-04T17:16:14.664Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rbnhbzgld936",
+          "name": "Frankfurt, Germany - (FRA)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:37:25.480Z",
+          "updated_at": "2023-09-21T20:16:12.242Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "operational",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2023-11-04T17:16:14.613Z",
+          "position": 67,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "hm7491k53ppg",
       "name": "Cloudflare Dashboard and Cloudflare API service issues",
@@ -16567,9 +16641,9 @@
         {
           "id": "57srcl8zcn7c",
           "name": "Workers",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2023-11-04T17:06:38.051Z",
+          "updated_at": "2023-11-04T17:16:14.613Z",
           "position": 67,
           "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
           "showcase": false,
@@ -16604,99 +16678,6 @@
           "description": null,
           "showcase": false,
           "start_date": "2021-04-08",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "2l0yghlk3z79",
-      "name": "Analytics Showing Incorrect Data",
-      "status": "monitoring",
-      "created_at": "2023-11-04T15:11:06.926Z",
-      "updated_at": "2023-11-04T16:46:38.960Z",
-      "monitoring_at": "2023-11-04T16:46:38.945Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/ntvzxdhyphyp",
-      "started_at": "2023-11-04T15:11:06.916Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "k8f58s16m07r",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "2l0yghlk3z79",
-          "created_at": "2023-11-04T16:46:38.945Z",
-          "updated_at": "2023-11-04T16:46:38.945Z",
-          "display_at": "2023-11-04T16:46:38.945Z",
-          "affected_components": [
-            {
-              "code": "4c231tkdlpcl",
-              "name": "Cloudflare Sites and Services - Analytics",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "5qvlsfr01xdj",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "2l0yghlk3z79",
-          "created_at": "2023-11-04T16:27:45.901Z",
-          "updated_at": "2023-11-04T16:27:45.901Z",
-          "display_at": "2023-11-04T16:27:45.901Z",
-          "affected_components": [
-            {
-              "code": "4c231tkdlpcl",
-              "name": "Cloudflare Sites and Services - Analytics",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "65k9s8rzwxkd",
-          "status": "investigating",
-          "body": "We are currently investigating this issue. Analytics section of dashboard, as well as Legacy traffic, Workers KV and Rate Limiting Analytics returned via Dashboard or by GraphQL API (httpRequests1mByColoGroups or httpRequests1dByColoGroups) may return incorrect data.",
-          "incident_id": "2l0yghlk3z79",
-          "created_at": "2023-11-04T15:11:07.049Z",
-          "updated_at": "2023-11-04T15:23:20.647Z",
-          "display_at": "2023-11-04T15:11:07.000Z",
-          "affected_components": [
-            {
-              "code": "4c231tkdlpcl",
-              "name": "Cloudflare Sites and Services - Analytics",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "4c231tkdlpcl",
-          "name": "Analytics",
-          "status": "degraded_performance",
-          "created_at": "2014-11-13T11:54:10.191Z",
-          "updated_at": "2023-11-04T15:11:06.971Z",
-          "position": 3,
-          "description": "Customer analytics aggregation service",
-          "showcase": false,
-          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
