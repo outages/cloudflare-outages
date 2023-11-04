@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-04T18:13:22.215Z"
+    "updated_at": "2023-11-04T18:35:34.713Z"
   },
   "components": [
     {
@@ -3800,9 +3800,9 @@
     {
       "id": "4fx4674ygqvr",
       "name": "Nicosia, Cyprus - (LCA)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-04-24T09:39:46.053Z",
-      "updated_at": "2023-11-04T17:24:38.228Z",
+      "updated_at": "2023-11-04T18:35:34.709Z",
       "position": 34,
       "description": null,
       "showcase": false,
@@ -4070,9 +4070,9 @@
     {
       "id": "tfnrx45s2b48",
       "name": "Lists",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2023-11-04T12:45:35.436Z",
-      "updated_at": "2023-11-04T12:49:41.888Z",
+      "updated_at": "2023-11-04T18:32:02.612Z",
       "position": 37,
       "description": "Lists of IP addresses, hostnames and ASNs",
       "showcase": false,
@@ -4670,9 +4670,9 @@
     {
       "id": "62rk8nsdbjg1",
       "name": "Stuttgart, Germany   - (STR)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-01-05T17:31:45.013Z",
-      "updated_at": "2023-11-04T17:40:32.785Z",
+      "updated_at": "2023-11-04T18:30:30.712Z",
       "position": 45,
       "description": null,
       "showcase": false,
@@ -6170,9 +6170,9 @@
     {
       "id": "n332jkf8s56z",
       "name": "Denpasar, Indonesia - (DPS)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-06-06T11:00:58.091Z",
-      "updated_at": "2023-11-04T13:54:21.104Z",
+      "updated_at": "2023-11-04T18:20:16.696Z",
       "position": 89,
       "description": null,
       "showcase": false,
@@ -6290,27 +6290,207 @@
   ],
   "incidents": [
     {
-      "id": "sb113znkcc9g",
-      "name": "Cloudflare Workers Issues",
-      "status": "identified",
-      "created_at": "2023-11-04T17:16:14.557Z",
-      "updated_at": "2023-11-04T17:44:48.786Z",
-      "monitoring_at": null,
+      "id": "hm7491k53ppg",
+      "name": "Cloudflare Dashboard and Cloudflare API service issues",
+      "status": "monitoring",
+      "created_at": "2023-11-02T11:54:59.854Z",
+      "updated_at": "2023-11-04T18:32:02.670Z",
+      "monitoring_at": "2023-11-04T06:42:50.533Z",
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/s6vzmjkvh8n9",
-      "started_at": "2023-11-04T17:16:14.541Z",
+      "shortlink": "https://stspg.io/zlvxjtpd506m",
+      "started_at": "2023-11-02T13:18:31.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "kt2h1sbhxthw",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "sb113znkcc9g",
-          "created_at": "2023-11-04T17:44:48.783Z",
-          "updated_at": "2023-11-04T17:44:48.783Z",
-          "display_at": "2023-11-04T17:44:48.783Z",
+          "id": "1g0d4rtzylyb",
+          "status": "monitoring",
+          "body": "All services have been restored to operational status. We're continuing to monitor stability and edge cases.\n\nMaterial changes since last update: Lists have now have been moved to restored status.  Lists can only be modified through the Dashboard currently.",
+          "incident_id": "hm7491k53ppg",
+          "created_at": "2023-11-04T18:32:02.664Z",
+          "updated_at": "2023-11-04T18:32:02.664Z",
+          "display_at": "2023-11-04T18:32:02.664Z",
           "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "g9yx473yjk9t",
+              "name": "Cloudflare Sites and Services - API Shield",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "z9w398bsjvnq",
+              "name": "Cloudflare Sites and Services - Argo Smart Routing",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "dp8ppfycqxcs",
+              "name": "Cloudflare Sites and Services - Authoritative DNS",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ll1x88wwz4fq",
+              "name": "Cloudflare Sites and Services - Billing",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "h2p0jj4ltvcq",
+              "name": "Cloudflare Sites and Services - Cloud Access Security Broker (CASB)",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "nmp96vgn1hpl",
+              "name": "Cloudflare Sites and Services - Digital Experience Monitoring (DEX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "gjb0yzvvrpf6",
+              "name": "Cloudflare Sites and Services - Email Routing",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3lbj8lp3d750",
+              "name": "Cloudflare Sites and Services - Images",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "8sn2w5kyxfnp",
+              "name": "Cloudflare Sites and Services - Load Balancing and Monitoring",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "tfnrx45s2b48",
+              "name": "Cloudflare Sites and Services - Lists",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "k0mgxrls5y1b",
+              "name": "Cloudflare Sites and Services - Logs",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "bjlxcss20fsl",
+              "name": "Cloudflare Sites and Services - Magic Transit",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Magic WAN",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "0fw91jq1bzxx",
+              "name": "Cloudflare Sites and Services - Radar",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "kn2xkt469vyh",
+              "name": "Cloudflare Sites and Services - Registrar",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "9p2qlpt19nqb",
+              "name": "Cloudflare Sites and Services - SSL for SaaS Provisioning",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "jzcwkvrc4w4q",
+              "name": "Cloudflare Sites and Services - Support Site",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "y98zlwj1d7zh",
+              "name": "Cloudflare Sites and Services - Tunnel",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "9c7cbxnhk1dq",
+              "name": "Cloudflare Sites and Services - Waiting Room",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qt59p3cr1grx",
+              "name": "Cloudflare Sites and Services - Web Analytics",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
             {
               "code": "57srcl8zcn7c",
               "name": "Cloudflare Sites and Services - Workers",
@@ -6318,8 +6498,14 @@
               "new_status": "operational"
             },
             {
-              "code": "rbnhbzgld936",
-              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "code": "tmh50tx2nprs",
+              "name": "Cloudflare Sites and Services - Workers KV",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -6328,80 +6514,6 @@
           "custom_tweet": null,
           "tweet_id": null
         },
-        {
-          "id": "rhkhsd9j49sg",
-          "status": "investigating",
-          "body": "Cloudflare is investigating an increased level of errors for customers running Workers scripts, mostly in the Frankfurt region.\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
-          "incident_id": "sb113znkcc9g",
-          "created_at": "2023-11-04T17:16:14.664Z",
-          "updated_at": "2023-11-04T17:16:14.664Z",
-          "display_at": "2023-11-04T17:16:14.664Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            },
-            {
-              "code": "rbnhbzgld936",
-              "name": "Europe - Frankfurt, Germany - (FRA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rbnhbzgld936",
-          "name": "Frankfurt, Germany - (FRA)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:37:25.480Z",
-          "updated_at": "2023-09-21T20:16:12.242Z",
-          "position": 16,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "57srcl8zcn7c",
-          "name": "Workers",
-          "status": "operational",
-          "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2023-11-04T17:16:14.613Z",
-          "position": 67,
-          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "hm7491k53ppg",
-      "name": "Cloudflare Dashboard and Cloudflare API service issues",
-      "status": "monitoring",
-      "created_at": "2023-11-02T11:54:59.854Z",
-      "updated_at": "2023-11-04T17:08:07.149Z",
-      "monitoring_at": "2023-11-04T06:42:50.533Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/zlvxjtpd506m",
-      "started_at": "2023-11-02T13:18:31.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
         {
           "id": "ytz4dft1s89m",
           "status": "monitoring",
@@ -16457,9 +16569,9 @@
         {
           "id": "tfnrx45s2b48",
           "name": "Lists",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2023-11-04T12:45:35.436Z",
-          "updated_at": "2023-11-04T12:49:41.888Z",
+          "updated_at": "2023-11-04T18:32:02.612Z",
           "position": 37,
           "description": "Lists of IP addresses, hostnames and ASNs",
           "showcase": false,
@@ -16704,6 +16816,106 @@
           "description": null,
           "showcase": false,
           "start_date": "2021-04-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "sb113znkcc9g",
+      "name": "Cloudflare Workers Issues",
+      "status": "identified",
+      "created_at": "2023-11-04T17:16:14.557Z",
+      "updated_at": "2023-11-04T17:44:48.786Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/s6vzmjkvh8n9",
+      "started_at": "2023-11-04T17:16:14.541Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "kt2h1sbhxthw",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "sb113znkcc9g",
+          "created_at": "2023-11-04T17:44:48.783Z",
+          "updated_at": "2023-11-04T17:44:48.783Z",
+          "display_at": "2023-11-04T17:44:48.783Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "rhkhsd9j49sg",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an increased level of errors for customers running Workers scripts, mostly in the Frankfurt region.\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "sb113znkcc9g",
+          "created_at": "2023-11-04T17:16:14.664Z",
+          "updated_at": "2023-11-04T17:16:14.664Z",
+          "display_at": "2023-11-04T17:16:14.664Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rbnhbzgld936",
+          "name": "Frankfurt, Germany - (FRA)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:37:25.480Z",
+          "updated_at": "2023-09-21T20:16:12.242Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "operational",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2023-11-04T17:16:14.613Z",
+          "position": 67,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
