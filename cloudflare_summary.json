@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-04T11:03:40.838Z"
+    "updated_at": "2023-11-04T11:17:42.753Z"
   },
   "components": [
     {
@@ -173,9 +173,9 @@
     {
       "id": "8h9sn12x310t",
       "name": "Accra, Ghana - (ACC)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-02-11T11:46:37.349Z",
-      "updated_at": "2023-11-04T10:07:53.666Z",
+      "updated_at": "2023-11-04T11:13:46.171Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1295,9 +1295,9 @@
     {
       "id": "h02k6rrcwpbr",
       "name": "Doha, Qatar - (DOH)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2015-06-18T15:21:54.451Z",
-      "updated_at": "2023-11-04T10:02:49.326Z",
+      "updated_at": "2023-11-04T11:17:42.750Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -3244,9 +3244,9 @@
     {
       "id": "7j656z7tqk7f",
       "name": "DNS Updates",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:50:20.772Z",
-      "updated_at": "2023-11-04T03:09:29.449Z",
+      "updated_at": "2023-11-04T11:14:29.281Z",
       "position": 26,
       "description": "DNS update service pushing customer DNS changes out to all data centers",
       "showcase": false,
@@ -6273,6 +6273,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "k27bk6fc4n14",
+      "name": "Some new zones not resolving via DNS",
+      "status": "identified",
+      "created_at": "2023-11-04T11:14:29.253Z",
+      "updated_at": "2023-11-04T11:14:53.524Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/cykxhyq28g3w",
+      "started_at": "2023-11-04T11:14:29.246Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "hpfbxdrxzzfg",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "k27bk6fc4n14",
+          "created_at": "2023-11-04T11:14:53.520Z",
+          "updated_at": "2023-11-04T11:14:53.520Z",
+          "display_at": "2023-11-04T11:14:53.520Z",
+          "affected_components": [
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "p11dybjgs454",
+          "status": "investigating",
+          "body": "Cloudflare is aware of an issue where some new zones do not resolve via DNS.  Engineers are working on a fix.",
+          "incident_id": "k27bk6fc4n14",
+          "created_at": "2023-11-04T11:14:29.329Z",
+          "updated_at": "2023-11-04T11:14:29.329Z",
+          "display_at": "2023-11-04T11:14:29.329Z",
+          "affected_components": [
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7j656z7tqk7f",
+          "name": "DNS Updates",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:50:20.772Z",
+          "updated_at": "2023-11-04T11:14:29.281Z",
+          "position": 26,
+          "description": "DNS update service pushing customer DNS changes out to all data centers",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "hm7491k53ppg",
       "name": "Cloudflare Dashboard and Cloudflare API service issues",
@@ -15403,9 +15476,9 @@
         {
           "id": "7j656z7tqk7f",
           "name": "DNS Updates",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2019-01-24T16:50:20.772Z",
-          "updated_at": "2023-11-04T03:09:29.449Z",
+          "updated_at": "2023-11-04T11:14:29.281Z",
           "position": 26,
           "description": "DNS update service pushing customer DNS changes out to all data centers",
           "showcase": false,
