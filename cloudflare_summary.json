@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-30T17:48:37.621Z"
+    "updated_at": "2023-11-30T18:12:32.160Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -473,9 +473,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2023-11-30T15:41:29.331Z",
+      "updated_at": "2023-11-30T18:12:32.095Z",
       "position": 4,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -3246,9 +3246,9 @@
     {
       "id": "7j656z7tqk7f",
       "name": "DNS Updates",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:50:20.772Z",
-      "updated_at": "2023-11-30T15:41:29.345Z",
+      "updated_at": "2023-11-30T18:12:32.110Z",
       "position": 26,
       "description": "DNS update service pushing customer DNS changes out to all data centers",
       "showcase": false,
@@ -3413,7 +3413,7 @@
       "name": "Neuquén, Argentina - (NQN)",
       "status": "operational",
       "created_at": "2022-03-25T14:03:04.703Z",
-      "updated_at": "2023-11-30T07:51:14.934Z",
+      "updated_at": "2023-11-30T18:07:07.737Z",
       "position": 28,
       "description": null,
       "showcase": false,
@@ -4791,9 +4791,9 @@
     {
       "id": "vx629z785kxh",
       "name": "Mandalay, Myanmar - (MDL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-07-08T22:26:21.014Z",
-      "updated_at": "2023-11-28T05:32:43.190Z",
+      "updated_at": "2023-11-30T18:02:01.175Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -6304,108 +6304,7 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [
-    {
-      "id": "vp0dwbjll8zf",
-      "name": "Increased API Error Rate and Delays in DNS Propagation",
-      "status": "identified",
-      "created_at": "2023-11-30T15:41:29.297Z",
-      "updated_at": "2023-11-30T17:28:26.233Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/nr0rvb495vvc",
-      "started_at": "2023-11-30T15:41:29.288Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "s04gvqjwgczd",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "vp0dwbjll8zf",
-          "created_at": "2023-11-30T17:28:26.231Z",
-          "updated_at": "2023-11-30T17:28:26.231Z",
-          "display_at": "2023-11-30T17:28:26.231Z",
-          "affected_components": [
-            {
-              "code": "g4tb35rs9yw7",
-              "name": "Cloudflare Sites and Services - API",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "7j656z7tqk7f",
-              "name": "Cloudflare Sites and Services - DNS Updates",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "z2zc7lp0mh4k",
-          "status": "investigating",
-          "body": "Cloudflare is aware of, and investigating an issue related to an increased rate of API errors and delays in DNS propagation which potentially impacts multiple customers. Further detail will be provided as more information becomes available. There is no impact of traffic at the Edge.",
-          "incident_id": "vp0dwbjll8zf",
-          "created_at": "2023-11-30T15:41:29.396Z",
-          "updated_at": "2023-11-30T15:41:29.396Z",
-          "display_at": "2023-11-30T15:41:29.396Z",
-          "affected_components": [
-            {
-              "code": "g4tb35rs9yw7",
-              "name": "Cloudflare Sites and Services - API",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "7j656z7tqk7f",
-              "name": "Cloudflare Sites and Services - DNS Updates",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "g4tb35rs9yw7",
-          "name": "API",
-          "status": "degraded_performance",
-          "created_at": "2014-10-09T03:32:07.158Z",
-          "updated_at": "2023-11-30T15:41:29.331Z",
-          "position": 4,
-          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "7j656z7tqk7f",
-          "name": "DNS Updates",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:50:20.772Z",
-          "updated_at": "2023-11-30T15:41:29.345Z",
-          "position": 26,
-          "description": "DNS update service pushing customer DNS changes out to all data centers",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "1pfrchs0n9p3",
