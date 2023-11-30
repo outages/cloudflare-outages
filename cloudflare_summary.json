@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-30T15:32:22.290Z"
+    "updated_at": "2023-11-30T15:49:41.470Z"
   },
   "components": [
     {
@@ -473,9 +473,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2023-11-15T10:40:18.116Z",
+      "updated_at": "2023-11-30T15:41:29.331Z",
       "position": 4,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -3246,9 +3246,9 @@
     {
       "id": "7j656z7tqk7f",
       "name": "DNS Updates",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:50:20.772Z",
-      "updated_at": "2023-11-06T19:40:43.202Z",
+      "updated_at": "2023-11-30T15:41:29.345Z",
       "position": 26,
       "description": "DNS update service pushing customer DNS changes out to all data centers",
       "showcase": false,
@@ -5211,9 +5211,9 @@
     {
       "id": "pkzjg0k7vjsj",
       "name": "Osaka, Japan - (KIX)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2015-06-11T13:06:20.755Z",
-      "updated_at": "2023-10-31T17:35:09.603Z",
+      "updated_at": "2023-11-30T15:49:41.467Z",
       "position": 53,
       "description": null,
       "showcase": false,
@@ -6306,6 +6306,80 @@
   ],
   "incidents": [
     {
+      "id": "vp0dwbjll8zf",
+      "name": "Increased API Error Rate and Delays in DNS Propagation",
+      "status": "investigating",
+      "created_at": "2023-11-30T15:41:29.297Z",
+      "updated_at": "2023-11-30T15:41:29.398Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/nr0rvb495vvc",
+      "started_at": "2023-11-30T15:41:29.288Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "z2zc7lp0mh4k",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue related to an increased rate of API errors and delays in DNS propagation which potentially impacts multiple customers. Further detail will be provided as more information becomes available. There is no impact of traffic at the Edge.",
+          "incident_id": "vp0dwbjll8zf",
+          "created_at": "2023-11-30T15:41:29.396Z",
+          "updated_at": "2023-11-30T15:41:29.396Z",
+          "display_at": "2023-11-30T15:41:29.396Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2023-11-30T15:41:29.331Z",
+          "position": 4,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7j656z7tqk7f",
+          "name": "DNS Updates",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:50:20.772Z",
+          "updated_at": "2023-11-30T15:41:29.345Z",
+          "position": 26,
+          "description": "DNS update service pushing customer DNS changes out to all data centers",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "6tkdbxwy70z1",
       "name": "Delays in Access Configuration Changes",
       "status": "investigating",
@@ -6668,9 +6742,9 @@
         {
           "id": "pkzjg0k7vjsj",
           "name": "Osaka, Japan - (KIX)",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2015-06-11T13:06:20.755Z",
-          "updated_at": "2023-10-31T17:35:09.603Z",
+          "updated_at": "2023-11-30T15:49:41.467Z",
           "position": 53,
           "description": null,
           "showcase": false,
@@ -6722,9 +6796,9 @@
         {
           "id": "pkzjg0k7vjsj",
           "name": "Osaka, Japan - (KIX)",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2015-06-11T13:06:20.755Z",
-          "updated_at": "2023-10-31T17:35:09.603Z",
+          "updated_at": "2023-11-30T15:49:41.467Z",
           "position": 53,
           "description": null,
           "showcase": false,
