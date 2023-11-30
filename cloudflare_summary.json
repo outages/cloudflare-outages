@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-30T03:11:21.932Z"
+    "updated_at": "2023-11-30T03:25:41.508Z"
   },
   "components": [
     {
@@ -2466,9 +2466,9 @@
     {
       "id": "w8pgyc1hh9hw",
       "name": "Gothenburg, Sweden - (GOT)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-04-11T10:13:11.497Z",
-      "updated_at": "2023-11-17T06:19:17.163Z",
+      "updated_at": "2023-11-30T03:25:41.505Z",
       "position": 18,
       "description": null,
       "showcase": false,
@@ -3636,9 +3636,9 @@
     {
       "id": "gyx2yygg7lmd",
       "name": "Gateway",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-10T09:28:36.367Z",
-      "updated_at": "2023-11-03T19:05:50.406Z",
+      "updated_at": "2023-11-30T03:17:34.972Z",
       "position": 31,
       "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
       "showcase": false,
@@ -6006,9 +6006,9 @@
     {
       "id": "kf0ktv29xrfy",
       "name": "Zero Trust",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-08T15:53:09.058Z",
-      "updated_at": "2023-11-07T09:33:58.102Z",
+      "updated_at": "2023-11-30T03:17:34.993Z",
       "position": 72,
       "description": null,
       "showcase": false,
@@ -6308,16 +6308,48 @@
     {
       "id": "qf0kbf4yk52p",
       "name": "Increased Error in North America Region",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2023-11-30T02:34:16.583Z",
-      "updated_at": "2023-11-30T03:11:21.922Z",
-      "monitoring_at": null,
+      "updated_at": "2023-11-30T03:17:35.060Z",
+      "monitoring_at": "2023-11-30T03:17:35.043Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/jhrv5f042w4m",
       "started_at": "2023-11-30T02:34:16.574Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "ky9drkm9lgc3",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "qf0kbf4yk52p",
+          "created_at": "2023-11-30T03:17:35.043Z",
+          "updated_at": "2023-11-30T03:17:35.043Z",
+          "display_at": "2023-11-30T03:17:35.043Z",
+          "affected_components": [
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "qcl5w7tf7n5j",
           "status": "identified",
@@ -6381,6 +6413,21 @@
       ],
       "components": [
         {
+          "id": "gyx2yygg7lmd",
+          "name": "Gateway",
+          "status": "degraded_performance",
+          "created_at": "2023-01-10T09:28:36.367Z",
+          "updated_at": "2023-11-30T03:17:34.972Z",
+          "position": 31,
+          "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
+          "showcase": false,
+          "start_date": "2023-01-10",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
           "id": "57srcl8zcn7c",
           "name": "Workers",
           "status": "degraded_performance",
@@ -6390,6 +6437,21 @@
           "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
           "showcase": false,
           "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "kf0ktv29xrfy",
+          "name": "Zero Trust",
+          "status": "degraded_performance",
+          "created_at": "2021-04-08T15:53:09.058Z",
+          "updated_at": "2023-11-30T03:17:34.993Z",
+          "position": 72,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-08",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
