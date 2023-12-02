@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-12-01T23:40:25.370Z"
+    "updated_at": "2023-12-02T00:57:42.553Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -415,7 +415,7 @@
       "name": "Barcelona, Spain - (BCN)",
       "status": "partial_outage",
       "created_at": "2016-10-10T21:36:13.143Z",
-      "updated_at": "2023-12-01T23:40:25.367Z",
+      "updated_at": "2023-12-02T00:50:07.418Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -3351,9 +3351,9 @@
     {
       "id": "bty1yz6dhh0v",
       "name": "Durable Objects",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-06-12T14:55:22.631Z",
-      "updated_at": "2023-10-05T19:14:20.870Z",
+      "updated_at": "2023-12-01T23:43:56.396Z",
       "position": 27,
       "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
       "showcase": false,
@@ -6304,7 +6304,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "xbsmwc1mqqd0",
+      "name": "Delay on Durable Objects usage data",
+      "status": "investigating",
+      "created_at": "2023-12-01T23:43:56.352Z",
+      "updated_at": "2023-12-02T00:57:42.543Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/g0lzlbr56rck",
+      "started_at": "2023-12-01T23:43:56.345Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "3hpvpb0mgr8s",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "xbsmwc1mqqd0",
+          "created_at": "2023-12-02T00:57:42.539Z",
+          "updated_at": "2023-12-02T00:57:42.539Z",
+          "display_at": "2023-12-02T00:57:42.539Z",
+          "affected_components": [
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "6dw0tb1wbqrs",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with delayed and incomplete Durable Objects usage data. Durable Object service functionality is unaffected.\n\nWe are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "xbsmwc1mqqd0",
+          "created_at": "2023-12-01T23:43:56.450Z",
+          "updated_at": "2023-12-01T23:43:56.450Z",
+          "display_at": "2023-12-01T23:43:56.450Z",
+          "affected_components": [
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bty1yz6dhh0v",
+          "name": "Durable Objects",
+          "status": "degraded_performance",
+          "created_at": "2023-06-12T14:55:22.631Z",
+          "updated_at": "2023-12-01T23:43:56.396Z",
+          "position": 27,
+          "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
+          "showcase": false,
+          "start_date": "2023-06-12",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "70wpmswxkl94",
@@ -6467,6 +6541,60 @@
       ],
       "scheduled_for": "2023-12-04T17:00:00.000Z",
       "scheduled_until": "2023-12-05T11:00:00.000Z"
+    },
+    {
+      "id": "9l9nknml7k3k",
+      "name": "KUL (Kuala Lumpur) on 2023-12-04",
+      "status": "scheduled",
+      "created_at": "2023-12-02T00:21:05.147Z",
+      "updated_at": "2023-12-02T00:21:05.194Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/3pcr8st573jq",
+      "started_at": "2023-12-02T00:21:05.141Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "nc9g56tgpr54",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in KUL (Kuala Lumpur) datacenter on 2023-12-04 between 18:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "9l9nknml7k3k",
+          "created_at": "2023-12-02T00:21:05.192Z",
+          "updated_at": "2023-12-02T00:21:05.192Z",
+          "display_at": "2023-12-02T00:21:05.192Z",
+          "affected_components": [
+            {
+              "code": "hr78s04g1r5b",
+              "name": "Asia - Kuala Lumpur, Malaysia - (KUL)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hr78s04g1r5b",
+          "name": "Kuala Lumpur, Malaysia - (KUL)",
+          "status": "operational",
+          "created_at": "2015-08-31T01:11:27.364Z",
+          "updated_at": "2023-11-29T22:56:54.789Z",
+          "position": 40,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-12-04T18:00:00.000Z",
+      "scheduled_until": "2023-12-04T21:00:00.000Z"
     },
     {
       "id": "kt9hw43yp200",
