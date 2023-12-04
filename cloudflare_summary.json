@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-12-04T16:28:24.361Z"
+    "updated_at": "2023-12-04T17:07:55.920Z"
   },
   "components": [
     {
@@ -6288,66 +6288,32 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "13r1q82myszb",
-      "name": "SIN (Singapore) on 2023-12-04",
-      "status": "scheduled",
-      "created_at": "2023-11-23T08:40:18.879Z",
-      "updated_at": "2023-12-04T16:00:36.432Z",
+      "id": "q60mgytkb5dw",
+      "name": "R2 degraded availability for buckets in APAC region",
+      "status": "investigating",
+      "created_at": "2023-12-04T17:07:10.144Z",
+      "updated_at": "2023-12-04T17:07:55.914Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/g6vfcg3cv5dt",
-      "started_at": "2023-11-23T08:40:18.872Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/kdhtxnbvbtdn",
+      "started_at": "2023-12-04T17:07:10.136Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "gg0thmstc4cy",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "13r1q82myszb",
-          "created_at": "2023-12-04T16:00:33.108Z",
-          "updated_at": "2023-12-04T16:00:33.108Z",
-          "display_at": "2023-12-04T16:00:33.108Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "gmb70gxlcg9f",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SIN (Singapore) datacenter on 2023-12-04 between 17:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "13r1q82myszb",
-          "created_at": "2023-12-04T04:20:41.113Z",
-          "updated_at": "2023-12-04T04:20:41.113Z",
-          "display_at": "2023-12-04T04:20:41.113Z",
+          "id": "7gwtt24twclv",
+          "status": "investigating",
+          "body": "We're investigating increased error rates on R2 buckets stored in the APAC region. Users will see increases in HTTP 500 responses on requests made through S3 clients or Workers bindings.",
+          "incident_id": "q60mgytkb5dw",
+          "created_at": "2023-12-04T17:07:10.194Z",
+          "updated_at": "2023-12-04T17:07:10.194Z",
+          "display_at": "2023-12-04T17:07:10.194Z",
           "affected_components": [
             {
-              "code": "18p6r93swmbl",
-              "name": "Asia - Singapore, Singapore - (SIN)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "8j27ljvndvgd",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SIN (Singapore) datacenter between 2023-12-04 17:00 and 2023-12-05 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "13r1q82myszb",
-          "created_at": "2023-11-23T08:40:18.937Z",
-          "updated_at": "2023-11-23T08:40:18.937Z",
-          "display_at": "2023-11-23T08:40:18.937Z",
-          "affected_components": [
-            {
-              "code": "18p6r93swmbl",
-              "name": "Asia - Singapore, Singapore - (SIN)",
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -6359,30 +6325,31 @@
       ],
       "components": [
         {
-          "id": "18p6r93swmbl",
-          "name": "Singapore, Singapore - (SIN)",
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
           "status": "operational",
-          "created_at": "2014-10-27T21:44:15.897Z",
-          "updated_at": "2023-10-17T22:48:49.570Z",
-          "position": 59,
-          "description": null,
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2023-11-29T18:34:20.289Z",
+          "position": 49,
+          "description": "High-performance storage for files and objects with zero egress charges",
           "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-12-04T17:00:00.000Z",
-      "scheduled_until": "2023-12-04T22:00:00.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "9l9nknml7k3k",
       "name": "KUL (Kuala Lumpur) on 2023-12-04",
       "status": "scheduled",
       "created_at": "2023-12-02T00:21:05.147Z",
-      "updated_at": "2023-12-02T00:21:05.194Z",
+      "updated_at": "2023-12-04T17:00:02.465Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -6390,6 +6357,19 @@
       "started_at": "2023-12-02T00:21:05.141Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "hbygv5dyywg2",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "9l9nknml7k3k",
+          "created_at": "2023-12-04T17:00:02.252Z",
+          "updated_at": "2023-12-04T17:00:02.252Z",
+          "display_at": "2023-12-04T17:00:02.252Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "nc9g56tgpr54",
           "status": "scheduled",
@@ -6862,6 +6842,106 @@
       ],
       "scheduled_for": "2023-12-13T19:00:00.000Z",
       "scheduled_until": "2023-12-13T23:00:00.000Z"
+    },
+    {
+      "id": "13r1q82myszb",
+      "name": "SIN (Singapore) on 2023-12-04",
+      "status": "in_progress",
+      "created_at": "2023-11-23T08:40:18.879Z",
+      "updated_at": "2023-12-04T17:01:04.856Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/g6vfcg3cv5dt",
+      "started_at": "2023-11-23T08:40:18.872Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "hsp7cz8ktbym",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "13r1q82myszb",
+          "created_at": "2023-12-04T17:01:04.851Z",
+          "updated_at": "2023-12-04T17:01:04.851Z",
+          "display_at": "2023-12-04T17:01:04.851Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "gg0thmstc4cy",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "13r1q82myszb",
+          "created_at": "2023-12-04T16:00:33.108Z",
+          "updated_at": "2023-12-04T16:00:33.108Z",
+          "display_at": "2023-12-04T16:00:33.108Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "gmb70gxlcg9f",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SIN (Singapore) datacenter on 2023-12-04 between 17:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "13r1q82myszb",
+          "created_at": "2023-12-04T04:20:41.113Z",
+          "updated_at": "2023-12-04T04:20:41.113Z",
+          "display_at": "2023-12-04T04:20:41.113Z",
+          "affected_components": [
+            {
+              "code": "18p6r93swmbl",
+              "name": "Asia - Singapore, Singapore - (SIN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "8j27ljvndvgd",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SIN (Singapore) datacenter between 2023-12-04 17:00 and 2023-12-05 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "13r1q82myszb",
+          "created_at": "2023-11-23T08:40:18.937Z",
+          "updated_at": "2023-11-23T08:40:18.937Z",
+          "display_at": "2023-11-23T08:40:18.937Z",
+          "affected_components": [
+            {
+              "code": "18p6r93swmbl",
+              "name": "Asia - Singapore, Singapore - (SIN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "18p6r93swmbl",
+          "name": "Singapore, Singapore - (SIN)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:44:15.897Z",
+          "updated_at": "2023-10-17T22:48:49.570Z",
+          "position": 59,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-12-04T17:00:00.000Z",
+      "scheduled_until": "2023-12-04T22:00:00.000Z"
     },
     {
       "id": "1pfrchs0n9p3",
