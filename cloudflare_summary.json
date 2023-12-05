@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-12-05T13:07:53.018Z"
+    "updated_at": "2023-12-05T14:28:58.097Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -383,9 +383,9 @@
     {
       "id": "4c231tkdlpcl",
       "name": "Analytics",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-11-13T11:54:10.191Z",
-      "updated_at": "2023-11-28T16:47:19.397Z",
+      "updated_at": "2023-12-05T14:24:22.548Z",
       "position": 3,
       "description": "Customer analytics aggregation service",
       "showcase": false,
@@ -4685,9 +4685,9 @@
     {
       "id": "f4kdktnb8sz2",
       "name": "St. Louis, MO, United States - (STL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-09-14T18:53:59.600Z",
-      "updated_at": "2023-11-06T05:27:05.563Z",
+      "updated_at": "2023-12-05T14:28:58.086Z",
       "position": 46,
       "description": null,
       "showcase": false,
@@ -5165,9 +5165,9 @@
     {
       "id": "sb9ptqm089ck",
       "name": "San Francisco, United States - (SFO)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-01-23T16:01:01.125Z",
-      "updated_at": "2023-11-14T03:50:20.845Z",
+      "updated_at": "2023-12-05T14:23:55.220Z",
       "position": 52,
       "description": null,
       "showcase": false,
@@ -6288,7 +6288,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "1515x4blsdkb",
+      "name": "DNS Analytics Errors",
+      "status": "investigating",
+      "created_at": "2023-12-05T14:24:22.516Z",
+      "updated_at": "2023-12-05T14:24:22.612Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/tmp3n2yppb57",
+      "started_at": "2023-12-05T14:24:22.509Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "772kccpnxkwx",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue with DNS Analytics which may be returning errors upon retrieval. This issue only impacts the Analytics for the DNS operations. DNS queries and name resolution, as well as updates to DNS records, are not impacted.",
+          "incident_id": "1515x4blsdkb",
+          "created_at": "2023-12-05T14:24:22.610Z",
+          "updated_at": "2023-12-05T14:24:22.610Z",
+          "display_at": "2023-12-05T14:24:22.610Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "degraded_performance",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2023-12-05T14:24:22.548Z",
+          "position": 3,
+          "description": "Customer analytics aggregation service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "kt9hw43yp200",
