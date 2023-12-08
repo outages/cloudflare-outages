@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-12-08T19:26:24.307Z"
+    "updated_at": "2023-12-08T21:08:57.335Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2092,9 +2092,9 @@
     {
       "id": "3q1jnbdbn845",
       "name": "Cache Reserve",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2023-06-12T16:52:52.754Z",
-      "updated_at": "2023-12-08T18:15:52.810Z",
+      "updated_at": "2023-12-08T21:05:15.028Z",
       "position": 14,
       "description": "Cache Reserve is a large, persistent data store implemented on top of R2. By pushing a single button in the dashboard, your website’s cacheable content will be written to Cache Reserve.",
       "showcase": false,
@@ -3862,9 +3862,9 @@
     {
       "id": "fgfkmhddbpcm",
       "name": "Oslo, Norway - (OSL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-01-19T03:21:43.927Z",
-      "updated_at": "2023-12-08T04:35:46.761Z",
+      "updated_at": "2023-12-08T21:08:57.333Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -4927,9 +4927,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2023-12-08T18:15:52.838Z",
+      "updated_at": "2023-12-08T21:05:15.043Z",
       "position": 49,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -6324,16 +6324,42 @@
     {
       "id": "b20qqqmb8s07",
       "name": "Cloudflare R2 Increased 5xx Errors",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2023-12-08T18:15:52.766Z",
-      "updated_at": "2023-12-08T18:15:52.898Z",
-      "monitoring_at": null,
+      "updated_at": "2023-12-08T21:05:15.088Z",
+      "monitoring_at": "2023-12-08T21:05:15.075Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/njc5th4b863f",
       "started_at": "2023-12-08T18:15:52.757Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "3vj0smxrnl20",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "b20qqqmb8s07",
+          "created_at": "2023-12-08T21:05:15.075Z",
+          "updated_at": "2023-12-08T21:05:15.075Z",
+          "display_at": "2023-12-08T21:05:15.075Z",
+          "affected_components": [
+            {
+              "code": "3q1jnbdbn845",
+              "name": "Cloudflare Sites and Services - Cache Reserve",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "900psbcprdlq",
           "status": "investigating",
@@ -6365,9 +6391,9 @@
         {
           "id": "3q1jnbdbn845",
           "name": "Cache Reserve",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2023-06-12T16:52:52.754Z",
-          "updated_at": "2023-12-08T18:15:52.810Z",
+          "updated_at": "2023-12-08T21:05:15.028Z",
           "position": 14,
           "description": "Cache Reserve is a large, persistent data store implemented on top of R2. By pushing a single button in the dashboard, your website’s cacheable content will be written to Cache Reserve.",
           "showcase": false,
@@ -6380,9 +6406,9 @@
         {
           "id": "hb7g5sq2zz0h",
           "name": "R2",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2022-07-05T10:55:24.503Z",
-          "updated_at": "2023-12-08T18:15:52.838Z",
+          "updated_at": "2023-12-08T21:05:15.043Z",
           "position": 49,
           "description": "High-performance storage for files and objects with zero egress charges",
           "showcase": false,
