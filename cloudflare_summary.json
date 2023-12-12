@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-12-12T13:27:12.715Z"
+    "updated_at": "2023-12-12T13:43:33.146Z"
   },
   "components": [
     {
@@ -117,9 +117,9 @@
     {
       "id": "w4k8yvhfb3vp",
       "name": "Access",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2018-02-09T21:46:39.049Z",
-      "updated_at": "2023-12-08T16:34:38.753Z",
+      "updated_at": "2023-12-12T13:42:03.923Z",
       "position": 1,
       "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
       "showcase": false,
@@ -2032,9 +2032,9 @@
     {
       "id": "tdwwnvf8nv6h",
       "name": "Kigali, Rwanda - (KGL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-06-17T03:27:21.977Z",
-      "updated_at": "2023-12-11T05:00:37.493Z",
+      "updated_at": "2023-12-12T13:40:01.333Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -4312,9 +4312,9 @@
     {
       "id": "5qr2frjysrbk",
       "name": "Rome, Italy - (FCO)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2017-03-17T22:26:31.283Z",
-      "updated_at": "2023-12-12T09:26:52.017Z",
+      "updated_at": "2023-12-12T13:40:00.831Z",
       "position": 41,
       "description": null,
       "showcase": false,
@@ -6321,6 +6321,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "624168ct5brf",
+      "name": "Cloudflare Access App Launcher  Issues",
+      "status": "identified",
+      "created_at": "2023-12-12T13:42:03.892Z",
+      "updated_at": "2023-12-12T13:42:03.974Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/xfymg0kc651m",
+      "started_at": "2023-12-12T13:42:03.885Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "szsgb4ffhhd9",
+          "status": "identified",
+          "body": "Cloudflare identified issues with Cloudflare Access App Launcher is not working correctly on latest Chrome browser.  All other functionality is working correctly, no configurations or traffic affected. This only affects the UI.\n\nWe are working to understand the full impact and mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "624168ct5brf",
+          "created_at": "2023-12-12T13:42:03.972Z",
+          "updated_at": "2023-12-12T13:42:03.972Z",
+          "display_at": "2023-12-12T13:42:03.972Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "w4k8yvhfb3vp",
+          "name": "Access",
+          "status": "degraded_performance",
+          "created_at": "2018-02-09T21:46:39.049Z",
+          "updated_at": "2023-12-12T13:42:03.923Z",
+          "position": 1,
+          "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "6pllbq7jtwsc",
       "name": "Connectivity Issues in London (LHR)",
