@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-12-20T23:30:52.769Z"
+    "updated_at": "2023-12-21T00:58:01.797Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1163,9 +1163,9 @@
     {
       "id": "0jnk3ys3msdv",
       "name": "Dakar, Senegal - (DKR)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2020-05-13T09:28:44.032Z",
-      "updated_at": "2023-11-20T10:57:57.237Z",
+      "updated_at": "2023-12-21T00:47:14.612Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -1958,9 +1958,9 @@
     {
       "id": "r138cd1pk7gh",
       "name": "Chiang Mai, Thailand - (CNX)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-03-09T22:14:36.548Z",
-      "updated_at": "2023-12-20T23:30:52.767Z",
+      "updated_at": "2023-12-20T23:58:45.594Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2228,9 +2228,9 @@
     {
       "id": "fs644clrg00l",
       "name": "Luanda, Angola - (LAD)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-09-19T04:46:37.401Z",
-      "updated_at": "2023-11-20T03:21:58.583Z",
+      "updated_at": "2023-12-21T00:58:01.795Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2558,9 +2558,9 @@
     {
       "id": "gg8xxj0j3d32",
       "name": "Riyadh, Saudi Arabia - (RUH)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-03-07T02:32:33.544Z",
-      "updated_at": "2023-12-20T21:39:46.302Z",
+      "updated_at": "2023-12-21T00:58:01.466Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -5963,9 +5963,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2023-12-15T22:34:59.510Z",
+      "updated_at": "2023-12-21T00:05:40.543Z",
       "position": 71,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -6336,7 +6336,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "q7k9rjhztkp7",
+      "name": "Cloudflare Workers Issues",
+      "status": "identified",
+      "created_at": "2023-12-21T00:05:40.487Z",
+      "updated_at": "2023-12-21T00:34:53.015Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/krc79g099gyg",
+      "started_at": "2023-12-21T00:05:40.478Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "g9w2bwdsds10",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "q7k9rjhztkp7",
+          "created_at": "2023-12-21T00:34:53.013Z",
+          "updated_at": "2023-12-21T00:34:53.013Z",
+          "display_at": "2023-12-21T00:34:53.013Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "qx931ccj617f",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an increased level of errors for customers' Worker Previews with subdomains.\nWe are working to analyse and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "q7k9rjhztkp7",
+          "created_at": "2023-12-21T00:05:40.606Z",
+          "updated_at": "2023-12-21T00:05:40.606Z",
+          "display_at": "2023-12-21T00:05:40.606Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2023-12-21T00:05:40.543Z",
+          "position": 71,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "wykyplf77x8f",
@@ -6391,86 +6465,6 @@
       ],
       "scheduled_for": "2024-01-08T16:00:00.000Z",
       "scheduled_until": "2024-01-08T23:00:00.000Z"
-    },
-    {
-      "id": "767hkxk87d94",
-      "name": "BOM (Mumbai) on 2023-12-20",
-      "status": "in_progress",
-      "created_at": "2023-12-20T08:20:37.065Z",
-      "updated_at": "2023-12-20T19:31:21.021Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/wy9q1f866shz",
-      "started_at": "2023-12-20T08:20:37.059Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "xg2cvhj7zstl",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "767hkxk87d94",
-          "created_at": "2023-12-20T19:31:21.013Z",
-          "updated_at": "2023-12-20T19:31:21.013Z",
-          "display_at": "2023-12-20T19:31:21.013Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "nv9rz03swvy9",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "767hkxk87d94",
-          "created_at": "2023-12-20T18:29:57.159Z",
-          "updated_at": "2023-12-20T18:29:57.159Z",
-          "display_at": "2023-12-20T18:29:57.159Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "llfcxc7qj0d7",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BOM (Mumbai) datacenter between 2023-12-20 19:30 and 2023-12-21 00:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "767hkxk87d94",
-          "created_at": "2023-12-20T08:20:37.153Z",
-          "updated_at": "2023-12-20T08:20:37.153Z",
-          "display_at": "2023-12-20T08:20:37.153Z",
-          "affected_components": [
-            {
-              "code": "t3d07wlg67nl",
-              "name": "Asia - Mumbai, India - (BOM)",
-              "old_status": "under_maintenance",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "t3d07wlg67nl",
-          "name": "Mumbai, India - (BOM)",
-          "status": "under_maintenance",
-          "created_at": "2015-10-27T20:12:43.833Z",
-          "updated_at": "2023-12-20T08:21:15.853Z",
-          "position": 49,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-12-20T19:30:00.000Z",
-      "scheduled_until": "2023-12-21T00:00:00.000Z"
     }
   ],
   "status": {
