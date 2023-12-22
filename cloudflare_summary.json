@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-12-22T13:42:59.391Z"
+    "updated_at": "2023-12-22T14:09:14.723Z"
   },
   "components": [
     {
@@ -5889,9 +5889,9 @@
     {
       "id": "m4jywscr0n0k",
       "name": "Turnstile",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-19T17:03:40.590Z",
-      "updated_at": "2023-12-14T14:58:59.928Z",
+      "updated_at": "2023-12-22T14:09:14.677Z",
       "position": 67,
       "description": "Turnstile is a user-friendly, privacy-preserving alternative to CAPTCHA.",
       "showcase": false,
@@ -6358,7 +6358,7 @@
       "name": "Increase in challenges for traffic from Tor exit nodes",
       "status": "identified",
       "created_at": "2023-12-22T12:43:30.940Z",
-      "updated_at": "2023-12-22T12:45:01.856Z",
+      "updated_at": "2023-12-22T14:09:14.716Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -6366,6 +6366,32 @@
       "started_at": "2023-12-22T12:43:30.933Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "7xc5f0p8xmf9",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "gn7tvw1gk4q6",
+          "created_at": "2023-12-22T14:09:14.714Z",
+          "updated_at": "2023-12-22T14:09:14.714Z",
+          "display_at": "2023-12-22T14:09:14.714Z",
+          "affected_components": [
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "m4jywscr0n0k",
+              "name": "Cloudflare Sites and Services - Turnstile",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "5klspxq4kj7d",
           "status": "identified",
@@ -6436,15 +6462,15 @@
           "only_show_if_degraded": false
         },
         {
-          "id": "y98zlwj1d7zh",
-          "name": "Tunnel",
+          "id": "m4jywscr0n0k",
+          "name": "Turnstile",
           "status": "degraded_performance",
-          "created_at": "2019-01-24T16:28:05.466Z",
-          "updated_at": "2023-12-22T12:43:30.981Z",
-          "position": 66,
-          "description": "Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address",
+          "created_at": "2023-01-19T17:03:40.590Z",
+          "updated_at": "2023-12-22T14:09:14.677Z",
+          "position": 67,
+          "description": "Turnstile is a user-friendly, privacy-preserving alternative to CAPTCHA.",
           "showcase": false,
-          "start_date": null,
+          "start_date": "2023-01-19",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
