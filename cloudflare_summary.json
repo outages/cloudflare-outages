@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-12-29T22:05:29.018Z"
+    "updated_at": "2023-12-29T22:46:15.432Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2709,9 +2709,9 @@
     {
       "id": "rppy995xymxv",
       "name": "Data Loss Prevention (DLP)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-04-05T20:47:05.487Z",
-      "updated_at": "2023-12-20T11:34:28.242Z",
+      "updated_at": "2023-12-29T22:40:38.009Z",
       "position": 20,
       "description": "Cloudflare Data Loss Prevention (DLP)",
       "showcase": false,
@@ -4134,9 +4134,9 @@
     {
       "id": "mslkxsqftrnn",
       "name": "Kolkata, India - (CCU)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-08-12T14:37:30.005Z",
-      "updated_at": "2023-12-29T19:11:20.638Z",
+      "updated_at": "2023-12-29T22:42:43.553Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -6352,7 +6352,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "kthknb1l3m59",
+      "name": "Cloudflare Data Loss Prevention (DLP) Issues",
+      "status": "identified",
+      "created_at": "2023-12-29T22:40:37.986Z",
+      "updated_at": "2023-12-29T22:46:15.423Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/th8rljxpjrrp",
+      "started_at": "2023-12-29T22:40:37.981Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "5ymdk9ch8b33",
+          "status": "identified",
+          "body": "We have identified the issue starting from Dec. 20th, and a fix is being implemented.",
+          "incident_id": "kthknb1l3m59",
+          "created_at": "2023-12-29T22:46:15.420Z",
+          "updated_at": "2023-12-29T22:46:15.420Z",
+          "display_at": "2023-12-29T22:46:15.420Z",
+          "affected_components": [
+            {
+              "code": "rppy995xymxv",
+              "name": "Cloudflare Sites and Services - Data Loss Prevention (DLP)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "6h83dcrsr1t3",
+          "status": "investigating",
+          "body": "Cloudflare is aware of some upload issues within Zero Trust Data Loss Prevention (DLP). New custom word lists upload or exact data match datasets upload will silently fail.\n\nMore updates to follow shortly.",
+          "incident_id": "kthknb1l3m59",
+          "created_at": "2023-12-29T22:40:38.047Z",
+          "updated_at": "2023-12-29T22:40:38.047Z",
+          "display_at": "2023-12-29T22:40:38.047Z",
+          "affected_components": [
+            {
+              "code": "rppy995xymxv",
+              "name": "Cloudflare Sites and Services - Data Loss Prevention (DLP)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rppy995xymxv",
+          "name": "Data Loss Prevention (DLP)",
+          "status": "degraded_performance",
+          "created_at": "2023-04-05T20:47:05.487Z",
+          "updated_at": "2023-12-29T22:40:38.009Z",
+          "position": 20,
+          "description": "Cloudflare Data Loss Prevention (DLP)",
+          "showcase": false,
+          "start_date": "2023-04-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "tb44x1bvnhst",
