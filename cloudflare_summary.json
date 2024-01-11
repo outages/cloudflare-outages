@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-11T22:15:57.562Z"
+    "updated_at": "2024-01-11T22:17:18.803Z"
   },
   "components": [
     {
@@ -6467,6 +6467,81 @@
       ],
       "scheduled_for": "2024-01-17T11:00:00.000Z",
       "scheduled_until": "2024-01-17T16:00:00.000Z"
+    },
+    {
+      "id": "0j9638c9ddxm",
+      "name": "Control Plane Test on Thursday, February 15th, 2024",
+      "status": "scheduled",
+      "created_at": "2024-01-11T22:17:18.734Z",
+      "updated_at": "2024-01-11T22:17:18.801Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/t21lcqbryq0g",
+      "started_at": "2024-01-11T22:17:18.724Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8h83f44jx3rj",
+          "status": "scheduled",
+          "body": "As part of Cloudflare’s commitment to providing the most fault tolerant solutions to our customers we are planning a test of our disaster recovery process.  We are going to temporarily disable the facility that failed on November 2, 2023. We expect no impact to Cloudflare’s ability to serve traffic through the edge. \n\nDuring this 5 minute window, for our control plane and APIs, we expect an elevated error rate (5xx responses) for approximately 90 seconds. To avoid disruption, we recommend scheduling changes outside of this window. During this time window, any issues you encounter trying to make changes to Cloudflare may fail with an error, but can be safely retried.\n\nFor the duration of the 5 minute window, analytics will be unavailable. Requests to our graphql APIs, or sections of the dashboard that present graphs and charts, will return errors. Though we expect errors during this window, we do not expect any data loss. When analytics is restored, we expect a brief period where data from the previous 5 minutes populates and becomes available as usual.",
+          "incident_id": "0j9638c9ddxm",
+          "created_at": "2024-01-11T22:17:18.798Z",
+          "updated_at": "2024-01-11T22:17:18.798Z",
+          "display_at": "2024-01-11T22:17:18.798Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "operational",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2023-12-08T18:58:38.829Z",
+          "position": 3,
+          "description": "Customer analytics aggregation service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "operational",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2024-01-10T18:35:55.229Z",
+          "position": 4,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-02-15T17:00:00.000Z",
+      "scheduled_until": "2024-02-15T17:30:00.000Z"
     },
     {
       "id": "mmjftnfq3q3y",
