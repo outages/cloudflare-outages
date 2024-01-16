@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-16T01:47:30.100Z"
+    "updated_at": "2024-01-16T02:18:47.712Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -477,9 +477,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2024-01-10T18:35:55.229Z",
+      "updated_at": "2024-01-16T02:12:48.775Z",
       "position": 4,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -3081,9 +3081,9 @@
     {
       "id": "f5st51ky316y",
       "name": "Tunis, Tunisia - (TUN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-04-27T04:29:20.418Z",
-      "updated_at": "2024-01-15T02:53:30.857Z",
+      "updated_at": "2024-01-16T02:18:47.709Z",
       "position": 24,
       "description": null,
       "showcase": false,
@@ -3936,9 +3936,9 @@
     {
       "id": "7rvrsd9g0f1v",
       "name": "Rio de Janeiro, Brazil - (GIG)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2017-06-22T22:19:02.210Z",
-      "updated_at": "2024-01-16T01:47:30.097Z",
+      "updated_at": "2024-01-16T02:13:34.633Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -3966,9 +3966,9 @@
     {
       "id": "gw1cztbpft9b",
       "name": "Kathmandu, Nepal - (KTM)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2024-01-15T20:15:39.363Z",
+      "updated_at": "2024-01-16T02:18:47.374Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -4026,9 +4026,9 @@
     {
       "id": "0n209sgnr1dp",
       "name": "Queretaro, MX, Mexico - (QRO)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-04-04T01:53:41.017Z",
-      "updated_at": "2024-01-15T09:55:38.990Z",
+      "updated_at": "2024-01-16T02:08:21.162Z",
       "position": 37,
       "description": null,
       "showcase": false,
@@ -6304,7 +6304,108 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "2bd428h598r1",
+      "name": "Cloudflare Images API service issues",
+      "status": "identified",
+      "created_at": "2024-01-16T02:12:48.735Z",
+      "updated_at": "2024-01-16T02:17:27.984Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/wyj23tj8mqqj",
+      "started_at": "2024-01-16T02:12:48.726Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "pv6gzjl4038c",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "2bd428h598r1",
+          "created_at": "2024-01-16T02:17:27.983Z",
+          "updated_at": "2024-01-16T02:17:27.983Z",
+          "display_at": "2024-01-16T02:17:27.983Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4c7lx5wsb1ky",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare Images related APIs.\n\nThese issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge.\n\nCustomers using the Cloudflare Images APIs may be impacted as requests might fail and/or errors may be displayed.",
+          "incident_id": "2bd428h598r1",
+          "created_at": "2024-01-16T02:12:48.832Z",
+          "updated_at": "2024-01-16T02:12:48.832Z",
+          "display_at": "2024-01-16T02:12:48.832Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2024-01-16T02:12:48.775Z",
+          "position": 4,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "operational",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2024-01-12T05:17:34.007Z",
+          "position": 21,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "qvgrmqby30zp",
@@ -6527,9 +6628,9 @@
         {
           "id": "g4tb35rs9yw7",
           "name": "API",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2014-10-09T03:32:07.158Z",
-          "updated_at": "2024-01-10T18:35:55.229Z",
+          "updated_at": "2024-01-16T02:12:48.775Z",
           "position": 4,
           "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
           "showcase": false,
