@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-18T19:10:59.531Z"
+    "updated_at": "2024-01-18T19:19:37.211Z"
   },
   "components": [
     {
@@ -6310,22 +6310,22 @@
       "name": "R2 Availability Impact on object retrieval",
       "status": "investigating",
       "created_at": "2024-01-18T18:38:59.443Z",
-      "updated_at": "2024-01-18T18:39:12.146Z",
+      "updated_at": "2024-01-18T19:19:37.208Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
       "shortlink": "https://stspg.io/w64r4s32md13",
-      "started_at": "2024-01-18T18:38:59.431Z",
+      "started_at": "2024-01-18T18:38:59.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
           "id": "7f9c63bqhkkz",
           "status": "investigating",
-          "body": "We have identified an issue that is causing a very small number of successful object uploads to R2 to incorrectly return HTTP 404 (Not Found) in response to GET or HEAD operations. This also impacts Stream and Images: impacted users could see playback issues for videos and 404 on images uploaded between January 16 11:00 UTC through January 17 03:00 UTC.",
+          "body": "We have identified an issue that is causing a very small number of successful object uploads to R2 to incorrectly return HTTP 404 (Not Found) in response to GET or HEAD operations. \n\nImpacted Cache Reserve users issuing Purge by URL calls between January 16 11:00 UTC through January 17 03:00 UTC may see stale cache assets for those URLs. Subsequent purge calls should clear these assets.\n\nThis also impacts Stream and Images: impacted users could see playback issues for videos and 404 on images uploaded between January 16 11:00 UTC through January 17 03:00 UTC.",
           "incident_id": "cxyckjngxnqk",
           "created_at": "2024-01-18T18:38:59.498Z",
-          "updated_at": "2024-01-18T18:38:59.498Z",
-          "display_at": "2024-01-18T18:38:59.498Z",
+          "updated_at": "2024-01-18T19:19:37.166Z",
+          "display_at": "2024-01-18T18:38:59.000Z",
           "affected_components": [
             {
               "code": "3lbj8lp3d750",
