@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-18T19:19:37.211Z"
+    "updated_at": "2024-01-18T19:30:25.075Z"
   },
   "components": [
     {
@@ -6310,7 +6310,7 @@
       "name": "R2 Availability Impact on object retrieval",
       "status": "investigating",
       "created_at": "2024-01-18T18:38:59.443Z",
-      "updated_at": "2024-01-18T19:19:37.208Z",
+      "updated_at": "2024-01-18T19:30:25.067Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -6319,12 +6319,50 @@
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
+          "id": "769cq6rgvl3m",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "cxyckjngxnqk",
+          "created_at": "2024-01-18T19:22:53.162Z",
+          "updated_at": "2024-01-18T19:22:53.162Z",
+          "display_at": "2024-01-18T19:22:53.162Z",
+          "affected_components": [
+            {
+              "code": "3q1jnbdbn845",
+              "name": "Cloudflare Sites and Services - Cache Reserve",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3lbj8lp3d750",
+              "name": "Cloudflare Sites and Services - Images",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
           "id": "7f9c63bqhkkz",
           "status": "investigating",
-          "body": "We have identified an issue that is causing a very small number of successful object uploads to R2 to incorrectly return HTTP 404 (Not Found) in response to GET or HEAD operations. \n\nImpacted Cache Reserve users issuing Purge by URL calls between January 16 11:00 UTC through January 17 03:00 UTC may see stale cache assets for those URLs. Subsequent purge calls should clear these assets.\n\nThis also impacts Stream and Images: impacted users could see playback issues for videos and 404 on images uploaded between January 16 11:00 UTC through January 17 03:00 UTC.",
+          "body": "We have identified an issue that is causing a very small number of successful object uploads to R2 in ENAM & WNAM buckets to incorrectly return HTTP 404 (Not Found) in response to GET or HEAD operations. \n\nImpacted Cache Reserve users issuing Purge by URL calls between January 16 11:00 UTC through January 17 03:00 UTC may see stale cache assets for those URLs. Subsequent purge calls should clear these assets.\n\nThis also impacts Stream and Images: impacted users could see playback issues for videos and 404 on images uploaded between January 16 11:00 UTC through January 17 03:00 UTC.",
           "incident_id": "cxyckjngxnqk",
           "created_at": "2024-01-18T18:38:59.498Z",
-          "updated_at": "2024-01-18T19:19:37.166Z",
+          "updated_at": "2024-01-18T19:30:25.061Z",
           "display_at": "2024-01-18T18:38:59.000Z",
           "affected_components": [
             {
@@ -6352,6 +6390,21 @@
         }
       ],
       "components": [
+        {
+          "id": "3q1jnbdbn845",
+          "name": "Cache Reserve",
+          "status": "operational",
+          "created_at": "2023-06-12T16:52:52.754Z",
+          "updated_at": "2023-12-08T21:05:15.028Z",
+          "position": 14,
+          "description": "Cache Reserve is a large, persistent data store implemented on top of R2. By pushing a single button in the dashboard, your website’s cacheable content will be written to Cache Reserve.",
+          "showcase": false,
+          "start_date": "2023-06-12",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
         {
           "id": "3lbj8lp3d750",
           "name": "Images",
