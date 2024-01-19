@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-19T15:05:00.668Z"
+    "updated_at": "2024-01-19T15:20:06.454Z"
   },
   "components": [
     {
@@ -7460,6 +7460,354 @@
       ],
       "scheduled_for": "2024-01-27T15:00:00.000Z",
       "scheduled_until": "2024-01-27T15:05:00.000Z"
+    },
+    {
+      "id": "7y6lld86hqxg",
+      "name": "Database Maintenance",
+      "status": "scheduled",
+      "created_at": "2024-01-19T15:20:06.361Z",
+      "updated_at": "2024-01-19T15:20:06.451Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/4vxwsysyk870",
+      "started_at": "2024-01-19T15:20:06.335Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "77973syhds5n",
+          "status": "scheduled",
+          "body": "Over the past several months, Cloudflare has undertaken an overhaul of some of our critical configuration data systems to improve security and reliability. Each of these will result in a few minutes of intermittent availability for some of our APIs. None of these upgrades will impact the serving of traffic on the edge.\n\nThis page summarizes which APIs will have an elevated error rate during each of these upgrades. In all cases, we expect normal operations to resume after 3 minutes of intermittent errors, and any failed operations can be retried when service is restored.\n\nBelow is a list of the Impacted Cloudflare products and features. In each case you will find the API Impact described and confirmation of the parts of Cloudflare’s Edge that will continue to function as normal.\n\n\nThe creation and modification of Cloudflare Workers (including adding or modifying bindings, environment variables, triggers, deployment rollbacks), dispatch namespaces, as well as Workers KV namespaces and namespace bindings - Already deployed Workers will function as usual\n\nThe creation and modification of Zero Trust products, including Cloudflare Access policies will be intermittently available. Logouts may need to be re-tried, and audit logs will be delayed - Authentication/logins will function as normal across Cloudflare’s network\n\nArgo Smart Routing configuration changes, including enabling/disabling Argo Smart Routing - Argo Smart Routing will continue to function as usual across Cloudflare’s network\n\nTurning on/off the Data Localization Suite for accounts and hostnames\n\nCreation and modification of zone transfer configurations as well as incoming and outgoing zone transfers - This will not impact DNS resolution of existing DNS records, and Cloudflare nameservers will continue to respond to DNS queries \n\nThe creation/modification of DDoS overrides - DDoS protection will be fully functional across Cloudflare’s network\n\nThe creation/configuration of Durable Object classes will be intermittently available - This will not impact communicating with or instantiating instances for already configured Durable Object classes\n\nCreation, modification, and deletion of Gateway policies or configurations - Existing Gateway policies will function as normal across Cloudflare’s network\n\nThe creation, modification, and deletion of Health Checks - Existing Health Checks will continue to function as normal across Cloudflare’s network\n\nThe creation, modification, and deletion of Load Balancers, Pools, Origins, and Health Monitors - Existing configuration will continue to function as normal across Cloudflare’s network \n\nThe ability to run scans in Infrastructure or Security Insights\n\nCreation of new notifications or any notification destinations (ex. PagerDuty, Webhooks) - Existing notifications will be processed as normal \n\nCreation of a waiting room or modification of any existing waiting room configuration will see delays in propagation - Existing configuration will continue to function as normal across Cloudflare’s network\n\nCreation, deletion and editing of Spectrum applications - Existing configuration will continue to function as normal across Cloudflare’s network \n\nCreation and modification of rules engine-based products including but not limited to WAF, Transform Rules, Configuration Rules, Origin Rules, Cache Rules, Waiting Room Bypass Rules, Dynamic Redirects, Bulk Redirects, URL normalization, DDos L4/L7 Rules, Super Bot Fight Mode, Rate Limiting and more - Existing configuration will continue to function as normal across Cloudflare’s network\n\nCreation of new queues, modification of existing queues, and/or adding new consumer bindings - \nExisting queues and message delivery will not be affected. Sending to and consuming from existing queues will continue to function as normal across Cloudflare’s network \n\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): \n\nhttps://developers.cloudflare.com/notifications/notification-available/#cloudflare-status",
+          "incident_id": "7y6lld86hqxg",
+          "created_at": "2024-01-19T15:20:06.447Z",
+          "updated_at": "2024-01-19T15:20:06.447Z",
+          "display_at": "2024-01-19T15:20:06.447Z",
+          "affected_components": [
+            {
+              "code": "z9w398bsjvnq",
+              "name": "Cloudflare Sites and Services - Argo Smart Routing",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2c93ckmbbpd7",
+              "name": "Cloudflare Sites and Services - Data Localization Suite",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "vn1h2pfctsvn",
+              "name": "Cloudflare Sites and Services - Health Checks",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "8sn2w5kyxfnp",
+              "name": "Cloudflare Sites and Services - Load Balancing and Monitoring",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5xvn0m7tthlf",
+              "name": "Cloudflare Sites and Services - Notifications",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ch3mwx0hr4k6",
+              "name": "Cloudflare Sites and Services - Rules",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "q2w4kkkzw5gs",
+              "name": "Cloudflare Sites and Services - Secondary DNS",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "18qkc83zzmxb",
+              "name": "Cloudflare Sites and Services - Security Center",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "6dd6ssg7plt0",
+              "name": "Cloudflare Sites and Services - Spectrum",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "9c7cbxnhk1dq",
+              "name": "Cloudflare Sites and Services - Waiting Room",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "z9w398bsjvnq",
+          "name": "Argo Smart Routing",
+          "status": "operational",
+          "created_at": "2020-03-31T03:46:12.547Z",
+          "updated_at": "2024-01-19T10:30:37.526Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2c93ckmbbpd7",
+          "name": "Data Localization Suite",
+          "status": "operational",
+          "created_at": "2024-01-19T14:25:24.459Z",
+          "updated_at": "2024-01-19T14:39:52.685Z",
+          "position": 23,
+          "description": "The Data Localization Suite (DLS) is a collection of tools that enable customers to choose the location where Cloudflare inspects and stores data, while maintaining the security and performance benefits of our global network.",
+          "showcase": false,
+          "start_date": "2024-01-19",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "bty1yz6dhh0v",
+          "name": "Durable Objects",
+          "status": "operational",
+          "created_at": "2023-06-12T14:55:22.631Z",
+          "updated_at": "2024-01-19T14:39:52.743Z",
+          "position": 31,
+          "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
+          "showcase": false,
+          "start_date": "2023-06-12",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "d1r0plwsl5qb",
+          "name": "Firewall",
+          "status": "operational",
+          "created_at": "2020-09-04T17:53:26.383Z",
+          "updated_at": "2024-01-19T14:39:52.764Z",
+          "position": 34,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-09-04",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "gyx2yygg7lmd",
+          "name": "Gateway",
+          "status": "operational",
+          "created_at": "2023-01-10T09:28:36.367Z",
+          "updated_at": "2024-01-19T14:39:52.772Z",
+          "position": 35,
+          "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
+          "showcase": false,
+          "start_date": "2023-01-10",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "vn1h2pfctsvn",
+          "name": "Health Checks",
+          "status": "operational",
+          "created_at": "2024-01-19T14:38:24.595Z",
+          "updated_at": "2024-01-19T14:40:34.224Z",
+          "position": 37,
+          "description": "A Health Check is a service that runs on Cloudflare’s edge network to monitor whether an origin server is online.",
+          "showcase": false,
+          "start_date": "2024-01-19",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "8sn2w5kyxfnp",
+          "name": "Load Balancing and Monitoring",
+          "status": "operational",
+          "created_at": "2019-01-24T16:54:07.994Z",
+          "updated_at": "2024-01-19T14:40:34.255Z",
+          "position": 41,
+          "description": "Load balancing and failover service, including origin server monitoring",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5xvn0m7tthlf",
+          "name": "Notifications",
+          "status": "operational",
+          "created_at": "2022-09-13T12:50:58.081Z",
+          "updated_at": "2024-01-19T14:40:34.333Z",
+          "position": 51,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-09-13",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "ch3mwx0hr4k6",
+          "name": "Rules",
+          "status": "operational",
+          "created_at": "2024-01-19T14:56:52.618Z",
+          "updated_at": "2024-01-19T15:05:00.476Z",
+          "position": 61,
+          "description": "This component includes WAF Rules, Transform Rules, Configuration Rules, Origin Rules, Cache Rules, Waiting Room Bypass Rules, Dynamic Redirects, Bulk Redirects, URL normalization, DDos L4/L7 Rules, Super Bot Fight Mode Rules, Rate Limiting  Rules and others",
+          "showcase": false,
+          "start_date": "2024-01-19",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "q2w4kkkzw5gs",
+          "name": "Secondary DNS",
+          "status": "operational",
+          "created_at": "2024-01-19T14:31:35.182Z",
+          "updated_at": "2024-01-19T15:05:00.483Z",
+          "position": 62,
+          "description": "Secondary DNS capabilities allow for incoming as well as outgoing zone transfers between Cloudflare and other DNS providers.",
+          "showcase": false,
+          "start_date": "2024-01-19",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "18qkc83zzmxb",
+          "name": "Security Center",
+          "status": "under_maintenance",
+          "created_at": "2023-11-07T09:33:37.288Z",
+          "updated_at": "2024-01-19T15:05:00.491Z",
+          "position": 63,
+          "description": "Cloudflare Security Center brings together our suite of security products, our security expertise, and unique Internet intelligence as a unified security intelligence solution to strengthen your security posture.",
+          "showcase": false,
+          "start_date": "2023-11-07",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "6dd6ssg7plt0",
+          "name": "Spectrum",
+          "status": "operational",
+          "created_at": "2019-01-24T16:49:55.919Z",
+          "updated_at": "2024-01-19T15:05:00.505Z",
+          "position": 65,
+          "description": "Spectrum allows you to route MQTT, email, file transfer, version control, games, and more over TCP or UDP through Cloudflare to mask the origin and protect it from DDoS attacks",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "9c7cbxnhk1dq",
+          "name": "Waiting Room",
+          "status": "operational",
+          "created_at": "2023-01-10T09:59:32.683Z",
+          "updated_at": "2024-01-19T15:05:00.599Z",
+          "position": 77,
+          "description": "Cloudflare Waiting Room protects websites by queueing site visitors when a website experiences unmanageable surges in legitimate traffic that may otherwise bring an application down.",
+          "showcase": false,
+          "start_date": "2023-01-10",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "operational",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2024-01-19T15:05:00.621Z",
+          "position": 80,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "kf0ktv29xrfy",
+          "name": "Zero Trust",
+          "status": "operational",
+          "created_at": "2021-04-08T15:53:09.058Z",
+          "updated_at": "2024-01-19T15:05:00.651Z",
+          "position": 84,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-01-28T15:00:00.000Z",
+      "scheduled_until": "2024-01-28T15:05:00.000Z"
     },
     {
       "id": "8qs042n2zcwf",
