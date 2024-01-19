@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-19T11:50:17.831Z"
+    "updated_at": "2024-01-19T12:08:17.828Z"
   },
   "components": [
     {
@@ -6877,6 +6877,107 @@
       ],
       "scheduled_for": "2024-01-25T11:00:00.000Z",
       "scheduled_until": "2024-01-25T11:05:00.000Z"
+    },
+    {
+      "id": "18j12lhwdc8z",
+      "name": "Database Maintenance",
+      "status": "scheduled",
+      "created_at": "2024-01-19T12:04:43.912Z",
+      "updated_at": "2024-01-19T12:08:17.819Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/g3p55nd50fkl",
+      "started_at": "2024-01-19T12:04:43.901Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "jhkp33zz8d8g",
+          "status": "scheduled",
+          "body": "We will be undergoing scheduled maintenance during this time.",
+          "incident_id": "18j12lhwdc8z",
+          "created_at": "2024-01-19T12:08:17.816Z",
+          "updated_at": "2024-01-19T12:08:17.816Z",
+          "display_at": "2024-01-19T12:08:17.816Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "cghykwlwsmn5",
+              "name": "Cloudflare Sites and Services - SSL Certificate Provisioning",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "lhkhd2byvc02",
+          "status": "scheduled",
+          "body": "Over the past several months, Cloudflare has undertaken an overhaul of some of our critical configuration data systems to improve security and reliability. Each of these will result in a few minutes of intermittent availability for some of our APIs. None of these upgrades will impact the serving of traffic on the edge.\n\nThis page summarizes which APIs will have an elevated error rate during each of these upgrades. In all cases, we expect normal operations to resume after 3 minutes of intermittent errors, and any failed operations can be retried when service is restored.\n\n\nBelow is a list of the Impacted Cloudflare products and features. In each case you will find the API Impact described and confirmation of the parts of Cloudflare’s Edge that will continue to function as normal.\n\n\nAdvanced Certificate Order API: customers will not be able to order Advanced certificates or fetch information about Advanced certificates - SSL Termination will function as usual across Cloudflare's network\n\nCertificate Packs API: customers will not be able to use the API to get information about certificate packs - SSL Termination will function as usual across Cloudflare's network\n\nCustom Hostname API: customers will not be able to create new custom hostnames or fetch information about existing custom hostnames - Custom hostnames will resolve as usual across Cloudflare's network\n\nCustom SSL API: customers will not be able to upload Custom certificates or fetch information about Custom certificates - SSL Termination will function as usual across Cloudflare's network\n\nUniversal SSL API: customers will not be able to edit Universal SSL settings - SSL Termination will function as usual across Cloudflare's network\n\nCloudflare Pages: customers may experience issues accessing the Pages dashboard and API - Cloudflare Pages will resolve and be served as usual across Cloudflare's network\n\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): \n\nhttps://developers.cloudflare.com/notifications/notification-available/#cloudflare-status",
+          "incident_id": "18j12lhwdc8z",
+          "created_at": "2024-01-19T12:04:43.983Z",
+          "updated_at": "2024-01-19T12:08:09.648Z",
+          "display_at": "2024-01-19T12:04:43.983Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "cghykwlwsmn5",
+              "name": "Cloudflare Sites and Services - SSL Certificate Provisioning",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
+          "status": "operational",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2024-01-19T10:31:15.652Z",
+          "position": 52,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "cghykwlwsmn5",
+          "name": "SSL Certificate Provisioning",
+          "status": "operational",
+          "created_at": "2016-03-17T15:27:39.778Z",
+          "updated_at": "2024-01-19T10:30:59.701Z",
+          "position": 64,
+          "description": "Provisioning service for edge certificates like Universal and Advanced SSL",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-01-26T08:00:00.000Z",
+      "scheduled_until": "2024-01-26T08:05:00.000Z"
     },
     {
       "id": "sddfq115zr4k",
