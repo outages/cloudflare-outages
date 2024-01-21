@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-21T04:17:48.108Z"
+    "updated_at": "2024-01-21T06:15:54.948Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "under_maintenance",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -6226,9 +6226,9 @@
     {
       "id": "tmh50tx2nprs",
       "name": "Workers KV",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:32.394Z",
-      "updated_at": "2024-01-19T15:05:00.636Z",
+      "updated_at": "2024-01-21T05:59:07.230Z",
       "position": 82,
       "description": "Workers KV is a data storage that allows you to store and retrieve data globally to build dynamic and performant APIs and websites that support high read volumes with low latency",
       "showcase": false,
@@ -6464,7 +6464,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "jvn13cvv64fw",
+      "name": "Cloudflare Workers KV Issues",
+      "status": "investigating",
+      "created_at": "2024-01-21T05:59:07.194Z",
+      "updated_at": "2024-01-21T06:15:54.943Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5kb5pj4sz17f",
+      "started_at": "2024-01-21T05:59:07.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "c8cft6mymfvg",
+          "status": "investigating",
+          "body": "Cloudflare is currently investigating an elevated level of errors affecting customers using Workers KV. This issue can also lead to failures in Pages deployments. \n\nWe are actively working to analyze and mitigate this problem. Further updates will be provided shortly.",
+          "incident_id": "jvn13cvv64fw",
+          "created_at": "2024-01-21T05:59:07.285Z",
+          "updated_at": "2024-01-21T06:15:54.885Z",
+          "display_at": "2024-01-21T05:59:07.000Z",
+          "affected_components": [
+            {
+              "code": "tmh50tx2nprs",
+              "name": "Cloudflare Sites and Services - Workers KV",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "tmh50tx2nprs",
+          "name": "Workers KV",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:32.394Z",
+          "updated_at": "2024-01-21T05:59:07.230Z",
+          "position": 82,
+          "description": "Workers KV is a data storage that allows you to store and retrieve data globally to build dynamic and performant APIs and websites that support high read volumes with low latency",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "hxs2qbh413jk",
