@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-25T13:09:21.945Z"
+    "updated_at": "2024-01-25T14:00:02.565Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -4158,9 +4158,9 @@
     {
       "id": "dw7t39j5syzl",
       "name": "Image Resizing",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-08-20T14:57:30.947Z",
-      "updated_at": "2024-01-22T12:38:01.031Z",
+      "updated_at": "2024-01-25T13:56:27.731Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -6496,14 +6496,68 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "zk8rpnrzy7jc",
+      "name": "Image Resizing returns errors for source images with redirects",
+      "status": "identified",
+      "created_at": "2024-01-25T13:56:27.703Z",
+      "updated_at": "2024-01-25T13:56:27.789Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/v2synqwwlc4r",
+      "started_at": "2024-01-25T13:56:27.697Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "t6555npmbtkt",
+          "status": "identified",
+          "body": "Cloudflare has identified an issue with Image Resizing. \n\nWe are working to mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "zk8rpnrzy7jc",
+          "created_at": "2024-01-25T13:56:27.787Z",
+          "updated_at": "2024-01-25T13:56:27.787Z",
+          "display_at": "2024-01-25T13:56:27.787Z",
+          "affected_components": [
+            {
+              "code": "dw7t39j5syzl",
+              "name": "Cloudflare Sites and Services - Image Resizing",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "dw7t39j5syzl",
+          "name": "Image Resizing",
+          "status": "degraded_performance",
+          "created_at": "2019-08-20T14:57:30.947Z",
+          "updated_at": "2024-01-25T13:56:27.731Z",
+          "position": 38,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "9z6ylk9s4bfg",
       "name": "STL (St. Louis) on 2024-01-25",
       "status": "scheduled",
       "created_at": "2024-01-24T00:00:19.356Z",
-      "updated_at": "2024-01-24T00:00:19.408Z",
+      "updated_at": "2024-01-25T14:00:02.557Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -6511,6 +6565,19 @@
       "started_at": "2024-01-24T00:00:19.349Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "5ljs8dgwfph3",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "9z6ylk9s4bfg",
+          "created_at": "2024-01-25T14:00:02.455Z",
+          "updated_at": "2024-01-25T14:00:02.455Z",
+          "display_at": "2024-01-25T14:00:02.455Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "p55m9hr7dvhc",
           "status": "scheduled",
