@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-26T10:14:25.002Z"
+    "updated_at": "2024-01-26T10:19:14.041Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -689,9 +689,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2024-01-26T10:14:24.909Z",
+      "updated_at": "2024-01-26T10:19:13.978Z",
       "position": 5,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -3137,9 +3137,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2024-01-26T10:14:24.930Z",
+      "updated_at": "2024-01-26T10:19:13.993Z",
       "position": 25,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -6480,108 +6480,7 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [
-    {
-      "id": "15mjytlhnszt",
-      "name": "Cloudflare Dashboard and Cloudflare API for SSL service",
-      "status": "monitoring",
-      "created_at": "2024-01-26T09:00:02.679Z",
-      "updated_at": "2024-01-26T10:14:24.996Z",
-      "monitoring_at": "2024-01-26T10:14:24.979Z",
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/qs1070cp45gq",
-      "started_at": "2024-01-26T09:00:02.669Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "83hy6n6fjxg2",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "15mjytlhnszt",
-          "created_at": "2024-01-26T10:14:24.979Z",
-          "updated_at": "2024-01-26T10:14:24.979Z",
-          "display_at": "2024-01-26T10:14:24.979Z",
-          "affected_components": [
-            {
-              "code": "g4tb35rs9yw7",
-              "name": "Cloudflare Sites and Services - API",
-              "old_status": "partial_outage",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "3sq3s4d20ywk",
-              "name": "Cloudflare Sites and Services - Dashboard",
-              "old_status": "partial_outage",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "29lfss4b7z6x",
-          "status": "investigating",
-          "body": "Cloudflare is investigating issues with Cloudflare Dashboard and related APIs for SSL service.\n\nThese issues do not affect the serving of Cloudflare SSL or other security features at the Cloudflare Edge.\n\nCustomers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
-          "incident_id": "15mjytlhnszt",
-          "created_at": "2024-01-26T09:00:02.813Z",
-          "updated_at": "2024-01-26T09:00:02.813Z",
-          "display_at": "2024-01-26T09:00:02.813Z",
-          "affected_components": [
-            {
-              "code": "g4tb35rs9yw7",
-              "name": "Cloudflare Sites and Services - API",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "3sq3s4d20ywk",
-              "name": "Cloudflare Sites and Services - Dashboard",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "g4tb35rs9yw7",
-          "name": "API",
-          "status": "degraded_performance",
-          "created_at": "2014-10-09T03:32:07.158Z",
-          "updated_at": "2024-01-26T10:14:24.909Z",
-          "position": 5,
-          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "3sq3s4d20ywk",
-          "name": "Dashboard",
-          "status": "degraded_performance",
-          "created_at": "2014-10-09T03:32:07.173Z",
-          "updated_at": "2024-01-26T10:14:24.930Z",
-          "position": 25,
-          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": "[]"
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "sddfq115zr4k",
@@ -7776,9 +7675,9 @@
         {
           "id": "g4tb35rs9yw7",
           "name": "API",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2014-10-09T03:32:07.158Z",
-          "updated_at": "2024-01-26T10:14:24.909Z",
+          "updated_at": "2024-01-26T10:19:13.978Z",
           "position": 5,
           "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
           "showcase": false,
