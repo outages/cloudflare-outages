@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-27T06:03:14.156Z"
+    "updated_at": "2024-01-27T06:35:16.834Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -5102,9 +5102,9 @@
     {
       "id": "5xvn0m7tthlf",
       "name": "Notifications",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-09-13T12:50:58.081Z",
-      "updated_at": "2024-01-22T12:38:01.113Z",
+      "updated_at": "2024-01-27T06:19:58.128Z",
       "position": 51,
       "description": null,
       "showcase": false,
@@ -5117,9 +5117,9 @@
     {
       "id": "mgy83jclb7m0",
       "name": "Campos dos Goytacazes, Brazil - (CAW)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-05-16T13:20:28.221Z",
-      "updated_at": "2024-01-27T05:57:25.835Z",
+      "updated_at": "2024-01-27T06:20:43.232Z",
       "position": 51,
       "description": null,
       "showcase": false,
@@ -6480,7 +6480,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "hh1z8yg32xph",
+      "name": "Cloudflare Webhook Issue with SSL for SaaS Custom Hostname Changes",
+      "status": "identified",
+      "created_at": "2024-01-27T06:19:58.098Z",
+      "updated_at": "2024-01-27T06:35:16.824Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/b2h8j99x42xg",
+      "started_at": "2024-01-27T06:19:58.091Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "w88r4h5yb3z5",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "hh1z8yg32xph",
+          "created_at": "2024-01-27T06:35:16.821Z",
+          "updated_at": "2024-01-27T06:35:16.821Z",
+          "display_at": "2024-01-27T06:35:16.821Z",
+          "affected_components": [
+            {
+              "code": "5xvn0m7tthlf",
+              "name": "Cloudflare Sites and Services - Notifications",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "c9k78pp3ljpm",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with webhook alerts for SSL for SaaS custom hostname changes; as a result, some alerts may not be sent promptly.\n\nWe are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "hh1z8yg32xph",
+          "created_at": "2024-01-27T06:19:58.172Z",
+          "updated_at": "2024-01-27T06:19:58.172Z",
+          "display_at": "2024-01-27T06:19:58.172Z",
+          "affected_components": [
+            {
+              "code": "5xvn0m7tthlf",
+              "name": "Cloudflare Sites and Services - Notifications",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5xvn0m7tthlf",
+          "name": "Notifications",
+          "status": "degraded_performance",
+          "created_at": "2022-09-13T12:50:58.081Z",
+          "updated_at": "2024-01-27T06:19:58.128Z",
+          "position": 51,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-09-13",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "sddfq115zr4k",
@@ -7057,9 +7131,9 @@
         {
           "id": "5xvn0m7tthlf",
           "name": "Notifications",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-09-13T12:50:58.081Z",
-          "updated_at": "2024-01-22T12:38:01.113Z",
+          "updated_at": "2024-01-27T06:19:58.128Z",
           "position": 51,
           "description": null,
           "showcase": false,
