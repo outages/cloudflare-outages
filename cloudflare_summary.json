@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-31T18:34:02.938Z"
+    "updated_at": "2024-01-31T18:50:30.286Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3887,9 +3887,9 @@
     {
       "id": "fgfkmhddbpcm",
       "name": "Oslo, Norway - (OSL)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2016-01-19T03:21:43.927Z",
-      "updated_at": "2024-01-18T22:44:27.177Z",
+      "updated_at": "2024-01-31T18:42:17.007Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -5042,9 +5042,9 @@
     {
       "id": "4n0gb0kh02gf",
       "name": "Network",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-13T13:39:19.804Z",
-      "updated_at": "2024-01-30T05:52:21.630Z",
+      "updated_at": "2024-01-31T18:42:17.024Z",
       "position": 50,
       "description": null,
       "showcase": false,
@@ -6362,9 +6362,9 @@
     {
       "id": "n332jkf8s56z",
       "name": "Denpasar, Indonesia - (DPS)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-06-06T11:00:58.091Z",
-      "updated_at": "2024-01-16T19:37:48.951Z",
+      "updated_at": "2024-01-31T18:46:56.794Z",
       "position": 89,
       "description": null,
       "showcase": false,
@@ -6480,7 +6480,82 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "fwvxw59snj0w",
+      "name": "Network Performance Issues in Oslo",
+      "status": "monitoring",
+      "created_at": "2024-01-31T18:42:16.971Z",
+      "updated_at": "2024-01-31T18:42:17.086Z",
+      "monitoring_at": "2024-01-31T18:42:17.076Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5k1mswtnm5n0",
+      "started_at": "2024-01-31T18:42:16.961Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "n67djkm2jr4y",
+          "status": "monitoring",
+          "body": "We have identified and applied a fix for a network issue that is resulting in performance issues with our Oslo (OSL) facility. We are currently monitoring the results of this fix.",
+          "incident_id": "fwvxw59snj0w",
+          "created_at": "2024-01-31T18:42:17.076Z",
+          "updated_at": "2024-01-31T18:42:17.076Z",
+          "display_at": "2024-01-31T18:42:17.076Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "fgfkmhddbpcm",
+              "name": "Europe - Oslo, Norway - (OSL)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "fgfkmhddbpcm",
+          "name": "Oslo, Norway - (OSL)",
+          "status": "degraded_performance",
+          "created_at": "2016-01-19T03:21:43.927Z",
+          "updated_at": "2024-01-31T18:42:17.007Z",
+          "position": 35,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "4n0gb0kh02gf",
+          "name": "Network",
+          "status": "degraded_performance",
+          "created_at": "2023-01-13T13:39:19.804Z",
+          "updated_at": "2024-01-31T18:42:17.024Z",
+          "position": 50,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-01-13",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "zj9pyc82cr3w",
