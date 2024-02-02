@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-02T05:23:55.093Z"
+    "updated_at": "2024-02-02T06:17:27.377Z"
   },
   "components": [
     {
@@ -2239,7 +2239,7 @@
       "name": "Frankfurt, Germany - (FRA)",
       "status": "under_maintenance",
       "created_at": "2014-10-27T20:37:25.480Z",
-      "updated_at": "2024-02-02T04:58:00.072Z",
+      "updated_at": "2024-02-02T06:11:46.381Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -5072,9 +5072,9 @@
     {
       "id": "43cltfsv0h7h",
       "name": "Winnipeg, MB, Canada - (YWG)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-07-10T10:18:32.871Z",
-      "updated_at": "2024-01-30T22:15:44.687Z",
+      "updated_at": "2024-02-02T06:17:27.375Z",
       "position": 51,
       "description": null,
       "showcase": false,
@@ -6480,7 +6480,82 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "cy315kg50wb0",
+      "name": "Increased Errors in FRA",
+      "status": "monitoring",
+      "created_at": "2024-02-02T06:08:10.000Z",
+      "updated_at": "2024-02-02T06:17:23.143Z",
+      "monitoring_at": "2024-02-02T06:08:10.000Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/dzx9wk1tvn54",
+      "started_at": "2024-02-02T06:08:10.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ms16xngjj7lk",
+          "status": "monitoring",
+          "body": "Cloudflare is investigating a short period of increased HTTP  5xx errors in the FRA region during the timeframe of 2 Feb 04:48 UTC to 04:58 UTC.\n\nA fix has been applied and we are monitoring the impact.",
+          "incident_id": "cy315kg50wb0",
+          "created_at": "2024-02-02T06:08:10.109Z",
+          "updated_at": "2024-02-02T06:14:00.076Z",
+          "display_at": "2024-02-02T06:08:10.000Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rbnhbzgld936",
+          "name": "Frankfurt, Germany - (FRA)",
+          "status": "under_maintenance",
+          "created_at": "2014-10-27T20:37:25.480Z",
+          "updated_at": "2024-02-02T06:11:46.381Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "4n0gb0kh02gf",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2023-01-13T13:39:19.804Z",
+          "updated_at": "2024-01-31T19:24:12.558Z",
+          "position": 50,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-01-13",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "zsm8s955393b",
@@ -6818,73 +6893,6 @@
       ],
       "scheduled_for": "2024-02-02T04:00:00.000Z",
       "scheduled_until": "2024-02-02T11:00:00.000Z"
-    },
-    {
-      "id": "2ydfpxcq984k",
-      "name": "PRG (Prague) on 2024-02-02",
-      "status": "in_progress",
-      "created_at": "2024-01-31T15:20:52.217Z",
-      "updated_at": "2024-02-02T00:00:39.954Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/6zyx1qjmdx7z",
-      "started_at": "2024-01-31T15:20:52.211Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "138wpx8v3rl0",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "2ydfpxcq984k",
-          "created_at": "2024-02-02T00:00:39.951Z",
-          "updated_at": "2024-02-02T00:00:39.951Z",
-          "display_at": "2024-02-02T00:00:39.951Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "853cy12pxgnl",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in PRG (Prague) datacenter on 2024-02-02 between 00:00 and 06:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "2ydfpxcq984k",
-          "created_at": "2024-01-31T15:20:52.257Z",
-          "updated_at": "2024-01-31T15:20:52.257Z",
-          "display_at": "2024-01-31T15:20:52.257Z",
-          "affected_components": [
-            {
-              "code": "b03djnkqfg8f",
-              "name": "Europe - Prague, Czech Republic - (PRG)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "b03djnkqfg8f",
-          "name": "Prague, Czech Republic - (PRG)",
-          "status": "partial_outage",
-          "created_at": "2014-10-27T21:42:32.096Z",
-          "updated_at": "2024-02-01T23:52:37.969Z",
-          "position": 38,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-02-02T00:00:00.000Z",
-      "scheduled_until": "2024-02-02T06:00:00.000Z"
     }
   ],
   "status": {
