@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-03T15:38:16.797Z"
+    "updated_at": "2024-02-03T16:14:12.827Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2507,9 +2507,9 @@
     {
       "id": "2r6ny00vw7dy",
       "name": "Georgetown, Guyana - (GEO)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-05-25T11:56:01.807Z",
-      "updated_at": "2024-02-03T11:40:02.896Z",
+      "updated_at": "2024-02-03T15:55:15.773Z",
       "position": 18,
       "description": null,
       "showcase": false,
@@ -2942,9 +2942,9 @@
     {
       "id": "4sfd950kf38n",
       "name": "Custom Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-01-19T10:25:02.111Z",
-      "updated_at": "2024-01-23T11:05:22.565Z",
+      "updated_at": "2024-02-03T16:14:12.777Z",
       "position": 22,
       "description": "Custom Error and Challenge Pages",
       "showcase": false,
@@ -4997,9 +4997,9 @@
     {
       "id": "3fv8xf76qyjc",
       "name": "Willemstad, Curaçao - (CUR)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2017-03-23T15:10:30.131Z",
-      "updated_at": "2024-02-03T11:34:23.126Z",
+      "updated_at": "2024-02-03T15:55:15.397Z",
       "position": 50,
       "description": null,
       "showcase": false,
@@ -6480,7 +6480,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "9rmlblmc67xm",
+      "name": "Issues publishing Custom Pages via Cloudflare Dashboard.",
+      "status": "investigating",
+      "created_at": "2024-02-03T16:14:12.748Z",
+      "updated_at": "2024-02-03T16:14:12.824Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/ptpswzj78sz6",
+      "started_at": "2024-02-03T16:14:12.741Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "smnt7jgd1673",
+          "status": "investigating",
+          "body": "Cloudflare investigating an issue affecting users attempting to publish Custom Pages.\nAPI endpoint to carry out the same change is not affected.\nWe are currently investigating this issue.",
+          "incident_id": "9rmlblmc67xm",
+          "created_at": "2024-02-03T16:14:12.822Z",
+          "updated_at": "2024-02-03T16:14:12.822Z",
+          "display_at": "2024-02-03T16:14:12.822Z",
+          "affected_components": [
+            {
+              "code": "4sfd950kf38n",
+              "name": "Cloudflare Sites and Services - Custom Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4sfd950kf38n",
+          "name": "Custom Pages",
+          "status": "degraded_performance",
+          "created_at": "2024-01-19T10:25:02.111Z",
+          "updated_at": "2024-02-03T16:14:12.777Z",
+          "position": 22,
+          "description": "Custom Error and Challenge Pages",
+          "showcase": false,
+          "start_date": "2024-01-19",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "52d0nc2cmd9y",
