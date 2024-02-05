@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-05T17:23:40.232Z"
+    "updated_at": "2024-02-05T17:34:38.227Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1057,9 +1057,9 @@
     {
       "id": "g9yx473yjk9t",
       "name": "API Shield",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-06-15T12:32:28.663Z",
-      "updated_at": "2024-01-27T15:05:00.049Z",
+      "updated_at": "2024-02-05T17:34:38.163Z",
       "position": 6,
       "description": "A range of products to help identify and address API vulnerabilities.",
       "showcase": false,
@@ -1982,9 +1982,9 @@
     {
       "id": "r138cd1pk7gh",
       "name": "Chiang Mai, Thailand - (CNX)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-03-09T22:14:36.548Z",
-      "updated_at": "2024-02-05T16:55:20.027Z",
+      "updated_at": "2024-02-05T17:29:20.808Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2582,9 +2582,9 @@
     {
       "id": "gg8xxj0j3d32",
       "name": "Riyadh, Saudi Arabia - (RUH)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-03-07T02:32:33.544Z",
-      "updated_at": "2024-02-05T16:26:56.268Z",
+      "updated_at": "2024-02-05T17:29:21.153Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -4637,9 +4637,9 @@
     {
       "id": "tjzqsc1nvdxt",
       "name": "St. George's, Grenada - (GND)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-12-10T00:17:42.014Z",
-      "updated_at": "2024-02-05T16:55:20.453Z",
+      "updated_at": "2024-02-05T17:29:20.440Z",
       "position": 45,
       "description": null,
       "showcase": false,
@@ -6480,7 +6480,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "07tnzyhcvhc7",
+      "name": "API Shield Schema 2.0 Validation Fails",
+      "status": "investigating",
+      "created_at": "2024-02-05T17:34:38.125Z",
+      "updated_at": "2024-02-05T17:34:38.224Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/ndy0yts8snym",
+      "started_at": "2024-02-05T17:34:38.117Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "nv8tvpcdc31j",
+          "status": "investigating",
+          "body": "Some API Shield customers experience request failures at the Edge due to schema validation failures.",
+          "incident_id": "07tnzyhcvhc7",
+          "created_at": "2024-02-05T17:34:38.221Z",
+          "updated_at": "2024-02-05T17:34:38.221Z",
+          "display_at": "2024-02-05T17:34:38.221Z",
+          "affected_components": [
+            {
+              "code": "g9yx473yjk9t",
+              "name": "Cloudflare Sites and Services - API Shield",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g9yx473yjk9t",
+          "name": "API Shield",
+          "status": "degraded_performance",
+          "created_at": "2023-06-15T12:32:28.663Z",
+          "updated_at": "2024-02-05T17:34:38.163Z",
+          "position": 6,
+          "description": "A range of products to help identify and address API vulnerabilities.",
+          "showcase": false,
+          "start_date": "2023-06-15",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "52d0nc2cmd9y",
