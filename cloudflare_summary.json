@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-07T17:00:54.386Z"
+    "updated_at": "2024-02-07T17:34:33.577Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1965,9 +1965,9 @@
     {
       "id": "q0dfbn0p6hyt",
       "name": "Browser Isolation",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-08-10T19:01:26.692Z",
-      "updated_at": "2024-01-19T10:30:30.061Z",
+      "updated_at": "2024-02-07T17:34:33.524Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -6448,7 +6448,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "fstr6dzzr0c6",
+      "name": "Remote Clipboard in Safari has issues in Remote Browser Isolation",
+      "status": "investigating",
+      "created_at": "2024-02-07T17:34:33.493Z",
+      "updated_at": "2024-02-07T17:34:33.575Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/s1gyjk6wd70v",
+      "started_at": "2024-02-07T17:34:33.486Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "dznl925w90pw",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues copying to the remote clipboard in isolated browsers running in Safari. At this time no others browsers appear to be impacted.",
+          "incident_id": "fstr6dzzr0c6",
+          "created_at": "2024-02-07T17:34:33.573Z",
+          "updated_at": "2024-02-07T17:34:33.573Z",
+          "display_at": "2024-02-07T17:34:33.573Z",
+          "affected_components": [
+            {
+              "code": "q0dfbn0p6hyt",
+              "name": "Cloudflare Sites and Services - Browser Isolation",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "q0dfbn0p6hyt",
+          "name": "Browser Isolation",
+          "status": "degraded_performance",
+          "created_at": "2021-08-10T19:01:26.692Z",
+          "updated_at": "2024-02-07T17:34:33.524Z",
+          "position": 13,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-08-10",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "8wtscxtpqph2",
