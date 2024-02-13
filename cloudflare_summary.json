@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-13T19:48:31.095Z"
+    "updated_at": "2024-02-13T20:14:59.010Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3616,9 +3616,9 @@
     {
       "id": "7j656z7tqk7f",
       "name": "DNS Updates",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:50:20.772Z",
-      "updated_at": "2024-02-12T21:15:56.549Z",
+      "updated_at": "2024-02-13T20:13:10.967Z",
       "position": 31,
       "description": "DNS update service pushing customer DNS changes out to all data centers",
       "showcase": false,
@@ -6464,7 +6464,101 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "byhy098jxck6",
+      "name": "DNS Update Delays",
+      "status": "identified",
+      "created_at": "2024-02-13T20:09:08.367Z",
+      "updated_at": "2024-02-13T20:14:59.001Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/n78z1l0mgr51",
+      "started_at": "2024-02-13T20:09:08.359Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "538n0qns6s1h",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "byhy098jxck6",
+          "created_at": "2024-02-13T20:14:58.998Z",
+          "updated_at": "2024-02-13T20:14:58.998Z",
+          "display_at": "2024-02-13T20:14:58.998Z",
+          "affected_components": [
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "q56bp52rvnnr",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "byhy098jxck6",
+          "created_at": "2024-02-13T20:13:13.253Z",
+          "updated_at": "2024-02-13T20:13:13.253Z",
+          "display_at": "2024-02-13T20:13:13.253Z",
+          "affected_components": [
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "9mdth6mg9sz0",
+          "status": "investigating",
+          "body": "Cloudflare is investigating delays in propagation of updates to DNS records. More updates to follow shortly.",
+          "incident_id": "byhy098jxck6",
+          "created_at": "2024-02-13T20:09:08.421Z",
+          "updated_at": "2024-02-13T20:09:08.421Z",
+          "display_at": "2024-02-13T20:09:08.421Z",
+          "affected_components": [
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7j656z7tqk7f",
+          "name": "DNS Updates",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:50:20.772Z",
+          "updated_at": "2024-02-13T20:13:10.967Z",
+          "position": 31,
+          "description": "DNS update service pushing customer DNS changes out to all data centers",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "64vg3yhtr7q5",
