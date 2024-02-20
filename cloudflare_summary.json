@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-20T13:20:55.475Z"
+    "updated_at": "2024-02-20T13:48:26.706Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2209,9 +2209,9 @@
     {
       "id": "3q1jnbdbn845",
       "name": "Cache Reserve",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-06-12T16:52:52.754Z",
-      "updated_at": "2024-01-19T10:30:30.073Z",
+      "updated_at": "2024-02-20T13:48:26.635Z",
       "position": 15,
       "description": "Cache Reserve is a large, persistent data store implemented on top of R2. By pushing a single button in the dashboard, your website’s cacheable content will be written to Cache Reserve.",
       "showcase": false,
@@ -4294,9 +4294,9 @@
     {
       "id": "3lbj8lp3d750",
       "name": "Images",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-02-25T17:30:01.272Z",
-      "updated_at": "2024-02-09T10:19:56.986Z",
+      "updated_at": "2024-02-20T13:48:26.646Z",
       "position": 40,
       "description": "Cloudflare service to build a scalable image pipeline to store, resize, optimize and deliver images in a fast and secure manner.",
       "showcase": false,
@@ -5314,9 +5314,9 @@
     {
       "id": "05rpd663qrcp",
       "name": "St. George's, Grenada - (GND)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-02-20T13:20:55.472Z",
-      "updated_at": "2024-02-20T13:20:55.472Z",
+      "updated_at": "2024-02-20T13:40:59.058Z",
       "position": 54,
       "description": null,
       "showcase": false,
@@ -5419,9 +5419,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2024-02-09T10:19:57.137Z",
+      "updated_at": "2024-02-20T13:48:26.658Z",
       "position": 56,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -6512,7 +6512,103 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "69rmr1tydn49",
+      "name": "R2 degraded availability in EU Region",
+      "status": "monitoring",
+      "created_at": "2024-02-20T13:48:26.608Z",
+      "updated_at": "2024-02-20T13:48:26.704Z",
+      "monitoring_at": "2024-02-20T13:48:26.698Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5fxscm88csb8",
+      "started_at": "2024-02-20T13:48:26.599Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "7ck2mmzrgx2r",
+          "status": "monitoring",
+          "body": "We are investigating increased error rates on R2 buckets stored in the EU region. Users may experience increase in HTTP 5xx responses on requests.",
+          "incident_id": "69rmr1tydn49",
+          "created_at": "2024-02-20T13:48:26.698Z",
+          "updated_at": "2024-02-20T13:48:26.698Z",
+          "display_at": "2024-02-20T13:48:26.698Z",
+          "affected_components": [
+            {
+              "code": "3q1jnbdbn845",
+              "name": "Cloudflare Sites and Services - Cache Reserve",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3lbj8lp3d750",
+              "name": "Cloudflare Sites and Services - Images",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3q1jnbdbn845",
+          "name": "Cache Reserve",
+          "status": "degraded_performance",
+          "created_at": "2023-06-12T16:52:52.754Z",
+          "updated_at": "2024-02-20T13:48:26.635Z",
+          "position": 15,
+          "description": "Cache Reserve is a large, persistent data store implemented on top of R2. By pushing a single button in the dashboard, your website’s cacheable content will be written to Cache Reserve.",
+          "showcase": false,
+          "start_date": "2023-06-12",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3lbj8lp3d750",
+          "name": "Images",
+          "status": "degraded_performance",
+          "created_at": "2022-02-25T17:30:01.272Z",
+          "updated_at": "2024-02-20T13:48:26.646Z",
+          "position": 40,
+          "description": "Cloudflare service to build a scalable image pipeline to store, resize, optimize and deliver images in a fast and secure manner.",
+          "showcase": false,
+          "start_date": "2022-02-25",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2024-02-20T13:48:26.658Z",
+          "position": 56,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "x56vq65d5bgc",
