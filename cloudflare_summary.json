@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-21T17:43:54.415Z"
+    "updated_at": "2024-02-21T18:16:34.791Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1429,7 +1429,7 @@
     {
       "id": "q6qm6fvkst4h",
       "name": "Oceania",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-28T00:12:04.846Z",
       "updated_at": "2022-04-26T19:49:08.623Z",
       "position": 9,
@@ -1564,9 +1564,9 @@
     {
       "id": "xg9bdljrlnfd",
       "name": "Perth, WA, Australia - (PER)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-05-27T10:34:03.915Z",
-      "updated_at": "2024-02-21T09:05:59.387Z",
+      "updated_at": "2024-02-21T18:16:34.789Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -2104,9 +2104,9 @@
     {
       "id": "s0991jwsqllx",
       "name": "Bot Management",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-12-02T09:33:01.317Z",
-      "updated_at": "2024-02-08T14:57:27.447Z",
+      "updated_at": "2024-02-21T18:14:38.164Z",
       "position": 14,
       "description": "Bot Management provides sophisticated bot protection for your domain. Customers can identify automated traffic, take appropriate action, and view detailed analytics within the dashboard. Bot Management also supports custom solutions via Workers and Logs.",
       "showcase": false,
@@ -2134,9 +2134,9 @@
     {
       "id": "p6skg25yj69j",
       "name": "Colombo, Sri Lanka - (CMB)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2017-05-02T05:52:26.698Z",
-      "updated_at": "2024-02-21T16:51:23.891Z",
+      "updated_at": "2024-02-21T18:10:43.743Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -6518,29 +6518,65 @@
       "name": "Elevated 5xx Error Rate",
       "status": "investigating",
       "created_at": "2024-02-21T17:43:54.374Z",
-      "updated_at": "2024-02-21T17:43:54.413Z",
+      "updated_at": "2024-02-21T18:14:38.205Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "none",
+      "impact": "minor",
       "shortlink": "https://stspg.io/v2plffydc7t3",
-      "started_at": "2024-02-21T17:43:54.370Z",
+      "started_at": "2024-02-21T17:43:54.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
+          "id": "dy1x692qrl5c",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "75517hxt48rt",
+          "created_at": "2024-02-21T18:14:38.203Z",
+          "updated_at": "2024-02-21T18:14:38.203Z",
+          "display_at": "2024-02-21T18:14:38.203Z",
+          "affected_components": [
+            {
+              "code": "s0991jwsqllx",
+              "name": "Cloudflare Sites and Services - Bot Management",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
           "id": "0fshzcs1n4sp",
           "status": "investigating",
-          "body": "Cloudflare is investigating an increased level of HTTP 5xx errors. We are working to analyse and mitigate this problem. More updates to follow shortly.",
+          "body": "Cloudflare is investigating an increased level of HTTP 5xx errors and a degredation in bot management scores. We are working to analyse and mitigate this problem. More updates to follow shortly.",
           "incident_id": "75517hxt48rt",
           "created_at": "2024-02-21T17:43:54.411Z",
-          "updated_at": "2024-02-21T17:43:54.411Z",
-          "display_at": "2024-02-21T17:43:54.411Z",
+          "updated_at": "2024-02-21T17:57:45.047Z",
+          "display_at": "2024-02-21T17:43:54.000Z",
           "affected_components": null,
           "deliver_notifications": false,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": [],
+      "components": [
+        {
+          "id": "s0991jwsqllx",
+          "name": "Bot Management",
+          "status": "degraded_performance",
+          "created_at": "2022-12-02T09:33:01.317Z",
+          "updated_at": "2024-02-21T18:14:38.164Z",
+          "position": 14,
+          "description": "Bot Management provides sophisticated bot protection for your domain. Customers can identify automated traffic, take appropriate action, and view detailed analytics within the dashboard. Bot Management also supports custom solutions via Workers and Logs.",
+          "showcase": false,
+          "start_date": "2022-12-02",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
       "reminder_intervals": null
     }
   ],
