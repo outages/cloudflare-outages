@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-23T03:17:04.842Z"
+    "updated_at": "2024-02-23T03:35:16.229Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -688,9 +688,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2024-02-15T17:30:56.144Z",
+      "updated_at": "2024-02-23T03:25:50.338Z",
       "position": 5,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -6363,9 +6363,9 @@
     {
       "id": "276xk3r83js7",
       "name": "Zero Trust Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-19T18:51:08.811Z",
-      "updated_at": "2024-02-14T15:06:29.640Z",
+      "updated_at": "2024-02-23T03:35:16.175Z",
       "position": 87,
       "description": "Cloudflare Zero Trust Dashboard where customers can view and make changes to their Cloudflare Gateway configurations at https://dash.teams.cloudflare.com",
       "showcase": false,
@@ -6496,14 +6496,142 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "rmmhxmyj1snq",
+      "name": "Cloudflare Access SaaS Application Creation Issue",
+      "status": "investigating",
+      "created_at": "2024-02-23T03:35:16.144Z",
+      "updated_at": "2024-02-23T03:35:16.227Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/87rtv9mgtnt2",
+      "started_at": "2024-02-23T03:35:16.137Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "31n60xrtzbw9",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue preventing customers from creating Access for SaaS applications in the Zero Trust dashboard.\n\nEditing existing applications and application policy enforcement are not impacted at this time.",
+          "incident_id": "rmmhxmyj1snq",
+          "created_at": "2024-02-23T03:35:16.224Z",
+          "updated_at": "2024-02-23T03:35:16.224Z",
+          "display_at": "2024-02-23T03:35:16.224Z",
+          "affected_components": [
+            {
+              "code": "276xk3r83js7",
+              "name": "Cloudflare Sites and Services - Zero Trust Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "276xk3r83js7",
+          "name": "Zero Trust Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2020-03-19T18:51:08.811Z",
+          "updated_at": "2024-02-23T03:35:16.175Z",
+          "position": 87,
+          "description": "Cloudflare Zero Trust Dashboard where customers can view and make changes to their Cloudflare Gateway configurations at https://dash.teams.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "01cl0g5kydtc",
+      "name": "Cloudflare API Token Permission Creation Issue",
+      "status": "investigating",
+      "created_at": "2024-02-23T03:25:50.307Z",
+      "updated_at": "2024-02-23T03:25:50.382Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/z6hp5bmm5ssd",
+      "started_at": "2024-02-23T03:25:50.299Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "qpylym24smrd",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with some users unable to create API tokens with DNS write permission.\n\nThese issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge.",
+          "incident_id": "01cl0g5kydtc",
+          "created_at": "2024-02-23T03:25:50.380Z",
+          "updated_at": "2024-02-23T03:25:50.380Z",
+          "display_at": "2024-02-23T03:25:50.380Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2024-02-23T03:25:50.338Z",
+          "position": 5,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "operational",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2024-02-12T21:15:56.532Z",
+          "position": 26,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "wrdvy90jylhg",
       "name": "EZE (Buenos Aires) on 2024-02-23",
       "status": "scheduled",
       "created_at": "2024-02-23T01:13:03.660Z",
-      "updated_at": "2024-02-23T01:13:03.730Z",
+      "updated_at": "2024-02-23T03:29:58.943Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -6511,6 +6639,19 @@
       "started_at": "2024-02-23T01:13:03.654Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "n9df7pmky2rh",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "wrdvy90jylhg",
+          "created_at": "2024-02-23T03:29:58.563Z",
+          "updated_at": "2024-02-23T03:29:58.563Z",
+          "display_at": "2024-02-23T03:29:58.563Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "c19xvr6g94ms",
           "status": "scheduled",
@@ -6551,6 +6692,80 @@
       ],
       "scheduled_for": "2024-02-23T04:30:08.000Z",
       "scheduled_until": "2024-02-23T06:30:08.000Z"
+    },
+    {
+      "id": "8jsx1h6gj0y2",
+      "name": "ICN (Seoul) on 2024-02-26",
+      "status": "scheduled",
+      "created_at": "2024-02-23T03:17:04.774Z",
+      "updated_at": "2024-02-23T03:25:04.633Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/b5f5kcz9yx9j",
+      "started_at": "2024-02-23T03:17:04.766Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "d8g58qd65fdq",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in ICN (Seoul) datacenter on 2024-02-26 between 18:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "8jsx1h6gj0y2",
+          "created_at": "2024-02-23T03:25:04.630Z",
+          "updated_at": "2024-02-23T03:25:04.630Z",
+          "display_at": "2024-02-23T03:25:04.630Z",
+          "affected_components": [
+            {
+              "code": "v4s7np92f0dh",
+              "name": "Asia - Seoul, South Korea - (ICN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "25n8vdzvbg2j",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in ICN (Seoul) datacenter on 2024-02-26 between 19:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "8jsx1h6gj0y2",
+          "created_at": "2024-02-23T03:17:04.836Z",
+          "updated_at": "2024-02-23T03:17:04.836Z",
+          "display_at": "2024-02-23T03:17:04.836Z",
+          "affected_components": [
+            {
+              "code": "v4s7np92f0dh",
+              "name": "Asia - Seoul, South Korea - (ICN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "v4s7np92f0dh",
+          "name": "Seoul, South Korea - (ICN)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:43:15.944Z",
+          "updated_at": "2024-02-07T08:52:54.319Z",
+          "position": 57,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-02-26T18:00:00.000Z",
+      "scheduled_until": "2024-02-26T21:00:00.000Z"
     },
     {
       "id": "624h1skzvl2y",
@@ -6605,60 +6820,6 @@
       ],
       "scheduled_for": "2024-02-26T18:00:00.000Z",
       "scheduled_until": "2024-02-26T21:00:00.000Z"
-    },
-    {
-      "id": "8jsx1h6gj0y2",
-      "name": "ICN (Seoul) on 2024-02-26",
-      "status": "scheduled",
-      "created_at": "2024-02-23T03:17:04.774Z",
-      "updated_at": "2024-02-23T03:17:04.839Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/b5f5kcz9yx9j",
-      "started_at": "2024-02-23T03:17:04.766Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "25n8vdzvbg2j",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ICN (Seoul) datacenter on 2024-02-26 between 19:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "8jsx1h6gj0y2",
-          "created_at": "2024-02-23T03:17:04.836Z",
-          "updated_at": "2024-02-23T03:17:04.836Z",
-          "display_at": "2024-02-23T03:17:04.836Z",
-          "affected_components": [
-            {
-              "code": "v4s7np92f0dh",
-              "name": "Asia - Seoul, South Korea - (ICN)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "v4s7np92f0dh",
-          "name": "Seoul, South Korea - (ICN)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:43:15.944Z",
-          "updated_at": "2024-02-07T08:52:54.319Z",
-          "position": 57,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-02-26T19:00:00.000Z",
-      "scheduled_until": "2024-02-26T22:00:00.000Z"
     },
     {
       "id": "nl5fq3npgfdr",
