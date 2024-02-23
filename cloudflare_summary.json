@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-23T00:48:11.700Z"
+    "updated_at": "2024-02-23T01:52:27.482Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2523,9 +2523,9 @@
     {
       "id": "x0tkn0hzrtw7",
       "name": "Challenge Platform",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2023-07-14T08:21:02.759Z",
-      "updated_at": "2024-02-23T00:48:11.599Z",
+      "updated_at": "2024-02-23T01:52:27.412Z",
       "position": 18,
       "description": "When a website is protected by Cloudflare, there are several occasions when it will challenge visitor traffic. If the visitor passes the challenge, their request is allowed. If they fail, the request will be blocked.",
       "showcase": false,
@@ -2583,9 +2583,9 @@
     {
       "id": "ljllh1921z0m",
       "name": "Nairobi, Kenya - (NBO)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2020-10-30T04:22:58.259Z",
-      "updated_at": "2024-02-23T00:46:29.216Z",
+      "updated_at": "2024-02-23T01:09:13.037Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -6123,9 +6123,9 @@
     {
       "id": "m4jywscr0n0k",
       "name": "Turnstile",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2023-01-19T17:03:40.590Z",
-      "updated_at": "2024-02-23T00:48:11.621Z",
+      "updated_at": "2024-02-23T01:52:27.429Z",
       "position": 76,
       "description": "Turnstile is a user-friendly, privacy-preserving alternative to CAPTCHA.",
       "showcase": false,
@@ -6496,40 +6496,35 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [
+  "incidents": [],
+  "scheduled_maintenances": [
     {
-      "id": "8vyshvh7w9rz",
-      "name": "Issues passing Challenge Pages and Turnstile",
-      "status": "investigating",
-      "created_at": "2024-02-23T00:48:11.550Z",
-      "updated_at": "2024-02-23T00:48:11.696Z",
+      "id": "wrdvy90jylhg",
+      "name": "EZE (Buenos Aires) on 2024-02-23",
+      "status": "scheduled",
+      "created_at": "2024-02-23T01:13:03.660Z",
+      "updated_at": "2024-02-23T01:13:03.730Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/74rqf156w8xm",
-      "started_at": "2024-02-23T00:48:11.537Z",
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/bzb0yt3kcnvz",
+      "started_at": "2024-02-23T01:13:03.654Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "yz67c8bwzwdz",
-          "status": "investigating",
-          "body": "Cloudflare has identified an issue where some visitors may experience issues passing Challenge Pages and Turnstile challenges. \n\nWe are working to mitigate this problem. More updates to follow shortly.",
-          "incident_id": "8vyshvh7w9rz",
-          "created_at": "2024-02-23T00:48:11.694Z",
-          "updated_at": "2024-02-23T00:48:11.694Z",
-          "display_at": "2024-02-23T00:48:11.694Z",
+          "id": "c19xvr6g94ms",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in EZE (Buenos Aires) datacenter on 2024-02-23 between 04:30 and 06:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "wrdvy90jylhg",
+          "created_at": "2024-02-23T01:13:03.728Z",
+          "updated_at": "2024-02-23T01:13:03.728Z",
+          "display_at": "2024-02-23T01:13:03.728Z",
           "affected_components": [
             {
-              "code": "x0tkn0hzrtw7",
-              "name": "Cloudflare Sites and Services - Challenge Platform",
+              "code": "26gznn8sts5z",
+              "name": "Latin America & the Caribbean - Buenos Aires, Argentina - (EZE)",
               "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "m4jywscr0n0k",
-              "name": "Cloudflare Sites and Services - Turnstile",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -6539,40 +6534,24 @@
       ],
       "components": [
         {
-          "id": "x0tkn0hzrtw7",
-          "name": "Challenge Platform",
-          "status": "degraded_performance",
-          "created_at": "2023-07-14T08:21:02.759Z",
-          "updated_at": "2024-02-23T00:48:11.599Z",
-          "position": 18,
-          "description": "When a website is protected by Cloudflare, there are several occasions when it will challenge visitor traffic. If the visitor passes the challenge, their request is allowed. If they fail, the request will be blocked.",
+          "id": "26gznn8sts5z",
+          "name": "Buenos Aires, Argentina - (EZE)",
+          "status": "operational",
+          "created_at": "2015-04-01T11:05:40.089Z",
+          "updated_at": "2024-02-16T07:29:12.600Z",
+          "position": 9,
+          "description": null,
           "showcase": false,
-          "start_date": "2023-07-14",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "m4jywscr0n0k",
-          "name": "Turnstile",
-          "status": "degraded_performance",
-          "created_at": "2023-01-19T17:03:40.590Z",
-          "updated_at": "2024-02-23T00:48:11.621Z",
-          "position": 76,
-          "description": "Turnstile is a user-friendly, privacy-preserving alternative to CAPTCHA.",
-          "showcase": false,
-          "start_date": "2023-01-19",
-          "group_id": "1km35smx8p41",
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "reminder_intervals": null
-    }
-  ],
-  "scheduled_maintenances": [
+      "scheduled_for": "2024-02-23T04:30:08.000Z",
+      "scheduled_until": "2024-02-23T06:30:08.000Z"
+    },
     {
       "id": "624h1skzvl2y",
       "name": "TPE (Taipei) on 2024-02-26",
