@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-03-04T23:43:03.417Z"
+    "updated_at": "2024-03-05T00:53:39.433Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -5363,9 +5363,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2024-03-04T16:42:32.261Z",
+      "updated_at": "2024-03-05T00:53:39.360Z",
       "position": 55,
       "description": null,
       "showcase": false,
@@ -6248,9 +6248,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2024-03-04T16:42:32.281Z",
+      "updated_at": "2024-03-05T00:53:39.378Z",
       "position": 81,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -6576,92 +6576,35 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [
+  "incidents": [],
+  "scheduled_maintenances": [
     {
-      "id": "3q7sg3tpp7qv",
-      "name": "Issues changing CPU Limit for Cloudflare Workers and Pages",
-      "status": "monitoring",
-      "created_at": "2024-03-04T16:42:32.221Z",
-      "updated_at": "2024-03-04T21:57:06.039Z",
-      "monitoring_at": "2024-03-04T21:57:06.024Z",
+      "id": "f3ssp6cq07bj",
+      "name": "IAD (Ashburn) on 2024-03-05",
+      "status": "scheduled",
+      "created_at": "2024-03-05T00:39:07.025Z",
+      "updated_at": "2024-03-05T00:39:07.087Z",
+      "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/tyg50xk59brg",
-      "started_at": "2024-03-04T16:42:32.212Z",
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/hq0d8150t5kt",
+      "started_at": "2024-03-05T00:39:07.017Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "k4yvzxbsv8w8",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "3q7sg3tpp7qv",
-          "created_at": "2024-03-04T21:57:06.024Z",
-          "updated_at": "2024-03-04T21:57:06.024Z",
-          "display_at": "2024-03-04T21:57:06.024Z",
+          "id": "9ymc0fpt2rwg",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in IAD (Ashburn) datacenter on 2024-03-05 between 07:00 and 10:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "f3ssp6cq07bj",
+          "created_at": "2024-03-05T00:39:07.084Z",
+          "updated_at": "2024-03-05T00:39:07.084Z",
+          "display_at": "2024-03-05T00:39:07.084Z",
           "affected_components": [
             {
-              "code": "vgxj684rcw7t",
-              "name": "Cloudflare Sites and Services - Pages",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "5bmvm454d01b",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "3q7sg3tpp7qv",
-          "created_at": "2024-03-04T18:19:40.410Z",
-          "updated_at": "2024-03-04T18:19:40.410Z",
-          "display_at": "2024-03-04T18:19:40.410Z",
-          "affected_components": [
-            {
-              "code": "vgxj684rcw7t",
-              "name": "Cloudflare Sites and Services - Pages",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "xhzkxpyjv6pm",
-          "status": "investigating",
-          "body": "Cloudflare is investigating issues changing the CPU Limit on some Cloudflare Workers and Pages Projects.\n\nWe are working to analyse and mitigate this problem. More updates to follow shortly.",
-          "incident_id": "3q7sg3tpp7qv",
-          "created_at": "2024-03-04T16:42:32.337Z",
-          "updated_at": "2024-03-04T16:42:32.337Z",
-          "display_at": "2024-03-04T16:42:32.337Z",
-          "affected_components": [
-            {
-              "code": "vgxj684rcw7t",
-              "name": "Cloudflare Sites and Services - Pages",
+              "code": "3t0npclljyyg",
+              "name": "North America - Ashburn, VA, United States - (IAD)",
               "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -6671,40 +6614,24 @@
       ],
       "components": [
         {
-          "id": "vgxj684rcw7t",
-          "name": "Pages",
-          "status": "degraded_performance",
-          "created_at": "2021-04-16T21:04:08.018Z",
-          "updated_at": "2024-03-04T16:42:32.261Z",
-          "position": 55,
+          "id": "3t0npclljyyg",
+          "name": "Ashburn, VA, United States - (IAD)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:30:01.380Z",
+          "updated_at": "2024-03-01T16:02:15.950Z",
+          "position": 2,
           "description": null,
           "showcase": false,
-          "start_date": "2021-04-16",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "57srcl8zcn7c",
-          "name": "Workers",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2024-03-04T16:42:32.281Z",
-          "position": 81,
-          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
-          "showcase": false,
           "start_date": null,
-          "group_id": "1km35smx8p41",
+          "group_id": "4l01sk5cdn5c",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "reminder_intervals": null
-    }
-  ],
-  "scheduled_maintenances": [
+      "scheduled_for": "2024-03-05T07:00:36.000Z",
+      "scheduled_until": "2024-03-05T10:00:00.000Z"
+    },
     {
       "id": "zbnn9zlkzrnl",
       "name": "BOS (Boston) on 2024-03-05",
