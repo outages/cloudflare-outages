@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-03-10T08:23:57.636Z"
+    "updated_at": "2024-03-10T11:10:30.165Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1733,9 +1733,9 @@
     {
       "id": "ll1x88wwz4fq",
       "name": "Billing",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2016-05-09T21:12:38.309Z",
-      "updated_at": "2024-03-01T14:59:01.333Z",
+      "updated_at": "2024-03-10T11:10:30.117Z",
       "position": 11,
       "description": "Billing and payment service",
       "showcase": false,
@@ -6576,7 +6576,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "txm1wtb3q75b",
+      "name": "Issues with Cloudflare's Pay-as-you-Go Plans",
+      "status": "investigating",
+      "created_at": "2024-03-10T11:10:30.088Z",
+      "updated_at": "2024-03-10T11:10:30.163Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/b8jcy1xws92g",
+      "started_at": "2024-03-10T11:10:30.082Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "vy0gwvp1t7sw",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating an issue with some Pay-as-you-Go plans being downgraded, such as Pro and Business plans.",
+          "incident_id": "txm1wtb3q75b",
+          "created_at": "2024-03-10T11:10:30.162Z",
+          "updated_at": "2024-03-10T11:10:30.162Z",
+          "display_at": "2024-03-10T11:10:30.162Z",
+          "affected_components": [
+            {
+              "code": "ll1x88wwz4fq",
+              "name": "Cloudflare Sites and Services - Billing",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ll1x88wwz4fq",
+          "name": "Billing",
+          "status": "degraded_performance",
+          "created_at": "2016-05-09T21:12:38.309Z",
+          "updated_at": "2024-03-10T11:10:30.117Z",
+          "position": 11,
+          "description": "Billing and payment service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "s1yqcnqyvfn7",
