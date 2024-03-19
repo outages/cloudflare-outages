@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-03-19T11:42:57.220Z"
+    "updated_at": "2024-03-19T12:12:30.630Z"
   },
   "components": [
     {
@@ -1616,9 +1616,9 @@
     {
       "id": "rq16k3q6yz17",
       "name": "Columbus, OH, United States - (CMH)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-01-23T08:27:40.920Z",
-      "updated_at": "2024-03-13T09:35:38.519Z",
+      "updated_at": "2024-03-19T12:06:25.707Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -6626,6 +6626,59 @@
   ],
   "incidents": [
     {
+      "id": "4v17j9kscy5k",
+      "name": "WARP virtual network changes not reflecting in the UI",
+      "status": "investigating",
+      "created_at": "2024-03-19T12:12:30.579Z",
+      "updated_at": "2024-03-19T12:12:30.628Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "none",
+      "shortlink": "https://stspg.io/pmb6l7ky1hg3",
+      "started_at": "2024-03-19T12:12:30.572Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "j9dj838j12p4",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare WARP and Virtual Networks. Cloudflare WARP and Zero Trust users may experience UI issues.",
+          "incident_id": "4v17j9kscy5k",
+          "created_at": "2024-03-19T12:12:30.626Z",
+          "updated_at": "2024-03-19T12:12:30.626Z",
+          "display_at": "2024-03-19T12:12:30.626Z",
+          "affected_components": [
+            {
+              "code": "276xk3r83js7",
+              "name": "Cloudflare Sites and Services - Zero Trust Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "276xk3r83js7",
+          "name": "Zero Trust Dashboard",
+          "status": "operational",
+          "created_at": "2020-03-19T18:51:08.811Z",
+          "updated_at": "2024-02-23T04:08:52.051Z",
+          "position": 87,
+          "description": "Cloudflare Zero Trust Dashboard where customers can view and make changes to their Cloudflare Gateway configurations at https://dash.teams.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "v1gl6y6n5z88",
       "name": "Network Performance Issues in Los Angeles, CA, United States",
       "status": "identified",
@@ -6700,73 +6753,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "rdgfxd1pgkb6",
-      "name": "CMH (Columbus) on 2024-03-19",
-      "status": "scheduled",
-      "created_at": "2024-03-18T21:56:29.970Z",
-      "updated_at": "2024-03-19T10:59:57.049Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/k1nmlcsgdzfc",
-      "started_at": "2024-03-18T21:56:29.963Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "k5lb1b8tn6ss",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "rdgfxd1pgkb6",
-          "created_at": "2024-03-19T10:59:56.926Z",
-          "updated_at": "2024-03-19T10:59:56.926Z",
-          "display_at": "2024-03-19T10:59:56.926Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "z5k8bcczrmjw",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in CMH (Columbus) datacenter on 2024-03-19 between 12:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "rdgfxd1pgkb6",
-          "created_at": "2024-03-18T21:56:30.022Z",
-          "updated_at": "2024-03-18T21:56:30.022Z",
-          "display_at": "2024-03-18T21:56:30.022Z",
-          "affected_components": [
-            {
-              "code": "rq16k3q6yz17",
-              "name": "North America - Columbus, OH, United States - (CMH)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rq16k3q6yz17",
-          "name": "Columbus, OH, United States - (CMH)",
-          "status": "operational",
-          "created_at": "2019-01-23T08:27:40.920Z",
-          "updated_at": "2024-03-13T09:35:38.519Z",
-          "position": 10,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-03-19T12:00:00.000Z",
-      "scheduled_until": "2024-03-19T21:00:00.000Z"
-    },
     {
       "id": "hqggd73mbrs9",
       "name": "GIG (Rio de Janeiro) on 2024-03-20",
@@ -7090,6 +7076,86 @@
       ],
       "scheduled_for": "2024-03-27T05:00:00.000Z",
       "scheduled_until": "2024-03-27T11:00:00.000Z"
+    },
+    {
+      "id": "rdgfxd1pgkb6",
+      "name": "CMH (Columbus) on 2024-03-19",
+      "status": "in_progress",
+      "created_at": "2024-03-18T21:56:29.970Z",
+      "updated_at": "2024-03-19T12:00:58.578Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/k1nmlcsgdzfc",
+      "started_at": "2024-03-18T21:56:29.963Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "grtr8vshzhmm",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "rdgfxd1pgkb6",
+          "created_at": "2024-03-19T12:00:58.574Z",
+          "updated_at": "2024-03-19T12:00:58.574Z",
+          "display_at": "2024-03-19T12:00:58.574Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "k5lb1b8tn6ss",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "rdgfxd1pgkb6",
+          "created_at": "2024-03-19T10:59:56.926Z",
+          "updated_at": "2024-03-19T10:59:56.926Z",
+          "display_at": "2024-03-19T10:59:56.926Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "z5k8bcczrmjw",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in CMH (Columbus) datacenter on 2024-03-19 between 12:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "rdgfxd1pgkb6",
+          "created_at": "2024-03-18T21:56:30.022Z",
+          "updated_at": "2024-03-18T21:56:30.022Z",
+          "display_at": "2024-03-18T21:56:30.022Z",
+          "affected_components": [
+            {
+              "code": "rq16k3q6yz17",
+              "name": "North America - Columbus, OH, United States - (CMH)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rq16k3q6yz17",
+          "name": "Columbus, OH, United States - (CMH)",
+          "status": "partial_outage",
+          "created_at": "2019-01-23T08:27:40.920Z",
+          "updated_at": "2024-03-19T12:06:25.707Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-03-19T12:00:00.000Z",
+      "scheduled_until": "2024-03-19T21:00:00.000Z"
     },
     {
       "id": "lz5q37vrl56g",
