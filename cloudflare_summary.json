@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-03-19T10:44:57.851Z"
+    "updated_at": "2024-03-19T11:12:07.631Z"
   },
   "components": [
     {
@@ -2651,9 +2651,9 @@
     {
       "id": "38w4zp21dlkc",
       "name": "Los Angeles, CA, United States - (LAX)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T19:24:27.591Z",
-      "updated_at": "2023-12-26T09:56:30.552Z",
+      "updated_at": "2024-03-19T11:02:58.639Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -4406,9 +4406,9 @@
     {
       "id": "ks6zgqry9c1p",
       "name": "Saint Petersburg, Russia - (LED)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-11-20T12:20:31.492Z",
-      "updated_at": "2024-03-19T06:45:47.006Z",
+      "updated_at": "2024-03-19T11:12:07.628Z",
       "position": 42,
       "description": null,
       "showcase": false,
@@ -4811,9 +4811,9 @@
     {
       "id": "ss09y7v3wzwd",
       "name": "Manila, Philippines - (MNL)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-04-29T12:14:56.581Z",
-      "updated_at": "2024-03-19T06:51:12.837Z",
+      "updated_at": "2024-03-19T10:55:49.854Z",
       "position": 48,
       "description": null,
       "showcase": false,
@@ -6416,9 +6416,9 @@
     {
       "id": "n332jkf8s56z",
       "name": "Denpasar, Indonesia - (DPS)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-06-06T11:00:58.091Z",
-      "updated_at": "2024-03-19T10:23:15.842Z",
+      "updated_at": "2024-03-19T11:06:40.745Z",
       "position": 89,
       "description": null,
       "showcase": false,
@@ -6624,35 +6624,54 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "lz5q37vrl56g",
-      "name": "LAX (Los Angeles) on 2024-03-19",
-      "status": "scheduled",
-      "created_at": "2024-03-19T10:27:02.357Z",
-      "updated_at": "2024-03-19T10:27:02.479Z",
+      "id": "v1gl6y6n5z88",
+      "name": "Network Performance Issues in Los Angeles, CA, United States",
+      "status": "identified",
+      "created_at": "2024-03-19T11:02:58.588Z",
+      "updated_at": "2024-03-19T11:09:46.912Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/w8bq98p5gh35",
-      "started_at": "2024-03-19T10:27:02.347Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/yf36l4b2h4ks",
+      "started_at": "2024-03-19T11:02:58.575Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "q0ccwy6b25j5",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2024-03-19 between 11:00 and 12:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "lz5q37vrl56g",
-          "created_at": "2024-03-19T10:27:02.476Z",
-          "updated_at": "2024-03-19T10:27:02.476Z",
-          "display_at": "2024-03-19T10:27:02.476Z",
+          "id": "sn4wdptfx5z0",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "v1gl6y6n5z88",
+          "created_at": "2024-03-19T11:09:46.910Z",
+          "updated_at": "2024-03-19T11:09:46.910Z",
+          "display_at": "2024-03-19T11:09:46.910Z",
+          "affected_components": [
+            {
+              "code": "38w4zp21dlkc",
+              "name": "North America - Los Angeles, CA, United States - (LAX)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3mhm9wq90fch",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Network Performance\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "v1gl6y6n5z88",
+          "created_at": "2024-03-19T11:02:58.794Z",
+          "updated_at": "2024-03-19T11:02:58.794Z",
+          "display_at": "2024-03-19T11:02:58.794Z",
           "affected_components": [
             {
               "code": "38w4zp21dlkc",
               "name": "North America - Los Angeles, CA, United States - (LAX)",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -6664,9 +6683,9 @@
         {
           "id": "38w4zp21dlkc",
           "name": "Los Angeles, CA, United States - (LAX)",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2014-10-27T19:24:27.591Z",
-          "updated_at": "2023-12-26T09:56:30.552Z",
+          "updated_at": "2024-03-19T11:02:58.639Z",
           "position": 20,
           "description": null,
           "showcase": false,
@@ -6677,15 +6696,16 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2024-03-19T11:00:51.000Z",
-      "scheduled_until": "2024-03-19T12:30:51.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "rdgfxd1pgkb6",
       "name": "CMH (Columbus) on 2024-03-19",
       "status": "scheduled",
       "created_at": "2024-03-18T21:56:29.970Z",
-      "updated_at": "2024-03-18T21:56:30.024Z",
+      "updated_at": "2024-03-19T10:59:57.049Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -6693,6 +6713,19 @@
       "started_at": "2024-03-18T21:56:29.963Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "k5lb1b8tn6ss",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "rdgfxd1pgkb6",
+          "created_at": "2024-03-19T10:59:56.926Z",
+          "updated_at": "2024-03-19T10:59:56.926Z",
+          "display_at": "2024-03-19T10:59:56.926Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "z5k8bcczrmjw",
           "status": "scheduled",
@@ -7057,6 +7090,73 @@
       ],
       "scheduled_for": "2024-03-27T05:00:00.000Z",
       "scheduled_until": "2024-03-27T11:00:00.000Z"
+    },
+    {
+      "id": "lz5q37vrl56g",
+      "name": "LAX (Los Angeles) on 2024-03-19",
+      "status": "in_progress",
+      "created_at": "2024-03-19T10:27:02.357Z",
+      "updated_at": "2024-03-19T11:00:56.453Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/w8bq98p5gh35",
+      "started_at": "2024-03-19T10:27:02.347Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "mf2h54zbx4k0",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "lz5q37vrl56g",
+          "created_at": "2024-03-19T11:00:56.441Z",
+          "updated_at": "2024-03-19T11:00:56.441Z",
+          "display_at": "2024-03-19T11:00:56.441Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "q0ccwy6b25j5",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2024-03-19 between 11:00 and 12:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "lz5q37vrl56g",
+          "created_at": "2024-03-19T10:27:02.476Z",
+          "updated_at": "2024-03-19T10:27:02.476Z",
+          "display_at": "2024-03-19T10:27:02.476Z",
+          "affected_components": [
+            {
+              "code": "38w4zp21dlkc",
+              "name": "North America - Los Angeles, CA, United States - (LAX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "38w4zp21dlkc",
+          "name": "Los Angeles, CA, United States - (LAX)",
+          "status": "degraded_performance",
+          "created_at": "2014-10-27T19:24:27.591Z",
+          "updated_at": "2024-03-19T11:02:58.639Z",
+          "position": 20,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-03-19T11:00:51.000Z",
+      "scheduled_until": "2024-03-19T12:30:51.000Z"
     },
     {
       "id": "m5s8c1jcr3sl",
