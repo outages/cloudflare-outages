@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-03-20T18:16:56.840Z"
+    "updated_at": "2024-03-20T18:36:19.132Z"
   },
   "components": [
     {
@@ -428,9 +428,9 @@
     {
       "id": "3lsyxp2s1khw",
       "name": "Barcelona, Spain - (BCN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-10-10T21:36:13.143Z",
-      "updated_at": "2024-03-20T18:11:31.773Z",
+      "updated_at": "2024-03-20T18:33:13.668Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -6251,9 +6251,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2024-03-20T17:02:21.607Z",
+      "updated_at": "2024-03-20T18:29:23.474Z",
       "position": 81,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -6626,79 +6626,6 @@
   ],
   "incidents": [
     {
-      "id": "l3d0ffxwf1cb",
-      "name": "Issues with Wrangler login",
-      "status": "identified",
-      "created_at": "2024-03-20T17:02:21.575Z",
-      "updated_at": "2024-03-20T17:13:56.861Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/qvhrlkdmsc3q",
-      "started_at": "2024-03-20T17:02:21.568Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "bl7x0ry2yq81",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "l3d0ffxwf1cb",
-          "created_at": "2024-03-20T17:13:56.858Z",
-          "updated_at": "2024-03-20T17:13:56.858Z",
-          "display_at": "2024-03-20T17:13:56.858Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "481l75khjvsc",
-          "status": "investigating",
-          "body": "Cloudflare is investigating issues affecting a subset of users who are experiencing problems with Wrangler login.\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
-          "incident_id": "l3d0ffxwf1cb",
-          "created_at": "2024-03-20T17:02:21.655Z",
-          "updated_at": "2024-03-20T17:02:21.655Z",
-          "display_at": "2024-03-20T17:02:21.655Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "57srcl8zcn7c",
-          "name": "Workers",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2024-03-20T17:02:21.607Z",
-          "position": 81,
-          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
       "id": "x571c229bcpr",
       "name": "Cloudflare Billing Issues",
       "status": "investigating",
@@ -6981,6 +6908,60 @@
       ],
       "scheduled_for": "2024-03-21T03:00:00.000Z",
       "scheduled_until": "2024-03-21T06:45:00.000Z"
+    },
+    {
+      "id": "wj0hn8v2zdbp",
+      "name": "SCL (Santiago) on 2024-03-21",
+      "status": "scheduled",
+      "created_at": "2024-03-20T18:36:19.047Z",
+      "updated_at": "2024-03-20T18:36:19.128Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/1shh4tkm8xzm",
+      "started_at": "2024-03-20T18:36:19.039Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "tptk4tyd25gy",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SCL (Santiago) datacenter on 2024-03-21 between 04:00 and 10:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "wj0hn8v2zdbp",
+          "created_at": "2024-03-20T18:36:19.122Z",
+          "updated_at": "2024-03-20T18:36:19.122Z",
+          "display_at": "2024-03-20T18:36:19.122Z",
+          "affected_components": [
+            {
+              "code": "wg0b1zzm2f2w",
+              "name": "Latin America & the Caribbean - Santiago, Chile - (SCL)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "wg0b1zzm2f2w",
+          "name": "Santiago, Chile - (SCL)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:47:59.478Z",
+          "updated_at": "2024-03-20T09:30:31.688Z",
+          "position": 39,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-03-21T04:00:03.000Z",
+      "scheduled_until": "2024-03-21T10:00:00.000Z"
     },
     {
       "id": "vv3zbgzrp9xd",
