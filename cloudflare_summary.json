@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-04-02T17:14:24.837Z"
+    "updated_at": "2024-04-02T17:26:38.625Z"
   },
   "components": [
     {
@@ -1693,9 +1693,9 @@
     {
       "id": "r8ppmb3xm98j",
       "name": "Dallas, TX, United States - (DFW)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-27T19:52:05.585Z",
-      "updated_at": "2024-04-01T18:02:52.780Z",
+      "updated_at": "2024-04-02T17:25:59.349Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -6660,9 +6660,9 @@
     {
       "id": "5kb1f8jjdjnl",
       "name": "Workers URI unable to parse database DSN",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2024-04-02T16:56:06.230Z",
-      "updated_at": "2024-04-02T17:14:24.829Z",
+      "updated_at": "2024-04-02T17:26:38.615Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -6670,6 +6670,26 @@
       "started_at": "2024-04-02T16:56:06.222Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "f3m0lprvqk37",
+          "status": "identified",
+          "body": "We have identified an incompatibility issue with the latest 2.6.3 version of the pg-connection-string library used by the node-postgres library and the Node.js polyfill used by the Workers runtime. This may also impact other libraries that require the Node.js \"url\" package.\n\nThis will result in a runtime error related to the URL constructor with the text URL is not a constructor.\n\nA fix to the way this is polyfilled is in-progress. In the meantime, users can choose to downgrade to pg-connection-string version 2.6.2, which does not import the \"url\" package.",
+          "incident_id": "5kb1f8jjdjnl",
+          "created_at": "2024-04-02T17:26:38.611Z",
+          "updated_at": "2024-04-02T17:26:38.611Z",
+          "display_at": "2024-04-02T17:26:38.611Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "4z4l9wl6zmz2",
           "status": "investigating",
@@ -6728,7 +6748,37 @@
           "only_show_if_degraded": false
         }
       ],
-      "reminder_intervals": null
+      "reminder_intervals": "[]"
+    },
+    {
+      "id": "v0y030762flt",
+      "name": "WARP for Windows download issues",
+      "status": "investigating",
+      "created_at": "2024-04-02T17:21:11.333Z",
+      "updated_at": "2024-04-02T17:21:20.631Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/3m9x5p879cng",
+      "started_at": "2024-04-02T17:21:11.323Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "msbx6ydnn5yx",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with downloading the WARP client for Windows from the 1.1.1.1 website for some users. We are working to mitigate this problem. More updates to follow shortly. While this problem is ongoing, users may download the client from https://install.appcenter.ms/orgs/cloudflare/apps/1.1.1.1-windows-1/distribution_groups/release instead.",
+          "incident_id": "v0y030762flt",
+          "created_at": "2024-04-02T17:21:11.391Z",
+          "updated_at": "2024-04-02T17:21:11.391Z",
+          "display_at": "2024-04-02T17:21:11.391Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "reminder_intervals": "[]"
     },
     {
       "id": "cbp1g42mdfy4",
@@ -7334,9 +7384,9 @@
         {
           "id": "r8ppmb3xm98j",
           "name": "Dallas, TX, United States - (DFW)",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2014-10-27T19:52:05.585Z",
-          "updated_at": "2024-04-01T18:02:52.780Z",
+          "updated_at": "2024-04-02T17:25:59.349Z",
           "position": 11,
           "description": null,
           "showcase": false,
