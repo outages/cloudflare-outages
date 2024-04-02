@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-04-02T15:48:01.666Z"
+    "updated_at": "2024-04-02T16:10:06.357Z"
   },
   "components": [
     {
@@ -1483,9 +1483,9 @@
     {
       "id": "h3smcpzt8hq6",
       "name": "Dubai, United Arab Emirates - (DXB)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2015-07-23T02:23:36.617Z",
-      "updated_at": "2024-03-20T01:20:38.678Z",
+      "updated_at": "2024-04-02T15:58:49.041Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -4558,9 +4558,9 @@
     {
       "id": "755n430pjn1s",
       "name": "Stockholm, Sweden - (ARN)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T20:36:25.956Z",
-      "updated_at": "2023-10-31T04:07:23.296Z",
+      "updated_at": "2024-04-02T16:02:54.475Z",
       "position": 44,
       "description": null,
       "showcase": false,
@@ -6268,9 +6268,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2024-03-20T18:29:23.474Z",
+      "updated_at": "2024-04-02T15:51:42.358Z",
       "position": 81,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -6657,6 +6657,100 @@
     }
   ],
   "incidents": [
+    {
+      "id": "cbp1g42mdfy4",
+      "name": "Cloudflare Workers Issues in Sweden",
+      "status": "investigating",
+      "created_at": "2024-04-02T15:51:42.331Z",
+      "updated_at": "2024-04-02T16:02:54.524Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/rpy4j5c93m0d",
+      "started_at": "2024-04-02T15:51:42.325Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "92dqfsk831h7",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "cbp1g42mdfy4",
+          "created_at": "2024-04-02T16:02:54.521Z",
+          "updated_at": "2024-04-02T16:02:54.521Z",
+          "display_at": "2024-04-02T16:02:54.521Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "755n430pjn1s",
+              "name": "Europe - Stockholm, Sweden - (ARN)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "t68c9zv5m037",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an increased level of errors for customers running Workers scripts in Sweden.\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "cbp1g42mdfy4",
+          "created_at": "2024-04-02T15:51:42.401Z",
+          "updated_at": "2024-04-02T15:51:42.401Z",
+          "display_at": "2024-04-02T15:51:42.401Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "755n430pjn1s",
+          "name": "Stockholm, Sweden - (ARN)",
+          "status": "degraded_performance",
+          "created_at": "2014-10-27T20:36:25.956Z",
+          "updated_at": "2024-04-02T16:02:54.475Z",
+          "position": 44,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2024-04-02T15:51:42.358Z",
+          "position": 81,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "lxzgwfx8t9k6",
       "name": "Incorrect Analytics for some Workers",
@@ -7067,7 +7161,7 @@
       "name": "DFW (Dallas) on 2024-04-02",
       "status": "scheduled",
       "created_at": "2024-03-28T20:22:17.759Z",
-      "updated_at": "2024-03-28T20:22:17.827Z",
+      "updated_at": "2024-04-02T16:00:03.225Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7075,6 +7169,19 @@
       "started_at": "2024-03-28T20:22:17.750Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "0x3hktztk2h8",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "kk2fl81j1x8z",
+          "created_at": "2024-04-02T16:00:02.976Z",
+          "updated_at": "2024-04-02T16:00:02.976Z",
+          "display_at": "2024-04-02T16:00:02.976Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "f1nlqgkfpb76",
           "status": "scheduled",
@@ -7115,6 +7222,60 @@
       ],
       "scheduled_for": "2024-04-02T17:00:00.000Z",
       "scheduled_until": "2024-04-02T19:00:00.000Z"
+    },
+    {
+      "id": "dpnjf03r2gjs",
+      "name": "FRA (Frankfurt) on 2024-04-03",
+      "status": "scheduled",
+      "created_at": "2024-04-02T16:10:06.296Z",
+      "updated_at": "2024-04-02T16:10:06.355Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/1s9z4h8gsb53",
+      "started_at": "2024-04-02T16:10:06.289Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "28vh9s1fvz1q",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in FRA (Frankfurt) datacenter on 2024-04-03 between 00:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "dpnjf03r2gjs",
+          "created_at": "2024-04-02T16:10:06.352Z",
+          "updated_at": "2024-04-02T16:10:06.352Z",
+          "display_at": "2024-04-02T16:10:06.352Z",
+          "affected_components": [
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rbnhbzgld936",
+          "name": "Frankfurt, Germany - (FRA)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:37:25.480Z",
+          "updated_at": "2024-03-22T13:50:49.830Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-04-03T00:00:00.000Z",
+      "scheduled_until": "2024-04-03T05:00:00.000Z"
     },
     {
       "id": "q74yqnk41qpn",
