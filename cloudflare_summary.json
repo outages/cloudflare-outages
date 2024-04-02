@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-04-02T16:46:02.182Z"
+    "updated_at": "2024-04-02T17:14:24.837Z"
   },
   "components": [
     {
@@ -2563,9 +2563,9 @@
     {
       "id": "wtc1p207n9kv",
       "name": "Las Vegas, NV, United States - (LAS)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-09-27T05:49:35.652Z",
-      "updated_at": "2024-03-13T09:19:25.410Z",
+      "updated_at": "2024-04-02T17:09:50.162Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -6270,7 +6270,7 @@
       "name": "Workers",
       "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2024-04-02T15:51:42.358Z",
+      "updated_at": "2024-04-02T17:14:24.780Z",
       "position": 81,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -6658,6 +6658,79 @@
   ],
   "incidents": [
     {
+      "id": "5kb1f8jjdjnl",
+      "name": "Workers URI unable to parse database DSN",
+      "status": "investigating",
+      "created_at": "2024-04-02T16:56:06.230Z",
+      "updated_at": "2024-04-02T17:14:24.829Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/q3bkpnl2970y",
+      "started_at": "2024-04-02T16:56:06.222Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "4z4l9wl6zmz2",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "5kb1f8jjdjnl",
+          "created_at": "2024-04-02T17:14:24.826Z",
+          "updated_at": "2024-04-02T17:14:24.826Z",
+          "display_at": "2024-04-02T17:14:24.826Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "partial_outage",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "42ygsgvgxvn2",
+          "status": "investigating",
+          "body": "New Workers deployed using URI to parse a database (Data Search Name) DSN are failing to parse. We are currently investigating the root cause. This is also impacting newly deployed Hyperdrives ability to connect to databases.",
+          "incident_id": "5kb1f8jjdjnl",
+          "created_at": "2024-04-02T16:56:06.328Z",
+          "updated_at": "2024-04-02T16:56:06.328Z",
+          "display_at": "2024-04-02T16:56:06.328Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2024-04-02T17:14:24.780Z",
+          "position": 81,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "cbp1g42mdfy4",
       "name": "Cloudflare Workers Issues in Sweden",
       "status": "investigating",
@@ -6738,7 +6811,7 @@
           "name": "Workers",
           "status": "degraded_performance",
           "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2024-04-02T15:51:42.358Z",
+          "updated_at": "2024-04-02T17:14:24.780Z",
           "position": 81,
           "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
           "showcase": false,
@@ -7090,73 +7163,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "kk2fl81j1x8z",
-      "name": "DFW (Dallas) on 2024-04-02",
-      "status": "scheduled",
-      "created_at": "2024-03-28T20:22:17.759Z",
-      "updated_at": "2024-04-02T16:00:03.225Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/05pv4mpkq520",
-      "started_at": "2024-03-28T20:22:17.750Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "0x3hktztk2h8",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "kk2fl81j1x8z",
-          "created_at": "2024-04-02T16:00:02.976Z",
-          "updated_at": "2024-04-02T16:00:02.976Z",
-          "display_at": "2024-04-02T16:00:02.976Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "f1nlqgkfpb76",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DFW (Dallas) datacenter on 2024-04-02 between 17:00 and 19:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "kk2fl81j1x8z",
-          "created_at": "2024-03-28T20:22:17.825Z",
-          "updated_at": "2024-03-28T20:22:17.825Z",
-          "display_at": "2024-03-28T20:22:17.825Z",
-          "affected_components": [
-            {
-              "code": "r8ppmb3xm98j",
-              "name": "North America - Dallas, TX, United States - (DFW)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "r8ppmb3xm98j",
-          "name": "Dallas, TX, United States - (DFW)",
-          "status": "operational",
-          "created_at": "2014-10-27T19:52:05.585Z",
-          "updated_at": "2024-04-01T18:02:52.780Z",
-          "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-04-02T17:00:00.000Z",
-      "scheduled_until": "2024-04-02T19:00:00.000Z"
-    },
-    {
       "id": "dpnjf03r2gjs",
       "name": "FRA (Frankfurt) on 2024-04-03",
       "status": "scheduled",
@@ -7265,6 +7271,86 @@
       "scheduled_until": "2024-04-16T08:00:00.000Z"
     },
     {
+      "id": "kk2fl81j1x8z",
+      "name": "DFW (Dallas) on 2024-04-02",
+      "status": "in_progress",
+      "created_at": "2024-03-28T20:22:17.759Z",
+      "updated_at": "2024-04-02T17:00:02.348Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/05pv4mpkq520",
+      "started_at": "2024-03-28T20:22:17.750Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "wtrbvtmcqw9q",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "kk2fl81j1x8z",
+          "created_at": "2024-04-02T17:00:02.340Z",
+          "updated_at": "2024-04-02T17:00:02.340Z",
+          "display_at": "2024-04-02T17:00:02.340Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "0x3hktztk2h8",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "kk2fl81j1x8z",
+          "created_at": "2024-04-02T16:00:02.976Z",
+          "updated_at": "2024-04-02T16:00:02.976Z",
+          "display_at": "2024-04-02T16:00:02.976Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "f1nlqgkfpb76",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in DFW (Dallas) datacenter on 2024-04-02 between 17:00 and 19:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "kk2fl81j1x8z",
+          "created_at": "2024-03-28T20:22:17.825Z",
+          "updated_at": "2024-03-28T20:22:17.825Z",
+          "display_at": "2024-03-28T20:22:17.825Z",
+          "affected_components": [
+            {
+              "code": "r8ppmb3xm98j",
+              "name": "North America - Dallas, TX, United States - (DFW)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r8ppmb3xm98j",
+          "name": "Dallas, TX, United States - (DFW)",
+          "status": "operational",
+          "created_at": "2014-10-27T19:52:05.585Z",
+          "updated_at": "2024-04-01T18:02:52.780Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-04-02T17:00:00.000Z",
+      "scheduled_until": "2024-04-02T19:00:00.000Z"
+    },
+    {
       "id": "pgfxntwnnl9z",
       "name": "LAS (Las Vegas) on 2024-04-02",
       "status": "in_progress",
@@ -7328,9 +7414,9 @@
         {
           "id": "wtc1p207n9kv",
           "name": "Las Vegas, NV, United States - (LAS)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2016-09-27T05:49:35.652Z",
-          "updated_at": "2024-03-13T09:19:25.410Z",
+          "updated_at": "2024-04-02T17:09:50.162Z",
           "position": 19,
           "description": null,
           "showcase": false,
