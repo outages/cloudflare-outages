@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-04-02T20:52:14.026Z"
+    "updated_at": "2024-04-02T21:23:27.809Z"
   },
   "components": [
     {
@@ -2563,9 +2563,9 @@
     {
       "id": "wtc1p207n9kv",
       "name": "Las Vegas, NV, United States - (LAS)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-09-27T05:49:35.652Z",
-      "updated_at": "2024-04-02T17:09:50.162Z",
+      "updated_at": "2024-04-02T21:17:56.849Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -6658,99 +6658,6 @@
   ],
   "incidents": [
     {
-      "id": "5kb1f8jjdjnl",
-      "name": "Workers using pg library unable to parse Postgres database DSN",
-      "status": "identified",
-      "created_at": "2024-04-02T16:56:06.230Z",
-      "updated_at": "2024-04-02T17:53:34.743Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/q3bkpnl2970y",
-      "started_at": "2024-04-02T16:56:06.222Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "f3m0lprvqk37",
-          "status": "identified",
-          "body": "We have identified an incompatibility issue with the latest 2.6.3 version of the pg-connection-string library used by the node-postgres library and the Node.js polyfill used by the Workers runtime. This may also impact other libraries that require the Node.js \"url\" package.\n\nThis will result in a runtime error related to the URL constructor with the text URL is not a constructor.\n\nA fix to the way this is polyfilled is in-progress. In the meantime, users can choose to downgrade to pg-connection-string version 2.6.2 and pg version 8.11.3, which does not import the \"url\" package.",
-          "incident_id": "5kb1f8jjdjnl",
-          "created_at": "2024-04-02T17:26:38.611Z",
-          "updated_at": "2024-04-02T17:53:34.740Z",
-          "display_at": "2024-04-02T17:26:38.000Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "4z4l9wl6zmz2",
-          "status": "investigating",
-          "body": "We are continuing to investigate this issue.",
-          "incident_id": "5kb1f8jjdjnl",
-          "created_at": "2024-04-02T17:14:24.826Z",
-          "updated_at": "2024-04-02T17:14:24.826Z",
-          "display_at": "2024-04-02T17:14:24.826Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "partial_outage",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "42ygsgvgxvn2",
-          "status": "investigating",
-          "body": "New Workers deployed using URI to parse a database (Data Search Name) DSN are failing to parse. We are currently investigating the root cause. This is also impacting newly deployed Hyperdrives ability to connect to databases.",
-          "incident_id": "5kb1f8jjdjnl",
-          "created_at": "2024-04-02T16:56:06.328Z",
-          "updated_at": "2024-04-02T16:56:06.328Z",
-          "display_at": "2024-04-02T16:56:06.328Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "degraded_performance",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "57srcl8zcn7c",
-          "name": "Workers",
-          "status": "operational",
-          "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2024-04-02T19:14:08.262Z",
-          "position": 81,
-          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": "[]"
-    },
-    {
       "id": "lxzgwfx8t9k6",
       "name": "Incorrect Analytics for some Workers",
       "status": "investigating",
@@ -7314,9 +7221,9 @@
         {
           "id": "wtc1p207n9kv",
           "name": "Las Vegas, NV, United States - (LAS)",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2016-09-27T05:49:35.652Z",
-          "updated_at": "2024-04-02T17:09:50.162Z",
+          "updated_at": "2024-04-02T21:17:56.849Z",
           "position": 19,
           "description": null,
           "showcase": false,
