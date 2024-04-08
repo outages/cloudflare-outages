@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-04-08T21:20:24.949Z"
+    "updated_at": "2024-04-08T22:16:17.789Z"
   },
   "components": [
     {
@@ -2807,9 +2807,9 @@
     {
       "id": "55x4rmjlwfq8",
       "name": "Guayaquil, Ecuador - (GYE)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-05T16:18:47.146Z",
-      "updated_at": "2024-04-06T02:15:05.974Z",
+      "updated_at": "2024-04-08T22:14:12.268Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -3632,9 +3632,9 @@
     {
       "id": "7j656z7tqk7f",
       "name": "DNS Updates",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:50:20.772Z",
-      "updated_at": "2024-03-26T19:33:22.771Z",
+      "updated_at": "2024-04-08T22:02:27.358Z",
       "position": 31,
       "description": "DNS update service pushing customer DNS changes out to all data centers",
       "showcase": false,
@@ -6722,6 +6722,79 @@
   ],
   "incidents": [
     {
+      "id": "jmpmsl68r927",
+      "name": "DNS Update Delays",
+      "status": "monitoring",
+      "created_at": "2024-04-08T22:02:27.322Z",
+      "updated_at": "2024-04-08T22:16:17.787Z",
+      "monitoring_at": "2024-04-08T22:16:17.770Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/qxm95jm1k9zx",
+      "started_at": "2024-04-08T22:02:27.314Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "bwt7c01ktzmm",
+          "status": "monitoring",
+          "body": "The issue has been identified and a fix has been implemented. We are currently monitoring the results.",
+          "incident_id": "jmpmsl68r927",
+          "created_at": "2024-04-08T22:16:17.770Z",
+          "updated_at": "2024-04-08T22:16:17.770Z",
+          "display_at": "2024-04-08T22:16:17.770Z",
+          "affected_components": [
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "vkz7fdn6dthp",
+          "status": "investigating",
+          "body": "Cloudflare is investigating delays in propagation of updates to DNS records. More updates to follow shortly.",
+          "incident_id": "jmpmsl68r927",
+          "created_at": "2024-04-08T22:02:27.416Z",
+          "updated_at": "2024-04-08T22:02:27.416Z",
+          "display_at": "2024-04-08T22:02:27.416Z",
+          "affected_components": [
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7j656z7tqk7f",
+          "name": "DNS Updates",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:50:20.772Z",
+          "updated_at": "2024-04-08T22:02:27.358Z",
+          "position": 31,
+          "description": "DNS update service pushing customer DNS changes out to all data centers",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "wsjmr28lwxw3",
       "name": "Billing Errors - managing payment methods, subscriptions, paying invoices & inaccurate unpaid balances",
       "status": "identified",
@@ -7353,86 +7426,6 @@
       ],
       "scheduled_for": "2024-04-17T01:00:00.000Z",
       "scheduled_until": "2024-04-17T07:00:00.000Z"
-    },
-    {
-      "id": "xjc3llwlwvrh",
-      "name": "MSP (Minneapolis) on 2024-04-08",
-      "status": "in_progress",
-      "created_at": "2024-04-06T00:00:46.558Z",
-      "updated_at": "2024-04-08T14:00:02.451Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/jy625vnp9byw",
-      "started_at": "2024-04-06T00:00:46.550Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "gvhtmnkf62s3",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "xjc3llwlwvrh",
-          "created_at": "2024-04-08T14:00:02.447Z",
-          "updated_at": "2024-04-08T14:00:02.447Z",
-          "display_at": "2024-04-08T14:00:02.447Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "jgzfldpcyt4z",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "xjc3llwlwvrh",
-          "created_at": "2024-04-08T13:00:06.602Z",
-          "updated_at": "2024-04-08T13:00:06.602Z",
-          "display_at": "2024-04-08T13:00:06.602Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "slj6nwrqn1rt",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MSP (Minneapolis) datacenter on 2024-04-08 between 14:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "xjc3llwlwvrh",
-          "created_at": "2024-04-06T00:00:46.619Z",
-          "updated_at": "2024-04-06T00:00:46.619Z",
-          "display_at": "2024-04-06T00:00:46.619Z",
-          "affected_components": [
-            {
-              "code": "gfbkjpmmjmkj",
-              "name": "North America - Minneapolis, MN, United States - (MSP)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "gfbkjpmmjmkj",
-          "name": "Minneapolis, MN, United States - (MSP)",
-          "status": "operational",
-          "created_at": "2016-01-11T04:39:23.475Z",
-          "updated_at": "2024-03-23T00:30:34.087Z",
-          "position": 25,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-04-08T14:00:00.000Z",
-      "scheduled_until": "2024-04-08T22:00:00.000Z"
     },
     {
       "id": "m3w2gzynkygn",
