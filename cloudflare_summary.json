@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-04-13T18:43:08.782Z"
+    "updated_at": "2024-04-13T20:05:07.692Z"
   },
   "components": [
     {
@@ -6738,6 +6738,79 @@
   ],
   "incidents": [
     {
+      "id": "0sv4kwlrfjgr",
+      "name": "Select Cloudflare Apps are temporarily disabled on select zones.",
+      "status": "identified",
+      "created_at": "2024-04-13T01:54:35.276Z",
+      "updated_at": "2024-04-13T20:05:07.684Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/w20tw6w4lzyv",
+      "started_at": "2024-04-13T01:54:35.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "13s2dg9xfvsw",
+          "status": "identified",
+          "body": "Partially resolved — \n\nMajority of the apps installs have been restored. \n\nSome zones with Google Analytics installed will still see impact. We are working to restore Google Analytics installs.",
+          "incident_id": "0sv4kwlrfjgr",
+          "created_at": "2024-04-13T17:38:22.122Z",
+          "updated_at": "2024-04-13T18:01:19.848Z",
+          "display_at": "2024-04-13T17:38:22.000Z",
+          "affected_components": [
+            {
+              "code": "g9dgngpcdt1x",
+              "name": "Cloudflare Sites and Services - Apps Marketplace",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "mcs2rkfmpw6v",
+          "status": "investigating",
+          "body": "Some zones running the Cloudflare Apps may see the app has been uninstalled. We are working to revert this and restore the apps.",
+          "incident_id": "0sv4kwlrfjgr",
+          "created_at": "2024-04-13T01:54:35.348Z",
+          "updated_at": "2024-04-13T20:05:07.679Z",
+          "display_at": "2024-04-13T01:54:35.000Z",
+          "affected_components": [
+            {
+              "code": "g9dgngpcdt1x",
+              "name": "Cloudflare Sites and Services - Apps Marketplace",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g9dgngpcdt1x",
+          "name": "Apps Marketplace",
+          "status": "operational",
+          "created_at": "2020-08-31T17:23:20.523Z",
+          "updated_at": "2024-01-19T10:30:37.517Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-08-31",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "tvy66vbwcwsr",
       "name": "Cloudflare Workers AI Issues",
       "status": "identified",
@@ -6809,79 +6882,6 @@
         }
       ],
       "reminder_intervals": "[]"
-    },
-    {
-      "id": "0sv4kwlrfjgr",
-      "name": "Select Cloudflare Apps are temporarily disabled on select zones.",
-      "status": "identified",
-      "created_at": "2024-04-13T01:54:35.276Z",
-      "updated_at": "2024-04-13T18:23:04.357Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/w20tw6w4lzyv",
-      "started_at": "2024-04-13T01:54:35.267Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "13s2dg9xfvsw",
-          "status": "identified",
-          "body": "Partially resolved — \n\nMajority of the apps installs have been restored. \n\nSome zones with Google Analytics installed will still see impact. We are working to restore Google Analytics installs.",
-          "incident_id": "0sv4kwlrfjgr",
-          "created_at": "2024-04-13T17:38:22.122Z",
-          "updated_at": "2024-04-13T18:01:19.848Z",
-          "display_at": "2024-04-13T17:38:22.000Z",
-          "affected_components": [
-            {
-              "code": "g9dgngpcdt1x",
-              "name": "Cloudflare Sites and Services - Apps Marketplace",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "mcs2rkfmpw6v",
-          "status": "investigating",
-          "body": "Some zones running the following Cloudflare Apps may see the app has been uninstalled. We are working to revert this and restore the apps. \n\n- Email Forwarding\n- Cassette\n- Google Analytics\n- WhatsApp Contact Us - Button & Widget\n- PCI ASV Scanning\n- iubenda\n- Site Audit\n- CodeGuard\n- Edgy\n- AdBlock Minus\n- Welcome Bar\n- Clicky Web Analytics",
-          "incident_id": "0sv4kwlrfjgr",
-          "created_at": "2024-04-13T01:54:35.348Z",
-          "updated_at": "2024-04-13T01:54:35.348Z",
-          "display_at": "2024-04-13T01:54:35.348Z",
-          "affected_components": [
-            {
-              "code": "g9dgngpcdt1x",
-              "name": "Cloudflare Sites and Services - Apps Marketplace",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "g9dgngpcdt1x",
-          "name": "Apps Marketplace",
-          "status": "operational",
-          "created_at": "2020-08-31T17:23:20.523Z",
-          "updated_at": "2024-01-19T10:30:37.517Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2020-08-31",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
     },
     {
       "id": "wsjmr28lwxw3",
