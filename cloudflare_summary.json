@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-05-06T21:47:15.551Z"
+    "updated_at": "2024-05-06T22:10:48.825Z"
   },
   "components": [
     {
@@ -2586,9 +2586,9 @@
     {
       "id": "fbvx0hxhhdj0",
       "name": "CDN Cache Purge",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-31T16:54:52.510Z",
-      "updated_at": "2024-05-06T20:14:58.036Z",
+      "updated_at": "2024-05-06T22:10:48.769Z",
       "position": 19,
       "description": "CDN single file cache purging service",
       "showcase": false,
@@ -6786,79 +6786,6 @@
   ],
   "incidents": [
     {
-      "id": "wsrggs8hxlcq",
-      "name": "Cache Purging Delays",
-      "status": "monitoring",
-      "created_at": "2024-05-06T20:14:58.007Z",
-      "updated_at": "2024-05-06T20:39:02.213Z",
-      "monitoring_at": "2024-05-06T20:39:02.196Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/zf8dms8bwcv4",
-      "started_at": "2024-05-06T20:14:58.001Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "nfxdrc51d3yk",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "wsrggs8hxlcq",
-          "created_at": "2024-05-06T20:39:02.196Z",
-          "updated_at": "2024-05-06T20:39:02.196Z",
-          "display_at": "2024-05-06T20:39:02.196Z",
-          "affected_components": [
-            {
-              "code": "fbvx0hxhhdj0",
-              "name": "Cloudflare Sites and Services - CDN Cache Purge",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "5wy77mq8942z",
-          "status": "investigating",
-          "body": "Cloudflare single-file cache purging (purge by URL) called via the Dashboard/API is running up to 20 minutes behind. This also affects the \"Always Online\" feature.\n\nWe are working to resolve this issue as soon as possible. Until then you may use the Purge Everything feature but do be aware it may cause a surge in traffic to your origin server(s). More updates to follow.",
-          "incident_id": "wsrggs8hxlcq",
-          "created_at": "2024-05-06T20:14:58.079Z",
-          "updated_at": "2024-05-06T20:14:58.079Z",
-          "display_at": "2024-05-06T20:14:58.079Z",
-          "affected_components": [
-            {
-              "code": "fbvx0hxhhdj0",
-              "name": "Cloudflare Sites and Services - CDN Cache Purge",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "fbvx0hxhhdj0",
-          "name": "CDN Cache Purge",
-          "status": "degraded_performance",
-          "created_at": "2019-01-31T16:54:52.510Z",
-          "updated_at": "2024-05-06T20:14:58.036Z",
-          "position": 19,
-          "description": "CDN single file cache purging service",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
       "id": "wsjmr28lwxw3",
       "name": "Billing Errors - managing payment methods, subscriptions, paying invoices & inaccurate unpaid balances",
       "status": "monitoring",
@@ -7274,73 +7201,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "yb6sx1gl4vbt",
-      "name": "WAW (Warsaw) on 2024-05-06",
-      "status": "scheduled",
-      "created_at": "2024-04-30T12:44:14.427Z",
-      "updated_at": "2024-05-06T21:00:04.680Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/p8xkt3sk8v6k",
-      "started_at": "2024-04-30T12:44:14.422Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "k494cwfmlzfv",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "yb6sx1gl4vbt",
-          "created_at": "2024-05-06T21:00:04.557Z",
-          "updated_at": "2024-05-06T21:00:04.557Z",
-          "display_at": "2024-05-06T21:00:04.557Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "9722pzrmvkzw",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in WAW (Warsaw) datacenter between 2024-05-06 22:00 and 2024-05-07 06:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of       a slight increase in latency during this maintenance window for end-users in the affected       region. For PNI / CNI customers connecting with us in this location, please make sure you are       expecting this traffic to fail over elsewhere during this maintenance window as network       interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe       to these notifications via Cloudflare dashboard and receive these updates directly via email,       PagerDuty and webhooks (based on your plan):       https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "yb6sx1gl4vbt",
-          "created_at": "2024-04-30T12:44:14.467Z",
-          "updated_at": "2024-04-30T12:44:14.467Z",
-          "display_at": "2024-04-30T12:44:14.467Z",
-          "affected_components": [
-            {
-              "code": "0gh2jr9mdr7v",
-              "name": "Europe - Warsaw, Poland - (WAW)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "0gh2jr9mdr7v",
-          "name": "Warsaw, Poland - (WAW)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:07:37.647Z",
-          "updated_at": "2024-04-26T05:13:40.943Z",
-          "position": 53,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-05-06T22:00:00.000Z",
-      "scheduled_until": "2024-05-07T06:00:00.000Z"
-    },
-    {
       "id": "v8hpppnpp2wh",
       "name": "ZRH (Zurich) on 2024-05-07",
       "status": "scheduled",
@@ -7449,60 +7309,6 @@
       "scheduled_until": "2024-05-07T22:00:00.000Z"
     },
     {
-      "id": "jq8x17mk1w2f",
-      "name": "SOF (Sofia) on 2024-05-07",
-      "status": "scheduled",
-      "created_at": "2024-04-30T12:44:08.816Z",
-      "updated_at": "2024-04-30T12:44:08.863Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/zl5h30y9x90p",
-      "started_at": "2024-04-30T12:44:08.810Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "kdsp75f8p7qt",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SOF (Sofia) datacenter between 2024-05-07 23:00 and 2024-05-08 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of       a slight increase in latency during this maintenance window for end-users in the affected       region. For PNI / CNI customers connecting with us in this location, please make sure you are       expecting this traffic to fail over elsewhere during this maintenance window as network       interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe       to these notifications via Cloudflare dashboard and receive these updates directly via email,       PagerDuty and webhooks (based on your plan):       https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "jq8x17mk1w2f",
-          "created_at": "2024-04-30T12:44:08.861Z",
-          "updated_at": "2024-04-30T12:44:08.861Z",
-          "display_at": "2024-04-30T12:44:08.861Z",
-          "affected_components": [
-            {
-              "code": "7m2yh22kzgbw",
-              "name": "Europe - Sofia, Bulgaria - (SOF)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7m2yh22kzgbw",
-          "name": "Sofia, Bulgaria - (SOF)",
-          "status": "operational",
-          "created_at": "2015-12-08T11:47:55.113Z",
-          "updated_at": "2024-05-03T01:01:03.333Z",
-          "position": 43,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-05-07T23:00:00.000Z",
-      "scheduled_until": "2024-05-08T03:00:00.000Z"
-    },
-    {
       "id": "w860ms52xf0k",
       "name": "BOM (Mumbai) on 2024-05-07",
       "status": "scheduled",
@@ -7602,6 +7408,60 @@
           "showcase": false,
           "start_date": null,
           "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-05-07T23:00:00.000Z",
+      "scheduled_until": "2024-05-08T03:00:00.000Z"
+    },
+    {
+      "id": "jq8x17mk1w2f",
+      "name": "SOF (Sofia) on 2024-05-07",
+      "status": "scheduled",
+      "created_at": "2024-04-30T12:44:08.816Z",
+      "updated_at": "2024-04-30T12:44:08.863Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/zl5h30y9x90p",
+      "started_at": "2024-04-30T12:44:08.810Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "kdsp75f8p7qt",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SOF (Sofia) datacenter between 2024-05-07 23:00 and 2024-05-08 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of       a slight increase in latency during this maintenance window for end-users in the affected       region. For PNI / CNI customers connecting with us in this location, please make sure you are       expecting this traffic to fail over elsewhere during this maintenance window as network       interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe       to these notifications via Cloudflare dashboard and receive these updates directly via email,       PagerDuty and webhooks (based on your plan):       https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "jq8x17mk1w2f",
+          "created_at": "2024-04-30T12:44:08.861Z",
+          "updated_at": "2024-04-30T12:44:08.861Z",
+          "display_at": "2024-04-30T12:44:08.861Z",
+          "affected_components": [
+            {
+              "code": "7m2yh22kzgbw",
+              "name": "Europe - Sofia, Bulgaria - (SOF)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7m2yh22kzgbw",
+          "name": "Sofia, Bulgaria - (SOF)",
+          "status": "operational",
+          "created_at": "2015-12-08T11:47:55.113Z",
+          "updated_at": "2024-05-03T01:01:03.333Z",
+          "position": 43,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
@@ -7773,6 +7633,86 @@
       "scheduled_until": "2024-05-10T06:00:00.000Z"
     },
     {
+      "id": "yb6sx1gl4vbt",
+      "name": "WAW (Warsaw) on 2024-05-06",
+      "status": "in_progress",
+      "created_at": "2024-04-30T12:44:14.427Z",
+      "updated_at": "2024-05-06T22:00:29.028Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/p8xkt3sk8v6k",
+      "started_at": "2024-04-30T12:44:14.422Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "6c8k64nv33tr",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "yb6sx1gl4vbt",
+          "created_at": "2024-05-06T22:00:29.026Z",
+          "updated_at": "2024-05-06T22:00:29.026Z",
+          "display_at": "2024-05-06T22:00:29.026Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "k494cwfmlzfv",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "yb6sx1gl4vbt",
+          "created_at": "2024-05-06T21:00:04.557Z",
+          "updated_at": "2024-05-06T21:00:04.557Z",
+          "display_at": "2024-05-06T21:00:04.557Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "9722pzrmvkzw",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in WAW (Warsaw) datacenter between 2024-05-06 22:00 and 2024-05-07 06:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of       a slight increase in latency during this maintenance window for end-users in the affected       region. For PNI / CNI customers connecting with us in this location, please make sure you are       expecting this traffic to fail over elsewhere during this maintenance window as network       interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe       to these notifications via Cloudflare dashboard and receive these updates directly via email,       PagerDuty and webhooks (based on your plan):       https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "yb6sx1gl4vbt",
+          "created_at": "2024-04-30T12:44:14.467Z",
+          "updated_at": "2024-04-30T12:44:14.467Z",
+          "display_at": "2024-04-30T12:44:14.467Z",
+          "affected_components": [
+            {
+              "code": "0gh2jr9mdr7v",
+              "name": "Europe - Warsaw, Poland - (WAW)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "0gh2jr9mdr7v",
+          "name": "Warsaw, Poland - (WAW)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:07:37.647Z",
+          "updated_at": "2024-04-26T05:13:40.943Z",
+          "position": 53,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-05-06T22:00:00.000Z",
+      "scheduled_until": "2024-05-07T06:00:00.000Z"
+    },
+    {
       "id": "cm2j6d8t7tqh",
       "name": "LIM (Lima) on 2024-05-06",
       "status": "in_progress",
@@ -7851,86 +7791,6 @@
       ],
       "scheduled_for": "2024-05-06T13:00:00.000Z",
       "scheduled_until": "2024-05-06T23:00:00.000Z"
-    },
-    {
-      "id": "vgjf17w0np5k",
-      "name": "SCL (Santiago) on 2024-05-06",
-      "status": "in_progress",
-      "created_at": "2024-05-03T21:34:48.961Z",
-      "updated_at": "2024-05-06T13:00:02.373Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/73p0xnd1jl97",
-      "started_at": "2024-05-03T21:34:48.953Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "prmnvn0ffgqs",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "vgjf17w0np5k",
-          "created_at": "2024-05-06T13:00:02.370Z",
-          "updated_at": "2024-05-06T13:00:02.370Z",
-          "display_at": "2024-05-06T13:00:02.370Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "ktbq0nnfy901",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "vgjf17w0np5k",
-          "created_at": "2024-05-06T12:00:03.609Z",
-          "updated_at": "2024-05-06T12:00:03.609Z",
-          "display_at": "2024-05-06T12:00:03.609Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "005n6dw3l6cw",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SCL (Santiago) datacenter on 2024-05-06 between 13:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "vgjf17w0np5k",
-          "created_at": "2024-05-03T21:34:49.012Z",
-          "updated_at": "2024-05-03T21:34:49.012Z",
-          "display_at": "2024-05-03T21:34:49.012Z",
-          "affected_components": [
-            {
-              "code": "wg0b1zzm2f2w",
-              "name": "Latin America & the Caribbean - Santiago, Chile - (SCL)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "wg0b1zzm2f2w",
-          "name": "Santiago, Chile - (SCL)",
-          "status": "partial_outage",
-          "created_at": "2014-10-27T21:47:59.478Z",
-          "updated_at": "2024-05-06T13:09:13.857Z",
-          "position": 39,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-05-06T13:00:00.000Z",
-      "scheduled_until": "2024-05-06T22:00:00.000Z"
     }
   ],
   "status": {
