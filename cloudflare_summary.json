@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-05-08T02:46:54.048Z"
+    "updated_at": "2024-05-08T03:16:51.141Z"
   },
   "components": [
     {
@@ -3156,9 +3156,9 @@
     {
       "id": "bnjvsmmllkb9",
       "name": "Lima, Peru - (LIM)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2014-12-03T20:29:25.140Z",
-      "updated_at": "2024-05-07T15:13:48.715Z",
+      "updated_at": "2024-05-08T03:10:10.408Z",
       "position": 25,
       "description": null,
       "showcase": false,
@@ -3861,9 +3861,9 @@
     {
       "id": "bty1yz6dhh0v",
       "name": "Durable Objects",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-06-12T14:55:22.631Z",
-      "updated_at": "2024-04-29T15:13:17.116Z",
+      "updated_at": "2024-05-08T03:16:51.049Z",
       "position": 34,
       "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
       "showcase": false,
@@ -5316,9 +5316,9 @@
     {
       "id": "hwd89skfvc58",
       "name": "Zagreb, Croatia - (ZAG)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2017-09-22T22:03:23.809Z",
-      "updated_at": "2024-05-08T01:43:01.158Z",
+      "updated_at": "2024-05-08T03:04:41.148Z",
       "position": 55,
       "description": null,
       "showcase": false,
@@ -5481,9 +5481,9 @@
     {
       "id": "cl9hc9q83k9n",
       "name": "Lyon, France - (LYS)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-05-25T18:00:48.504Z",
-      "updated_at": "2024-05-08T01:48:27.900Z",
+      "updated_at": "2024-05-08T02:59:15.674Z",
       "position": 57,
       "description": null,
       "showcase": false,
@@ -5616,9 +5616,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2024-04-29T15:29:31.699Z",
+      "updated_at": "2024-05-08T03:16:51.069Z",
       "position": 59,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -6786,6 +6786,80 @@
   ],
   "incidents": [
     {
+      "id": "dvxx0vzwqw01",
+      "name": "Durable Objects and R2 elevated error rates in APAC Region",
+      "status": "investigating",
+      "created_at": "2024-05-08T03:16:51.013Z",
+      "updated_at": "2024-05-08T03:16:51.138Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/q6mqyfrfmxws",
+      "started_at": "2024-05-08T03:16:51.005Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "4dfptgjlb6v8",
+          "status": "investigating",
+          "body": "We are investigating elevated error rates for Durable Objects and R2 buckets in the Asia-Pacific region. We are working to analyze and mitigate this problem. More updates will follow shortly.",
+          "incident_id": "dvxx0vzwqw01",
+          "created_at": "2024-05-08T03:16:51.135Z",
+          "updated_at": "2024-05-08T03:16:51.135Z",
+          "display_at": "2024-05-08T03:16:51.135Z",
+          "affected_components": [
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bty1yz6dhh0v",
+          "name": "Durable Objects",
+          "status": "degraded_performance",
+          "created_at": "2023-06-12T14:55:22.631Z",
+          "updated_at": "2024-05-08T03:16:51.049Z",
+          "position": 34,
+          "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
+          "showcase": false,
+          "start_date": "2023-06-12",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2024-05-08T03:16:51.069Z",
+          "position": 59,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "wsjmr28lwxw3",
       "name": "Billing Errors - managing payment methods, subscriptions, paying invoices & inaccurate unpaid balances",
       "status": "monitoring",
@@ -7415,86 +7489,6 @@
       ],
       "scheduled_for": "2024-05-10T00:00:00.000Z",
       "scheduled_until": "2024-05-10T06:00:00.000Z"
-    },
-    {
-      "id": "jq8x17mk1w2f",
-      "name": "SOF (Sofia) on 2024-05-07",
-      "status": "in_progress",
-      "created_at": "2024-04-30T12:44:08.816Z",
-      "updated_at": "2024-05-07T23:00:02.833Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/zl5h30y9x90p",
-      "started_at": "2024-04-30T12:44:08.810Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "tf1lq4zbhhh5",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "jq8x17mk1w2f",
-          "created_at": "2024-05-07T23:00:02.831Z",
-          "updated_at": "2024-05-07T23:00:02.831Z",
-          "display_at": "2024-05-07T23:00:02.831Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "tyl53jsrt9bk",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "jq8x17mk1w2f",
-          "created_at": "2024-05-07T22:00:03.996Z",
-          "updated_at": "2024-05-07T22:00:03.996Z",
-          "display_at": "2024-05-07T22:00:03.996Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "kdsp75f8p7qt",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SOF (Sofia) datacenter between 2024-05-07 23:00 and 2024-05-08 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of       a slight increase in latency during this maintenance window for end-users in the affected       region. For PNI / CNI customers connecting with us in this location, please make sure you are       expecting this traffic to fail over elsewhere during this maintenance window as network       interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe       to these notifications via Cloudflare dashboard and receive these updates directly via email,       PagerDuty and webhooks (based on your plan):       https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "jq8x17mk1w2f",
-          "created_at": "2024-04-30T12:44:08.861Z",
-          "updated_at": "2024-04-30T12:44:08.861Z",
-          "display_at": "2024-04-30T12:44:08.861Z",
-          "affected_components": [
-            {
-              "code": "7m2yh22kzgbw",
-              "name": "Europe - Sofia, Bulgaria - (SOF)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7m2yh22kzgbw",
-          "name": "Sofia, Bulgaria - (SOF)",
-          "status": "operational",
-          "created_at": "2015-12-08T11:47:55.113Z",
-          "updated_at": "2024-05-08T02:10:15.401Z",
-          "position": 43,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-05-07T23:00:00.000Z",
-      "scheduled_until": "2024-05-08T03:00:00.000Z"
     }
   ],
   "status": {
