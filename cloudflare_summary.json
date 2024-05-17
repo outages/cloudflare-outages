@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-05-17T15:46:52.699Z"
+    "updated_at": "2024-05-17T16:03:28.916Z"
   },
   "components": [
     {
@@ -6322,9 +6322,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2024-05-17T14:54:43.442Z",
+      "updated_at": "2024-05-17T15:53:07.948Z",
       "position": 84,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -6802,30 +6802,36 @@
   ],
   "incidents": [
     {
-      "id": "8h32p5y03rrr",
-      "name": "Cloudflare Workers API Errors",
-      "status": "monitoring",
-      "created_at": "2024-05-17T14:54:43.401Z",
-      "updated_at": "2024-05-17T15:46:52.694Z",
-      "monitoring_at": "2024-05-17T15:46:52.661Z",
+      "id": "b23wbkwdfh5w",
+      "name": "Cloudflare Zero Trust: Protocol Detection Issues",
+      "status": "identified",
+      "created_at": "2024-05-17T15:07:54.314Z",
+      "updated_at": "2024-05-17T16:03:28.904Z",
+      "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/d1znykrymj5z",
-      "started_at": "2024-05-17T14:54:43.392Z",
+      "shortlink": "https://stspg.io/zgjvp1qwbqfw",
+      "started_at": "2024-05-17T15:07:54.305Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "4rq7vll94d1f",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "8h32p5y03rrr",
-          "created_at": "2024-05-17T15:46:52.661Z",
-          "updated_at": "2024-05-17T15:46:52.661Z",
-          "display_at": "2024-05-17T15:46:52.661Z",
+          "id": "x596w22ydht8",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "b23wbkwdfh5w",
+          "created_at": "2024-05-17T16:03:28.902Z",
+          "updated_at": "2024-05-17T16:03:28.902Z",
+          "display_at": "2024-05-17T16:03:28.902Z",
           "affected_components": [
             {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
               "old_status": "degraded_performance",
               "new_status": "degraded_performance"
             }
@@ -6834,59 +6840,6 @@
           "custom_tweet": null,
           "tweet_id": null
         },
-        {
-          "id": "9k6h7vpbv85c",
-          "status": "investigating",
-          "body": "Cloudflare is investigating increased errors when interacting with Workers API and Workers configuration in the dashboard.\n\nWorkers that are already running in production are not affected. More updates to follow shortly.",
-          "incident_id": "8h32p5y03rrr",
-          "created_at": "2024-05-17T14:54:43.500Z",
-          "updated_at": "2024-05-17T14:54:43.500Z",
-          "display_at": "2024-05-17T14:54:43.500Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "57srcl8zcn7c",
-          "name": "Workers",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2024-05-17T14:54:43.442Z",
-          "position": 84,
-          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "b23wbkwdfh5w",
-      "name": "Cloudflare Zero Trust: Protocol Detection Issues",
-      "status": "investigating",
-      "created_at": "2024-05-17T15:07:54.314Z",
-      "updated_at": "2024-05-17T15:07:54.423Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/zgjvp1qwbqfw",
-      "started_at": "2024-05-17T15:07:54.305Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
         {
           "id": "6pn0lghzzwj2",
           "status": "investigating",
@@ -7364,73 +7317,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "7t8c35mwxpbj",
-      "name": "MEX (Mexico City) on 2024-05-17",
-      "status": "scheduled",
-      "created_at": "2024-05-16T23:12:37.317Z",
-      "updated_at": "2024-05-17T15:00:04.669Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/62hv932qrd43",
-      "started_at": "2024-05-16T23:12:37.312Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "0xgylr0j18s0",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "7t8c35mwxpbj",
-          "created_at": "2024-05-17T15:00:04.579Z",
-          "updated_at": "2024-05-17T15:00:04.579Z",
-          "display_at": "2024-05-17T15:00:04.579Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "kmlvrsylvw1x",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MEX (Mexico City) datacenter on 2024-05-17 between 16:00 and 20:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "7t8c35mwxpbj",
-          "created_at": "2024-05-16T23:12:37.360Z",
-          "updated_at": "2024-05-16T23:12:37.360Z",
-          "display_at": "2024-05-16T23:12:37.360Z",
-          "affected_components": [
-            {
-              "code": "y3r9ft7k1mmw",
-              "name": "North America - Mexico City, Mexico - (MEX)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "y3r9ft7k1mmw",
-          "name": "Mexico City, Mexico - (MEX)",
-          "status": "operational",
-          "created_at": "2018-04-02T02:10:52.729Z",
-          "updated_at": "2024-05-14T06:48:30.394Z",
-          "position": 23,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-05-17T16:00:00.000Z",
-      "scheduled_until": "2024-05-17T20:00:00.000Z"
-    },
-    {
       "id": "dw0dxtcj0l5n",
       "name": "WAW (Warsaw) on 2024-05-20",
       "status": "scheduled",
@@ -7793,6 +7679,86 @@
       ],
       "scheduled_for": "2024-05-23T23:00:00.000Z",
       "scheduled_until": "2024-05-24T06:00:00.000Z"
+    },
+    {
+      "id": "7t8c35mwxpbj",
+      "name": "MEX (Mexico City) on 2024-05-17",
+      "status": "in_progress",
+      "created_at": "2024-05-16T23:12:37.317Z",
+      "updated_at": "2024-05-17T16:00:02.222Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/62hv932qrd43",
+      "started_at": "2024-05-16T23:12:37.312Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "9bnt20f2y9s5",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "7t8c35mwxpbj",
+          "created_at": "2024-05-17T16:00:02.219Z",
+          "updated_at": "2024-05-17T16:00:02.219Z",
+          "display_at": "2024-05-17T16:00:02.219Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "0xgylr0j18s0",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "7t8c35mwxpbj",
+          "created_at": "2024-05-17T15:00:04.579Z",
+          "updated_at": "2024-05-17T15:00:04.579Z",
+          "display_at": "2024-05-17T15:00:04.579Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "kmlvrsylvw1x",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MEX (Mexico City) datacenter on 2024-05-17 between 16:00 and 20:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "7t8c35mwxpbj",
+          "created_at": "2024-05-16T23:12:37.360Z",
+          "updated_at": "2024-05-16T23:12:37.360Z",
+          "display_at": "2024-05-16T23:12:37.360Z",
+          "affected_components": [
+            {
+              "code": "y3r9ft7k1mmw",
+              "name": "North America - Mexico City, Mexico - (MEX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "y3r9ft7k1mmw",
+          "name": "Mexico City, Mexico - (MEX)",
+          "status": "operational",
+          "created_at": "2018-04-02T02:10:52.729Z",
+          "updated_at": "2024-05-14T06:48:30.394Z",
+          "position": 23,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-05-17T16:00:00.000Z",
+      "scheduled_until": "2024-05-17T20:00:00.000Z"
     },
     {
       "id": "5tj5t7ypbph8",
