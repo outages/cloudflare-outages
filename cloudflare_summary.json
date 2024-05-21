@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-05-21T15:15:54.705Z"
+    "updated_at": "2024-05-21T15:50:49.855Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2617,9 +2617,9 @@
     {
       "id": "1qbk4p1tr5zf",
       "name": "Goiânia, Brazil - (GYN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-11-02T16:47:51.148Z",
-      "updated_at": "2024-03-25T13:52:04.487Z",
+      "updated_at": "2024-05-21T15:40:53.873Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -2857,9 +2857,9 @@
     {
       "id": "v4lr1tmw0jsf",
       "name": "Port Louis, Mauritius - (MRU)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-02-12T12:35:05.181Z",
-      "updated_at": "2024-05-21T12:07:50.643Z",
+      "updated_at": "2024-05-21T15:36:44.015Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -6322,9 +6322,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2024-05-17T15:53:07.948Z",
+      "updated_at": "2024-05-21T15:50:49.786Z",
       "position": 84,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -6800,7 +6800,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "hh75lkq0jgxg",
+      "name": "Cloudflare Workers Issues (Python)",
+      "status": "identified",
+      "created_at": "2024-05-21T15:50:49.743Z",
+      "updated_at": "2024-05-21T15:50:49.852Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/jph7qfs1ddsg",
+      "started_at": "2024-05-21T15:50:49.733Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "mtmtszmnypl1",
+          "status": "identified",
+          "body": "Cloudflare is investigating an increased level of errors for customers running Python Workers. Requests to Python Workers might result in a \"Script Not Found\" error.\n\nWe are working to analyse and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "hh75lkq0jgxg",
+          "created_at": "2024-05-21T15:50:49.848Z",
+          "updated_at": "2024-05-21T15:50:49.848Z",
+          "display_at": "2024-05-21T15:50:49.848Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2024-05-21T15:50:49.786Z",
+          "position": 84,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "3pdryzjklqxl",
