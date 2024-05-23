@@ -2,9 +2,9 @@
   "page": {
     "id": "yh6f0r4529hb",
     "name": "Cloudflare",
-    "url": "http://www.cloudflarestatus.com",
+    "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-05-23T16:48:31.642Z"
+    "updated_at": "2024-05-23T17:01:02.150Z"
   },
   "components": [
     {
@@ -6804,9 +6804,9 @@
     {
       "id": "d59wrm026qsz",
       "name": "Analytics Delays",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2024-05-23T14:18:19.000Z",
-      "updated_at": "2024-05-23T14:56:16.242Z",
+      "updated_at": "2024-05-23T16:55:10.212Z",
       "monitoring_at": "2024-05-23T14:29:10.225Z",
       "resolved_at": null,
       "impact": "minor",
@@ -6814,6 +6814,26 @@
       "started_at": "2024-05-23T14:18:19.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "y1nhz9t7hk8y",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "d59wrm026qsz",
+          "created_at": "2024-05-23T16:55:10.210Z",
+          "updated_at": "2024-05-23T16:55:10.210Z",
+          "display_at": "2024-05-23T16:55:10.210Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "tdp3gz04j5sh",
           "status": "identified",
@@ -6896,73 +6916,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "3yyp7jllhdn1",
-      "name": "MEX (Mexico City) on 2024-05-23",
-      "status": "scheduled",
-      "created_at": "2024-05-23T14:52:32.127Z",
-      "updated_at": "2024-05-23T16:01:03.256Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/v9cj2rqbnq0j",
-      "started_at": "2024-05-23T14:52:32.121Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "z4d6pp2hkfkz",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "3yyp7jllhdn1",
-          "created_at": "2024-05-23T16:01:03.175Z",
-          "updated_at": "2024-05-23T16:01:03.175Z",
-          "display_at": "2024-05-23T16:01:03.175Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "fbk2h22qv0yw",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MEX (Mexico City) datacenter on 2024-05-23 between 17:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "3yyp7jllhdn1",
-          "created_at": "2024-05-23T14:52:32.191Z",
-          "updated_at": "2024-05-23T14:52:32.191Z",
-          "display_at": "2024-05-23T14:52:32.191Z",
-          "affected_components": [
-            {
-              "code": "y3r9ft7k1mmw",
-              "name": "North America - Mexico City, Mexico - (MEX)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "y3r9ft7k1mmw",
-          "name": "Mexico City, Mexico - (MEX)",
-          "status": "operational",
-          "created_at": "2018-04-02T02:10:52.729Z",
-          "updated_at": "2024-05-17T20:29:42.521Z",
-          "position": 23,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-05-23T17:00:37.000Z",
-      "scheduled_until": "2024-05-23T21:00:37.000Z"
-    },
     {
       "id": "bn65bn8g3tt2",
       "name": "ATH (Athens) on 2024-05-23",
@@ -8906,6 +8859,86 @@
       ],
       "scheduled_for": "2024-06-05T02:30:00.000Z",
       "scheduled_until": "2024-06-05T06:00:00.000Z"
+    },
+    {
+      "id": "3yyp7jllhdn1",
+      "name": "MEX (Mexico City) on 2024-05-23",
+      "status": "in_progress",
+      "created_at": "2024-05-23T14:52:32.127Z",
+      "updated_at": "2024-05-23T17:01:02.138Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/v9cj2rqbnq0j",
+      "started_at": "2024-05-23T14:52:32.121Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "vz8wf68xh7r8",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "3yyp7jllhdn1",
+          "created_at": "2024-05-23T17:01:02.135Z",
+          "updated_at": "2024-05-23T17:01:02.135Z",
+          "display_at": "2024-05-23T17:01:02.135Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "z4d6pp2hkfkz",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "3yyp7jllhdn1",
+          "created_at": "2024-05-23T16:01:03.175Z",
+          "updated_at": "2024-05-23T16:01:03.175Z",
+          "display_at": "2024-05-23T16:01:03.175Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "fbk2h22qv0yw",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MEX (Mexico City) datacenter on 2024-05-23 between 17:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "3yyp7jllhdn1",
+          "created_at": "2024-05-23T14:52:32.191Z",
+          "updated_at": "2024-05-23T14:52:32.191Z",
+          "display_at": "2024-05-23T14:52:32.191Z",
+          "affected_components": [
+            {
+              "code": "y3r9ft7k1mmw",
+              "name": "North America - Mexico City, Mexico - (MEX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "y3r9ft7k1mmw",
+          "name": "Mexico City, Mexico - (MEX)",
+          "status": "operational",
+          "created_at": "2018-04-02T02:10:52.729Z",
+          "updated_at": "2024-05-17T20:29:42.521Z",
+          "position": 23,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-05-23T17:00:37.000Z",
+      "scheduled_until": "2024-05-23T21:00:37.000Z"
     },
     {
       "id": "91jy7pwrs82n",
