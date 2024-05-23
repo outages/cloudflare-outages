@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-05-23T14:00:47.532Z"
+    "updated_at": "2024-05-23T14:23:05.074Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -599,9 +599,9 @@
     {
       "id": "4c231tkdlpcl",
       "name": "Analytics",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-11-13T11:54:10.191Z",
-      "updated_at": "2024-04-29T13:02:08.235Z",
+      "updated_at": "2024-05-23T14:18:19.102Z",
       "position": 4,
       "description": "Customer analytics aggregation service",
       "showcase": false,
@@ -6801,6 +6801,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "d59wrm026qsz",
+      "name": "Analytics Delays",
+      "status": "investigating",
+      "created_at": "2024-05-23T14:18:19.065Z",
+      "updated_at": "2024-05-23T14:23:05.071Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/g5nm89cnp7bw",
+      "started_at": "2024-05-23T14:18:19.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "40gb12t22bxz",
+          "status": "investigating",
+          "body": "Cloudflare Analytics processing is running behind. This affects timely delivery of customer data.\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "d59wrm026qsz",
+          "created_at": "2024-05-23T14:18:19.156Z",
+          "updated_at": "2024-05-23T14:23:05.022Z",
+          "display_at": "2024-05-23T14:18:19.000Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "degraded_performance",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2024-05-23T14:18:19.102Z",
+          "position": 4,
+          "description": "Customer analytics aggregation service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "d306d5q6swhw",
       "name": "Network Performance Issues in Chicago",
