@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-05-24T13:07:22.447Z"
+    "updated_at": "2024-05-24T13:34:28.520Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3024,9 +3024,9 @@
     {
       "id": "8jjy5n5bfl9v",
       "name": "Cloud Email Security (Zero Trust)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-05-23T19:37:22.938Z",
-      "updated_at": "2024-05-24T11:13:19.686Z",
+      "updated_at": "2024-05-24T13:21:32.873Z",
       "position": 23,
       "description": null,
       "showcase": false,
@@ -6832,7 +6832,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "lrg0xq6tg4nw",
+      "name": "Area1 Dashboard Access Issues",
+      "status": "investigating",
+      "created_at": "2024-05-24T13:21:32.836Z",
+      "updated_at": "2024-05-24T13:21:32.928Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/pvhv6dsk4jcv",
+      "started_at": "2024-05-24T13:21:32.828Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "4zhzjz6l6pbh",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues accessing Area1 services from the Cloudflare Dashboard.\n\nOther functionalities of Area1 are not impacted. Customers using other sections of the Dashboard / Cloudflare APIs are also not impacted.",
+          "incident_id": "lrg0xq6tg4nw",
+          "created_at": "2024-05-24T13:21:32.926Z",
+          "updated_at": "2024-05-24T13:21:32.926Z",
+          "display_at": "2024-05-24T13:21:32.926Z",
+          "affected_components": [
+            {
+              "code": "8jjy5n5bfl9v",
+              "name": "Cloudflare Sites and Services - Cloud Email Security (Zero Trust)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "8jjy5n5bfl9v",
+          "name": "Cloud Email Security (Zero Trust)",
+          "status": "degraded_performance",
+          "created_at": "2024-05-23T19:37:22.938Z",
+          "updated_at": "2024-05-24T13:21:32.873Z",
+          "position": 23,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-05-23",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "vckzpgpp3yr7",
