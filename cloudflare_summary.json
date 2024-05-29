@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-05-29T08:43:16.875Z"
+    "updated_at": "2024-05-29T09:09:56.126Z"
   },
   "components": [
     {
@@ -4001,9 +4001,9 @@
     {
       "id": "9b9tyrd9x3xr",
       "name": "Portland, OR, United States - (PDX)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2017-08-31T11:47:10.621Z",
-      "updated_at": "2024-05-14T17:39:23.302Z",
+      "updated_at": "2024-05-29T09:09:56.123Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -6864,7 +6864,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "j43mzbn9hk4j",
+      "name": "Magic Transit Tunnel Analytics Issues",
+      "status": "identified",
+      "created_at": "2024-05-29T08:57:12.159Z",
+      "updated_at": "2024-05-29T08:57:24.375Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/jr7d9rd5tzy0",
+      "started_at": "2024-05-29T08:57:12.150Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "7bj06h1stprl",
+          "status": "identified",
+          "body": "Reporting and analytics for Cloudflare's Magic Transit tunnel may be missing for some tunnel. These services are still fully operational, and we are working to mitigate this problem. More updates to follow shortly.",
+          "incident_id": "j43mzbn9hk4j",
+          "created_at": "2024-05-29T08:57:12.222Z",
+          "updated_at": "2024-05-29T08:57:12.222Z",
+          "display_at": "2024-05-29T08:57:12.222Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "operational",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2024-05-23T18:35:53.206Z",
+          "position": 4,
+          "description": "Customer analytics aggregation service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "mw7c1cc9t81n",
@@ -7083,60 +7137,6 @@
       "scheduled_until": "2024-05-30T05:00:00.000Z"
     },
     {
-      "id": "plg4phbz2622",
-      "name": "ARN (Stockholm) on 2024-05-30",
-      "status": "scheduled",
-      "created_at": "2024-05-28T07:28:19.525Z",
-      "updated_at": "2024-05-28T07:28:19.644Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/r9j1p71r6w3k",
-      "started_at": "2024-05-28T07:28:19.511Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "2f3tcpzkcwgb",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ARN (Stockholm) datacenter on 2024-05-30 between 00:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "plg4phbz2622",
-          "created_at": "2024-05-28T07:28:19.640Z",
-          "updated_at": "2024-05-28T07:28:19.640Z",
-          "display_at": "2024-05-28T07:28:19.640Z",
-          "affected_components": [
-            {
-              "code": "755n430pjn1s",
-              "name": "Europe - Stockholm, Sweden - (ARN)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "755n430pjn1s",
-          "name": "Stockholm, Sweden - (ARN)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:36:25.956Z",
-          "updated_at": "2024-04-02T19:14:08.246Z",
-          "position": 44,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-05-30T00:00:00.000Z",
-      "scheduled_until": "2024-05-30T05:00:00.000Z"
-    },
-    {
       "id": "7pznx5xnqbc4",
       "name": "LIS (Lisbon) on 2024-05-30",
       "status": "scheduled",
@@ -7178,6 +7178,60 @@
           "created_at": "2016-10-18T20:43:36.754Z",
           "updated_at": "2024-05-02T01:33:57.632Z",
           "position": 24,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-05-30T00:00:00.000Z",
+      "scheduled_until": "2024-05-30T05:00:00.000Z"
+    },
+    {
+      "id": "plg4phbz2622",
+      "name": "ARN (Stockholm) on 2024-05-30",
+      "status": "scheduled",
+      "created_at": "2024-05-28T07:28:19.525Z",
+      "updated_at": "2024-05-28T07:28:19.644Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/r9j1p71r6w3k",
+      "started_at": "2024-05-28T07:28:19.511Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "2f3tcpzkcwgb",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in ARN (Stockholm) datacenter on 2024-05-30 between 00:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "plg4phbz2622",
+          "created_at": "2024-05-28T07:28:19.640Z",
+          "updated_at": "2024-05-28T07:28:19.640Z",
+          "display_at": "2024-05-28T07:28:19.640Z",
+          "affected_components": [
+            {
+              "code": "755n430pjn1s",
+              "name": "Europe - Stockholm, Sweden - (ARN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "755n430pjn1s",
+          "name": "Stockholm, Sweden - (ARN)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:36:25.956Z",
+          "updated_at": "2024-04-02T19:14:08.246Z",
+          "position": 44,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -7405,6 +7459,60 @@
       ],
       "scheduled_for": "2024-05-31T00:00:00.000Z",
       "scheduled_until": "2024-05-31T06:00:00.000Z"
+    },
+    {
+      "id": "9jypyvkpqzb0",
+      "name": "MIA (Miami) on 2024-05-31",
+      "status": "scheduled",
+      "created_at": "2024-05-29T08:58:14.346Z",
+      "updated_at": "2024-05-29T08:58:14.400Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/sj2g8k4rc1n4",
+      "started_at": "2024-05-29T08:58:14.340Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "5mq1l1dyydtl",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MIA (Miami) datacenter on 2024-05-31 between 08:00 and 12:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "9jypyvkpqzb0",
+          "created_at": "2024-05-29T08:58:14.398Z",
+          "updated_at": "2024-05-29T08:58:14.398Z",
+          "display_at": "2024-05-29T08:58:14.398Z",
+          "affected_components": [
+            {
+              "code": "mvbjk0vw3krv",
+              "name": "North America - Miami, FL, United States - (MIA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mvbjk0vw3krv",
+          "name": "Miami, FL, United States - (MIA)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:31:43.401Z",
+          "updated_at": "2024-04-17T12:23:24.101Z",
+          "position": 24,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-05-31T08:00:00.000Z",
+      "scheduled_until": "2024-05-31T12:30:00.000Z"
     },
     {
       "id": "vr69vlqssn0j",
