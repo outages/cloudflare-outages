@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-06-14T14:31:00.929Z"
+    "updated_at": "2024-06-14T14:44:51.892Z"
   },
   "components": [
     {
@@ -6916,9 +6916,9 @@
     {
       "id": "4415f22mf1gv",
       "name": "API Tokens for R2 buckets access issue",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2024-06-14T14:06:34.834Z",
-      "updated_at": "2024-06-14T14:06:34.945Z",
+      "updated_at": "2024-06-14T14:44:51.883Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -6926,6 +6926,26 @@
       "started_at": "2024-06-14T14:06:34.825Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "8jxs8193mw12",
+          "status": "identified",
+          "body": "We've identified an issue with token propagation affecting API token delegation to the R2 service. Newly created tokens will be delayed in functioning. We're working to resolve the issue, and tokens created will begin functioning properly once resolved.",
+          "incident_id": "4415f22mf1gv",
+          "created_at": "2024-06-14T14:44:51.880Z",
+          "updated_at": "2024-06-14T14:44:51.880Z",
+          "display_at": "2024-06-14T14:44:51.880Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "4fr5jwzbpzt2",
           "status": "investigating",
