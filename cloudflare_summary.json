@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-06-14T21:28:03.508Z"
+    "updated_at": "2024-06-14T22:40:00.605Z"
   },
   "components": [
     {
@@ -4379,9 +4379,9 @@
     {
       "id": "5qr2frjysrbk",
       "name": "Rome, Italy - (FCO)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2017-03-17T22:26:31.283Z",
-      "updated_at": "2024-06-14T19:33:10.111Z",
+      "updated_at": "2024-06-14T22:40:00.602Z",
       "position": 41,
       "description": null,
       "showcase": false,
@@ -5864,9 +5864,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2024-06-14T14:06:34.876Z",
+      "updated_at": "2024-06-14T22:38:53.682Z",
       "position": 62,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -6913,99 +6913,6 @@
     }
   ],
   "incidents": [
-    {
-      "id": "4415f22mf1gv",
-      "name": "API Tokens for R2 buckets access issue",
-      "status": "identified",
-      "created_at": "2024-06-14T14:06:34.834Z",
-      "updated_at": "2024-06-14T17:56:53.439Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/q6qnmj6f99nh",
-      "started_at": "2024-06-14T14:06:34.825Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "xd8r1rk2hkqq",
-          "status": "identified",
-          "body": "We've deployed a fix to our IAM propagation improving message throughput, and the message queue is currently decreasing.",
-          "incident_id": "4415f22mf1gv",
-          "created_at": "2024-06-14T17:56:53.436Z",
-          "updated_at": "2024-06-14T17:56:53.436Z",
-          "display_at": "2024-06-14T17:56:53.436Z",
-          "affected_components": [
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "8jxs8193mw12",
-          "status": "identified",
-          "body": "We've identified an issue with token propagation affecting API token delegation to the R2 service. Newly created tokens will be delayed in functioning. We're working to resolve the issue, and tokens created will begin functioning properly once resolved.",
-          "incident_id": "4415f22mf1gv",
-          "created_at": "2024-06-14T14:44:51.880Z",
-          "updated_at": "2024-06-14T14:44:51.880Z",
-          "display_at": "2024-06-14T14:44:51.880Z",
-          "affected_components": [
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "4fr5jwzbpzt2",
-          "status": "investigating",
-          "body": "Cloudflare is investigating a problem in token authentication for newly created API token for R2 buckets access. Existing tokens will work as usual.",
-          "incident_id": "4415f22mf1gv",
-          "created_at": "2024-06-14T14:06:34.942Z",
-          "updated_at": "2024-06-14T14:06:34.942Z",
-          "display_at": "2024-06-14T14:06:34.942Z",
-          "affected_components": [
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hb7g5sq2zz0h",
-          "name": "R2",
-          "status": "degraded_performance",
-          "created_at": "2022-07-05T10:55:24.503Z",
-          "updated_at": "2024-06-14T14:06:34.876Z",
-          "position": 62,
-          "description": "High-performance storage for files and objects with zero egress charges",
-          "showcase": false,
-          "start_date": "2022-07-05",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
     {
       "id": "5t270n2ndf0h",
       "name": "Billing issues relating to subscription adjustments",
