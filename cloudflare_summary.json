@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-06-20T20:15:21.454Z"
+    "updated_at": "2024-06-20T20:36:18.712Z"
   },
   "components": [
     {
@@ -422,9 +422,9 @@
     {
       "id": "3lsyxp2s1khw",
       "name": "Barcelona, Spain - (BCN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-10-10T21:36:13.143Z",
-      "updated_at": "2024-06-20T18:29:58.051Z",
+      "updated_at": "2024-06-20T20:26:21.161Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -905,9 +905,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2024-06-20T20:15:21.375Z",
+      "updated_at": "2024-06-20T20:22:29.779Z",
       "position": 6,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -4049,9 +4049,9 @@
     {
       "id": "gw1cztbpft9b",
       "name": "Kathmandu, Nepal - (KTM)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2024-06-20T15:47:55.647Z",
+      "updated_at": "2024-06-20T20:31:54.094Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -6916,16 +6916,56 @@
     {
       "id": "jyzlrswp80rq",
       "name": "Cloudflare API service availability issues",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2024-06-20T20:13:30.222Z",
-      "updated_at": "2024-06-20T20:13:30.337Z",
-      "monitoring_at": null,
+      "updated_at": "2024-06-20T20:36:18.709Z",
+      "monitoring_at": "2024-06-20T20:36:18.693Z",
       "resolved_at": null,
       "impact": "major",
       "shortlink": "https://stspg.io/225hgj4l1pw3",
       "started_at": "2024-06-20T20:13:30.212Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "sld7qvd971rr",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "jyzlrswp80rq",
+          "created_at": "2024-06-20T20:36:18.693Z",
+          "updated_at": "2024-06-20T20:36:18.693Z",
+          "display_at": "2024-06-20T20:36:18.693Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "zg4kfp4zjq2l",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "jyzlrswp80rq",
+          "created_at": "2024-06-20T20:22:29.828Z",
+          "updated_at": "2024-06-20T20:22:29.828Z",
+          "display_at": "2024-06-20T20:22:29.828Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "5tbl50134cvy",
           "status": "investigating",
@@ -6951,9 +6991,9 @@
         {
           "id": "g4tb35rs9yw7",
           "name": "API",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2014-10-09T03:32:07.158Z",
-          "updated_at": "2024-06-20T20:15:21.375Z",
+          "updated_at": "2024-06-20T20:22:29.779Z",
           "position": 6,
           "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
           "showcase": false,
@@ -8098,6 +8138,60 @@
       ],
       "scheduled_for": "2024-06-27T17:30:00.000Z",
       "scheduled_until": "2024-06-27T23:00:00.000Z"
+    },
+    {
+      "id": "nn0nrgnthjl9",
+      "name": "NRT (Tokyo) on 2024-07-01",
+      "status": "scheduled",
+      "created_at": "2024-06-20T20:24:27.914Z",
+      "updated_at": "2024-06-20T20:24:27.971Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/92mh2n138m1h",
+      "started_at": "2024-06-20T20:24:27.907Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "f9vkc9k2t9ml",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in NRT (Tokyo) datacenter on 2024-07-01 between 17:30 and 21:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "nn0nrgnthjl9",
+          "created_at": "2024-06-20T20:24:27.968Z",
+          "updated_at": "2024-06-20T20:24:27.968Z",
+          "display_at": "2024-06-20T20:24:27.968Z",
+          "affected_components": [
+            {
+              "code": "rmjk2n758yzc",
+              "name": "Asia - Tokyo, Japan - (NRT)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rmjk2n758yzc",
+          "name": "Tokyo, Japan - (NRT)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:42:49.579Z",
+          "updated_at": "2024-06-15T03:57:09.039Z",
+          "position": 65,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-07-01T17:30:00.000Z",
+      "scheduled_until": "2024-07-01T21:30:00.000Z"
     },
     {
       "id": "wx5lkrwh8vq6",
