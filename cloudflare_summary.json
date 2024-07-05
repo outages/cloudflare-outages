@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-07-05T08:49:18.997Z"
+    "updated_at": "2024-07-05T09:14:26.449Z"
   },
   "components": [
     {
@@ -2625,7 +2625,7 @@
       "name": "Nairobi, Kenya - (NBO)",
       "status": "partial_outage",
       "created_at": "2020-10-30T04:22:58.259Z",
-      "updated_at": "2024-07-05T08:49:18.995Z",
+      "updated_at": "2024-07-05T09:14:26.446Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -6900,9 +6900,9 @@
     {
       "id": "5wh8zq71k52d",
       "name": "Redirect Rules issues",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2024-07-05T08:43:03.711Z",
-      "updated_at": "2024-07-05T08:43:03.791Z",
+      "updated_at": "2024-07-05T08:54:40.948Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -6910,6 +6910,26 @@
       "started_at": "2024-07-05T08:43:03.705Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "321wkxw1zq02",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "5wh8zq71k52d",
+          "created_at": "2024-07-05T08:54:40.945Z",
+          "updated_at": "2024-07-05T08:54:40.945Z",
+          "display_at": "2024-07-05T08:54:40.945Z",
+          "affected_components": [
+            {
+              "code": "ch3mwx0hr4k6",
+              "name": "Cloudflare Sites and Services - Rules",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "zdtvwllz5qts",
           "status": "investigating",
@@ -7005,73 +7025,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "x0840p1cp5zd",
-      "name": "LAX (Los Angeles) on 2024-07-05",
-      "status": "scheduled",
-      "created_at": "2024-07-02T16:22:26.006Z",
-      "updated_at": "2024-07-05T08:00:03.518Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/nmgz4ft4qf3d",
-      "started_at": "2024-07-02T16:22:26.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "0zg0yjyfjc58",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "x0840p1cp5zd",
-          "created_at": "2024-07-05T08:00:03.447Z",
-          "updated_at": "2024-07-05T08:00:03.447Z",
-          "display_at": "2024-07-05T08:00:03.447Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "drr1rm5hpg2f",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2024-07-05 between 09:00 and 13:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "x0840p1cp5zd",
-          "created_at": "2024-07-02T16:22:26.053Z",
-          "updated_at": "2024-07-02T16:22:26.053Z",
-          "display_at": "2024-07-02T16:22:26.053Z",
-          "affected_components": [
-            {
-              "code": "38w4zp21dlkc",
-              "name": "North America - Los Angeles, CA, United States - (LAX)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "38w4zp21dlkc",
-          "name": "Los Angeles, CA, United States - (LAX)",
-          "status": "operational",
-          "created_at": "2014-10-27T19:24:27.591Z",
-          "updated_at": "2024-06-18T21:50:20.618Z",
-          "position": 20,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-07-05T09:00:00.000Z",
-      "scheduled_until": "2024-07-05T13:00:00.000Z"
-    },
     {
       "id": "93yxfrdzp0hr",
       "name": "SCL (Santiago) on 2024-07-05",
@@ -7557,6 +7510,86 @@
       ],
       "scheduled_for": "2024-07-11T00:00:00.000Z",
       "scheduled_until": "2024-07-11T06:00:00.000Z"
+    },
+    {
+      "id": "x0840p1cp5zd",
+      "name": "LAX (Los Angeles) on 2024-07-05",
+      "status": "in_progress",
+      "created_at": "2024-07-02T16:22:26.006Z",
+      "updated_at": "2024-07-05T09:00:02.521Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/nmgz4ft4qf3d",
+      "started_at": "2024-07-02T16:22:26.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ddcfcp9q01xq",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "x0840p1cp5zd",
+          "created_at": "2024-07-05T09:00:02.515Z",
+          "updated_at": "2024-07-05T09:00:02.515Z",
+          "display_at": "2024-07-05T09:00:02.515Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "0zg0yjyfjc58",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "x0840p1cp5zd",
+          "created_at": "2024-07-05T08:00:03.447Z",
+          "updated_at": "2024-07-05T08:00:03.447Z",
+          "display_at": "2024-07-05T08:00:03.447Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "drr1rm5hpg2f",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2024-07-05 between 09:00 and 13:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "x0840p1cp5zd",
+          "created_at": "2024-07-02T16:22:26.053Z",
+          "updated_at": "2024-07-02T16:22:26.053Z",
+          "display_at": "2024-07-02T16:22:26.053Z",
+          "affected_components": [
+            {
+              "code": "38w4zp21dlkc",
+              "name": "North America - Los Angeles, CA, United States - (LAX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "38w4zp21dlkc",
+          "name": "Los Angeles, CA, United States - (LAX)",
+          "status": "operational",
+          "created_at": "2014-10-27T19:24:27.591Z",
+          "updated_at": "2024-06-18T21:50:20.618Z",
+          "position": 20,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-07-05T09:00:00.000Z",
+      "scheduled_until": "2024-07-05T13:00:00.000Z"
     }
   ],
   "status": {
