@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-07-15T21:16:54.613Z"
+    "updated_at": "2024-07-15T21:28:58.517Z"
   },
   "components": [
     {
@@ -5849,9 +5849,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2024-06-19T15:54:54.684Z",
+      "updated_at": "2024-07-15T21:28:58.453Z",
       "position": 62,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -6913,6 +6913,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "x5xw2kjqs8hs",
+      "name": "Increased R2 Error Rate in South America",
+      "status": "identified",
+      "created_at": "2024-07-15T21:28:58.418Z",
+      "updated_at": "2024-07-15T21:28:58.512Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/n584hcrd0ccq",
+      "started_at": "2024-07-15T21:28:58.411Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "j10n4spmbv2n",
+          "status": "identified",
+          "body": "We have identified an issue resulting in increased rates of errors from R2 in South America. We are currently working on implementing a fix.",
+          "incident_id": "x5xw2kjqs8hs",
+          "created_at": "2024-07-15T21:28:58.509Z",
+          "updated_at": "2024-07-15T21:28:58.509Z",
+          "display_at": "2024-07-15T21:28:58.509Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2024-07-15T21:28:58.453Z",
+          "position": 62,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "5t270n2ndf0h",
       "name": "Billing issues relating to subscription adjustments",
