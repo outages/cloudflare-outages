@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-07-29T19:18:26.832Z"
+    "updated_at": "2024-07-29T19:45:51.491Z"
   },
   "components": [
     {
@@ -2296,9 +2296,9 @@
     {
       "id": "hf1csyqv3x7s",
       "name": "Dhaka, Bangladesh - (DAC)",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2024-07-29T16:55:36.502Z",
+      "updated_at": "2024-07-29T19:45:41.945Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -3436,9 +3436,9 @@
     {
       "id": "gdywyg76bgy3",
       "name": "Jakarta, Indonesia - (CGK)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-08-21T06:55:28.100Z",
-      "updated_at": "2024-07-29T18:07:01.627Z",
+      "updated_at": "2024-07-29T19:45:41.275Z",
       "position": 28,
       "description": null,
       "showcase": false,
@@ -4051,9 +4051,9 @@
     {
       "id": "9b9tyrd9x3xr",
       "name": "Portland, OR, United States - (PDX)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2017-08-31T11:47:10.621Z",
-      "updated_at": "2024-05-29T10:22:40.475Z",
+      "updated_at": "2024-07-29T19:45:51.406Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -4606,9 +4606,9 @@
     {
       "id": "bvtc2f85ft3p",
       "name": "Seattle, WA, United States - (SEA)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T19:57:30.743Z",
-      "updated_at": "2024-07-16T11:02:39.920Z",
+      "updated_at": "2024-07-29T19:45:51.422Z",
       "position": 44,
       "description": null,
       "showcase": false,
@@ -4861,9 +4861,9 @@
     {
       "id": "8qwmwg7ytljv",
       "name": "Infrastructure",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-13T13:39:55.351Z",
-      "updated_at": "2024-07-02T18:28:03.234Z",
+      "updated_at": "2024-07-29T19:45:51.437Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -6946,6 +6946,101 @@
   ],
   "incidents": [
     {
+      "id": "3lfjlstr5qx5",
+      "name": "Network Performance Issues in Seattle/Portland",
+      "status": "identified",
+      "created_at": "2024-07-29T19:45:51.372Z",
+      "updated_at": "2024-07-29T19:45:51.488Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/m56hwlfwsm2g",
+      "started_at": "2024-07-29T19:45:51.362Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "t005gxd7vkmz",
+          "status": "identified",
+          "body": "We have identified an issue resulting in degraded network performance affecting our Seattle and Portland datacenters and are working on implementing a fix.",
+          "incident_id": "3lfjlstr5qx5",
+          "created_at": "2024-07-29T19:45:51.486Z",
+          "updated_at": "2024-07-29T19:45:51.486Z",
+          "display_at": "2024-07-29T19:45:51.486Z",
+          "affected_components": [
+            {
+              "code": "8qwmwg7ytljv",
+              "name": "Cloudflare Sites and Services - Infrastructure",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "9b9tyrd9x3xr",
+              "name": "North America - Portland, OR, United States - (PDX)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "bvtc2f85ft3p",
+              "name": "North America - Seattle, WA, United States - (SEA)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9b9tyrd9x3xr",
+          "name": "Portland, OR, United States - (PDX)",
+          "status": "degraded_performance",
+          "created_at": "2017-08-31T11:47:10.621Z",
+          "updated_at": "2024-07-29T19:45:51.406Z",
+          "position": 36,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "bvtc2f85ft3p",
+          "name": "Seattle, WA, United States - (SEA)",
+          "status": "degraded_performance",
+          "created_at": "2014-10-27T19:57:30.743Z",
+          "updated_at": "2024-07-29T19:45:51.422Z",
+          "position": 44,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "8qwmwg7ytljv",
+          "name": "Infrastructure",
+          "status": "degraded_performance",
+          "created_at": "2023-01-13T13:39:55.351Z",
+          "updated_at": "2024-07-29T19:45:51.437Z",
+          "position": 47,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-01-13",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "p5mg9qwrc9py",
       "name": "Issue with Stream Live Recording Downloads",
       "status": "identified",
@@ -7759,9 +7854,9 @@
         {
           "id": "gdywyg76bgy3",
           "name": "Jakarta, Indonesia - (CGK)",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2019-08-21T06:55:28.100Z",
-          "updated_at": "2024-07-29T18:07:01.627Z",
+          "updated_at": "2024-07-29T19:45:41.275Z",
           "position": 28,
           "description": null,
           "showcase": false,
