@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-07-31T18:49:37.878Z"
+    "updated_at": "2024-07-31T19:11:41.335Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -651,9 +651,9 @@
     {
       "id": "vhpdc0y3qty9",
       "name": "Bangalore, India - (BLR)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-10-03T23:15:06.784Z",
-      "updated_at": "2024-07-30T08:33:11.510Z",
+      "updated_at": "2024-07-31T19:11:40.711Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1803,7 +1803,7 @@
       "name": "Gaborone, Botswana - (GBE)",
       "status": "under_maintenance",
       "created_at": "2022-06-01T10:45:54.571Z",
-      "updated_at": "2024-07-31T18:11:12.452Z",
+      "updated_at": "2024-07-31T19:11:40.087Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -4066,9 +4066,9 @@
     {
       "id": "gw1cztbpft9b",
       "name": "Kathmandu, Nepal - (KTM)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2024-07-31T00:52:50.168Z",
+      "updated_at": "2024-07-31T18:55:08.094Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -4186,9 +4186,9 @@
     {
       "id": "mslkxsqftrnn",
       "name": "Kolkata, India - (CCU)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-08-12T14:37:30.005Z",
-      "updated_at": "2024-07-26T02:11:57.968Z",
+      "updated_at": "2024-07-31T19:11:41.332Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -5866,9 +5866,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2024-07-15T23:30:58.540Z",
+      "updated_at": "2024-07-31T19:08:54.714Z",
       "position": 62,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -6945,6 +6945,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "nym177fngv4m",
+      "name": "Increased Latency for R2",
+      "status": "identified",
+      "created_at": "2024-07-31T19:08:54.684Z",
+      "updated_at": "2024-07-31T19:08:54.777Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/704j27vs6kx3",
+      "started_at": "2024-07-31T19:08:54.678Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "1ts1czrv42qh",
+          "status": "identified",
+          "body": "We have identified an issue where certain customers may have observed increased latency for R2 operations in our ENAM region. We are currently working on deploying a fix for this issue.",
+          "incident_id": "nym177fngv4m",
+          "created_at": "2024-07-31T19:08:54.775Z",
+          "updated_at": "2024-07-31T19:08:54.775Z",
+          "display_at": "2024-07-31T19:08:54.775Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2024-07-31T19:08:54.714Z",
+          "position": 62,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "5t270n2ndf0h",
       "name": "Billing issues relating to subscription adjustments",
