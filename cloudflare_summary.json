@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-08-08T01:10:58.444Z"
+    "updated_at": "2024-08-08T02:05:38.891Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2987,9 +2987,9 @@
     {
       "id": "y3r9ft7k1mmw",
       "name": "Mexico City, Mexico - (MEX)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-04-02T02:10:52.729Z",
-      "updated_at": "2024-08-05T21:40:23.045Z",
+      "updated_at": "2024-08-08T02:05:38.888Z",
       "position": 23,
       "description": null,
       "showcase": false,
@@ -3362,9 +3362,9 @@
     {
       "id": "1j6fbpfd4xrn",
       "name": "Montréal, QC, Canada - (YUL)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2015-12-08T11:48:10.247Z",
-      "updated_at": "2024-08-08T00:38:02.307Z",
+      "updated_at": "2024-08-08T01:27:25.645Z",
       "position": 27,
       "description": null,
       "showcase": false,
@@ -4352,9 +4352,9 @@
     {
       "id": "d1r0plwsl5qb",
       "name": "Firewall",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-09-04T17:53:26.383Z",
-      "updated_at": "2024-06-18T20:26:59.063Z",
+      "updated_at": "2024-08-08T01:26:03.506Z",
       "position": 40,
       "description": null,
       "showcase": false,
@@ -6962,6 +6962,59 @@
   ],
   "incidents": [
     {
+      "id": "91drcvxmwbbp",
+      "name": "Cloudflare WAF issues",
+      "status": "investigating",
+      "created_at": "2024-08-08T01:26:03.461Z",
+      "updated_at": "2024-08-08T01:26:03.577Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/c9g1nr9xdgns",
+      "started_at": "2024-08-08T01:26:03.451Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "4jnr6nsjf543",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with adjusting OWASP paranoia & threshold. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "91drcvxmwbbp",
+          "created_at": "2024-08-08T01:26:03.574Z",
+          "updated_at": "2024-08-08T01:26:03.574Z",
+          "display_at": "2024-08-08T01:26:03.574Z",
+          "affected_components": [
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d1r0plwsl5qb",
+          "name": "Firewall",
+          "status": "degraded_performance",
+          "created_at": "2020-09-04T17:53:26.383Z",
+          "updated_at": "2024-08-08T01:26:03.506Z",
+          "position": 40,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-09-04",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "1p6q8snj73lc",
       "name": "Multiple partner organisations unable to add subscriptions.",
       "status": "identified",
@@ -7409,6 +7462,60 @@
       ],
       "scheduled_for": "2024-08-08T14:00:00.000Z",
       "scheduled_until": "2024-08-08T18:00:00.000Z"
+    },
+    {
+      "id": "wzrpth24h99c",
+      "name": "SIN (Singapore) on 2024-08-08",
+      "status": "scheduled",
+      "created_at": "2024-08-08T01:38:51.312Z",
+      "updated_at": "2024-08-08T01:38:51.384Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/rphvjr43kdl0",
+      "started_at": "2024-08-08T01:38:51.304Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ykwvs4lzfmh6",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SIN (Singapore) datacenter on 2024-08-08 between 16:00 and 18:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "wzrpth24h99c",
+          "created_at": "2024-08-08T01:38:51.381Z",
+          "updated_at": "2024-08-08T01:38:51.381Z",
+          "display_at": "2024-08-08T01:38:51.381Z",
+          "affected_components": [
+            {
+              "code": "18p6r93swmbl",
+              "name": "Asia - Singapore, Singapore - (SIN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "18p6r93swmbl",
+          "name": "Singapore, Singapore - (SIN)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:44:15.897Z",
+          "updated_at": "2024-06-18T19:04:49.375Z",
+          "position": 59,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-08-08T16:00:00.000Z",
+      "scheduled_until": "2024-08-08T18:30:00.000Z"
     },
     {
       "id": "18yfkctgppk6",
