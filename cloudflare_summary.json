@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-08-08T23:42:57.089Z"
+    "updated_at": "2024-08-09T01:01:02.130Z"
   },
   "components": [
     {
@@ -3377,9 +3377,9 @@
     {
       "id": "46b99ptn6wdt",
       "name": "Islamabad, Pakistan - (ISB)",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2019-01-30T07:36:19.547Z",
-      "updated_at": "2024-08-07T21:48:12.932Z",
+      "updated_at": "2024-08-08T23:57:04.025Z",
       "position": 27,
       "description": null,
       "showcase": false,
@@ -3994,7 +3994,7 @@
       "name": "Karachi, Pakistan - (KHI)",
       "status": "under_maintenance",
       "created_at": "2018-12-04T16:17:59.275Z",
-      "updated_at": "2024-08-08T17:33:47.475Z",
+      "updated_at": "2024-08-08T23:57:04.643Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -6512,9 +6512,9 @@
     {
       "id": "zvm7mqn92xzc",
       "name": "Workers AI",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2024-02-14T15:05:51.274Z",
-      "updated_at": "2024-08-08T22:54:50.765Z",
+      "updated_at": "2024-08-09T00:44:41.186Z",
       "position": 88,
       "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
       "showcase": false,
@@ -6962,59 +6962,6 @@
   ],
   "incidents": [
     {
-      "id": "0tnylv6sdf55",
-      "name": "Cloudflare Workers AI Elevated Error Rates",
-      "status": "investigating",
-      "created_at": "2024-08-08T22:54:50.736Z",
-      "updated_at": "2024-08-08T22:54:50.813Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/fp39lwyf1bgv",
-      "started_at": "2024-08-08T22:54:50.729Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "1y0pq93wwt6m",
-          "status": "investigating",
-          "body": "Cloudflare has identified an issue whereby customers might experience elevated OutOfCapacity errors with certain models using Workers AI.\n\nWe are working to mitigate this problem. More updates to follow shortly.",
-          "incident_id": "0tnylv6sdf55",
-          "created_at": "2024-08-08T22:54:50.811Z",
-          "updated_at": "2024-08-08T22:54:50.811Z",
-          "display_at": "2024-08-08T22:54:50.811Z",
-          "affected_components": [
-            {
-              "code": "zvm7mqn92xzc",
-              "name": "Cloudflare Sites and Services - Workers AI",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "zvm7mqn92xzc",
-          "name": "Workers AI",
-          "status": "degraded_performance",
-          "created_at": "2024-02-14T15:05:51.274Z",
-          "updated_at": "2024-08-08T22:54:50.765Z",
-          "position": 88,
-          "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
-          "showcase": false,
-          "start_date": "2024-02-14",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
       "id": "1lqnm2bnbngd",
       "name": "Support Ticket Migration - Case Access Issues",
       "status": "identified",
@@ -7212,114 +7159,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "k9wpwcwrkdkm",
-      "name": "SOF (Sofia) on 2024-08-09",
-      "status": "scheduled",
-      "created_at": "2024-08-06T08:12:29.854Z",
-      "updated_at": "2024-08-06T08:12:29.929Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/rs6bkg5cl6gz",
-      "started_at": "2024-08-06T08:12:29.844Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "3vfbndy8hhb6",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SOF (Sofia) datacenter on 2024-08-09 between 01:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "k9wpwcwrkdkm",
-          "created_at": "2024-08-06T08:12:29.926Z",
-          "updated_at": "2024-08-06T08:12:29.926Z",
-          "display_at": "2024-08-06T08:12:29.926Z",
-          "affected_components": [
-            {
-              "code": "7m2yh22kzgbw",
-              "name": "Europe - Sofia, Bulgaria - (SOF)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7m2yh22kzgbw",
-          "name": "Sofia, Bulgaria - (SOF)",
-          "status": "operational",
-          "created_at": "2015-12-08T11:47:55.113Z",
-          "updated_at": "2024-08-03T14:37:20.868Z",
-          "position": 43,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-08-09T01:00:00.000Z",
-      "scheduled_until": "2024-08-09T04:00:00.000Z"
-    },
-    {
-      "id": "6k41z0d2bys7",
-      "name": "ATH (Athens) on 2024-08-09",
-      "status": "scheduled",
-      "created_at": "2024-08-06T08:12:30.223Z",
-      "updated_at": "2024-08-06T08:12:30.272Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/jy6gv1td0y0p",
-      "started_at": "2024-08-06T08:12:30.218Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "z7wmfflh3t23",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ATH (Athens) datacenter on 2024-08-09 between 01:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "6k41z0d2bys7",
-          "created_at": "2024-08-06T08:12:30.270Z",
-          "updated_at": "2024-08-06T08:12:30.270Z",
-          "display_at": "2024-08-06T08:12:30.270Z",
-          "affected_components": [
-            {
-              "code": "bm711sgbslfk",
-              "name": "Europe - Athens, Greece - (ATH)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "bm711sgbslfk",
-          "name": "Athens, Greece - (ATH)",
-          "status": "operational",
-          "created_at": "2016-09-22T00:34:05.334Z",
-          "updated_at": "2024-07-19T03:20:36.039Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-08-09T01:00:00.000Z",
-      "scheduled_until": "2024-08-09T04:00:00.000Z"
-    },
     {
       "id": "049zldj6jd57",
       "name": "LAS (Las Vegas) on 2024-08-09",
@@ -7753,56 +7592,56 @@
       "scheduled_until": "2024-08-15T19:00:00.000Z"
     },
     {
-      "id": "ydyp9tpbvn56",
-      "name": "ORD (Chicago) on 2024-08-08",
+      "id": "k9wpwcwrkdkm",
+      "name": "SOF (Sofia) on 2024-08-09",
       "status": "in_progress",
-      "created_at": "2024-08-06T22:40:25.477Z",
-      "updated_at": "2024-08-08T13:00:02.434Z",
+      "created_at": "2024-08-06T08:12:29.854Z",
+      "updated_at": "2024-08-09T01:01:02.120Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/0zp1m8n9z93t",
-      "started_at": "2024-08-06T22:40:25.469Z",
+      "shortlink": "https://stspg.io/rs6bkg5cl6gz",
+      "started_at": "2024-08-06T08:12:29.844Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "9hc4b43rwg0j",
+          "id": "k7t1nxjtch1h",
           "status": "in_progress",
           "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "ydyp9tpbvn56",
-          "created_at": "2024-08-08T13:00:02.430Z",
-          "updated_at": "2024-08-08T13:00:02.430Z",
-          "display_at": "2024-08-08T13:00:02.430Z",
+          "incident_id": "k9wpwcwrkdkm",
+          "created_at": "2024-08-09T01:01:02.118Z",
+          "updated_at": "2024-08-09T01:01:02.118Z",
+          "display_at": "2024-08-09T01:01:02.118Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "hpfs2lt59zwb",
+          "id": "yc5ctxkvdcjf",
           "status": "scheduled",
           "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "ydyp9tpbvn56",
-          "created_at": "2024-08-08T12:00:03.499Z",
-          "updated_at": "2024-08-08T12:00:03.499Z",
-          "display_at": "2024-08-08T12:00:03.499Z",
+          "incident_id": "k9wpwcwrkdkm",
+          "created_at": "2024-08-09T00:00:05.994Z",
+          "updated_at": "2024-08-09T00:00:05.994Z",
+          "display_at": "2024-08-09T00:00:05.994Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "l94dcjpgm8fh",
+          "id": "3vfbndy8hhb6",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ORD (Chicago) datacenter between 2024-08-08 13:00 and 2024-08-09 00:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "ydyp9tpbvn56",
-          "created_at": "2024-08-06T22:40:25.538Z",
-          "updated_at": "2024-08-06T22:40:25.538Z",
-          "display_at": "2024-08-06T22:40:25.538Z",
+          "body": "We will be performing scheduled maintenance in SOF (Sofia) datacenter on 2024-08-09 between 01:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "k9wpwcwrkdkm",
+          "created_at": "2024-08-06T08:12:29.926Z",
+          "updated_at": "2024-08-06T08:12:29.926Z",
+          "display_at": "2024-08-06T08:12:29.926Z",
           "affected_components": [
             {
-              "code": "z9v8znl25w0f",
-              "name": "North America - Chicago, IL, United States - (ORD)",
+              "code": "7m2yh22kzgbw",
+              "name": "Europe - Sofia, Bulgaria - (SOF)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -7814,23 +7653,103 @@
       ],
       "components": [
         {
-          "id": "z9v8znl25w0f",
-          "name": "Chicago, IL, United States - (ORD)",
+          "id": "7m2yh22kzgbw",
+          "name": "Sofia, Bulgaria - (SOF)",
           "status": "operational",
-          "created_at": "2014-10-27T19:57:04.863Z",
-          "updated_at": "2024-06-28T21:38:22.892Z",
-          "position": 9,
+          "created_at": "2015-12-08T11:47:55.113Z",
+          "updated_at": "2024-08-03T14:37:20.868Z",
+          "position": 43,
           "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "4l01sk5cdn5c",
+          "group_id": "zqxhg7y54vy8",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2024-08-08T13:00:00.000Z",
-      "scheduled_until": "2024-08-09T00:00:00.000Z"
+      "scheduled_for": "2024-08-09T01:00:00.000Z",
+      "scheduled_until": "2024-08-09T04:00:00.000Z"
+    },
+    {
+      "id": "6k41z0d2bys7",
+      "name": "ATH (Athens) on 2024-08-09",
+      "status": "in_progress",
+      "created_at": "2024-08-06T08:12:30.223Z",
+      "updated_at": "2024-08-09T01:00:02.138Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/jy6gv1td0y0p",
+      "started_at": "2024-08-06T08:12:30.218Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "1v0bm3bd4yt1",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "6k41z0d2bys7",
+          "created_at": "2024-08-09T01:00:02.136Z",
+          "updated_at": "2024-08-09T01:00:02.136Z",
+          "display_at": "2024-08-09T01:00:02.136Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "8nglyk32cvhs",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "6k41z0d2bys7",
+          "created_at": "2024-08-09T00:00:02.735Z",
+          "updated_at": "2024-08-09T00:00:02.735Z",
+          "display_at": "2024-08-09T00:00:02.735Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "z7wmfflh3t23",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in ATH (Athens) datacenter on 2024-08-09 between 01:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "6k41z0d2bys7",
+          "created_at": "2024-08-06T08:12:30.270Z",
+          "updated_at": "2024-08-06T08:12:30.270Z",
+          "display_at": "2024-08-06T08:12:30.270Z",
+          "affected_components": [
+            {
+              "code": "bm711sgbslfk",
+              "name": "Europe - Athens, Greece - (ATH)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bm711sgbslfk",
+          "name": "Athens, Greece - (ATH)",
+          "status": "operational",
+          "created_at": "2016-09-22T00:34:05.334Z",
+          "updated_at": "2024-07-19T03:20:36.039Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-08-09T01:00:00.000Z",
+      "scheduled_until": "2024-08-09T04:00:00.000Z"
     }
   ],
   "status": {
