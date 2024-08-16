@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-08-16T18:13:28.088Z"
+    "updated_at": "2024-08-16T18:27:39.409Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1804,9 +1804,9 @@
     {
       "id": "47440brmvtq2",
       "name": "Gaborone, Botswana - (GBE)",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2022-06-01T10:45:54.571Z",
-      "updated_at": "2024-08-16T18:13:28.086Z",
+      "updated_at": "2024-08-16T18:27:39.406Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -5914,9 +5914,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2024-08-13T17:44:56.291Z",
+      "updated_at": "2024-08-16T18:24:47.478Z",
       "position": 63,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -6993,6 +6993,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "xf7180gbk6g1",
+      "name": "R2 event notifications aren't delivering to new queues",
+      "status": "investigating",
+      "created_at": "2024-08-16T18:24:47.451Z",
+      "updated_at": "2024-08-16T18:24:47.528Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/95677f7vylgl",
+      "started_at": "2024-08-16T18:24:47.445Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "nw6dspglcwff",
+          "status": "investigating",
+          "body": "Currently, R2 event notifications only function with existing queues. Newly created queues are not compatible with event notifications.",
+          "incident_id": "xf7180gbk6g1",
+          "created_at": "2024-08-16T18:24:47.526Z",
+          "updated_at": "2024-08-16T18:24:47.526Z",
+          "display_at": "2024-08-16T18:24:47.526Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2024-08-16T18:24:47.478Z",
+          "position": 63,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "1lqnm2bnbngd",
       "name": "Support Ticket Migration - Case Access Issues",
