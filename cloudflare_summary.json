@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-08-19T16:29:55.591Z"
+    "updated_at": "2024-08-19T17:28:05.117Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -6484,9 +6484,9 @@
     {
       "id": "k04jkcpzxn94",
       "name": "WARP",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-09-30T09:25:38.587Z",
-      "updated_at": "2024-08-18T04:44:33.865Z",
+      "updated_at": "2024-08-19T17:28:05.039Z",
       "position": 86,
       "description": null,
       "showcase": false,
@@ -6993,6 +6993,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "035gqnkz86zh",
+      "name": "Elevated 1xxx Error Rates",
+      "status": "investigating",
+      "created_at": "2024-08-19T17:28:04.995Z",
+      "updated_at": "2024-08-19T17:28:05.101Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/t6b1xzql1g0n",
+      "started_at": "2024-08-19T17:28:04.987Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "x4ynczzj73hj",
+          "status": "investigating",
+          "body": "We are currently investigating the cause of an increased rate of 1xxx errors for some customers using WARP.",
+          "incident_id": "035gqnkz86zh",
+          "created_at": "2024-08-19T17:28:05.098Z",
+          "updated_at": "2024-08-19T17:28:05.098Z",
+          "display_at": "2024-08-19T17:28:05.098Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k04jkcpzxn94",
+          "name": "WARP",
+          "status": "degraded_performance",
+          "created_at": "2019-09-30T09:25:38.587Z",
+          "updated_at": "2024-08-19T17:28:05.039Z",
+          "position": 86,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "1lqnm2bnbngd",
       "name": "Support Ticket Migration - Case Access Issues",
