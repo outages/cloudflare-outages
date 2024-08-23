@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-08-23T17:31:54.544Z"
+    "updated_at": "2024-08-23T18:16:13.096Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1807,7 +1807,7 @@
       "name": "Gaborone, Botswana - (GBE)",
       "status": "partial_outage",
       "created_at": "2022-06-01T10:45:54.571Z",
-      "updated_at": "2024-08-23T16:09:00.467Z",
+      "updated_at": "2024-08-23T18:10:34.981Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -2165,9 +2165,9 @@
     {
       "id": "p6skg25yj69j",
       "name": "Colombo, Sri Lanka - (CMB)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2017-05-02T05:52:26.698Z",
-      "updated_at": "2024-08-23T17:26:22.745Z",
+      "updated_at": "2024-08-23T18:10:34.605Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -3170,9 +3170,9 @@
     {
       "id": "wf2gdmxg7cv3",
       "name": "Hong Kong - (HKG)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-27T21:46:42.606Z",
-      "updated_at": "2024-08-22T20:37:49.646Z",
+      "updated_at": "2024-08-23T18:05:04.522Z",
       "position": 25,
       "description": null,
       "showcase": false,
@@ -3695,9 +3695,9 @@
     {
       "id": "nbxgf9nycs42",
       "name": "Omaha, NE, United States - (OMA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-09-27T05:44:51.215Z",
-      "updated_at": "2024-08-20T20:16:42.686Z",
+      "updated_at": "2024-08-23T17:53:59.465Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -4835,9 +4835,9 @@
     {
       "id": "3lbj8lp3d750",
       "name": "Images",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-02-25T17:30:01.272Z",
-      "updated_at": "2024-08-21T20:33:09.678Z",
+      "updated_at": "2024-08-23T18:08:54.702Z",
       "position": 47,
       "description": "Cloudflare service to build a scalable image pipeline to store, resize, optimize and deliver images in a fast and secure manner.",
       "showcase": false,
@@ -5390,9 +5390,9 @@
     {
       "id": "8xc65dbhbrd5",
       "name": "Phnom Penh, Cambodia - (PNH)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2018-02-09T20:38:28.093Z",
-      "updated_at": "2024-08-23T17:15:25.300Z",
+      "updated_at": "2024-08-23T18:16:13.092Z",
       "position": 55,
       "description": null,
       "showcase": false,
@@ -6035,9 +6035,9 @@
     {
       "id": "xk1sjvzmjp6t",
       "name": "Ulaanbaatar, Mongolia - (ULN)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2018-09-19T09:48:26.066Z",
-      "updated_at": "2024-08-23T16:42:11.199Z",
+      "updated_at": "2024-08-23T18:10:35.350Z",
       "position": 66,
       "description": null,
       "showcase": false,
@@ -7010,6 +7010,59 @@
   ],
   "incidents": [
     {
+      "id": "xqngpln6rdp1",
+      "name": "Image Uploading Issues",
+      "status": "identified",
+      "created_at": "2024-08-23T18:08:54.660Z",
+      "updated_at": "2024-08-23T18:08:54.769Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/p8png08vqw3q",
+      "started_at": "2024-08-23T18:08:54.650Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "rpfn1k4wc627",
+          "status": "identified",
+          "body": "Some customers might experience issues with uploading Images to Cloudflare Images.",
+          "incident_id": "xqngpln6rdp1",
+          "created_at": "2024-08-23T18:08:54.766Z",
+          "updated_at": "2024-08-23T18:08:54.766Z",
+          "display_at": "2024-08-23T18:08:54.766Z",
+          "affected_components": [
+            {
+              "code": "3lbj8lp3d750",
+              "name": "Cloudflare Sites and Services - Images",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3lbj8lp3d750",
+          "name": "Images",
+          "status": "degraded_performance",
+          "created_at": "2022-02-25T17:30:01.272Z",
+          "updated_at": "2024-08-23T18:08:54.702Z",
+          "position": 47,
+          "description": "Cloudflare service to build a scalable image pipeline to store, resize, optimize and deliver images in a fast and secure manner.",
+          "showcase": false,
+          "start_date": "2022-02-25",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "1lqnm2bnbngd",
       "name": "Support Ticket Migration - Case Access Issues",
       "status": "identified",
@@ -7041,73 +7094,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "6755g4rhn6pp",
-      "name": "OMA (Omaha) on 2024-08-23",
-      "status": "scheduled",
-      "created_at": "2024-08-23T14:29:05.278Z",
-      "updated_at": "2024-08-23T17:01:02.484Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/f70b4cc9pfz5",
-      "started_at": "2024-08-23T14:29:05.272Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "62cr5s9t3kj9",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "6755g4rhn6pp",
-          "created_at": "2024-08-23T17:01:02.164Z",
-          "updated_at": "2024-08-23T17:01:02.164Z",
-          "display_at": "2024-08-23T17:01:02.164Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "0ffjbnz3nrjr",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in OMA (Omaha) datacenter on 2024-08-23 between 18:00 and 20:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "6755g4rhn6pp",
-          "created_at": "2024-08-23T14:29:05.333Z",
-          "updated_at": "2024-08-23T14:29:05.333Z",
-          "display_at": "2024-08-23T14:29:05.333Z",
-          "affected_components": [
-            {
-              "code": "nbxgf9nycs42",
-              "name": "North America - Omaha, NE, United States - (OMA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "nbxgf9nycs42",
-          "name": "Omaha, NE, United States - (OMA)",
-          "status": "operational",
-          "created_at": "2016-09-27T05:44:51.215Z",
-          "updated_at": "2024-08-20T20:16:42.686Z",
-          "position": 31,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-08-23T18:00:42.000Z",
-      "scheduled_until": "2024-08-23T20:00:42.000Z"
-    },
     {
       "id": "fs95t0f69g0g",
       "name": "MRS (Marseille) on 2024-08-26",
@@ -7541,56 +7527,56 @@
       "scheduled_until": "2024-09-09T23:00:00.000Z"
     },
     {
-      "id": "gks2x0279k1r",
-      "name": "IAH (Houston) on 2024-08-23",
+      "id": "6755g4rhn6pp",
+      "name": "OMA (Omaha) on 2024-08-23",
       "status": "in_progress",
-      "created_at": "2024-08-20T14:54:48.395Z",
-      "updated_at": "2024-08-23T15:00:02.118Z",
+      "created_at": "2024-08-23T14:29:05.278Z",
+      "updated_at": "2024-08-23T18:01:02.112Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/5xj7std7hh91",
-      "started_at": "2024-08-20T14:54:48.389Z",
+      "shortlink": "https://stspg.io/f70b4cc9pfz5",
+      "started_at": "2024-08-23T14:29:05.272Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "16z7wtkz35w8",
+          "id": "xh4mdcvqclb2",
           "status": "in_progress",
           "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "gks2x0279k1r",
-          "created_at": "2024-08-23T15:00:02.116Z",
-          "updated_at": "2024-08-23T15:00:02.116Z",
-          "display_at": "2024-08-23T15:00:02.116Z",
+          "incident_id": "6755g4rhn6pp",
+          "created_at": "2024-08-23T18:01:02.110Z",
+          "updated_at": "2024-08-23T18:01:02.110Z",
+          "display_at": "2024-08-23T18:01:02.110Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "qgwl7v5cqdwy",
+          "id": "62cr5s9t3kj9",
           "status": "scheduled",
           "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "gks2x0279k1r",
-          "created_at": "2024-08-23T14:00:03.331Z",
-          "updated_at": "2024-08-23T14:00:03.331Z",
-          "display_at": "2024-08-23T14:00:03.331Z",
+          "incident_id": "6755g4rhn6pp",
+          "created_at": "2024-08-23T17:01:02.164Z",
+          "updated_at": "2024-08-23T17:01:02.164Z",
+          "display_at": "2024-08-23T17:01:02.164Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "r4vfk18svsfs",
+          "id": "0ffjbnz3nrjr",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in IAH (Houston) datacenter on 2024-08-23 between 15:00 and 18:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "gks2x0279k1r",
-          "created_at": "2024-08-20T14:54:48.442Z",
-          "updated_at": "2024-08-20T14:54:48.442Z",
-          "display_at": "2024-08-20T14:54:48.442Z",
+          "body": "We will be performing scheduled maintenance in OMA (Omaha) datacenter on 2024-08-23 between 18:00 and 20:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacenter may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "6755g4rhn6pp",
+          "created_at": "2024-08-23T14:29:05.333Z",
+          "updated_at": "2024-08-23T14:29:05.333Z",
+          "display_at": "2024-08-23T14:29:05.333Z",
           "affected_components": [
             {
-              "code": "dk64qkf6mlmk",
-              "name": "North America - Houston, TX, United States - (IAH)",
+              "code": "nbxgf9nycs42",
+              "name": "North America - Omaha, NE, United States - (OMA)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -7602,12 +7588,12 @@
       ],
       "components": [
         {
-          "id": "dk64qkf6mlmk",
-          "name": "Houston, TX, United States - (IAH)",
-          "status": "operational",
-          "created_at": "2018-03-20T07:50:27.681Z",
-          "updated_at": "2024-08-23T17:04:17.041Z",
-          "position": 15,
+          "id": "nbxgf9nycs42",
+          "name": "Omaha, NE, United States - (OMA)",
+          "status": "partial_outage",
+          "created_at": "2016-09-27T05:44:51.215Z",
+          "updated_at": "2024-08-23T17:53:59.465Z",
+          "position": 31,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -7617,8 +7603,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2024-08-23T15:00:00.000Z",
-      "scheduled_until": "2024-08-23T18:00:00.000Z"
+      "scheduled_for": "2024-08-23T18:00:42.000Z",
+      "scheduled_until": "2024-08-23T20:00:42.000Z"
     }
   ],
   "status": {
