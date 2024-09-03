@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-03T10:17:28.864Z"
+    "updated_at": "2024-09-03T10:29:52.631Z"
   },
   "components": [
     {
@@ -3521,7 +3521,7 @@
       "name": "Jakarta, Indonesia - (CGK)",
       "status": "under_maintenance",
       "created_at": "2019-08-21T06:55:28.100Z",
-      "updated_at": "2024-09-02T21:54:50.494Z",
+      "updated_at": "2024-09-03T10:21:49.823Z",
       "position": 28,
       "description": null,
       "showcase": false,
@@ -3789,9 +3789,9 @@
     {
       "id": "7k05x28lndzb",
       "name": "Porto Alegre, Brazil - (POA)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2019-04-01T16:32:01.138Z",
-      "updated_at": "2024-09-03T10:17:28.862Z",
+      "updated_at": "2024-09-03T10:21:48.818Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -5529,9 +5529,9 @@
     {
       "id": "q3t6mnpmpgt8",
       "name": "Magic WAN Connector",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-12-14T14:28:05.444Z",
-      "updated_at": "2024-08-13T17:44:56.238Z",
+      "updated_at": "2024-09-03T10:29:52.578Z",
       "position": 55,
       "description": null,
       "showcase": false,
@@ -7794,6 +7794,59 @@
   ],
   "incidents": [
     {
+      "id": "9phmffzp1bmw",
+      "name": "Cloudflare One connectivity issues",
+      "status": "investigating",
+      "created_at": "2024-09-03T10:29:52.547Z",
+      "updated_at": "2024-09-03T10:29:52.629Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/wk1j3lpq5wkd",
+      "started_at": "2024-09-03T10:29:52.541Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "m31shfbk4lfn",
+          "status": "investigating",
+          "body": "Cloudflare is investigating connectivity issues that affect some Magic WAN and WARP Connector customers.",
+          "incident_id": "9phmffzp1bmw",
+          "created_at": "2024-09-03T10:29:52.627Z",
+          "updated_at": "2024-09-03T10:29:52.627Z",
+          "display_at": "2024-09-03T10:29:52.627Z",
+          "affected_components": [
+            {
+              "code": "q3t6mnpmpgt8",
+              "name": "Cloudflare Sites and Services - Magic WAN Connector",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "q3t6mnpmpgt8",
+          "name": "Magic WAN Connector",
+          "status": "degraded_performance",
+          "created_at": "2023-12-14T14:28:05.444Z",
+          "updated_at": "2024-09-03T10:29:52.578Z",
+          "position": 55,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-12-14",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "cpb12qjp2k6w",
       "name": "Issues creating R2 API Tokens",
       "status": "investigating",
@@ -7877,7 +7930,602 @@
       "reminder_intervals": null
     }
   ],
-  "scheduled_maintenances": [],
+  "scheduled_maintenances": [
+    {
+      "id": "mpcb7m006y7c",
+      "name": "MEL (Melbourne) on 2024-09-03",
+      "status": "scheduled",
+      "created_at": "2024-09-03T10:19:15.234Z",
+      "updated_at": "2024-09-03T10:19:15.307Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/wnpc6nh4nmdj",
+      "started_at": "2024-09-03T10:19:15.225Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "c967pp417pt0",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MEL (Melbourne) datacenter between 2024-09-03 14:00 and 2024-09-04 00:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "mpcb7m006y7c",
+          "created_at": "2024-09-03T10:19:15.304Z",
+          "updated_at": "2024-09-03T10:19:15.304Z",
+          "display_at": "2024-09-03T10:19:15.304Z",
+          "affected_components": [
+            {
+              "code": "nsf51v5pjcyy",
+              "name": "Oceania - Melbourne, VIC, Australia - (MEL)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nsf51v5pjcyy",
+          "name": "Melbourne, VIC, Australia - (MEL)",
+          "status": "operational",
+          "created_at": "2015-04-21T00:24:22.453Z",
+          "updated_at": "2024-08-21T23:30:59.461Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "q6qm6fvkst4h",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-03T14:00:00.000Z",
+      "scheduled_until": "2024-09-04T00:00:00.000Z"
+    },
+    {
+      "id": "2lvtj2cd3fpr",
+      "name": "DTW (Detroit) on 2024-09-03",
+      "status": "scheduled",
+      "created_at": "2024-09-03T10:19:17.963Z",
+      "updated_at": "2024-09-03T10:19:18.036Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/34k41k5fgwvv",
+      "started_at": "2024-09-03T10:19:17.955Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "9lr9vqg0j4zc",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in DTW (Detroit) datacenter on 2024-09-03 between 15:00 and 20:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "2lvtj2cd3fpr",
+          "created_at": "2024-09-03T10:19:18.033Z",
+          "updated_at": "2024-09-03T10:19:18.033Z",
+          "display_at": "2024-09-03T10:19:18.033Z",
+          "affected_components": [
+            {
+              "code": "bbx7ndl66dmp",
+              "name": "North America - Detroit, MI, United States - (DTW)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bbx7ndl66dmp",
+          "name": "Detroit, MI, United States - (DTW)",
+          "status": "operational",
+          "created_at": "2017-04-10T16:40:13.626Z",
+          "updated_at": "2024-08-28T21:30:39.809Z",
+          "position": 13,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-03T15:00:00.000Z",
+      "scheduled_until": "2024-09-03T20:00:00.000Z"
+    },
+    {
+      "id": "cx2z2pyf9p24",
+      "name": "MEL (Melbourne) on 2024-09-04",
+      "status": "scheduled",
+      "created_at": "2024-09-03T10:19:17.210Z",
+      "updated_at": "2024-09-03T10:19:17.271Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/jzzf6mm7y597",
+      "started_at": "2024-09-03T10:19:17.204Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "b04822rss90v",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MEL (Melbourne) datacenter between 2024-09-04 14:00 and 2024-09-05 00:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "cx2z2pyf9p24",
+          "created_at": "2024-09-03T10:19:17.269Z",
+          "updated_at": "2024-09-03T10:19:17.269Z",
+          "display_at": "2024-09-03T10:19:17.269Z",
+          "affected_components": [
+            {
+              "code": "nsf51v5pjcyy",
+              "name": "Oceania - Melbourne, VIC, Australia - (MEL)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nsf51v5pjcyy",
+          "name": "Melbourne, VIC, Australia - (MEL)",
+          "status": "operational",
+          "created_at": "2015-04-21T00:24:22.453Z",
+          "updated_at": "2024-08-21T23:30:59.461Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "q6qm6fvkst4h",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-04T14:00:00.000Z",
+      "scheduled_until": "2024-09-05T00:00:00.000Z"
+    },
+    {
+      "id": "9khr2qnbmr2v",
+      "name": "NRT (Tokyo) on 2024-09-04",
+      "status": "scheduled",
+      "created_at": "2024-09-03T10:19:14.522Z",
+      "updated_at": "2024-09-03T10:19:14.572Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/p2gyc9jkqyn8",
+      "started_at": "2024-09-03T10:19:14.516Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "fjcd02w0jxg8",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in NRT (Tokyo) datacenter on 2024-09-04 between 16:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "9khr2qnbmr2v",
+          "created_at": "2024-09-03T10:19:14.570Z",
+          "updated_at": "2024-09-03T10:19:14.570Z",
+          "display_at": "2024-09-03T10:19:14.570Z",
+          "affected_components": [
+            {
+              "code": "rmjk2n758yzc",
+              "name": "Asia - Tokyo, Japan - (NRT)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rmjk2n758yzc",
+          "name": "Tokyo, Japan - (NRT)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:42:49.579Z",
+          "updated_at": "2024-07-10T19:53:33.800Z",
+          "position": 65,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-04T16:00:00.000Z",
+      "scheduled_until": "2024-09-04T22:00:00.000Z"
+    },
+    {
+      "id": "kh8y9nhxv00m",
+      "name": "MAN (Manchester) on 2024-09-05",
+      "status": "scheduled",
+      "created_at": "2024-09-03T10:19:15.999Z",
+      "updated_at": "2024-09-03T10:19:16.062Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/tgqk7q0155dk",
+      "started_at": "2024-09-03T10:19:15.992Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "xvn0m86x0fhg",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MAN (Manchester) datacenter on 2024-09-05 between 00:30 and 06:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "kh8y9nhxv00m",
+          "created_at": "2024-09-03T10:19:16.059Z",
+          "updated_at": "2024-09-03T10:19:16.059Z",
+          "display_at": "2024-09-03T10:19:16.059Z",
+          "affected_components": [
+            {
+              "code": "7z1q346n4s38",
+              "name": "Europe - Manchester, United Kingdom - (MAN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7z1q346n4s38",
+          "name": "Manchester, United Kingdom - (MAN)",
+          "status": "operational",
+          "created_at": "2015-10-05T03:57:10.538Z",
+          "updated_at": "2024-07-16T05:21:42.763Z",
+          "position": 28,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-05T00:30:00.000Z",
+      "scheduled_until": "2024-09-05T06:00:00.000Z"
+    },
+    {
+      "id": "fxm5clx907ck",
+      "name": "MEL (Melbourne) on 2024-09-05",
+      "status": "scheduled",
+      "created_at": "2024-09-03T10:19:14.168Z",
+      "updated_at": "2024-09-03T10:19:14.230Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/x5vylhpmjp82",
+      "started_at": "2024-09-03T10:19:14.161Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "6wh2zxkq5kw4",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MEL (Melbourne) datacenter between 2024-09-05 14:00 and 2024-09-06 00:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "fxm5clx907ck",
+          "created_at": "2024-09-03T10:19:14.227Z",
+          "updated_at": "2024-09-03T10:19:14.227Z",
+          "display_at": "2024-09-03T10:19:14.227Z",
+          "affected_components": [
+            {
+              "code": "nsf51v5pjcyy",
+              "name": "Oceania - Melbourne, VIC, Australia - (MEL)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nsf51v5pjcyy",
+          "name": "Melbourne, VIC, Australia - (MEL)",
+          "status": "operational",
+          "created_at": "2015-04-21T00:24:22.453Z",
+          "updated_at": "2024-08-21T23:30:59.461Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "q6qm6fvkst4h",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-05T14:00:00.000Z",
+      "scheduled_until": "2024-09-06T00:00:00.000Z"
+    },
+    {
+      "id": "144v3jd01696",
+      "name": "HAM (Hamburg) on 2024-09-06",
+      "status": "scheduled",
+      "created_at": "2024-09-03T10:19:16.865Z",
+      "updated_at": "2024-09-03T10:19:16.919Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/fypg1dfxzvdp",
+      "started_at": "2024-09-03T10:19:16.859Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "f6422hlc0xn2",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in HAM (Hamburg) datacenter on 2024-09-06 between 00:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "144v3jd01696",
+          "created_at": "2024-09-03T10:19:16.917Z",
+          "updated_at": "2024-09-03T10:19:16.917Z",
+          "display_at": "2024-09-03T10:19:16.917Z",
+          "affected_components": [
+            {
+              "code": "dwmgwrxg7cx3",
+              "name": "Europe - Hamburg, Germany - (HAM)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "dwmgwrxg7cx3",
+          "name": "Hamburg, Germany - (HAM)",
+          "status": "operational",
+          "created_at": "2015-12-14T11:28:08.468Z",
+          "updated_at": "2024-07-26T20:29:53.190Z",
+          "position": 19,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-06T00:00:00.000Z",
+      "scheduled_until": "2024-09-06T04:00:00.000Z"
+    },
+    {
+      "id": "x8nrcjjvblp4",
+      "name": "ATH (Athens) on 2024-09-06",
+      "status": "scheduled",
+      "created_at": "2024-09-03T10:19:18.331Z",
+      "updated_at": "2024-09-03T10:19:18.379Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/41kkqcbb65wv",
+      "started_at": "2024-09-03T10:19:18.325Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "y1ydmw4nd08h",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in ATH (Athens) datacenter on 2024-09-06 between 00:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "x8nrcjjvblp4",
+          "created_at": "2024-09-03T10:19:18.377Z",
+          "updated_at": "2024-09-03T10:19:18.377Z",
+          "display_at": "2024-09-03T10:19:18.377Z",
+          "affected_components": [
+            {
+              "code": "bm711sgbslfk",
+              "name": "Europe - Athens, Greece - (ATH)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bm711sgbslfk",
+          "name": "Athens, Greece - (ATH)",
+          "status": "operational",
+          "created_at": "2016-09-22T00:34:05.334Z",
+          "updated_at": "2024-08-28T18:47:45.833Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-06T00:00:00.000Z",
+      "scheduled_until": "2024-09-06T04:00:00.000Z"
+    },
+    {
+      "id": "6p3zr1pynj0j",
+      "name": "CGK (Jakarta) on 2024-09-09",
+      "status": "scheduled",
+      "created_at": "2024-09-03T10:19:14.853Z",
+      "updated_at": "2024-09-03T10:19:14.915Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/2f1bn6g8l5gq",
+      "started_at": "2024-09-03T10:19:14.848Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ljr86wcxmsm5",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in CGK (Jakarta) datacenter on 2024-09-09 between 18:00 and 23:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "6p3zr1pynj0j",
+          "created_at": "2024-09-03T10:19:14.913Z",
+          "updated_at": "2024-09-03T10:19:14.913Z",
+          "display_at": "2024-09-03T10:19:14.913Z",
+          "affected_components": [
+            {
+              "code": "gdywyg76bgy3",
+              "name": "Asia - Jakarta, Indonesia - (CGK)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gdywyg76bgy3",
+          "name": "Jakarta, Indonesia - (CGK)",
+          "status": "under_maintenance",
+          "created_at": "2019-08-21T06:55:28.100Z",
+          "updated_at": "2024-09-03T10:21:49.823Z",
+          "position": 28,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-09T18:00:00.000Z",
+      "scheduled_until": "2024-09-09T23:00:00.000Z"
+    },
+    {
+      "id": "p429r6vjgzv3",
+      "name": "WAW (Warsaw) on 2024-09-10",
+      "status": "scheduled",
+      "created_at": "2024-09-03T10:19:15.623Z",
+      "updated_at": "2024-09-03T10:19:15.683Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/4vv49wmdl795",
+      "started_at": "2024-09-03T10:19:15.616Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "p9dd5wxp4rrv",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in WAW (Warsaw) datacenter between 2024-09-10 23:00 and 2024-09-11 06:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "p429r6vjgzv3",
+          "created_at": "2024-09-03T10:19:15.681Z",
+          "updated_at": "2024-09-03T10:19:15.681Z",
+          "display_at": "2024-09-03T10:19:15.681Z",
+          "affected_components": [
+            {
+              "code": "0gh2jr9mdr7v",
+              "name": "Europe - Warsaw, Poland - (WAW)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "0gh2jr9mdr7v",
+          "name": "Warsaw, Poland - (WAW)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:07:37.647Z",
+          "updated_at": "2024-08-19T05:42:47.430Z",
+          "position": 53,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-10T23:00:00.000Z",
+      "scheduled_until": "2024-09-11T06:00:00.000Z"
+    },
+    {
+      "id": "htdycq592vvt",
+      "name": "WAW (Warsaw) on 2024-09-11",
+      "status": "scheduled",
+      "created_at": "2024-09-03T10:19:16.367Z",
+      "updated_at": "2024-09-03T10:19:16.428Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/rtkbmcn25zbw",
+      "started_at": "2024-09-03T10:19:16.359Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "7rnhl051z49c",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in WAW (Warsaw) datacenter between 2024-09-11 23:00 and 2024-09-12 06:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "htdycq592vvt",
+          "created_at": "2024-09-03T10:19:16.425Z",
+          "updated_at": "2024-09-03T10:19:16.425Z",
+          "display_at": "2024-09-03T10:19:16.425Z",
+          "affected_components": [
+            {
+              "code": "0gh2jr9mdr7v",
+              "name": "Europe - Warsaw, Poland - (WAW)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "0gh2jr9mdr7v",
+          "name": "Warsaw, Poland - (WAW)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:07:37.647Z",
+          "updated_at": "2024-08-19T05:42:47.430Z",
+          "position": 53,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-11T23:00:00.000Z",
+      "scheduled_until": "2024-09-12T06:00:00.000Z"
+    }
+  ],
   "status": {
     "indicator": "minor",
     "description": "Minor Service Outage"
