@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-09T20:17:54.626Z"
+    "updated_at": "2024-09-09T20:35:13.220Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -792,9 +792,9 @@
     {
       "id": "4c231tkdlpcl",
       "name": "Analytics",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-11-13T11:54:10.191Z",
-      "updated_at": "2024-08-20T17:42:36.711Z",
+      "updated_at": "2024-09-09T20:20:41.198Z",
       "position": 5,
       "description": "Customer analytics aggregation service",
       "showcase": false,
@@ -3279,9 +3279,9 @@
     {
       "id": "n3v9x7fj809n",
       "name": "Manaus, Brazil - (MAO)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-24T12:42:37.210Z",
-      "updated_at": "2024-09-07T03:03:38.125Z",
+      "updated_at": "2024-09-09T20:21:58.596Z",
       "position": 26,
       "description": null,
       "showcase": false,
@@ -7073,6 +7073,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "00tnd0jq9zzc",
+      "name": "DNS Analytics Delays",
+      "status": "identified",
+      "created_at": "2024-09-09T20:20:41.165Z",
+      "updated_at": "2024-09-09T20:35:13.212Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/lrpxd3dfnysm",
+      "started_at": "2024-09-09T20:20:41.158Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "z978t8lspxjb",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "00tnd0jq9zzc",
+          "created_at": "2024-09-09T20:35:13.209Z",
+          "updated_at": "2024-09-09T20:35:13.209Z",
+          "display_at": "2024-09-09T20:35:13.209Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "c6mtyjzllp4r",
+          "status": "investigating",
+          "body": "Cloudflare DNS Analytics processing is running behind. This affects timely delivery of customer data.",
+          "incident_id": "00tnd0jq9zzc",
+          "created_at": "2024-09-09T20:20:41.249Z",
+          "updated_at": "2024-09-09T20:20:41.249Z",
+          "display_at": "2024-09-09T20:20:41.249Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "degraded_performance",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2024-09-09T20:20:41.198Z",
+          "position": 5,
+          "description": "Customer analytics aggregation service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "1lqnm2bnbngd",
       "name": "Support Ticket Migration - Case Access Issues",
