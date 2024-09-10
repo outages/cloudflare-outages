@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-10T20:14:32.306Z"
+    "updated_at": "2024-09-10T20:45:50.784Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -366,9 +366,9 @@
     {
       "id": "5nlf038vr3n8",
       "name": "Almaty, Kazakhstan - (ALA)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-11-02T12:04:47.034Z",
-      "updated_at": "2024-09-10T20:14:32.304Z",
+      "updated_at": "2024-09-10T20:41:52.049Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -914,9 +914,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2024-08-22T04:27:06.397Z",
+      "updated_at": "2024-09-10T20:45:50.716Z",
       "position": 6,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -1871,9 +1871,9 @@
     {
       "id": "652rf3j94nfv",
       "name": "Jeddah, Saudi Arabia - (JED)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-06-08T13:59:14.645Z",
-      "updated_at": "2024-09-03T00:26:23.763Z",
+      "updated_at": "2024-09-10T20:41:52.921Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -3956,9 +3956,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2024-09-10T10:47:26.617Z",
+      "updated_at": "2024-09-10T20:45:50.733Z",
       "position": 35,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -7105,6 +7105,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "jq2f5lz76tcq",
+      "name": "Cloudflare Dashboard and Cloudflare API service issues",
+      "status": "investigating",
+      "created_at": "2024-09-10T20:45:50.682Z",
+      "updated_at": "2024-09-10T20:45:50.782Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/8wgqw24w88xn",
+      "started_at": "2024-09-10T20:45:50.674Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "n6p0k2jrxrsz",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare Dashboard and related APIs.\n\nThese issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge.\n\nCustomers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
+          "incident_id": "jq2f5lz76tcq",
+          "created_at": "2024-09-10T20:45:50.779Z",
+          "updated_at": "2024-09-10T20:45:50.779Z",
+          "display_at": "2024-09-10T20:45:50.779Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2024-09-10T20:45:50.716Z",
+          "position": 6,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2024-09-10T20:45:50.733Z",
+          "position": 35,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "1lqnm2bnbngd",
       "name": "Support Ticket Migration - Case Access Issues",
