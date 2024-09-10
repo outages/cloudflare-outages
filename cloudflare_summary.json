@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-09T23:05:35.522Z"
+    "updated_at": "2024-09-10T01:09:47.237Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2169,9 +2169,9 @@
     {
       "id": "dk64qkf6mlmk",
       "name": "Houston, TX, United States - (IAH)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2018-03-20T07:50:27.681Z",
-      "updated_at": "2024-09-06T11:49:14.309Z",
+      "updated_at": "2024-09-09T23:57:57.952Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -2349,9 +2349,9 @@
     {
       "id": "yst1cfbj49q2",
       "name": "Jacksonville, FL, United States - (JAX)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-04-10T18:04:05.667Z",
-      "updated_at": "2024-08-28T09:37:56.652Z",
+      "updated_at": "2024-09-10T01:09:47.235Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -2561,7 +2561,7 @@
       "name": "Hamburg, Germany - (HAM)",
       "status": "operational",
       "created_at": "2015-12-14T11:28:08.468Z",
-      "updated_at": "2024-09-06T01:58:37.786Z",
+      "updated_at": "2024-09-10T00:43:53.830Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -2591,7 +2591,7 @@
       "name": "Riyadh, Saudi Arabia - (RUH)",
       "status": "under_maintenance",
       "created_at": "2018-03-07T02:32:33.544Z",
-      "updated_at": "2024-07-16T16:40:48.295Z",
+      "updated_at": "2024-09-10T01:05:42.297Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -4434,9 +4434,9 @@
     {
       "id": "d1r0plwsl5qb",
       "name": "Firewall",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-09-04T17:53:26.383Z",
-      "updated_at": "2024-08-21T20:33:09.659Z",
+      "updated_at": "2024-09-10T00:30:04.219Z",
       "position": 41,
       "description": null,
       "showcase": false,
@@ -7074,6 +7074,112 @@
   ],
   "incidents": [
     {
+      "id": "26vtmwm3mgh6",
+      "name": "Rate Limiting Rule Configuration Errors",
+      "status": "investigating",
+      "created_at": "2024-09-10T00:30:04.188Z",
+      "updated_at": "2024-09-10T00:30:04.273Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/1r1jdpx2smh0",
+      "started_at": "2024-09-10T00:30:04.181Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "16vw81q1ztjd",
+          "status": "investigating",
+          "body": "We are investigating reports of increased rates of errors for customers attempting to configure new or existing Rate Limiting rules. Existing rules are continuing to function normally.",
+          "incident_id": "26vtmwm3mgh6",
+          "created_at": "2024-09-10T00:30:04.270Z",
+          "updated_at": "2024-09-10T00:30:04.270Z",
+          "display_at": "2024-09-10T00:30:04.270Z",
+          "affected_components": [
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d1r0plwsl5qb",
+          "name": "Firewall",
+          "status": "degraded_performance",
+          "created_at": "2020-09-04T17:53:26.383Z",
+          "updated_at": "2024-09-10T00:30:04.219Z",
+          "position": 41,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-09-04",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "mgyll9159jc7",
+      "name": "Increase in HTTP 5XX Errors from Houston",
+      "status": "investigating",
+      "created_at": "2024-09-09T23:57:57.923Z",
+      "updated_at": "2024-09-09T23:57:58.000Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/jzvrbz27yz39",
+      "started_at": "2024-09-09T23:57:57.916Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ysg6sj10377g",
+          "status": "investigating",
+          "body": "We are investigating reports of an increase in HTTP 5XX errors associated with our Houston (IAH) datacenter.",
+          "incident_id": "mgyll9159jc7",
+          "created_at": "2024-09-09T23:57:57.998Z",
+          "updated_at": "2024-09-09T23:57:57.998Z",
+          "display_at": "2024-09-09T23:57:57.998Z",
+          "affected_components": [
+            {
+              "code": "dk64qkf6mlmk",
+              "name": "North America - Houston, TX, United States - (IAH)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "dk64qkf6mlmk",
+          "name": "Houston, TX, United States - (IAH)",
+          "status": "degraded_performance",
+          "created_at": "2018-03-20T07:50:27.681Z",
+          "updated_at": "2024-09-09T23:57:57.952Z",
+          "position": 15,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "1lqnm2bnbngd",
       "name": "Support Ticket Migration - Case Access Issues",
       "status": "identified",
@@ -7387,7 +7493,7 @@
           "name": "Hamburg, Germany - (HAM)",
           "status": "operational",
           "created_at": "2015-12-14T11:28:08.468Z",
-          "updated_at": "2024-09-06T01:58:37.786Z",
+          "updated_at": "2024-09-10T00:43:53.830Z",
           "position": 19,
           "description": null,
           "showcase": false,
