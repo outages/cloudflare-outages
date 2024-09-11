@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-11T18:24:08.894Z"
+    "updated_at": "2024-09-11T19:07:34.115Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -658,9 +658,9 @@
     {
       "id": "vhpdc0y3qty9",
       "name": "Bangalore, India - (BLR)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-10-03T23:15:06.784Z",
-      "updated_at": "2024-09-10T21:20:01.285Z",
+      "updated_at": "2024-09-11T19:07:34.112Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2126,9 +2126,9 @@
     {
       "id": "0dtt4htlgpdh",
       "name": "Muscat, Oman - (MCT)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-08-04T00:56:44.345Z",
-      "updated_at": "2024-09-11T14:19:25.259Z",
+      "updated_at": "2024-09-11T19:02:07.553Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -5081,9 +5081,9 @@
     {
       "id": "3lbj8lp3d750",
       "name": "Images",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-02-25T17:30:01.272Z",
-      "updated_at": "2024-09-11T03:27:30.109Z",
+      "updated_at": "2024-09-11T19:04:41.410Z",
       "position": 51,
       "description": "Cloudflare service to build a scalable image pipeline to store, resize, optimize and deliver images in a fast and secure manner.",
       "showcase": false,
@@ -7105,6 +7105,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "k7ndd3tc9jwp",
+      "name": "Elevated Rate of Image Delivery Errors",
+      "status": "investigating",
+      "created_at": "2024-09-11T19:04:41.368Z",
+      "updated_at": "2024-09-11T19:04:41.476Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/blyt0rmyn1n4",
+      "started_at": "2024-09-11T19:04:41.360Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "kppdrks2xvw9",
+          "status": "investigating",
+          "body": "We are investigating reports of an elevated level of errors serving images.",
+          "incident_id": "k7ndd3tc9jwp",
+          "created_at": "2024-09-11T19:04:41.473Z",
+          "updated_at": "2024-09-11T19:04:41.473Z",
+          "display_at": "2024-09-11T19:04:41.473Z",
+          "affected_components": [
+            {
+              "code": "3lbj8lp3d750",
+              "name": "Cloudflare Sites and Services - Images",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3lbj8lp3d750",
+          "name": "Images",
+          "status": "degraded_performance",
+          "created_at": "2022-02-25T17:30:01.272Z",
+          "updated_at": "2024-09-11T19:04:41.410Z",
+          "position": 51,
+          "description": "Cloudflare service to build a scalable image pipeline to store, resize, optimize and deliver images in a fast and secure manner.",
+          "showcase": false,
+          "start_date": "2022-02-25",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "1lqnm2bnbngd",
       "name": "Support Ticket Migration - Case Access Issues",
