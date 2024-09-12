@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-11T23:28:31.663Z"
+    "updated_at": "2024-09-12T01:19:27.742Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -426,9 +426,9 @@
     {
       "id": "3lsyxp2s1khw",
       "name": "Barcelona, Spain - (BCN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-10-10T21:36:13.143Z",
-      "updated_at": "2024-08-29T07:15:29.892Z",
+      "updated_at": "2024-09-12T01:19:27.739Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -718,7 +718,7 @@
     {
       "id": "zqxhg7y54vy8",
       "name": "Europe",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-27T23:56:21.815Z",
       "updated_at": "2022-04-26T19:49:08.564Z",
       "position": 5,
@@ -3806,9 +3806,9 @@
     {
       "id": "r66zh17lxd91",
       "name": "Quito, Ecuador - (UIO)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2017-03-13T21:23:02.885Z",
-      "updated_at": "2024-09-07T15:03:50.527Z",
+      "updated_at": "2024-09-12T00:56:04.089Z",
       "position": 33,
       "description": null,
       "showcase": false,
@@ -3956,9 +3956,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2024-09-11T11:03:01.502Z",
+      "updated_at": "2024-09-11T23:57:06.765Z",
       "position": 35,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -4151,9 +4151,9 @@
     {
       "id": "b03djnkqfg8f",
       "name": "Prague, Czech Republic - (PRG)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-27T21:42:32.096Z",
-      "updated_at": "2024-09-11T04:04:28.964Z",
+      "updated_at": "2024-09-12T01:01:36.003Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -4736,9 +4736,9 @@
     {
       "id": "lc19ck0jpzs5",
       "name": "Malé, Maldives - (MLE)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-08-21T01:51:26.198Z",
-      "updated_at": "2024-08-28T23:19:13.243Z",
+      "updated_at": "2024-09-12T00:45:04.075Z",
       "position": 46,
       "description": null,
       "showcase": false,
@@ -7106,6 +7106,59 @@
   ],
   "incidents": [
     {
+      "id": "nmvkhbrzbtgz",
+      "name": "Cloudflare Dashboard UI Bug",
+      "status": "investigating",
+      "created_at": "2024-09-11T23:57:06.719Z",
+      "updated_at": "2024-09-11T23:57:06.835Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/tyzhqqk5jch7",
+      "started_at": "2024-09-11T23:57:06.710Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "3ym5qzxx4n5x",
+          "status": "investigating",
+          "body": "We are currently investigating reports that in some cases updates to the OWASP Managed Ruleset settings are not accurately reflected in the Dashboard UI, though these changes are taking effect and are still visible via the API.",
+          "incident_id": "nmvkhbrzbtgz",
+          "created_at": "2024-09-11T23:57:06.832Z",
+          "updated_at": "2024-09-11T23:57:06.832Z",
+          "display_at": "2024-09-11T23:57:06.832Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2024-09-11T23:57:06.765Z",
+          "position": 35,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "1lqnm2bnbngd",
       "name": "Support Ticket Migration - Case Access Issues",
       "status": "identified",
@@ -7138,43 +7191,30 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "mxfsc29018x6",
-      "name": "AMS (Amsterdam) on 2024-09-12",
+      "id": "yywj6vyyx7f4",
+      "name": "BCN (Barcelona) on 2024-09-12",
       "status": "scheduled",
-      "created_at": "2024-09-11T12:00:14.826Z",
-      "updated_at": "2024-09-11T23:01:06.602Z",
+      "created_at": "2024-09-12T01:04:47.528Z",
+      "updated_at": "2024-09-12T01:04:47.579Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/4dq3bbl59m6r",
-      "started_at": "2024-09-11T12:00:14.818Z",
+      "shortlink": "https://stspg.io/z40slgp8rvm0",
+      "started_at": "2024-09-12T01:04:47.522Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "5v0c2h15prwy",
+          "id": "73wmd7q9k367",
           "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "mxfsc29018x6",
-          "created_at": "2024-09-11T23:01:06.512Z",
-          "updated_at": "2024-09-11T23:01:06.512Z",
-          "display_at": "2024-09-11T23:01:06.512Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "4xnbscdlgt0d",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in AMS (Amsterdam) datacenter on 2024-09-12 between 00:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "mxfsc29018x6",
-          "created_at": "2024-09-11T12:00:14.896Z",
-          "updated_at": "2024-09-11T12:00:14.896Z",
-          "display_at": "2024-09-11T12:00:14.896Z",
+          "body": "We will be performing scheduled maintenance in BCN (Barcelona) datacenter on 2024-09-12 between 01:30 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "yywj6vyyx7f4",
+          "created_at": "2024-09-12T01:04:47.577Z",
+          "updated_at": "2024-09-12T01:04:47.577Z",
+          "display_at": "2024-09-12T01:04:47.577Z",
           "affected_components": [
             {
-              "code": "57ctn3f2qsyj",
-              "name": "Europe - Amsterdam, Netherlands - (AMS)",
+              "code": "3lsyxp2s1khw",
+              "name": "Europe - Barcelona, Spain - (BCN)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -7186,12 +7226,12 @@
       ],
       "components": [
         {
-          "id": "57ctn3f2qsyj",
-          "name": "Amsterdam, Netherlands - (AMS)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:35:05.259Z",
-          "updated_at": "2024-08-20T09:36:42.850Z",
-          "position": 1,
+          "id": "3lsyxp2s1khw",
+          "name": "Barcelona, Spain - (BCN)",
+          "status": "partial_outage",
+          "created_at": "2016-10-10T21:36:13.143Z",
+          "updated_at": "2024-09-12T01:19:27.739Z",
+          "position": 3,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -7201,8 +7241,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2024-09-12T00:00:00.000Z",
-      "scheduled_until": "2024-09-12T04:00:00.000Z"
+      "scheduled_for": "2024-09-12T01:30:00.000Z",
+      "scheduled_until": "2024-09-12T05:00:00.000Z"
     },
     {
       "id": "rcg2mdvdh6vd",
@@ -7367,6 +7407,86 @@
       "scheduled_until": "2024-09-19T06:00:00.000Z"
     },
     {
+      "id": "mxfsc29018x6",
+      "name": "AMS (Amsterdam) on 2024-09-12",
+      "status": "in_progress",
+      "created_at": "2024-09-11T12:00:14.826Z",
+      "updated_at": "2024-09-12T00:00:02.239Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/4dq3bbl59m6r",
+      "started_at": "2024-09-11T12:00:14.818Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "mmryz7fknn30",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "mxfsc29018x6",
+          "created_at": "2024-09-12T00:00:02.236Z",
+          "updated_at": "2024-09-12T00:00:02.236Z",
+          "display_at": "2024-09-12T00:00:02.236Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "5v0c2h15prwy",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "mxfsc29018x6",
+          "created_at": "2024-09-11T23:01:06.512Z",
+          "updated_at": "2024-09-11T23:01:06.512Z",
+          "display_at": "2024-09-11T23:01:06.512Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4xnbscdlgt0d",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in AMS (Amsterdam) datacenter on 2024-09-12 between 00:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "mxfsc29018x6",
+          "created_at": "2024-09-11T12:00:14.896Z",
+          "updated_at": "2024-09-11T12:00:14.896Z",
+          "display_at": "2024-09-11T12:00:14.896Z",
+          "affected_components": [
+            {
+              "code": "57ctn3f2qsyj",
+              "name": "Europe - Amsterdam, Netherlands - (AMS)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57ctn3f2qsyj",
+          "name": "Amsterdam, Netherlands - (AMS)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:35:05.259Z",
+          "updated_at": "2024-08-20T09:36:42.850Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-12T00:00:00.000Z",
+      "scheduled_until": "2024-09-12T04:00:00.000Z"
+    },
+    {
       "id": "63zmsqwlybzf",
       "name": "PRG (Prague) on 2024-09-10",
       "status": "in_progress",
@@ -7430,9 +7550,9 @@
         {
           "id": "b03djnkqfg8f",
           "name": "Prague, Czech Republic - (PRG)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2014-10-27T21:42:32.096Z",
-          "updated_at": "2024-09-11T04:04:28.964Z",
+          "updated_at": "2024-09-12T01:01:36.003Z",
           "position": 38,
           "description": null,
           "showcase": false,
