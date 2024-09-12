@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-12T15:50:45.129Z"
+    "updated_at": "2024-09-12T16:18:01.403Z"
   },
   "components": [
     {
@@ -2158,9 +2158,9 @@
     {
       "id": "p6skg25yj69j",
       "name": "Colombo, Sri Lanka - (CMB)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2017-05-02T05:52:26.698Z",
-      "updated_at": "2024-09-11T03:26:09.282Z",
+      "updated_at": "2024-09-12T16:18:01.401Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -7228,7 +7228,7 @@
       "name": "MRS (Marseille) on 2024-09-16",
       "status": "scheduled",
       "created_at": "2024-09-12T08:38:58.002Z",
-      "updated_at": "2024-09-12T08:38:58.060Z",
+      "updated_at": "2024-09-12T16:06:37.206Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7236,6 +7236,26 @@
       "started_at": "2024-09-12T08:38:57.995Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "xv0ts0gjfrrl",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MRS (Marseille) datacenter on 2024-09-16 between 01:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "6wz5hvflvzht",
+          "created_at": "2024-09-12T16:06:37.201Z",
+          "updated_at": "2024-09-12T16:06:37.201Z",
+          "display_at": "2024-09-12T16:06:37.201Z",
+          "affected_components": [
+            {
+              "code": "3wk2ykcwwd76",
+              "name": "Europe - Marseille, France - (MRS)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "w3h1m905kkbw",
           "status": "scheduled",
@@ -7275,7 +7295,7 @@
         }
       ],
       "scheduled_for": "2024-09-16T01:00:00.000Z",
-      "scheduled_until": "2024-09-16T04:00:00.000Z"
+      "scheduled_until": "2024-09-16T05:00:00.000Z"
     },
     {
       "id": "rcg2mdvdh6vd",
@@ -7438,50 +7458,6 @@
       ],
       "scheduled_for": "2024-09-18T23:00:00.000Z",
       "scheduled_until": "2024-09-19T06:00:00.000Z"
-    },
-    {
-      "id": "xn3jcfn45vyr",
-      "name": "Let’s Encrypt Root CA Update",
-      "status": "in_progress",
-      "created_at": "2024-09-06T20:03:34.503Z",
-      "updated_at": "2024-09-09T16:00:02.487Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/4mf75xzz1fzx",
-      "started_at": "2024-09-06T20:03:34.568Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "4fcg5kgy8n8k",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "xn3jcfn45vyr",
-          "created_at": "2024-09-09T16:00:02.480Z",
-          "updated_at": "2024-09-09T16:00:02.480Z",
-          "display_at": "2024-09-09T16:00:02.480Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "7s9yy25zcrjd",
-          "status": "scheduled",
-          "body": "Cloudflare will begin using the ISRG Root X1 CA for all Let's Encrypt certificates. Legacy clients may experience TLS termination errors when connecting to domains protected by a Let's Encrypt certificate if the client does not include the ISRG Root X1 CA in its trust store. To minimize disruptions, we recommend switching to a more compatible certificate authority (CA), such as Google Trust Services. For more information regarding the change, please refer to our documentation:\n\nhttps://developers.cloudflare.com/ssl/reference/migration-guides/lets-encrypt-chain/#lets-encrypt-chain-update",
-          "incident_id": "xn3jcfn45vyr",
-          "created_at": "2024-09-06T20:03:34.568Z",
-          "updated_at": "2024-09-06T20:08:33.844Z",
-          "display_at": "2024-09-06T20:03:34.568Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [],
-      "scheduled_for": "2024-09-09T16:00:00.000Z",
-      "scheduled_until": "2024-09-12T16:00:00.000Z"
     }
   ],
   "status": {
