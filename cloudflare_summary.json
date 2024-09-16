@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-16T09:55:51.774Z"
+    "updated_at": "2024-09-16T10:39:17.054Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -916,9 +916,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2024-09-12T17:11:35.719Z",
+      "updated_at": "2024-09-16T10:26:14.623Z",
       "position": 6,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -2295,7 +2295,7 @@
       "name": "Dhaka, Bangladesh - (DAC)",
       "status": "under_maintenance",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2024-09-16T04:30:01.282Z",
+      "updated_at": "2024-09-16T10:39:17.052Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -3673,9 +3673,9 @@
     {
       "id": "skqbwdvp70c6",
       "name": "KAMPALA, Uganda - (EBB)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-07-17T09:56:48.732Z",
-      "updated_at": "2024-09-16T09:45:01.336Z",
+      "updated_at": "2024-09-16T10:28:25.597Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -3898,9 +3898,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2024-09-12T17:11:35.734Z",
+      "updated_at": "2024-09-16T10:26:14.646Z",
       "position": 34,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -7137,6 +7137,106 @@
     }
   ],
   "incidents": [
+    {
+      "id": "ghrzylr1nzjz",
+      "name": "Cloudflare Dashboard and Cloudflare API service issues",
+      "status": "identified",
+      "created_at": "2024-09-16T10:26:14.579Z",
+      "updated_at": "2024-09-16T10:30:24.120Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/0b5bdsm6cf0v",
+      "started_at": "2024-09-16T10:26:14.569Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "rb66kp0y89mt",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "ghrzylr1nzjz",
+          "created_at": "2024-09-16T10:30:24.117Z",
+          "updated_at": "2024-09-16T10:30:24.117Z",
+          "display_at": "2024-09-16T10:30:24.117Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "8pdlmv435wct",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare Dashboard and related APIs.\n\nThese issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge.\n\nCustomers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
+          "incident_id": "ghrzylr1nzjz",
+          "created_at": "2024-09-16T10:26:14.705Z",
+          "updated_at": "2024-09-16T10:26:14.705Z",
+          "display_at": "2024-09-16T10:26:14.705Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2024-09-16T10:26:14.623Z",
+          "position": 6,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2024-09-16T10:26:14.646Z",
+          "position": 34,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "1lqnm2bnbngd",
       "name": "Support Ticket Migration - Case Access Issues",
