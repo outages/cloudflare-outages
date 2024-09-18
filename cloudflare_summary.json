@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-18T17:51:03.318Z"
+    "updated_at": "2024-09-18T18:01:54.406Z"
   },
   "components": [
     {
@@ -660,9 +660,9 @@
     {
       "id": "vhpdc0y3qty9",
       "name": "Bangalore, India - (BLR)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-10-03T23:15:06.784Z",
-      "updated_at": "2024-09-17T14:06:28.436Z",
+      "updated_at": "2024-09-18T18:01:54.402Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -3673,9 +3673,9 @@
     {
       "id": "skqbwdvp70c6",
       "name": "KAMPALA, Uganda - (EBB)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-07-17T09:56:48.732Z",
-      "updated_at": "2024-09-18T17:51:03.316Z",
+      "updated_at": "2024-09-18T18:01:54.043Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -7140,16 +7140,42 @@
     {
       "id": "ckg67qmbgvq7",
       "name": "Elevated Error Rates on Multiple Services",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2024-09-18T14:31:06.247Z",
-      "updated_at": "2024-09-18T17:18:57.278Z",
-      "monitoring_at": null,
+      "updated_at": "2024-09-18T17:53:41.439Z",
+      "monitoring_at": "2024-09-18T17:53:41.424Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/9cth4wkb45wx",
       "started_at": "2024-09-18T14:31:06.239Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "7j6vz96wtfy5",
+          "status": "monitoring",
+          "body": "A fix for this issue has been identified and implemented. We are currently monitoring the results.",
+          "incident_id": "ckg67qmbgvq7",
+          "created_at": "2024-09-18T17:53:41.424Z",
+          "updated_at": "2024-09-18T17:53:41.424Z",
+          "display_at": "2024-09-18T17:53:41.424Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "y98zlwj1d7zh",
+              "name": "Cloudflare Sites and Services - Tunnel",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "b7h1g6f65jz2",
           "status": "investigating",
@@ -7263,114 +7289,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "dmlprv34tb5j",
-      "name": "HKG (Hong Kong) on 2024-09-18",
-      "status": "scheduled",
-      "created_at": "2024-09-18T17:42:21.879Z",
-      "updated_at": "2024-09-18T17:42:21.937Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/fz32pc1q841l",
-      "started_at": "2024-09-18T17:42:21.873Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "87wxmjc0bg1f",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in HKG (Hong Kong) datacenter on 2024-09-18 between 18:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "dmlprv34tb5j",
-          "created_at": "2024-09-18T17:42:21.935Z",
-          "updated_at": "2024-09-18T17:42:21.935Z",
-          "display_at": "2024-09-18T17:42:21.935Z",
-          "affected_components": [
-            {
-              "code": "wf2gdmxg7cv3",
-              "name": "Asia - Hong Kong - (HKG)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "wf2gdmxg7cv3",
-          "name": "Hong Kong - (HKG)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:46:42.606Z",
-          "updated_at": "2024-09-18T02:31:36.870Z",
-          "position": 25,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-09-18T18:00:25.000Z",
-      "scheduled_until": "2024-09-18T21:00:25.000Z"
-    },
-    {
-      "id": "j5ks48pbzv58",
-      "name": "NRT (Tokyo) on 2024-09-18",
-      "status": "scheduled",
-      "created_at": "2024-09-18T17:02:20.529Z",
-      "updated_at": "2024-09-18T17:02:20.594Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/g4rsyj6y0pf9",
-      "started_at": "2024-09-18T17:02:20.522Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "bpdct1ybz6mx",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in NRT (Tokyo) datacenter on 2024-09-18 between 18:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "j5ks48pbzv58",
-          "created_at": "2024-09-18T17:02:20.591Z",
-          "updated_at": "2024-09-18T17:02:20.591Z",
-          "display_at": "2024-09-18T17:02:20.591Z",
-          "affected_components": [
-            {
-              "code": "rmjk2n758yzc",
-              "name": "Asia - Tokyo, Japan - (NRT)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rmjk2n758yzc",
-          "name": "Tokyo, Japan - (NRT)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:42:49.579Z",
-          "updated_at": "2024-07-10T19:53:33.800Z",
-          "position": 65,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-09-18T18:00:37.000Z",
-      "scheduled_until": "2024-09-18T21:00:37.000Z"
-    },
     {
       "id": "xf68r2jvzdh9",
       "name": "DFW (Dallas) on 2024-09-19",
@@ -8058,6 +7976,140 @@
       ],
       "scheduled_for": "2024-09-25T23:00:00.000Z",
       "scheduled_until": "2024-09-26T06:00:00.000Z"
+    },
+    {
+      "id": "j5ks48pbzv58",
+      "name": "NRT (Tokyo) on 2024-09-18",
+      "status": "in_progress",
+      "created_at": "2024-09-18T17:02:20.529Z",
+      "updated_at": "2024-09-18T18:01:03.939Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/g4rsyj6y0pf9",
+      "started_at": "2024-09-18T17:02:20.522Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "57t0vytdsg8r",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "j5ks48pbzv58",
+          "created_at": "2024-09-18T18:01:03.936Z",
+          "updated_at": "2024-09-18T18:01:03.936Z",
+          "display_at": "2024-09-18T18:01:03.936Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "bpdct1ybz6mx",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in NRT (Tokyo) datacenter on 2024-09-18 between 18:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "j5ks48pbzv58",
+          "created_at": "2024-09-18T17:02:20.591Z",
+          "updated_at": "2024-09-18T17:02:20.591Z",
+          "display_at": "2024-09-18T17:02:20.591Z",
+          "affected_components": [
+            {
+              "code": "rmjk2n758yzc",
+              "name": "Asia - Tokyo, Japan - (NRT)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rmjk2n758yzc",
+          "name": "Tokyo, Japan - (NRT)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:42:49.579Z",
+          "updated_at": "2024-07-10T19:53:33.800Z",
+          "position": 65,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-18T18:00:37.000Z",
+      "scheduled_until": "2024-09-18T21:00:37.000Z"
+    },
+    {
+      "id": "dmlprv34tb5j",
+      "name": "HKG (Hong Kong) on 2024-09-18",
+      "status": "in_progress",
+      "created_at": "2024-09-18T17:42:21.879Z",
+      "updated_at": "2024-09-18T18:01:03.688Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/fz32pc1q841l",
+      "started_at": "2024-09-18T17:42:21.873Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "bkcm0f6z67js",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "dmlprv34tb5j",
+          "created_at": "2024-09-18T18:01:03.686Z",
+          "updated_at": "2024-09-18T18:01:03.686Z",
+          "display_at": "2024-09-18T18:01:03.686Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "87wxmjc0bg1f",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in HKG (Hong Kong) datacenter on 2024-09-18 between 18:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "dmlprv34tb5j",
+          "created_at": "2024-09-18T17:42:21.935Z",
+          "updated_at": "2024-09-18T17:42:21.935Z",
+          "display_at": "2024-09-18T17:42:21.935Z",
+          "affected_components": [
+            {
+              "code": "wf2gdmxg7cv3",
+              "name": "Asia - Hong Kong - (HKG)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "wf2gdmxg7cv3",
+          "name": "Hong Kong - (HKG)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:46:42.606Z",
+          "updated_at": "2024-09-18T02:31:36.870Z",
+          "position": 25,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-18T18:00:25.000Z",
+      "scheduled_until": "2024-09-18T21:00:25.000Z"
     },
     {
       "id": "ls78q386xbv5",
