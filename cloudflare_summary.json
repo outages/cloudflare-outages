@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-18T14:03:49.780Z"
+    "updated_at": "2024-09-18T14:38:32.429Z"
   },
   "components": [
     {
@@ -916,9 +916,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2024-09-16T11:04:21.095Z",
+      "updated_at": "2024-09-18T14:31:06.287Z",
       "position": 6,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -1037,9 +1037,9 @@
     {
       "id": "9kqfzzbvww99",
       "name": "Bandar Seri Begawan, Brunei - (BWN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2020-02-25T07:32:56.004Z",
-      "updated_at": "2024-09-17T19:11:24.375Z",
+      "updated_at": "2024-09-18T14:30:15.368Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -3673,9 +3673,9 @@
     {
       "id": "skqbwdvp70c6",
       "name": "KAMPALA, Uganda - (EBB)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-07-17T09:56:48.732Z",
-      "updated_at": "2024-09-18T14:03:49.777Z",
+      "updated_at": "2024-09-18T14:35:40.939Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -4078,9 +4078,9 @@
     {
       "id": "gw1cztbpft9b",
       "name": "Kathmandu, Nepal - (KTM)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2024-09-16T06:34:53.516Z",
+      "updated_at": "2024-09-18T14:38:32.427Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -6343,9 +6343,9 @@
     {
       "id": "47xg28c02lnk",
       "name": "Stream",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:53:34.953Z",
-      "updated_at": "2024-09-18T10:44:14.547Z",
+      "updated_at": "2024-09-18T14:30:09.165Z",
       "position": 78,
       "description": "Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7138,50 +7138,30 @@
   ],
   "incidents": [
     {
-      "id": "q83wbrxcsynw",
-      "name": "Stream Upload Delays",
+      "id": "ckg67qmbgvq7",
+      "name": "Elevated error rate on DNS records API",
       "status": "investigating",
-      "created_at": "2024-09-18T10:44:14.506Z",
-      "updated_at": "2024-09-18T12:46:44.466Z",
+      "created_at": "2024-09-18T14:31:06.247Z",
+      "updated_at": "2024-09-18T14:31:06.352Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/xr4zwf7dxl5v",
-      "started_at": "2024-09-18T10:44:14.497Z",
+      "shortlink": "https://stspg.io/9cth4wkb45wx",
+      "started_at": "2024-09-18T14:31:06.239Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "cj3g6knsqwg4",
+          "id": "p89kpp94yn2g",
           "status": "investigating",
-          "body": "Stream on-demand encoding for new uploads may be delayed in finishing its highest quality variants due to high utilisation, but new videos should still be ready to stream within expected time.\n\nThere is no impact to existing videos, live streams, or other operations. The team is continuing to investigate.",
-          "incident_id": "q83wbrxcsynw",
-          "created_at": "2024-09-18T12:46:44.463Z",
-          "updated_at": "2024-09-18T12:46:44.463Z",
-          "display_at": "2024-09-18T12:46:44.463Z",
+          "body": "Cloudflare is investigating an elevated error rate on DNS record API endpoints. We are working to understand the full impact and mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "ckg67qmbgvq7",
+          "created_at": "2024-09-18T14:31:06.349Z",
+          "updated_at": "2024-09-18T14:31:06.349Z",
+          "display_at": "2024-09-18T14:31:06.349Z",
           "affected_components": [
             {
-              "code": "47xg28c02lnk",
-              "name": "Cloudflare Sites and Services - Stream",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "5c0cndd9t15f",
-          "status": "investigating",
-          "body": "Cloudflare is investigating issues with uploading videos to Stream. There is no impact to playback of existing videos or other system functionality.\n\nWe are working to understand the full impact and mitigate this problem.  More updates to follow shortly",
-          "incident_id": "q83wbrxcsynw",
-          "created_at": "2024-09-18T10:44:14.606Z",
-          "updated_at": "2024-09-18T10:44:14.606Z",
-          "display_at": "2024-09-18T10:44:14.606Z",
-          "affected_components": [
-            {
-              "code": "47xg28c02lnk",
-              "name": "Cloudflare Sites and Services - Stream",
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
               "old_status": "operational",
               "new_status": "degraded_performance"
             }
@@ -7193,13 +7173,13 @@
       ],
       "components": [
         {
-          "id": "47xg28c02lnk",
-          "name": "Stream",
+          "id": "g4tb35rs9yw7",
+          "name": "API",
           "status": "degraded_performance",
-          "created_at": "2019-01-24T16:53:34.953Z",
-          "updated_at": "2024-09-18T10:44:14.547Z",
-          "position": 78,
-          "description": "Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2024-09-18T14:31:06.287Z",
+          "position": 6,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
           "showcase": false,
           "start_date": null,
           "group_id": "1km35smx8p41",
@@ -7875,6 +7855,73 @@
       ],
       "scheduled_for": "2024-09-25T23:00:00.000Z",
       "scheduled_until": "2024-09-26T06:00:00.000Z"
+    },
+    {
+      "id": "rfzt3v71cqty",
+      "name": "SEA (Seattle) on 2024-09-18",
+      "status": "in_progress",
+      "created_at": "2024-09-18T14:30:23.412Z",
+      "updated_at": "2024-09-18T14:31:02.116Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/m03y5qfkdk8b",
+      "started_at": "2024-09-18T14:30:23.404Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "tlhf637qj1t6",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "rfzt3v71cqty",
+          "created_at": "2024-09-18T14:31:02.114Z",
+          "updated_at": "2024-09-18T14:31:02.114Z",
+          "display_at": "2024-09-18T14:31:02.114Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "7nfz83xbk66w",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SEA (Seattle) datacenter on 2024-09-18 between 14:30 and 16:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "rfzt3v71cqty",
+          "created_at": "2024-09-18T14:30:23.472Z",
+          "updated_at": "2024-09-18T14:30:23.472Z",
+          "display_at": "2024-09-18T14:30:23.472Z",
+          "affected_components": [
+            {
+              "code": "bvtc2f85ft3p",
+              "name": "North America - Seattle, WA, United States - (SEA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bvtc2f85ft3p",
+          "name": "Seattle, WA, United States - (SEA)",
+          "status": "operational",
+          "created_at": "2014-10-27T19:57:30.743Z",
+          "updated_at": "2024-09-13T04:55:14.252Z",
+          "position": 44,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-18T14:30:55.000Z",
+      "scheduled_until": "2024-09-18T16:30:55.000Z"
     },
     {
       "id": "ls78q386xbv5",
