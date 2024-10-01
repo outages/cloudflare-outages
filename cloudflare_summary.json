@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-01T22:42:57.341Z"
+    "updated_at": "2024-10-01T23:15:52.371Z"
   },
   "components": [
     {
@@ -1348,9 +1348,9 @@
     {
       "id": "dwlvwq5gnym8",
       "name": "Charlotte, NC, United States - (CLT)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-11-30T01:17:45.019Z",
-      "updated_at": "2024-10-01T04:08:42.453Z",
+      "updated_at": "2024-10-01T23:15:52.369Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -3178,9 +3178,9 @@
     {
       "id": "bnjvsmmllkb9",
       "name": "Lima, Peru - (LIM)",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2014-12-03T20:29:25.140Z",
-      "updated_at": "2024-10-01T21:55:35.484Z",
+      "updated_at": "2024-10-01T23:13:16.407Z",
       "position": 25,
       "description": null,
       "showcase": false,
@@ -6658,9 +6658,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2024-10-01T22:08:40.802Z",
+      "updated_at": "2024-10-01T22:52:08.914Z",
       "position": 92,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7138,30 +7138,30 @@
   ],
   "incidents": [
     {
-      "id": "rj6r0s848v79",
-      "name": "Workers Smart Placement Causing Request Failures in Eastern Europe",
-      "status": "monitoring",
-      "created_at": "2024-10-01T22:08:40.772Z",
-      "updated_at": "2024-10-01T22:39:49.501Z",
-      "monitoring_at": "2024-10-01T22:39:49.487Z",
+      "id": "g9jx9c5c0nnl",
+      "name": "Elevated errors for Stream Generated Captions and Workers AI whisper-tiny model",
+      "status": "identified",
+      "created_at": "2024-10-01T22:27:30.293Z",
+      "updated_at": "2024-10-01T23:12:52.730Z",
+      "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/hzyzn9hsqm59",
-      "started_at": "2024-10-01T22:08:40.764Z",
+      "shortlink": "https://stspg.io/slhw1fcz4ghy",
+      "started_at": "2024-10-01T22:27:30.272Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "hxh1p17gp24v",
-          "status": "monitoring",
-          "body": "A fix for this issue has been identified and implemented. We are currently monitoring the results.",
-          "incident_id": "rj6r0s848v79",
-          "created_at": "2024-10-01T22:39:49.487Z",
-          "updated_at": "2024-10-01T22:39:49.487Z",
-          "display_at": "2024-10-01T22:39:49.487Z",
+          "id": "qfbdkhjyp7k4",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "g9jx9c5c0nnl",
+          "created_at": "2024-10-01T23:12:52.727Z",
+          "updated_at": "2024-10-01T23:12:52.727Z",
+          "display_at": "2024-10-01T23:12:52.727Z",
           "affected_components": [
             {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
               "old_status": "degraded_performance",
               "new_status": "degraded_performance"
             }
@@ -7170,59 +7170,6 @@
           "custom_tweet": null,
           "tweet_id": null
         },
-        {
-          "id": "wc6k02c9fhw2",
-          "status": "investigating",
-          "body": "Cloudflare Workers with the Smart Placement feature enabled will have failing requests in the OTP colo (Eastern Europe) since Oct 1, 18:00 UTC. We are working on a fix, but impact can be immediately mitigated by turning off Smart Placement https://developers.cloudflare.com/workers/configuration/smart-placement/",
-          "incident_id": "rj6r0s848v79",
-          "created_at": "2024-10-01T22:08:40.853Z",
-          "updated_at": "2024-10-01T22:08:40.853Z",
-          "display_at": "2024-10-01T22:08:40.853Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "57srcl8zcn7c",
-          "name": "Workers",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2024-10-01T22:08:40.802Z",
-          "position": 92,
-          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "g9jx9c5c0nnl",
-      "name": "Elevated errors for Stream Generated Captions and Workers AI whisper-tiny model",
-      "status": "investigating",
-      "created_at": "2024-10-01T22:27:30.293Z",
-      "updated_at": "2024-10-01T22:27:30.403Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/slhw1fcz4ghy",
-      "started_at": "2024-10-01T22:27:30.272Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
         {
           "id": "w2qnd8r3h1nz",
           "status": "investigating",
@@ -7295,73 +7242,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "sb8mc7t7mk8l",
-      "name": "CPH (Copenhagen) on 2024-10-01",
-      "status": "scheduled",
-      "created_at": "2024-09-25T08:24:18.859Z",
-      "updated_at": "2024-10-01T22:00:07.036Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/zm38jp0fsfw3",
-      "started_at": "2024-09-25T08:24:18.850Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "psmh5jpx0kjv",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "sb8mc7t7mk8l",
-          "created_at": "2024-10-01T22:00:06.920Z",
-          "updated_at": "2024-10-01T22:00:06.920Z",
-          "display_at": "2024-10-01T22:00:06.920Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "hcrbn20zgqcm",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in CPH (Copenhagen) datacenter between 2024-10-01 23:00 and 2024-10-02 07:15 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "sb8mc7t7mk8l",
-          "created_at": "2024-09-25T08:24:18.930Z",
-          "updated_at": "2024-09-25T08:24:18.930Z",
-          "display_at": "2024-09-25T08:24:18.930Z",
-          "affected_components": [
-            {
-              "code": "gt279m9y3f8q",
-              "name": "Europe - Copenhagen, Denmark - (CPH)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "gt279m9y3f8q",
-          "name": "Copenhagen, Denmark - (CPH)",
-          "status": "operational",
-          "created_at": "2015-11-03T02:10:58.762Z",
-          "updated_at": "2024-09-23T05:19:22.202Z",
-          "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-10-01T23:00:00.000Z",
-      "scheduled_until": "2024-10-02T07:15:00.000Z"
-    },
     {
       "id": "h93kk6ywq5kh",
       "name": "OTP (Bucharest) on 2024-10-02",
@@ -7955,6 +7835,86 @@
       ],
       "scheduled_for": "2024-10-10T18:00:00.000Z",
       "scheduled_until": "2024-10-10T23:00:00.000Z"
+    },
+    {
+      "id": "sb8mc7t7mk8l",
+      "name": "CPH (Copenhagen) on 2024-10-01",
+      "status": "in_progress",
+      "created_at": "2024-09-25T08:24:18.859Z",
+      "updated_at": "2024-10-01T23:00:03.059Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/zm38jp0fsfw3",
+      "started_at": "2024-09-25T08:24:18.850Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "zlz3sntxbxh9",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "sb8mc7t7mk8l",
+          "created_at": "2024-10-01T23:00:03.054Z",
+          "updated_at": "2024-10-01T23:00:03.054Z",
+          "display_at": "2024-10-01T23:00:03.054Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "psmh5jpx0kjv",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "sb8mc7t7mk8l",
+          "created_at": "2024-10-01T22:00:06.920Z",
+          "updated_at": "2024-10-01T22:00:06.920Z",
+          "display_at": "2024-10-01T22:00:06.920Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "hcrbn20zgqcm",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in CPH (Copenhagen) datacenter between 2024-10-01 23:00 and 2024-10-02 07:15 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "sb8mc7t7mk8l",
+          "created_at": "2024-09-25T08:24:18.930Z",
+          "updated_at": "2024-09-25T08:24:18.930Z",
+          "display_at": "2024-09-25T08:24:18.930Z",
+          "affected_components": [
+            {
+              "code": "gt279m9y3f8q",
+              "name": "Europe - Copenhagen, Denmark - (CPH)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gt279m9y3f8q",
+          "name": "Copenhagen, Denmark - (CPH)",
+          "status": "operational",
+          "created_at": "2015-11-03T02:10:58.762Z",
+          "updated_at": "2024-09-23T05:19:22.202Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-10-01T23:00:00.000Z",
+      "scheduled_until": "2024-10-02T07:15:00.000Z"
     }
   ],
   "status": {
