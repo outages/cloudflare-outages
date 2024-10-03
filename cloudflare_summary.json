@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-02T23:28:45.897Z"
+    "updated_at": "2024-10-03T01:09:44.255Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -158,7 +158,7 @@
       "name": "Adelaide, SA, Australia - (ADL)",
       "status": "operational",
       "created_at": "2019-11-27T06:56:48.964Z",
-      "updated_at": "2024-10-02T15:23:25.598Z",
+      "updated_at": "2024-10-03T00:45:34.614Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -415,7 +415,7 @@
       "name": "Brisbane, QLD, Australia - (BNE)",
       "status": "operational",
       "created_at": "2016-09-23T20:59:56.455Z",
-      "updated_at": "2024-10-02T01:46:34.547Z",
+      "updated_at": "2024-10-03T00:50:56.057Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1633,9 +1633,9 @@
     {
       "id": "ry378yzsq7kp",
       "name": "Caçador, Brazil - (CFC)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-08T07:57:05.268Z",
-      "updated_at": "2024-10-02T23:27:36.082Z",
+      "updated_at": "2024-10-03T00:01:40.645Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -2038,9 +2038,9 @@
     {
       "id": "ll1x88wwz4fq",
       "name": "Billing",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2016-05-09T21:12:38.309Z",
-      "updated_at": "2024-09-20T21:48:51.697Z",
+      "updated_at": "2024-10-03T00:33:06.686Z",
       "position": 14,
       "description": "Billing and payment service",
       "showcase": false,
@@ -2563,9 +2563,9 @@
     {
       "id": "dwmgwrxg7cx3",
       "name": "Hamburg, Germany - (HAM)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2015-12-14T11:28:08.468Z",
-      "updated_at": "2024-09-24T03:28:09.075Z",
+      "updated_at": "2024-10-03T01:09:44.252Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -5158,9 +5158,9 @@
     {
       "id": "wr8jt2slt0cp",
       "name": "New Delhi, India - (DEL)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-10-27T20:12:23.920Z",
-      "updated_at": "2024-10-02T23:17:49.671Z",
+      "updated_at": "2024-10-03T00:12:31.489Z",
       "position": 52,
       "description": null,
       "showcase": false,
@@ -7138,6 +7138,59 @@
   ],
   "incidents": [
     {
+      "id": "d41x66skhwf4",
+      "name": "R2 Billing Issues",
+      "status": "investigating",
+      "created_at": "2024-10-03T00:33:06.651Z",
+      "updated_at": "2024-10-03T00:33:06.741Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/l3j2xmvpxk7z",
+      "started_at": "2024-10-03T00:33:06.644Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "xqny96cthz4h",
+          "status": "investigating",
+          "body": "We’re currently experiencing a billing issue preventing customers who have had payment issues and resolved them from re-accessing and subscribing to R2. All other services are operating normally.\n\nMore updates to follow up.",
+          "incident_id": "d41x66skhwf4",
+          "created_at": "2024-10-03T00:33:06.739Z",
+          "updated_at": "2024-10-03T00:33:06.739Z",
+          "display_at": "2024-10-03T00:33:06.739Z",
+          "affected_components": [
+            {
+              "code": "ll1x88wwz4fq",
+              "name": "Cloudflare Sites and Services - Billing",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ll1x88wwz4fq",
+          "name": "Billing",
+          "status": "degraded_performance",
+          "created_at": "2016-05-09T21:12:38.309Z",
+          "updated_at": "2024-10-03T00:33:06.686Z",
+          "position": 14,
+          "description": "Billing and payment service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "1lqnm2bnbngd",
       "name": "Support Ticket Migration - Case Access Issues",
       "status": "identified",
@@ -7169,60 +7222,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "brv4cbq2lk4z",
-      "name": "MXP (Milan) on 2024-10-03",
-      "status": "scheduled",
-      "created_at": "2024-10-02T06:42:33.656Z",
-      "updated_at": "2024-10-02T06:42:33.718Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/2dq7nrp41xgj",
-      "started_at": "2024-10-02T06:42:33.648Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "p0tjcm9h8m6n",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MXP (Milan) datacenter on 2024-10-03 between 01:00 and 03:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "brv4cbq2lk4z",
-          "created_at": "2024-10-02T06:42:33.715Z",
-          "updated_at": "2024-10-02T06:42:33.715Z",
-          "display_at": "2024-10-02T06:42:33.715Z",
-          "affected_components": [
-            {
-              "code": "k8q1kmz4gfms",
-              "name": "Europe - Milan, Italy - (MXP)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "k8q1kmz4gfms",
-          "name": "Milan, Italy - (MXP)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:07:56.923Z",
-          "updated_at": "2024-03-20T18:16:56.837Z",
-          "position": 30,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-10-03T01:00:00.000Z",
-      "scheduled_until": "2024-10-03T03:30:00.000Z"
-    },
     {
       "id": "nwnpbpmnw4fr",
       "name": "MEL (Melbourne) on 2024-10-03",
@@ -7423,9 +7422,9 @@
         {
           "id": "dwmgwrxg7cx3",
           "name": "Hamburg, Germany - (HAM)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2015-12-14T11:28:08.468Z",
-          "updated_at": "2024-09-24T03:28:09.075Z",
+          "updated_at": "2024-10-03T01:09:44.252Z",
           "position": 19,
           "description": null,
           "showcase": false,
@@ -7654,6 +7653,220 @@
       ],
       "scheduled_for": "2024-10-10T18:00:00.000Z",
       "scheduled_until": "2024-10-10T23:00:00.000Z"
+    },
+    {
+      "id": "g683r7g47h6d",
+      "name": "HAM (Hamburg) on 2024-10-03",
+      "status": "in_progress",
+      "created_at": "2024-10-03T00:50:37.058Z",
+      "updated_at": "2024-10-03T01:01:02.572Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/682yyhcv1y8w",
+      "started_at": "2024-10-03T00:50:37.051Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "j3rgl1wgf0tg",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "g683r7g47h6d",
+          "created_at": "2024-10-03T01:01:02.569Z",
+          "updated_at": "2024-10-03T01:01:02.569Z",
+          "display_at": "2024-10-03T01:01:02.569Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "m4g2h48dzmnm",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in HAM (Hamburg) datacenter on 2024-10-03 between 01:00 and 06:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "g683r7g47h6d",
+          "created_at": "2024-10-03T00:50:37.115Z",
+          "updated_at": "2024-10-03T00:50:37.115Z",
+          "display_at": "2024-10-03T00:50:37.115Z",
+          "affected_components": [
+            {
+              "code": "dwmgwrxg7cx3",
+              "name": "Europe - Hamburg, Germany - (HAM)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "dwmgwrxg7cx3",
+          "name": "Hamburg, Germany - (HAM)",
+          "status": "partial_outage",
+          "created_at": "2015-12-14T11:28:08.468Z",
+          "updated_at": "2024-10-03T01:09:44.252Z",
+          "position": 19,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-10-03T01:00:46.000Z",
+      "scheduled_until": "2024-10-03T06:00:46.000Z"
+    },
+    {
+      "id": "sw31g1xh6bf2",
+      "name": "MAD (Madrid) on 2024-10-03",
+      "status": "in_progress",
+      "created_at": "2024-10-03T00:46:37.427Z",
+      "updated_at": "2024-10-03T01:01:02.123Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/9qhwn8cw8ynn",
+      "started_at": "2024-10-03T00:46:37.420Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "htkwz67p11dg",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "sw31g1xh6bf2",
+          "created_at": "2024-10-03T01:01:02.120Z",
+          "updated_at": "2024-10-03T01:01:02.120Z",
+          "display_at": "2024-10-03T01:01:02.120Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ngtg3gt5lzs9",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MAD (Madrid) datacenter on 2024-10-03 between 01:00 and 06:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "sw31g1xh6bf2",
+          "created_at": "2024-10-03T00:46:37.484Z",
+          "updated_at": "2024-10-03T00:46:37.484Z",
+          "display_at": "2024-10-03T00:46:37.484Z",
+          "affected_components": [
+            {
+              "code": "qwrpqdwqxy7r",
+              "name": "Europe - Madrid, Spain - (MAD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qwrpqdwqxy7r",
+          "name": "Madrid, Spain - (MAD)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:41:47.350Z",
+          "updated_at": "2024-06-19T03:54:44.356Z",
+          "position": 27,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-10-03T01:00:21.000Z",
+      "scheduled_until": "2024-10-03T06:00:21.000Z"
+    },
+    {
+      "id": "brv4cbq2lk4z",
+      "name": "MXP (Milan) on 2024-10-03",
+      "status": "in_progress",
+      "created_at": "2024-10-02T06:42:33.656Z",
+      "updated_at": "2024-10-03T01:00:02.360Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/2dq7nrp41xgj",
+      "started_at": "2024-10-02T06:42:33.648Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "kcm2jwxms6x3",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "brv4cbq2lk4z",
+          "created_at": "2024-10-03T01:00:02.352Z",
+          "updated_at": "2024-10-03T01:00:02.352Z",
+          "display_at": "2024-10-03T01:00:02.352Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xpzw1k9vr97t",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "brv4cbq2lk4z",
+          "created_at": "2024-10-03T00:00:05.266Z",
+          "updated_at": "2024-10-03T00:00:05.266Z",
+          "display_at": "2024-10-03T00:00:05.266Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "p0tjcm9h8m6n",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MXP (Milan) datacenter on 2024-10-03 between 01:00 and 03:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "brv4cbq2lk4z",
+          "created_at": "2024-10-02T06:42:33.715Z",
+          "updated_at": "2024-10-02T06:42:33.715Z",
+          "display_at": "2024-10-02T06:42:33.715Z",
+          "affected_components": [
+            {
+              "code": "k8q1kmz4gfms",
+              "name": "Europe - Milan, Italy - (MXP)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k8q1kmz4gfms",
+          "name": "Milan, Italy - (MXP)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:07:56.923Z",
+          "updated_at": "2024-03-20T18:16:56.837Z",
+          "position": 30,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-10-03T01:00:00.000Z",
+      "scheduled_until": "2024-10-03T03:30:00.000Z"
     }
   ],
   "status": {
