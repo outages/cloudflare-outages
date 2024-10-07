@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-07T17:35:33.743Z"
+    "updated_at": "2024-10-07T18:12:57.619Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3958,9 +3958,9 @@
     {
       "id": "gqhgn4jwr94s",
       "name": "Recife, Brazil - (REC)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2023-01-23T16:01:02.693Z",
-      "updated_at": "2024-10-07T17:08:52.564Z",
+      "updated_at": "2024-10-07T18:12:57.617Z",
       "position": 34,
       "description": null,
       "showcase": false,
@@ -3973,9 +3973,9 @@
     {
       "id": "fgfkmhddbpcm",
       "name": "Oslo, Norway - (OSL)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-01-19T03:21:43.927Z",
-      "updated_at": "2024-10-07T11:31:33.244Z",
+      "updated_at": "2024-10-07T17:51:35.673Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -5053,9 +5053,9 @@
     {
       "id": "3lbj8lp3d750",
       "name": "Images",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-02-25T17:30:01.272Z",
-      "updated_at": "2024-10-07T16:24:56.740Z",
+      "updated_at": "2024-10-07T18:00:24.616Z",
       "position": 50,
       "description": "Cloudflare service to build a scalable image pipeline to store, resize, optimize and deliver images in a fast and secure manner.",
       "showcase": false,
@@ -5308,9 +5308,9 @@
     {
       "id": "k0mgxrls5y1b",
       "name": "Logs",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2016-03-20T18:49:07.613Z",
-      "updated_at": "2024-10-07T16:24:56.758Z",
+      "updated_at": "2024-10-07T18:00:24.630Z",
       "position": 54,
       "description": "Enterprise Logpull and Logpush services",
       "showcase": false,
@@ -6343,9 +6343,9 @@
     {
       "id": "47xg28c02lnk",
       "name": "Stream",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:53:34.953Z",
-      "updated_at": "2024-10-07T15:34:24.982Z",
+      "updated_at": "2024-10-07T18:00:24.644Z",
       "position": 78,
       "description": "Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7137,141 +7137,6 @@
     }
   ],
   "incidents": [
-    {
-      "id": "f22d70rg872k",
-      "name": "Delays in encoding of newly uploaded Stream videos",
-      "status": "monitoring",
-      "created_at": "2024-10-07T15:34:24.946Z",
-      "updated_at": "2024-10-07T16:24:56.804Z",
-      "monitoring_at": "2024-10-07T15:51:14.363Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/frhzbm8bpvx4",
-      "started_at": "2024-10-07T15:34:25.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "6hwmrhpf6cl9",
-          "status": "monitoring",
-          "body": "We have determined that this issue also affected Cloudflare Images and Cloudflare Logpull. Logpull requests issued between 14:23 and 15:45 UTC should be re-tried.",
-          "incident_id": "f22d70rg872k",
-          "created_at": "2024-10-07T16:24:56.802Z",
-          "updated_at": "2024-10-07T16:24:56.802Z",
-          "display_at": "2024-10-07T16:24:56.802Z",
-          "affected_components": [
-            {
-              "code": "3lbj8lp3d750",
-              "name": "Cloudflare Sites and Services - Images",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "k0mgxrls5y1b",
-              "name": "Cloudflare Sites and Services - Logs",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "47xg28c02lnk",
-              "name": "Cloudflare Sites and Services - Stream",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "ljlsbcs8bh6l",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "f22d70rg872k",
-          "created_at": "2024-10-07T15:51:14.363Z",
-          "updated_at": "2024-10-07T15:51:14.363Z",
-          "display_at": "2024-10-07T15:51:14.363Z",
-          "affected_components": [
-            {
-              "code": "47xg28c02lnk",
-              "name": "Cloudflare Sites and Services - Stream",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "mp7mklh1l81q",
-          "status": "investigating",
-          "body": "Cloudflare is investigating delays in encoding and playback availability of new videos to Stream. Previously uploaded videos are unimpacted.\n\nWe are working to understand the full impact and mitigate this problem.  More updates to follow shortly",
-          "incident_id": "f22d70rg872k",
-          "created_at": "2024-10-07T15:34:25.033Z",
-          "updated_at": "2024-10-07T15:40:21.295Z",
-          "display_at": "2024-10-07T15:34:25.000Z",
-          "affected_components": [
-            {
-              "code": "47xg28c02lnk",
-              "name": "Cloudflare Sites and Services - Stream",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "3lbj8lp3d750",
-          "name": "Images",
-          "status": "degraded_performance",
-          "created_at": "2022-02-25T17:30:01.272Z",
-          "updated_at": "2024-10-07T16:24:56.740Z",
-          "position": 50,
-          "description": "Cloudflare service to build a scalable image pipeline to store, resize, optimize and deliver images in a fast and secure manner.",
-          "showcase": false,
-          "start_date": "2022-02-25",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "k0mgxrls5y1b",
-          "name": "Logs",
-          "status": "degraded_performance",
-          "created_at": "2016-03-20T18:49:07.613Z",
-          "updated_at": "2024-10-07T16:24:56.758Z",
-          "position": 54,
-          "description": "Enterprise Logpull and Logpush services",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "47xg28c02lnk",
-          "name": "Stream",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:53:34.953Z",
-          "updated_at": "2024-10-07T15:34:24.982Z",
-          "position": 78,
-          "description": "Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
     {
       "id": "1lqnm2bnbngd",
       "name": "Support Ticket Migration - Case Access Issues",
