@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-08T12:24:04.856Z"
+    "updated_at": "2024-10-08T13:04:35.456Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1393,9 +1393,9 @@
     {
       "id": "504hxt9xvdth",
       "name": "Brasilia, Brazil - (BSB)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-05-24T14:45:56.017Z",
-      "updated_at": "2024-10-03T15:02:32.066Z",
+      "updated_at": "2024-10-08T12:47:58.492Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2623,9 +2623,9 @@
     {
       "id": "1qbk4p1tr5zf",
       "name": "Goiânia, Brazil - (GYN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-11-02T16:47:51.148Z",
-      "updated_at": "2024-10-03T15:02:30.453Z",
+      "updated_at": "2024-10-08T12:45:25.662Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -3283,9 +3283,9 @@
     {
       "id": "n3v9x7fj809n",
       "name": "Manaus, Brazil - (MAO)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2021-11-24T12:42:37.210Z",
-      "updated_at": "2024-10-08T12:24:04.854Z",
+      "updated_at": "2024-10-08T12:26:32.766Z",
       "position": 26,
       "description": null,
       "showcase": false,
@@ -6163,9 +6163,9 @@
     {
       "id": "kn2xkt469vyh",
       "name": "Registrar",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-07-31T14:19:17.585Z",
-      "updated_at": "2024-09-12T11:58:38.012Z",
+      "updated_at": "2024-10-08T12:42:15.638Z",
       "position": 70,
       "description": "Cloudflare Registrar securely registers and manages customer domain names",
       "showcase": false,
@@ -7137,6 +7137,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "sdsqbqnwy4ng",
+      "name": "Issues with Cloudflare Registrar domains transfer list",
+      "status": "identified",
+      "created_at": "2024-10-08T12:42:15.605Z",
+      "updated_at": "2024-10-08T13:04:35.449Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/v89jhbkn6tg4",
+      "started_at": "2024-10-08T12:42:15.597Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "b492rjq641nx",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "sdsqbqnwy4ng",
+          "created_at": "2024-10-08T13:04:35.447Z",
+          "updated_at": "2024-10-08T13:04:35.447Z",
+          "display_at": "2024-10-08T13:04:35.447Z",
+          "affected_components": [
+            {
+              "code": "kn2xkt469vyh",
+              "name": "Cloudflare Sites and Services - Registrar",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "5nfhzs059p2v",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue where the transfer domains list on Cloudflare Registrar does not show any domains.\nFurther detail will be provided as more information becomes available.",
+          "incident_id": "sdsqbqnwy4ng",
+          "created_at": "2024-10-08T12:42:15.690Z",
+          "updated_at": "2024-10-08T12:42:15.690Z",
+          "display_at": "2024-10-08T12:42:15.690Z",
+          "affected_components": [
+            {
+              "code": "kn2xkt469vyh",
+              "name": "Cloudflare Sites and Services - Registrar",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kn2xkt469vyh",
+          "name": "Registrar",
+          "status": "degraded_performance",
+          "created_at": "2019-07-31T14:19:17.585Z",
+          "updated_at": "2024-10-08T12:42:15.638Z",
+          "position": 70,
+          "description": "Cloudflare Registrar securely registers and manages customer domain names",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "1lqnm2bnbngd",
       "name": "Support Ticket Migration - Case Access Issues",
