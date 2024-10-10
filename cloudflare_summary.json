@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-10T12:31:21.836Z"
+    "updated_at": "2024-10-10T13:01:02.142Z"
   },
   "components": [
     {
@@ -2863,9 +2863,9 @@
     {
       "id": "czwk809chdjt",
       "name": "Ouagadougou, Burkina Faso   - (OUA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-09-02T23:41:26.128Z",
-      "updated_at": "2024-10-10T12:31:21.150Z",
+      "updated_at": "2024-10-10T12:37:26.208Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -3898,9 +3898,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2024-10-10T11:21:59.692Z",
+      "updated_at": "2024-10-10T12:48:42.705Z",
       "position": 34,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -4393,9 +4393,9 @@
     {
       "id": "5qr2frjysrbk",
       "name": "Rome, Italy - (FCO)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2017-03-17T22:26:31.283Z",
-      "updated_at": "2024-10-02T14:39:55.994Z",
+      "updated_at": "2024-10-10T12:47:25.280Z",
       "position": 41,
       "description": null,
       "showcase": false,
@@ -7138,99 +7138,6 @@
   ],
   "incidents": [
     {
-      "id": "rw82y36f2bc9",
-      "name": "Cloudflare Redirect Rules UI issues",
-      "status": "identified",
-      "created_at": "2024-10-10T10:38:49.826Z",
-      "updated_at": "2024-10-10T11:21:59.745Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/gsxx05g0sb2c",
-      "started_at": "2024-10-10T10:38:49.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "w2d0wfdglw07",
-          "status": "identified",
-          "body": "We are actively investigating an issue impacting the display of the Wildcard Pattern UI for Single Redirect Rules when using templates or editing existing rules. Here's what you need to know:\n\n1) The simple UI is currently not shown for templated or existing rules.\n2) You can still create new rules from scratch using the simple UI without issue.\n3) For templated and existing rules, the system correctly falls back to custom filter expressions, and the underlying functions are pre-populated. This allows you to edit and deploy these rules successfully.\n\nWe will continue to provide updates as we work on resolving the issue.",
-          "incident_id": "rw82y36f2bc9",
-          "created_at": "2024-10-10T11:21:59.742Z",
-          "updated_at": "2024-10-10T11:21:59.742Z",
-          "display_at": "2024-10-10T11:21:59.742Z",
-          "affected_components": [
-            {
-              "code": "3sq3s4d20ywk",
-              "name": "Cloudflare Sites and Services - Dashboard",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "65rfmsl3x2lc",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "rw82y36f2bc9",
-          "created_at": "2024-10-10T10:58:11.884Z",
-          "updated_at": "2024-10-10T10:58:11.884Z",
-          "display_at": "2024-10-10T10:58:11.884Z",
-          "affected_components": [
-            {
-              "code": "ch3mwx0hr4k6",
-              "name": "Cloudflare Sites and Services - Rules",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "jyrnxdwq2m7b",
-          "status": "investigating",
-          "body": "Cloudflare is currently investigating an issue affecting the display of the Wildcard Pattern interface in the Redirect Rules builder. Users may experience unavailability or encounter unexpected errors. This issue does not affect the deployment of new rules via custom filter expressions, and existing rules continue to function as expected. We will provide updates as more information becomes available.",
-          "incident_id": "rw82y36f2bc9",
-          "created_at": "2024-10-10T10:38:49.941Z",
-          "updated_at": "2024-10-10T10:42:35.115Z",
-          "display_at": "2024-10-10T10:38:49.000Z",
-          "affected_components": [
-            {
-              "code": "ch3mwx0hr4k6",
-              "name": "Cloudflare Sites and Services - Rules",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "3sq3s4d20ywk",
-          "name": "Dashboard",
-          "status": "degraded_performance",
-          "created_at": "2014-10-09T03:32:07.173Z",
-          "updated_at": "2024-10-10T11:21:59.692Z",
-          "position": 34,
-          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
       "id": "1z9l2fpdbdsb",
       "name": "Cloudflare Billing Issues",
       "status": "monitoring",
@@ -8135,73 +8042,6 @@
       ],
       "scheduled_for": "2024-10-10T12:00:16.000Z",
       "scheduled_until": "2024-10-10T14:00:16.000Z"
-    },
-    {
-      "id": "3w5clxlpnc3s",
-      "name": "CDG (Paris) on 2024-10-10",
-      "status": "in_progress",
-      "created_at": "2024-10-10T03:20:30.329Z",
-      "updated_at": "2024-10-10T03:31:02.114Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/42kmf5dw86kn",
-      "started_at": "2024-10-10T03:20:30.321Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "txjdgd1krwcd",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "3w5clxlpnc3s",
-          "created_at": "2024-10-10T03:31:02.111Z",
-          "updated_at": "2024-10-10T03:31:02.111Z",
-          "display_at": "2024-10-10T03:31:02.111Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "d90sby3qr85q",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in CDG (Paris) datacenter on 2024-10-10 between 03:30 and 13:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "3w5clxlpnc3s",
-          "created_at": "2024-10-10T03:20:30.387Z",
-          "updated_at": "2024-10-10T03:20:30.387Z",
-          "display_at": "2024-10-10T03:20:30.387Z",
-          "affected_components": [
-            {
-              "code": "w1br383gmlwj",
-              "name": "Europe - Paris, France - (CDG)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "w1br383gmlwj",
-          "name": "Paris, France - (CDG)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:36:46.182Z",
-          "updated_at": "2024-07-26T20:29:53.214Z",
-          "position": 37,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-10-10T03:30:19.000Z",
-      "scheduled_until": "2024-10-10T13:00:19.000Z"
     },
     {
       "id": "vg77qklgvp89",
