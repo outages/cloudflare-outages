@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-10T18:46:47.583Z"
+    "updated_at": "2024-10-10T19:13:38.410Z"
   },
   "components": [
     {
@@ -2863,9 +2863,9 @@
     {
       "id": "czwk809chdjt",
       "name": "Ouagadougou, Burkina Faso   - (OUA)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-09-02T23:41:26.128Z",
-      "updated_at": "2024-10-10T17:31:33.811Z",
+      "updated_at": "2024-10-10T19:13:37.399Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -3630,7 +3630,7 @@
       "name": "Norfolk, VA, United States - (ORF)",
       "status": "partial_outage",
       "created_at": "2018-08-16T19:14:15.221Z",
-      "updated_at": "2024-09-24T16:15:44.476Z",
+      "updated_at": "2024-10-10T19:13:38.408Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -7138,6 +7138,79 @@
   ],
   "incidents": [
     {
+      "id": "k4fdnq0h142l",
+      "name": "DEX Device Status delayed",
+      "status": "identified",
+      "created_at": "2024-10-10T18:00:43.878Z",
+      "updated_at": "2024-10-10T19:02:58.114Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/tdw9dpd9q5v3",
+      "started_at": "2024-10-10T18:00:43.870Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "dxwcp476ngsc",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "k4fdnq0h142l",
+          "created_at": "2024-10-10T19:02:58.111Z",
+          "updated_at": "2024-10-10T19:02:58.111Z",
+          "display_at": "2024-10-10T19:02:58.111Z",
+          "affected_components": [
+            {
+              "code": "nmp96vgn1hpl",
+              "name": "Cloudflare Sites and Services - Digital Experience Monitoring (DEX)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4y9htdcct04j",
+          "status": "investigating",
+          "body": "DEX Device Status has seen a multi-hour delay in device_state consumption that is impacting all DEX users. Work is ongoing to discover the performance degradation and implement a fix.",
+          "incident_id": "k4fdnq0h142l",
+          "created_at": "2024-10-10T18:00:43.977Z",
+          "updated_at": "2024-10-10T18:00:43.977Z",
+          "display_at": "2024-10-10T18:00:43.977Z",
+          "affected_components": [
+            {
+              "code": "nmp96vgn1hpl",
+              "name": "Cloudflare Sites and Services - Digital Experience Monitoring (DEX)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nmp96vgn1hpl",
+          "name": "Digital Experience Monitoring (DEX)",
+          "status": "degraded_performance",
+          "created_at": "2023-03-23T09:33:12.310Z",
+          "updated_at": "2024-10-10T18:00:43.919Z",
+          "position": 36,
+          "description": "Digital Experience Monitoring (DEX) enables Zero Trust administrators to pinpoint and resolve issues impacting end-user connectivity and performance.",
+          "showcase": false,
+          "start_date": "2023-03-23",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "9hm2zjxg562l",
       "name": "Investigating reports of Zero Trust TLS Decryption cert being removed",
       "status": "investigating",
@@ -7182,59 +7255,6 @@
           "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "k4fdnq0h142l",
-      "name": "DEX Device Status delayed",
-      "status": "investigating",
-      "created_at": "2024-10-10T18:00:43.878Z",
-      "updated_at": "2024-10-10T18:00:43.980Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/tdw9dpd9q5v3",
-      "started_at": "2024-10-10T18:00:43.870Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "4y9htdcct04j",
-          "status": "investigating",
-          "body": "DEX Device Status has seen a multi-hour delay in device_state consumption that is impacting all DEX users. Work is ongoing to discover the performance degradation and implement a fix.",
-          "incident_id": "k4fdnq0h142l",
-          "created_at": "2024-10-10T18:00:43.977Z",
-          "updated_at": "2024-10-10T18:00:43.977Z",
-          "display_at": "2024-10-10T18:00:43.977Z",
-          "affected_components": [
-            {
-              "code": "nmp96vgn1hpl",
-              "name": "Cloudflare Sites and Services - Digital Experience Monitoring (DEX)",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "nmp96vgn1hpl",
-          "name": "Digital Experience Monitoring (DEX)",
-          "status": "degraded_performance",
-          "created_at": "2023-03-23T09:33:12.310Z",
-          "updated_at": "2024-10-10T18:00:43.919Z",
-          "position": 36,
-          "description": "Digital Experience Monitoring (DEX) enables Zero Trust administrators to pinpoint and resolve issues impacting end-user connectivity and performance.",
-          "showcase": false,
-          "start_date": "2023-03-23",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -7921,6 +7941,114 @@
       "scheduled_until": "2024-10-16T05:00:00.000Z"
     },
     {
+      "id": "4m5fp09vm9tj",
+      "name": "ORF (Norfolk) on 2024-10-16",
+      "status": "scheduled",
+      "created_at": "2024-10-10T19:12:17.026Z",
+      "updated_at": "2024-10-10T19:12:17.100Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/509rxz9sn472",
+      "started_at": "2024-10-10T19:12:17.020Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "4lbpy023gf5b",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in ORF (Norfolk) datacenter between 2024-10-16 01:00 and 2024-10-17 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "4m5fp09vm9tj",
+          "created_at": "2024-10-10T19:12:17.098Z",
+          "updated_at": "2024-10-10T19:12:17.098Z",
+          "display_at": "2024-10-10T19:12:17.098Z",
+          "affected_components": [
+            {
+              "code": "yd8dc8tlrzxr",
+              "name": "North America - Norfolk, VA, United States - (ORF)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "yd8dc8tlrzxr",
+          "name": "Norfolk, VA, United States - (ORF)",
+          "status": "partial_outage",
+          "created_at": "2018-08-16T19:14:15.221Z",
+          "updated_at": "2024-10-10T19:13:38.408Z",
+          "position": 30,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-10-16T01:00:00.000Z",
+      "scheduled_until": "2024-10-17T05:00:00.000Z"
+    },
+    {
+      "id": "9gbr6pty23yd",
+      "name": "IAD (Ashburn) on 2024-10-16",
+      "status": "scheduled",
+      "created_at": "2024-10-10T19:12:17.669Z",
+      "updated_at": "2024-10-10T19:12:17.733Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/ld0qy7hfd0sv",
+      "started_at": "2024-10-10T19:12:17.661Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "6f66f900jsjd",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in IAD (Ashburn) datacenter between 2024-10-16 01:00 and 2024-10-17 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "9gbr6pty23yd",
+          "created_at": "2024-10-10T19:12:17.730Z",
+          "updated_at": "2024-10-10T19:12:17.730Z",
+          "display_at": "2024-10-10T19:12:17.730Z",
+          "affected_components": [
+            {
+              "code": "3t0npclljyyg",
+              "name": "North America - Ashburn, VA, United States - (IAD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3t0npclljyyg",
+          "name": "Ashburn, VA, United States - (IAD)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:30:01.380Z",
+          "updated_at": "2024-09-27T02:02:07.013Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-10-16T01:00:00.000Z",
+      "scheduled_until": "2024-10-17T05:00:00.000Z"
+    },
+    {
       "id": "fphmgc46xf62",
       "name": "PRG (Prague) on 2024-10-16",
       "status": "scheduled",
@@ -8053,86 +8181,6 @@
       ],
       "scheduled_for": "2024-10-10T18:00:00.000Z",
       "scheduled_until": "2024-10-10T23:00:00.000Z"
-    },
-    {
-      "id": "bq3fyzxnkbxr",
-      "name": "MCI (Kansas City) on 2024-10-10",
-      "status": "in_progress",
-      "created_at": "2024-10-10T13:26:15.898Z",
-      "updated_at": "2024-10-10T16:01:02.223Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/m40ypnlkm4dc",
-      "started_at": "2024-10-10T13:26:15.890Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "k0xfdt2f4mfl",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "bq3fyzxnkbxr",
-          "created_at": "2024-10-10T16:01:02.217Z",
-          "updated_at": "2024-10-10T16:01:02.217Z",
-          "display_at": "2024-10-10T16:01:02.217Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "f8w8h46k4mrw",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "bq3fyzxnkbxr",
-          "created_at": "2024-10-10T15:01:02.357Z",
-          "updated_at": "2024-10-10T15:01:02.357Z",
-          "display_at": "2024-10-10T15:01:02.357Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "yyvbxq8s180x",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MCI (Kansas City) datacenter on 2024-10-10 between 16:00 and 19:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "bq3fyzxnkbxr",
-          "created_at": "2024-10-10T13:26:15.971Z",
-          "updated_at": "2024-10-10T13:26:15.971Z",
-          "display_at": "2024-10-10T13:26:15.971Z",
-          "affected_components": [
-            {
-              "code": "t6hj728hzf16",
-              "name": "North America - Kansas City, MO, United States - (MCI)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "t6hj728hzf16",
-          "name": "Kansas City, MO, United States - (MCI)",
-          "status": "operational",
-          "created_at": "2017-03-31T14:39:31.135Z",
-          "updated_at": "2024-07-30T00:36:18.203Z",
-          "position": 18,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-10-10T16:00:58.000Z",
-      "scheduled_until": "2024-10-10T19:00:58.000Z"
     },
     {
       "id": "39ph03qbs13y",
