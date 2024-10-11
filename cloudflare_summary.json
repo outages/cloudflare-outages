@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-10T23:47:14.486Z"
+    "updated_at": "2024-10-11T01:13:22.699Z"
   },
   "components": [
     {
@@ -645,9 +645,9 @@
     {
       "id": "76swzd6htswh",
       "name": "Baku, Azerbaijan - (GYD)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-04-29T13:18:47.916Z",
-      "updated_at": "2024-10-08T09:01:51.226Z",
+      "updated_at": "2024-10-11T01:13:22.696Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1965,7 +1965,7 @@
       "name": "Detroit, MI, United States - (DTW)",
       "status": "operational",
       "created_at": "2017-04-10T16:40:13.626Z",
-      "updated_at": "2024-10-10T14:34:30.300Z",
+      "updated_at": "2024-10-11T00:46:08.198Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2863,9 +2863,9 @@
     {
       "id": "czwk809chdjt",
       "name": "Ouagadougou, Burkina Faso   - (OUA)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-09-02T23:41:26.128Z",
-      "updated_at": "2024-10-10T22:10:40.754Z",
+      "updated_at": "2024-10-11T00:03:14.835Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -6073,9 +6073,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2024-09-12T11:58:37.978Z",
+      "updated_at": "2024-10-11T00:55:51.353Z",
       "position": 66,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -7138,6 +7138,85 @@
   ],
   "incidents": [
     {
+      "id": "gpq7t9t3ktjd",
+      "name": "Issues creating R2 buckets",
+      "status": "investigating",
+      "created_at": "2024-10-11T00:55:51.326Z",
+      "updated_at": "2024-10-11T00:56:31.166Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/crkm3wlsnplv",
+      "started_at": "2024-10-11T00:55:51.319Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "b6y9vh71pcpz",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "gpq7t9t3ktjd",
+          "created_at": "2024-10-11T00:56:31.164Z",
+          "updated_at": "2024-10-11T00:56:31.164Z",
+          "display_at": "2024-10-11T00:56:31.164Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "yl6ljw8xr0f4",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue where some R2 users cannot create new buckets.",
+          "incident_id": "gpq7t9t3ktjd",
+          "created_at": "2024-10-11T00:55:51.388Z",
+          "updated_at": "2024-10-11T00:55:51.388Z",
+          "display_at": "2024-10-11T00:55:51.388Z",
+          "affected_components": [
+            {
+              "code": "ll1x88wwz4fq",
+              "name": "Cloudflare Sites and Services - Billing",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2024-10-11T00:55:51.353Z",
+          "position": 66,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "h6tkr8rhy74j",
       "name": "Issues with classification of some verified bot traffic",
       "status": "monitoring",
@@ -7371,73 +7450,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "qdfh4xq54yty",
-      "name": "DUB (Dublin) on 2024-10-11",
-      "status": "scheduled",
-      "created_at": "2024-10-10T08:15:06.489Z",
-      "updated_at": "2024-10-10T23:30:02.247Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/h2drns52nw18",
-      "started_at": "2024-10-10T08:15:06.481Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "szlljs5h0s2q",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "qdfh4xq54yty",
-          "created_at": "2024-10-10T23:30:02.169Z",
-          "updated_at": "2024-10-10T23:30:02.169Z",
-          "display_at": "2024-10-10T23:30:02.169Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "r91jqjlsztgr",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DUB (Dublin) datacenter on 2024-10-11 between 00:30 and 04:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "qdfh4xq54yty",
-          "created_at": "2024-10-10T08:15:06.556Z",
-          "updated_at": "2024-10-10T08:15:06.556Z",
-          "display_at": "2024-10-10T08:15:06.556Z",
-          "affected_components": [
-            {
-              "code": "wc7ysl06xslc",
-              "name": "Europe - Dublin, Ireland - (DUB)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "wc7ysl06xslc",
-          "name": "Dublin, Ireland - (DUB)",
-          "status": "operational",
-          "created_at": "2015-07-29T22:47:54.870Z",
-          "updated_at": "2024-09-25T06:38:46.641Z",
-          "position": 13,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-10-11T00:30:00.000Z",
-      "scheduled_until": "2024-10-11T04:30:00.000Z"
-    },
     {
       "id": "pkb97p0dm4pt",
       "name": "IAD (Ashburn) on 2024-10-11",
@@ -7817,60 +7829,6 @@
       "scheduled_until": "2024-10-16T05:00:00.000Z"
     },
     {
-      "id": "9gbr6pty23yd",
-      "name": "IAD (Ashburn) on 2024-10-16",
-      "status": "scheduled",
-      "created_at": "2024-10-10T19:12:17.669Z",
-      "updated_at": "2024-10-10T19:12:17.733Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/ld0qy7hfd0sv",
-      "started_at": "2024-10-10T19:12:17.661Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "6f66f900jsjd",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in IAD (Ashburn) datacenter between 2024-10-16 01:00 and 2024-10-17 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "9gbr6pty23yd",
-          "created_at": "2024-10-10T19:12:17.730Z",
-          "updated_at": "2024-10-10T19:12:17.730Z",
-          "display_at": "2024-10-10T19:12:17.730Z",
-          "affected_components": [
-            {
-              "code": "3t0npclljyyg",
-              "name": "North America - Ashburn, VA, United States - (IAD)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "3t0npclljyyg",
-          "name": "Ashburn, VA, United States - (IAD)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:30:01.380Z",
-          "updated_at": "2024-09-27T02:02:07.013Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-10-16T01:00:00.000Z",
-      "scheduled_until": "2024-10-17T05:00:00.000Z"
-    },
-    {
       "id": "4m5fp09vm9tj",
       "name": "ORF (Norfolk) on 2024-10-16",
       "status": "scheduled",
@@ -7912,6 +7870,60 @@
           "created_at": "2018-08-16T19:14:15.221Z",
           "updated_at": "2024-10-10T20:12:42.195Z",
           "position": 30,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-10-16T01:00:00.000Z",
+      "scheduled_until": "2024-10-17T05:00:00.000Z"
+    },
+    {
+      "id": "9gbr6pty23yd",
+      "name": "IAD (Ashburn) on 2024-10-16",
+      "status": "scheduled",
+      "created_at": "2024-10-10T19:12:17.669Z",
+      "updated_at": "2024-10-10T19:12:17.733Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/ld0qy7hfd0sv",
+      "started_at": "2024-10-10T19:12:17.661Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "6f66f900jsjd",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in IAD (Ashburn) datacenter between 2024-10-16 01:00 and 2024-10-17 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "9gbr6pty23yd",
+          "created_at": "2024-10-10T19:12:17.730Z",
+          "updated_at": "2024-10-10T19:12:17.730Z",
+          "display_at": "2024-10-10T19:12:17.730Z",
+          "affected_components": [
+            {
+              "code": "3t0npclljyyg",
+              "name": "North America - Ashburn, VA, United States - (IAD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3t0npclljyyg",
+          "name": "Ashburn, VA, United States - (IAD)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:30:01.380Z",
+          "updated_at": "2024-09-27T02:02:07.013Z",
+          "position": 2,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -7979,56 +7991,56 @@
       "scheduled_until": "2024-10-17T05:00:00.000Z"
     },
     {
-      "id": "t159n5f2xxps",
-      "name": "BOM (Mumbai) on 2024-10-10",
+      "id": "qdfh4xq54yty",
+      "name": "DUB (Dublin) on 2024-10-11",
       "status": "in_progress",
-      "created_at": "2024-10-08T11:30:08.090Z",
-      "updated_at": "2024-10-10T19:30:02.110Z",
+      "created_at": "2024-10-10T08:15:06.489Z",
+      "updated_at": "2024-10-11T00:30:02.123Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/xp1ytp9jjg5m",
-      "started_at": "2024-10-08T11:30:08.082Z",
+      "shortlink": "https://stspg.io/h2drns52nw18",
+      "started_at": "2024-10-10T08:15:06.481Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "qtss5phsy145",
+          "id": "7sfkbd44sc31",
           "status": "in_progress",
           "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "t159n5f2xxps",
-          "created_at": "2024-10-10T19:30:02.106Z",
-          "updated_at": "2024-10-10T19:30:02.106Z",
-          "display_at": "2024-10-10T19:30:02.106Z",
+          "incident_id": "qdfh4xq54yty",
+          "created_at": "2024-10-11T00:30:02.121Z",
+          "updated_at": "2024-10-11T00:30:02.121Z",
+          "display_at": "2024-10-11T00:30:02.121Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "mwrjmp56mhbn",
+          "id": "szlljs5h0s2q",
           "status": "scheduled",
           "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "t159n5f2xxps",
-          "created_at": "2024-10-10T18:30:03.405Z",
-          "updated_at": "2024-10-10T18:30:03.405Z",
-          "display_at": "2024-10-10T18:30:03.405Z",
+          "incident_id": "qdfh4xq54yty",
+          "created_at": "2024-10-10T23:30:02.169Z",
+          "updated_at": "2024-10-10T23:30:02.169Z",
+          "display_at": "2024-10-10T23:30:02.169Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "bx7w6h5sxvy3",
+          "id": "r91jqjlsztgr",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BOM (Mumbai) datacenter between 2024-10-10 19:30 and 2024-10-11 01:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "t159n5f2xxps",
-          "created_at": "2024-10-08T11:30:08.162Z",
-          "updated_at": "2024-10-08T11:30:08.162Z",
-          "display_at": "2024-10-08T11:30:08.162Z",
+          "body": "We will be performing scheduled maintenance in DUB (Dublin) datacenter on 2024-10-11 between 00:30 and 04:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "qdfh4xq54yty",
+          "created_at": "2024-10-10T08:15:06.556Z",
+          "updated_at": "2024-10-10T08:15:06.556Z",
+          "display_at": "2024-10-10T08:15:06.556Z",
           "affected_components": [
             {
-              "code": "t3d07wlg67nl",
-              "name": "Asia - Mumbai, India - (BOM)",
+              "code": "wc7ysl06xslc",
+              "name": "Europe - Dublin, Ireland - (DUB)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -8040,23 +8052,23 @@
       ],
       "components": [
         {
-          "id": "t3d07wlg67nl",
-          "name": "Mumbai, India - (BOM)",
+          "id": "wc7ysl06xslc",
+          "name": "Dublin, Ireland - (DUB)",
           "status": "operational",
-          "created_at": "2015-10-27T20:12:43.833Z",
-          "updated_at": "2024-09-29T07:43:49.264Z",
-          "position": 49,
+          "created_at": "2015-07-29T22:47:54.870Z",
+          "updated_at": "2024-09-25T06:38:46.641Z",
+          "position": 13,
           "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "77867vxkttgw",
+          "group_id": "zqxhg7y54vy8",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2024-10-10T19:30:00.000Z",
-      "scheduled_until": "2024-10-11T01:00:00.000Z"
+      "scheduled_for": "2024-10-11T00:30:00.000Z",
+      "scheduled_until": "2024-10-11T04:30:00.000Z"
     },
     {
       "id": "vg77qklgvp89",
