@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-23T14:46:21.974Z"
+    "updated_at": "2024-10-23T15:14:22.582Z"
   },
   "components": [
     {
@@ -2296,7 +2296,7 @@
       "name": "Dhaka, Bangladesh - (DAC)",
       "status": "under_maintenance",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2024-10-23T04:04:10.305Z",
+      "updated_at": "2024-10-23T15:02:31.626Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -3299,9 +3299,9 @@
     {
       "id": "jr54h8jh727k",
       "name": "Cairo, Egypt - (CAI)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-08-28T09:00:44.061Z",
-      "updated_at": "2024-10-23T14:45:12.012Z",
+      "updated_at": "2024-10-23T15:13:19.976Z",
       "position": 26,
       "description": null,
       "showcase": false,
@@ -3464,9 +3464,9 @@
     {
       "id": "vwctw131s16t",
       "name": "Nashville, United States - (BNA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-10-27T16:35:27.722Z",
-      "updated_at": "2024-10-23T09:11:45.065Z",
+      "updated_at": "2024-10-23T15:14:22.579Z",
       "position": 28,
       "description": null,
       "showcase": false,
@@ -3974,9 +3974,9 @@
     {
       "id": "fgfkmhddbpcm",
       "name": "Oslo, Norway - (OSL)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-01-19T03:21:43.927Z",
-      "updated_at": "2024-10-23T14:30:12.907Z",
+      "updated_at": "2024-10-23T15:02:30.855Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -4994,9 +4994,9 @@
     {
       "id": "msyl69slj4cy",
       "name": "Tirana, Albania - (TIA)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-08-05T21:45:58.884Z",
-      "updated_at": "2024-10-23T13:48:15.668Z",
+      "updated_at": "2024-10-23T15:13:19.155Z",
       "position": 49,
       "description": null,
       "showcase": false,
@@ -7158,7 +7158,7 @@
       "name": "Cloudflare WARP connectivity issues",
       "status": "identified",
       "created_at": "2024-10-23T13:36:17.458Z",
-      "updated_at": "2024-10-23T14:05:15.875Z",
+      "updated_at": "2024-10-23T15:12:13.218Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7166,6 +7166,26 @@
       "started_at": "2024-10-23T13:36:17.448Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "ftkyb91ph4js",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "sk04s1qz5wty",
+          "created_at": "2024-10-23T15:12:13.216Z",
+          "updated_at": "2024-10-23T15:12:13.216Z",
+          "display_at": "2024-10-23T15:12:13.216Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "3ljvs19f2wmz",
           "status": "identified",
@@ -7312,78 +7332,11 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "h7hzntr1r0c9",
-      "name": "BNA (Nashville) on 2024-10-23",
-      "status": "scheduled",
-      "created_at": "2024-10-22T22:24:33.003Z",
-      "updated_at": "2024-10-23T14:00:09.346Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/4b0skskd33w4",
-      "started_at": "2024-10-22T22:24:32.997Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "zjmygtv26gz5",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "h7hzntr1r0c9",
-          "created_at": "2024-10-23T14:00:09.185Z",
-          "updated_at": "2024-10-23T14:00:09.185Z",
-          "display_at": "2024-10-23T14:00:09.185Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "fnby7x9bpy0s",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BNA (Nashville) datacenter on 2024-10-23 between 15:00 and 23:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "h7hzntr1r0c9",
-          "created_at": "2024-10-22T22:24:33.051Z",
-          "updated_at": "2024-10-22T22:24:33.051Z",
-          "display_at": "2024-10-22T22:24:33.051Z",
-          "affected_components": [
-            {
-              "code": "vwctw131s16t",
-              "name": "North America - Nashville, United States - (BNA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "vwctw131s16t",
-          "name": "Nashville, United States - (BNA)",
-          "status": "operational",
-          "created_at": "2022-10-27T16:35:27.722Z",
-          "updated_at": "2024-10-23T09:11:45.065Z",
-          "position": 28,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-10-27",
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-10-23T15:00:00.000Z",
-      "scheduled_until": "2024-10-23T23:00:00.000Z"
-    },
-    {
       "id": "zkc1g20z2hkq",
       "name": "MEL (Melbourne) on 2024-10-23",
       "status": "scheduled",
       "created_at": "2024-10-22T22:48:33.857Z",
-      "updated_at": "2024-10-22T22:48:33.923Z",
+      "updated_at": "2024-10-23T15:00:03.868Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7391,6 +7344,19 @@
       "started_at": "2024-10-22T22:48:33.849Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "l5cbs5qzwd00",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "zkc1g20z2hkq",
+          "created_at": "2024-10-23T15:00:03.807Z",
+          "updated_at": "2024-10-23T15:00:03.807Z",
+          "display_at": "2024-10-23T15:00:03.807Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "t4xd3f9xgskf",
           "status": "scheduled",
@@ -8639,6 +8605,86 @@
       ],
       "scheduled_for": "2024-11-04T18:00:00.000Z",
       "scheduled_until": "2024-11-04T22:30:00.000Z"
+    },
+    {
+      "id": "h7hzntr1r0c9",
+      "name": "BNA (Nashville) on 2024-10-23",
+      "status": "in_progress",
+      "created_at": "2024-10-22T22:24:33.003Z",
+      "updated_at": "2024-10-23T15:00:02.500Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/4b0skskd33w4",
+      "started_at": "2024-10-22T22:24:32.997Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "l9q6zpgzrcx5",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "h7hzntr1r0c9",
+          "created_at": "2024-10-23T15:00:02.494Z",
+          "updated_at": "2024-10-23T15:00:02.494Z",
+          "display_at": "2024-10-23T15:00:02.494Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "zjmygtv26gz5",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "h7hzntr1r0c9",
+          "created_at": "2024-10-23T14:00:09.185Z",
+          "updated_at": "2024-10-23T14:00:09.185Z",
+          "display_at": "2024-10-23T14:00:09.185Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "fnby7x9bpy0s",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in BNA (Nashville) datacenter on 2024-10-23 between 15:00 and 23:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "h7hzntr1r0c9",
+          "created_at": "2024-10-22T22:24:33.051Z",
+          "updated_at": "2024-10-22T22:24:33.051Z",
+          "display_at": "2024-10-22T22:24:33.051Z",
+          "affected_components": [
+            {
+              "code": "vwctw131s16t",
+              "name": "North America - Nashville, United States - (BNA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vwctw131s16t",
+          "name": "Nashville, United States - (BNA)",
+          "status": "partial_outage",
+          "created_at": "2022-10-27T16:35:27.722Z",
+          "updated_at": "2024-10-23T15:14:22.579Z",
+          "position": 28,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-10-27",
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-10-23T15:00:00.000Z",
+      "scheduled_until": "2024-10-23T23:00:00.000Z"
     }
   ],
   "status": {
