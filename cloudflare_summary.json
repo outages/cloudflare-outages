@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-24T19:46:35.057Z"
+    "updated_at": "2024-10-24T20:18:52.318Z"
   },
   "components": [
     {
@@ -3735,9 +3735,9 @@
     {
       "id": "z0yd3sxqjqdm",
       "name": "D1",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-02-09T08:57:38.825Z",
-      "updated_at": "2024-10-10T18:12:37.521Z",
+      "updated_at": "2024-10-24T20:00:00.751Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -5325,9 +5325,9 @@
     {
       "id": "w337283spffw",
       "name": "Yekaterinburg, Russia - (SVX)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-09-14T08:26:33.033Z",
-      "updated_at": "2024-10-24T14:39:13.027Z",
+      "updated_at": "2024-10-24T20:18:52.314Z",
       "position": 54,
       "description": null,
       "showcase": false,
@@ -7169,6 +7169,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "sn6jc431ftd7",
+      "name": "D1 is experiencing network connectivity issues",
+      "status": "investigating",
+      "created_at": "2024-10-24T20:00:00.720Z",
+      "updated_at": "2024-10-24T20:00:00.803Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/jcdbdg27pxjn",
+      "started_at": "2024-10-24T20:00:00.713Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ckrrl78n1h8q",
+          "status": "investigating",
+          "body": "Requests to D1 databases may fail due to network connectivity issues beginning at 19:30 UTC.",
+          "incident_id": "sn6jc431ftd7",
+          "created_at": "2024-10-24T20:00:00.800Z",
+          "updated_at": "2024-10-24T20:00:00.800Z",
+          "display_at": "2024-10-24T20:00:00.800Z",
+          "affected_components": [
+            {
+              "code": "z0yd3sxqjqdm",
+              "name": "Cloudflare Sites and Services - D1",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "z0yd3sxqjqdm",
+          "name": "D1",
+          "status": "degraded_performance",
+          "created_at": "2024-02-09T08:57:38.825Z",
+          "updated_at": "2024-10-24T20:00:00.751Z",
+          "position": 31,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-02-09",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "dsv8j8fq2stq",
       "name": "Cloudflare Data Loss Prevention Failure to Sync Microsoft Labels",
