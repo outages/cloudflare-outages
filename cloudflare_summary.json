@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-28T07:58:13.468Z"
+    "updated_at": "2024-10-28T09:30:55.859Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3225,9 +3225,9 @@
     {
       "id": "99thfnz1q9kr",
       "name": "Cloud Connector",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-08-13T17:44:27.931Z",
-      "updated_at": "2024-09-12T11:58:30.807Z",
+      "updated_at": "2024-10-28T09:30:55.767Z",
       "position": 25,
       "description": "Cloud Connector allows you to route matching incoming traffic from your website to a public cloud provider that you define such as AWS, Google Cloud, and Azure.",
       "showcase": false,
@@ -7169,6 +7169,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "rdkyhwgj83gj",
+      "name": "Cloudflare Cloud Connector: Issues with Google Cloud Storage",
+      "status": "identified",
+      "created_at": "2024-10-28T09:30:55.714Z",
+      "updated_at": "2024-10-28T09:30:55.855Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/6zz1gns89hck",
+      "started_at": "2024-10-28T09:30:55.703Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "mq718bq80v5w",
+          "status": "identified",
+          "body": "Cloudflare is aware of, and investigating an issue which potentially impacts multiple customers: Cloud Connector users will not be able to configure new rules for Google Cloud Storage. Nevertheless, existing rules will work as expected.\nWe have identified the issue and a fix is being implemented.",
+          "incident_id": "rdkyhwgj83gj",
+          "created_at": "2024-10-28T09:30:55.851Z",
+          "updated_at": "2024-10-28T09:30:55.851Z",
+          "display_at": "2024-10-28T09:30:55.851Z",
+          "affected_components": [
+            {
+              "code": "99thfnz1q9kr",
+              "name": "Cloudflare Sites and Services - Cloud Connector",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "99thfnz1q9kr",
+          "name": "Cloud Connector",
+          "status": "degraded_performance",
+          "created_at": "2024-08-13T17:44:27.931Z",
+          "updated_at": "2024-10-28T09:30:55.767Z",
+          "position": 25,
+          "description": "Cloud Connector allows you to route matching incoming traffic from your website to a public cloud provider that you define such as AWS, Google Cloud, and Azure.",
+          "showcase": false,
+          "start_date": "2024-08-13",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
