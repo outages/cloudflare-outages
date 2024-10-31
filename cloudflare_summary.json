@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-31T13:42:57.490Z"
+    "updated_at": "2024-10-31T14:14:25.771Z"
   },
   "components": [
     {
@@ -1041,7 +1041,7 @@
       "name": "Bandar Seri Begawan, Brunei - (BWN)",
       "status": "operational",
       "created_at": "2020-02-25T07:32:56.004Z",
-      "updated_at": "2024-10-30T17:10:28.670Z",
+      "updated_at": "2024-10-31T14:14:25.769Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -6225,9 +6225,9 @@
     {
       "id": "56zs2vmr81l0",
       "name": "Yerevan, Armenia - (EVN)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2017-03-06T05:40:56.147Z",
-      "updated_at": "2024-10-31T13:15:00.092Z",
+      "updated_at": "2024-10-31T14:09:04.067Z",
       "position": 72,
       "description": null,
       "showcase": false,
@@ -7170,6 +7170,132 @@
   ],
   "incidents": [
     {
+      "id": "j08xpybf83jx",
+      "name": "Issues with Worker AI Responses",
+      "status": "identified",
+      "created_at": "2024-10-31T14:09:37.778Z",
+      "updated_at": "2024-10-31T14:14:00.889Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/chk3xjhc2lc4",
+      "started_at": "2024-10-31T14:09:37.772Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "qnbfczfp068t",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "j08xpybf83jx",
+          "created_at": "2024-10-31T14:14:00.887Z",
+          "updated_at": "2024-10-31T14:14:00.887Z",
+          "display_at": "2024-10-31T14:14:00.887Z",
+          "affected_components": [
+            {
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "m4zm2zg2d9dv",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue with Workers AI where model responses are truncated on @cf/meta/llama-3.1-8b-instruct. Further detail will be provided as more information becomes available.",
+          "incident_id": "j08xpybf83jx",
+          "created_at": "2024-10-31T14:09:37.826Z",
+          "updated_at": "2024-10-31T14:09:37.826Z",
+          "display_at": "2024-10-31T14:09:37.826Z",
+          "affected_components": [
+            {
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "zvm7mqn92xzc",
+          "name": "Workers AI",
+          "status": "operational",
+          "created_at": "2024-02-14T15:05:51.274Z",
+          "updated_at": "2024-10-02T00:11:50.796Z",
+          "position": 93,
+          "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
+          "showcase": false,
+          "start_date": "2024-02-14",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "dq5tlqmzj3kz",
+      "name": "Intermittent Challenges and Turnstile Failures in Eastern Europe",
+      "status": "investigating",
+      "created_at": "2024-10-31T14:06:00.199Z",
+      "updated_at": "2024-10-31T14:06:18.554Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/tk8fbd0y83qr",
+      "started_at": "2024-10-31T14:06:00.191Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "gzv6bn6hgcyh",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue with intermittent Challenges and Turnstile failures in Eastern Europe. Further detail will be provided as more information becomes available.",
+          "incident_id": "dq5tlqmzj3kz",
+          "created_at": "2024-10-31T14:06:00.254Z",
+          "updated_at": "2024-10-31T14:06:00.254Z",
+          "display_at": "2024-10-31T14:06:00.254Z",
+          "affected_components": [
+            {
+              "code": "m4jywscr0n0k",
+              "name": "Cloudflare Sites and Services - Turnstile",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "m4jywscr0n0k",
+          "name": "Turnstile",
+          "status": "operational",
+          "created_at": "2023-01-19T17:03:40.590Z",
+          "updated_at": "2024-10-29T02:52:42.207Z",
+          "position": 86,
+          "description": "Turnstile is a user-friendly, privacy-preserving alternative to CAPTCHA.",
+          "showcase": false,
+          "start_date": "2023-01-19",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
       "status": "investigating",
@@ -7254,60 +7380,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "gtdf52zpdwnk",
-      "name": "TLL (Tallinn) on 2024-10-31",
-      "status": "scheduled",
-      "created_at": "2024-10-31T13:08:17.475Z",
-      "updated_at": "2024-10-31T13:08:17.667Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/pczfdr21cqx6",
-      "started_at": "2024-10-31T13:08:17.462Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "2hd1xhvy5h44",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in TLL (Tallinn) datacenter on 2024-10-31 between 14:00 and 15:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "gtdf52zpdwnk",
-          "created_at": "2024-10-31T13:08:17.659Z",
-          "updated_at": "2024-10-31T13:08:17.659Z",
-          "display_at": "2024-10-31T13:08:17.659Z",
-          "affected_components": [
-            {
-              "code": "fymk47068y1s",
-              "name": "Europe - Tallinn, Estonia - (TLL)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "fymk47068y1s",
-          "name": "Tallinn, Estonia - (TLL)",
-          "status": "operational",
-          "created_at": "2018-03-30T17:48:33.402Z",
-          "updated_at": "2024-10-29T21:52:02.823Z",
-          "position": 46,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-10-31T14:00:05.000Z",
-      "scheduled_until": "2024-10-31T15:00:05.000Z"
-    },
     {
       "id": "5p0fr5pf4nl9",
       "name": "LHR (London) on 2024-10-31",
@@ -7417,60 +7489,6 @@
       "scheduled_until": "2024-11-01T06:00:00.000Z"
     },
     {
-      "id": "h68k0yhr1c4z",
-      "name": "MIA (Miami) on 2024-11-01",
-      "status": "scheduled",
-      "created_at": "2024-10-31T09:56:37.413Z",
-      "updated_at": "2024-10-31T09:56:37.485Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/8szzccm7m7v2",
-      "started_at": "2024-10-31T09:56:37.404Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "9my0wdxmqmtt",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MIA (Miami) datacenter on 2024-11-01 between 09:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "h68k0yhr1c4z",
-          "created_at": "2024-10-31T09:56:37.482Z",
-          "updated_at": "2024-10-31T09:56:37.482Z",
-          "display_at": "2024-10-31T09:56:37.482Z",
-          "affected_components": [
-            {
-              "code": "mvbjk0vw3krv",
-              "name": "North America - Miami, FL, United States - (MIA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "mvbjk0vw3krv",
-          "name": "Miami, FL, United States - (MIA)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:31:43.401Z",
-          "updated_at": "2024-10-15T16:32:50.312Z",
-          "position": 24,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-11-01T09:00:00.000Z",
-      "scheduled_until": "2024-11-01T12:00:00.000Z"
-    },
-    {
       "id": "y8qrtz2kb0dt",
       "name": "DFW (Dallas) on 2024-11-01",
       "status": "scheduled",
@@ -7523,6 +7541,60 @@
       ],
       "scheduled_for": "2024-11-01T09:00:00.000Z",
       "scheduled_until": "2024-11-01T13:00:00.000Z"
+    },
+    {
+      "id": "h68k0yhr1c4z",
+      "name": "MIA (Miami) on 2024-11-01",
+      "status": "scheduled",
+      "created_at": "2024-10-31T09:56:37.413Z",
+      "updated_at": "2024-10-31T09:56:37.485Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/8szzccm7m7v2",
+      "started_at": "2024-10-31T09:56:37.404Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "9my0wdxmqmtt",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MIA (Miami) datacenter on 2024-11-01 between 09:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "h68k0yhr1c4z",
+          "created_at": "2024-10-31T09:56:37.482Z",
+          "updated_at": "2024-10-31T09:56:37.482Z",
+          "display_at": "2024-10-31T09:56:37.482Z",
+          "affected_components": [
+            {
+              "code": "mvbjk0vw3krv",
+              "name": "North America - Miami, FL, United States - (MIA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mvbjk0vw3krv",
+          "name": "Miami, FL, United States - (MIA)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:31:43.401Z",
+          "updated_at": "2024-10-15T16:32:50.312Z",
+          "position": 24,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-11-01T09:00:00.000Z",
+      "scheduled_until": "2024-11-01T12:00:00.000Z"
     },
     {
       "id": "rvyjnt7m44gk",
@@ -7685,6 +7757,73 @@
       ],
       "scheduled_for": "2024-11-05T18:30:00.000Z",
       "scheduled_until": "2024-11-05T22:30:00.000Z"
+    },
+    {
+      "id": "gtdf52zpdwnk",
+      "name": "TLL (Tallinn) on 2024-10-31",
+      "status": "in_progress",
+      "created_at": "2024-10-31T13:08:17.475Z",
+      "updated_at": "2024-10-31T14:01:02.133Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/pczfdr21cqx6",
+      "started_at": "2024-10-31T13:08:17.462Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "26dbs7g0tlny",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "gtdf52zpdwnk",
+          "created_at": "2024-10-31T14:01:02.130Z",
+          "updated_at": "2024-10-31T14:01:02.130Z",
+          "display_at": "2024-10-31T14:01:02.130Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "2hd1xhvy5h44",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in TLL (Tallinn) datacenter on 2024-10-31 between 14:00 and 15:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "gtdf52zpdwnk",
+          "created_at": "2024-10-31T13:08:17.659Z",
+          "updated_at": "2024-10-31T13:08:17.659Z",
+          "display_at": "2024-10-31T13:08:17.659Z",
+          "affected_components": [
+            {
+              "code": "fymk47068y1s",
+              "name": "Europe - Tallinn, Estonia - (TLL)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "fymk47068y1s",
+          "name": "Tallinn, Estonia - (TLL)",
+          "status": "operational",
+          "created_at": "2018-03-30T17:48:33.402Z",
+          "updated_at": "2024-10-29T21:52:02.823Z",
+          "position": 46,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-10-31T14:00:05.000Z",
+      "scheduled_until": "2024-10-31T15:00:05.000Z"
     },
     {
       "id": "vfmysp5fwwl5",
