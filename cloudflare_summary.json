@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-04T17:45:10.762Z"
+    "updated_at": "2024-11-04T18:21:29.535Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -828,9 +828,9 @@
     {
       "id": "5wtvzd626rd8",
       "name": "Bangkok, Thailand - (BKK)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2016-04-21T05:37:43.134Z",
-      "updated_at": "2024-11-04T06:06:37.683Z",
+      "updated_at": "2024-11-04T18:17:29.126Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2055,9 +2055,9 @@
     {
       "id": "4m8mfwx124tk",
       "name": "Manama, Bahrain - (BAH)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-10-24T15:22:31.337Z",
-      "updated_at": "2024-11-04T16:29:46.667Z",
+      "updated_at": "2024-11-04T18:12:06.657Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -3930,9 +3930,9 @@
     {
       "id": "4fx4674ygqvr",
       "name": "Nicosia, Cyprus - (LCA)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-04-24T09:39:46.053Z",
-      "updated_at": "2024-11-04T16:13:37.993Z",
+      "updated_at": "2024-11-04T18:12:07.087Z",
       "position": 34,
       "description": null,
       "showcase": false,
@@ -6585,9 +6585,9 @@
     {
       "id": "k04jkcpzxn94",
       "name": "WARP",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-09-30T09:25:38.587Z",
-      "updated_at": "2024-10-23T16:07:34.038Z",
+      "updated_at": "2024-11-04T18:19:02.447Z",
       "position": 89,
       "description": null,
       "showcase": false,
@@ -6735,9 +6735,9 @@
     {
       "id": "kf0ktv29xrfy",
       "name": "Zero Trust",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-08T15:53:09.058Z",
-      "updated_at": "2024-09-12T13:55:15.379Z",
+      "updated_at": "2024-11-04T18:19:02.473Z",
       "position": 97,
       "description": null,
       "showcase": false,
@@ -7170,6 +7170,133 @@
   ],
   "incidents": [
     {
+      "id": "2k3ss6fsv9km",
+      "name": "Universal SSL backup certificate issuance delays",
+      "status": "investigating",
+      "created_at": "2024-11-04T18:21:14.615Z",
+      "updated_at": "2024-11-04T18:21:29.531Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/qs21f4dzgm6v",
+      "started_at": "2024-11-04T18:21:14.601Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "fk605h664v73",
+          "status": "investigating",
+          "body": "Universal SSL backup certificates issuance is delayed. Our primary certificates pipeline for Universal SSL is not impacted and certificates at the edge are not impacted.",
+          "incident_id": "2k3ss6fsv9km",
+          "created_at": "2024-11-04T18:21:14.712Z",
+          "updated_at": "2024-11-04T18:21:14.712Z",
+          "display_at": "2024-11-04T18:21:14.712Z",
+          "affected_components": [
+            {
+              "code": "cghykwlwsmn5",
+              "name": "Cloudflare Sites and Services - SSL Certificate Provisioning",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "cghykwlwsmn5",
+          "name": "SSL Certificate Provisioning",
+          "status": "operational",
+          "created_at": "2016-03-17T15:27:39.778Z",
+          "updated_at": "2024-09-12T11:58:31.302Z",
+          "position": 79,
+          "description": "Provisioning service for edge certificates like Universal and Advanced SSL",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "vln3vzty0b2s",
+      "name": "Warp Egress IPv6 GeoIP Data",
+      "status": "investigating",
+      "created_at": "2024-11-04T18:19:02.402Z",
+      "updated_at": "2024-11-04T18:19:02.549Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/7sbccdfwtxbq",
+      "started_at": "2024-11-04T18:19:02.392Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "kcdzpdv820tq",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare WARP and Cloudflare Zero Trust. Cloudflare WARP and Zero Trust users may experience incorrect GeoIP data for IPv6 connections.",
+          "incident_id": "vln3vzty0b2s",
+          "created_at": "2024-11-04T18:19:02.545Z",
+          "updated_at": "2024-11-04T18:19:02.545Z",
+          "display_at": "2024-11-04T18:19:02.545Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k04jkcpzxn94",
+          "name": "WARP",
+          "status": "degraded_performance",
+          "created_at": "2019-09-30T09:25:38.587Z",
+          "updated_at": "2024-11-04T18:19:02.447Z",
+          "position": 89,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "kf0ktv29xrfy",
+          "name": "Zero Trust",
+          "status": "degraded_performance",
+          "created_at": "2021-04-08T15:53:09.058Z",
+          "updated_at": "2024-11-04T18:19:02.473Z",
+          "position": 97,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
       "status": "investigating",
@@ -7254,73 +7381,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "yfg66p07mntn",
-      "name": "SIN (Singapore) on 2024-11-04",
-      "status": "scheduled",
-      "created_at": "2024-10-22T05:36:20.401Z",
-      "updated_at": "2024-11-04T17:00:03.068Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/dd4jn85xyv6p",
-      "started_at": "2024-10-22T05:36:20.395Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "hj9wfwylv6jr",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "yfg66p07mntn",
-          "created_at": "2024-11-04T17:00:02.968Z",
-          "updated_at": "2024-11-04T17:00:02.968Z",
-          "display_at": "2024-11-04T17:00:02.968Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "bycf5gbvj1w6",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SIN (Singapore) datacenter on 2024-11-04 between 18:00 and 22:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "yfg66p07mntn",
-          "created_at": "2024-10-22T05:36:20.447Z",
-          "updated_at": "2024-10-22T05:36:20.447Z",
-          "display_at": "2024-10-22T05:36:20.447Z",
-          "affected_components": [
-            {
-              "code": "18p6r93swmbl",
-              "name": "Asia - Singapore, Singapore - (SIN)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "18p6r93swmbl",
-          "name": "Singapore, Singapore - (SIN)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:44:15.897Z",
-          "updated_at": "2024-09-17T05:43:33.076Z",
-          "position": 59,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-11-04T18:00:00.000Z",
-      "scheduled_until": "2024-11-04T22:30:00.000Z"
-    },
     {
       "id": "g9wzfgf5hbz7",
       "name": "ORD (Chicago) on 2024-11-05",
@@ -7718,6 +7778,86 @@
       ],
       "scheduled_for": "2024-11-19T18:00:00.000Z",
       "scheduled_until": "2024-11-19T21:00:00.000Z"
+    },
+    {
+      "id": "yfg66p07mntn",
+      "name": "SIN (Singapore) on 2024-11-04",
+      "status": "in_progress",
+      "created_at": "2024-10-22T05:36:20.401Z",
+      "updated_at": "2024-11-04T18:00:02.171Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/dd4jn85xyv6p",
+      "started_at": "2024-10-22T05:36:20.395Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "862rwwh6gsh3",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "yfg66p07mntn",
+          "created_at": "2024-11-04T18:00:02.166Z",
+          "updated_at": "2024-11-04T18:00:02.166Z",
+          "display_at": "2024-11-04T18:00:02.166Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "hj9wfwylv6jr",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "yfg66p07mntn",
+          "created_at": "2024-11-04T17:00:02.968Z",
+          "updated_at": "2024-11-04T17:00:02.968Z",
+          "display_at": "2024-11-04T17:00:02.968Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "bycf5gbvj1w6",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SIN (Singapore) datacenter on 2024-11-04 between 18:00 and 22:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "yfg66p07mntn",
+          "created_at": "2024-10-22T05:36:20.447Z",
+          "updated_at": "2024-10-22T05:36:20.447Z",
+          "display_at": "2024-10-22T05:36:20.447Z",
+          "affected_components": [
+            {
+              "code": "18p6r93swmbl",
+              "name": "Asia - Singapore, Singapore - (SIN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "18p6r93swmbl",
+          "name": "Singapore, Singapore - (SIN)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:44:15.897Z",
+          "updated_at": "2024-09-17T05:43:33.076Z",
+          "position": 59,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-11-04T18:00:00.000Z",
+      "scheduled_until": "2024-11-04T22:30:00.000Z"
     }
   ],
   "status": {
