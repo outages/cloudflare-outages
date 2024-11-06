@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-06T15:42:57.622Z"
+    "updated_at": "2024-11-06T16:16:02.259Z"
   },
   "components": [
     {
@@ -707,9 +707,9 @@
     {
       "id": "d4nfj71p66fy",
       "name": "Belém, Brazil - (BEL)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-08-19T14:52:39.395Z",
-      "updated_at": "2024-11-06T14:55:57.312Z",
+      "updated_at": "2024-11-06T16:10:19.396Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -4410,9 +4410,9 @@
     {
       "id": "pxfjpfczss60",
       "name": "San Diego, CA, United States - (SAN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2017-05-09T22:07:46.925Z",
-      "updated_at": "2024-10-30T11:02:34.098Z",
+      "updated_at": "2024-11-06T16:16:02.257Z",
       "position": 41,
       "description": null,
       "showcase": false,
@@ -7172,16 +7172,36 @@
     {
       "id": "whpjq30y8wc7",
       "name": "Cloudflare Workers AI Issues",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2024-11-06T14:46:26.640Z",
-      "updated_at": "2024-11-06T14:47:05.411Z",
-      "monitoring_at": null,
+      "updated_at": "2024-11-06T16:03:45.306Z",
+      "monitoring_at": "2024-11-06T16:03:45.289Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/s1v7wrm83tbq",
       "started_at": "2024-11-06T14:46:26.630Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "zqbyjdqsjw98",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "whpjq30y8wc7",
+          "created_at": "2024-11-06T16:03:45.289Z",
+          "updated_at": "2024-11-06T16:03:45.289Z",
+          "display_at": "2024-11-06T16:03:45.289Z",
+          "affected_components": [
+            {
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "s52wy7mbfwzq",
           "status": "investigating",
@@ -7328,43 +7348,30 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "jz1z708kzh1k",
-      "name": "LAX (Los Angeles) on 2024-11-06",
+      "id": "rvqlhv0b85f1",
+      "name": "FRA (Frankfurt) on 2024-11-07",
       "status": "scheduled",
-      "created_at": "2024-11-05T19:18:36.245Z",
-      "updated_at": "2024-11-06T15:00:04.934Z",
+      "created_at": "2024-11-05T11:44:35.477Z",
+      "updated_at": "2024-11-05T11:44:35.631Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/kct3zz9rm2f5",
-      "started_at": "2024-11-05T19:18:36.238Z",
+      "shortlink": "https://stspg.io/1jtdvt4vktlm",
+      "started_at": "2024-11-05T11:44:35.458Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "7nb1r72w10vt",
+          "id": "04bt0mcm4w11",
           "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "jz1z708kzh1k",
-          "created_at": "2024-11-06T15:00:04.707Z",
-          "updated_at": "2024-11-06T15:00:04.707Z",
-          "display_at": "2024-11-06T15:00:04.707Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "f21z36ym61g8",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter between 2024-11-06 16:00 and 2024-11-07 00:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "jz1z708kzh1k",
-          "created_at": "2024-11-05T19:18:36.300Z",
-          "updated_at": "2024-11-05T19:18:36.300Z",
-          "display_at": "2024-11-05T19:18:36.300Z",
+          "body": "We will be performing scheduled maintenance in FRA (Frankfurt) datacenter on 2024-11-07 between 01:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "rvqlhv0b85f1",
+          "created_at": "2024-11-05T11:44:35.625Z",
+          "updated_at": "2024-11-05T11:44:35.625Z",
+          "display_at": "2024-11-05T11:44:35.625Z",
           "affected_components": [
             {
-              "code": "38w4zp21dlkc",
-              "name": "North America - Los Angeles, CA, United States - (LAX)",
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -7376,23 +7383,23 @@
       ],
       "components": [
         {
-          "id": "38w4zp21dlkc",
-          "name": "Los Angeles, CA, United States - (LAX)",
+          "id": "rbnhbzgld936",
+          "name": "Frankfurt, Germany - (FRA)",
           "status": "operational",
-          "created_at": "2014-10-27T19:24:27.591Z",
-          "updated_at": "2024-06-18T21:50:20.618Z",
-          "position": 20,
+          "created_at": "2014-10-27T20:37:25.480Z",
+          "updated_at": "2024-09-14T13:55:21.360Z",
+          "position": 16,
           "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "4l01sk5cdn5c",
+          "group_id": "zqxhg7y54vy8",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2024-11-06T16:00:00.000Z",
-      "scheduled_until": "2024-11-07T00:00:00.000Z"
+      "scheduled_for": "2024-11-07T01:00:00.000Z",
+      "scheduled_until": "2024-11-07T05:00:00.000Z"
     },
     {
       "id": "14521yf399t4",
@@ -7436,60 +7443,6 @@
           "created_at": "2014-10-27T21:42:32.096Z",
           "updated_at": "2024-10-17T05:39:17.310Z",
           "position": 38,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-11-07T01:00:00.000Z",
-      "scheduled_until": "2024-11-07T05:00:00.000Z"
-    },
-    {
-      "id": "rvqlhv0b85f1",
-      "name": "FRA (Frankfurt) on 2024-11-07",
-      "status": "scheduled",
-      "created_at": "2024-11-05T11:44:35.477Z",
-      "updated_at": "2024-11-05T11:44:35.631Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/1jtdvt4vktlm",
-      "started_at": "2024-11-05T11:44:35.458Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "04bt0mcm4w11",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in FRA (Frankfurt) datacenter on 2024-11-07 between 01:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "rvqlhv0b85f1",
-          "created_at": "2024-11-05T11:44:35.625Z",
-          "updated_at": "2024-11-05T11:44:35.625Z",
-          "display_at": "2024-11-05T11:44:35.625Z",
-          "affected_components": [
-            {
-              "code": "rbnhbzgld936",
-              "name": "Europe - Frankfurt, Germany - (FRA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rbnhbzgld936",
-          "name": "Frankfurt, Germany - (FRA)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:37:25.480Z",
-          "updated_at": "2024-09-14T13:55:21.360Z",
-          "position": 16,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -7993,6 +7946,86 @@
       ],
       "scheduled_for": "2024-11-20T18:00:00.000Z",
       "scheduled_until": "2024-11-20T23:00:00.000Z"
+    },
+    {
+      "id": "jz1z708kzh1k",
+      "name": "LAX (Los Angeles) on 2024-11-06",
+      "status": "in_progress",
+      "created_at": "2024-11-05T19:18:36.245Z",
+      "updated_at": "2024-11-06T16:00:02.256Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/kct3zz9rm2f5",
+      "started_at": "2024-11-05T19:18:36.238Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "43mbznxs149l",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "jz1z708kzh1k",
+          "created_at": "2024-11-06T16:00:02.253Z",
+          "updated_at": "2024-11-06T16:00:02.253Z",
+          "display_at": "2024-11-06T16:00:02.253Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "7nb1r72w10vt",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "jz1z708kzh1k",
+          "created_at": "2024-11-06T15:00:04.707Z",
+          "updated_at": "2024-11-06T15:00:04.707Z",
+          "display_at": "2024-11-06T15:00:04.707Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "f21z36ym61g8",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter between 2024-11-06 16:00 and 2024-11-07 00:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "jz1z708kzh1k",
+          "created_at": "2024-11-05T19:18:36.300Z",
+          "updated_at": "2024-11-05T19:18:36.300Z",
+          "display_at": "2024-11-05T19:18:36.300Z",
+          "affected_components": [
+            {
+              "code": "38w4zp21dlkc",
+              "name": "North America - Los Angeles, CA, United States - (LAX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "38w4zp21dlkc",
+          "name": "Los Angeles, CA, United States - (LAX)",
+          "status": "operational",
+          "created_at": "2014-10-27T19:24:27.591Z",
+          "updated_at": "2024-06-18T21:50:20.618Z",
+          "position": 20,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-11-06T16:00:00.000Z",
+      "scheduled_until": "2024-11-07T00:00:00.000Z"
     }
   ],
   "status": {
