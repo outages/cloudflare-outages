@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-07T13:01:02.194Z"
+    "updated_at": "2024-11-07T13:22:10.702Z"
   },
   "components": [
     {
@@ -2610,9 +2610,9 @@
     {
       "id": "ljllh1921z0m",
       "name": "Nairobi, Kenya - (NBO)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2020-10-30T04:22:58.259Z",
-      "updated_at": "2024-11-04T17:45:10.759Z",
+      "updated_at": "2024-11-07T13:22:10.700Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -6735,9 +6735,9 @@
     {
       "id": "kf0ktv29xrfy",
       "name": "Zero Trust",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-08T15:53:09.058Z",
-      "updated_at": "2024-11-05T03:05:13.119Z",
+      "updated_at": "2024-11-07T13:09:27.369Z",
       "position": 97,
       "description": null,
       "showcase": false,
@@ -6750,9 +6750,9 @@
     {
       "id": "276xk3r83js7",
       "name": "Zero Trust Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-19T18:51:08.811Z",
-      "updated_at": "2024-09-12T13:55:15.389Z",
+      "updated_at": "2024-11-07T13:09:27.389Z",
       "position": 98,
       "description": "Cloudflare Zero Trust Dashboard where customers can view and make changes to their Cloudflare Gateway configurations at https://dash.teams.cloudflare.com",
       "showcase": false,
@@ -7172,9 +7172,9 @@
     {
       "id": "s0j6g2yw785d",
       "name": "Cloudflare Workers AI - Issues with specific model",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2024-11-07T11:43:46.599Z",
-      "updated_at": "2024-11-07T11:43:46.695Z",
+      "updated_at": "2024-11-07T13:14:46.122Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7182,6 +7182,26 @@
       "started_at": "2024-11-07T11:43:46.591Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "8qdj0ls4cxyy",
+          "status": "identified",
+          "body": "Since 12:00 UTC usage of Workers AI model Llama 3.1-70B has been remediated. Containers are back in health and we are monitoring.",
+          "incident_id": "s0j6g2yw785d",
+          "created_at": "2024-11-07T13:14:46.119Z",
+          "updated_at": "2024-11-07T13:14:46.119Z",
+          "display_at": "2024-11-07T13:14:46.119Z",
+          "affected_components": [
+            {
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "dktnfl8qpvqn",
           "status": "investigating",
@@ -7214,6 +7234,80 @@
           "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
           "showcase": false,
           "start_date": "2024-02-14",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "75w8h9q7zg0w",
+      "name": "Cloudflare Zero Trust availability issues",
+      "status": "investigating",
+      "created_at": "2024-11-07T13:09:27.317Z",
+      "updated_at": "2024-11-07T13:09:27.448Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/yvfj3nht5sb5",
+      "started_at": "2024-11-07T13:09:27.307Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "w85039mdgdkp",
+          "status": "investigating",
+          "body": "Some customers with Zero Trust paid plans may not be able to create more than one DNS location.\n\nWe are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "75w8h9q7zg0w",
+          "created_at": "2024-11-07T13:09:27.446Z",
+          "updated_at": "2024-11-07T13:09:27.446Z",
+          "display_at": "2024-11-07T13:09:27.446Z",
+          "affected_components": [
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "276xk3r83js7",
+              "name": "Cloudflare Sites and Services - Zero Trust Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kf0ktv29xrfy",
+          "name": "Zero Trust",
+          "status": "degraded_performance",
+          "created_at": "2021-04-08T15:53:09.058Z",
+          "updated_at": "2024-11-07T13:09:27.369Z",
+          "position": 97,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "276xk3r83js7",
+          "name": "Zero Trust Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2020-03-19T18:51:08.811Z",
+          "updated_at": "2024-11-07T13:09:27.389Z",
+          "position": 98,
+          "description": "Cloudflare Zero Trust Dashboard where customers can view and make changes to their Cloudflare Gateway configurations at https://dash.teams.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
