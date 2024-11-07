@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-07T21:00:02.379Z"
+    "updated_at": "2024-11-07T21:36:19.009Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2055,9 +2055,9 @@
     {
       "id": "4m8mfwx124tk",
       "name": "Manama, Bahrain - (BAH)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2018-10-24T15:22:31.337Z",
-      "updated_at": "2024-11-07T01:36:56.313Z",
+      "updated_at": "2024-11-07T21:28:00.142Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -6675,9 +6675,9 @@
     {
       "id": "zvm7mqn92xzc",
       "name": "Workers AI",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-02-14T15:05:51.274Z",
-      "updated_at": "2024-11-07T13:49:49.980Z",
+      "updated_at": "2024-11-07T21:17:01.747Z",
       "position": 93,
       "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
       "showcase": false,
@@ -7155,9 +7155,9 @@
     {
       "id": "3y9vc3ys33b0",
       "name": "Aktobe, Kazakhstan - (AKX)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-10-24T17:14:16.501Z",
-      "updated_at": "2024-10-29T19:36:44.661Z",
+      "updated_at": "2024-11-07T21:16:42.919Z",
       "position": 371,
       "description": null,
       "showcase": false,
@@ -7169,6 +7169,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "d3dq46nj96ps",
+      "name": "Cloudflare Workers AI - Issues with specific model",
+      "status": "identified",
+      "created_at": "2024-11-07T21:17:01.699Z",
+      "updated_at": "2024-11-07T21:17:01.813Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/89tc6kmkqzx6",
+      "started_at": "2024-11-07T21:17:01.691Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "fb0v3xxc3tx5",
+          "status": "identified",
+          "body": "Cloudflare is aware of, and investigating reports of errors when using Workers AI model Llama 3.1-70B. Other models are not impacted at this time. Further details will be provided as more information becomes available.",
+          "incident_id": "d3dq46nj96ps",
+          "created_at": "2024-11-07T21:17:01.810Z",
+          "updated_at": "2024-11-07T21:17:01.810Z",
+          "display_at": "2024-11-07T21:17:01.810Z",
+          "affected_components": [
+            {
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "zvm7mqn92xzc",
+          "name": "Workers AI",
+          "status": "degraded_performance",
+          "created_at": "2024-02-14T15:05:51.274Z",
+          "updated_at": "2024-11-07T21:17:01.747Z",
+          "position": 93,
+          "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
+          "showcase": false,
+          "start_date": "2024-02-14",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
@@ -7254,6 +7307,60 @@
     }
   ],
   "scheduled_maintenances": [
+    {
+      "id": "42jt73jtpw3h",
+      "name": "BOM (Mumbai) on 2024-11-07",
+      "status": "scheduled",
+      "created_at": "2024-11-07T21:36:18.952Z",
+      "updated_at": "2024-11-07T21:36:19.007Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/t7krdxwbp1r2",
+      "started_at": "2024-11-07T21:36:18.945Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "951prcnjyfk0",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in BOM (Mumbai) datacenter between 2024-11-07 23:00 and 2024-11-08 00:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "42jt73jtpw3h",
+          "created_at": "2024-11-07T21:36:19.004Z",
+          "updated_at": "2024-11-07T21:36:19.004Z",
+          "display_at": "2024-11-07T21:36:19.004Z",
+          "affected_components": [
+            {
+              "code": "t3d07wlg67nl",
+              "name": "Asia - Mumbai, India - (BOM)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "t3d07wlg67nl",
+          "name": "Mumbai, India - (BOM)",
+          "status": "operational",
+          "created_at": "2015-10-27T20:12:43.833Z",
+          "updated_at": "2024-10-27T02:33:33.429Z",
+          "position": 49,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-11-07T23:00:37.000Z",
+      "scheduled_until": "2024-11-08T00:30:37.000Z"
+    },
     {
       "id": "76jmrby74r7y",
       "name": "LIS (Lisbon) on 2024-11-12",
@@ -7437,60 +7544,6 @@
       "scheduled_until": "2024-11-18T23:00:00.000Z"
     },
     {
-      "id": "9szt0cqh9fdn",
-      "name": "DTW (Detroit) on 2024-11-19",
-      "status": "scheduled",
-      "created_at": "2024-11-07T19:10:36.743Z",
-      "updated_at": "2024-11-07T19:10:36.812Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/0m15j4pz48np",
-      "started_at": "2024-11-07T19:10:36.733Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "vn0l2k4rxlhx",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DTW (Detroit) datacenter on 2024-11-19 between 05:30 and 12:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "9szt0cqh9fdn",
-          "created_at": "2024-11-07T19:10:36.809Z",
-          "updated_at": "2024-11-07T19:10:36.809Z",
-          "display_at": "2024-11-07T19:10:36.809Z",
-          "affected_components": [
-            {
-              "code": "bbx7ndl66dmp",
-              "name": "North America - Detroit, MI, United States - (DTW)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "bbx7ndl66dmp",
-          "name": "Detroit, MI, United States - (DTW)",
-          "status": "operational",
-          "created_at": "2017-04-10T16:40:13.626Z",
-          "updated_at": "2024-11-05T21:42:16.158Z",
-          "position": 13,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-11-19T05:30:00.000Z",
-      "scheduled_until": "2024-11-19T12:30:00.000Z"
-    },
-    {
       "id": "d1pcj7k17f3x",
       "name": "IAH (Houston) on 2024-11-19",
       "status": "scheduled",
@@ -7532,6 +7585,60 @@
           "created_at": "2018-03-20T07:50:27.681Z",
           "updated_at": "2024-10-24T14:43:23.976Z",
           "position": 15,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-11-19T05:30:00.000Z",
+      "scheduled_until": "2024-11-19T12:30:00.000Z"
+    },
+    {
+      "id": "9szt0cqh9fdn",
+      "name": "DTW (Detroit) on 2024-11-19",
+      "status": "scheduled",
+      "created_at": "2024-11-07T19:10:36.743Z",
+      "updated_at": "2024-11-07T19:10:36.812Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/0m15j4pz48np",
+      "started_at": "2024-11-07T19:10:36.733Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "vn0l2k4rxlhx",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in DTW (Detroit) datacenter on 2024-11-19 between 05:30 and 12:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "9szt0cqh9fdn",
+          "created_at": "2024-11-07T19:10:36.809Z",
+          "updated_at": "2024-11-07T19:10:36.809Z",
+          "display_at": "2024-11-07T19:10:36.809Z",
+          "affected_components": [
+            {
+              "code": "bbx7ndl66dmp",
+              "name": "North America - Detroit, MI, United States - (DTW)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bbx7ndl66dmp",
+          "name": "Detroit, MI, United States - (DTW)",
+          "status": "operational",
+          "created_at": "2017-04-10T16:40:13.626Z",
+          "updated_at": "2024-11-05T21:42:16.158Z",
+          "position": 13,
           "description": null,
           "showcase": false,
           "start_date": null,
