@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-11T21:13:28.473Z"
+    "updated_at": "2024-11-11T21:35:41.993Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -927,9 +927,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2024-10-31T01:46:17.992Z",
+      "updated_at": "2024-11-11T21:35:20.109Z",
       "position": 6,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -3451,7 +3451,7 @@
       "name": "Jakarta, Indonesia - (CGK)",
       "status": "under_maintenance",
       "created_at": "2019-08-21T06:55:28.100Z",
-      "updated_at": "2024-11-11T21:13:28.470Z",
+      "updated_at": "2024-11-11T21:35:41.991Z",
       "position": 28,
       "description": null,
       "showcase": false,
@@ -7393,6 +7393,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "s01qs248tspf",
+      "name": "Cloudflare Dashboard and Cloudflare API service issues",
+      "status": "monitoring",
+      "created_at": "2024-11-11T21:35:20.074Z",
+      "updated_at": "2024-11-11T21:35:20.170Z",
+      "monitoring_at": "2024-11-11T21:35:20.162Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/m46vnckfhn2n",
+      "started_at": "2024-11-11T21:35:20.066Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "r8c4265vmgl4",
+          "status": "monitoring",
+          "body": "Cloudflare is investigating issues with Cloudflare Dashboard and related APIs.\n\nThese issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge.\n\nCustomers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
+          "incident_id": "s01qs248tspf",
+          "created_at": "2024-11-11T21:35:20.162Z",
+          "updated_at": "2024-11-11T21:35:20.162Z",
+          "display_at": "2024-11-11T21:35:20.162Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2024-11-11T21:35:20.109Z",
+          "position": 6,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "operational",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2024-10-31T02:31:10.616Z",
+          "position": 34,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
