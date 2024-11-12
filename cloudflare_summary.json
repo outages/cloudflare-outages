@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-12T21:24:05.184Z"
+    "updated_at": "2024-11-12T22:00:21.456Z"
   },
   "components": [
     {
@@ -3929,9 +3929,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2024-10-31T02:31:10.616Z",
+      "updated_at": "2024-11-12T21:59:38.518Z",
       "position": 34,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -7394,6 +7394,59 @@
   ],
   "incidents": [
     {
+      "id": "zh7sgrwh4bpl",
+      "name": "Issues with DNS record scanner for new zones",
+      "status": "investigating",
+      "created_at": "2024-11-12T21:59:38.486Z",
+      "updated_at": "2024-11-12T21:59:38.570Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/1r987zfmbn7y",
+      "started_at": "2024-11-12T21:59:38.478Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "hjbxdjn2hqj7",
+          "status": "investigating",
+          "body": "We are currently investigating reports that the service which scans for existing domain DNS records for new zones is incorrectly reporting results in some cases.",
+          "incident_id": "zh7sgrwh4bpl",
+          "created_at": "2024-11-12T21:59:38.568Z",
+          "updated_at": "2024-11-12T21:59:38.568Z",
+          "display_at": "2024-11-12T21:59:38.568Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2024-11-12T21:59:38.518Z",
+          "position": 34,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "y4py5qprc6f2",
       "name": "Issues with classification of some verified bot traffic",
       "status": "investigating",
@@ -7948,86 +8001,6 @@
       ],
       "scheduled_for": "2024-11-20T18:00:00.000Z",
       "scheduled_until": "2024-11-20T23:00:00.000Z"
-    },
-    {
-      "id": "ptzhpm0xlt47",
-      "name": "SIN (Singapore) on 2024-11-12",
-      "status": "in_progress",
-      "created_at": "2024-11-12T08:52:46.694Z",
-      "updated_at": "2024-11-12T18:00:21.347Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/h2my1ywby0pm",
-      "started_at": "2024-11-12T08:52:46.687Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "rfk9572653zq",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "ptzhpm0xlt47",
-          "created_at": "2024-11-12T18:00:21.337Z",
-          "updated_at": "2024-11-12T18:00:21.337Z",
-          "display_at": "2024-11-12T18:00:21.337Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "djz6lt7h3qnf",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "ptzhpm0xlt47",
-          "created_at": "2024-11-12T17:01:22.607Z",
-          "updated_at": "2024-11-12T17:01:22.607Z",
-          "display_at": "2024-11-12T17:01:22.607Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "bcl2rclrqgmy",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SIN (Singapore) datacenter on 2024-11-12 between 18:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "ptzhpm0xlt47",
-          "created_at": "2024-11-12T08:52:46.758Z",
-          "updated_at": "2024-11-12T08:52:46.758Z",
-          "display_at": "2024-11-12T08:52:46.758Z",
-          "affected_components": [
-            {
-              "code": "18p6r93swmbl",
-              "name": "Asia - Singapore, Singapore - (SIN)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "18p6r93swmbl",
-          "name": "Singapore, Singapore - (SIN)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:44:15.897Z",
-          "updated_at": "2024-09-17T05:43:33.076Z",
-          "position": 59,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-11-12T18:00:00.000Z",
-      "scheduled_until": "2024-11-12T22:00:00.000Z"
     },
     {
       "id": "1ct2c474ngt8",
