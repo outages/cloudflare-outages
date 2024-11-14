@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-14T21:37:44.600Z"
+    "updated_at": "2024-11-14T22:16:27.036Z"
   },
   "components": [
     {
@@ -448,7 +448,7 @@
       "name": "Baghdad, Iraq - (BGW)",
       "status": "under_maintenance",
       "created_at": "2018-03-12T14:18:23.436Z",
-      "updated_at": "2024-11-14T19:24:47.739Z",
+      "updated_at": "2024-11-14T22:05:25.717Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -869,7 +869,7 @@
       "name": "Cape Town, South Africa - (CPT)",
       "status": "under_maintenance",
       "created_at": "2017-04-25T13:57:05.717Z",
-      "updated_at": "2024-11-14T21:10:08.887Z",
+      "updated_at": "2024-11-14T22:10:55.300Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1499,9 +1499,9 @@
     {
       "id": "h3smcpzt8hq6",
       "name": "Dubai, United Arab Emirates - (DXB)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2015-07-23T02:23:36.617Z",
-      "updated_at": "2024-10-26T07:34:29.911Z",
+      "updated_at": "2024-11-14T22:10:54.954Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -1936,7 +1936,7 @@
       "name": "Johannesburg, South Africa - (JNB)",
       "status": "under_maintenance",
       "created_at": "2014-12-04T20:38:08.839Z",
-      "updated_at": "2024-11-14T20:09:08.811Z",
+      "updated_at": "2024-11-14T22:16:27.033Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -5804,9 +5804,9 @@
     {
       "id": "p0kyqpgsp6p9",
       "name": "Surat Thani, Thailand - (URT)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-09-03T05:50:51.865Z",
-      "updated_at": "2024-11-14T20:31:21.820Z",
+      "updated_at": "2024-11-14T22:10:54.041Z",
       "position": 60,
       "description": null,
       "showcase": false,
@@ -7396,16 +7396,36 @@
     {
       "id": "hxsl1tn34916",
       "name": "Page Shield Policy Issues",
-      "status": "identified",
-      "created_at": "2024-11-14T20:41:13.102Z",
-      "updated_at": "2024-11-14T20:54:44.612Z",
-      "monitoring_at": null,
+      "status": "monitoring",
+      "created_at": "2024-11-14T20:41:13.000Z",
+      "updated_at": "2024-11-14T21:59:15.312Z",
+      "monitoring_at": "2024-11-14T21:59:15.296Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/9r793nnsvq9z",
       "started_at": "2024-11-14T20:41:13.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "wnm057nf07pp",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "hxsl1tn34916",
+          "created_at": "2024-11-14T21:59:15.296Z",
+          "updated_at": "2024-11-14T21:59:15.296Z",
+          "display_at": "2024-11-14T21:59:15.296Z",
+          "affected_components": [
+            {
+              "code": "hk5dqm69klkp",
+              "name": "Cloudflare Sites and Services - Page Shield",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "j8wj9yp3hc5r",
           "status": "identified",
@@ -7585,73 +7605,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "2yjxwzz7fkj2",
-      "name": "CCU (Kolkata) on 2024-11-14",
-      "status": "scheduled",
-      "created_at": "2024-11-14T04:52:32.740Z",
-      "updated_at": "2024-11-14T21:00:25.322Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/0nzj16q2gmcn",
-      "started_at": "2024-11-14T04:52:32.731Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "565vtjscdvxb",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "2yjxwzz7fkj2",
-          "created_at": "2024-11-14T21:00:23.918Z",
-          "updated_at": "2024-11-14T21:00:23.918Z",
-          "display_at": "2024-11-14T21:00:23.918Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "gqc9gnnn5f3n",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in CCU (Kolkata) datacenter between 2024-11-14 22:00 and 2024-11-16 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "2yjxwzz7fkj2",
-          "created_at": "2024-11-14T04:52:32.798Z",
-          "updated_at": "2024-11-14T04:52:32.798Z",
-          "display_at": "2024-11-14T04:52:32.798Z",
-          "affected_components": [
-            {
-              "code": "mslkxsqftrnn",
-              "name": "Asia - Kolkata, India - (CCU)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "mslkxsqftrnn",
-          "name": "Kolkata, India - (CCU)",
-          "status": "under_maintenance",
-          "created_at": "2019-08-12T14:37:30.005Z",
-          "updated_at": "2024-11-14T18:56:56.947Z",
-          "position": 38,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-11-14T22:00:00.000Z",
-      "scheduled_until": "2024-11-16T04:00:00.000Z"
-    },
-    {
       "id": "gg13bxn6t7qr",
       "name": "PDX (Portland) on 2024-11-15",
       "status": "scheduled",
@@ -7780,60 +7733,6 @@
       "scheduled_until": "2024-11-18T23:00:00.000Z"
     },
     {
-      "id": "d1pcj7k17f3x",
-      "name": "IAH (Houston) on 2024-11-19",
-      "status": "scheduled",
-      "created_at": "2024-11-07T19:10:36.063Z",
-      "updated_at": "2024-11-07T19:10:36.126Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/f0r75jnk408v",
-      "started_at": "2024-11-07T19:10:36.056Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "94x6t1x0r2b8",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in IAH (Houston) datacenter on 2024-11-19 between 05:30 and 12:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "d1pcj7k17f3x",
-          "created_at": "2024-11-07T19:10:36.123Z",
-          "updated_at": "2024-11-07T19:10:36.123Z",
-          "display_at": "2024-11-07T19:10:36.123Z",
-          "affected_components": [
-            {
-              "code": "dk64qkf6mlmk",
-              "name": "North America - Houston, TX, United States - (IAH)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "dk64qkf6mlmk",
-          "name": "Houston, TX, United States - (IAH)",
-          "status": "operational",
-          "created_at": "2018-03-20T07:50:27.681Z",
-          "updated_at": "2024-10-24T14:43:23.976Z",
-          "position": 15,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-11-19T05:30:00.000Z",
-      "scheduled_until": "2024-11-19T12:30:00.000Z"
-    },
-    {
       "id": "9szt0cqh9fdn",
       "name": "DTW (Detroit) on 2024-11-19",
       "status": "scheduled",
@@ -7875,6 +7774,60 @@
           "created_at": "2017-04-10T16:40:13.626Z",
           "updated_at": "2024-11-14T19:46:55.523Z",
           "position": 13,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-11-19T05:30:00.000Z",
+      "scheduled_until": "2024-11-19T12:30:00.000Z"
+    },
+    {
+      "id": "d1pcj7k17f3x",
+      "name": "IAH (Houston) on 2024-11-19",
+      "status": "scheduled",
+      "created_at": "2024-11-07T19:10:36.063Z",
+      "updated_at": "2024-11-07T19:10:36.126Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/f0r75jnk408v",
+      "started_at": "2024-11-07T19:10:36.056Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "94x6t1x0r2b8",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in IAH (Houston) datacenter on 2024-11-19 between 05:30 and 12:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "d1pcj7k17f3x",
+          "created_at": "2024-11-07T19:10:36.123Z",
+          "updated_at": "2024-11-07T19:10:36.123Z",
+          "display_at": "2024-11-07T19:10:36.123Z",
+          "affected_components": [
+            {
+              "code": "dk64qkf6mlmk",
+              "name": "North America - Houston, TX, United States - (IAH)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "dk64qkf6mlmk",
+          "name": "Houston, TX, United States - (IAH)",
+          "status": "operational",
+          "created_at": "2018-03-20T07:50:27.681Z",
+          "updated_at": "2024-10-24T14:43:23.976Z",
+          "position": 15,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -8016,6 +7969,86 @@
       "scheduled_until": "2024-11-20T23:00:00.000Z"
     },
     {
+      "id": "2yjxwzz7fkj2",
+      "name": "CCU (Kolkata) on 2024-11-14",
+      "status": "in_progress",
+      "created_at": "2024-11-14T04:52:32.740Z",
+      "updated_at": "2024-11-14T22:01:21.130Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/0nzj16q2gmcn",
+      "started_at": "2024-11-14T04:52:32.731Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "0z9bxtnxsfcd",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "2yjxwzz7fkj2",
+          "created_at": "2024-11-14T22:01:21.127Z",
+          "updated_at": "2024-11-14T22:01:21.127Z",
+          "display_at": "2024-11-14T22:01:21.127Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "565vtjscdvxb",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "2yjxwzz7fkj2",
+          "created_at": "2024-11-14T21:00:23.918Z",
+          "updated_at": "2024-11-14T21:00:23.918Z",
+          "display_at": "2024-11-14T21:00:23.918Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "gqc9gnnn5f3n",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in CCU (Kolkata) datacenter between 2024-11-14 22:00 and 2024-11-16 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "2yjxwzz7fkj2",
+          "created_at": "2024-11-14T04:52:32.798Z",
+          "updated_at": "2024-11-14T04:52:32.798Z",
+          "display_at": "2024-11-14T04:52:32.798Z",
+          "affected_components": [
+            {
+              "code": "mslkxsqftrnn",
+              "name": "Asia - Kolkata, India - (CCU)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mslkxsqftrnn",
+          "name": "Kolkata, India - (CCU)",
+          "status": "under_maintenance",
+          "created_at": "2019-08-12T14:37:30.005Z",
+          "updated_at": "2024-11-14T18:56:56.947Z",
+          "position": 38,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-11-14T22:00:00.000Z",
+      "scheduled_until": "2024-11-16T04:00:00.000Z"
+    },
+    {
       "id": "pswpwqnrfnbl",
       "name": "DME (Moscow) on 2024-11-14",
       "status": "in_progress",
@@ -8094,86 +8127,6 @@
       ],
       "scheduled_for": "2024-11-14T20:00:26.000Z",
       "scheduled_until": "2024-11-15T05:00:00.000Z"
-    },
-    {
-      "id": "1x1lglvnz1lk",
-      "name": "DTW (Detroit) on 2024-11-14",
-      "status": "in_progress",
-      "created_at": "2024-11-13T18:58:33.966Z",
-      "updated_at": "2024-11-14T19:00:21.479Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/hknsl01vl4q4",
-      "started_at": "2024-11-13T18:58:33.958Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "bn0n81jkvl70",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "1x1lglvnz1lk",
-          "created_at": "2024-11-14T19:00:21.468Z",
-          "updated_at": "2024-11-14T19:00:21.468Z",
-          "display_at": "2024-11-14T19:00:21.468Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "d696hq5yyc3q",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "1x1lglvnz1lk",
-          "created_at": "2024-11-14T18:00:26.417Z",
-          "updated_at": "2024-11-14T18:00:26.417Z",
-          "display_at": "2024-11-14T18:00:26.417Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "1d0nfvkd67s0",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DTW (Detroit) datacenter on 2024-11-14 between 19:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "1x1lglvnz1lk",
-          "created_at": "2024-11-13T18:58:34.031Z",
-          "updated_at": "2024-11-13T18:58:34.031Z",
-          "display_at": "2024-11-13T18:58:34.031Z",
-          "affected_components": [
-            {
-              "code": "bbx7ndl66dmp",
-              "name": "North America - Detroit, MI, United States - (DTW)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "bbx7ndl66dmp",
-          "name": "Detroit, MI, United States - (DTW)",
-          "status": "operational",
-          "created_at": "2017-04-10T16:40:13.626Z",
-          "updated_at": "2024-11-14T19:46:55.523Z",
-          "position": 13,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-11-14T19:00:00.000Z",
-      "scheduled_until": "2024-11-14T22:00:00.000Z"
     },
     {
       "id": "j7qh994ff8n0",
