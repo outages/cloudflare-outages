@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-18T20:39:48.404Z"
+    "updated_at": "2024-11-18T21:07:35.873Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -869,7 +869,7 @@
       "name": "Cape Town, South Africa - (CPT)",
       "status": "under_maintenance",
       "created_at": "2017-04-25T13:57:05.717Z",
-      "updated_at": "2024-11-18T20:12:00.325Z",
+      "updated_at": "2024-11-18T21:07:35.871Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1936,7 +1936,7 @@
       "name": "Johannesburg, South Africa - (JNB)",
       "status": "under_maintenance",
       "created_at": "2014-12-04T20:38:08.839Z",
-      "updated_at": "2024-11-18T20:11:59.371Z",
+      "updated_at": "2024-11-18T21:07:35.489Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2834,9 +2834,9 @@
     {
       "id": "5wnz34mhfhrk",
       "name": "CDN/Cache",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2020-03-25T19:03:33.850Z",
-      "updated_at": "2024-11-18T19:05:09.550Z",
+      "updated_at": "2024-11-18T20:53:19.227Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -5384,9 +5384,9 @@
     {
       "id": "w337283spffw",
       "name": "Yekaterinburg, Russia - (SVX)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-09-14T08:26:33.033Z",
-      "updated_at": "2024-10-31T06:56:07.137Z",
+      "updated_at": "2024-11-18T20:56:32.372Z",
       "position": 54,
       "description": null,
       "showcase": false,
@@ -5459,9 +5459,9 @@
     {
       "id": "8xc65dbhbrd5",
       "name": "Phnom Penh, Cambodia - (PNH)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-02-09T20:38:28.093Z",
-      "updated_at": "2024-11-18T19:32:53.681Z",
+      "updated_at": "2024-11-18T20:56:31.553Z",
       "position": 55,
       "description": null,
       "showcase": false,
@@ -7394,79 +7394,6 @@
   ],
   "incidents": [
     {
-      "id": "lt352npxlf25",
-      "name": "CDN mTLS certificate issue",
-      "status": "monitoring",
-      "created_at": "2024-11-18T19:05:09.512Z",
-      "updated_at": "2024-11-18T19:15:42.084Z",
-      "monitoring_at": "2024-11-18T19:15:42.069Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/6pmc0m8rpqfr",
-      "started_at": "2024-11-18T19:05:09.504Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "2p4v6tdhx013",
-          "status": "monitoring",
-          "body": "A fix for this issue has been applied and we are currently monitoring the results.",
-          "incident_id": "lt352npxlf25",
-          "created_at": "2024-11-18T19:15:42.069Z",
-          "updated_at": "2024-11-18T19:15:42.069Z",
-          "display_at": "2024-11-18T19:15:42.069Z",
-          "affected_components": [
-            {
-              "code": "5wnz34mhfhrk",
-              "name": "Cloudflare Sites and Services - CDN/Cache",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "dzc1pc8gzd78",
-          "status": "identified",
-          "body": "Custom certificates used for mTLS with customer origins fails to load. This issue will cause customer's origin servers to reject these connections due to lack of certificates. We are currently working on a fix for this issue.",
-          "incident_id": "lt352npxlf25",
-          "created_at": "2024-11-18T19:05:09.599Z",
-          "updated_at": "2024-11-18T19:05:09.599Z",
-          "display_at": "2024-11-18T19:05:09.599Z",
-          "affected_components": [
-            {
-              "code": "5wnz34mhfhrk",
-              "name": "Cloudflare Sites and Services - CDN/Cache",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "5wnz34mhfhrk",
-          "name": "CDN/Cache",
-          "status": "degraded_performance",
-          "created_at": "2020-03-25T19:03:33.850Z",
-          "updated_at": "2024-11-18T19:05:09.550Z",
-          "position": 21,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
       "status": "investigating",
@@ -7556,7 +7483,7 @@
       "name": "CCU (Kolkata) on 2024-11-18",
       "status": "scheduled",
       "created_at": "2024-11-15T06:14:46.289Z",
-      "updated_at": "2024-11-15T06:14:46.345Z",
+      "updated_at": "2024-11-18T21:00:23.869Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7564,6 +7491,19 @@
       "started_at": "2024-11-15T06:14:46.283Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "pmk8znkztnh5",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "g3t9s4msqg0p",
+          "created_at": "2024-11-18T21:00:23.665Z",
+          "updated_at": "2024-11-18T21:00:23.665Z",
+          "display_at": "2024-11-18T21:00:23.665Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "xbwrtbbrxqbm",
           "status": "scheduled",
