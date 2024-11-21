@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-21T15:36:51.363Z"
+    "updated_at": "2024-11-21T16:22:46.757Z"
   },
   "components": [
     {
@@ -869,7 +869,7 @@
       "name": "Cape Town, South Africa - (CPT)",
       "status": "under_maintenance",
       "created_at": "2017-04-25T13:57:05.717Z",
-      "updated_at": "2024-11-21T15:10:24.360Z",
+      "updated_at": "2024-11-21T16:06:04.378Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1053,9 +1053,9 @@
     {
       "id": "9kqfzzbvww99",
       "name": "Bandar Seri Begawan, Brunei - (BWN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2020-02-25T07:32:56.004Z",
-      "updated_at": "2024-11-21T14:48:06.863Z",
+      "updated_at": "2024-11-21T16:22:46.755Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -3284,9 +3284,9 @@
     {
       "id": "xbcr6hhsj55p",
       "name": "Hyderabad, India - (HYD)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-01-11T08:19:48.090Z",
-      "updated_at": "2024-11-21T01:37:11.991Z",
+      "updated_at": "2024-11-21T15:54:55.814Z",
       "position": 26,
       "description": null,
       "showcase": false,
@@ -7394,6 +7394,59 @@
   ],
   "incidents": [
     {
+      "id": "nppr1l1hkdxl",
+      "name": "Issues with Workers Smart Placement",
+      "status": "investigating",
+      "created_at": "2024-11-21T16:14:11.251Z",
+      "updated_at": "2024-11-21T16:20:45.234Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/yr7f3k08kwp7",
+      "started_at": "2024-11-21T16:14:11.244Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "v7rkg1scpq48",
+          "status": "investigating",
+          "body": "Since 2024-11-21 13:00, Workers Smart Placement is not analyzing Workers and potentially running them in non-optimal locations. This mainly affects Workers that just turned Smart Placement on. If a Worker already has Smart Placement on, it will continue with the last analyzed placement.\n\nWorkers traffic is not affected.",
+          "incident_id": "nppr1l1hkdxl",
+          "created_at": "2024-11-21T16:14:11.305Z",
+          "updated_at": "2024-11-21T16:14:11.305Z",
+          "display_at": "2024-11-21T16:14:11.305Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "operational",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2024-10-30T08:05:43.452Z",
+          "position": 92,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
       "status": "investigating",
@@ -7483,7 +7536,7 @@
       "name": "NRT (Tokyo) on 2024-11-21",
       "status": "scheduled",
       "created_at": "2024-11-21T04:18:20.186Z",
-      "updated_at": "2024-11-21T04:18:20.238Z",
+      "updated_at": "2024-11-21T16:00:33.596Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7491,6 +7544,19 @@
       "started_at": "2024-11-21T04:18:20.180Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "mytkd59h5th8",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "jhyjcsyn7d9s",
+          "created_at": "2024-11-21T16:00:33.493Z",
+          "updated_at": "2024-11-21T16:00:33.493Z",
+          "display_at": "2024-11-21T16:00:33.493Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "rtgplwfmvz75",
           "status": "scheduled",
@@ -7531,60 +7597,6 @@
       ],
       "scheduled_for": "2024-11-21T17:00:00.000Z",
       "scheduled_until": "2024-11-21T21:00:00.000Z"
-    },
-    {
-      "id": "9td3n3d6pj3j",
-      "name": "DTW (Detroit) on 2024-11-21",
-      "status": "scheduled",
-      "created_at": "2024-11-19T18:06:43.626Z",
-      "updated_at": "2024-11-19T18:06:43.686Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/zg6gs5zjxtlw",
-      "started_at": "2024-11-19T18:06:43.618Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "d2z85n6202j2",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DTW (Detroit) datacenter on 2024-11-21 between 18:00 and 23:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "9td3n3d6pj3j",
-          "created_at": "2024-11-19T18:06:43.684Z",
-          "updated_at": "2024-11-19T18:06:43.684Z",
-          "display_at": "2024-11-19T18:06:43.684Z",
-          "affected_components": [
-            {
-              "code": "bbx7ndl66dmp",
-              "name": "North America - Detroit, MI, United States - (DTW)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "bbx7ndl66dmp",
-          "name": "Detroit, MI, United States - (DTW)",
-          "status": "operational",
-          "created_at": "2017-04-10T16:40:13.626Z",
-          "updated_at": "2024-11-21T03:33:59.860Z",
-          "position": 13,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-11-21T18:00:00.000Z",
-      "scheduled_until": "2024-11-21T23:00:00.000Z"
     },
     {
       "id": "f2c54nzb5dbr",
