@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-27T15:16:01.191Z"
+    "updated_at": "2024-11-27T15:40:50.416Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "partial_outage",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1829,9 +1829,9 @@
     {
       "id": "d9znrq17k6ny",
       "name": "Chennai, India - (MAA)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2015-11-12T05:20:52.737Z",
-      "updated_at": "2024-11-19T22:32:11.471Z",
+      "updated_at": "2024-11-27T15:40:50.413Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -2084,9 +2084,9 @@
     {
       "id": "tdwwnvf8nv6h",
       "name": "Kigali, Rwanda - (KGL)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-06-17T03:27:21.977Z",
-      "updated_at": "2024-11-27T13:36:13.618Z",
+      "updated_at": "2024-11-27T15:24:05.309Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -3929,9 +3929,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2024-11-27T14:24:18.135Z",
+      "updated_at": "2024-11-27T15:38:10.795Z",
       "position": 34,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -4409,9 +4409,9 @@
     {
       "id": "7j656z7tqk7f",
       "name": "DNS Updates",
-      "status": "degraded_performance",
+      "status": "partial_outage",
       "created_at": "2019-01-24T16:50:20.772Z",
-      "updated_at": "2024-11-27T14:43:41.332Z",
+      "updated_at": "2024-11-27T15:35:38.341Z",
       "position": 40,
       "description": "DNS update service pushing customer DNS changes out to all data centers",
       "showcase": false,
@@ -6089,9 +6089,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "degraded_performance",
+      "status": "partial_outage",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2024-11-27T14:18:35.806Z",
+      "updated_at": "2024-11-27T15:38:10.818Z",
       "position": 65,
       "description": null,
       "showcase": false,
@@ -6764,9 +6764,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "degraded_performance",
+      "status": "partial_outage",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2024-11-27T14:18:35.827Z",
+      "updated_at": "2024-11-27T15:38:10.839Z",
       "position": 92,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7394,6 +7394,232 @@
   ],
   "incidents": [
     {
+      "id": "ysp8n8nk48bg",
+      "name": "Cloudflare Pages and Workers issues",
+      "status": "identified",
+      "created_at": "2024-11-27T14:18:35.764Z",
+      "updated_at": "2024-11-27T15:38:10.916Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/50l9dbpflgl2",
+      "started_at": "2024-11-27T14:18:35.754Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "lhy97fq68k1d",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "ysp8n8nk48bg",
+          "created_at": "2024-11-27T15:38:10.912Z",
+          "updated_at": "2024-11-27T15:38:10.912Z",
+          "display_at": "2024-11-27T15:38:10.912Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "degraded_performance",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "kbmc0qkrwkbk",
+          "status": "identified",
+          "body": "Cloudflare Dashboard is also affected: users might observe delays and/or errors. The issue has been identified and a fix is being implemented.",
+          "incident_id": "ysp8n8nk48bg",
+          "created_at": "2024-11-27T15:21:04.308Z",
+          "updated_at": "2024-11-27T15:21:04.308Z",
+          "display_at": "2024-11-27T15:21:04.308Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "6ggtw04gn325",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare Pages and Cloudflare Workers: Customers may encounter errors when attempting to create new Cloudflare Pages based sites, as well as new Cloudflare Workers.  This issue does not affect any other Cloudflare services.\n\nWe are working to mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "ysp8n8nk48bg",
+          "created_at": "2024-11-27T14:18:35.886Z",
+          "updated_at": "2024-11-27T14:18:35.886Z",
+          "display_at": "2024-11-27T14:18:35.886Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "partial_outage",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2024-11-27T15:38:10.795Z",
+          "position": 34,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
+          "status": "partial_outage",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2024-11-27T15:38:10.818Z",
+          "position": 65,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "partial_outage",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2024-11-27T15:38:10.839Z",
+          "position": 92,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "zxl93kdtn9yb",
+      "name": "DNS Update Delays",
+      "status": "investigating",
+      "created_at": "2024-11-27T14:43:41.297Z",
+      "updated_at": "2024-11-27T15:35:38.420Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/7b9ybksbs8d5",
+      "started_at": "2024-11-27T14:43:41.290Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "r17ykd807nmt",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "zxl93kdtn9yb",
+          "created_at": "2024-11-27T15:35:38.418Z",
+          "updated_at": "2024-11-27T15:35:38.418Z",
+          "display_at": "2024-11-27T15:35:38.418Z",
+          "affected_components": [
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "degraded_performance",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "cvb93psqxft1",
+          "status": "investigating",
+          "body": "Cloudflare is investigating delays in propagation of updates to DNS records. More updates to follow shortly.",
+          "incident_id": "zxl93kdtn9yb",
+          "created_at": "2024-11-27T14:43:41.394Z",
+          "updated_at": "2024-11-27T14:43:41.394Z",
+          "display_at": "2024-11-27T14:43:41.394Z",
+          "affected_components": [
+            {
+              "code": "7j656z7tqk7f",
+              "name": "Cloudflare Sites and Services - DNS Updates",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7j656z7tqk7f",
+          "name": "DNS Updates",
+          "status": "partial_outage",
+          "created_at": "2019-01-24T16:50:20.772Z",
+          "updated_at": "2024-11-27T15:35:38.341Z",
+          "position": 40,
+          "description": "DNS update service pushing customer DNS changes out to all data centers",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "2tlhgktsxq6z",
       "name": "Increased HTTP 522 Errors in Chennai, India",
       "status": "identified",
@@ -7451,141 +7677,14 @@
         {
           "id": "d9znrq17k6ny",
           "name": "Chennai, India - (MAA)",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2015-11-12T05:20:52.737Z",
-          "updated_at": "2024-11-19T22:32:11.471Z",
+          "updated_at": "2024-11-27T15:40:50.413Z",
           "position": 12,
           "description": null,
           "showcase": false,
           "start_date": null,
           "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "zxl93kdtn9yb",
-      "name": "DNS Update Delays",
-      "status": "investigating",
-      "created_at": "2024-11-27T14:43:41.297Z",
-      "updated_at": "2024-11-27T14:43:41.397Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/7b9ybksbs8d5",
-      "started_at": "2024-11-27T14:43:41.290Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "cvb93psqxft1",
-          "status": "investigating",
-          "body": "Cloudflare is investigating delays in propagation of updates to DNS records. More updates to follow shortly.",
-          "incident_id": "zxl93kdtn9yb",
-          "created_at": "2024-11-27T14:43:41.394Z",
-          "updated_at": "2024-11-27T14:43:41.394Z",
-          "display_at": "2024-11-27T14:43:41.394Z",
-          "affected_components": [
-            {
-              "code": "7j656z7tqk7f",
-              "name": "Cloudflare Sites and Services - DNS Updates",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7j656z7tqk7f",
-          "name": "DNS Updates",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:50:20.772Z",
-          "updated_at": "2024-11-27T14:43:41.332Z",
-          "position": 40,
-          "description": "DNS update service pushing customer DNS changes out to all data centers",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "ysp8n8nk48bg",
-      "name": "Cloudflare Pages and Workers issues",
-      "status": "investigating",
-      "created_at": "2024-11-27T14:18:35.764Z",
-      "updated_at": "2024-11-27T14:18:35.889Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/50l9dbpflgl2",
-      "started_at": "2024-11-27T14:18:35.754Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "6ggtw04gn325",
-          "status": "investigating",
-          "body": "Cloudflare is investigating issues with Cloudflare Pages and Cloudflare Workers: Customers may encounter errors when attempting to create new Cloudflare Pages based sites, as well as new Cloudflare Workers.  This issue does not affect any other Cloudflare services.\n\nWe are working to mitigate this problem.  More updates to follow shortly.",
-          "incident_id": "ysp8n8nk48bg",
-          "created_at": "2024-11-27T14:18:35.886Z",
-          "updated_at": "2024-11-27T14:18:35.886Z",
-          "display_at": "2024-11-27T14:18:35.886Z",
-          "affected_components": [
-            {
-              "code": "vgxj684rcw7t",
-              "name": "Cloudflare Sites and Services - Pages",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "vgxj684rcw7t",
-          "name": "Pages",
-          "status": "degraded_performance",
-          "created_at": "2021-04-16T21:04:08.018Z",
-          "updated_at": "2024-11-27T14:18:35.806Z",
-          "position": 65,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-04-16",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "57srcl8zcn7c",
-          "name": "Workers",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2024-11-27T14:18:35.827Z",
-          "position": 92,
-          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
