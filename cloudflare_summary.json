@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-12-05T18:20:23.903Z"
+    "updated_at": "2024-12-05T18:41:42.222Z"
   },
   "components": [
     {
@@ -327,9 +327,9 @@
     {
       "id": "w4k8yvhfb3vp",
       "name": "Access",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2018-02-09T21:46:39.049Z",
-      "updated_at": "2024-11-05T11:55:12.828Z",
+      "updated_at": "2024-12-05T18:41:42.152Z",
       "position": 2,
       "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
       "showcase": false,
@@ -1666,9 +1666,9 @@
     {
       "id": "1zdfwmzjqqtf",
       "name": "Erbil, Iraq - (EBL)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-02-02T10:59:20.698Z",
-      "updated_at": "2024-12-05T17:57:06.205Z",
+      "updated_at": "2024-12-05T18:30:33.605Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -4411,9 +4411,9 @@
     {
       "id": "7j656z7tqk7f",
       "name": "DNS Updates",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:50:20.772Z",
-      "updated_at": "2024-12-05T18:11:39.908Z",
+      "updated_at": "2024-12-05T18:28:39.543Z",
       "position": 40,
       "description": "DNS update service pushing customer DNS changes out to all data centers",
       "showcase": false,
@@ -6091,9 +6091,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2024-12-05T18:11:39.923Z",
+      "updated_at": "2024-12-05T18:28:39.562Z",
       "position": 65,
       "description": null,
       "showcase": false,
@@ -6766,9 +6766,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2024-12-05T18:11:39.935Z",
+      "updated_at": "2024-12-05T18:28:39.580Z",
       "position": 92,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7426,106 +7426,30 @@
   ],
   "incidents": [
     {
-      "id": "rqjfd729f5rh",
-      "name": "HTTP 500 errors when modifying DNS records, Pages projects, Workers subdomains",
-      "status": "monitoring",
-      "created_at": "2024-12-05T18:11:39.879Z",
-      "updated_at": "2024-12-05T18:17:03.902Z",
-      "monitoring_at": "2024-12-05T18:17:03.885Z",
+      "id": "f3l1n5ccwx7y",
+      "name": "Cloudflare Access Infrastructure SSH applications not emitting command logs",
+      "status": "identified",
+      "created_at": "2024-12-05T18:41:42.110Z",
+      "updated_at": "2024-12-05T18:41:42.218Z",
+      "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/1m1v2w4rdvts",
-      "started_at": "2024-12-05T18:11:39.870Z",
+      "shortlink": "https://stspg.io/5tshv2hpkf84",
+      "started_at": "2024-12-05T18:41:42.102Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "djfgk6dy965s",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "rqjfd729f5rh",
-          "created_at": "2024-12-05T18:17:03.885Z",
-          "updated_at": "2024-12-05T18:17:03.885Z",
-          "display_at": "2024-12-05T18:17:03.885Z",
-          "affected_components": [
-            {
-              "code": "7j656z7tqk7f",
-              "name": "Cloudflare Sites and Services - DNS Updates",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "vgxj684rcw7t",
-              "name": "Cloudflare Sites and Services - Pages",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "mgjvsvzkyymq",
+          "id": "hdmjmpcv4mhl",
           "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "rqjfd729f5rh",
-          "created_at": "2024-12-05T18:13:36.964Z",
-          "updated_at": "2024-12-05T18:13:36.964Z",
-          "display_at": "2024-12-05T18:13:36.964Z",
+          "body": "Cloudflare is investigating an issue causing SSH Infrastructure Application command logging to not emit command logs. All Access authentication, including infrastructure apps, and all other application type logging are not impacted at this time.",
+          "incident_id": "f3l1n5ccwx7y",
+          "created_at": "2024-12-05T18:41:42.215Z",
+          "updated_at": "2024-12-05T18:41:42.215Z",
+          "display_at": "2024-12-05T18:41:42.215Z",
           "affected_components": [
             {
-              "code": "7j656z7tqk7f",
-              "name": "Cloudflare Sites and Services - DNS Updates",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "vgxj684rcw7t",
-              "name": "Cloudflare Sites and Services - Pages",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "09n9t5hzb4wg",
-          "status": "investigating",
-          "body": "Cloudflare is investigating reports of HTTP 500 errors when modifying or querying DNS records via the Cloudflare API, creating new Pages projects, and creating or changing Workers subdomains.",
-          "incident_id": "rqjfd729f5rh",
-          "created_at": "2024-12-05T18:11:39.978Z",
-          "updated_at": "2024-12-05T18:11:39.978Z",
-          "display_at": "2024-12-05T18:11:39.978Z",
-          "affected_components": [
-            {
-              "code": "7j656z7tqk7f",
-              "name": "Cloudflare Sites and Services - DNS Updates",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "vgxj684rcw7t",
-              "name": "Cloudflare Sites and Services - Pages",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
               "old_status": "operational",
               "new_status": "degraded_performance"
             }
@@ -7537,43 +7461,13 @@
       ],
       "components": [
         {
-          "id": "7j656z7tqk7f",
-          "name": "DNS Updates",
+          "id": "w4k8yvhfb3vp",
+          "name": "Access",
           "status": "degraded_performance",
-          "created_at": "2019-01-24T16:50:20.772Z",
-          "updated_at": "2024-12-05T18:11:39.908Z",
-          "position": 40,
-          "description": "DNS update service pushing customer DNS changes out to all data centers",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "vgxj684rcw7t",
-          "name": "Pages",
-          "status": "degraded_performance",
-          "created_at": "2021-04-16T21:04:08.018Z",
-          "updated_at": "2024-12-05T18:11:39.923Z",
-          "position": 65,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-04-16",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "57srcl8zcn7c",
-          "name": "Workers",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2024-12-05T18:11:39.935Z",
-          "position": 92,
-          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "created_at": "2018-02-09T21:46:39.049Z",
+          "updated_at": "2024-12-05T18:41:42.152Z",
+          "position": 2,
+          "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
           "showcase": false,
           "start_date": null,
           "group_id": "1km35smx8p41",
@@ -7992,6 +7886,60 @@
       ],
       "scheduled_for": "2024-12-10T16:00:00.000Z",
       "scheduled_until": "2024-12-10T23:00:00.000Z"
+    },
+    {
+      "id": "gcfc2rv38mmj",
+      "name": "DTW (Detroit) on 2024-12-10",
+      "status": "scheduled",
+      "created_at": "2024-12-05T18:26:40.804Z",
+      "updated_at": "2024-12-05T18:26:40.864Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/bwql6zw8vg5p",
+      "started_at": "2024-12-05T18:26:40.797Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "bb1c65dc704l",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in DTW (Detroit) datacenter on 2024-12-10 between 18:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "gcfc2rv38mmj",
+          "created_at": "2024-12-05T18:26:40.861Z",
+          "updated_at": "2024-12-05T18:26:40.861Z",
+          "display_at": "2024-12-05T18:26:40.861Z",
+          "affected_components": [
+            {
+              "code": "bbx7ndl66dmp",
+              "name": "North America - Detroit, MI, United States - (DTW)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bbx7ndl66dmp",
+          "name": "Detroit, MI, United States - (DTW)",
+          "status": "operational",
+          "created_at": "2017-04-10T16:40:13.626Z",
+          "updated_at": "2024-12-01T15:01:11.209Z",
+          "position": 13,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-12-10T18:00:00.000Z",
+      "scheduled_until": "2024-12-10T22:00:00.000Z"
     },
     {
       "id": "c9h66jcc26zn",
