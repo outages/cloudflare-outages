@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-12-12T15:48:05.547Z"
+    "updated_at": "2024-12-12T16:21:41.528Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1168,9 +1168,9 @@
     {
       "id": "b9yrxv93hhrc",
       "name": "Calgary, AB, Canada - (YYC)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-03-15T19:43:31.836Z",
-      "updated_at": "2024-12-11T17:20:17.770Z",
+      "updated_at": "2024-12-12T16:02:11.156Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -2176,9 +2176,9 @@
     {
       "id": "p6skg25yj69j",
       "name": "Colombo, Sri Lanka - (CMB)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2017-05-02T05:52:26.698Z",
-      "updated_at": "2024-12-12T15:14:23.328Z",
+      "updated_at": "2024-12-12T16:21:41.526Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -2311,9 +2311,9 @@
     {
       "id": "hf1csyqv3x7s",
       "name": "Dhaka, Bangladesh - (DAC)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2024-12-12T15:25:40.704Z",
+      "updated_at": "2024-12-12T16:16:05.967Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -4621,9 +4621,9 @@
     {
       "id": "w3v7f5nb8ndg",
       "name": "Saskatoon, SK, Canada - (YXE)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-04-02T01:43:30.221Z",
-      "updated_at": "2024-12-12T10:56:42.213Z",
+      "updated_at": "2024-12-12T16:02:24.645Z",
       "position": 43,
       "description": null,
       "showcase": false,
@@ -5806,9 +5806,9 @@
     {
       "id": "p0kyqpgsp6p9",
       "name": "Surat Thani, Thailand - (URT)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-09-03T05:50:51.865Z",
-      "updated_at": "2024-12-12T11:02:20.086Z",
+      "updated_at": "2024-12-12T15:53:39.590Z",
       "position": 60,
       "description": null,
       "showcase": false,
@@ -6691,9 +6691,9 @@
     {
       "id": "k04jkcpzxn94",
       "name": "WARP",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-09-30T09:25:38.587Z",
-      "updated_at": "2024-12-12T03:41:27.932Z",
+      "updated_at": "2024-12-12T16:07:56.222Z",
       "position": 89,
       "description": null,
       "showcase": false,
@@ -6871,9 +6871,9 @@
     {
       "id": "kf0ktv29xrfy",
       "name": "Zero Trust",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-08T15:53:09.058Z",
-      "updated_at": "2024-12-09T18:18:17.620Z",
+      "updated_at": "2024-12-12T16:07:56.241Z",
       "position": 98,
       "description": null,
       "showcase": false,
@@ -7426,6 +7426,80 @@
   ],
   "incidents": [
     {
+      "id": "ky502www4g9y",
+      "name": "WARP Users unable to re-authenticate",
+      "status": "investigating",
+      "created_at": "2024-12-12T16:07:56.183Z",
+      "updated_at": "2024-12-12T16:07:56.297Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/gqljn0g024sg",
+      "started_at": "2024-12-12T16:07:56.174Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ymgc9tvczjgq",
+          "status": "investigating",
+          "body": "We are investigating reports of Zero Trust WARP users unable to re-authenticate their session.",
+          "incident_id": "ky502www4g9y",
+          "created_at": "2024-12-12T16:07:56.295Z",
+          "updated_at": "2024-12-12T16:07:56.295Z",
+          "display_at": "2024-12-12T16:07:56.295Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k04jkcpzxn94",
+          "name": "WARP",
+          "status": "degraded_performance",
+          "created_at": "2019-09-30T09:25:38.587Z",
+          "updated_at": "2024-12-12T16:07:56.222Z",
+          "position": 89,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "kf0ktv29xrfy",
+          "name": "Zero Trust",
+          "status": "degraded_performance",
+          "created_at": "2021-04-08T15:53:09.058Z",
+          "updated_at": "2024-12-12T16:07:56.241Z",
+          "position": 98,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
       "status": "investigating",
@@ -7515,7 +7589,7 @@
       "name": "YVR (Vancouver) on 2024-12-12",
       "status": "scheduled",
       "created_at": "2024-12-10T18:30:50.560Z",
-      "updated_at": "2024-12-10T18:30:50.628Z",
+      "updated_at": "2024-12-12T16:00:25.145Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7523,6 +7597,19 @@
       "started_at": "2024-12-10T18:30:50.552Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "69w5rl3c3js6",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "r3l474581ppg",
+          "created_at": "2024-12-12T16:00:24.977Z",
+          "updated_at": "2024-12-12T16:00:24.977Z",
+          "display_at": "2024-12-12T16:00:24.977Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "7xrdh17970bd",
           "status": "scheduled",
