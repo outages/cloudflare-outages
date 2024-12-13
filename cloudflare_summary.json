@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-12-13T22:17:22.150Z"
+    "updated_at": "2024-12-13T22:39:36.821Z"
   },
   "components": [
     {
@@ -2312,9 +2312,9 @@
     {
       "id": "hf1csyqv3x7s",
       "name": "Dhaka, Bangladesh - (DAC)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2024-12-13T18:29:02.372Z",
+      "updated_at": "2024-12-13T22:39:36.819Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2809,7 +2809,7 @@
       "name": "Istanbul, Turkey - (IST)",
       "status": "under_maintenance",
       "created_at": "2018-02-28T13:32:42.674Z",
-      "updated_at": "2024-12-13T14:18:48.599Z",
+      "updated_at": "2024-12-13T22:28:32.141Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -7443,25 +7443,45 @@
   "incidents": [
     {
       "id": "4g5mdg35j1c6",
-      "name": "Using Okta Group selector with SSH with Access for Infrastructure resulting in users having unauthorized access to infrastructure targets",
-      "status": "investigating",
+      "name": "Using Okta, Azure, GitHub or Google Group selector with SSH with Access for Infrastructure resulting in users having unauthorized access to infrastructure targets",
+      "status": "identified",
       "created_at": "2024-12-13T21:20:07.793Z",
-      "updated_at": "2024-12-13T21:20:07.860Z",
+      "updated_at": "2024-12-13T22:26:00.166Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "none",
       "shortlink": "https://stspg.io/40g4d3hbc0dn",
-      "started_at": "2024-12-13T21:20:07.785Z",
+      "started_at": "2024-12-13T21:20:07.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
+          "id": "8987vtzyk165",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "4g5mdg35j1c6",
+          "created_at": "2024-12-13T22:24:21.667Z",
+          "updated_at": "2024-12-13T22:24:21.667Z",
+          "display_at": "2024-12-13T22:24:21.667Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
           "id": "mktj9gh60gpl",
           "status": "investigating",
-          "body": "When an Okta Group selector is used, all SSH policies will match to users having unauthorized access to infrastructure targets. Users must still pass all other components of the policy. Infrastructure Access applications without the Okta Group Selector and all other Access application types are not impacted.",
+          "body": "When an Okta, Azure, GitHub or Google Group selector is used, all SSH policies will match to users having unauthorized access to infrastructure targets. Users must still pass all other components of the policy. Infrastructure Access applications without the affected Group Selectors and all other Access application types are not impacted.",
           "incident_id": "4g5mdg35j1c6",
           "created_at": "2024-12-13T21:20:07.855Z",
-          "updated_at": "2024-12-13T21:20:07.855Z",
-          "display_at": "2024-12-13T21:20:07.855Z",
+          "updated_at": "2024-12-13T22:26:00.119Z",
+          "display_at": "2024-12-13T21:20:07.000Z",
           "affected_components": [
             {
               "code": "w4k8yvhfb3vp",
@@ -7796,26 +7816,26 @@
       "scheduled_until": "2024-12-17T06:00:00.000Z"
     },
     {
-      "id": "vv4gbbvfvyq2",
-      "name": "LAX (Los Angeles) on 2024-12-19",
+      "id": "vn1lvnqxwfs3",
+      "name": "LAX (Los Angeles) on 2024-12-18",
       "status": "scheduled",
-      "created_at": "2024-12-13T21:46:22.082Z",
-      "updated_at": "2024-12-13T21:46:22.136Z",
+      "created_at": "2024-12-13T22:32:24.533Z",
+      "updated_at": "2024-12-13T22:32:24.594Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/ht491dsq8bgj",
-      "started_at": "2024-12-13T21:46:22.075Z",
+      "shortlink": "https://stspg.io/b173j99rlqkg",
+      "started_at": "2024-12-13T22:32:24.525Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "k5v0nv4knp9z",
+          "id": "qkgmwkf2njtv",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2024-12-19 between 17:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "vv4gbbvfvyq2",
-          "created_at": "2024-12-13T21:46:22.133Z",
-          "updated_at": "2024-12-13T21:46:22.133Z",
-          "display_at": "2024-12-13T21:46:22.133Z",
+          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2024-12-18 between 09:00 and 14:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "vn1lvnqxwfs3",
+          "created_at": "2024-12-13T22:32:24.591Z",
+          "updated_at": "2024-12-13T22:32:24.591Z",
+          "display_at": "2024-12-13T22:32:24.591Z",
           "affected_components": [
             {
               "code": "38w4zp21dlkc",
@@ -7846,8 +7866,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2024-12-19T17:00:00.000Z",
-      "scheduled_until": "2024-12-19T22:00:00.000Z"
+      "scheduled_for": "2024-12-18T09:00:00.000Z",
+      "scheduled_until": "2024-12-18T14:00:00.000Z"
     }
   ],
   "status": {
