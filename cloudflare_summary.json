@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-12-18T18:26:22.754Z"
+    "updated_at": "2024-12-18T18:45:43.223Z"
   },
   "components": [
     {
@@ -1041,9 +1041,9 @@
     {
       "id": "bz9bt1q3m2jy",
       "name": "Buffalo, NY, United States - (BUF)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-04-15T18:28:27.006Z",
-      "updated_at": "2024-12-18T09:42:55.498Z",
+      "updated_at": "2024-12-18T18:45:43.221Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2312,9 +2312,9 @@
     {
       "id": "hf1csyqv3x7s",
       "name": "Dhaka, Bangladesh - (DAC)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2024-12-18T13:26:38.365Z",
+      "updated_at": "2024-12-18T18:41:17.297Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2627,9 +2627,9 @@
     {
       "id": "ljllh1921z0m",
       "name": "Nairobi, Kenya - (NBO)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2020-10-30T04:22:58.259Z",
-      "updated_at": "2024-12-18T17:50:41.612Z",
+      "updated_at": "2024-12-18T18:41:17.918Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -3932,9 +3932,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2024-12-18T15:32:38.333Z",
+      "updated_at": "2024-12-18T18:39:09.007Z",
       "position": 34,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -5252,9 +5252,9 @@
     {
       "id": "8sn2w5kyxfnp",
       "name": "Load Balancing and Monitoring",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:54:07.994Z",
-      "updated_at": "2024-11-29T01:24:40.034Z",
+      "updated_at": "2024-12-18T18:39:09.022Z",
       "position": 52,
       "description": "Load balancing and failover service, including origin server monitoring",
       "showcase": false,
@@ -7442,6 +7442,80 @@
   ],
   "incidents": [
     {
+      "id": "v11d801sr7gd",
+      "name": "Load Balancing China Health Check Region Issues",
+      "status": "investigating",
+      "created_at": "2024-12-18T18:39:08.975Z",
+      "updated_at": "2024-12-18T18:39:09.071Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/xtzbdh82h3tg",
+      "started_at": "2024-12-18T18:39:08.968Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "2r5k5n9qpdt4",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues related to Load Balancing and the China Network. Customers without China Network access who attempt to set 'China' as a Health Check region may experience an error.",
+          "incident_id": "v11d801sr7gd",
+          "created_at": "2024-12-18T18:39:09.069Z",
+          "updated_at": "2024-12-18T18:39:09.069Z",
+          "display_at": "2024-12-18T18:39:09.069Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "8sn2w5kyxfnp",
+              "name": "Cloudflare Sites and Services - Load Balancing and Monitoring",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2024-12-18T18:39:09.007Z",
+          "position": 34,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "8sn2w5kyxfnp",
+          "name": "Load Balancing and Monitoring",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:54:07.994Z",
+          "updated_at": "2024-12-18T18:39:09.022Z",
+          "position": 52,
+          "description": "Load balancing and failover service, including origin server monitoring",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "y3h4k9tvr3w4",
       "name": "Magic Transit Analytics Delays",
       "status": "identified",
@@ -7574,7 +7648,7 @@
       "name": "BLR (Bangalore) on 2024-12-18",
       "status": "scheduled",
       "created_at": "2024-12-17T10:20:16.784Z",
-      "updated_at": "2024-12-17T10:20:16.834Z",
+      "updated_at": "2024-12-18T18:30:21.778Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7582,6 +7656,19 @@
       "started_at": "2024-12-17T10:20:16.778Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "p8lw9p4q37rr",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "zw9fcm1jm3lf",
+          "created_at": "2024-12-18T18:30:21.585Z",
+          "updated_at": "2024-12-18T18:30:21.585Z",
+          "display_at": "2024-12-18T18:30:21.585Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "jzx14yn56hkv",
           "status": "scheduled",
