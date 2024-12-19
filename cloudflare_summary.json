@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-12-19T16:14:30.624Z"
+    "updated_at": "2024-12-19T16:37:08.406Z"
   },
   "components": [
     {
@@ -143,9 +143,9 @@
     {
       "id": "y12kn5nkvb44",
       "name": "Amman, Jordan - (AMM)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-04-02T06:42:27.907Z",
-      "updated_at": "2024-12-19T16:14:26.240Z",
+      "updated_at": "2024-12-19T16:37:08.404Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1427,9 +1427,9 @@
     {
       "id": "0w6nd25hkn0z",
       "name": "Bhubaneswar, India - (BBI)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-03-15T10:55:54.160Z",
-      "updated_at": "2024-12-19T15:49:16.724Z",
+      "updated_at": "2024-12-19T16:37:02.218Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -5027,9 +5027,9 @@
     {
       "id": "t3d07wlg67nl",
       "name": "Mumbai, India - (BOM)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-10-27T20:12:43.833Z",
-      "updated_at": "2024-12-19T15:57:24.476Z",
+      "updated_at": "2024-12-19T16:31:18.384Z",
       "position": 49,
       "description": null,
       "showcase": false,
@@ -7495,7 +7495,62 @@
       "reminder_intervals": null
     }
   ],
-  "scheduled_maintenances": [],
+  "scheduled_maintenances": [
+    {
+      "id": "7rh3xw86vsv7",
+      "name": "MIA (Miami) on 2024-12-20",
+      "status": "scheduled",
+      "created_at": "2024-12-19T16:31:02.119Z",
+      "updated_at": "2024-12-19T16:31:02.172Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/j998f2vq2yqr",
+      "started_at": "2024-12-19T16:31:02.113Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "q1802hs1s9jd",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MIA (Miami) datacenter on 2024-12-20 between 07:00 and 13:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "7rh3xw86vsv7",
+          "created_at": "2024-12-19T16:31:02.170Z",
+          "updated_at": "2024-12-19T16:31:02.170Z",
+          "display_at": "2024-12-19T16:31:02.170Z",
+          "affected_components": [
+            {
+              "code": "mvbjk0vw3krv",
+              "name": "North America - Miami, FL, United States - (MIA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mvbjk0vw3krv",
+          "name": "Miami, FL, United States - (MIA)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:31:43.401Z",
+          "updated_at": "2024-10-15T16:32:50.312Z",
+          "position": 24,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-12-20T07:00:00.000Z",
+      "scheduled_until": "2024-12-20T13:00:00.000Z"
+    }
+  ],
   "status": {
     "indicator": "minor",
     "description": "Minor Service Outage"
