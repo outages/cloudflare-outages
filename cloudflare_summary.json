@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-01T12:16:22.616Z"
+    "updated_at": "2025-01-01T13:25:53.476Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -143,9 +143,9 @@
     {
       "id": "y12kn5nkvb44",
       "name": "Amman, Jordan - (AMM)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-04-02T06:42:27.907Z",
-      "updated_at": "2025-01-01T12:10:54.021Z",
+      "updated_at": "2025-01-01T13:18:32.918Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -6228,9 +6228,9 @@
     {
       "id": "kn2xkt469vyh",
       "name": "Registrar",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-07-31T14:19:17.585Z",
-      "updated_at": "2024-10-08T14:57:43.699Z",
+      "updated_at": "2025-01-01T13:25:53.420Z",
       "position": 70,
       "description": "Cloudflare Registrar securely registers and manages customer domain names",
       "showcase": false,
@@ -7457,6 +7457,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "ckcwxj8b34f5",
+      "name": "Issues with Cloudflare Registrar",
+      "status": "investigating",
+      "created_at": "2025-01-01T13:25:53.385Z",
+      "updated_at": "2025-01-01T13:25:53.473Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/4q25qbk295f6",
+      "started_at": "2025-01-01T13:25:53.379Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "vvdmhl9s1ck3",
+          "status": "investigating",
+          "body": "Cloudflare is currently investigating an issue affecting customers using Cloudflare Registrar. This issue may cause disruptions with domains not auto-expiring, domains not auto-renewing, prolonged domain transfer wait times and certain notifications not being sent.\n\nFurther detail will be provided as more information becomes available.",
+          "incident_id": "ckcwxj8b34f5",
+          "created_at": "2025-01-01T13:25:53.471Z",
+          "updated_at": "2025-01-01T13:25:53.471Z",
+          "display_at": "2025-01-01T13:25:53.471Z",
+          "affected_components": [
+            {
+              "code": "kn2xkt469vyh",
+              "name": "Cloudflare Sites and Services - Registrar",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kn2xkt469vyh",
+          "name": "Registrar",
+          "status": "degraded_performance",
+          "created_at": "2019-07-31T14:19:17.585Z",
+          "updated_at": "2025-01-01T13:25:53.420Z",
+          "position": 70,
+          "description": "Cloudflare Registrar securely registers and manages customer domain names",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
