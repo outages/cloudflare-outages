@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-10T15:48:46.609Z"
+    "updated_at": "2025-01-10T16:20:43.317Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -448,9 +448,9 @@
     {
       "id": "gxjcfyf5pht1",
       "name": "Baghdad, Iraq - (BGW)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2018-03-12T14:18:23.436Z",
-      "updated_at": "2025-01-10T15:48:46.606Z",
+      "updated_at": "2025-01-10T15:52:20.290Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1908,9 +1908,9 @@
     {
       "id": "2469qcw8rvjp",
       "name": "Audit Logs",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-08-01T04:49:28.841Z",
-      "updated_at": "2024-09-12T11:58:30.692Z",
+      "updated_at": "2025-01-10T16:13:55.363Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -2898,9 +2898,9 @@
     {
       "id": "v4lr1tmw0jsf",
       "name": "Port Louis, Mauritius - (MRU)",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2018-02-12T12:35:05.181Z",
-      "updated_at": "2025-01-09T23:41:39.468Z",
+      "updated_at": "2025-01-10T16:08:18.796Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -7457,6 +7457,106 @@
     }
   ],
   "incidents": [
+    {
+      "id": "k23zjzz5595s",
+      "name": "Cloudflare Access - Audit Logs Availability Issues",
+      "status": "monitoring",
+      "created_at": "2025-01-10T16:13:55.335Z",
+      "updated_at": "2025-01-10T16:20:43.313Z",
+      "monitoring_at": "2025-01-10T16:20:43.286Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/zkwddg6j3vs7",
+      "started_at": "2025-01-10T16:13:55.328Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "48brn6s8s7jr",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "k23zjzz5595s",
+          "created_at": "2025-01-10T16:20:43.286Z",
+          "updated_at": "2025-01-10T16:20:43.286Z",
+          "display_at": "2025-01-10T16:20:43.286Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2469qcw8rvjp",
+              "name": "Cloudflare Sites and Services - Audit Logs",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "v81l19c3xpmd",
+          "status": "investigating",
+          "body": "Cloudflare Engineering is investigating an issue causing Access Request audit logs to fail to return in the dashboard and API. Log collection is not impacted at this time. We are working to understand the full impact and mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "k23zjzz5595s",
+          "created_at": "2025-01-10T16:13:55.405Z",
+          "updated_at": "2025-01-10T16:13:55.405Z",
+          "display_at": "2025-01-10T16:13:55.405Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2469qcw8rvjp",
+              "name": "Cloudflare Sites and Services - Audit Logs",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "w4k8yvhfb3vp",
+          "name": "Access",
+          "status": "operational",
+          "created_at": "2018-02-09T21:46:39.049Z",
+          "updated_at": "2024-12-05T22:09:25.083Z",
+          "position": 2,
+          "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2469qcw8rvjp",
+          "name": "Audit Logs",
+          "status": "degraded_performance",
+          "created_at": "2022-08-01T04:49:28.841Z",
+          "updated_at": "2025-01-10T16:13:55.363Z",
+          "position": 12,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-08-01",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "r2drfccs8mp5",
       "name": "Start Up Program Billing Issue",
