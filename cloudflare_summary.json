@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-16T19:20:40.546Z"
+    "updated_at": "2025-01-16T19:31:50.492Z"
   },
   "components": [
     {
@@ -7428,16 +7428,36 @@
     {
       "id": "8cycph397w4f",
       "name": "Increased latency or timeouts when using Workers Builds",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2025-01-16T19:15:38.328Z",
-      "updated_at": "2025-01-16T19:20:40.539Z",
-      "monitoring_at": null,
+      "updated_at": "2025-01-16T19:31:50.490Z",
+      "monitoring_at": "2025-01-16T19:31:50.474Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/kjsxwfspp7vt",
       "started_at": "2025-01-16T19:15:38.320Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "h0nkv6l21xtb",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "8cycph397w4f",
+          "created_at": "2025-01-16T19:31:50.474Z",
+          "updated_at": "2025-01-16T19:31:50.474Z",
+          "display_at": "2025-01-16T19:31:50.474Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "ls0ydq5pzl4g",
           "status": "identified",
@@ -7703,60 +7723,6 @@
       "scheduled_until": "2025-01-17T07:00:00.000Z"
     },
     {
-      "id": "z7zlf7yklstf",
-      "name": "FRA (Frankfurt) on 2025-01-17",
-      "status": "scheduled",
-      "created_at": "2025-01-15T14:50:52.869Z",
-      "updated_at": "2025-01-15T14:50:52.929Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/h04yt3pdp9yp",
-      "started_at": "2025-01-15T14:50:52.862Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "nc7t4r4l2z4t",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in FRA (Frankfurt) datacenter on 2025-01-17 between 01:30 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "z7zlf7yklstf",
-          "created_at": "2025-01-15T14:50:52.926Z",
-          "updated_at": "2025-01-15T14:50:52.926Z",
-          "display_at": "2025-01-15T14:50:52.926Z",
-          "affected_components": [
-            {
-              "code": "rbnhbzgld936",
-              "name": "Europe - Frankfurt, Germany - (FRA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rbnhbzgld936",
-          "name": "Frankfurt, Germany - (FRA)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:37:25.480Z",
-          "updated_at": "2024-09-14T13:55:21.360Z",
-          "position": 16,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-01-17T01:30:00.000Z",
-      "scheduled_until": "2025-01-17T05:30:00.000Z"
-    },
-    {
       "id": "gg6ng3p6mc5y",
       "name": "MAD (Madrid) on 2025-01-17",
       "status": "scheduled",
@@ -7798,6 +7764,60 @@
           "created_at": "2014-10-27T21:41:47.350Z",
           "updated_at": "2024-12-07T21:05:01.505Z",
           "position": 27,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-01-17T01:30:00.000Z",
+      "scheduled_until": "2025-01-17T05:30:00.000Z"
+    },
+    {
+      "id": "z7zlf7yklstf",
+      "name": "FRA (Frankfurt) on 2025-01-17",
+      "status": "scheduled",
+      "created_at": "2025-01-15T14:50:52.869Z",
+      "updated_at": "2025-01-15T14:50:52.929Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/h04yt3pdp9yp",
+      "started_at": "2025-01-15T14:50:52.862Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "nc7t4r4l2z4t",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in FRA (Frankfurt) datacenter on 2025-01-17 between 01:30 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "z7zlf7yklstf",
+          "created_at": "2025-01-15T14:50:52.926Z",
+          "updated_at": "2025-01-15T14:50:52.926Z",
+          "display_at": "2025-01-15T14:50:52.926Z",
+          "affected_components": [
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rbnhbzgld936",
+          "name": "Frankfurt, Germany - (FRA)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:37:25.480Z",
+          "updated_at": "2024-09-14T13:55:21.360Z",
+          "position": 16,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -8025,6 +8045,60 @@
       ],
       "scheduled_for": "2025-01-21T17:00:00.000Z",
       "scheduled_until": "2025-01-22T01:00:00.000Z"
+    },
+    {
+      "id": "6w9jl19jjcn0",
+      "name": "GYE (Guayaquil) on 2025-01-22",
+      "status": "scheduled",
+      "created_at": "2025-01-16T19:23:01.678Z",
+      "updated_at": "2025-01-16T19:23:01.733Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/w40rd4z380v1",
+      "started_at": "2025-01-16T19:23:01.672Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "z85kk6308sm1",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in GYE (Guayaquil) datacenter on 2025-01-22 between 01:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "6w9jl19jjcn0",
+          "created_at": "2025-01-16T19:23:01.731Z",
+          "updated_at": "2025-01-16T19:23:01.731Z",
+          "display_at": "2025-01-16T19:23:01.731Z",
+          "affected_components": [
+            {
+              "code": "55x4rmjlwfq8",
+              "name": "Latin America & the Caribbean - Guayaquil, Ecuador - (GYE)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "55x4rmjlwfq8",
+          "name": "Guayaquil, Ecuador - (GYE)",
+          "status": "operational",
+          "created_at": "2021-07-05T16:18:47.146Z",
+          "updated_at": "2025-01-14T09:45:41.669Z",
+          "position": 21,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-05",
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-01-22T01:00:00.000Z",
+      "scheduled_until": "2025-01-22T05:00:00.000Z"
     },
     {
       "id": "wb3sjts10hxj",
