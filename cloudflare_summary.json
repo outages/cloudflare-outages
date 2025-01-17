@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-17T09:37:29.712Z"
+    "updated_at": "2025-01-17T10:05:58.946Z"
   },
   "components": [
     {
@@ -7427,10 +7427,10 @@
   "incidents": [
     {
       "id": "m4s7nydr07tk",
-      "name": "Cloudflare API: Recent deployment causing issues in Terraform",
-      "status": "investigating",
+      "name": "Cloudflare API: Recent deployment causing issues in certain zone settings",
+      "status": "identified",
       "created_at": "2025-01-17T09:34:07.423Z",
-      "updated_at": "2025-01-17T09:35:26.981Z",
+      "updated_at": "2025-01-17T10:05:58.938Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7439,12 +7439,32 @@
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
+          "id": "c0xd6mpymm9y",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "m4s7nydr07tk",
+          "created_at": "2025-01-17T10:05:58.936Z",
+          "updated_at": "2025-01-17T10:05:58.936Z",
+          "display_at": "2025-01-17T10:05:58.936Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
           "id": "n77s1kzv0xbc",
           "status": "investigating",
-          "body": "Cloudflare is aware of, and investigating an issue which potentially impacts multiple customers: A recent deployment of the Cloudflare API is breaking the state of customers that use specific actions on Terraform: \"security_level\", \"minify\" or \"server_side_exclude\" in a \"cloudflare_page_rule\" resource currently cannot apply Terraform.\nFurther details will be provided as more information becomes available.",
+          "body": "Cloudflare is aware of, and investigating an issue which potentially impacts multiple customers: A recent deployment of the Cloudflare API is breaking specific actions in Zone settings: \"security_level\", \"minify\" ,\"server_side_exclude\" and \"cloudflare_page_rule\" resources currently cannot be modified.\nFurther details will be provided as more information becomes available.",
           "incident_id": "m4s7nydr07tk",
           "created_at": "2025-01-17T09:34:07.513Z",
-          "updated_at": "2025-01-17T09:35:26.935Z",
+          "updated_at": "2025-01-17T09:59:47.222Z",
           "display_at": "2025-01-17T09:34:07.000Z",
           "affected_components": [
             {
@@ -7686,7 +7706,7 @@
       "name": "PDX (Portland) on 2025-01-17",
       "status": "scheduled",
       "created_at": "2025-01-16T02:48:25.709Z",
-      "updated_at": "2025-01-16T02:48:25.774Z",
+      "updated_at": "2025-01-17T10:00:32.558Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7694,6 +7714,19 @@
       "started_at": "2025-01-16T02:48:25.702Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "zs7ff9yl1lt6",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "h6s73tjqtb7j",
+          "created_at": "2025-01-17T10:00:32.044Z",
+          "updated_at": "2025-01-17T10:00:32.044Z",
+          "display_at": "2025-01-17T10:00:32.044Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "btjxl0hbjl7m",
           "status": "scheduled",
@@ -7790,60 +7823,6 @@
       "scheduled_until": "2025-01-17T23:00:00.000Z"
     },
     {
-      "id": "2yrwj0wk09r2",
-      "name": "PHX (Phoenix) on 2025-01-21",
-      "status": "scheduled",
-      "created_at": "2025-01-16T18:41:01.575Z",
-      "updated_at": "2025-01-16T18:41:01.630Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/qdnj8wswh8dl",
-      "started_at": "2025-01-16T18:41:01.568Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "cldbjztgkctt",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in PHX (Phoenix) datacenter between 2025-01-21 17:00 and 2025-01-22 01:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "2yrwj0wk09r2",
-          "created_at": "2025-01-16T18:41:01.628Z",
-          "updated_at": "2025-01-16T18:41:01.628Z",
-          "display_at": "2025-01-16T18:41:01.628Z",
-          "affected_components": [
-            {
-              "code": "n05d51gmgf0f",
-              "name": "North America - Phoenix, AZ, United States - (PHX)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "n05d51gmgf0f",
-          "name": "Phoenix, AZ, United States - (PHX)",
-          "status": "operational",
-          "created_at": "2015-10-23T18:17:04.601Z",
-          "updated_at": "2024-12-20T09:30:03.259Z",
-          "position": 34,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-01-21T17:00:00.000Z",
-      "scheduled_until": "2025-01-22T01:00:00.000Z"
-    },
-    {
       "id": "1d28lx9kks0c",
       "name": "LAS (Las Vegas) on 2025-01-21",
       "status": "scheduled",
@@ -7896,6 +7875,60 @@
       ],
       "scheduled_for": "2025-01-21T17:00:00.000Z",
       "scheduled_until": "2025-01-21T21:30:00.000Z"
+    },
+    {
+      "id": "2yrwj0wk09r2",
+      "name": "PHX (Phoenix) on 2025-01-21",
+      "status": "scheduled",
+      "created_at": "2025-01-16T18:41:01.575Z",
+      "updated_at": "2025-01-16T18:41:01.630Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/qdnj8wswh8dl",
+      "started_at": "2025-01-16T18:41:01.568Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "cldbjztgkctt",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in PHX (Phoenix) datacenter between 2025-01-21 17:00 and 2025-01-22 01:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "2yrwj0wk09r2",
+          "created_at": "2025-01-16T18:41:01.628Z",
+          "updated_at": "2025-01-16T18:41:01.628Z",
+          "display_at": "2025-01-16T18:41:01.628Z",
+          "affected_components": [
+            {
+              "code": "n05d51gmgf0f",
+              "name": "North America - Phoenix, AZ, United States - (PHX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "n05d51gmgf0f",
+          "name": "Phoenix, AZ, United States - (PHX)",
+          "status": "operational",
+          "created_at": "2015-10-23T18:17:04.601Z",
+          "updated_at": "2024-12-20T09:30:03.259Z",
+          "position": 34,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-01-21T17:00:00.000Z",
+      "scheduled_until": "2025-01-22T01:00:00.000Z"
     },
     {
       "id": "6w9jl19jjcn0",
