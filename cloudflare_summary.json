@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-17T09:09:19.856Z"
+    "updated_at": "2025-01-17T09:35:26.984Z"
   },
   "components": [
     {
@@ -839,9 +839,9 @@
     {
       "id": "5wtvzd626rd8",
       "name": "Bangkok, Thailand - (BKK)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-04-21T05:37:43.134Z",
-      "updated_at": "2025-01-17T06:59:42.149Z",
+      "updated_at": "2025-01-17T09:35:13.146Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -929,9 +929,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2024-12-18T15:32:38.314Z",
+      "updated_at": "2025-01-17T09:34:07.460Z",
       "position": 6,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -1666,9 +1666,9 @@
     {
       "id": "1zdfwmzjqqtf",
       "name": "Erbil, Iraq - (EBL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-02-02T10:59:20.698Z",
-      "updated_at": "2025-01-14T08:04:47.197Z",
+      "updated_at": "2025-01-17T09:32:31.282Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -5746,9 +5746,9 @@
     {
       "id": "g3xfb8yfhk9l",
       "name": "Barranquilla, Colombia - (BAQ)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-04-26T17:08:39.583Z",
-      "updated_at": "2025-01-17T08:24:18.431Z",
+      "updated_at": "2025-01-17T09:31:51.467Z",
       "position": 59,
       "description": null,
       "showcase": false,
@@ -7425,6 +7425,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "m4s7nydr07tk",
+      "name": "Cloudflare API: Recent deployment causing issues in Terraform",
+      "status": "investigating",
+      "created_at": "2025-01-17T09:34:07.423Z",
+      "updated_at": "2025-01-17T09:35:26.981Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/rdn9b563jp2m",
+      "started_at": "2025-01-17T09:34:07.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "n77s1kzv0xbc",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue which potentially impacts multiple customers: A recent deployment of the Cloudflare API is breaking the state of customers that use specific actions on Terraform: \"security_level\", \"minify\" or \"server_side_exclude\" in a \"cloudflare_page_rule\" resource currently cannot apply Terraform.\nFurther details will be provided as more information becomes available.",
+          "incident_id": "m4s7nydr07tk",
+          "created_at": "2025-01-17T09:34:07.513Z",
+          "updated_at": "2025-01-17T09:35:26.935Z",
+          "display_at": "2025-01-17T09:34:07.000Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2025-01-17T09:34:07.460Z",
+          "position": 6,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "t5nrjmpxc1cj",
       "name": "AWS S3 SDK compatibility inconsistencies with R2",
