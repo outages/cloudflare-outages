@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-24T14:49:45.711Z"
+    "updated_at": "2025-01-24T15:17:46.414Z"
   },
   "components": [
     {
@@ -2311,7 +2311,7 @@
       "name": "Dhaka, Bangladesh - (DAC)",
       "status": "under_maintenance",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2025-01-24T14:38:27.180Z",
+      "updated_at": "2025-01-24T15:17:46.411Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -3704,9 +3704,9 @@
     {
       "id": "7k05x28lndzb",
       "name": "Porto Alegre, Brazil - (POA)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-04-01T16:32:01.138Z",
-      "updated_at": "2025-01-24T14:49:45.708Z",
+      "updated_at": "2025-01-24T15:17:46.034Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -6629,9 +6629,9 @@
     {
       "id": "k04jkcpzxn94",
       "name": "WARP",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-09-30T09:25:38.587Z",
-      "updated_at": "2025-01-21T22:32:23.327Z",
+      "updated_at": "2025-01-24T15:14:02.386Z",
       "position": 89,
       "description": null,
       "showcase": false,
@@ -7393,6 +7393,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "pv7brp640lt1",
+      "name": "Cloudflare WARP: Issues in processing Device Management",
+      "status": "investigating",
+      "created_at": "2025-01-24T15:14:02.340Z",
+      "updated_at": "2025-01-24T15:14:02.456Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/cwh8t16pljg2",
+      "started_at": "2025-01-24T15:14:02.329Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ltpbkfgqy57r",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with WARP Device Management: Customers may experience processing delays when attempting to remove, revoke or unrevoke devices.\nWe are working to understand the full impact and mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "pv7brp640lt1",
+          "created_at": "2025-01-24T15:14:02.453Z",
+          "updated_at": "2025-01-24T15:14:02.453Z",
+          "display_at": "2025-01-24T15:14:02.453Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k04jkcpzxn94",
+          "name": "WARP",
+          "status": "degraded_performance",
+          "created_at": "2019-09-30T09:25:38.587Z",
+          "updated_at": "2025-01-24T15:14:02.386Z",
+          "position": 89,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "t5nrjmpxc1cj",
       "name": "AWS S3 SDK compatibility inconsistencies with R2",
