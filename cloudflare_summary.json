@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-27T09:00:55.262Z"
+    "updated_at": "2025-01-27T09:45:05.674Z"
   },
   "components": [
     {
@@ -7394,6 +7394,80 @@
   ],
   "incidents": [
     {
+      "id": "7zqt207m4gyd",
+      "name": "Cloudflare Workers AI Issues in Tokyo, Japan (NRT)",
+      "status": "investigating",
+      "created_at": "2025-01-27T09:43:03.554Z",
+      "updated_at": "2025-01-27T09:43:03.620Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "none",
+      "shortlink": "https://stspg.io/p4pcr0370y0w",
+      "started_at": "2025-01-27T09:43:03.541Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "pg9cpdyk72mz",
+          "status": "investigating",
+          "body": "Cloudflare has identified an issue whereby customers might experience errors from inference requests to certain models using Workers AI in the Tokyo region, Japan (NRT).\n\nWe are working to mitigate this problem. More updates to follow shortly.",
+          "incident_id": "7zqt207m4gyd",
+          "created_at": "2025-01-27T09:43:03.616Z",
+          "updated_at": "2025-01-27T09:43:03.616Z",
+          "display_at": "2025-01-27T09:43:03.616Z",
+          "affected_components": [
+            {
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rmjk2n758yzc",
+              "name": "Asia - Tokyo, Japan - (NRT)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rmjk2n758yzc",
+          "name": "Tokyo, Japan - (NRT)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:42:49.579Z",
+          "updated_at": "2024-07-10T19:53:33.800Z",
+          "position": 65,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "zvm7mqn92xzc",
+          "name": "Workers AI",
+          "status": "operational",
+          "created_at": "2024-02-14T15:05:51.274Z",
+          "updated_at": "2025-01-25T02:07:50.068Z",
+          "position": 93,
+          "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
+          "showcase": false,
+          "start_date": "2024-02-14",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "t5nrjmpxc1cj",
       "name": "AWS S3 SDK compatibility inconsistencies with R2",
       "status": "identified",
@@ -7743,6 +7817,60 @@
       ],
       "scheduled_for": "2025-01-28T10:00:00.000Z",
       "scheduled_until": "2025-01-28T15:00:00.000Z"
+    },
+    {
+      "id": "xvg2x6bt74c8",
+      "name": "LIS (Lisbon) on 2025-01-29",
+      "status": "scheduled",
+      "created_at": "2025-01-27T09:45:05.603Z",
+      "updated_at": "2025-01-27T09:45:05.671Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/chqgkvdjrs1w",
+      "started_at": "2025-01-27T09:45:05.595Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "kydj42ytqpr6",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LIS (Lisbon) datacenter on 2025-01-29 between 02:00 and 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "xvg2x6bt74c8",
+          "created_at": "2025-01-27T09:45:05.668Z",
+          "updated_at": "2025-01-27T09:45:05.668Z",
+          "display_at": "2025-01-27T09:45:05.668Z",
+          "affected_components": [
+            {
+              "code": "qshn45g5q59m",
+              "name": "Europe - Lisbon, Portugal - (LIS)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qshn45g5q59m",
+          "name": "Lisbon, Portugal - (LIS)",
+          "status": "operational",
+          "created_at": "2016-10-18T20:43:36.754Z",
+          "updated_at": "2025-01-10T03:05:33.561Z",
+          "position": 24,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-01-29T02:00:00.000Z",
+      "scheduled_until": "2025-01-29T03:00:00.000Z"
     },
     {
       "id": "tyv4pmrx69x4",
