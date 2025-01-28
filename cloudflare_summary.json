@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-28T20:23:14.871Z"
+    "updated_at": "2025-01-28T21:14:10.208Z"
   },
   "components": [
     {
@@ -1334,9 +1334,9 @@
     {
       "id": "h02k6rrcwpbr",
       "name": "Doha, Qatar - (DOH)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2015-06-18T15:21:54.451Z",
-      "updated_at": "2025-01-26T07:57:18.654Z",
+      "updated_at": "2025-01-28T21:14:10.204Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2219,9 +2219,9 @@
     {
       "id": "rq86nd41r4t4",
       "name": "Lagos, Nigeria - (LOS)",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2018-10-31T23:12:02.203Z",
-      "updated_at": "2025-01-10T02:14:47.363Z",
+      "updated_at": "2025-01-28T21:14:09.540Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -3436,7 +3436,7 @@
       "name": "Jakarta, Indonesia - (CGK)",
       "status": "under_maintenance",
       "created_at": "2019-08-21T06:55:28.100Z",
-      "updated_at": "2025-01-25T08:26:25.751Z",
+      "updated_at": "2025-01-28T21:02:48.478Z",
       "position": 28,
       "description": null,
       "showcase": false,
@@ -4349,9 +4349,9 @@
     {
       "id": "hr78s04g1r5b",
       "name": "Kuala Lumpur, Malaysia - (KUL)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-08-31T01:11:27.364Z",
-      "updated_at": "2025-01-28T20:17:50.161Z",
+      "updated_at": "2025-01-28T21:14:06.731Z",
       "position": 40,
       "description": null,
       "showcase": false,
@@ -4934,9 +4934,9 @@
     {
       "id": "h6pmxs6zl5gc",
       "name": "Thessaloniki, Greece - (SKG)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-05-06T07:26:10.258Z",
-      "updated_at": "2025-01-28T20:12:22.970Z",
+      "updated_at": "2025-01-28T21:14:05.060Z",
       "position": 48,
       "description": null,
       "showcase": false,
@@ -6074,9 +6074,9 @@
     {
       "id": "xk1sjvzmjp6t",
       "name": "Ulaanbaatar, Mongolia - (ULN)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-09-19T09:48:26.066Z",
-      "updated_at": "2025-01-28T20:12:23.644Z",
+      "updated_at": "2025-01-28T21:14:06.077Z",
       "position": 66,
       "description": null,
       "showcase": false,
@@ -6704,9 +6704,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2025-01-25T02:07:50.048Z",
+      "updated_at": "2025-01-28T21:01:08.654Z",
       "position": 92,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7393,6 +7393,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "qt2qbt5nchry",
+      "name": "Elevated Worker Errors in Jakarta",
+      "status": "investigating",
+      "created_at": "2025-01-28T21:01:08.595Z",
+      "updated_at": "2025-01-28T21:01:08.708Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/qs5w2dkdqxs3",
+      "started_at": "2025-01-28T21:01:08.584Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "qd28yb4thzpl",
+          "status": "investigating",
+          "body": "We are currently investigating an issue where some users are experiencing elevated Workers error rates in Jakarta.",
+          "incident_id": "qt2qbt5nchry",
+          "created_at": "2025-01-28T21:01:08.706Z",
+          "updated_at": "2025-01-28T21:01:08.706Z",
+          "display_at": "2025-01-28T21:01:08.706Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "gdywyg76bgy3",
+              "name": "Asia - Jakarta, Indonesia - (CGK)",
+              "old_status": "under_maintenance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gdywyg76bgy3",
+          "name": "Jakarta, Indonesia - (CGK)",
+          "status": "under_maintenance",
+          "created_at": "2019-08-21T06:55:28.100Z",
+          "updated_at": "2025-01-28T21:02:48.478Z",
+          "position": 28,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2025-01-28T21:01:08.654Z",
+          "position": 92,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "ggg05wcthck2",
       "name": "Analytics Delays for Workers/Durable Objects",
