@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-03T21:33:26.214Z"
+    "updated_at": "2025-02-03T21:50:11.514Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -5005,9 +5005,9 @@
     {
       "id": "msyl69slj4cy",
       "name": "Tirana, Albania - (TIA)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-08-05T21:45:58.884Z",
-      "updated_at": "2025-02-03T21:33:26.209Z",
+      "updated_at": "2025-02-03T21:50:11.509Z",
       "position": 49,
       "description": null,
       "showcase": false,
@@ -6070,9 +6070,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2025-01-17T03:20:52.765Z",
+      "updated_at": "2025-02-03T21:38:45.355Z",
       "position": 66,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -7428,99 +7428,6 @@
           "showcase": false,
           "start_date": "2021-05-24",
           "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "t5nrjmpxc1cj",
-      "name": "AWS S3 SDK compatibility inconsistencies with R2",
-      "status": "identified",
-      "created_at": "2025-01-17T03:20:52.740Z",
-      "updated_at": "2025-01-22T16:37:12.228Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/t9whr5234f4s",
-      "started_at": "2025-01-17T03:20:52.734Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "d0fpbmc6xh8b",
-          "status": "identified",
-          "body": "We are continuing to work on a fix for native CRC32 checksum handling in R2 APIs. If you run into an issue, please see the documentation for workarounds based on the SDK that you are using: https://developers.cloudflare.com/r2/examples/aws/",
-          "incident_id": "t5nrjmpxc1cj",
-          "created_at": "2025-01-22T16:33:53.274Z",
-          "updated_at": "2025-01-22T16:37:12.222Z",
-          "display_at": "2025-01-22T16:33:53.000Z",
-          "affected_components": [
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "96krrvml7jc4",
-          "status": "identified",
-          "body": "We are continuing to work on a fix for this issue.",
-          "incident_id": "t5nrjmpxc1cj",
-          "created_at": "2025-01-17T11:23:58.263Z",
-          "updated_at": "2025-01-17T11:23:58.263Z",
-          "display_at": "2025-01-17T11:23:58.263Z",
-          "affected_components": [
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "7qfvhy71g4h2",
-          "status": "identified",
-          "body": "AWS recently updated their SDKs to enable CRC32 checksums on multiple object operations by default. \nR2 does not currently support CRC32 checksums, and the default configurations will return header related errors such as Header 'x-amz-checksum-algorithm' with value 'CRC32' not implemented. \n\nImpacted users can either pin AWS SDKs to a prior version or modify the configuration to restore the prior default behavior of not checking checksums on upload. \n\nFor more details, see the examples section of the R2 Docs for the relevant SDK: \nhttps://developers.cloudflare.com/r2/examples/aws/",
-          "incident_id": "t5nrjmpxc1cj",
-          "created_at": "2025-01-17T03:20:52.814Z",
-          "updated_at": "2025-01-17T03:20:52.814Z",
-          "display_at": "2025-01-17T03:20:52.814Z",
-          "affected_components": [
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hb7g5sq2zz0h",
-          "name": "R2",
-          "status": "degraded_performance",
-          "created_at": "2022-07-05T10:55:24.503Z",
-          "updated_at": "2025-01-17T03:20:52.765Z",
-          "position": 66,
-          "description": "High-performance storage for files and objects with zero egress charges",
-          "showcase": false,
-          "start_date": "2022-07-05",
-          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
