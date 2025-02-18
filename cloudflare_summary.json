@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-18T22:16:25.677Z"
+    "updated_at": "2025-02-18T22:26:29.417Z"
   },
   "components": [
     {
@@ -6669,9 +6669,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2025-02-13T21:05:36.186Z",
+      "updated_at": "2025-02-18T22:26:29.357Z",
       "position": 92,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7313,6 +7313,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "rl5sqwbrf847",
+      "name": "New Workers Cron Triggers Schedules Are Not Running",
+      "status": "investigating",
+      "created_at": "2025-02-18T22:26:29.321Z",
+      "updated_at": "2025-02-18T22:26:29.414Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/hxj49m1wftyw",
+      "started_at": "2025-02-18T22:26:29.312Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "gsghpffwydwy",
+          "status": "investigating",
+          "body": "We are investigating an issue where new cron schedules created via Wrangler, Dash, or API since 2025-02-18 20:42 UTC have not run as expected. We are also investigating if this has impacted any currently active schedules.",
+          "incident_id": "rl5sqwbrf847",
+          "created_at": "2025-02-18T22:26:29.412Z",
+          "updated_at": "2025-02-18T22:26:29.412Z",
+          "display_at": "2025-02-18T22:26:29.412Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2025-02-18T22:26:29.357Z",
+          "position": 92,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "y7hq4pynfdyc",
       "name": "Network Performance Issues in China",
@@ -11604,6 +11657,60 @@
       ],
       "scheduled_for": "2025-02-19T09:00:00.000Z",
       "scheduled_until": "2025-02-19T13:00:00.000Z"
+    },
+    {
+      "id": "1sggwzrzx304",
+      "name": "MDE (Medellín) on 2025-02-19",
+      "status": "scheduled",
+      "created_at": "2025-02-18T22:24:56.746Z",
+      "updated_at": "2025-02-18T22:24:56.797Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/l21ldj1ycvlf",
+      "started_at": "2025-02-18T22:24:56.740Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "6g916hr9p5v1",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MDE (Medellín) datacenter between 2025-02-19 16:00 and 2025-02-20 00:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "1sggwzrzx304",
+          "created_at": "2025-02-18T22:24:56.795Z",
+          "updated_at": "2025-02-18T22:24:56.795Z",
+          "display_at": "2025-02-18T22:24:56.795Z",
+          "affected_components": [
+            {
+              "code": "51644s4prm7b",
+              "name": "Latin America & the Caribbean - Medellín, Colombia - (MDE)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "51644s4prm7b",
+          "name": "Medellín, Colombia - (MDE)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:44:54.481Z",
+          "updated_at": "2025-02-06T16:23:21.340Z",
+          "position": 27,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-02-19T16:00:00.000Z",
+      "scheduled_until": "2025-02-20T00:00:00.000Z"
     },
     {
       "id": "qp0prnkcs9p8",
