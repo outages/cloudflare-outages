@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-25T00:42:35.537Z"
+    "updated_at": "2025-02-25T02:37:24.201Z"
   },
   "components": [
     {
@@ -2545,9 +2545,9 @@
     {
       "id": "s0991jwsqllx",
       "name": "Bot Management",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-12-02T09:33:01.317Z",
-      "updated_at": "2024-11-12T23:10:41.754Z",
+      "updated_at": "2025-02-25T01:52:44.178Z",
       "position": 18,
       "description": "Bot Management provides sophisticated bot protection for your domain. Customers can identify automated traffic, take appropriate action, and view detailed analytics within the dashboard. Bot Management also supports custom solutions via Workers and Logs.",
       "showcase": false,
@@ -3087,7 +3087,7 @@
       "name": "Lisbon, Portugal - (LIS)",
       "status": "operational",
       "created_at": "2016-10-18T20:43:36.754Z",
-      "updated_at": "2025-02-19T05:17:38.153Z",
+      "updated_at": "2025-02-25T02:37:24.199Z",
       "position": 24,
       "description": null,
       "showcase": false,
@@ -7329,6 +7329,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "7ctgyqqyr316",
+      "name": "Failing to identify verified bots on certain O2O (Orange 2 Orange) requests",
+      "status": "investigating",
+      "created_at": "2025-02-25T01:52:44.135Z",
+      "updated_at": "2025-02-25T01:52:44.246Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/mxfg60clvjj6",
+      "started_at": "2025-02-25T01:52:44.124Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "t9k3ct1g86kg",
+          "status": "investigating",
+          "body": "Cloudflare is investigating failures in verification of certain o2o requests in verification bots detection system .  We are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "7ctgyqqyr316",
+          "created_at": "2025-02-25T01:52:44.243Z",
+          "updated_at": "2025-02-25T01:52:44.243Z",
+          "display_at": "2025-02-25T01:52:44.243Z",
+          "affected_components": [
+            {
+              "code": "s0991jwsqllx",
+              "name": "Cloudflare Sites and Services - Bot Management",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "s0991jwsqllx",
+          "name": "Bot Management",
+          "status": "degraded_performance",
+          "created_at": "2022-12-02T09:33:01.317Z",
+          "updated_at": "2025-02-25T01:52:44.178Z",
+          "position": 18,
+          "description": "Bot Management provides sophisticated bot protection for your domain. Customers can identify automated traffic, take appropriate action, and view detailed analytics within the dashboard. Bot Management also supports custom solutions via Workers and Logs.",
+          "showcase": false,
+          "start_date": "2022-12-02",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "y7hq4pynfdyc",
       "name": "Network Performance Issues in China",
@@ -14683,6 +14736,60 @@
     }
   ],
   "scheduled_maintenances": [
+    {
+      "id": "gpyj0n67949f",
+      "name": "FRA (Frankfurt) on 2025-02-25",
+      "status": "scheduled",
+      "created_at": "2025-02-25T02:36:35.740Z",
+      "updated_at": "2025-02-25T02:36:35.795Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/5v0r9qvxl0kz",
+      "started_at": "2025-02-25T02:36:35.733Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "vnn9s9ll2c5f",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in FRA (Frankfurt) datacenter on 2025-02-25 between 02:45 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "gpyj0n67949f",
+          "created_at": "2025-02-25T02:36:35.792Z",
+          "updated_at": "2025-02-25T02:36:35.792Z",
+          "display_at": "2025-02-25T02:36:35.792Z",
+          "affected_components": [
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rbnhbzgld936",
+          "name": "Frankfurt, Germany - (FRA)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:37:25.480Z",
+          "updated_at": "2024-09-14T13:55:21.360Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-02-25T02:45:00.000Z",
+      "scheduled_until": "2025-02-25T05:30:00.000Z"
+    },
     {
       "id": "5n61ssxq0gt2",
       "name": "SJC (San Jose) on 2025-02-25",
