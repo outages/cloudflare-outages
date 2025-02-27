@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-27T15:32:52.057Z"
+    "updated_at": "2025-02-27T16:24:47.758Z"
   },
   "components": [
     {
@@ -1331,7 +1331,7 @@
       "name": "Doha, Qatar - (DOH)",
       "status": "operational",
       "created_at": "2015-06-18T15:21:54.451Z",
-      "updated_at": "2025-02-27T11:58:29.428Z",
+      "updated_at": "2025-02-27T16:23:42.282Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2304,9 +2304,9 @@
     {
       "id": "hf1csyqv3x7s",
       "name": "Dhaka, Bangladesh - (DAC)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2025-02-27T13:17:17.849Z",
+      "updated_at": "2025-02-27T16:24:47.755Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2589,9 +2589,9 @@
     {
       "id": "wtc1p207n9kv",
       "name": "Las Vegas, NV, United States - (LAS)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-09-27T05:49:35.652Z",
-      "updated_at": "2025-02-27T13:01:43.758Z",
+      "updated_at": "2025-02-27T16:06:48.714Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -2904,9 +2904,9 @@
     {
       "id": "m91w78997pqv",
       "name": "Memphis, TN, United States - (MEM)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-03-28T09:07:42.032Z",
-      "updated_at": "2025-02-18T10:57:02.479Z",
+      "updated_at": "2025-02-27T16:13:44.069Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -4016,7 +4016,7 @@
       "name": "Karachi, Pakistan - (KHI)",
       "status": "under_maintenance",
       "created_at": "2018-12-04T16:17:59.275Z",
-      "updated_at": "2025-02-27T14:02:31.418Z",
+      "updated_at": "2025-02-27T16:18:07.206Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -6669,9 +6669,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2025-02-24T13:46:36.361Z",
+      "updated_at": "2025-02-27T16:02:28.585Z",
       "position": 93,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -6684,9 +6684,9 @@
     {
       "id": "zvm7mqn92xzc",
       "name": "Workers AI",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-02-14T15:05:51.274Z",
-      "updated_at": "2025-02-24T13:46:36.371Z",
+      "updated_at": "2025-02-27T16:02:28.612Z",
       "position": 94,
       "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
       "showcase": false,
@@ -7313,6 +7313,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "99c2js7sk5f1",
+      "name": "Cloudflare Workers AI Issues",
+      "status": "identified",
+      "created_at": "2025-02-27T16:02:28.534Z",
+      "updated_at": "2025-02-27T16:04:20.433Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/x1b7d9cf6cb7",
+      "started_at": "2025-02-27T14:02:28.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "25l4jzt4jg1k",
+          "status": "identified",
+          "body": "Cloudflare has identified an issue whereby customers might experience errors from inference requests to model llama-3.1-8b-instruct-fp8-fast using Workers AI.\n\nWe are working to mitigate this problem. More updates to follow shortly.",
+          "incident_id": "99c2js7sk5f1",
+          "created_at": "2025-02-27T16:02:28.678Z",
+          "updated_at": "2025-02-27T16:04:20.333Z",
+          "display_at": "2025-02-27T14:02:28.000Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2025-02-27T16:02:28.585Z",
+          "position": 93,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "zvm7mqn92xzc",
+          "name": "Workers AI",
+          "status": "degraded_performance",
+          "created_at": "2024-02-14T15:05:51.274Z",
+          "updated_at": "2025-02-27T16:02:28.612Z",
+          "position": 94,
+          "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
+          "showcase": false,
+          "start_date": "2024-02-14",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "y7hq4pynfdyc",
       "name": "Network Performance Issues in China",
@@ -15639,73 +15713,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "ymjj6jdgh5wk",
-      "name": "MEM (Memphis) on 2025-02-27",
-      "status": "scheduled",
-      "created_at": "2025-02-26T23:20:27.256Z",
-      "updated_at": "2025-02-27T15:00:25.744Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/vjs4v9w58fyd",
-      "started_at": "2025-02-26T23:20:27.249Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "p5ndcv6s76ym",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "ymjj6jdgh5wk",
-          "created_at": "2025-02-27T15:00:25.637Z",
-          "updated_at": "2025-02-27T15:00:25.637Z",
-          "display_at": "2025-02-27T15:00:25.637Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "k9gmjt8qg0y6",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MEM (Memphis) datacenter between 2025-02-27 16:00 and 2025-02-28 00:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "ymjj6jdgh5wk",
-          "created_at": "2025-02-26T23:20:27.313Z",
-          "updated_at": "2025-02-26T23:20:27.313Z",
-          "display_at": "2025-02-26T23:20:27.313Z",
-          "affected_components": [
-            {
-              "code": "m91w78997pqv",
-              "name": "North America - Memphis, TN, United States - (MEM)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "m91w78997pqv",
-          "name": "Memphis, TN, United States - (MEM)",
-          "status": "operational",
-          "created_at": "2018-03-28T09:07:42.032Z",
-          "updated_at": "2025-02-18T10:57:02.479Z",
-          "position": 22,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-02-27T16:00:00.000Z",
-      "scheduled_until": "2025-02-28T00:00:00.000Z"
-    },
-    {
       "id": "smslhrghrmbq",
       "name": "MRS (Marseille) on 2025-02-28",
       "status": "scheduled",
@@ -16264,6 +16271,86 @@
       ],
       "scheduled_for": "2025-03-13T19:00:00.000Z",
       "scheduled_until": "2025-03-14T01:00:00.000Z"
+    },
+    {
+      "id": "ymjj6jdgh5wk",
+      "name": "MEM (Memphis) on 2025-02-27",
+      "status": "in_progress",
+      "created_at": "2025-02-26T23:20:27.256Z",
+      "updated_at": "2025-02-27T16:00:21.414Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/vjs4v9w58fyd",
+      "started_at": "2025-02-26T23:20:27.249Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "lkljdr5blbmx",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "ymjj6jdgh5wk",
+          "created_at": "2025-02-27T16:00:21.408Z",
+          "updated_at": "2025-02-27T16:00:21.408Z",
+          "display_at": "2025-02-27T16:00:21.408Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "p5ndcv6s76ym",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "ymjj6jdgh5wk",
+          "created_at": "2025-02-27T15:00:25.637Z",
+          "updated_at": "2025-02-27T15:00:25.637Z",
+          "display_at": "2025-02-27T15:00:25.637Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "k9gmjt8qg0y6",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MEM (Memphis) datacenter between 2025-02-27 16:00 and 2025-02-28 00:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "ymjj6jdgh5wk",
+          "created_at": "2025-02-26T23:20:27.313Z",
+          "updated_at": "2025-02-26T23:20:27.313Z",
+          "display_at": "2025-02-26T23:20:27.313Z",
+          "affected_components": [
+            {
+              "code": "m91w78997pqv",
+              "name": "North America - Memphis, TN, United States - (MEM)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "m91w78997pqv",
+          "name": "Memphis, TN, United States - (MEM)",
+          "status": "partial_outage",
+          "created_at": "2018-03-28T09:07:42.032Z",
+          "updated_at": "2025-02-27T16:13:44.069Z",
+          "position": 22,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-02-27T16:00:00.000Z",
+      "scheduled_until": "2025-02-28T00:00:00.000Z"
     },
     {
       "id": "3v69q88yj2qy",
