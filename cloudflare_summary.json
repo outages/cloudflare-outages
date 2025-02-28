@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-28T18:55:12.652Z"
+    "updated_at": "2025-02-28T19:13:56.456Z"
   },
   "components": [
     {
@@ -1019,9 +1019,9 @@
     {
       "id": "xpjxwz2x742k",
       "name": "Beirut, Lebanon - (BEY)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-02-08T11:33:14.561Z",
-      "updated_at": "2025-02-28T18:55:12.648Z",
+      "updated_at": "2025-02-28T19:05:28.653Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -1109,7 +1109,7 @@
     {
       "id": "m3639x4txd08",
       "name": "Middle East",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2015-06-18T15:21:54.436Z",
       "updated_at": "2022-04-26T19:49:08.594Z",
       "position": 7,
@@ -4044,9 +4044,9 @@
     {
       "id": "nmp96vgn1hpl",
       "name": "Digital Experience Monitoring (DEX)",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2023-03-23T09:33:12.310Z",
-      "updated_at": "2025-02-28T18:05:56.577Z",
+      "updated_at": "2025-02-28T18:56:04.660Z",
       "position": 35,
       "description": "Digital Experience Monitoring (DEX) enables Zero Trust administrators to pinpoint and resolve issues impacting end-user connectivity and performance.",
       "showcase": false,
@@ -6039,9 +6039,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2025-02-24T13:46:47.962Z",
+      "updated_at": "2025-02-28T19:13:56.363Z",
       "position": 66,
       "description": null,
       "showcase": false,
@@ -6669,9 +6669,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2025-02-27T17:31:21.984Z",
+      "updated_at": "2025-02-28T19:13:56.392Z",
       "position": 93,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7314,70 +7314,36 @@
   ],
   "incidents": [
     {
-      "id": "fpnyppz7vcvn",
-      "name": "Digital Experience Monitoring Remote Commands failing",
-      "status": "monitoring",
-      "created_at": "2025-02-28T18:05:56.543Z",
-      "updated_at": "2025-02-28T18:31:33.589Z",
-      "monitoring_at": "2025-02-28T18:31:33.574Z",
+      "id": "4ysbr32p6852",
+      "name": "Degraded Cloudflare Workers and Pages API service",
+      "status": "investigating",
+      "created_at": "2025-02-28T19:13:56.308Z",
+      "updated_at": "2025-02-28T19:13:56.453Z",
+      "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/lrwp2nkfhwsc",
-      "started_at": "2025-02-28T18:05:56.537Z",
+      "shortlink": "https://stspg.io/8j4s0s143xd3",
+      "started_at": "2025-02-28T19:13:56.297Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "1sgwdph3dlnc",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "fpnyppz7vcvn",
-          "created_at": "2025-02-28T18:31:33.574Z",
-          "updated_at": "2025-02-28T18:31:33.574Z",
-          "display_at": "2025-02-28T18:31:33.574Z",
-          "affected_components": [
-            {
-              "code": "nmp96vgn1hpl",
-              "name": "Cloudflare Sites and Services - Digital Experience Monitoring (DEX)",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "rtrngx9tswdy",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "fpnyppz7vcvn",
-          "created_at": "2025-02-28T18:10:52.643Z",
-          "updated_at": "2025-02-28T18:10:52.643Z",
-          "display_at": "2025-02-28T18:10:52.643Z",
-          "affected_components": [
-            {
-              "code": "nmp96vgn1hpl",
-              "name": "Cloudflare Sites and Services - Digital Experience Monitoring (DEX)",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "v4prj6p68fzf",
+          "id": "sqrhsh003yp7",
           "status": "investigating",
-          "body": "Remote commands (warp-diag, packet capture) initiated from the Digital Experience Monitoring dashboard will fail. IT admins can still request users initiate captures from their own devices and manually provide artifacts.",
-          "incident_id": "fpnyppz7vcvn",
-          "created_at": "2025-02-28T18:05:56.636Z",
-          "updated_at": "2025-02-28T18:05:56.636Z",
-          "display_at": "2025-02-28T18:05:56.636Z",
+          "body": "Workers and Pages may see failing or slow API requests. We are investigating the issue.",
+          "incident_id": "4ysbr32p6852",
+          "created_at": "2025-02-28T19:13:56.450Z",
+          "updated_at": "2025-02-28T19:13:56.450Z",
+          "display_at": "2025-02-28T19:13:56.450Z",
           "affected_components": [
             {
-              "code": "nmp96vgn1hpl",
-              "name": "Cloudflare Sites and Services - Digital Experience Monitoring (DEX)",
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
               "old_status": "operational",
               "new_status": "degraded_performance"
             }
@@ -7389,15 +7355,30 @@
       ],
       "components": [
         {
-          "id": "nmp96vgn1hpl",
-          "name": "Digital Experience Monitoring (DEX)",
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
           "status": "degraded_performance",
-          "created_at": "2023-03-23T09:33:12.310Z",
-          "updated_at": "2025-02-28T18:05:56.577Z",
-          "position": 35,
-          "description": "Digital Experience Monitoring (DEX) enables Zero Trust administrators to pinpoint and resolve issues impacting end-user connectivity and performance.",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2025-02-28T19:13:56.363Z",
+          "position": 66,
+          "description": null,
           "showcase": false,
-          "start_date": "2023-03-23",
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2025-02-28T19:13:56.392Z",
+          "position": 93,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
