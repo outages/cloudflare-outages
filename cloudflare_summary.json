@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-28T01:20:48.273Z"
+    "updated_at": "2025-02-28T02:24:07.096Z"
   },
   "components": [
     {
@@ -1019,9 +1019,9 @@
     {
       "id": "xpjxwz2x742k",
       "name": "Beirut, Lebanon - (BEY)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-02-08T11:33:14.561Z",
-      "updated_at": "2025-02-27T08:41:14.604Z",
+      "updated_at": "2025-02-28T02:24:07.090Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -1109,7 +1109,7 @@
     {
       "id": "m3639x4txd08",
       "name": "Middle East",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2015-06-18T15:21:54.436Z",
       "updated_at": "2022-04-26T19:49:08.594Z",
       "position": 7,
@@ -4346,7 +4346,7 @@
       "name": "Kuala Lumpur, Malaysia - (KUL)",
       "status": "under_maintenance",
       "created_at": "2015-08-31T01:11:27.364Z",
-      "updated_at": "2025-02-27T22:08:37.604Z",
+      "updated_at": "2025-02-28T01:54:47.091Z",
       "position": 40,
       "description": null,
       "showcase": false,
@@ -6684,9 +6684,9 @@
     {
       "id": "zvm7mqn92xzc",
       "name": "Workers AI",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2024-02-14T15:05:51.274Z",
-      "updated_at": "2025-02-27T16:02:28.612Z",
+      "updated_at": "2025-02-28T01:37:18.147Z",
       "position": 94,
       "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
       "showcase": false,
@@ -7313,106 +7313,6 @@
     }
   ],
   "incidents": [
-    {
-      "id": "99c2js7sk5f1",
-      "name": "Cloudflare Workers AI Issues",
-      "status": "monitoring",
-      "created_at": "2025-02-27T14:02:28.000Z",
-      "updated_at": "2025-02-27T17:19:13.019Z",
-      "monitoring_at": "2025-02-27T17:19:12.994Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/x1b7d9cf6cb7",
-      "started_at": "2025-02-27T14:02:28.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "gm6q821qcnnj",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "99c2js7sk5f1",
-          "created_at": "2025-02-27T17:19:12.994Z",
-          "updated_at": "2025-02-27T17:19:12.994Z",
-          "display_at": "2025-02-27T17:19:12.994Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "zvm7mqn92xzc",
-              "name": "Cloudflare Sites and Services - Workers AI",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "25l4jzt4jg1k",
-          "status": "identified",
-          "body": "Cloudflare has identified an issue whereby customers might experience errors from inference requests to model llama-3.1-8b-instruct-fp8-fast using Workers AI.\n\nWe are working to mitigate this problem. More updates to follow shortly.",
-          "incident_id": "99c2js7sk5f1",
-          "created_at": "2025-02-27T16:02:28.678Z",
-          "updated_at": "2025-02-27T16:04:20.333Z",
-          "display_at": "2025-02-27T14:02:28.000Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "zvm7mqn92xzc",
-              "name": "Cloudflare Sites and Services - Workers AI",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "57srcl8zcn7c",
-          "name": "Workers",
-          "status": "operational",
-          "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2025-02-27T17:31:21.984Z",
-          "position": 93,
-          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "zvm7mqn92xzc",
-          "name": "Workers AI",
-          "status": "degraded_performance",
-          "created_at": "2024-02-14T15:05:51.274Z",
-          "updated_at": "2025-02-27T16:02:28.612Z",
-          "position": 94,
-          "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
-          "showcase": false,
-          "start_date": "2024-02-14",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
     {
       "id": "y7hq4pynfdyc",
       "name": "Network Performance Issues in China",
@@ -15845,6 +15745,60 @@
       ],
       "scheduled_for": "2025-02-28T17:00:00.000Z",
       "scheduled_until": "2025-03-01T00:00:00.000Z"
+    },
+    {
+      "id": "k6t6fz561qdp",
+      "name": "KIX (Osaka) on 2025-02-28",
+      "status": "scheduled",
+      "created_at": "2025-02-28T02:08:12.181Z",
+      "updated_at": "2025-02-28T02:08:12.244Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/04dzzb6ndf2g",
+      "started_at": "2025-02-28T02:08:12.173Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "lrq52qysg8pl",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in KIX (Osaka) datacenter on 2025-02-28 between 17:00 and 20:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "k6t6fz561qdp",
+          "created_at": "2025-02-28T02:08:12.241Z",
+          "updated_at": "2025-02-28T02:08:12.241Z",
+          "display_at": "2025-02-28T02:08:12.241Z",
+          "affected_components": [
+            {
+              "code": "pkzjg0k7vjsj",
+              "name": "Asia - Osaka, Japan - (KIX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "pkzjg0k7vjsj",
+          "name": "Osaka, Japan - (KIX)",
+          "status": "operational",
+          "created_at": "2015-06-11T13:06:20.755Z",
+          "updated_at": "2024-05-16T04:49:20.564Z",
+          "position": 53,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-02-28T17:00:00.000Z",
+      "scheduled_until": "2025-02-28T20:00:00.000Z"
     },
     {
       "id": "7fm832cj0ldl",
