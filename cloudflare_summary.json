@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-03-04T18:32:07.396Z"
+    "updated_at": "2025-03-04T19:12:15.408Z"
   },
   "components": [
     {
@@ -1019,9 +1019,9 @@
     {
       "id": "xpjxwz2x742k",
       "name": "Beirut, Lebanon - (BEY)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-02-08T11:33:14.561Z",
-      "updated_at": "2025-03-04T18:10:13.497Z",
+      "updated_at": "2025-03-04T18:55:40.991Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -1109,7 +1109,7 @@
     {
       "id": "m3639x4txd08",
       "name": "Middle East",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2015-06-18T15:21:54.436Z",
       "updated_at": "2022-04-26T19:49:08.594Z",
       "position": 7,
@@ -2139,9 +2139,9 @@
     {
       "id": "vlkr35v1lnm8",
       "name": "Hobart, Australia - (HBA)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-05-24T16:43:21.183Z",
-      "updated_at": "2025-03-04T18:00:07.614Z",
+      "updated_at": "2025-03-04T19:12:15.404Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -3669,9 +3669,9 @@
     {
       "id": "skqbwdvp70c6",
       "name": "Kampala, Uganda - (EBB)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-07-17T09:56:48.732Z",
-      "updated_at": "2025-03-04T18:30:23.899Z",
+      "updated_at": "2025-03-04T19:12:13.733Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -4014,9 +4014,9 @@
     {
       "id": "f95c4c2zcg0t",
       "name": "Karachi, Pakistan - (KHI)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-12-04T16:17:59.275Z",
-      "updated_at": "2025-03-04T18:15:53.778Z",
+      "updated_at": "2025-03-04T19:12:14.714Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -4404,9 +4404,9 @@
     {
       "id": "bty1yz6dhh0v",
       "name": "Durable Objects",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-06-12T14:55:22.631Z",
-      "updated_at": "2025-02-24T13:51:38.593Z",
+      "updated_at": "2025-03-04T18:47:32.494Z",
       "position": 40,
       "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
       "showcase": false,
@@ -6174,9 +6174,9 @@
     {
       "id": "56zs2vmr81l0",
       "name": "Yerevan, Armenia - (EVN)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2017-03-06T05:40:56.147Z",
-      "updated_at": "2025-03-04T18:32:07.392Z",
+      "updated_at": "2025-03-04T18:32:56.400Z",
       "position": 72,
       "description": null,
       "showcase": false,
@@ -7316,9 +7316,9 @@
     {
       "id": "yqzzmywxxmy2",
       "name": "ZT Customers with EDNS Enabled receiving incorrect IPs",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2025-03-04T16:35:43.326Z",
-      "updated_at": "2025-03-04T16:35:55.593Z",
+      "updated_at": "2025-03-04T19:05:06.799Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7326,6 +7326,32 @@
       "started_at": "2025-03-04T16:35:43.317Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "q5218ybtchq7",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "yqzzmywxxmy2",
+          "created_at": "2025-03-04T19:05:06.791Z",
+          "updated_at": "2025-03-04T19:05:06.791Z",
+          "display_at": "2025-03-04T19:05:06.791Z",
+          "affected_components": [
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "zw9l33wjylwk",
           "status": "investigating",
@@ -7379,6 +7405,59 @@
           "description": null,
           "showcase": false,
           "start_date": "2021-04-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "x702j7tfjzkx",
+      "name": "Increased Errors for Durable Objects in the Eastern North American (ENAM) region",
+      "status": "investigating",
+      "created_at": "2025-03-04T18:47:32.424Z",
+      "updated_at": "2025-03-04T18:47:32.606Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/n74m11g2mv3y",
+      "started_at": "2025-03-04T18:47:32.409Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8l6qj5314j00",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue with Durable Objects which potentially impacts multiple customers in the Eastern North American (ENAM) region. Durable Objects are experiencing an elevated level of overload errors in the aforementioned region. We are currently investigating this issue.",
+          "incident_id": "x702j7tfjzkx",
+          "created_at": "2025-03-04T18:47:32.600Z",
+          "updated_at": "2025-03-04T18:47:32.600Z",
+          "display_at": "2025-03-04T18:47:32.600Z",
+          "affected_components": [
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bty1yz6dhh0v",
+          "name": "Durable Objects",
+          "status": "degraded_performance",
+          "created_at": "2023-06-12T14:55:22.631Z",
+          "updated_at": "2025-03-04T18:47:32.494Z",
+          "position": 40,
+          "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
+          "showcase": false,
+          "start_date": "2023-06-12",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -7442,60 +7521,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "k5p5pd24m43r",
-      "name": "SEA (Seattle) on 2025-03-05",
-      "status": "scheduled",
-      "created_at": "2025-02-26T18:26:58.518Z",
-      "updated_at": "2025-02-26T18:26:58.595Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/7lhxg1dqrm8h",
-      "started_at": "2025-02-26T18:26:58.510Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "4wvc7n9sjrkr",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SEA (Seattle) datacenter on 2025-03-05 between 08:00 and 15:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "k5p5pd24m43r",
-          "created_at": "2025-02-26T18:26:58.592Z",
-          "updated_at": "2025-02-26T18:26:58.592Z",
-          "display_at": "2025-02-26T18:26:58.592Z",
-          "affected_components": [
-            {
-              "code": "bvtc2f85ft3p",
-              "name": "North America - Seattle, WA, United States - (SEA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "bvtc2f85ft3p",
-          "name": "Seattle, WA, United States - (SEA)",
-          "status": "operational",
-          "created_at": "2014-10-27T19:57:30.743Z",
-          "updated_at": "2024-09-13T04:55:14.252Z",
-          "position": 44,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-03-05T08:00:00.000Z",
-      "scheduled_until": "2025-03-05T15:00:00.000Z"
-    },
     {
       "id": "0nh4wmr58ntc",
       "name": "MUC (Munich) on 2025-03-05",
@@ -7659,26 +7684,26 @@
       "scheduled_until": "2025-03-06T12:30:00.000Z"
     },
     {
-      "id": "mfqq284k91np",
-      "name": "SEA (Seattle) on 2025-03-06",
+      "id": "gdh22ljm6gvw",
+      "name": "SEA (Seattle) on 2025-03-10",
       "status": "scheduled",
-      "created_at": "2025-02-26T18:29:05.676Z",
-      "updated_at": "2025-02-26T18:29:05.741Z",
+      "created_at": "2025-03-04T18:50:56.504Z",
+      "updated_at": "2025-03-04T18:50:56.578Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/646gngn5dwkc",
-      "started_at": "2025-02-26T18:29:05.668Z",
+      "shortlink": "https://stspg.io/4nzc89mgmg58",
+      "started_at": "2025-03-04T18:50:56.495Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "n4l6kthbbvqj",
+          "id": "by5gzg3y5r3d",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SEA (Seattle) datacenter on 2025-03-06 between 08:00 and 15:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "mfqq284k91np",
-          "created_at": "2025-02-26T18:29:05.738Z",
-          "updated_at": "2025-02-26T18:29:05.738Z",
-          "display_at": "2025-02-26T18:29:05.738Z",
+          "body": "We will be performing scheduled maintenance in SEA (Seattle) datacenter on 2025-03-10 between 08:00 and 14:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "gdh22ljm6gvw",
+          "created_at": "2025-03-04T18:50:56.574Z",
+          "updated_at": "2025-03-04T18:50:56.574Z",
+          "display_at": "2025-03-04T18:50:56.574Z",
           "affected_components": [
             {
               "code": "bvtc2f85ft3p",
@@ -7709,8 +7734,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-03-06T08:00:00.000Z",
-      "scheduled_until": "2025-03-06T15:00:00.000Z"
+      "scheduled_for": "2025-03-10T08:00:00.000Z",
+      "scheduled_until": "2025-03-10T14:00:00.000Z"
     },
     {
       "id": "jvs4bx6h80y2",
@@ -7765,6 +7790,60 @@
       ],
       "scheduled_for": "2025-03-10T19:00:00.000Z",
       "scheduled_until": "2025-03-11T01:00:00.000Z"
+    },
+    {
+      "id": "hc9y7xzq99t2",
+      "name": "SEA (Seattle) on 2025-03-11",
+      "status": "scheduled",
+      "created_at": "2025-03-04T18:54:56.381Z",
+      "updated_at": "2025-03-04T18:54:56.430Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/lqzsgcry3lsw",
+      "started_at": "2025-03-04T18:54:56.375Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "z9lh4whjdyh2",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SEA (Seattle) datacenter on 2025-03-11 between 08:00 and 14:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "hc9y7xzq99t2",
+          "created_at": "2025-03-04T18:54:56.428Z",
+          "updated_at": "2025-03-04T18:54:56.428Z",
+          "display_at": "2025-03-04T18:54:56.428Z",
+          "affected_components": [
+            {
+              "code": "bvtc2f85ft3p",
+              "name": "North America - Seattle, WA, United States - (SEA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bvtc2f85ft3p",
+          "name": "Seattle, WA, United States - (SEA)",
+          "status": "operational",
+          "created_at": "2014-10-27T19:57:30.743Z",
+          "updated_at": "2024-09-13T04:55:14.252Z",
+          "position": 44,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-03-11T08:00:00.000Z",
+      "scheduled_until": "2025-03-11T14:00:00.000Z"
     },
     {
       "id": "2fb13t2lcr2c",
@@ -7979,9 +8058,9 @@
         {
           "id": "vlkr35v1lnm8",
           "name": "Hobart, Australia - (HBA)",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2024-05-24T16:43:21.183Z",
-          "updated_at": "2025-03-04T18:00:07.614Z",
+          "updated_at": "2025-03-04T19:12:15.404Z",
           "position": 14,
           "description": null,
           "showcase": false,
