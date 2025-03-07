@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-03-07T04:16:03.753Z"
+    "updated_at": "2025-03-07T04:34:06.561Z"
   },
   "components": [
     {
@@ -2005,9 +2005,9 @@
     {
       "id": "1xnjfx08wn5v",
       "name": "Córdoba, Argentina - (COR)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-05-31T15:34:24.032Z",
-      "updated_at": "2025-02-06T05:48:45.755Z",
+      "updated_at": "2025-03-07T04:27:18.080Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2275,9 +2275,9 @@
     {
       "id": "fs644clrg00l",
       "name": "Luanda, Angola - (LAD)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2016-09-19T04:46:37.401Z",
-      "updated_at": "2025-03-07T03:19:52.311Z",
+      "updated_at": "2025-03-07T04:27:16.617Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -6235,9 +6235,9 @@
     {
       "id": "ch3mwx0hr4k6",
       "name": "Rules",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-01-19T14:56:52.618Z",
-      "updated_at": "2025-02-24T13:46:48.032Z",
+      "updated_at": "2025-03-07T04:34:06.500Z",
       "position": 73,
       "description": "This component includes WAF Rules, Transform Rules, Configuration Rules, Origin Rules, Compression Rules, Redirect Rules, Cache Rules, Waiting Room Bypass Rules, URL Normalization, DDoS L4/L7 Rules, Super Bot Fight Mode Rules, Rate Limiting Rules and others",
       "showcase": false,
@@ -7329,6 +7329,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "sp4fwxfp47r4",
+      "name": "Rules unable to be disable/enable",
+      "status": "investigating",
+      "created_at": "2025-03-07T04:34:06.464Z",
+      "updated_at": "2025-03-07T04:34:06.558Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/hm64hcjwx48p",
+      "started_at": "2025-03-07T04:34:06.457Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "xcvgsw4hy3wh",
+          "status": "investigating",
+          "body": "Cloudflare is investigating a problem with Rules which cannot be enabled or disabled in the UI.\n\nExisting Cloudflare Rules already in production remain unaffected and are operating normally. API is unaffected and Rules can be created and edited.",
+          "incident_id": "sp4fwxfp47r4",
+          "created_at": "2025-03-07T04:34:06.555Z",
+          "updated_at": "2025-03-07T04:34:06.555Z",
+          "display_at": "2025-03-07T04:34:06.555Z",
+          "affected_components": [
+            {
+              "code": "ch3mwx0hr4k6",
+              "name": "Cloudflare Sites and Services - Rules",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ch3mwx0hr4k6",
+          "name": "Rules",
+          "status": "degraded_performance",
+          "created_at": "2024-01-19T14:56:52.618Z",
+          "updated_at": "2025-03-07T04:34:06.500Z",
+          "position": 73,
+          "description": "This component includes WAF Rules, Transform Rules, Configuration Rules, Origin Rules, Compression Rules, Redirect Rules, Cache Rules, Waiting Room Bypass Rules, URL Normalization, DDoS L4/L7 Rules, Super Bot Fight Mode Rules, Rate Limiting Rules and others",
+          "showcase": false,
+          "start_date": "2024-01-19",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
