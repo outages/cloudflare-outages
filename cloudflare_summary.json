@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-03-12T05:46:08.242Z"
+    "updated_at": "2025-03-12T06:25:48.689Z"
   },
   "components": [
     {
@@ -669,7 +669,7 @@
       "name": "Bangalore, India - (BLR)",
       "status": "under_maintenance",
       "created_at": "2019-10-03T23:15:06.784Z",
-      "updated_at": "2025-03-12T05:12:13.736Z",
+      "updated_at": "2025-03-12T06:25:48.685Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -3969,9 +3969,9 @@
     {
       "id": "gqhgn4jwr94s",
       "name": "Recife, Brazil - (REC)",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2023-01-23T16:01:02.693Z",
-      "updated_at": "2025-03-10T06:33:48.059Z",
+      "updated_at": "2025-03-12T06:21:33.804Z",
       "position": 34,
       "description": null,
       "showcase": false,
@@ -6684,9 +6684,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2025-02-28T20:07:37.358Z",
+      "updated_at": "2025-03-12T06:12:49.222Z",
       "position": 93,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7314,6 +7314,79 @@
   ],
   "incidents": [
     {
+      "id": "32qd225v8fvv",
+      "name": "Cloudflare Workers Builds Issue",
+      "status": "identified",
+      "created_at": "2025-03-12T06:12:49.182Z",
+      "updated_at": "2025-03-12T06:23:44.703Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/0xtnbgchp1rt",
+      "started_at": "2025-03-12T06:12:49.171Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "mdpmvb7xn11x",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "32qd225v8fvv",
+          "created_at": "2025-03-12T06:23:44.700Z",
+          "updated_at": "2025-03-12T06:23:44.700Z",
+          "display_at": "2025-03-12T06:23:44.700Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "gzyf11wcxmy9",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating an issue with updating Workers builds API token in dashboard.\n\nWe are working on the resolution. More updates to follow shortly.",
+          "incident_id": "32qd225v8fvv",
+          "created_at": "2025-03-12T06:12:49.285Z",
+          "updated_at": "2025-03-12T06:12:49.285Z",
+          "display_at": "2025-03-12T06:12:49.285Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2025-03-12T06:12:49.222Z",
+          "position": 93,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
       "status": "investigating",
@@ -7368,73 +7441,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "fxpgqsjgfmzg",
-      "name": "IAD (Ashburn) on 2025-03-12",
-      "status": "scheduled",
-      "created_at": "2025-03-04T23:42:57.530Z",
-      "updated_at": "2025-03-12T05:00:27.839Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/m81v8y04fd1s",
-      "started_at": "2025-03-04T23:42:57.523Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "49xjgqz7ry38",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "fxpgqsjgfmzg",
-          "created_at": "2025-03-12T05:00:27.711Z",
-          "updated_at": "2025-03-12T05:00:27.711Z",
-          "display_at": "2025-03-12T05:00:27.711Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "529vhvnmqfl8",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in IAD (Ashburn) datacenter on 2025-03-12 between 06:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "fxpgqsjgfmzg",
-          "created_at": "2025-03-04T23:42:57.587Z",
-          "updated_at": "2025-03-04T23:42:57.587Z",
-          "display_at": "2025-03-04T23:42:57.587Z",
-          "affected_components": [
-            {
-              "code": "3t0npclljyyg",
-              "name": "North America - Ashburn, VA, United States - (IAD)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "3t0npclljyyg",
-          "name": "Ashburn, VA, United States - (IAD)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:30:01.380Z",
-          "updated_at": "2024-09-27T02:02:07.013Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-03-12T06:00:00.000Z",
-      "scheduled_until": "2025-03-12T11:00:00.000Z"
-    },
     {
       "id": "4twvk7jwm1t3",
       "name": "SEA (Seattle) on 2025-03-12",
@@ -8156,6 +8162,86 @@
       ],
       "scheduled_for": "2025-03-27T18:00:00.000Z",
       "scheduled_until": "2025-03-27T23:00:00.000Z"
+    },
+    {
+      "id": "fxpgqsjgfmzg",
+      "name": "IAD (Ashburn) on 2025-03-12",
+      "status": "in_progress",
+      "created_at": "2025-03-04T23:42:57.530Z",
+      "updated_at": "2025-03-12T06:00:21.731Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/m81v8y04fd1s",
+      "started_at": "2025-03-04T23:42:57.523Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "9374l2pxrtw1",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "fxpgqsjgfmzg",
+          "created_at": "2025-03-12T06:00:21.724Z",
+          "updated_at": "2025-03-12T06:00:21.724Z",
+          "display_at": "2025-03-12T06:00:21.724Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "49xjgqz7ry38",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "fxpgqsjgfmzg",
+          "created_at": "2025-03-12T05:00:27.711Z",
+          "updated_at": "2025-03-12T05:00:27.711Z",
+          "display_at": "2025-03-12T05:00:27.711Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "529vhvnmqfl8",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in IAD (Ashburn) datacenter on 2025-03-12 between 06:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "fxpgqsjgfmzg",
+          "created_at": "2025-03-04T23:42:57.587Z",
+          "updated_at": "2025-03-04T23:42:57.587Z",
+          "display_at": "2025-03-04T23:42:57.587Z",
+          "affected_components": [
+            {
+              "code": "3t0npclljyyg",
+              "name": "North America - Ashburn, VA, United States - (IAD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3t0npclljyyg",
+          "name": "Ashburn, VA, United States - (IAD)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:30:01.380Z",
+          "updated_at": "2024-09-27T02:02:07.013Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-03-12T06:00:00.000Z",
+      "scheduled_until": "2025-03-12T11:00:00.000Z"
     }
   ],
   "status": {
