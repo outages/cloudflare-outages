@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-03-18T22:41:52.536Z"
+    "updated_at": "2025-03-18T23:13:47.465Z"
   },
   "components": [
     {
@@ -1107,7 +1107,7 @@
     {
       "id": "m3639x4txd08",
       "name": "Middle East",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2015-06-18T15:21:54.436Z",
       "updated_at": "2022-04-26T19:49:08.594Z",
       "position": 7,
@@ -1657,9 +1657,9 @@
     {
       "id": "1zdfwmzjqqtf",
       "name": "Erbil, Iraq - (EBL)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2022-02-02T10:59:20.698Z",
-      "updated_at": "2025-03-18T22:12:21.506Z",
+      "updated_at": "2025-03-18T23:03:18.464Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -4972,9 +4972,9 @@
     {
       "id": "t3d07wlg67nl",
       "name": "Mumbai, India - (BOM)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-10-27T20:12:43.833Z",
-      "updated_at": "2025-03-18T20:35:56.587Z",
+      "updated_at": "2025-03-18T22:51:55.230Z",
       "position": 49,
       "description": null,
       "showcase": false,
@@ -6067,9 +6067,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2025-03-16T20:52:30.606Z",
+      "updated_at": "2025-03-18T23:13:47.393Z",
       "position": 67,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -7282,6 +7282,59 @@
   ],
   "incidents": [
     {
+      "id": "jl0zk4x39n5t",
+      "name": "R2 Custom Domain 403 Response Issues",
+      "status": "monitoring",
+      "created_at": "2025-03-18T23:13:47.358Z",
+      "updated_at": "2025-03-18T23:13:47.463Z",
+      "monitoring_at": "2025-03-18T23:13:47.454Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/fxdnvfypcrpc",
+      "started_at": "2025-03-18T23:13:47.350Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "brwzy45w6l18",
+          "status": "monitoring",
+          "body": "We have identified an issue where a subset of customers may have seen unexpected HTTP 403 response errors on their R2 Custom Domains beginning at approximately 17:36 UTC today.\n\nA fix has been implemented and we are monitoring the results.",
+          "incident_id": "jl0zk4x39n5t",
+          "created_at": "2025-03-18T23:13:47.454Z",
+          "updated_at": "2025-03-18T23:13:47.454Z",
+          "display_at": "2025-03-18T23:13:47.454Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2025-03-18T23:13:47.393Z",
+          "position": 67,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
       "status": "investigating",
@@ -7341,7 +7394,7 @@
       "name": "FRA (Frankfurt) on 2025-03-19",
       "status": "scheduled",
       "created_at": "2025-03-11T08:18:42.735Z",
-      "updated_at": "2025-03-11T08:18:42.814Z",
+      "updated_at": "2025-03-18T23:00:25.801Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7349,6 +7402,19 @@
       "started_at": "2025-03-11T08:18:42.727Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "45mg52m5p844",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "6vvxbqwpn2c1",
+          "created_at": "2025-03-18T23:00:25.205Z",
+          "updated_at": "2025-03-18T23:00:25.205Z",
+          "display_at": "2025-03-18T23:00:25.205Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "czfhpq5zv55p",
           "status": "scheduled",
