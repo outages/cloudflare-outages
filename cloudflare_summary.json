@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-03-24T23:45:21.541Z"
+    "updated_at": "2025-03-25T02:14:15.517Z"
   },
   "components": [
     {
@@ -1807,9 +1807,9 @@
     {
       "id": "47440brmvtq2",
       "name": "Gaborone, Botswana - (GBE)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-06-01T10:45:54.571Z",
-      "updated_at": "2025-03-24T22:09:05.440Z",
+      "updated_at": "2025-03-25T01:45:47.236Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -1884,7 +1884,7 @@
       "name": "Jeddah, Saudi Arabia - (JED)",
       "status": "operational",
       "created_at": "2022-06-08T13:59:14.645Z",
-      "updated_at": "2025-03-11T03:28:05.764Z",
+      "updated_at": "2025-03-25T02:14:15.513Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -1942,9 +1942,9 @@
     {
       "id": "mvb027gs2881",
       "name": "Kuwait City, Kuwait - (KWI)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-07-06T11:24:13.241Z",
-      "updated_at": "2025-03-24T23:06:00.965Z",
+      "updated_at": "2025-03-25T00:14:27.531Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2739,7 +2739,7 @@
       "name": "Sulaymaniyah, Iraq - (ISU)",
       "status": "operational",
       "created_at": "2022-10-17T13:45:45.235Z",
-      "updated_at": "2025-03-12T22:52:01.232Z",
+      "updated_at": "2025-03-25T01:57:10.554Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -2977,9 +2977,9 @@
     {
       "id": "d9k4n6zjlqmt",
       "name": "Kyiv, Ukraine - (KBP)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2016-04-19T01:29:21.459Z",
-      "updated_at": "2025-03-14T16:16:33.196Z",
+      "updated_at": "2025-03-25T00:14:30.354Z",
       "position": 23,
       "description": null,
       "showcase": false,
@@ -4162,9 +4162,9 @@
     {
       "id": "b03djnkqfg8f",
       "name": "Prague, Czech Republic - (PRG)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-27T21:42:32.096Z",
-      "updated_at": "2025-02-18T05:48:05.697Z",
+      "updated_at": "2025-03-25T01:40:15.222Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -5092,9 +5092,9 @@
     {
       "id": "43cltfsv0h7h",
       "name": "Winnipeg, MB, Canada - (YWG)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-07-10T10:18:32.871Z",
-      "updated_at": "2025-03-24T23:34:33.415Z",
+      "updated_at": "2025-03-25T01:22:52.777Z",
       "position": 51,
       "description": null,
       "showcase": false,
@@ -6667,9 +6667,9 @@
     {
       "id": "zvm7mqn92xzc",
       "name": "Workers AI",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-02-14T15:05:51.274Z",
-      "updated_at": "2025-03-16T22:07:11.898Z",
+      "updated_at": "2025-03-25T00:52:59.581Z",
       "position": 94,
       "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
       "showcase": false,
@@ -7282,6 +7282,59 @@
   ],
   "incidents": [
     {
+      "id": "dtp52yddls96",
+      "name": "Issue with Workers AI",
+      "status": "investigating",
+      "created_at": "2025-03-25T00:52:59.543Z",
+      "updated_at": "2025-03-25T00:52:59.650Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/78s69v3zn780",
+      "started_at": "2025-03-25T00:52:59.534Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "yx3084wrkvl4",
+          "status": "investigating",
+          "body": "We are currently investigating an issue with Workers AI. Customers may see errors using model llama-3.2-11b-vision-instruct.",
+          "incident_id": "dtp52yddls96",
+          "created_at": "2025-03-25T00:52:59.647Z",
+          "updated_at": "2025-03-25T00:52:59.647Z",
+          "display_at": "2025-03-25T00:52:59.647Z",
+          "affected_components": [
+            {
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "zvm7mqn92xzc",
+          "name": "Workers AI",
+          "status": "degraded_performance",
+          "created_at": "2024-02-14T15:05:51.274Z",
+          "updated_at": "2025-03-25T00:52:59.581Z",
+          "position": 94,
+          "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
+          "showcase": false,
+          "start_date": "2024-02-14",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
       "status": "investigating",
@@ -7893,9 +7946,9 @@
         {
           "id": "b03djnkqfg8f",
           "name": "Prague, Czech Republic - (PRG)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2014-10-27T21:42:32.096Z",
-          "updated_at": "2025-02-18T05:48:05.697Z",
+          "updated_at": "2025-03-25T01:40:15.222Z",
           "position": 38,
           "description": null,
           "showcase": false,
