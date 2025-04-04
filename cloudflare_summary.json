@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-04-04T21:29:26.269Z"
+    "updated_at": "2025-04-04T21:46:28.014Z"
   },
   "components": [
     {
@@ -2423,9 +2423,9 @@
     {
       "id": "q0dfbn0p6hyt",
       "name": "Browser Isolation",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-08-10T19:01:26.692Z",
-      "updated_at": "2025-03-28T16:09:49.170Z",
+      "updated_at": "2025-04-04T21:46:27.950Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -2873,9 +2873,9 @@
     {
       "id": "czwk809chdjt",
       "name": "Ouagadougou, Burkina Faso   - (OUA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-09-02T23:41:26.128Z",
-      "updated_at": "2025-04-04T20:09:00.464Z",
+      "updated_at": "2025-04-04T21:39:32.653Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -7297,6 +7297,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "ktywfcx63kpd",
+      "name": "Possible impact on creating new browser isolation sessions",
+      "status": "investigating",
+      "created_at": "2025-04-04T21:46:27.914Z",
+      "updated_at": "2025-04-04T21:46:28.011Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/p4wgbk1nhk14",
+      "started_at": "2025-04-04T21:46:27.906Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "vq2n1r0mzjqw",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with the Browser Isolation service. Customers that use Browser Isolation may observe errors when attempting to load sites through the service. This issue does not affect any other Cloudflare services. We are working to mitigate this problem. More updates to follow shortly.",
+          "incident_id": "ktywfcx63kpd",
+          "created_at": "2025-04-04T21:46:28.009Z",
+          "updated_at": "2025-04-04T21:46:28.009Z",
+          "display_at": "2025-04-04T21:46:28.009Z",
+          "affected_components": [
+            {
+              "code": "q0dfbn0p6hyt",
+              "name": "Cloudflare Sites and Services - Browser Isolation",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "q0dfbn0p6hyt",
+          "name": "Browser Isolation",
+          "status": "degraded_performance",
+          "created_at": "2021-08-10T19:01:26.692Z",
+          "updated_at": "2025-04-04T21:46:27.950Z",
+          "position": 17,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-08-10",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
