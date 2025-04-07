@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-04-07T15:40:52.694Z"
+    "updated_at": "2025-04-07T16:21:01.097Z"
   },
   "components": [
     {
@@ -2306,7 +2306,7 @@
       "name": "Dhaka, Bangladesh - (DAC)",
       "status": "operational",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2025-04-06T14:12:37.549Z",
+      "updated_at": "2025-04-07T16:21:01.094Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -3099,9 +3099,9 @@
     {
       "id": "gw5dtkqqr4lv",
       "name": "Ho Chi Minh City, Vietnam - (SGN)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-12-06T09:28:02.817Z",
-      "updated_at": "2025-04-07T12:25:54.573Z",
+      "updated_at": "2025-04-07T16:09:29.614Z",
       "position": 24,
       "description": null,
       "showcase": false,
@@ -4781,7 +4781,7 @@
       "name": "Tallinn, Estonia - (TLL)",
       "status": "operational",
       "created_at": "2018-03-30T17:48:33.402Z",
-      "updated_at": "2025-04-07T13:57:50.060Z",
+      "updated_at": "2025-04-07T16:15:12.543Z",
       "position": 46,
       "description": null,
       "showcase": false,
@@ -6624,9 +6624,9 @@
     {
       "id": "k04jkcpzxn94",
       "name": "WARP",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-09-30T09:25:38.587Z",
-      "updated_at": "2025-04-07T09:15:25.980Z",
+      "updated_at": "2025-04-07T16:13:47.035Z",
       "position": 91,
       "description": null,
       "showcase": false,
@@ -7313,6 +7313,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "6qct15cclpnr",
+      "name": "Consumer WARP Connectivity Issues",
+      "status": "investigating",
+      "created_at": "2025-04-07T16:13:47.002Z",
+      "updated_at": "2025-04-07T16:13:47.090Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/tzsf55f7nryb",
+      "started_at": "2025-04-07T16:13:46.996Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "7z82x9920pqk",
+          "status": "investigating",
+          "body": "We are currently investigating an issue where some users of our 1.1.1.1 with WARP Consumer product may see performance issues browsing the web with DNS over WARP mode enabled.\n\nAs a temporary workaround until this issue is resolved please move to DNS over HTTP mode by navigating to Settings -> Advanced -> Connection Options -> DNS settings -> Protocol options and selecting \"DNS over HTTPS\".",
+          "incident_id": "6qct15cclpnr",
+          "created_at": "2025-04-07T16:13:47.088Z",
+          "updated_at": "2025-04-07T16:13:47.088Z",
+          "display_at": "2025-04-07T16:13:47.088Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k04jkcpzxn94",
+          "name": "WARP",
+          "status": "degraded_performance",
+          "created_at": "2019-09-30T09:25:38.587Z",
+          "updated_at": "2025-04-07T16:13:47.035Z",
+          "position": 91,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
