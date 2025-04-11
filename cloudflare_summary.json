@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-04-11T12:35:01.619Z"
+    "updated_at": "2025-04-11T13:11:24.933Z"
   },
   "components": [
     {
@@ -1359,9 +1359,9 @@
     {
       "id": "dwlvwq5gnym8",
       "name": "Charlotte, NC, United States - (CLT)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-11-30T01:17:45.019Z",
-      "updated_at": "2025-04-11T05:29:36.747Z",
+      "updated_at": "2025-04-11T13:03:32.855Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -5096,7 +5096,7 @@
       "name": "Winnipeg, MB, Canada - (YWG)",
       "status": "partial_outage",
       "created_at": "2018-07-10T10:18:32.871Z",
-      "updated_at": "2025-04-11T12:17:49.676Z",
+      "updated_at": "2025-04-11T12:53:36.256Z",
       "position": 51,
       "description": null,
       "showcase": false,
@@ -6069,9 +6069,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2025-04-04T19:16:32.783Z",
+      "updated_at": "2025-04-11T13:11:24.874Z",
       "position": 67,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -7313,6 +7313,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "f4ndxyslp1yj",
+      "name": "Increased errors for R2 in Tokyo, Japan (NRT)",
+      "status": "investigating",
+      "created_at": "2025-04-11T13:11:24.839Z",
+      "updated_at": "2025-04-11T13:11:24.930Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/8t93jnyryd73",
+      "started_at": "2025-04-11T13:11:24.830Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "972s8bxp013b",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an increased error rate for R2 traffic in Tokyo, Japan (NRT).\nFurther detail will be provided as more information becomes available.",
+          "incident_id": "f4ndxyslp1yj",
+          "created_at": "2025-04-11T13:11:24.928Z",
+          "updated_at": "2025-04-11T13:11:24.928Z",
+          "display_at": "2025-04-11T13:11:24.928Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "rmjk2n758yzc",
+              "name": "Asia - Tokyo, Japan - (NRT)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rmjk2n758yzc",
+          "name": "Tokyo, Japan - (NRT)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:42:49.579Z",
+          "updated_at": "2024-07-10T19:53:33.800Z",
+          "position": 65,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2025-04-11T13:11:24.874Z",
+          "position": 67,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "qjb3vkbm0v8h",
       "name": "Cloudflare: \"Under Attack\" mode experiencing issues",
