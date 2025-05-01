@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-01T14:37:25.064Z"
+    "updated_at": "2025-05-01T14:48:54.502Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -697,9 +697,9 @@
     {
       "id": "hrvrnvqmb4px",
       "name": "Canberra, ACT, Australia - (CBR)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-04-13T20:17:50.728Z",
-      "updated_at": "2025-04-28T17:21:43.151Z",
+      "updated_at": "2025-05-01T14:48:54.498Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1080,9 +1080,9 @@
     {
       "id": "5r6d2zthcqm4",
       "name": "Hagatna, Guam - (GUM)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-05-05T08:28:03.157Z",
-      "updated_at": "2025-04-30T08:35:08.819Z",
+      "updated_at": "2025-05-01T14:48:54.152Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -1450,7 +1450,7 @@
     {
       "id": "q6qm6fvkst4h",
       "name": "Oceania",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-28T00:12:04.846Z",
       "updated_at": "2022-04-26T19:49:08.623Z",
       "position": 9,
@@ -2140,9 +2140,9 @@
     {
       "id": "vlkr35v1lnm8",
       "name": "Hobart, Australia - (HBA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-05-24T16:43:21.183Z",
-      "updated_at": "2025-04-23T17:21:01.993Z",
+      "updated_at": "2025-05-01T14:48:53.787Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -6745,9 +6745,9 @@
     {
       "id": "5df6y9z3fsky",
       "name": "Workflows",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-04-04T09:39:26.964Z",
-      "updated_at": "2025-04-30T13:56:48.246Z",
+      "updated_at": "2025-05-01T14:41:47.739Z",
       "position": 100,
       "description": "Workflows is Cloudflare Durable Execution engine, that give the ability to build and execute applications that are durable in the face of errors, network issues, upstream API outages, rate limits, and (most importantly) infrastructure failure.",
       "showcase": false,
@@ -7329,6 +7329,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "20cgxc79t6p4",
+      "name": "Workflow section of the Dashboard is not working properly for the customers",
+      "status": "monitoring",
+      "created_at": "2025-05-01T14:41:47.704Z",
+      "updated_at": "2025-05-01T14:42:59.715Z",
+      "monitoring_at": "2025-05-01T14:42:59.696Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/849ktncpdt7s",
+      "started_at": "2025-05-01T14:41:47.696Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "m0qv67sy3x7y",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "20cgxc79t6p4",
+          "created_at": "2025-05-01T14:42:59.696Z",
+          "updated_at": "2025-05-01T14:42:59.696Z",
+          "display_at": "2025-05-01T14:42:59.696Z",
+          "affected_components": [
+            {
+              "code": "5df6y9z3fsky",
+              "name": "Cloudflare Sites and Services - Workflows",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "6mxmn7l2gq08",
+          "status": "investigating",
+          "body": "Workflow section of the Dashboard is not working properly for the customers. We are currently investigating this issue.",
+          "incident_id": "20cgxc79t6p4",
+          "created_at": "2025-05-01T14:41:47.799Z",
+          "updated_at": "2025-05-01T14:41:47.799Z",
+          "display_at": "2025-05-01T14:41:47.799Z",
+          "affected_components": [
+            {
+              "code": "5df6y9z3fsky",
+              "name": "Cloudflare Sites and Services - Workflows",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5df6y9z3fsky",
+          "name": "Workflows",
+          "status": "degraded_performance",
+          "created_at": "2025-04-04T09:39:26.964Z",
+          "updated_at": "2025-05-01T14:41:47.739Z",
+          "position": 100,
+          "description": "Workflows is Cloudflare Durable Execution engine, that give the ability to build and execute applications that are durable in the face of errors, network issues, upstream API outages, rate limits, and (most importantly) infrastructure failure.",
+          "showcase": false,
+          "start_date": "2025-04-04",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
