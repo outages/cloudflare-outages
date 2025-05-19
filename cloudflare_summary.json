@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-19T19:13:02.822Z"
+    "updated_at": "2025-05-19T19:35:49.532Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1332,9 +1332,9 @@
     {
       "id": "h02k6rrcwpbr",
       "name": "Doha, Qatar - (DOH)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2015-06-18T15:21:54.451Z",
-      "updated_at": "2025-05-19T19:10:23.444Z",
+      "updated_at": "2025-05-19T19:35:49.529Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2309,7 +2309,7 @@
       "name": "Dhaka, Bangladesh - (DAC)",
       "status": "under_maintenance",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2025-05-19T19:07:10.667Z",
+      "updated_at": "2025-05-19T19:35:49.107Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -4889,7 +4889,7 @@
       "name": "Manila, Philippines - (MNL)",
       "status": "under_maintenance",
       "created_at": "2016-04-29T12:14:56.581Z",
-      "updated_at": "2025-05-19T04:27:00.625Z",
+      "updated_at": "2025-05-19T19:30:05.957Z",
       "position": 48,
       "description": null,
       "showcase": false,
@@ -6177,9 +6177,9 @@
     {
       "id": "5s616lljfwdz",
       "name": "Realtime TURN Service",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-05-16T17:07:34.278Z",
-      "updated_at": "2025-05-16T17:11:27.830Z",
+      "updated_at": "2025-05-19T19:34:10.830Z",
       "position": 72,
       "description": "Separately from the SFU, Realtime offers a managed TURN service. TURN acts as a relay point for traffic between WebRTC clients like the browser and SFUs, particularly in scenarios where direct communication is obstructed by NATs or firewalls. TURN maintains an allocation of public IP addresses and ports for each session, ensuring connectivity even in restrictive network environments.\r\n\r\nUsing Cloudflare Realtime TURN service is available free of charge when used together with the Realtime SFU. Otherwise, it costs $0.05/real-time GB outbound from Cloudflare to the TURN client.",
       "showcase": false,
@@ -7362,6 +7362,59 @@
   ],
   "incidents": [
     {
+      "id": "6qp5bdlszylg",
+      "name": "Cloudflare Realtime TURN Packet Loss",
+      "status": "investigating",
+      "created_at": "2025-05-19T19:34:10.778Z",
+      "updated_at": "2025-05-19T19:34:10.914Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/v2k7rw86ftbl",
+      "started_at": "2025-05-19T19:34:10.766Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "yqf1hqj3nvgz",
+          "status": "investigating",
+          "body": "Cloudflare is investigating packet loss associated with Cloudflare Realtime TURN service.",
+          "incident_id": "6qp5bdlszylg",
+          "created_at": "2025-05-19T19:34:10.910Z",
+          "updated_at": "2025-05-19T19:34:10.910Z",
+          "display_at": "2025-05-19T19:34:10.910Z",
+          "affected_components": [
+            {
+              "code": "5s616lljfwdz",
+              "name": "Cloudflare Sites and Services - Realtime TURN Service",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5s616lljfwdz",
+          "name": "Realtime TURN Service",
+          "status": "degraded_performance",
+          "created_at": "2025-05-16T17:07:34.278Z",
+          "updated_at": "2025-05-19T19:34:10.830Z",
+          "position": 72,
+          "description": "Separately from the SFU, Realtime offers a managed TURN service. TURN acts as a relay point for traffic between WebRTC clients like the browser and SFUs, particularly in scenarios where direct communication is obstructed by NATs or firewalls. TURN maintains an allocation of public IP addresses and ports for each session, ensuring connectivity even in restrictive network environments.\r\n\r\nUsing Cloudflare Realtime TURN service is available free of charge when used together with the Realtime SFU. Otherwise, it costs $0.05/real-time GB outbound from Cloudflare to the TURN client.",
+          "showcase": false,
+          "start_date": "2025-05-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "gnl2dp153485",
       "name": "Billing Subscription Update and Invoice Issues",
       "status": "investigating",
@@ -8016,7 +8069,7 @@
           "name": "Dhaka, Bangladesh - (DAC)",
           "status": "under_maintenance",
           "created_at": "2019-12-17T22:56:25.827Z",
-          "updated_at": "2025-05-19T19:07:10.667Z",
+          "updated_at": "2025-05-19T19:35:49.107Z",
           "position": 16,
           "description": null,
           "showcase": false,
@@ -8306,7 +8359,7 @@
           "name": "Dhaka, Bangladesh - (DAC)",
           "status": "under_maintenance",
           "created_at": "2019-12-17T22:56:25.827Z",
-          "updated_at": "2025-05-19T19:07:10.667Z",
+          "updated_at": "2025-05-19T19:35:49.107Z",
           "position": 16,
           "description": null,
           "showcase": false,
@@ -8576,7 +8629,7 @@
           "name": "Dhaka, Bangladesh - (DAC)",
           "status": "under_maintenance",
           "created_at": "2019-12-17T22:56:25.827Z",
-          "updated_at": "2025-05-19T19:07:10.667Z",
+          "updated_at": "2025-05-19T19:35:49.107Z",
           "position": 16,
           "description": null,
           "showcase": false,
@@ -8846,7 +8899,7 @@
           "name": "Dhaka, Bangladesh - (DAC)",
           "status": "under_maintenance",
           "created_at": "2019-12-17T22:56:25.827Z",
-          "updated_at": "2025-05-19T19:07:10.667Z",
+          "updated_at": "2025-05-19T19:35:49.107Z",
           "position": 16,
           "description": null,
           "showcase": false,
@@ -9224,7 +9277,7 @@
           "name": "Manila, Philippines - (MNL)",
           "status": "under_maintenance",
           "created_at": "2016-04-29T12:14:56.581Z",
-          "updated_at": "2025-05-19T04:27:00.625Z",
+          "updated_at": "2025-05-19T19:30:05.957Z",
           "position": 48,
           "description": null,
           "showcase": false,
@@ -9278,7 +9331,7 @@
           "name": "Dhaka, Bangladesh - (DAC)",
           "status": "under_maintenance",
           "created_at": "2019-12-17T22:56:25.827Z",
-          "updated_at": "2025-05-19T19:07:10.667Z",
+          "updated_at": "2025-05-19T19:35:49.107Z",
           "position": 16,
           "description": null,
           "showcase": false,
@@ -9548,7 +9601,7 @@
           "name": "Manila, Philippines - (MNL)",
           "status": "under_maintenance",
           "created_at": "2016-04-29T12:14:56.581Z",
-          "updated_at": "2025-05-19T04:27:00.625Z",
+          "updated_at": "2025-05-19T19:30:05.957Z",
           "position": 48,
           "description": null,
           "showcase": false,
