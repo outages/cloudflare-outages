@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-29T14:19:55.923Z"
+    "updated_at": "2025-05-29T14:43:03.150Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -700,9 +700,9 @@
     {
       "id": "hrvrnvqmb4px",
       "name": "Canberra, ACT, Australia - (CBR)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-04-13T20:17:50.728Z",
-      "updated_at": "2025-05-01T15:46:15.421Z",
+      "updated_at": "2025-05-29T14:43:02.801Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2623,9 +2623,9 @@
     {
       "id": "ljllh1921z0m",
       "name": "Nairobi, Kenya - (NBO)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2020-10-30T04:22:58.259Z",
-      "updated_at": "2025-05-29T03:15:54.905Z",
+      "updated_at": "2025-05-29T14:43:03.146Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -2878,9 +2878,9 @@
     {
       "id": "czwk809chdjt",
       "name": "Ouagadougou, Burkina Faso   - (OUA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-09-02T23:41:26.128Z",
-      "updated_at": "2025-05-29T12:06:59.757Z",
+      "updated_at": "2025-05-29T14:25:07.539Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -4905,7 +4905,7 @@
       "name": "Manila, Philippines - (MNL)",
       "status": "under_maintenance",
       "created_at": "2016-04-29T12:14:56.581Z",
-      "updated_at": "2025-05-29T13:22:07.645Z",
+      "updated_at": "2025-05-29T14:25:42.204Z",
       "position": 48,
       "description": null,
       "showcase": false,
@@ -5113,9 +5113,9 @@
     {
       "id": "3lbj8lp3d750",
       "name": "Images",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-02-25T17:30:01.272Z",
-      "updated_at": "2025-05-27T17:05:08.444Z",
+      "updated_at": "2025-05-29T14:28:24.778Z",
       "position": 51,
       "description": "Cloudflare service to build a scalable image pipeline to store, resize, optimize and deliver images in a fast and secure manner.",
       "showcase": false,
@@ -5850,7 +5850,7 @@
       "name": "Aracatuba, Brazil - (ARU)",
       "status": "partial_outage",
       "created_at": "2024-06-07T17:59:08.909Z",
-      "updated_at": "2025-05-29T13:51:59.689Z",
+      "updated_at": "2025-05-29T14:37:56.431Z",
       "position": 61,
       "description": null,
       "showcase": false,
@@ -6853,9 +6853,9 @@
     {
       "id": "7g58rb9tl036",
       "name": "San Pedro Sula, Honduras - (SAP)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-04-30T23:46:32.236Z",
-      "updated_at": "2025-05-29T08:55:56.068Z",
+      "updated_at": "2025-05-29T14:43:02.491Z",
       "position": 103,
       "description": null,
       "showcase": false,
@@ -7376,7 +7376,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "jxkpv90nkfql",
+      "name": "Cloudflare Images: Upload issues",
+      "status": "investigating",
+      "created_at": "2025-05-29T14:28:24.737Z",
+      "updated_at": "2025-05-29T14:28:24.847Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/tzq3wrzdswvc",
+      "started_at": "2025-05-29T14:28:24.728Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "hdt196054yhq",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue with our Images feature: customers may observe errors or delays when attempting to upload images onto upload.imagedelivery.net\nFurther detail will be provided as more information becomes available.",
+          "incident_id": "jxkpv90nkfql",
+          "created_at": "2025-05-29T14:28:24.843Z",
+          "updated_at": "2025-05-29T14:28:24.843Z",
+          "display_at": "2025-05-29T14:28:24.843Z",
+          "affected_components": [
+            {
+              "code": "3lbj8lp3d750",
+              "name": "Cloudflare Sites and Services - Images",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3lbj8lp3d750",
+          "name": "Images",
+          "status": "degraded_performance",
+          "created_at": "2022-02-25T17:30:01.272Z",
+          "updated_at": "2025-05-29T14:28:24.778Z",
+          "position": 51,
+          "description": "Cloudflare service to build a scalable image pipeline to store, resize, optimize and deliver images in a fast and secure manner.",
+          "showcase": false,
+          "start_date": "2022-02-25",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "29ct5cnrhdx9",
@@ -7418,7 +7472,7 @@
           "name": "Manila, Philippines - (MNL)",
           "status": "under_maintenance",
           "created_at": "2016-04-29T12:14:56.581Z",
-          "updated_at": "2025-05-29T13:22:07.645Z",
+          "updated_at": "2025-05-29T14:25:42.204Z",
           "position": 48,
           "description": null,
           "showcase": false,
@@ -7526,7 +7580,7 @@
           "name": "Manila, Philippines - (MNL)",
           "status": "under_maintenance",
           "created_at": "2016-04-29T12:14:56.581Z",
-          "updated_at": "2025-05-29T13:22:07.645Z",
+          "updated_at": "2025-05-29T14:25:42.204Z",
           "position": 48,
           "description": null,
           "showcase": false,
@@ -7580,7 +7634,7 @@
           "name": "Manila, Philippines - (MNL)",
           "status": "under_maintenance",
           "created_at": "2016-04-29T12:14:56.581Z",
-          "updated_at": "2025-05-29T13:22:07.645Z",
+          "updated_at": "2025-05-29T14:25:42.204Z",
           "position": 48,
           "description": null,
           "showcase": false,
@@ -7904,7 +7958,7 @@
           "name": "Manila, Philippines - (MNL)",
           "status": "under_maintenance",
           "created_at": "2016-04-29T12:14:56.581Z",
-          "updated_at": "2025-05-29T13:22:07.645Z",
+          "updated_at": "2025-05-29T14:25:42.204Z",
           "position": 48,
           "description": null,
           "showcase": false,
@@ -8120,7 +8174,7 @@
           "name": "Manila, Philippines - (MNL)",
           "status": "under_maintenance",
           "created_at": "2016-04-29T12:14:56.581Z",
-          "updated_at": "2025-05-29T13:22:07.645Z",
+          "updated_at": "2025-05-29T14:25:42.204Z",
           "position": 48,
           "description": null,
           "showcase": false,
@@ -8552,7 +8606,7 @@
           "name": "Manila, Philippines - (MNL)",
           "status": "under_maintenance",
           "created_at": "2016-04-29T12:14:56.581Z",
-          "updated_at": "2025-05-29T13:22:07.645Z",
+          "updated_at": "2025-05-29T14:25:42.204Z",
           "position": 48,
           "description": null,
           "showcase": false,
@@ -9632,7 +9686,7 @@
           "name": "Manila, Philippines - (MNL)",
           "status": "under_maintenance",
           "created_at": "2016-04-29T12:14:56.581Z",
-          "updated_at": "2025-05-29T13:22:07.645Z",
+          "updated_at": "2025-05-29T14:25:42.204Z",
           "position": 48,
           "description": null,
           "showcase": false,
