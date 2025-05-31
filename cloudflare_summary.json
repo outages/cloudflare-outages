@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-31T19:46:30.219Z"
+    "updated_at": "2025-05-31T20:20:21.522Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1452,7 +1452,7 @@
     {
       "id": "q6qm6fvkst4h",
       "name": "Oceania",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-28T00:12:04.846Z",
       "updated_at": "2022-04-26T19:49:08.623Z",
       "position": 9,
@@ -1917,9 +1917,9 @@
     {
       "id": "pxhwtstlbf2j",
       "name": "Tahiti, French Polynesia - (PPT)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-12-19T23:42:51.432Z",
-      "updated_at": "2025-05-31T19:46:30.214Z",
+      "updated_at": "2025-05-31T19:52:15.382Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -2622,9 +2622,9 @@
     {
       "id": "ljllh1921z0m",
       "name": "Nairobi, Kenya - (NBO)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2020-10-30T04:22:58.259Z",
-      "updated_at": "2025-05-31T19:29:14.636Z",
+      "updated_at": "2025-05-31T20:15:26.415Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -2742,9 +2742,9 @@
     {
       "id": "5wnz34mhfhrk",
       "name": "CDN/Cache",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-25T19:03:33.850Z",
-      "updated_at": "2025-05-27T17:05:08.113Z",
+      "updated_at": "2025-05-31T19:56:19.098Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -2877,9 +2877,9 @@
     {
       "id": "czwk809chdjt",
       "name": "Ouagadougou, Burkina Faso   - (OUA)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-09-02T23:41:26.128Z",
-      "updated_at": "2025-05-31T18:55:14.233Z",
+      "updated_at": "2025-05-31T20:15:24.995Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -7360,7 +7360,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "607t7c6tbnv2",
+      "name": "Cached Traffic Latency",
+      "status": "investigating",
+      "created_at": "2025-05-31T19:56:19.060Z",
+      "updated_at": "2025-05-31T19:56:19.154Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/kt017ctkfhxg",
+      "started_at": "2025-05-31T19:56:19.053Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "4m4jx1pd71dl",
+          "status": "investigating",
+          "body": "We are investigating an issue resulting in cached traffic with elevated latency in Europe and Africa.",
+          "incident_id": "607t7c6tbnv2",
+          "created_at": "2025-05-31T19:56:19.151Z",
+          "updated_at": "2025-05-31T19:56:19.151Z",
+          "display_at": "2025-05-31T19:56:19.151Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5wnz34mhfhrk",
+          "name": "CDN/Cache",
+          "status": "degraded_performance",
+          "created_at": "2020-03-25T19:03:33.850Z",
+          "updated_at": "2025-05-31T19:56:19.098Z",
+          "position": 20,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "dpbl4rmmjf71",
