@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-05T20:46:20.934Z"
+    "updated_at": "2025-06-05T21:15:04.944Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -396,9 +396,9 @@
     {
       "id": "2rh9z2dgcy8y",
       "name": "Astara, Azerbaijan - (LLK)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-03-15T10:53:01.323Z",
-      "updated_at": "2025-05-01T01:45:53.863Z",
+      "updated_at": "2025-06-05T21:03:35.581Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -2175,9 +2175,9 @@
     {
       "id": "p6skg25yj69j",
       "name": "Colombo, Sri Lanka - (CMB)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2017-05-02T05:52:26.698Z",
-      "updated_at": "2025-06-05T19:14:33.876Z",
+      "updated_at": "2025-06-05T21:03:34.051Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -2282,7 +2282,7 @@
       "name": "Luanda, Angola - (LAD)",
       "status": "under_maintenance",
       "created_at": "2016-09-19T04:46:37.401Z",
-      "updated_at": "2025-06-05T20:17:40.831Z",
+      "updated_at": "2025-06-05T21:15:04.940Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -3660,9 +3660,9 @@
     {
       "id": "skqbwdvp70c6",
       "name": "Kampala, Uganda - (EBB)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-07-17T09:56:48.732Z",
-      "updated_at": "2025-06-05T20:25:46.710Z",
+      "updated_at": "2025-06-05T21:15:02.651Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -6330,9 +6330,9 @@
     {
       "id": "570kfpd0dgg7",
       "name": "Snippets",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-12-08T16:25:51.813Z",
-      "updated_at": "2025-05-27T17:05:08.745Z",
+      "updated_at": "2025-06-05T20:58:18.336Z",
       "position": 79,
       "description": "Cloudflare Snippets provide a flexible way to customize the behavior of your website or application using short pieces of JavaScript code. Use snippets to customize HTTP response headers, implement JWT validation, define complex redirect functionality, and more.",
       "showcase": false,
@@ -7408,7 +7408,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "hwts1mf4v41g",
+      "name": "Issues with Newly Deployed Snippets",
+      "status": "identified",
+      "created_at": "2025-06-05T20:58:18.296Z",
+      "updated_at": "2025-06-05T21:02:13.735Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/dp9kgjqn4kf9",
+      "started_at": "2025-06-05T20:58:18.288Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "26r6wkzqz3f4",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "hwts1mf4v41g",
+          "created_at": "2025-06-05T21:02:13.732Z",
+          "updated_at": "2025-06-05T21:02:13.732Z",
+          "display_at": "2025-06-05T21:02:13.732Z",
+          "affected_components": [
+            {
+              "code": "570kfpd0dgg7",
+              "name": "Cloudflare Sites and Services - Snippets",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "zr6rkw65skfz",
+          "status": "investigating",
+          "body": "We’ve identified an issue where newly deployed Snippets may not execute correctly at the edge. In some cases, this can result in exceptions being served to end users.\n\nSnippets that were deployed prior to this incident continue to function normally, and there is no impact to the control plane, dashboard, or API.\n\nWe are actively investigating and working on a fix. As a temporary precaution, we recommend postponing critical production changes involving new Snippet deployments.\n\nWe will provide updates as soon as more information becomes available.",
+          "incident_id": "hwts1mf4v41g",
+          "created_at": "2025-06-05T20:58:18.397Z",
+          "updated_at": "2025-06-05T20:58:18.397Z",
+          "display_at": "2025-06-05T20:58:18.397Z",
+          "affected_components": [
+            {
+              "code": "570kfpd0dgg7",
+              "name": "Cloudflare Sites and Services - Snippets",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "570kfpd0dgg7",
+          "name": "Snippets",
+          "status": "degraded_performance",
+          "created_at": "2023-12-08T16:25:51.813Z",
+          "updated_at": "2025-06-05T20:58:18.336Z",
+          "position": 79,
+          "description": "Cloudflare Snippets provide a flexible way to customize the behavior of your website or application using short pieces of JavaScript code. Use snippets to customize HTTP response headers, implement JWT validation, define complex redirect functionality, and more.",
+          "showcase": false,
+          "start_date": "2023-12-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "3l3tzk73tgdf",
