@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-05T22:46:48.785Z"
+    "updated_at": "2025-06-05T23:21:15.613Z"
   },
   "components": [
     {
@@ -716,9 +716,9 @@
     {
       "id": "d4nfj71p66fy",
       "name": "Belém, Brazil - (BEL)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-08-19T14:52:39.395Z",
-      "updated_at": "2025-06-05T16:16:43.335Z",
+      "updated_at": "2025-06-05T23:09:47.999Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1620,9 +1620,9 @@
     {
       "id": "6h2876nh78k9",
       "name": "Chișinău, Moldova - (KIV)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2018-04-02T08:55:56.587Z",
-      "updated_at": "2025-05-30T11:11:35.396Z",
+      "updated_at": "2025-06-05T23:09:48.347Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -1950,9 +1950,9 @@
     {
       "id": "mvb027gs2881",
       "name": "Kuwait City, Kuwait - (KWI)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2015-07-06T11:24:13.241Z",
-      "updated_at": "2025-06-05T02:22:32.909Z",
+      "updated_at": "2025-06-05T23:21:15.608Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2895,9 +2895,9 @@
     {
       "id": "v4lr1tmw0jsf",
       "name": "Port Louis, Mauritius - (MRU)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-02-12T12:35:05.181Z",
-      "updated_at": "2025-06-05T20:46:20.930Z",
+      "updated_at": "2025-06-05T23:21:15.310Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -6330,9 +6330,9 @@
     {
       "id": "570kfpd0dgg7",
       "name": "Snippets",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2023-12-08T16:25:51.813Z",
-      "updated_at": "2025-06-05T20:58:18.336Z",
+      "updated_at": "2025-06-05T23:01:42.504Z",
       "position": 79,
       "description": "Cloudflare Snippets provide a flexible way to customize the behavior of your website or application using short pieces of JavaScript code. Use snippets to customize HTTP response headers, implement JWT validation, define complex redirect functionality, and more.",
       "showcase": false,
@@ -7245,9 +7245,9 @@
     {
       "id": "h2kw1k3c0xpv",
       "name": "Astana, Kazakhstan - (NQZ)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-08-20T11:36:47.482Z",
-      "updated_at": "2025-06-05T21:26:31.000Z",
+      "updated_at": "2025-06-05T23:09:46.577Z",
       "position": 355,
       "description": null,
       "showcase": false,
@@ -7454,79 +7454,6 @@
           "description": "Separately from the SFU, Realtime offers a managed TURN service. TURN acts as a relay point for traffic between WebRTC clients like the browser and SFUs, particularly in scenarios where direct communication is obstructed by NATs or firewalls. TURN maintains an allocation of public IP addresses and ports for each session, ensuring connectivity even in restrictive network environments.\r\n\r\nUsing Cloudflare Realtime TURN service is available free of charge when used together with the Realtime SFU. Otherwise, it costs $0.05/real-time GB outbound from Cloudflare to the TURN client.",
           "showcase": false,
           "start_date": "2025-05-16",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "hwts1mf4v41g",
-      "name": "Issues with Newly Deployed Snippets",
-      "status": "identified",
-      "created_at": "2025-06-05T20:58:18.296Z",
-      "updated_at": "2025-06-05T21:02:13.735Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/dp9kgjqn4kf9",
-      "started_at": "2025-06-05T20:58:18.288Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "26r6wkzqz3f4",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "hwts1mf4v41g",
-          "created_at": "2025-06-05T21:02:13.732Z",
-          "updated_at": "2025-06-05T21:02:13.732Z",
-          "display_at": "2025-06-05T21:02:13.732Z",
-          "affected_components": [
-            {
-              "code": "570kfpd0dgg7",
-              "name": "Cloudflare Sites and Services - Snippets",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "zr6rkw65skfz",
-          "status": "investigating",
-          "body": "We’ve identified an issue where newly deployed Snippets may not execute correctly at the edge. In some cases, this can result in exceptions being served to end users.\n\nSnippets that were deployed prior to this incident continue to function normally, and there is no impact to the control plane, dashboard, or API.\n\nWe are actively investigating and working on a fix. As a temporary precaution, we recommend postponing critical production changes involving new Snippet deployments.\n\nWe will provide updates as soon as more information becomes available.",
-          "incident_id": "hwts1mf4v41g",
-          "created_at": "2025-06-05T20:58:18.397Z",
-          "updated_at": "2025-06-05T20:58:18.397Z",
-          "display_at": "2025-06-05T20:58:18.397Z",
-          "affected_components": [
-            {
-              "code": "570kfpd0dgg7",
-              "name": "Cloudflare Sites and Services - Snippets",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "570kfpd0dgg7",
-          "name": "Snippets",
-          "status": "degraded_performance",
-          "created_at": "2023-12-08T16:25:51.813Z",
-          "updated_at": "2025-06-05T20:58:18.336Z",
-          "position": 79,
-          "description": "Cloudflare Snippets provide a flexible way to customize the behavior of your website or application using short pieces of JavaScript code. Use snippets to customize HTTP response headers, implement JWT validation, define complex redirect functionality, and more.",
-          "showcase": false,
-          "start_date": "2023-12-08",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
