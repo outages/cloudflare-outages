@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-12T11:16:38.223Z"
+    "updated_at": "2025-06-12T11:33:25.407Z"
   },
   "components": [
     {
@@ -1770,9 +1770,9 @@
     {
       "id": "ns7bhkw6xxkj",
       "name": "Campinas, Brazil - (VCP)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-01-11T20:28:44.964Z",
-      "updated_at": "2025-06-12T06:17:26.385Z",
+      "updated_at": "2025-06-12T11:28:20.873Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -4920,9 +4920,9 @@
     {
       "id": "h6pmxs6zl5gc",
       "name": "Thessaloniki, Greece - (SKG)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-05-06T07:26:10.258Z",
-      "updated_at": "2025-06-12T06:57:05.218Z",
+      "updated_at": "2025-06-12T11:28:17.807Z",
       "position": 48,
       "description": null,
       "showcase": false,
@@ -7411,11 +7411,11 @@
   "incidents": [
     {
       "id": "378j4j6cmchl",
-      "name": "Cloudflare Magic Tunnel: Health Checks dashboard",
-      "status": "investigating",
-      "created_at": "2025-06-12T11:10:52.070Z",
-      "updated_at": "2025-06-12T11:12:32.065Z",
-      "monitoring_at": null,
+      "name": "Cloudflare Magic Transit and Magic WAN Tunnel: Health Check dashboard",
+      "status": "monitoring",
+      "created_at": "2025-06-12T11:10:52.000Z",
+      "updated_at": "2025-06-12T11:33:25.401Z",
+      "monitoring_at": "2025-06-12T11:20:44.796Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/9df8zngjfxqh",
@@ -7423,12 +7423,38 @@
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
+          "id": "3686klbm3kwd",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "378j4j6cmchl",
+          "created_at": "2025-06-12T11:20:44.796Z",
+          "updated_at": "2025-06-12T11:20:44.796Z",
+          "display_at": "2025-06-12T11:20:44.796Z",
+          "affected_components": [
+            {
+              "code": "bjlxcss20fsl",
+              "name": "Cloudflare Sites and Services - Magic Transit",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Magic WAN",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
           "id": "bgvv59vw334m",
           "status": "investigating",
-          "body": "Cloudflare is investigating issues with Cloudflare Magic Tunnel: Customers may be unable to observe Tunnel Health Checks in their dashboard. This issue does not affect any other Cloudflare services. We are working to mitigate this problem. More updates to follow shortly.",
+          "body": "Cloudflare is investigating issues with Cloudflare Magic Transit and Magic WAN Tunnel: Customers may be unable to observe Tunnel Health Checks in their dashboard. This issue does not affect any other Cloudflare services. We are working to mitigate this problem. More updates to follow shortly.",
           "incident_id": "378j4j6cmchl",
           "created_at": "2025-06-12T11:10:52.125Z",
-          "updated_at": "2025-06-12T11:12:32.001Z",
+          "updated_at": "2025-06-12T11:33:25.398Z",
           "display_at": "2025-06-12T11:10:52.000Z",
           "affected_components": [
             {
@@ -7445,15 +7471,30 @@
       ],
       "components": [
         {
-          "id": "y98zlwj1d7zh",
-          "name": "Tunnel",
+          "id": "bjlxcss20fsl",
+          "name": "Magic Transit",
           "status": "operational",
-          "created_at": "2019-01-24T16:28:05.466Z",
-          "updated_at": "2025-05-30T04:52:44.807Z",
-          "position": 89,
-          "description": "Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address",
+          "created_at": "2020-12-17T09:48:10.912Z",
+          "updated_at": "2025-05-27T17:05:08.508Z",
+          "position": 57,
+          "description": null,
           "showcase": false,
-          "start_date": null,
+          "start_date": "2020-12-17",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qgnxz00j1f2v",
+          "name": "Magic WAN",
+          "status": "operational",
+          "created_at": "2022-12-22T09:51:36.130Z",
+          "updated_at": "2025-05-30T04:52:44.783Z",
+          "position": 58,
+          "description": "Magic WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
+          "showcase": false,
+          "start_date": "2022-12-22",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
