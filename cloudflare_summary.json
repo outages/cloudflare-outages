@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-13T13:28:20.787Z"
+    "updated_at": "2025-06-13T14:15:42.324Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1817,7 +1817,7 @@
       "name": "Gaborone, Botswana - (GBE)",
       "status": "under_maintenance",
       "created_at": "2022-06-01T10:45:54.571Z",
-      "updated_at": "2025-06-12T21:38:44.760Z",
+      "updated_at": "2025-06-13T14:15:14.301Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -4410,9 +4410,9 @@
     {
       "id": "bty1yz6dhh0v",
       "name": "Durable Objects",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-06-12T14:55:22.631Z",
-      "updated_at": "2025-06-12T21:31:36.424Z",
+      "updated_at": "2025-06-13T14:15:27.471Z",
       "position": 40,
       "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
       "showcase": false,
@@ -5400,9 +5400,9 @@
     {
       "id": "8xc65dbhbrd5",
       "name": "Phnom Penh, Cambodia - (PNH)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-02-09T20:38:28.093Z",
-      "updated_at": "2025-06-13T12:41:33.872Z",
+      "updated_at": "2025-06-13T14:09:15.927Z",
       "position": 55,
       "description": null,
       "showcase": false,
@@ -6060,9 +6060,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2025-05-29T17:54:19.313Z",
+      "updated_at": "2025-06-13T14:15:27.491Z",
       "position": 67,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -6405,9 +6405,9 @@
     {
       "id": "47xg28c02lnk",
       "name": "Stream",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:53:34.953Z",
-      "updated_at": "2025-06-12T21:31:36.503Z",
+      "updated_at": "2025-06-13T14:15:27.510Z",
       "position": 82,
       "description": "Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure",
       "showcase": false,
@@ -6750,9 +6750,9 @@
     {
       "id": "vcpsk0w6g86k",
       "name": "Workers Builds",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-05-27T17:04:31.385Z",
-      "updated_at": "2025-05-27T17:05:08.962Z",
+      "updated_at": "2025-06-13T14:15:27.531Z",
       "position": 99,
       "description": "Workers Builds is Cloudflare's native CI/CD system that allows you to integrate with GitHub or GitLab to automatically deploy changes with each new push to a selected branch (e.g. main).",
       "showcase": false,
@@ -7408,7 +7408,124 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "g5g4pxcnjyj8",
+      "name": "Issues with Stream Live, Stream VOD, Durable Objects, R2 and Workers Builds",
+      "status": "investigating",
+      "created_at": "2025-06-13T14:15:27.421Z",
+      "updated_at": "2025-06-13T14:15:42.319Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/dk5nwt77x57y",
+      "started_at": "2025-06-13T14:15:27.410Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "68jmlgj2440v",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating 500 errors with Stream Live, Stream Video on Demand (VOD), Durable Objects, R2, and Workers Builds which potentially impacts multiple customers. Further detail will be provided as more information becomes available.",
+          "incident_id": "g5g4pxcnjyj8",
+          "created_at": "2025-06-13T14:15:27.586Z",
+          "updated_at": "2025-06-13T14:15:27.586Z",
+          "display_at": "2025-06-13T14:15:27.586Z",
+          "affected_components": [
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "vcpsk0w6g86k",
+              "name": "Cloudflare Sites and Services - Workers Builds",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bty1yz6dhh0v",
+          "name": "Durable Objects",
+          "status": "degraded_performance",
+          "created_at": "2023-06-12T14:55:22.631Z",
+          "updated_at": "2025-06-13T14:15:27.471Z",
+          "position": 40,
+          "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
+          "showcase": false,
+          "start_date": "2023-06-12",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2025-06-13T14:15:27.491Z",
+          "position": 67,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "47xg28c02lnk",
+          "name": "Stream",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:53:34.953Z",
+          "updated_at": "2025-06-13T14:15:27.510Z",
+          "position": 82,
+          "description": "Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "vcpsk0w6g86k",
+          "name": "Workers Builds",
+          "status": "degraded_performance",
+          "created_at": "2025-05-27T17:04:31.385Z",
+          "updated_at": "2025-06-13T14:15:27.531Z",
+          "position": 99,
+          "description": "Workers Builds is Cloudflare's native CI/CD system that allows you to integrate with GitHub or GitLab to automatically deploy changes with each new push to a selected branch (e.g. main).",
+          "showcase": false,
+          "start_date": "2025-05-27",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "60msdp60wpc2",
