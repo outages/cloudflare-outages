@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-18T22:46:47.389Z"
+    "updated_at": "2025-06-18T23:17:59.622Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -336,9 +336,9 @@
     {
       "id": "w4k8yvhfb3vp",
       "name": "Access",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2018-02-09T21:46:39.049Z",
-      "updated_at": "2025-06-12T21:31:36.385Z",
+      "updated_at": "2025-06-18T23:17:59.556Z",
       "position": 2,
       "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
       "showcase": false,
@@ -1502,7 +1502,7 @@
       "name": "Dubai, United Arab Emirates - (DXB)",
       "status": "under_maintenance",
       "created_at": "2015-07-23T02:23:36.617Z",
-      "updated_at": "2025-06-18T22:00:35.665Z",
+      "updated_at": "2025-06-18T22:58:24.121Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -2280,9 +2280,9 @@
     {
       "id": "fs644clrg00l",
       "name": "Luanda, Angola - (LAD)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2016-09-19T04:46:37.401Z",
-      "updated_at": "2025-06-18T00:51:54.594Z",
+      "updated_at": "2025-06-18T22:58:23.795Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2312,7 +2312,7 @@
       "name": "Dhaka, Bangladesh - (DAC)",
       "status": "under_maintenance",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2025-06-18T22:12:13.431Z",
+      "updated_at": "2025-06-18T23:09:57.217Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -7408,7 +7408,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "n6jgctq1mbvf",
+      "name": "Access for SaaS applications failing to authenticate",
+      "status": "investigating",
+      "created_at": "2025-06-18T23:17:59.519Z",
+      "updated_at": "2025-06-18T23:17:59.619Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/bg6xg0596667",
+      "started_at": "2025-06-18T23:17:59.512Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "xz335c8cvz0k",
+          "status": "investigating",
+          "body": "Cloudflare engineering is investigating an issue causing authentication to fail for some Access for SaaS applications. This is due to an incorrect certificate signing key. The engineering team is investigating a solution to revert to the original keys. \n\nAccess self-hosted and private network application authentication is not impacted at this time.",
+          "incident_id": "n6jgctq1mbvf",
+          "created_at": "2025-06-18T23:17:59.616Z",
+          "updated_at": "2025-06-18T23:17:59.616Z",
+          "display_at": "2025-06-18T23:17:59.616Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "w4k8yvhfb3vp",
+          "name": "Access",
+          "status": "degraded_performance",
+          "created_at": "2018-02-09T21:46:39.049Z",
+          "updated_at": "2025-06-18T23:17:59.556Z",
+          "position": 2,
+          "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "0km8n76c063x",
