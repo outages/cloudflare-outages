@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-23T23:20:39.653Z"
+    "updated_at": "2025-06-24T01:27:45.024Z"
   },
   "components": [
     {
@@ -1412,7 +1412,7 @@
       "name": "Brasilia, Brazil - (BSB)",
       "status": "under_maintenance",
       "created_at": "2021-05-24T14:45:56.017Z",
-      "updated_at": "2025-06-23T21:18:28.760Z",
+      "updated_at": "2025-06-24T00:23:55.924Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2625,9 +2625,9 @@
     {
       "id": "ljllh1921z0m",
       "name": "Nairobi, Kenya - (NBO)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2020-10-30T04:22:58.259Z",
-      "updated_at": "2025-06-18T15:02:01.161Z",
+      "updated_at": "2025-06-24T00:18:13.561Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -4592,7 +4592,7 @@
       "name": "São Paulo, Brazil - (GRU)",
       "status": "under_maintenance",
       "created_at": "2014-10-27T21:45:14.885Z",
-      "updated_at": "2025-06-23T20:03:12.934Z",
+      "updated_at": "2025-06-24T01:27:45.019Z",
       "position": 43,
       "description": null,
       "showcase": false,
@@ -7414,7 +7414,7 @@
       "name": "Stream Playback Errors",
       "status": "monitoring",
       "created_at": "2025-06-23T18:41:44.794Z",
-      "updated_at": "2025-06-23T22:07:47.312Z",
+      "updated_at": "2025-06-23T23:53:55.119Z",
       "monitoring_at": "2025-06-23T22:07:47.289Z",
       "resolved_at": null,
       "impact": "minor",
@@ -7422,6 +7422,26 @@
       "started_at": "2025-06-23T18:41:44.786Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "3sn7b15bz4kx",
+          "status": "monitoring",
+          "body": "The team has identified a contributing issue between caching and storage retrieval. An improvement has been released and is being monitored. Additionally, we have adjusted player retry logic to reduce potential stalling. We are continuing our investigation.",
+          "incident_id": "17tmw05w0mt4",
+          "created_at": "2025-06-23T23:53:55.116Z",
+          "updated_at": "2025-06-23T23:53:55.116Z",
+          "display_at": "2025-06-23T23:53:55.116Z",
+          "affected_components": [
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "jqzxnbfntqz2",
           "status": "monitoring",
@@ -7485,60 +7505,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "r09zyfw2qd69",
-      "name": "SJC (San Jose) on 2025-06-24",
-      "status": "scheduled",
-      "created_at": "2025-06-23T10:45:01.536Z",
-      "updated_at": "2025-06-23T10:45:01.603Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/j1kc40cfryr9",
-      "started_at": "2025-06-23T10:45:01.528Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "ywl12999fmgp",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SJC (San Jose) datacenter on 2025-06-24 between 08:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "r09zyfw2qd69",
-          "created_at": "2025-06-23T10:45:01.600Z",
-          "updated_at": "2025-06-23T10:45:01.600Z",
-          "display_at": "2025-06-23T10:45:01.600Z",
-          "affected_components": [
-            {
-              "code": "4xvd68d7k70c",
-              "name": "North America - San Jose, CA, United States - (SJC)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "4xvd68d7k70c",
-          "name": "San Jose, CA, United States - (SJC)",
-          "status": "operational",
-          "created_at": "2014-10-16T04:33:22.992Z",
-          "updated_at": "2024-07-31T17:47:07.066Z",
-          "position": 42,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-06-24T08:00:00.000Z",
-      "scheduled_until": "2025-06-24T12:00:00.000Z"
-    },
-    {
       "id": "gwqkfw29tc5d",
       "name": "OMA (Omaha) on 2025-06-24",
       "status": "scheduled",
@@ -7593,30 +7559,30 @@
       "scheduled_until": "2025-06-24T11:00:00.000Z"
     },
     {
-      "id": "zgrh24sw21p8",
-      "name": "BSR (Basra) on 2025-06-25",
+      "id": "r09zyfw2qd69",
+      "name": "SJC (San Jose) on 2025-06-24",
       "status": "scheduled",
-      "created_at": "2025-06-12T22:59:16.543Z",
-      "updated_at": "2025-06-12T22:59:16.620Z",
+      "created_at": "2025-06-23T10:45:01.536Z",
+      "updated_at": "2025-06-23T10:45:01.603Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/1gp6msdcy5dw",
-      "started_at": "2025-06-12T22:59:16.533Z",
+      "shortlink": "https://stspg.io/j1kc40cfryr9",
+      "started_at": "2025-06-23T10:45:01.528Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "pp9gg7txy24j",
+          "id": "ywl12999fmgp",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BSR (Basra) datacenter on 2025-06-25 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "zgrh24sw21p8",
-          "created_at": "2025-06-12T22:59:16.616Z",
-          "updated_at": "2025-06-12T22:59:16.616Z",
-          "display_at": "2025-06-12T22:59:16.616Z",
+          "body": "We will be performing scheduled maintenance in SJC (San Jose) datacenter on 2025-06-24 between 08:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "r09zyfw2qd69",
+          "created_at": "2025-06-23T10:45:01.600Z",
+          "updated_at": "2025-06-23T10:45:01.600Z",
+          "display_at": "2025-06-23T10:45:01.600Z",
           "affected_components": [
             {
-              "code": "qtcxyrxkt6tm",
-              "name": "Middle East - Basra, Iraq - (BSR)",
+              "code": "4xvd68d7k70c",
+              "name": "North America - San Jose, CA, United States - (SJC)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -7628,23 +7594,23 @@
       ],
       "components": [
         {
-          "id": "qtcxyrxkt6tm",
-          "name": "Basra, Iraq - (BSR)",
+          "id": "4xvd68d7k70c",
+          "name": "San Jose, CA, United States - (SJC)",
           "status": "operational",
-          "created_at": "2022-05-11T15:05:18.724Z",
-          "updated_at": "2025-06-23T05:32:51.619Z",
-          "position": 5,
+          "created_at": "2014-10-16T04:33:22.992Z",
+          "updated_at": "2024-07-31T17:47:07.066Z",
+          "position": 42,
           "description": null,
           "showcase": false,
-          "start_date": "2022-05-11",
-          "group_id": "m3639x4txd08",
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-06-25T03:00:00.000Z",
-      "scheduled_until": "2025-06-25T05:30:00.000Z"
+      "scheduled_for": "2025-06-24T08:00:00.000Z",
+      "scheduled_until": "2025-06-24T12:00:00.000Z"
     },
     {
       "id": "md0f6nt2r12n",
@@ -7688,6 +7654,114 @@
           "created_at": "2022-05-11T09:27:35.150Z",
           "updated_at": "2025-06-12T23:06:44.383Z",
           "position": 17,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-11",
+          "group_id": "m3639x4txd08",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-06-25T03:00:00.000Z",
+      "scheduled_until": "2025-06-25T05:30:00.000Z"
+    },
+    {
+      "id": "h9qv3lfphkv7",
+      "name": "NJF (Najaf) on 2025-06-25",
+      "status": "scheduled",
+      "created_at": "2025-06-12T22:59:16.992Z",
+      "updated_at": "2025-06-12T22:59:17.047Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/1fc4jfyxjx79",
+      "started_at": "2025-06-12T22:59:16.986Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "5l6tff2p7td7",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in NJF (Najaf) datacenter on 2025-06-25 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "h9qv3lfphkv7",
+          "created_at": "2025-06-12T22:59:17.044Z",
+          "updated_at": "2025-06-12T22:59:17.044Z",
+          "display_at": "2025-06-12T22:59:17.044Z",
+          "affected_components": [
+            {
+              "code": "4cfsv1jrd7d3",
+              "name": "Middle East - Najaf, Iraq - (NJF)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4cfsv1jrd7d3",
+          "name": "Najaf, Iraq - (NJF)",
+          "status": "partial_outage",
+          "created_at": "2022-05-12T16:33:07.228Z",
+          "updated_at": "2025-06-23T03:30:53.569Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-12",
+          "group_id": "m3639x4txd08",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-06-25T03:00:00.000Z",
+      "scheduled_until": "2025-06-25T05:30:00.000Z"
+    },
+    {
+      "id": "zgrh24sw21p8",
+      "name": "BSR (Basra) on 2025-06-25",
+      "status": "scheduled",
+      "created_at": "2025-06-12T22:59:16.543Z",
+      "updated_at": "2025-06-12T22:59:16.620Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/1gp6msdcy5dw",
+      "started_at": "2025-06-12T22:59:16.533Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "pp9gg7txy24j",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in BSR (Basra) datacenter on 2025-06-25 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "zgrh24sw21p8",
+          "created_at": "2025-06-12T22:59:16.616Z",
+          "updated_at": "2025-06-12T22:59:16.616Z",
+          "display_at": "2025-06-12T22:59:16.616Z",
+          "affected_components": [
+            {
+              "code": "qtcxyrxkt6tm",
+              "name": "Middle East - Basra, Iraq - (BSR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qtcxyrxkt6tm",
+          "name": "Basra, Iraq - (BSR)",
+          "status": "operational",
+          "created_at": "2022-05-11T15:05:18.724Z",
+          "updated_at": "2025-06-23T05:32:51.619Z",
+          "position": 5,
           "description": null,
           "showcase": false,
           "start_date": "2022-05-11",
@@ -7755,30 +7829,30 @@
       "scheduled_until": "2025-06-25T05:30:00.000Z"
     },
     {
-      "id": "h9qv3lfphkv7",
-      "name": "NJF (Najaf) on 2025-06-25",
+      "id": "clt66ty5kp9h",
+      "name": "LAX (Los Angeles) on 2025-06-25",
       "status": "scheduled",
-      "created_at": "2025-06-12T22:59:16.992Z",
-      "updated_at": "2025-06-12T22:59:17.047Z",
+      "created_at": "2025-06-24T00:24:39.376Z",
+      "updated_at": "2025-06-24T00:24:39.447Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/1fc4jfyxjx79",
-      "started_at": "2025-06-12T22:59:16.986Z",
+      "shortlink": "https://stspg.io/hy5vzhp5sgv8",
+      "started_at": "2025-06-24T00:24:39.368Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "5l6tff2p7td7",
+          "id": "wxls747cgmq7",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in NJF (Najaf) datacenter on 2025-06-25 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "h9qv3lfphkv7",
-          "created_at": "2025-06-12T22:59:17.044Z",
-          "updated_at": "2025-06-12T22:59:17.044Z",
-          "display_at": "2025-06-12T22:59:17.044Z",
+          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2025-06-25 between 09:00 and 13:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "clt66ty5kp9h",
+          "created_at": "2025-06-24T00:24:39.443Z",
+          "updated_at": "2025-06-24T00:24:39.443Z",
+          "display_at": "2025-06-24T00:24:39.443Z",
           "affected_components": [
             {
-              "code": "4cfsv1jrd7d3",
-              "name": "Middle East - Najaf, Iraq - (NJF)",
+              "code": "38w4zp21dlkc",
+              "name": "North America - Los Angeles, CA, United States - (LAX)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -7790,23 +7864,23 @@
       ],
       "components": [
         {
-          "id": "4cfsv1jrd7d3",
-          "name": "Najaf, Iraq - (NJF)",
-          "status": "partial_outage",
-          "created_at": "2022-05-12T16:33:07.228Z",
-          "updated_at": "2025-06-23T03:30:53.569Z",
-          "position": 16,
+          "id": "38w4zp21dlkc",
+          "name": "Los Angeles, CA, United States - (LAX)",
+          "status": "operational",
+          "created_at": "2014-10-27T19:24:27.591Z",
+          "updated_at": "2024-06-18T21:50:20.618Z",
+          "position": 20,
           "description": null,
           "showcase": false,
-          "start_date": "2022-05-12",
-          "group_id": "m3639x4txd08",
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-06-25T03:00:00.000Z",
-      "scheduled_until": "2025-06-25T05:30:00.000Z"
+      "scheduled_for": "2025-06-25T09:00:00.000Z",
+      "scheduled_until": "2025-06-25T13:00:00.000Z"
     },
     {
       "id": "jbgz0hjzg4y6",
@@ -7863,6 +7937,60 @@
       "scheduled_until": "2025-06-26T00:00:00.000Z"
     },
     {
+      "id": "p2ymm9j36dp7",
+      "name": "NJF (Najaf) on 2025-06-26",
+      "status": "scheduled",
+      "created_at": "2025-06-12T22:58:56.165Z",
+      "updated_at": "2025-06-12T22:58:56.235Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/yg22n316tmrk",
+      "started_at": "2025-06-12T22:58:56.155Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ws2njlyx1486",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in NJF (Najaf) datacenter on 2025-06-26 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "p2ymm9j36dp7",
+          "created_at": "2025-06-12T22:58:56.231Z",
+          "updated_at": "2025-06-12T22:58:56.231Z",
+          "display_at": "2025-06-12T22:58:56.231Z",
+          "affected_components": [
+            {
+              "code": "4cfsv1jrd7d3",
+              "name": "Middle East - Najaf, Iraq - (NJF)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4cfsv1jrd7d3",
+          "name": "Najaf, Iraq - (NJF)",
+          "status": "partial_outage",
+          "created_at": "2022-05-12T16:33:07.228Z",
+          "updated_at": "2025-06-23T03:30:53.569Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-12",
+          "group_id": "m3639x4txd08",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-06-26T03:00:00.000Z",
+      "scheduled_until": "2025-06-26T05:30:00.000Z"
+    },
+    {
       "id": "gk2tl86j8bsz",
       "name": "BGW (Baghdad) on 2025-06-26",
       "status": "scheduled",
@@ -7907,60 +8035,6 @@
           "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "m3639x4txd08",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-06-26T03:00:00.000Z",
-      "scheduled_until": "2025-06-26T05:30:00.000Z"
-    },
-    {
-      "id": "mzrwt6z92g3z",
-      "name": "BSR (Basra) on 2025-06-26",
-      "status": "scheduled",
-      "created_at": "2025-06-12T22:58:55.272Z",
-      "updated_at": "2025-06-12T22:58:55.328Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/pn8lwzkfr2ff",
-      "started_at": "2025-06-12T22:58:55.266Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "8n26sm6wbyjz",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BSR (Basra) datacenter on 2025-06-26 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "mzrwt6z92g3z",
-          "created_at": "2025-06-12T22:58:55.325Z",
-          "updated_at": "2025-06-12T22:58:55.325Z",
-          "display_at": "2025-06-12T22:58:55.325Z",
-          "affected_components": [
-            {
-              "code": "qtcxyrxkt6tm",
-              "name": "Middle East - Basra, Iraq - (BSR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qtcxyrxkt6tm",
-          "name": "Basra, Iraq - (BSR)",
-          "status": "operational",
-          "created_at": "2022-05-11T15:05:18.724Z",
-          "updated_at": "2025-06-23T05:32:51.619Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-11",
           "group_id": "m3639x4txd08",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -8025,30 +8099,30 @@
       "scheduled_until": "2025-06-26T05:30:00.000Z"
     },
     {
-      "id": "p2ymm9j36dp7",
-      "name": "NJF (Najaf) on 2025-06-26",
+      "id": "mzrwt6z92g3z",
+      "name": "BSR (Basra) on 2025-06-26",
       "status": "scheduled",
-      "created_at": "2025-06-12T22:58:56.165Z",
-      "updated_at": "2025-06-12T22:58:56.235Z",
+      "created_at": "2025-06-12T22:58:55.272Z",
+      "updated_at": "2025-06-12T22:58:55.328Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/yg22n316tmrk",
-      "started_at": "2025-06-12T22:58:56.155Z",
+      "shortlink": "https://stspg.io/pn8lwzkfr2ff",
+      "started_at": "2025-06-12T22:58:55.266Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "ws2njlyx1486",
+          "id": "8n26sm6wbyjz",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in NJF (Najaf) datacenter on 2025-06-26 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "p2ymm9j36dp7",
-          "created_at": "2025-06-12T22:58:56.231Z",
-          "updated_at": "2025-06-12T22:58:56.231Z",
-          "display_at": "2025-06-12T22:58:56.231Z",
+          "body": "We will be performing scheduled maintenance in BSR (Basra) datacenter on 2025-06-26 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "mzrwt6z92g3z",
+          "created_at": "2025-06-12T22:58:55.325Z",
+          "updated_at": "2025-06-12T22:58:55.325Z",
+          "display_at": "2025-06-12T22:58:55.325Z",
           "affected_components": [
             {
-              "code": "4cfsv1jrd7d3",
-              "name": "Middle East - Najaf, Iraq - (NJF)",
+              "code": "qtcxyrxkt6tm",
+              "name": "Middle East - Basra, Iraq - (BSR)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -8060,15 +8134,15 @@
       ],
       "components": [
         {
-          "id": "4cfsv1jrd7d3",
-          "name": "Najaf, Iraq - (NJF)",
-          "status": "partial_outage",
-          "created_at": "2022-05-12T16:33:07.228Z",
-          "updated_at": "2025-06-23T03:30:53.569Z",
-          "position": 16,
+          "id": "qtcxyrxkt6tm",
+          "name": "Basra, Iraq - (BSR)",
+          "status": "operational",
+          "created_at": "2022-05-11T15:05:18.724Z",
+          "updated_at": "2025-06-23T05:32:51.619Z",
+          "position": 5,
           "description": null,
           "showcase": false,
-          "start_date": "2022-05-12",
+          "start_date": "2022-05-11",
           "group_id": "m3639x4txd08",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -8187,6 +8261,114 @@
       "scheduled_until": "2025-06-27T00:00:00.000Z"
     },
     {
+      "id": "tz8z9ylfk0g9",
+      "name": "NJF (Najaf) on 2025-06-28",
+      "status": "scheduled",
+      "created_at": "2025-06-12T22:59:14.380Z",
+      "updated_at": "2025-06-12T22:59:14.436Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/xf8cz17jf128",
+      "started_at": "2025-06-12T22:59:14.374Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "0xqy1mqdlwtw",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in NJF (Najaf) datacenter on 2025-06-28 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "tz8z9ylfk0g9",
+          "created_at": "2025-06-12T22:59:14.433Z",
+          "updated_at": "2025-06-12T22:59:14.433Z",
+          "display_at": "2025-06-12T22:59:14.433Z",
+          "affected_components": [
+            {
+              "code": "4cfsv1jrd7d3",
+              "name": "Middle East - Najaf, Iraq - (NJF)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4cfsv1jrd7d3",
+          "name": "Najaf, Iraq - (NJF)",
+          "status": "partial_outage",
+          "created_at": "2022-05-12T16:33:07.228Z",
+          "updated_at": "2025-06-23T03:30:53.569Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-12",
+          "group_id": "m3639x4txd08",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-06-28T03:00:00.000Z",
+      "scheduled_until": "2025-06-28T05:30:00.000Z"
+    },
+    {
+      "id": "1m75gjtw5c94",
+      "name": "BSR (Basra) on 2025-06-28",
+      "status": "scheduled",
+      "created_at": "2025-06-12T22:59:13.963Z",
+      "updated_at": "2025-06-12T22:59:14.033Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/3l008wqmy635",
+      "started_at": "2025-06-12T22:59:13.956Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "spdwl7nktdsn",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in BSR (Basra) datacenter on 2025-06-28 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "1m75gjtw5c94",
+          "created_at": "2025-06-12T22:59:14.030Z",
+          "updated_at": "2025-06-12T22:59:14.030Z",
+          "display_at": "2025-06-12T22:59:14.030Z",
+          "affected_components": [
+            {
+              "code": "qtcxyrxkt6tm",
+              "name": "Middle East - Basra, Iraq - (BSR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qtcxyrxkt6tm",
+          "name": "Basra, Iraq - (BSR)",
+          "status": "operational",
+          "created_at": "2022-05-11T15:05:18.724Z",
+          "updated_at": "2025-06-23T05:32:51.619Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-11",
+          "group_id": "m3639x4txd08",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-06-28T03:00:00.000Z",
+      "scheduled_until": "2025-06-28T05:30:00.000Z"
+    },
+    {
       "id": "hszh0pxw345n",
       "name": "XNH (Nasiriyah) on 2025-06-28",
       "status": "scheduled",
@@ -8295,26 +8477,26 @@
       "scheduled_until": "2025-06-28T05:30:00.000Z"
     },
     {
-      "id": "1m75gjtw5c94",
-      "name": "BSR (Basra) on 2025-06-28",
+      "id": "v73ms9k4dy6b",
+      "name": "BSR (Basra) on 2025-06-29",
       "status": "scheduled",
-      "created_at": "2025-06-12T22:59:13.963Z",
-      "updated_at": "2025-06-12T22:59:14.033Z",
+      "created_at": "2025-06-12T23:01:03.830Z",
+      "updated_at": "2025-06-12T23:01:03.883Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/3l008wqmy635",
-      "started_at": "2025-06-12T22:59:13.956Z",
+      "shortlink": "https://stspg.io/zmk5tlqh8jvf",
+      "started_at": "2025-06-12T23:01:03.823Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "spdwl7nktdsn",
+          "id": "82m345pzysy6",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BSR (Basra) datacenter on 2025-06-28 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "1m75gjtw5c94",
-          "created_at": "2025-06-12T22:59:14.030Z",
-          "updated_at": "2025-06-12T22:59:14.030Z",
-          "display_at": "2025-06-12T22:59:14.030Z",
+          "body": "We will be performing scheduled maintenance in BSR (Basra) datacenter on 2025-06-29 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "v73ms9k4dy6b",
+          "created_at": "2025-06-12T23:01:03.881Z",
+          "updated_at": "2025-06-12T23:01:03.881Z",
+          "display_at": "2025-06-12T23:01:03.881Z",
           "affected_components": [
             {
               "code": "qtcxyrxkt6tm",
@@ -8336,114 +8518,6 @@
           "created_at": "2022-05-11T15:05:18.724Z",
           "updated_at": "2025-06-23T05:32:51.619Z",
           "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-11",
-          "group_id": "m3639x4txd08",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-06-28T03:00:00.000Z",
-      "scheduled_until": "2025-06-28T05:30:00.000Z"
-    },
-    {
-      "id": "tz8z9ylfk0g9",
-      "name": "NJF (Najaf) on 2025-06-28",
-      "status": "scheduled",
-      "created_at": "2025-06-12T22:59:14.380Z",
-      "updated_at": "2025-06-12T22:59:14.436Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/xf8cz17jf128",
-      "started_at": "2025-06-12T22:59:14.374Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "0xqy1mqdlwtw",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in NJF (Najaf) datacenter on 2025-06-28 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "tz8z9ylfk0g9",
-          "created_at": "2025-06-12T22:59:14.433Z",
-          "updated_at": "2025-06-12T22:59:14.433Z",
-          "display_at": "2025-06-12T22:59:14.433Z",
-          "affected_components": [
-            {
-              "code": "4cfsv1jrd7d3",
-              "name": "Middle East - Najaf, Iraq - (NJF)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "4cfsv1jrd7d3",
-          "name": "Najaf, Iraq - (NJF)",
-          "status": "partial_outage",
-          "created_at": "2022-05-12T16:33:07.228Z",
-          "updated_at": "2025-06-23T03:30:53.569Z",
-          "position": 16,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-12",
-          "group_id": "m3639x4txd08",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-06-28T03:00:00.000Z",
-      "scheduled_until": "2025-06-28T05:30:00.000Z"
-    },
-    {
-      "id": "srjkns9g1dhj",
-      "name": "XNH (Nasiriyah) on 2025-06-29",
-      "status": "scheduled",
-      "created_at": "2025-06-12T23:01:05.084Z",
-      "updated_at": "2025-06-12T23:01:05.143Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/v9rkq0wzx9t3",
-      "started_at": "2025-06-12T23:01:05.077Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "bwqlskb5kg9v",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in XNH (Nasiriyah) datacenter on 2025-06-29 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "srjkns9g1dhj",
-          "created_at": "2025-06-12T23:01:05.140Z",
-          "updated_at": "2025-06-12T23:01:05.140Z",
-          "display_at": "2025-06-12T23:01:05.140Z",
-          "affected_components": [
-            {
-              "code": "d8yztxmdkcc0",
-              "name": "Middle East - Nasiriyah, Iraq - (XNH)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "d8yztxmdkcc0",
-          "name": "Nasiriyah, Iraq - (XNH)",
-          "status": "partial_outage",
-          "created_at": "2022-05-11T09:27:35.150Z",
-          "updated_at": "2025-06-12T23:06:44.383Z",
-          "position": 17,
           "description": null,
           "showcase": false,
           "start_date": "2022-05-11",
@@ -8511,30 +8585,30 @@
       "scheduled_until": "2025-06-29T05:30:00.000Z"
     },
     {
-      "id": "v73ms9k4dy6b",
-      "name": "BSR (Basra) on 2025-06-29",
+      "id": "srjkns9g1dhj",
+      "name": "XNH (Nasiriyah) on 2025-06-29",
       "status": "scheduled",
-      "created_at": "2025-06-12T23:01:03.830Z",
-      "updated_at": "2025-06-12T23:01:03.883Z",
+      "created_at": "2025-06-12T23:01:05.084Z",
+      "updated_at": "2025-06-12T23:01:05.143Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/zmk5tlqh8jvf",
-      "started_at": "2025-06-12T23:01:03.823Z",
+      "shortlink": "https://stspg.io/v9rkq0wzx9t3",
+      "started_at": "2025-06-12T23:01:05.077Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "82m345pzysy6",
+          "id": "bwqlskb5kg9v",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BSR (Basra) datacenter on 2025-06-29 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "v73ms9k4dy6b",
-          "created_at": "2025-06-12T23:01:03.881Z",
-          "updated_at": "2025-06-12T23:01:03.881Z",
-          "display_at": "2025-06-12T23:01:03.881Z",
+          "body": "We will be performing scheduled maintenance in XNH (Nasiriyah) datacenter on 2025-06-29 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "srjkns9g1dhj",
+          "created_at": "2025-06-12T23:01:05.140Z",
+          "updated_at": "2025-06-12T23:01:05.140Z",
+          "display_at": "2025-06-12T23:01:05.140Z",
           "affected_components": [
             {
-              "code": "qtcxyrxkt6tm",
-              "name": "Middle East - Basra, Iraq - (BSR)",
+              "code": "d8yztxmdkcc0",
+              "name": "Middle East - Nasiriyah, Iraq - (XNH)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -8546,12 +8620,12 @@
       ],
       "components": [
         {
-          "id": "qtcxyrxkt6tm",
-          "name": "Basra, Iraq - (BSR)",
-          "status": "operational",
-          "created_at": "2022-05-11T15:05:18.724Z",
-          "updated_at": "2025-06-23T05:32:51.619Z",
-          "position": 5,
+          "id": "d8yztxmdkcc0",
+          "name": "Nasiriyah, Iraq - (XNH)",
+          "status": "partial_outage",
+          "created_at": "2022-05-11T09:27:35.150Z",
+          "updated_at": "2025-06-12T23:06:44.383Z",
+          "position": 17,
           "description": null,
           "showcase": false,
           "start_date": "2022-05-11",
@@ -8673,60 +8747,6 @@
       "scheduled_until": "2025-07-01T05:30:00.000Z"
     },
     {
-      "id": "57xtp6l4cv43",
-      "name": "BSR (Basra) on 2025-07-01",
-      "status": "scheduled",
-      "created_at": "2025-06-12T23:01:00.544Z",
-      "updated_at": "2025-06-12T23:01:00.606Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/m5v69mf2g9cb",
-      "started_at": "2025-06-12T23:01:00.537Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "f1m1yt1qwryp",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BSR (Basra) datacenter on 2025-07-01 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "57xtp6l4cv43",
-          "created_at": "2025-06-12T23:01:00.603Z",
-          "updated_at": "2025-06-12T23:01:00.603Z",
-          "display_at": "2025-06-12T23:01:00.603Z",
-          "affected_components": [
-            {
-              "code": "qtcxyrxkt6tm",
-              "name": "Middle East - Basra, Iraq - (BSR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qtcxyrxkt6tm",
-          "name": "Basra, Iraq - (BSR)",
-          "status": "operational",
-          "created_at": "2022-05-11T15:05:18.724Z",
-          "updated_at": "2025-06-23T05:32:51.619Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-11",
-          "group_id": "m3639x4txd08",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-07-01T03:00:00.000Z",
-      "scheduled_until": "2025-07-01T05:30:00.000Z"
-    },
-    {
       "id": "04q7kvrgdbmk",
       "name": "XNH (Nasiriyah) on 2025-07-01",
       "status": "scheduled",
@@ -8835,31 +8855,31 @@
       "scheduled_until": "2025-07-01T05:30:00.000Z"
     },
     {
-      "id": "ystfdn5xp230",
-      "name": "XNH (Nasiriyah) on 2025-07-02",
+      "id": "57xtp6l4cv43",
+      "name": "BSR (Basra) on 2025-07-01",
       "status": "scheduled",
-      "created_at": "2025-06-12T23:00:58.592Z",
-      "updated_at": "2025-06-12T23:00:58.695Z",
+      "created_at": "2025-06-12T23:01:00.544Z",
+      "updated_at": "2025-06-12T23:01:00.606Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/gxy50h1xc0yt",
-      "started_at": "2025-06-12T23:00:58.583Z",
+      "shortlink": "https://stspg.io/m5v69mf2g9cb",
+      "started_at": "2025-06-12T23:01:00.537Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "v63pq2p32v73",
+          "id": "f1m1yt1qwryp",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in XNH (Nasiriyah) datacenter on 2025-07-02 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "ystfdn5xp230",
-          "created_at": "2025-06-12T23:00:58.691Z",
-          "updated_at": "2025-06-12T23:00:58.691Z",
-          "display_at": "2025-06-12T23:00:58.691Z",
+          "body": "We will be performing scheduled maintenance in BSR (Basra) datacenter on 2025-07-01 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "57xtp6l4cv43",
+          "created_at": "2025-06-12T23:01:00.603Z",
+          "updated_at": "2025-06-12T23:01:00.603Z",
+          "display_at": "2025-06-12T23:01:00.603Z",
           "affected_components": [
             {
-              "code": "d8yztxmdkcc0",
-              "name": "Middle East - Nasiriyah, Iraq - (XNH)",
-              "old_status": "partial_outage",
+              "code": "qtcxyrxkt6tm",
+              "name": "Middle East - Basra, Iraq - (BSR)",
+              "old_status": "operational",
               "new_status": "operational"
             }
           ],
@@ -8870,12 +8890,12 @@
       ],
       "components": [
         {
-          "id": "d8yztxmdkcc0",
-          "name": "Nasiriyah, Iraq - (XNH)",
-          "status": "partial_outage",
-          "created_at": "2022-05-11T09:27:35.150Z",
-          "updated_at": "2025-06-12T23:06:44.383Z",
-          "position": 17,
+          "id": "qtcxyrxkt6tm",
+          "name": "Basra, Iraq - (BSR)",
+          "status": "operational",
+          "created_at": "2022-05-11T15:05:18.724Z",
+          "updated_at": "2025-06-23T05:32:51.619Z",
+          "position": 5,
           "description": null,
           "showcase": false,
           "start_date": "2022-05-11",
@@ -8885,8 +8905,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-07-02T03:00:00.000Z",
-      "scheduled_until": "2025-07-02T05:30:00.000Z"
+      "scheduled_for": "2025-07-01T03:00:00.000Z",
+      "scheduled_until": "2025-07-01T05:30:00.000Z"
     },
     {
       "id": "v1k89mc9vt4l",
@@ -8943,31 +8963,31 @@
       "scheduled_until": "2025-07-02T05:30:00.000Z"
     },
     {
-      "id": "gfmbpywztwwx",
-      "name": "BGW (Baghdad) on 2025-07-02",
+      "id": "ystfdn5xp230",
+      "name": "XNH (Nasiriyah) on 2025-07-02",
       "status": "scheduled",
-      "created_at": "2025-06-12T23:00:56.881Z",
-      "updated_at": "2025-06-12T23:00:56.955Z",
+      "created_at": "2025-06-12T23:00:58.592Z",
+      "updated_at": "2025-06-12T23:00:58.695Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/41kqcx59z6y1",
-      "started_at": "2025-06-12T23:00:56.873Z",
+      "shortlink": "https://stspg.io/gxy50h1xc0yt",
+      "started_at": "2025-06-12T23:00:58.583Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "bwlvps5b3cg7",
+          "id": "v63pq2p32v73",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BGW (Baghdad) datacenter on 2025-07-02 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "gfmbpywztwwx",
-          "created_at": "2025-06-12T23:00:56.952Z",
-          "updated_at": "2025-06-12T23:00:56.952Z",
-          "display_at": "2025-06-12T23:00:56.952Z",
+          "body": "We will be performing scheduled maintenance in XNH (Nasiriyah) datacenter on 2025-07-02 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "ystfdn5xp230",
+          "created_at": "2025-06-12T23:00:58.691Z",
+          "updated_at": "2025-06-12T23:00:58.691Z",
+          "display_at": "2025-06-12T23:00:58.691Z",
           "affected_components": [
             {
-              "code": "gxjcfyf5pht1",
-              "name": "Middle East - Baghdad, Iraq - (BGW)",
-              "old_status": "under_maintenance",
+              "code": "d8yztxmdkcc0",
+              "name": "Middle East - Nasiriyah, Iraq - (XNH)",
+              "old_status": "partial_outage",
               "new_status": "operational"
             }
           ],
@@ -8978,15 +8998,15 @@
       ],
       "components": [
         {
-          "id": "gxjcfyf5pht1",
-          "name": "Baghdad, Iraq - (BGW)",
-          "status": "under_maintenance",
-          "created_at": "2018-03-12T14:18:23.436Z",
-          "updated_at": "2025-06-23T21:18:29.087Z",
-          "position": 3,
+          "id": "d8yztxmdkcc0",
+          "name": "Nasiriyah, Iraq - (XNH)",
+          "status": "partial_outage",
+          "created_at": "2022-05-11T09:27:35.150Z",
+          "updated_at": "2025-06-12T23:06:44.383Z",
+          "position": 17,
           "description": null,
           "showcase": false,
-          "start_date": null,
+          "start_date": "2022-05-11",
           "group_id": "m3639x4txd08",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -9041,6 +9061,60 @@
           "description": null,
           "showcase": false,
           "start_date": "2022-05-11",
+          "group_id": "m3639x4txd08",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-07-02T03:00:00.000Z",
+      "scheduled_until": "2025-07-02T05:30:00.000Z"
+    },
+    {
+      "id": "gfmbpywztwwx",
+      "name": "BGW (Baghdad) on 2025-07-02",
+      "status": "scheduled",
+      "created_at": "2025-06-12T23:00:56.881Z",
+      "updated_at": "2025-06-12T23:00:56.955Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/41kqcx59z6y1",
+      "started_at": "2025-06-12T23:00:56.873Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "bwlvps5b3cg7",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in BGW (Baghdad) datacenter on 2025-07-02 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "gfmbpywztwwx",
+          "created_at": "2025-06-12T23:00:56.952Z",
+          "updated_at": "2025-06-12T23:00:56.952Z",
+          "display_at": "2025-06-12T23:00:56.952Z",
+          "affected_components": [
+            {
+              "code": "gxjcfyf5pht1",
+              "name": "Middle East - Baghdad, Iraq - (BGW)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gxjcfyf5pht1",
+          "name": "Baghdad, Iraq - (BGW)",
+          "status": "under_maintenance",
+          "created_at": "2018-03-12T14:18:23.436Z",
+          "updated_at": "2025-06-23T21:18:29.087Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
           "group_id": "m3639x4txd08",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -9267,30 +9341,30 @@
       "scheduled_until": "2025-07-03T05:30:00.000Z"
     },
     {
-      "id": "5rw9y67624cl",
-      "name": "NJF (Najaf) on 2025-07-03",
+      "id": "9b8nds3sk5wg",
+      "name": "BGW (Baghdad) on 2025-07-03",
       "status": "scheduled",
-      "created_at": "2025-06-12T23:01:07.148Z",
-      "updated_at": "2025-06-12T23:01:07.201Z",
+      "created_at": "2025-06-12T23:01:05.479Z",
+      "updated_at": "2025-06-12T23:01:05.530Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/r96pfs1kftxh",
-      "started_at": "2025-06-12T23:01:07.142Z",
+      "shortlink": "https://stspg.io/snyryx64262k",
+      "started_at": "2025-06-12T23:01:05.471Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "t0d2lhjjc7m8",
+          "id": "lgxsm68wt460",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in NJF (Najaf) datacenter on 2025-07-03 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "5rw9y67624cl",
-          "created_at": "2025-06-12T23:01:07.199Z",
-          "updated_at": "2025-06-12T23:01:07.199Z",
-          "display_at": "2025-06-12T23:01:07.199Z",
+          "body": "We will be performing scheduled maintenance in BGW (Baghdad) datacenter on 2025-07-03 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "9b8nds3sk5wg",
+          "created_at": "2025-06-12T23:01:05.527Z",
+          "updated_at": "2025-06-12T23:01:05.527Z",
+          "display_at": "2025-06-12T23:01:05.527Z",
           "affected_components": [
             {
-              "code": "4cfsv1jrd7d3",
-              "name": "Middle East - Najaf, Iraq - (NJF)",
+              "code": "gxjcfyf5pht1",
+              "name": "Middle East - Baghdad, Iraq - (BGW)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -9302,15 +9376,15 @@
       ],
       "components": [
         {
-          "id": "4cfsv1jrd7d3",
-          "name": "Najaf, Iraq - (NJF)",
-          "status": "partial_outage",
-          "created_at": "2022-05-12T16:33:07.228Z",
-          "updated_at": "2025-06-23T03:30:53.569Z",
-          "position": 16,
+          "id": "gxjcfyf5pht1",
+          "name": "Baghdad, Iraq - (BGW)",
+          "status": "under_maintenance",
+          "created_at": "2018-03-12T14:18:23.436Z",
+          "updated_at": "2025-06-23T21:18:29.087Z",
+          "position": 3,
           "description": null,
           "showcase": false,
-          "start_date": "2022-05-12",
+          "start_date": null,
           "group_id": "m3639x4txd08",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -9375,30 +9449,30 @@
       "scheduled_until": "2025-07-03T05:30:00.000Z"
     },
     {
-      "id": "9b8nds3sk5wg",
-      "name": "BGW (Baghdad) on 2025-07-03",
+      "id": "5rw9y67624cl",
+      "name": "NJF (Najaf) on 2025-07-03",
       "status": "scheduled",
-      "created_at": "2025-06-12T23:01:05.479Z",
-      "updated_at": "2025-06-12T23:01:05.530Z",
+      "created_at": "2025-06-12T23:01:07.148Z",
+      "updated_at": "2025-06-12T23:01:07.201Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/snyryx64262k",
-      "started_at": "2025-06-12T23:01:05.471Z",
+      "shortlink": "https://stspg.io/r96pfs1kftxh",
+      "started_at": "2025-06-12T23:01:07.142Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "lgxsm68wt460",
+          "id": "t0d2lhjjc7m8",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BGW (Baghdad) datacenter on 2025-07-03 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "9b8nds3sk5wg",
-          "created_at": "2025-06-12T23:01:05.527Z",
-          "updated_at": "2025-06-12T23:01:05.527Z",
-          "display_at": "2025-06-12T23:01:05.527Z",
+          "body": "We will be performing scheduled maintenance in NJF (Najaf) datacenter on 2025-07-03 between 03:00 and 05:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "5rw9y67624cl",
+          "created_at": "2025-06-12T23:01:07.199Z",
+          "updated_at": "2025-06-12T23:01:07.199Z",
+          "display_at": "2025-06-12T23:01:07.199Z",
           "affected_components": [
             {
-              "code": "gxjcfyf5pht1",
-              "name": "Middle East - Baghdad, Iraq - (BGW)",
+              "code": "4cfsv1jrd7d3",
+              "name": "Middle East - Najaf, Iraq - (NJF)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -9410,15 +9484,15 @@
       ],
       "components": [
         {
-          "id": "gxjcfyf5pht1",
-          "name": "Baghdad, Iraq - (BGW)",
-          "status": "under_maintenance",
-          "created_at": "2018-03-12T14:18:23.436Z",
-          "updated_at": "2025-06-23T21:18:29.087Z",
-          "position": 3,
+          "id": "4cfsv1jrd7d3",
+          "name": "Najaf, Iraq - (NJF)",
+          "status": "partial_outage",
+          "created_at": "2022-05-12T16:33:07.228Z",
+          "updated_at": "2025-06-23T03:30:53.569Z",
+          "position": 16,
           "description": null,
           "showcase": false,
-          "start_date": null,
+          "start_date": "2022-05-12",
           "group_id": "m3639x4txd08",
           "page_id": "yh6f0r4529hb",
           "group": false,
