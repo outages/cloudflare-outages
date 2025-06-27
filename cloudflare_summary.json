@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-27T17:45:22.128Z"
+    "updated_at": "2025-06-27T18:25:59.877Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "major_outage",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1056,9 +1056,9 @@
     {
       "id": "9kqfzzbvww99",
       "name": "Bandar Seri Begawan, Brunei - (BWN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2020-02-25T07:32:56.004Z",
-      "updated_at": "2025-06-27T16:41:08.016Z",
+      "updated_at": "2025-06-27T18:20:12.291Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -3286,9 +3286,9 @@
     {
       "id": "n3v9x7fj809n",
       "name": "Manaus, Brazil - (MAO)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-11-24T12:42:37.210Z",
-      "updated_at": "2025-06-27T17:22:06.933Z",
+      "updated_at": "2025-06-27T18:14:27.472Z",
       "position": 26,
       "description": null,
       "showcase": false,
@@ -3571,9 +3571,9 @@
     {
       "id": "nxdg2bbkf525",
       "name": "Abidjan, Ivory Coast - (ABJ)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-06-20T16:45:08.676Z",
-      "updated_at": "2025-06-27T17:45:22.124Z",
+      "updated_at": "2025-06-27T18:14:25.836Z",
       "position": 29,
       "description": null,
       "showcase": false,
@@ -4908,7 +4908,7 @@
       "name": "Manila, Philippines - (MNL)",
       "status": "under_maintenance",
       "created_at": "2016-04-29T12:14:56.581Z",
-      "updated_at": "2025-06-27T16:41:09.040Z",
+      "updated_at": "2025-06-27T18:20:12.644Z",
       "position": 48,
       "description": null,
       "showcase": false,
@@ -5401,9 +5401,9 @@
     {
       "id": "8xc65dbhbrd5",
       "name": "Phnom Penh, Cambodia - (PNH)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2018-02-09T20:38:28.093Z",
-      "updated_at": "2025-06-20T06:51:16.011Z",
+      "updated_at": "2025-06-27T18:14:28.919Z",
       "position": 55,
       "description": null,
       "showcase": false,
@@ -6016,9 +6016,9 @@
     {
       "id": "xk1sjvzmjp6t",
       "name": "Ulaanbaatar, Mongolia - (ULN)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-09-19T09:48:26.066Z",
-      "updated_at": "2025-06-27T16:41:08.719Z",
+      "updated_at": "2025-06-27T18:25:59.571Z",
       "position": 66,
       "description": null,
       "showcase": false,
@@ -6061,9 +6061,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2025-06-13T16:51:48.682Z",
+      "updated_at": "2025-06-27T18:13:36.634Z",
       "position": 67,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -7156,9 +7156,9 @@
     {
       "id": "ffrmxl6mgywd",
       "name": "Da Nang, Vietnam - (DAD)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-04-26T21:34:08.466Z",
-      "updated_at": "2025-06-04T19:26:13.587Z",
+      "updated_at": "2025-06-27T18:25:59.873Z",
       "position": 349,
       "description": null,
       "showcase": false,
@@ -7425,6 +7425,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "x8kcl20nk88s",
+      "name": "High R2 request latency in ENAM region",
+      "status": "investigating",
+      "created_at": "2025-06-27T18:13:36.595Z",
+      "updated_at": "2025-06-27T18:13:36.696Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "critical",
+      "shortlink": "https://stspg.io/3thrzzkysf1t",
+      "started_at": "2025-06-27T18:13:36.587Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "9x6c2khs03gg",
+          "status": "investigating",
+          "body": "R2 users with buckets in the ENAM region may be experiencing elevated request latency and lower bandwidth throughput on get and put requests to R2.",
+          "incident_id": "x8kcl20nk88s",
+          "created_at": "2025-06-27T18:13:36.693Z",
+          "updated_at": "2025-06-27T18:13:36.693Z",
+          "display_at": "2025-06-27T18:13:36.693Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "major_outage",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2025-06-27T18:13:36.634Z",
+          "position": 67,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "7kk7dyvk00wh",
       "name": "Missing \"Additional Logs\" for OWASP managed rules WAF events",
@@ -9202,7 +9255,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "major",
+    "description": "Partial System Outage"
   }
 }
