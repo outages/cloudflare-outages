@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-04T06:26:52.441Z"
+    "updated_at": "2025-07-04T06:52:56.021Z"
   },
   "components": [
     {
@@ -5881,9 +5881,9 @@
     {
       "id": "dzwlmtrtvjn5",
       "name": "Port of Spain, Trinidad and Tobago - (POS)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-07-17T16:02:33.504Z",
-      "updated_at": "2025-06-27T09:13:05.180Z",
+      "updated_at": "2025-07-04T06:49:01.866Z",
       "position": 62,
       "description": null,
       "showcase": false,
@@ -6661,9 +6661,9 @@
     {
       "id": "k04jkcpzxn94",
       "name": "WARP",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-09-30T09:25:38.587Z",
-      "updated_at": "2025-06-12T21:31:36.546Z",
+      "updated_at": "2025-07-04T06:38:40.563Z",
       "position": 94,
       "description": null,
       "showcase": false,
@@ -7430,7 +7430,7 @@
       "name": "Durable Objects Failing To Wake From Hibernation",
       "status": "identified",
       "created_at": "2025-07-03T22:37:40.936Z",
-      "updated_at": "2025-07-04T03:23:37.547Z",
+      "updated_at": "2025-07-04T06:52:56.011Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7438,6 +7438,26 @@
       "started_at": "2025-07-03T22:37:40.929Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "48236wfy3n1v",
+          "status": "identified",
+          "body": "We are reverting a change that coincides with this issue. The rollback is currently in progress.",
+          "incident_id": "3kt3pt6h82gx",
+          "created_at": "2025-07-04T06:52:56.008Z",
+          "updated_at": "2025-07-04T06:52:56.008Z",
+          "display_at": "2025-07-04T06:52:56.008Z",
+          "affected_components": [
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "719gqbhjfwnx",
           "status": "identified",
@@ -7510,6 +7530,99 @@
           "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
           "showcase": false,
           "start_date": "2023-06-12",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "6wbfmx90xc14",
+      "name": "Elevated errors observed for WARP users.",
+      "status": "monitoring",
+      "created_at": "2025-07-04T06:38:40.524Z",
+      "updated_at": "2025-07-04T06:48:05.351Z",
+      "monitoring_at": "2025-07-04T06:48:05.337Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/rl344cp9pjbm",
+      "started_at": "2025-07-04T06:38:40.516Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "y8xb9pz402zm",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "6wbfmx90xc14",
+          "created_at": "2025-07-04T06:48:05.337Z",
+          "updated_at": "2025-07-04T06:48:05.337Z",
+          "display_at": "2025-07-04T06:48:05.337Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "kv5tnw0247x3",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "6wbfmx90xc14",
+          "created_at": "2025-07-04T06:47:55.454Z",
+          "updated_at": "2025-07-04T06:47:55.454Z",
+          "display_at": "2025-07-04T06:47:55.454Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "51xbyjt673n6",
+          "status": "investigating",
+          "body": "WARP users may observe elevated error rates, degraded performance, or an overall degraded experience.",
+          "incident_id": "6wbfmx90xc14",
+          "created_at": "2025-07-04T06:38:40.622Z",
+          "updated_at": "2025-07-04T06:38:40.622Z",
+          "display_at": "2025-07-04T06:38:40.622Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k04jkcpzxn94",
+          "name": "WARP",
+          "status": "degraded_performance",
+          "created_at": "2019-09-30T09:25:38.587Z",
+          "updated_at": "2025-07-04T06:38:40.563Z",
+          "position": 94,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
