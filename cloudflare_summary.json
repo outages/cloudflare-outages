@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-17T15:19:56.373Z"
+    "updated_at": "2025-07-17T15:43:55.630Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2865,9 +2865,9 @@
     {
       "id": "czwk809chdjt",
       "name": "Ouagadougou, Burkina Faso   - (OUA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-09-02T23:41:26.128Z",
-      "updated_at": "2025-07-17T15:13:55.555Z",
+      "updated_at": "2025-07-17T15:39:20.311Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -3842,7 +3842,7 @@
       "name": "Philadelphia, United States - (PHL)",
       "status": "under_maintenance",
       "created_at": "2019-08-09T14:40:06.536Z",
-      "updated_at": "2025-07-13T20:50:09.451Z",
+      "updated_at": "2025-07-17T15:43:55.626Z",
       "position": 33,
       "description": null,
       "showcase": false,
@@ -5325,9 +5325,9 @@
     {
       "id": "tfnrx45s2b48",
       "name": "Lists",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-11-04T12:45:35.436Z",
-      "updated_at": "2025-05-27T17:05:08.477Z",
+      "updated_at": "2025-07-17T15:43:08.756Z",
       "position": 54,
       "description": "Lists of IP addresses, hostnames and ASNs",
       "showcase": false,
@@ -7408,8 +7408,136 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "rz13xn13pfpt",
+      "name": "Cloudflare lists API delays",
+      "status": "investigating",
+      "created_at": "2025-07-17T15:43:08.696Z",
+      "updated_at": "2025-07-17T15:43:08.823Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/p36q3qxwqzlc",
+      "started_at": "2025-07-17T15:43:08.687Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "sf0jl0jth83p",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with the API for URL lists, bulk redirect lists and hostname lists.\n\nCustomers using the dashboard or Cloudflare APIs may find that their changes have a significant delay before taking effect at the Cloudflare Edge.\n\nThese issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge.",
+          "incident_id": "rz13xn13pfpt",
+          "created_at": "2025-07-17T15:43:08.820Z",
+          "updated_at": "2025-07-17T15:43:08.820Z",
+          "display_at": "2025-07-17T15:43:08.820Z",
+          "affected_components": [
+            {
+              "code": "tfnrx45s2b48",
+              "name": "Cloudflare Sites and Services - Lists",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "tfnrx45s2b48",
+          "name": "Lists",
+          "status": "degraded_performance",
+          "created_at": "2023-11-04T12:45:35.436Z",
+          "updated_at": "2025-07-17T15:43:08.756Z",
+          "position": 54,
+          "description": "Lists of IP addresses, hostnames and ASNs",
+          "showcase": false,
+          "start_date": "2023-11-04",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
+    {
+      "id": "wjr0913sqcwp",
+      "name": "MXP (Milan) on 2025-07-18",
+      "status": "scheduled",
+      "created_at": "2025-07-17T15:26:28.683Z",
+      "updated_at": "2025-07-17T15:28:30.841Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/zwsd8rfdt251",
+      "started_at": "2025-07-17T15:26:28.675Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "9c4gqfjs6z1r",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MXP (Milan) datacenter on 2025-07-18 between 00:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "wjr0913sqcwp",
+          "created_at": "2025-07-17T15:28:30.837Z",
+          "updated_at": "2025-07-17T15:28:30.837Z",
+          "display_at": "2025-07-17T15:28:30.837Z",
+          "affected_components": [
+            {
+              "code": "k8q1kmz4gfms",
+              "name": "Europe - Milan, Italy - (MXP)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "z3sd6qx8cc86",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MXP (Milan) datacenter on 2025-07-18 between 01:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "wjr0913sqcwp",
+          "created_at": "2025-07-17T15:26:28.752Z",
+          "updated_at": "2025-07-17T15:26:28.752Z",
+          "display_at": "2025-07-17T15:26:28.752Z",
+          "affected_components": [
+            {
+              "code": "k8q1kmz4gfms",
+              "name": "Europe - Milan, Italy - (MXP)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k8q1kmz4gfms",
+          "name": "Milan, Italy - (MXP)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:07:56.923Z",
+          "updated_at": "2024-12-07T21:05:01.545Z",
+          "position": 30,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-07-18T00:00:00.000Z",
+      "scheduled_until": "2025-07-18T04:00:00.000Z"
+    },
     {
       "id": "zrnpndbhfbr4",
       "name": "FRA (Frankfurt) on 2025-07-18",
