@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-24T10:46:35.416Z"
+    "updated_at": "2025-07-24T11:19:25.149Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -337,9 +337,9 @@
     {
       "id": "w4k8yvhfb3vp",
       "name": "Access",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2018-02-09T21:46:39.049Z",
-      "updated_at": "2025-07-22T17:34:43.535Z",
+      "updated_at": "2025-07-24T11:16:39.841Z",
       "position": 2,
       "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
       "showcase": false,
@@ -459,7 +459,7 @@
       "name": "Baghdad, Iraq - (BGW)",
       "status": "under_maintenance",
       "created_at": "2018-03-12T14:18:23.436Z",
-      "updated_at": "2025-07-22T12:09:25.479Z",
+      "updated_at": "2025-07-24T10:58:28.073Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -4606,9 +4606,9 @@
     {
       "id": "w3v7f5nb8ndg",
       "name": "Saskatoon, SK, Canada - (YXE)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-04-02T01:43:30.221Z",
-      "updated_at": "2025-07-24T10:04:50.219Z",
+      "updated_at": "2025-07-24T10:58:27.213Z",
       "position": 43,
       "description": null,
       "showcase": false,
@@ -7424,7 +7424,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "lhy6k2m6s38v",
+      "name": "Cloudflare Access: Error \"500\" on Access protected domains",
+      "status": "monitoring",
+      "created_at": "2025-07-24T11:16:39.810Z",
+      "updated_at": "2025-07-24T11:19:25.147Z",
+      "monitoring_at": "2025-07-24T11:19:25.133Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/x7hq4tn6c7zr",
+      "started_at": "2025-07-24T11:16:39.804Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "610z96qpz17n",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "lhy6k2m6s38v",
+          "created_at": "2025-07-24T11:19:25.133Z",
+          "updated_at": "2025-07-24T11:19:25.133Z",
+          "display_at": "2025-07-24T11:19:25.133Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "wdcg73ppbgnq",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare Access: A subset of customer might observe unexpected \"500\" errors when reaching a small number of Access protected domains.\nWe are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "lhy6k2m6s38v",
+          "created_at": "2025-07-24T11:16:39.888Z",
+          "updated_at": "2025-07-24T11:16:39.888Z",
+          "display_at": "2025-07-24T11:16:39.888Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "w4k8yvhfb3vp",
+          "name": "Access",
+          "status": "degraded_performance",
+          "created_at": "2018-02-09T21:46:39.049Z",
+          "updated_at": "2025-07-24T11:16:39.841Z",
+          "position": 2,
+          "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "cqr3jxpx12rk",
@@ -9517,86 +9591,6 @@
       ],
       "scheduled_for": "2025-08-05T23:00:00.000Z",
       "scheduled_until": "2025-08-06T03:00:00.000Z"
-    },
-    {
-      "id": "zmkmnm3zmg40",
-      "name": "BNA (Nashville) on 2025-07-24",
-      "status": "in_progress",
-      "created_at": "2025-07-23T13:52:20.798Z",
-      "updated_at": "2025-07-24T08:30:21.126Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/65r67jn51pqw",
-      "started_at": "2025-07-23T13:52:20.791Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "zdgdv0n9cdgj",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "zmkmnm3zmg40",
-          "created_at": "2025-07-24T08:30:21.122Z",
-          "updated_at": "2025-07-24T08:30:21.122Z",
-          "display_at": "2025-07-24T08:30:21.122Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "4gghff97m2q3",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "zmkmnm3zmg40",
-          "created_at": "2025-07-24T07:30:22.094Z",
-          "updated_at": "2025-07-24T07:30:22.094Z",
-          "display_at": "2025-07-24T07:30:22.094Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "67x49fgh5jzh",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BNA (Nashville) datacenter on 2025-07-24 between 08:30 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "zmkmnm3zmg40",
-          "created_at": "2025-07-23T13:52:20.875Z",
-          "updated_at": "2025-07-23T13:52:20.875Z",
-          "display_at": "2025-07-23T13:52:20.875Z",
-          "affected_components": [
-            {
-              "code": "vwctw131s16t",
-              "name": "North America - Nashville, United States - (BNA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "vwctw131s16t",
-          "name": "Nashville, United States - (BNA)",
-          "status": "operational",
-          "created_at": "2022-10-27T16:35:27.722Z",
-          "updated_at": "2025-07-24T09:58:51.508Z",
-          "position": 28,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-10-27",
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-07-24T08:30:00.000Z",
-      "scheduled_until": "2025-07-24T11:00:00.000Z"
     },
     {
       "id": "jkz2js9419mq",
