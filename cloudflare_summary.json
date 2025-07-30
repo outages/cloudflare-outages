@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-30T09:46:30.515Z"
+    "updated_at": "2025-07-30T10:22:29.636Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -459,7 +459,7 @@
       "name": "Baghdad, Iraq - (BGW)",
       "status": "under_maintenance",
       "created_at": "2018-03-12T14:18:23.436Z",
-      "updated_at": "2025-07-29T06:18:52.247Z",
+      "updated_at": "2025-07-30T10:04:29.609Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1923,7 +1923,7 @@
       "name": "Johannesburg, South Africa - (JNB)",
       "status": "under_maintenance",
       "created_at": "2014-12-04T20:38:08.839Z",
-      "updated_at": "2025-07-30T09:46:30.511Z",
+      "updated_at": "2025-07-30T10:22:29.633Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2071,9 +2071,9 @@
     {
       "id": "tdwwnvf8nv6h",
       "name": "Kigali, Rwanda - (KGL)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-06-17T03:27:21.977Z",
-      "updated_at": "2025-07-30T09:13:13.444Z",
+      "updated_at": "2025-07-30T09:58:27.130Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -6661,9 +6661,9 @@
     {
       "id": "k04jkcpzxn94",
       "name": "WARP",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-09-30T09:25:38.587Z",
-      "updated_at": "2025-07-29T15:50:44.035Z",
+      "updated_at": "2025-07-30T10:07:00.120Z",
       "position": 95,
       "description": null,
       "showcase": false,
@@ -7426,6 +7426,79 @@
   ],
   "incidents": [
     {
+      "id": "p8k5fxx9pv42",
+      "name": "Issues with WARP",
+      "status": "monitoring",
+      "created_at": "2025-07-30T08:18:54.805Z",
+      "updated_at": "2025-07-30T10:07:00.184Z",
+      "monitoring_at": "2025-07-30T10:07:00.169Z",
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/yqnd05q9l0z8",
+      "started_at": "2025-07-30T08:18:54.797Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "905blg38gm0l",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "p8k5fxx9pv42",
+          "created_at": "2025-07-30T10:07:00.169Z",
+          "updated_at": "2025-07-30T10:07:00.169Z",
+          "display_at": "2025-07-30T10:07:00.169Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "qtr47gbfrb95",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare WARP and Cloudflare Zero Trust. Cloudflare WARP and Zero Trust users may experience issues with the public API, registering devices, and managed networks.",
+          "incident_id": "p8k5fxx9pv42",
+          "created_at": "2025-07-30T08:18:54.877Z",
+          "updated_at": "2025-07-30T08:18:54.877Z",
+          "display_at": "2025-07-30T08:18:54.877Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k04jkcpzxn94",
+          "name": "WARP",
+          "status": "degraded_performance",
+          "created_at": "2019-09-30T09:25:38.587Z",
+          "updated_at": "2025-07-30T10:07:00.120Z",
+          "position": 95,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "dmz0f4sm2tmg",
       "name": "Network Routing in India",
       "status": "identified",
@@ -7510,59 +7583,6 @@
           "description": null,
           "showcase": false,
           "start_date": "2023-01-13",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "p8k5fxx9pv42",
-      "name": "Issues with WARP",
-      "status": "investigating",
-      "created_at": "2025-07-30T08:18:54.805Z",
-      "updated_at": "2025-07-30T08:19:09.202Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/yqnd05q9l0z8",
-      "started_at": "2025-07-30T08:18:54.797Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "qtr47gbfrb95",
-          "status": "investigating",
-          "body": "Cloudflare is investigating issues with Cloudflare WARP and Cloudflare Zero Trust. Cloudflare WARP and Zero Trust users may experience issues with the public API, registering devices, and managed networks.",
-          "incident_id": "p8k5fxx9pv42",
-          "created_at": "2025-07-30T08:18:54.877Z",
-          "updated_at": "2025-07-30T08:18:54.877Z",
-          "display_at": "2025-07-30T08:18:54.877Z",
-          "affected_components": [
-            {
-              "code": "k04jkcpzxn94",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "k04jkcpzxn94",
-          "name": "WARP",
-          "status": "operational",
-          "created_at": "2019-09-30T09:25:38.587Z",
-          "updated_at": "2025-07-29T15:50:44.035Z",
-          "position": 95,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -7773,9 +7793,9 @@
         {
           "id": "tdwwnvf8nv6h",
           "name": "Kigali, Rwanda - (KGL)",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2019-06-17T03:27:21.977Z",
-          "updated_at": "2025-07-30T09:13:13.444Z",
+          "updated_at": "2025-07-30T09:58:27.130Z",
           "position": 14,
           "description": null,
           "showcase": false,
@@ -7937,7 +7957,7 @@
           "name": "Johannesburg, South Africa - (JNB)",
           "status": "under_maintenance",
           "created_at": "2014-12-04T20:38:08.839Z",
-          "updated_at": "2025-07-30T09:46:30.511Z",
+          "updated_at": "2025-07-30T10:22:29.633Z",
           "position": 13,
           "description": null,
           "showcase": false,
@@ -8570,86 +8590,6 @@
       ],
       "scheduled_for": "2025-07-30T09:00:00.000Z",
       "scheduled_until": "2025-07-30T12:00:00.000Z"
-    },
-    {
-      "id": "205z6znt3q5c",
-      "name": "EWR (Newark) on 2025-07-30",
-      "status": "in_progress",
-      "created_at": "2025-07-29T19:22:34.087Z",
-      "updated_at": "2025-07-30T06:00:21.813Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/44j15mdmg911",
-      "started_at": "2025-07-29T19:22:34.079Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "wwdxn7fpxy79",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "205z6znt3q5c",
-          "created_at": "2025-07-30T06:00:21.809Z",
-          "updated_at": "2025-07-30T06:00:21.809Z",
-          "display_at": "2025-07-30T06:00:21.809Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "dwtk8ctq5z4v",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "205z6znt3q5c",
-          "created_at": "2025-07-30T05:00:22.726Z",
-          "updated_at": "2025-07-30T05:00:22.726Z",
-          "display_at": "2025-07-30T05:00:22.726Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "tdc1zt1yg6dt",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in EWR (Newark) datacenter on 2025-07-30 between 06:00 and 10:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "205z6znt3q5c",
-          "created_at": "2025-07-29T19:22:34.148Z",
-          "updated_at": "2025-07-29T19:22:34.148Z",
-          "display_at": "2025-07-29T19:22:34.148Z",
-          "affected_components": [
-            {
-              "code": "grpnztl4pd46",
-              "name": "North America - Newark, NJ, United States - (EWR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "grpnztl4pd46",
-          "name": "Newark, NJ, United States - (EWR)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:30:34.850Z",
-          "updated_at": "2025-02-15T23:45:46.728Z",
-          "position": 29,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-07-30T06:00:00.000Z",
-      "scheduled_until": "2025-07-30T10:00:00.000Z"
     }
   ],
   "status": {
