@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-31T13:30:57.489Z"
+    "updated_at": "2025-07-31T13:52:22.527Z"
   },
   "components": [
     {
@@ -1473,7 +1473,7 @@
       "name": "Buenos Aires, Argentina - (EZE)",
       "status": "under_maintenance",
       "created_at": "2015-04-01T11:05:40.089Z",
-      "updated_at": "2025-07-30T08:11:01.591Z",
+      "updated_at": "2025-07-31T13:48:15.597Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -7426,18 +7426,97 @@
   ],
   "incidents": [
     {
+      "id": "bts7qj6820rz",
+      "name": "Cloudflare: issues with WAF events",
+      "status": "investigating",
+      "created_at": "2025-07-31T13:52:01.821Z",
+      "updated_at": "2025-07-31T13:52:22.522Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/y3nmtzwn0xgs",
+      "started_at": "2025-07-31T13:52:01.814Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "hvk3pf7cd51z",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with our WAF feature: Customers may observe skip actions appear as \"unknown\" events in the dashboard. We are working to mitigate this problem. More updates to follow shortly.",
+          "incident_id": "bts7qj6820rz",
+          "created_at": "2025-07-31T13:52:01.876Z",
+          "updated_at": "2025-07-31T13:52:01.876Z",
+          "display_at": "2025-07-31T13:52:01.876Z",
+          "affected_components": [
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d1r0plwsl5qb",
+          "name": "Firewall",
+          "status": "operational",
+          "created_at": "2020-09-04T17:53:26.383Z",
+          "updated_at": "2025-07-23T11:04:49.195Z",
+          "position": 46,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-09-04",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "4gd07cpgvfhc",
       "name": "Issues with Cloudflare WARP and Zero Trust",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2025-07-31T13:09:25.302Z",
-      "updated_at": "2025-07-31T13:09:25.424Z",
-      "monitoring_at": null,
+      "updated_at": "2025-07-31T13:48:40.618Z",
+      "monitoring_at": "2025-07-31T13:48:40.596Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/tbb2ly1z9pm9",
       "started_at": "2025-07-31T13:09:25.293Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "6x92kckdrbvs",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "4gd07cpgvfhc",
+          "created_at": "2025-07-31T13:48:40.596Z",
+          "updated_at": "2025-07-31T13:48:40.596Z",
+          "display_at": "2025-07-31T13:48:40.596Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "np8wtz5vjch7",
           "status": "investigating",
