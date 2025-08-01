@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-01T14:26:55.313Z"
+    "updated_at": "2025-08-01T14:42:47.696Z"
   },
   "components": [
     {
@@ -6721,9 +6721,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2025-08-01T14:04:13.848Z",
+      "updated_at": "2025-08-01T14:38:24.871Z",
       "position": 98,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7426,30 +7426,30 @@
   ],
   "incidents": [
     {
-      "id": "vr25lyx73w97",
-      "name": "Cloudflare Workers Issues",
-      "status": "monitoring",
-      "created_at": "2025-08-01T14:04:13.802Z",
-      "updated_at": "2025-08-01T14:26:55.311Z",
-      "monitoring_at": "2025-08-01T14:26:55.295Z",
+      "id": "lhhg3nm77fz5",
+      "name": "Cloudflare WARP: connectivity issues in Dubai",
+      "status": "identified",
+      "created_at": "2025-08-01T09:58:16.098Z",
+      "updated_at": "2025-08-01T14:42:47.686Z",
+      "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/lwqmm7p1vlkl",
-      "started_at": "2025-08-01T14:04:13.794Z",
+      "shortlink": "https://stspg.io/x50sprfp4684",
+      "started_at": "2025-08-01T09:58:16.090Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "b3bvwx3kz84l",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "vr25lyx73w97",
-          "created_at": "2025-08-01T14:26:55.295Z",
-          "updated_at": "2025-08-01T14:26:55.295Z",
-          "display_at": "2025-08-01T14:26:55.295Z",
+          "id": "z5jqlb6cj4t0",
+          "status": "identified",
+          "body": "Customers using WARP with MASQUE should not be impacted by this issue, as we uncovered that only customers using Wireguard are affected.",
+          "incident_id": "lhhg3nm77fz5",
+          "created_at": "2025-08-01T14:42:47.682Z",
+          "updated_at": "2025-08-01T14:42:47.682Z",
+          "display_at": "2025-08-01T14:42:47.682Z",
           "affected_components": [
             {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
               "old_status": "degraded_performance",
               "new_status": "degraded_performance"
             }
@@ -7458,59 +7458,6 @@
           "custom_tweet": null,
           "tweet_id": null
         },
-        {
-          "id": "81wv96gzx59c",
-          "status": "investigating",
-          "body": "Cloudflare is investigating a slightly increased level of errors for customers running Workers scripts. We are working to analyze and mitigate this problem. More updates to follow shortly.",
-          "incident_id": "vr25lyx73w97",
-          "created_at": "2025-08-01T14:04:13.916Z",
-          "updated_at": "2025-08-01T14:04:13.916Z",
-          "display_at": "2025-08-01T14:04:13.916Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "57srcl8zcn7c",
-          "name": "Workers",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2025-08-01T14:04:13.848Z",
-          "position": 98,
-          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "lhhg3nm77fz5",
-      "name": "Cloudflare WARP: connectivity issues in Dubai",
-      "status": "investigating",
-      "created_at": "2025-08-01T09:58:16.098Z",
-      "updated_at": "2025-08-01T13:23:03.055Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/x50sprfp4684",
-      "started_at": "2025-08-01T09:58:16.090Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
         {
           "id": "2z21z8pwxcdw",
           "status": "investigating",
