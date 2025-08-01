@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-01T09:20:32.711Z"
+    "updated_at": "2025-08-01T10:20:30.249Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -6661,9 +6661,9 @@
     {
       "id": "k04jkcpzxn94",
       "name": "WARP",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-09-30T09:25:38.587Z",
-      "updated_at": "2025-08-01T03:07:09.645Z",
+      "updated_at": "2025-08-01T09:58:16.135Z",
       "position": 95,
       "description": null,
       "showcase": false,
@@ -7426,6 +7426,59 @@
   ],
   "incidents": [
     {
+      "id": "lhhg3nm77fz5",
+      "name": "Cloudflare WARP: connectivity issues in Dubai",
+      "status": "investigating",
+      "created_at": "2025-08-01T09:58:16.098Z",
+      "updated_at": "2025-08-01T09:59:23.810Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/x50sprfp4684",
+      "started_at": "2025-08-01T09:58:16.090Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "9sj7q1zc3n0s",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare WARP connectivity in Dubai. Cloudflare WARP and Zero Trust users may experience connectivity issues or a degraded Internet experience. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "lhhg3nm77fz5",
+          "created_at": "2025-08-01T09:58:16.195Z",
+          "updated_at": "2025-08-01T09:58:16.195Z",
+          "display_at": "2025-08-01T09:58:16.195Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k04jkcpzxn94",
+          "name": "WARP",
+          "status": "degraded_performance",
+          "created_at": "2019-09-30T09:25:38.587Z",
+          "updated_at": "2025-08-01T09:58:16.135Z",
+          "position": 95,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "ty5lgvkd41lm",
       "name": "Network Routing in India",
       "status": "identified",
@@ -8071,166 +8124,6 @@
       ],
       "scheduled_for": "2025-08-01T08:30:00.000Z",
       "scheduled_until": "2025-08-01T13:30:00.000Z"
-    },
-    {
-      "id": "tnhkbxc3syf2",
-      "name": "DFW (Dallas) on 2025-08-01",
-      "status": "in_progress",
-      "created_at": "2025-07-31T09:20:09.070Z",
-      "updated_at": "2025-08-01T08:00:21.624Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/1k46bpb79r5z",
-      "started_at": "2025-07-31T09:20:09.062Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "gc2j50v1qqgr",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "tnhkbxc3syf2",
-          "created_at": "2025-08-01T08:00:21.615Z",
-          "updated_at": "2025-08-01T08:00:21.615Z",
-          "display_at": "2025-08-01T08:00:21.615Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "ndjdxnf6yypn",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "tnhkbxc3syf2",
-          "created_at": "2025-08-01T07:00:21.247Z",
-          "updated_at": "2025-08-01T07:00:21.247Z",
-          "display_at": "2025-08-01T07:00:21.247Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "p24fp4dgbc7n",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DFW (Dallas) datacenter on 2025-08-01 between 08:00 and 10:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "tnhkbxc3syf2",
-          "created_at": "2025-07-31T09:20:09.132Z",
-          "updated_at": "2025-07-31T09:20:09.132Z",
-          "display_at": "2025-07-31T09:20:09.132Z",
-          "affected_components": [
-            {
-              "code": "r8ppmb3xm98j",
-              "name": "North America - Dallas, TX, United States - (DFW)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "r8ppmb3xm98j",
-          "name": "Dallas, TX, United States - (DFW)",
-          "status": "operational",
-          "created_at": "2014-10-27T19:52:05.585Z",
-          "updated_at": "2025-01-16T08:26:55.452Z",
-          "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-08-01T08:00:00.000Z",
-      "scheduled_until": "2025-08-01T10:00:00.000Z"
-    },
-    {
-      "id": "pfbn2ddtb1hk",
-      "name": "EWR (Newark) on 2025-08-01",
-      "status": "in_progress",
-      "created_at": "2025-07-31T17:12:39.650Z",
-      "updated_at": "2025-08-01T06:00:21.517Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/ggdvrc8vc2zb",
-      "started_at": "2025-07-31T17:12:39.642Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "wtzttzd8bf31",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "pfbn2ddtb1hk",
-          "created_at": "2025-08-01T06:00:21.511Z",
-          "updated_at": "2025-08-01T06:00:21.511Z",
-          "display_at": "2025-08-01T06:00:21.511Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "h3f529ckt32q",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "pfbn2ddtb1hk",
-          "created_at": "2025-08-01T05:00:22.781Z",
-          "updated_at": "2025-08-01T05:00:22.781Z",
-          "display_at": "2025-08-01T05:00:22.781Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "l4g73phbspkb",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in EWR (Newark) datacenter on 2025-08-01 between 06:00 and 10:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "pfbn2ddtb1hk",
-          "created_at": "2025-07-31T17:12:39.729Z",
-          "updated_at": "2025-07-31T17:12:39.729Z",
-          "display_at": "2025-07-31T17:12:39.729Z",
-          "affected_components": [
-            {
-              "code": "grpnztl4pd46",
-              "name": "North America - Newark, NJ, United States - (EWR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "grpnztl4pd46",
-          "name": "Newark, NJ, United States - (EWR)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:30:34.850Z",
-          "updated_at": "2025-02-15T23:45:46.728Z",
-          "position": 29,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-08-01T06:00:00.000Z",
-      "scheduled_until": "2025-08-01T10:00:00.000Z"
     }
   ],
   "status": {
