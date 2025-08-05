@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-05T16:40:58.278Z"
+    "updated_at": "2025-08-05T17:20:40.717Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -807,9 +807,9 @@
     {
       "id": "4c231tkdlpcl",
       "name": "Analytics",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-11-13T11:54:10.191Z",
-      "updated_at": "2025-05-21T12:31:00.258Z",
+      "updated_at": "2025-08-05T16:57:55.206Z",
       "position": 5,
       "description": "Customer analytics aggregation service",
       "showcase": false,
@@ -6841,9 +6841,9 @@
     {
       "id": "7g58rb9tl036",
       "name": "San Pedro Sula, Honduras - (SAP)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-04-30T23:46:32.236Z",
-      "updated_at": "2025-07-24T23:29:47.606Z",
+      "updated_at": "2025-08-05T17:13:11.913Z",
       "position": 103,
       "description": null,
       "showcase": false,
@@ -7426,11 +7426,104 @@
   ],
   "incidents": [
     {
+      "id": "hsxt0c4lchtk",
+      "name": "Delay in Cloudflare Web analytics including Workers observability",
+      "status": "monitoring",
+      "created_at": "2025-08-05T16:57:55.173Z",
+      "updated_at": "2025-08-05T17:12:43.270Z",
+      "monitoring_at": "2025-08-05T17:12:43.247Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/2jlddtystq3z",
+      "started_at": "2025-08-05T16:57:55.166Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "gspjgnp28fn5",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "hsxt0c4lchtk",
+          "created_at": "2025-08-05T17:12:43.247Z",
+          "updated_at": "2025-08-05T17:12:43.247Z",
+          "display_at": "2025-08-05T17:12:43.247Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "6mvlbp1pyqcy",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "hsxt0c4lchtk",
+          "created_at": "2025-08-05T17:00:43.181Z",
+          "updated_at": "2025-08-05T17:00:43.181Z",
+          "display_at": "2025-08-05T17:00:43.181Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "wslrfshxmhmt",
+          "status": "investigating",
+          "body": "Cloudflare Web Analytics processing is running behind. This affects timely delivery of customer data. These delays do not impact analytics for DNS and Rate Limiting.",
+          "incident_id": "hsxt0c4lchtk",
+          "created_at": "2025-08-05T16:57:55.259Z",
+          "updated_at": "2025-08-05T16:57:55.259Z",
+          "display_at": "2025-08-05T16:57:55.259Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "degraded_performance",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2025-08-05T16:57:55.206Z",
+          "position": 5,
+          "description": "Customer analytics aggregation service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "f7k4q8gslw0t",
       "name": "Issues with Cloudflare Access",
-      "status": "monitoring",
+      "status": "investigating",
       "created_at": "2025-08-05T15:56:21.142Z",
-      "updated_at": "2025-08-05T16:11:30.258Z",
+      "updated_at": "2025-08-05T16:48:44.028Z",
       "monitoring_at": "2025-08-05T16:11:30.238Z",
       "resolved_at": null,
       "impact": "minor",
@@ -7438,6 +7531,26 @@
       "started_at": "2025-08-05T15:56:21.134Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "67rkx6z67lqq",
+          "status": "investigating",
+          "body": "We are currently investigating this issue.",
+          "incident_id": "f7k4q8gslw0t",
+          "created_at": "2025-08-05T16:48:44.025Z",
+          "updated_at": "2025-08-05T16:48:44.025Z",
+          "display_at": "2025-08-05T16:48:44.025Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "rpxgh919w95y",
           "status": "monitoring",
@@ -7505,7 +7618,7 @@
       "name": "SCL (Santiago) on 2025-08-05",
       "status": "scheduled",
       "created_at": "2025-08-04T21:34:16.244Z",
-      "updated_at": "2025-08-04T21:34:16.300Z",
+      "updated_at": "2025-08-05T17:00:23.270Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7513,6 +7626,19 @@
       "started_at": "2025-08-04T21:34:16.238Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "rtynkszcz13q",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "hjfyzt7gd9t8",
+          "created_at": "2025-08-05T17:00:23.022Z",
+          "updated_at": "2025-08-05T17:00:23.022Z",
+          "display_at": "2025-08-05T17:00:23.022Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "gdf631tk45y5",
           "status": "scheduled",
