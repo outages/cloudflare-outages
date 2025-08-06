@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-06T16:20:58.210Z"
+    "updated_at": "2025-08-06T16:46:29.375Z"
   },
   "components": [
     {
@@ -4066,9 +4066,9 @@
     {
       "id": "gw1cztbpft9b",
       "name": "Kathmandu, Nepal - (KTM)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2025-08-05T06:26:44.898Z",
+      "updated_at": "2025-08-06T16:37:51.032Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -7428,16 +7428,36 @@
     {
       "id": "3q7016s01kx2",
       "name": "HTTP Analytics Delays",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2025-08-06T15:40:36.783Z",
-      "updated_at": "2025-08-06T15:56:21.392Z",
-      "monitoring_at": null,
+      "updated_at": "2025-08-06T16:33:22.797Z",
+      "monitoring_at": "2025-08-06T16:33:22.782Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/whk3gngfd341",
       "started_at": "2025-08-06T15:40:36.763Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "txl22czdnwzt",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "3q7016s01kx2",
+          "created_at": "2025-08-06T16:33:22.782Z",
+          "updated_at": "2025-08-06T16:33:22.782Z",
+          "display_at": "2025-08-06T16:33:22.782Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "206c5byndzcl",
           "status": "identified",
@@ -7574,31 +7594,31 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "xh82p1zwmkzq",
-      "name": "BGW (Baghdad) on 2025-08-06",
+      "id": "wtylkygssjmz",
+      "name": "TLV (Tel Aviv) on 2025-08-06",
       "status": "scheduled",
-      "created_at": "2025-08-04T01:36:57.689Z",
-      "updated_at": "2025-08-04T01:36:57.786Z",
+      "created_at": "2025-08-04T01:36:58.160Z",
+      "updated_at": "2025-08-04T01:36:58.224Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/ykw85s0rpybn",
-      "started_at": "2025-08-04T01:36:57.679Z",
+      "shortlink": "https://stspg.io/zh7ly7xq54tq",
+      "started_at": "2025-08-04T01:36:58.152Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "d4xt5rs7mq11",
+          "id": "bcxswnbrxlq8",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BGW (Baghdad) datacenter between 2025-08-06 23:00 and 2025-08-07 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "xh82p1zwmkzq",
-          "created_at": "2025-08-04T01:36:57.783Z",
-          "updated_at": "2025-08-04T01:36:57.783Z",
-          "display_at": "2025-08-04T01:36:57.783Z",
+          "body": "We will be performing scheduled maintenance in TLV (Tel Aviv) datacenter between 2025-08-06 23:00 and 2025-08-07 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "wtylkygssjmz",
+          "created_at": "2025-08-04T01:36:58.221Z",
+          "updated_at": "2025-08-04T01:36:58.221Z",
+          "display_at": "2025-08-04T01:36:58.221Z",
           "affected_components": [
             {
-              "code": "gxjcfyf5pht1",
-              "name": "Middle East - Baghdad, Iraq - (BGW)",
-              "old_status": "under_maintenance",
+              "code": "shqj304834s4",
+              "name": "Middle East - Tel Aviv, Israel - (TLV)",
+              "old_status": "operational",
               "new_status": "operational"
             }
           ],
@@ -7609,12 +7629,12 @@
       ],
       "components": [
         {
-          "id": "gxjcfyf5pht1",
-          "name": "Baghdad, Iraq - (BGW)",
-          "status": "under_maintenance",
-          "created_at": "2018-03-12T14:18:23.436Z",
-          "updated_at": "2025-08-04T08:58:47.563Z",
-          "position": 3,
+          "id": "shqj304834s4",
+          "name": "Tel Aviv, Israel - (TLV)",
+          "status": "operational",
+          "created_at": "2018-03-13T14:28:48.746Z",
+          "updated_at": "2025-07-29T15:52:15.582Z",
+          "position": 21,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -7736,31 +7756,31 @@
       "scheduled_until": "2025-08-07T03:00:00.000Z"
     },
     {
-      "id": "wtylkygssjmz",
-      "name": "TLV (Tel Aviv) on 2025-08-06",
+      "id": "xh82p1zwmkzq",
+      "name": "BGW (Baghdad) on 2025-08-06",
       "status": "scheduled",
-      "created_at": "2025-08-04T01:36:58.160Z",
-      "updated_at": "2025-08-04T01:36:58.224Z",
+      "created_at": "2025-08-04T01:36:57.689Z",
+      "updated_at": "2025-08-04T01:36:57.786Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/zh7ly7xq54tq",
-      "started_at": "2025-08-04T01:36:58.152Z",
+      "shortlink": "https://stspg.io/ykw85s0rpybn",
+      "started_at": "2025-08-04T01:36:57.679Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "bcxswnbrxlq8",
+          "id": "d4xt5rs7mq11",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in TLV (Tel Aviv) datacenter between 2025-08-06 23:00 and 2025-08-07 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "wtylkygssjmz",
-          "created_at": "2025-08-04T01:36:58.221Z",
-          "updated_at": "2025-08-04T01:36:58.221Z",
-          "display_at": "2025-08-04T01:36:58.221Z",
+          "body": "We will be performing scheduled maintenance in BGW (Baghdad) datacenter between 2025-08-06 23:00 and 2025-08-07 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "xh82p1zwmkzq",
+          "created_at": "2025-08-04T01:36:57.783Z",
+          "updated_at": "2025-08-04T01:36:57.783Z",
+          "display_at": "2025-08-04T01:36:57.783Z",
           "affected_components": [
             {
-              "code": "shqj304834s4",
-              "name": "Middle East - Tel Aviv, Israel - (TLV)",
-              "old_status": "operational",
+              "code": "gxjcfyf5pht1",
+              "name": "Middle East - Baghdad, Iraq - (BGW)",
+              "old_status": "under_maintenance",
               "new_status": "operational"
             }
           ],
@@ -7771,12 +7791,12 @@
       ],
       "components": [
         {
-          "id": "shqj304834s4",
-          "name": "Tel Aviv, Israel - (TLV)",
-          "status": "operational",
-          "created_at": "2018-03-13T14:28:48.746Z",
-          "updated_at": "2025-07-29T15:52:15.582Z",
-          "position": 21,
+          "id": "gxjcfyf5pht1",
+          "name": "Baghdad, Iraq - (BGW)",
+          "status": "under_maintenance",
+          "created_at": "2018-03-12T14:18:23.436Z",
+          "updated_at": "2025-08-04T08:58:47.563Z",
+          "position": 3,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -7918,6 +7938,60 @@
       "scheduled_until": "2025-08-07T13:00:00.000Z"
     },
     {
+      "id": "y05ryc83p4qk",
+      "name": "NRT (Tokyo) on 2025-08-07",
+      "status": "scheduled",
+      "created_at": "2025-08-06T16:46:29.320Z",
+      "updated_at": "2025-08-06T16:46:29.372Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/m1p39zl14h2w",
+      "started_at": "2025-08-06T16:46:29.314Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "pk93mwt3kzlz",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in NRT (Tokyo) datacenter on 2025-08-07 between 16:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "y05ryc83p4qk",
+          "created_at": "2025-08-06T16:46:29.370Z",
+          "updated_at": "2025-08-06T16:46:29.370Z",
+          "display_at": "2025-08-06T16:46:29.370Z",
+          "affected_components": [
+            {
+              "code": "rmjk2n758yzc",
+              "name": "Asia - Tokyo, Japan - (NRT)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rmjk2n758yzc",
+          "name": "Tokyo, Japan - (NRT)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:42:49.579Z",
+          "updated_at": "2025-08-05T05:15:15.046Z",
+          "position": 65,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-07T16:00:00.000Z",
+      "scheduled_until": "2025-08-07T21:00:00.000Z"
+    },
+    {
       "id": "bdczcs466q1g",
       "name": "TLH (Tallahassee) on 2025-08-07",
       "status": "scheduled",
@@ -7970,6 +8044,60 @@
       ],
       "scheduled_for": "2025-08-07T16:00:00.000Z",
       "scheduled_until": "2025-08-07T21:00:00.000Z"
+    },
+    {
+      "id": "c4h6x6wjygmt",
+      "name": "XNH (Nasiriyah) on 2025-08-07",
+      "status": "scheduled",
+      "created_at": "2025-08-04T01:38:59.973Z",
+      "updated_at": "2025-08-04T01:39:00.039Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/jxq95vdn3m8y",
+      "started_at": "2025-08-04T01:38:59.965Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "9cvmzlzc5xj3",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in XNH (Nasiriyah) datacenter between 2025-08-07 23:00 and 2025-08-08 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "c4h6x6wjygmt",
+          "created_at": "2025-08-04T01:39:00.035Z",
+          "updated_at": "2025-08-04T01:39:00.035Z",
+          "display_at": "2025-08-04T01:39:00.035Z",
+          "affected_components": [
+            {
+              "code": "d8yztxmdkcc0",
+              "name": "Middle East - Nasiriyah, Iraq - (XNH)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d8yztxmdkcc0",
+          "name": "Nasiriyah, Iraq - (XNH)",
+          "status": "operational",
+          "created_at": "2022-05-11T09:27:35.150Z",
+          "updated_at": "2025-08-04T23:29:56.839Z",
+          "position": 17,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-11",
+          "group_id": "m3639x4txd08",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-07T23:00:00.000Z",
+      "scheduled_until": "2025-08-08T03:00:00.000Z"
     },
     {
       "id": "85cy4yp0j74w",
@@ -8070,60 +8198,6 @@
           "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "m3639x4txd08",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-08-07T23:00:00.000Z",
-      "scheduled_until": "2025-08-08T03:00:00.000Z"
-    },
-    {
-      "id": "c4h6x6wjygmt",
-      "name": "XNH (Nasiriyah) on 2025-08-07",
-      "status": "scheduled",
-      "created_at": "2025-08-04T01:38:59.973Z",
-      "updated_at": "2025-08-04T01:39:00.039Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/jxq95vdn3m8y",
-      "started_at": "2025-08-04T01:38:59.965Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "9cvmzlzc5xj3",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in XNH (Nasiriyah) datacenter between 2025-08-07 23:00 and 2025-08-08 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "c4h6x6wjygmt",
-          "created_at": "2025-08-04T01:39:00.035Z",
-          "updated_at": "2025-08-04T01:39:00.035Z",
-          "display_at": "2025-08-04T01:39:00.035Z",
-          "affected_components": [
-            {
-              "code": "d8yztxmdkcc0",
-              "name": "Middle East - Nasiriyah, Iraq - (XNH)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "d8yztxmdkcc0",
-          "name": "Nasiriyah, Iraq - (XNH)",
-          "status": "operational",
-          "created_at": "2022-05-11T09:27:35.150Z",
-          "updated_at": "2025-08-04T23:29:56.839Z",
-          "position": 17,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-11",
           "group_id": "m3639x4txd08",
           "page_id": "yh6f0r4529hb",
           "group": false,
