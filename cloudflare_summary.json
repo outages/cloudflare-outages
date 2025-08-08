@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-08T14:24:32.630Z"
+    "updated_at": "2025-08-08T15:24:12.733Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2716,9 +2716,9 @@
     {
       "id": "srz7zhpwynys",
       "name": "Guatemala City, Guatemala - (GUA)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-08-15T07:22:07.430Z",
-      "updated_at": "2025-07-27T13:41:53.171Z",
+      "updated_at": "2025-08-08T14:53:56.257Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -2956,9 +2956,9 @@
     {
       "id": "x0tkn0hzrtw7",
       "name": "Challenge Platform",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-07-14T08:21:02.759Z",
-      "updated_at": "2025-05-27T17:05:08.136Z",
+      "updated_at": "2025-08-08T14:51:46.684Z",
       "position": 22,
       "description": "When a website is protected by Cloudflare, there are several occasions when it will challenge visitor traffic. If the visitor passes the challenge, their request is allowed. If they fail, the request will be blocked.",
       "showcase": false,
@@ -3676,9 +3676,9 @@
     {
       "id": "7k05x28lndzb",
       "name": "Porto Alegre, Brazil - (POA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-04-01T16:32:01.138Z",
-      "updated_at": "2025-08-05T08:38:03.402Z",
+      "updated_at": "2025-08-08T15:24:12.729Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -4186,9 +4186,9 @@
     {
       "id": "mslkxsqftrnn",
       "name": "Kolkata, India - (CCU)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-08-12T14:37:30.005Z",
-      "updated_at": "2025-08-01T21:58:09.045Z",
+      "updated_at": "2025-08-08T15:11:57.967Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -7424,7 +7424,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "6n72brkm8p48",
+      "name": "Cloudflare Challenge Platform: Issues passing challenges",
+      "status": "investigating",
+      "created_at": "2025-08-08T14:51:46.636Z",
+      "updated_at": "2025-08-08T14:53:30.129Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/q950mhs05w3g",
+      "started_at": "2025-08-08T14:51:46.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "f0655g1h81t4",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating reports of 500 errors after users pass challenge pages. We are working to mitigate this problem. More updates to follow shortly.",
+          "incident_id": "6n72brkm8p48",
+          "created_at": "2025-08-08T14:51:46.756Z",
+          "updated_at": "2025-08-08T14:53:30.073Z",
+          "display_at": "2025-08-08T14:51:46.000Z",
+          "affected_components": [
+            {
+              "code": "x0tkn0hzrtw7",
+              "name": "Cloudflare Sites and Services - Challenge Platform",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "x0tkn0hzrtw7",
+          "name": "Challenge Platform",
+          "status": "degraded_performance",
+          "created_at": "2023-07-14T08:21:02.759Z",
+          "updated_at": "2025-08-08T14:51:46.684Z",
+          "position": 22,
+          "description": "When a website is protected by Cloudflare, there are several occasions when it will challenge visitor traffic. If the visitor passes the challenge, their request is allowed. If they fail, the request will be blocked.",
+          "showcase": false,
+          "start_date": "2023-07-14",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "0b3v8p0zxh5p",
