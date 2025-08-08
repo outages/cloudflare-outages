@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-08T16:46:56.275Z"
+    "updated_at": "2025-08-08T17:14:49.238Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "major_outage",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2956,9 +2956,9 @@
     {
       "id": "x0tkn0hzrtw7",
       "name": "Challenge Platform",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2023-07-14T08:21:02.759Z",
-      "updated_at": "2025-08-08T14:51:46.684Z",
+      "updated_at": "2025-08-08T17:10:14.186Z",
       "position": 22,
       "description": "When a website is protected by Cloudflare, there are several occasions when it will challenge visitor traffic. If the visitor passes the challenge, their request is allowed. If they fail, the request will be blocked.",
       "showcase": false,
@@ -4876,9 +4876,9 @@
     {
       "id": "gyx2yygg7lmd",
       "name": "Gateway",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2023-01-10T09:28:36.367Z",
-      "updated_at": "2025-07-23T11:04:49.203Z",
+      "updated_at": "2025-08-08T17:07:38.409Z",
       "position": 47,
       "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
       "showcase": false,
@@ -7426,32 +7426,38 @@
   ],
   "incidents": [
     {
-      "id": "6n72brkm8p48",
-      "name": "Cloudflare Challenge Platform: Issues passing challenges",
+      "id": "6qtqr2n5wkb2",
+      "name": "Cloudflare Zero Trust: Gateway Issues in Bogotá, Colombia",
       "status": "identified",
-      "created_at": "2025-08-08T14:51:46.636Z",
-      "updated_at": "2025-08-08T16:17:16.476Z",
+      "created_at": "2025-08-08T17:07:38.367Z",
+      "updated_at": "2025-08-08T17:14:49.234Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/q950mhs05w3g",
-      "started_at": "2025-08-08T14:51:46.000Z",
+      "impact": "major",
+      "shortlink": "https://stspg.io/5ztdvh9wbkl0",
+      "started_at": "2025-08-08T17:07:38.355Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "20930lvcgp7x",
+          "id": "ntmj5vyzwzz2",
           "status": "identified",
           "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "6n72brkm8p48",
-          "created_at": "2025-08-08T16:17:16.472Z",
-          "updated_at": "2025-08-08T16:17:16.472Z",
-          "display_at": "2025-08-08T16:17:16.472Z",
+          "incident_id": "6qtqr2n5wkb2",
+          "created_at": "2025-08-08T17:08:17.753Z",
+          "updated_at": "2025-08-08T17:08:17.753Z",
+          "display_at": "2025-08-08T17:08:17.753Z",
           "affected_components": [
             {
-              "code": "x0tkn0hzrtw7",
-              "name": "Cloudflare Sites and Services - Challenge Platform",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "171wlzvlxttk",
+              "name": "Latin America & the Caribbean - Bogotá, Colombia - (BOG)",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
             }
           ],
           "deliver_notifications": true,
@@ -7459,19 +7465,25 @@
           "tweet_id": null
         },
         {
-          "id": "f0655g1h81t4",
+          "id": "4g4mq8ngz9xs",
           "status": "investigating",
-          "body": "Cloudflare is aware of and investigating reports of 500 errors after users pass challenge pages. We are working to mitigate this problem. More updates to follow shortly.",
-          "incident_id": "6n72brkm8p48",
-          "created_at": "2025-08-08T14:51:46.756Z",
-          "updated_at": "2025-08-08T14:53:30.073Z",
-          "display_at": "2025-08-08T14:51:46.000Z",
+          "body": "Cloudflare is investigating issues with the BOG DNS resolver component within Gateway. Performance and connectivity through Gateway may be impacted. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "6qtqr2n5wkb2",
+          "created_at": "2025-08-08T17:07:38.466Z",
+          "updated_at": "2025-08-08T17:07:38.466Z",
+          "display_at": "2025-08-08T17:07:38.466Z",
           "affected_components": [
             {
-              "code": "x0tkn0hzrtw7",
-              "name": "Cloudflare Sites and Services - Challenge Platform",
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
               "old_status": "operational",
-              "new_status": "degraded_performance"
+              "new_status": "major_outage"
+            },
+            {
+              "code": "171wlzvlxttk",
+              "name": "Latin America & the Caribbean - Bogotá, Colombia - (BOG)",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
             }
           ],
           "deliver_notifications": true,
@@ -7481,15 +7493,30 @@
       ],
       "components": [
         {
-          "id": "x0tkn0hzrtw7",
-          "name": "Challenge Platform",
-          "status": "degraded_performance",
-          "created_at": "2023-07-14T08:21:02.759Z",
-          "updated_at": "2025-08-08T14:51:46.684Z",
-          "position": 22,
-          "description": "When a website is protected by Cloudflare, there are several occasions when it will challenge visitor traffic. If the visitor passes the challenge, their request is allowed. If they fail, the request will be blocked.",
+          "id": "171wlzvlxttk",
+          "name": "Bogotá, Colombia - (BOG)",
+          "status": "partial_outage",
+          "created_at": "2018-03-28T06:25:42.210Z",
+          "updated_at": "2025-06-20T18:55:51.981Z",
+          "position": 7,
+          "description": null,
           "showcase": false,
-          "start_date": "2023-07-14",
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "gyx2yygg7lmd",
+          "name": "Gateway",
+          "status": "major_outage",
+          "created_at": "2023-01-10T09:28:36.367Z",
+          "updated_at": "2025-08-08T17:07:38.409Z",
+          "position": 47,
+          "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
+          "showcase": false,
+          "start_date": "2023-01-10",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -9068,7 +9095,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "major",
+    "description": "Partial System Outage"
   }
 }
