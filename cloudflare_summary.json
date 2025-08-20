@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-20T22:15:07.211Z"
+    "updated_at": "2025-08-20T22:39:39.210Z"
   },
   "components": [
     {
@@ -7443,25 +7443,45 @@
   "incidents": [
     {
       "id": "ph8dmyydv1lq",
-      "name": "Free, Pro, and Biz Bandwidth Alliance customers experiencing Tiered Cache degradation",
-      "status": "investigating",
+      "name": "Free, Pro, and Biz Tiered Cache degradation",
+      "status": "identified",
       "created_at": "2025-08-20T19:40:05.245Z",
-      "updated_at": "2025-08-20T19:40:05.343Z",
+      "updated_at": "2025-08-20T22:39:39.201Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
+      "impact": "major",
       "shortlink": "https://stspg.io/4r205q9t2vfs",
-      "started_at": "2025-08-20T19:40:05.237Z",
+      "started_at": "2025-08-20T19:40:05.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
+          "id": "wyx7myb3n92g",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "ph8dmyydv1lq",
+          "created_at": "2025-08-20T22:39:39.198Z",
+          "updated_at": "2025-08-20T22:39:39.198Z",
+          "display_at": "2025-08-20T22:39:39.198Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
           "id": "36qkgp7v2tm3",
           "status": "investigating",
-          "body": "Free, Pro, and Biz Customers with Bandwidth Alliance origins are experiencing Tiered Cache degradation where Tiered Cache is not engaging as expected. This results in higher cache misses and more requests to the origin.",
+          "body": "Free, Pro, and Biz Customers origins are experiencing Tiered Cache degradation where Tiered Cache is not engaging as expected. This results in more cache misses and increased requests to the origin.",
           "incident_id": "ph8dmyydv1lq",
           "created_at": "2025-08-20T19:40:05.340Z",
-          "updated_at": "2025-08-20T19:40:05.340Z",
-          "display_at": "2025-08-20T19:40:05.340Z",
+          "updated_at": "2025-08-20T22:38:47.931Z",
+          "display_at": "2025-08-20T19:40:05.000Z",
           "affected_components": [
             {
               "code": "5wnz34mhfhrk",
