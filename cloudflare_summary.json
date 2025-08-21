@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-21T21:51:08.436Z"
+    "updated_at": "2025-08-21T22:20:04.121Z"
   },
   "components": [
     {
@@ -459,7 +459,7 @@
       "name": "Baghdad, Iraq - (BGW)",
       "status": "under_maintenance",
       "created_at": "2018-03-12T14:18:23.436Z",
-      "updated_at": "2025-08-20T10:46:47.378Z",
+      "updated_at": "2025-08-21T22:15:23.410Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1412,9 +1412,9 @@
     {
       "id": "504hxt9xvdth",
       "name": "Brasilia, Brazil - (BSB)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-05-24T14:45:56.017Z",
-      "updated_at": "2025-08-21T21:51:08.432Z",
+      "updated_at": "2025-08-21T22:15:20.421Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2764,7 +2764,7 @@
       "name": "Oran, Algeria - (ORN)",
       "status": "operational",
       "created_at": "2023-05-05T16:40:30.949Z",
-      "updated_at": "2025-08-15T19:20:15.466Z",
+      "updated_at": "2025-08-21T22:15:20.821Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -3692,9 +3692,9 @@
     {
       "id": "6h060y0sxvv6",
       "name": "Minsk, Belarus - (MSQ)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-12-01T13:54:46.179Z",
-      "updated_at": "2025-08-15T19:20:17.413Z",
+      "updated_at": "2025-08-21T22:15:23.034Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -7352,9 +7352,9 @@
     {
       "id": "4jh0k3clz5b6",
       "name": "Male, Maldives - (MLE)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2024-11-09T09:01:00.175Z",
-      "updated_at": "2025-07-30T22:42:24.866Z",
+      "updated_at": "2025-08-21T22:03:13.124Z",
       "position": 460,
       "description": null,
       "showcase": false,
@@ -7441,6 +7441,133 @@
     }
   ],
   "incidents": [
+    {
+      "id": "ph1z05mtxs2r",
+      "name": "Workers, Workers for Platforms, and Pages API Issues",
+      "status": "monitoring",
+      "created_at": "2025-08-21T20:54:35.314Z",
+      "updated_at": "2025-08-21T22:20:04.118Z",
+      "monitoring_at": "2025-08-21T22:20:04.102Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/zcwqfcrvfyvp",
+      "started_at": "2025-08-21T20:54:35.304Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ssqwf3q8kmpc",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "ph1z05mtxs2r",
+          "created_at": "2025-08-21T22:20:04.102Z",
+          "updated_at": "2025-08-21T22:20:04.102Z",
+          "display_at": "2025-08-21T22:20:04.102Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "570kfpd0dgg7",
+              "name": "Cloudflare Sites and Services - Snippets",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "vhl3djc9cq1k",
+          "status": "identified",
+          "body": "Cloudflare has identified an issue impacting the Workers, Workers for Platforms, Snippets, and Pages API and is working on a fix. This issue may result in failed deployments. This does not impact edge traffic. Updates to follow.",
+          "incident_id": "ph1z05mtxs2r",
+          "created_at": "2025-08-21T20:54:35.455Z",
+          "updated_at": "2025-08-21T20:54:35.455Z",
+          "display_at": "2025-08-21T20:54:35.455Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "570kfpd0dgg7",
+              "name": "Cloudflare Sites and Services - Snippets",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2025-08-21T20:54:35.357Z",
+          "position": 67,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "570kfpd0dgg7",
+          "name": "Snippets",
+          "status": "degraded_performance",
+          "created_at": "2023-12-08T16:25:51.813Z",
+          "updated_at": "2025-08-21T20:54:35.378Z",
+          "position": 80,
+          "description": "Cloudflare Snippets provide a flexible way to customize the behavior of your website or application using short pieces of JavaScript code. Use snippets to customize HTTP response headers, implement JWT validation, define complex redirect functionality, and more.",
+          "showcase": false,
+          "start_date": "2023-12-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2025-08-21T20:54:35.396Z",
+          "position": 98,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "6x2py84czgl4",
       "name": "Magic WAN initiated traffic towards WARP devices is disrupted.",
@@ -7531,101 +7658,6 @@
           "updated_at": "2025-08-21T17:39:10.496Z",
           "position": 95,
           "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "ph1z05mtxs2r",
-      "name": "Workers, Workers for Platforms, and Pages API Issues",
-      "status": "identified",
-      "created_at": "2025-08-21T20:54:35.314Z",
-      "updated_at": "2025-08-21T20:54:35.458Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/zcwqfcrvfyvp",
-      "started_at": "2025-08-21T20:54:35.304Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "vhl3djc9cq1k",
-          "status": "identified",
-          "body": "Cloudflare has identified an issue impacting the Workers, Workers for Platforms, Snippets, and Pages API and is working on a fix. This issue may result in failed deployments. This does not impact edge traffic. Updates to follow.",
-          "incident_id": "ph1z05mtxs2r",
-          "created_at": "2025-08-21T20:54:35.455Z",
-          "updated_at": "2025-08-21T20:54:35.455Z",
-          "display_at": "2025-08-21T20:54:35.455Z",
-          "affected_components": [
-            {
-              "code": "vgxj684rcw7t",
-              "name": "Cloudflare Sites and Services - Pages",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "570kfpd0dgg7",
-              "name": "Cloudflare Sites and Services - Snippets",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "vgxj684rcw7t",
-          "name": "Pages",
-          "status": "degraded_performance",
-          "created_at": "2021-04-16T21:04:08.018Z",
-          "updated_at": "2025-08-21T20:54:35.357Z",
-          "position": 67,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-04-16",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "570kfpd0dgg7",
-          "name": "Snippets",
-          "status": "degraded_performance",
-          "created_at": "2023-12-08T16:25:51.813Z",
-          "updated_at": "2025-08-21T20:54:35.378Z",
-          "position": 80,
-          "description": "Cloudflare Snippets provide a flexible way to customize the behavior of your website or application using short pieces of JavaScript code. Use snippets to customize HTTP response headers, implement JWT validation, define complex redirect functionality, and more.",
-          "showcase": false,
-          "start_date": "2023-12-08",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "57srcl8zcn7c",
-          "name": "Workers",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2025-08-21T20:54:35.396Z",
-          "position": 98,
-          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
           "showcase": false,
           "start_date": null,
           "group_id": "1km35smx8p41",
