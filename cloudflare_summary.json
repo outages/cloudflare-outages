@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-21T21:20:25.228Z"
+    "updated_at": "2025-08-21T21:51:08.436Z"
   },
   "components": [
     {
@@ -1412,9 +1412,9 @@
     {
       "id": "504hxt9xvdth",
       "name": "Brasilia, Brazil - (BSB)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-05-24T14:45:56.017Z",
-      "updated_at": "2025-08-21T06:04:32.466Z",
+      "updated_at": "2025-08-21T21:51:08.432Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -7442,6 +7442,106 @@
   ],
   "incidents": [
     {
+      "id": "6x2py84czgl4",
+      "name": "Magic WAN initiated traffic towards WARP devices is disrupted.",
+      "status": "monitoring",
+      "created_at": "2025-08-21T17:39:10.437Z",
+      "updated_at": "2025-08-21T21:43:27.168Z",
+      "monitoring_at": "2025-08-21T21:43:27.150Z",
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/wnwfp1nb9kd0",
+      "started_at": "2025-08-21T17:39:10.428Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "q8v7nvl4q5fq",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "6x2py84czgl4",
+          "created_at": "2025-08-21T21:43:27.150Z",
+          "updated_at": "2025-08-21T21:43:27.150Z",
+          "display_at": "2025-08-21T21:43:27.150Z",
+          "affected_components": [
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Magic WAN",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "935bdns2swp4",
+          "status": "identified",
+          "body": "Connections initiated by devices behind Magic WAN connectors (eg IPsec tunnels or interconnections) destined to WARP devices will fail. WARP outbound connections are still working.",
+          "incident_id": "6x2py84czgl4",
+          "created_at": "2025-08-21T17:39:10.551Z",
+          "updated_at": "2025-08-21T17:39:10.551Z",
+          "display_at": "2025-08-21T17:39:10.551Z",
+          "affected_components": [
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Magic WAN",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qgnxz00j1f2v",
+          "name": "Magic WAN",
+          "status": "partial_outage",
+          "created_at": "2022-12-22T09:51:36.130Z",
+          "updated_at": "2025-08-21T17:39:10.476Z",
+          "position": 59,
+          "description": "Magic WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
+          "showcase": false,
+          "start_date": "2022-12-22",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "k04jkcpzxn94",
+          "name": "WARP",
+          "status": "partial_outage",
+          "created_at": "2019-09-30T09:25:38.587Z",
+          "updated_at": "2025-08-21T17:39:10.496Z",
+          "position": 95,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "ph1z05mtxs2r",
       "name": "Workers, Workers for Platforms, and Pages API Issues",
       "status": "identified",
@@ -7526,80 +7626,6 @@
           "updated_at": "2025-08-21T20:54:35.396Z",
           "position": 98,
           "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "6x2py84czgl4",
-      "name": "Magic WAN initiated traffic towards WARP devices is disrupted.",
-      "status": "identified",
-      "created_at": "2025-08-21T17:39:10.437Z",
-      "updated_at": "2025-08-21T17:39:10.554Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/wnwfp1nb9kd0",
-      "started_at": "2025-08-21T17:39:10.428Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "935bdns2swp4",
-          "status": "identified",
-          "body": "Connections initiated by devices behind Magic WAN connectors (eg IPsec tunnels or interconnections) destined to WARP devices will fail. WARP outbound connections are still working.",
-          "incident_id": "6x2py84czgl4",
-          "created_at": "2025-08-21T17:39:10.551Z",
-          "updated_at": "2025-08-21T17:39:10.551Z",
-          "display_at": "2025-08-21T17:39:10.551Z",
-          "affected_components": [
-            {
-              "code": "qgnxz00j1f2v",
-              "name": "Cloudflare Sites and Services - Magic WAN",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "k04jkcpzxn94",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qgnxz00j1f2v",
-          "name": "Magic WAN",
-          "status": "partial_outage",
-          "created_at": "2022-12-22T09:51:36.130Z",
-          "updated_at": "2025-08-21T17:39:10.476Z",
-          "position": 59,
-          "description": "Magic WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
-          "showcase": false,
-          "start_date": "2022-12-22",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "k04jkcpzxn94",
-          "name": "WARP",
-          "status": "partial_outage",
-          "created_at": "2019-09-30T09:25:38.587Z",
-          "updated_at": "2025-08-21T17:39:10.496Z",
-          "position": 95,
-          "description": null,
           "showcase": false,
           "start_date": null,
           "group_id": "1km35smx8p41",
