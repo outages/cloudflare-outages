@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-25T07:34:56.287Z"
+    "updated_at": "2025-08-25T08:29:25.440Z"
   },
   "components": [
     {
@@ -2282,9 +2282,9 @@
     {
       "id": "fvvt1qwvgqq2",
       "name": "Indianapolis, IN, United States - (IND)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-02-22T10:13:47.410Z",
-      "updated_at": "2025-08-15T19:19:57.637Z",
+      "updated_at": "2025-08-25T08:29:25.435Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2387,9 +2387,9 @@
     {
       "id": "2fy0n0pw01nm",
       "name": "Fortaleza, Brazil - (FOR)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-04-01T15:16:43.011Z",
-      "updated_at": "2025-08-25T06:47:34.974Z",
+      "updated_at": "2025-08-25T08:11:11.084Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -2822,9 +2822,9 @@
     {
       "id": "fbvx0hxhhdj0",
       "name": "CDN Cache Purge",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-31T16:54:52.510Z",
-      "updated_at": "2025-08-24T18:51:31.084Z",
+      "updated_at": "2025-08-25T07:54:57.930Z",
       "position": 21,
       "description": "CDN single file cache purging service",
       "showcase": false,
@@ -2837,9 +2837,9 @@
     {
       "id": "55x4rmjlwfq8",
       "name": "Guayaquil, Ecuador - (GYE)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-05T16:18:47.146Z",
-      "updated_at": "2025-08-25T07:34:54.750Z",
+      "updated_at": "2025-08-25T08:11:12.898Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -4247,9 +4247,9 @@
     {
       "id": "wg0b1zzm2f2w",
       "name": "Santiago, Chile - (SCL)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-27T21:47:59.478Z",
-      "updated_at": "2025-08-15T19:20:12.283Z",
+      "updated_at": "2025-08-25T08:11:13.253Z",
       "position": 39,
       "description": null,
       "showcase": false,
@@ -7442,79 +7442,6 @@
   ],
   "incidents": [
     {
-      "id": "sbm5c5b18r18",
-      "name": "Cache Purging Delays in Western North America",
-      "status": "monitoring",
-      "created_at": "2025-08-24T18:51:31.048Z",
-      "updated_at": "2025-08-24T23:35:29.708Z",
-      "monitoring_at": "2025-08-24T23:35:29.691Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/vy6rb9p7nm31",
-      "started_at": "2025-08-24T18:51:31.041Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "k2lzzgqqmflv",
-          "status": "monitoring",
-          "body": "We have identified the cause of this issue and implemented a fix. We are currently monitoring the results.",
-          "incident_id": "sbm5c5b18r18",
-          "created_at": "2025-08-24T23:35:29.691Z",
-          "updated_at": "2025-08-24T23:35:29.691Z",
-          "display_at": "2025-08-24T23:35:29.691Z",
-          "affected_components": [
-            {
-              "code": "fbvx0hxhhdj0",
-              "name": "Cloudflare Sites and Services - CDN Cache Purge",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "kyyf058783ts",
-          "status": "investigating",
-          "body": "Cloudflare single-file cache purging (purge by URL) called via the Dashboard/API is running up to 30 minutes behind in Western North America. This also affects the \"Always Online\" feature.\n\nWe are working to resolve this issue as soon as possible. Until then you may use the Purge Everything feature but do be aware it may cause a surge in traffic to your origin server(s). More updates to follow.",
-          "incident_id": "sbm5c5b18r18",
-          "created_at": "2025-08-24T18:51:31.140Z",
-          "updated_at": "2025-08-24T18:51:31.140Z",
-          "display_at": "2025-08-24T18:51:31.140Z",
-          "affected_components": [
-            {
-              "code": "fbvx0hxhhdj0",
-              "name": "Cloudflare Sites and Services - CDN Cache Purge",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "fbvx0hxhhdj0",
-          "name": "CDN Cache Purge",
-          "status": "degraded_performance",
-          "created_at": "2019-01-31T16:54:52.510Z",
-          "updated_at": "2025-08-24T18:51:31.084Z",
-          "position": 21,
-          "description": "CDN single file cache purging service",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
       "id": "7wxbm14drxxj",
       "name": "Rate Limiting counting issue",
       "status": "monitoring",
@@ -7743,73 +7670,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "rnw4y66hkv54",
-      "name": "DEN (Denver) on 2025-08-25",
-      "status": "scheduled",
-      "created_at": "2025-08-15T21:34:49.353Z",
-      "updated_at": "2025-08-25T07:00:26.937Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/kz3k4zy9m8vv",
-      "started_at": "2025-08-15T21:34:49.346Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "zz7l1hgcf5xn",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "rnw4y66hkv54",
-          "created_at": "2025-08-25T07:00:26.801Z",
-          "updated_at": "2025-08-25T07:00:26.801Z",
-          "display_at": "2025-08-25T07:00:26.801Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "ytj6fsh7q13z",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DEN (Denver) datacenter between 2025-08-25 08:00 and 2025-08-26 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "rnw4y66hkv54",
-          "created_at": "2025-08-15T21:34:49.412Z",
-          "updated_at": "2025-08-15T21:34:49.412Z",
-          "display_at": "2025-08-15T21:34:49.412Z",
-          "affected_components": [
-            {
-              "code": "6s4lzp8vmxr5",
-              "name": "North America - Denver, CO, United States - (DEN)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "6s4lzp8vmxr5",
-          "name": "Denver, CO, United States - (DEN)",
-          "status": "operational",
-          "created_at": "2016-06-13T10:58:02.694Z",
-          "updated_at": "2024-05-08T09:20:20.859Z",
-          "position": 12,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-08-25T08:00:00.000Z",
-      "scheduled_until": "2025-08-26T09:00:00.000Z"
-    },
-    {
       "id": "9gjb13myhms5",
       "name": "JDO (Juazeiro do Norte) on 2025-08-26",
       "status": "scheduled",
@@ -7861,60 +7721,6 @@
         }
       ],
       "scheduled_for": "2025-08-26T12:00:00.000Z",
-      "scheduled_until": "2025-08-26T18:00:00.000Z"
-    },
-    {
-      "id": "mbwysb354xc7",
-      "name": "KUL (Kuala Lumpur) on 2025-08-26",
-      "status": "scheduled",
-      "created_at": "2025-08-23T18:48:25.426Z",
-      "updated_at": "2025-08-23T18:48:25.520Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/yy7v5qsmpfsv",
-      "started_at": "2025-08-23T18:48:25.417Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "qnhx160q0sx9",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in KUL (Kuala Lumpur) datacenter on 2025-08-26 between 16:00 and 18:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "mbwysb354xc7",
-          "created_at": "2025-08-23T18:48:25.517Z",
-          "updated_at": "2025-08-23T18:48:25.517Z",
-          "display_at": "2025-08-23T18:48:25.517Z",
-          "affected_components": [
-            {
-              "code": "hr78s04g1r5b",
-              "name": "Asia - Kuala Lumpur, Malaysia - (KUL)",
-              "old_status": "under_maintenance",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hr78s04g1r5b",
-          "name": "Kuala Lumpur, Malaysia - (KUL)",
-          "status": "under_maintenance",
-          "created_at": "2015-08-31T01:11:27.364Z",
-          "updated_at": "2025-08-23T18:51:59.637Z",
-          "position": 40,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-08-26T16:00:00.000Z",
       "scheduled_until": "2025-08-26T18:00:00.000Z"
     },
     {
@@ -7970,6 +7776,60 @@
       ],
       "scheduled_for": "2025-08-26T16:00:00.000Z",
       "scheduled_until": "2025-08-26T22:30:00.000Z"
+    },
+    {
+      "id": "mbwysb354xc7",
+      "name": "KUL (Kuala Lumpur) on 2025-08-26",
+      "status": "scheduled",
+      "created_at": "2025-08-23T18:48:25.426Z",
+      "updated_at": "2025-08-23T18:48:25.520Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/yy7v5qsmpfsv",
+      "started_at": "2025-08-23T18:48:25.417Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "qnhx160q0sx9",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in KUL (Kuala Lumpur) datacenter on 2025-08-26 between 16:00 and 18:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "mbwysb354xc7",
+          "created_at": "2025-08-23T18:48:25.517Z",
+          "updated_at": "2025-08-23T18:48:25.517Z",
+          "display_at": "2025-08-23T18:48:25.517Z",
+          "affected_components": [
+            {
+              "code": "hr78s04g1r5b",
+              "name": "Asia - Kuala Lumpur, Malaysia - (KUL)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hr78s04g1r5b",
+          "name": "Kuala Lumpur, Malaysia - (KUL)",
+          "status": "under_maintenance",
+          "created_at": "2015-08-31T01:11:27.364Z",
+          "updated_at": "2025-08-23T18:51:59.637Z",
+          "position": 40,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-26T16:00:00.000Z",
+      "scheduled_until": "2025-08-26T18:00:00.000Z"
     },
     {
       "id": "3q35c2j1wxh2",
@@ -8080,6 +7940,60 @@
       "scheduled_until": "2025-08-27T13:00:00.000Z"
     },
     {
+      "id": "82hbdgbjf40m",
+      "name": "ICN (Seoul) on 2025-08-27",
+      "status": "scheduled",
+      "created_at": "2025-08-25T08:00:08.312Z",
+      "updated_at": "2025-08-25T08:00:08.369Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/4qcv3dsltzm3",
+      "started_at": "2025-08-25T08:00:08.306Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "zdzdttblw5s5",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in ICN (Seoul) datacenter on 2025-08-27 between 16:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "82hbdgbjf40m",
+          "created_at": "2025-08-25T08:00:08.367Z",
+          "updated_at": "2025-08-25T08:00:08.367Z",
+          "display_at": "2025-08-25T08:00:08.367Z",
+          "affected_components": [
+            {
+              "code": "v4s7np92f0dh",
+              "name": "Asia - Seoul, South Korea - (ICN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "v4s7np92f0dh",
+          "name": "Seoul, South Korea - (ICN)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:43:15.944Z",
+          "updated_at": "2025-04-01T15:57:16.194Z",
+          "position": 57,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-27T16:00:00.000Z",
+      "scheduled_until": "2025-08-27T22:00:00.000Z"
+    },
+    {
       "id": "m526cjs2mn4d",
       "name": "ATL (Atlanta) on 2025-08-28",
       "status": "scheduled",
@@ -8186,6 +8100,86 @@
       ],
       "scheduled_for": "2025-09-03T08:00:00.000Z",
       "scheduled_until": "2025-09-04T09:00:00.000Z"
+    },
+    {
+      "id": "rnw4y66hkv54",
+      "name": "DEN (Denver) on 2025-08-25",
+      "status": "in_progress",
+      "created_at": "2025-08-15T21:34:49.353Z",
+      "updated_at": "2025-08-25T08:00:21.938Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/kz3k4zy9m8vv",
+      "started_at": "2025-08-15T21:34:49.346Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "3n42v3nhyq76",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "rnw4y66hkv54",
+          "created_at": "2025-08-25T08:00:21.929Z",
+          "updated_at": "2025-08-25T08:00:21.929Z",
+          "display_at": "2025-08-25T08:00:21.929Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "zz7l1hgcf5xn",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "rnw4y66hkv54",
+          "created_at": "2025-08-25T07:00:26.801Z",
+          "updated_at": "2025-08-25T07:00:26.801Z",
+          "display_at": "2025-08-25T07:00:26.801Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ytj6fsh7q13z",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in DEN (Denver) datacenter between 2025-08-25 08:00 and 2025-08-26 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "rnw4y66hkv54",
+          "created_at": "2025-08-15T21:34:49.412Z",
+          "updated_at": "2025-08-15T21:34:49.412Z",
+          "display_at": "2025-08-15T21:34:49.412Z",
+          "affected_components": [
+            {
+              "code": "6s4lzp8vmxr5",
+              "name": "North America - Denver, CO, United States - (DEN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "6s4lzp8vmxr5",
+          "name": "Denver, CO, United States - (DEN)",
+          "status": "operational",
+          "created_at": "2016-06-13T10:58:02.694Z",
+          "updated_at": "2024-05-08T09:20:20.859Z",
+          "position": 12,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-25T08:00:00.000Z",
+      "scheduled_until": "2025-08-26T09:00:00.000Z"
     },
     {
       "id": "jst14bzbm73f",
