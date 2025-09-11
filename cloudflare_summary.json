@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-11T16:32:57.943Z"
+    "updated_at": "2025-09-11T16:44:24.065Z"
   },
   "components": [
     {
@@ -4083,9 +4083,9 @@
     {
       "id": "nmp96vgn1hpl",
       "name": "Digital Experience Monitoring (DEX)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-03-23T09:33:12.310Z",
-      "updated_at": "2025-07-23T11:04:49.113Z",
+      "updated_at": "2025-09-11T16:44:23.976Z",
       "position": 36,
       "description": "Digital Experience Monitoring (DEX) enables Zero Trust administrators to pinpoint and resolve issues impacting end-user connectivity and performance.",
       "showcase": false,
@@ -7458,6 +7458,72 @@
   ],
   "incidents": [
     {
+      "id": "bz1d9pq0c14j",
+      "name": "Cloudflare Queues Delivery Latency",
+      "status": "investigating",
+      "created_at": "2025-09-11T16:24:30.278Z",
+      "updated_at": "2025-09-11T16:44:24.040Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/4vg3vrmf2170",
+      "started_at": "2025-09-11T16:24:30.271Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "bs1jlt6mxj43",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare Queues. Customers that use Cloudflare Queues may observe latency in message delivery. We are working to understand and mitigate this problem.",
+          "incident_id": "bz1d9pq0c14j",
+          "created_at": "2025-09-11T16:44:24.036Z",
+          "updated_at": "2025-09-11T16:44:24.036Z",
+          "display_at": "2025-09-11T16:44:24.036Z",
+          "affected_components": [
+            {
+              "code": "nmp96vgn1hpl",
+              "name": "Cloudflare Sites and Services - Digital Experience Monitoring (DEX)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "0lyhhddp1dpm",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare Queues. Customers that use Cloudflare Queues may observe latency in message delivery. We are working to understand and mitigate this problem.",
+          "incident_id": "bz1d9pq0c14j",
+          "created_at": "2025-09-11T16:24:30.335Z",
+          "updated_at": "2025-09-11T16:24:30.335Z",
+          "display_at": "2025-09-11T16:24:30.335Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nmp96vgn1hpl",
+          "name": "Digital Experience Monitoring (DEX)",
+          "status": "degraded_performance",
+          "created_at": "2023-03-23T09:33:12.310Z",
+          "updated_at": "2025-09-11T16:44:23.976Z",
+          "position": 36,
+          "description": "Digital Experience Monitoring (DEX) enables Zero Trust administrators to pinpoint and resolve issues impacting end-user connectivity and performance.",
+          "showcase": false,
+          "start_date": "2023-03-23",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "q7q1dm7hnfbr",
       "name": "Increase in 500 errors for Lisbon and Salt Lake City",
       "status": "monitoring",
@@ -7582,36 +7648,6 @@
           "only_show_if_degraded": false
         }
       ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "bz1d9pq0c14j",
-      "name": "Cloudflare Queues Delivery Latency",
-      "status": "investigating",
-      "created_at": "2025-09-11T16:24:30.278Z",
-      "updated_at": "2025-09-11T16:24:39.322Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/4vg3vrmf2170",
-      "started_at": "2025-09-11T16:24:30.271Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "0lyhhddp1dpm",
-          "status": "investigating",
-          "body": "Cloudflare is investigating issues with Cloudflare Queues. Customers that use Cloudflare Queues may observe latency in message delivery. We are working to understand and mitigate this problem.",
-          "incident_id": "bz1d9pq0c14j",
-          "created_at": "2025-09-11T16:24:30.335Z",
-          "updated_at": "2025-09-11T16:24:30.335Z",
-          "display_at": "2025-09-11T16:24:30.335Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [],
       "reminder_intervals": null
     }
   ],
