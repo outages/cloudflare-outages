@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-18T21:11:31.383Z"
+    "updated_at": "2025-09-18T21:34:38.139Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -718,9 +718,9 @@
     {
       "id": "d4nfj71p66fy",
       "name": "Belém, Brazil - (BEL)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-08-19T14:52:39.395Z",
-      "updated_at": "2025-09-18T19:06:03.090Z",
+      "updated_at": "2025-09-18T21:34:38.135Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2897,9 +2897,9 @@
     {
       "id": "vl0s9mnn4gfb",
       "name": "Hanoi, Vietnam - (HAN)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2018-12-18T06:51:18.979Z",
-      "updated_at": "2025-09-18T19:53:36.652Z",
+      "updated_at": "2025-09-18T21:28:46.582Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -6722,9 +6722,9 @@
     {
       "id": "zvm7mqn92xzc",
       "name": "Workers AI",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2024-02-14T15:05:51.274Z",
-      "updated_at": "2025-09-18T19:51:59.377Z",
+      "updated_at": "2025-09-18T21:18:42.296Z",
       "position": 99,
       "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
       "showcase": false,
@@ -7444,16 +7444,42 @@
     {
       "id": "xwwp6h5r4mj6",
       "name": "Network Performance Issues in Bogotá",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2025-09-18T21:07:54.851Z",
-      "updated_at": "2025-09-18T21:11:31.372Z",
-      "monitoring_at": null,
+      "updated_at": "2025-09-18T21:23:08.790Z",
+      "monitoring_at": "2025-09-18T21:23:08.772Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/tp1cvtc3lz1z",
       "started_at": "2025-09-18T21:07:54.839Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "040c7s3b90m8",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are currently monitoring the result.",
+          "incident_id": "xwwp6h5r4mj6",
+          "created_at": "2025-09-18T21:23:08.772Z",
+          "updated_at": "2025-09-18T21:23:08.772Z",
+          "display_at": "2025-09-18T21:23:08.772Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "171wlzvlxttk",
+              "name": "Latin America & the Caribbean - Bogotá, Colombia - (BOG)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "dtck8nmtkths",
           "status": "identified",
@@ -7533,59 +7559,6 @@
           "description": null,
           "showcase": false,
           "start_date": "2023-01-13",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "nrxwc9tny0z7",
-      "name": "Workers AI Errors for bge-m3 Model",
-      "status": "investigating",
-      "created_at": "2025-09-18T19:51:59.337Z",
-      "updated_at": "2025-09-18T19:51:59.453Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/mrz1b5qq7sgr",
-      "started_at": "2025-09-18T19:51:59.329Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "wjqqlnn2n7mz",
-          "status": "investigating",
-          "body": "Cloudflare is investigating elevated error rates on Workers AI for customers using the \"@cf/baai/bge-m3\" model.",
-          "incident_id": "nrxwc9tny0z7",
-          "created_at": "2025-09-18T19:51:59.450Z",
-          "updated_at": "2025-09-18T19:51:59.450Z",
-          "display_at": "2025-09-18T19:51:59.450Z",
-          "affected_components": [
-            {
-              "code": "zvm7mqn92xzc",
-              "name": "Cloudflare Sites and Services - Workers AI",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "zvm7mqn92xzc",
-          "name": "Workers AI",
-          "status": "degraded_performance",
-          "created_at": "2024-02-14T15:05:51.274Z",
-          "updated_at": "2025-09-18T19:51:59.377Z",
-          "position": 99,
-          "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
-          "showcase": false,
-          "start_date": "2024-02-14",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
