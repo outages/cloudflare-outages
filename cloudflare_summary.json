@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-18T16:43:09.890Z"
+    "updated_at": "2025-09-18T16:45:29.610Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2732,9 +2732,9 @@
     {
       "id": "5wnz34mhfhrk",
       "name": "CDN/Cache",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-25T19:03:33.850Z",
-      "updated_at": "2025-09-11T17:01:57.587Z",
+      "updated_at": "2025-09-18T16:45:29.526Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -7446,14 +7446,40 @@
       "name": "Increased HTTP 5xx Errors in ORD (Chicago)",
       "status": "investigating",
       "created_at": "2025-09-18T16:26:24.151Z",
-      "updated_at": "2025-09-18T16:26:24.223Z",
+      "updated_at": "2025-09-18T16:45:29.597Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "none",
+      "impact": "minor",
       "shortlink": "https://stspg.io/q9tdcglj6s4z",
       "started_at": "2025-09-18T16:26:24.141Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "04lkbtx733mx",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "n0vzg6c0ls3l",
+          "created_at": "2025-09-18T16:45:29.594Z",
+          "updated_at": "2025-09-18T16:45:29.594Z",
+          "display_at": "2025-09-18T16:45:29.594Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "z9v8znl25w0f",
+              "name": "North America - Chicago, IL, United States - (ORD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "6drcw4m2h3zx",
           "status": "investigating",
@@ -7487,6 +7513,21 @@
           "showcase": false,
           "start_date": null,
           "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5wnz34mhfhrk",
+          "name": "CDN/Cache",
+          "status": "degraded_performance",
+          "created_at": "2020-03-25T19:03:33.850Z",
+          "updated_at": "2025-09-18T16:45:29.526Z",
+          "position": 20,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
