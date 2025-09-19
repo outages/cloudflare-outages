@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-19T20:34:32.925Z"
+    "updated_at": "2025-09-19T21:16:13.291Z"
   },
   "components": [
     {
@@ -4189,7 +4189,7 @@
       "name": "San José, Costa Rica - (SJO)",
       "status": "under_maintenance",
       "created_at": "2020-10-23T21:53:19.030Z",
-      "updated_at": "2025-09-19T12:32:14.988Z",
+      "updated_at": "2025-09-19T21:10:17.730Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -6722,9 +6722,9 @@
     {
       "id": "zvm7mqn92xzc",
       "name": "Workers AI",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-02-14T15:05:51.274Z",
-      "updated_at": "2025-09-18T21:18:42.296Z",
+      "updated_at": "2025-09-19T20:53:49.665Z",
       "position": 99,
       "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
       "showcase": false,
@@ -7442,11 +7442,84 @@
   ],
   "incidents": [
     {
+      "id": "k9wl5k2hb13m",
+      "name": "Workers AI experiencing degraded availability in some models",
+      "status": "identified",
+      "created_at": "2025-09-19T20:53:49.626Z",
+      "updated_at": "2025-09-19T21:16:13.282Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/2z0x0y3vvh29",
+      "started_at": "2025-09-19T20:53:49.618Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "f1r37ds8lcz0",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "k9wl5k2hb13m",
+          "created_at": "2025-09-19T21:16:13.279Z",
+          "updated_at": "2025-09-19T21:16:13.279Z",
+          "display_at": "2025-09-19T21:16:13.279Z",
+          "affected_components": [
+            {
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "t715xbgdcbnj",
+          "status": "investigating",
+          "body": "Impacted models: \n\n@cf/baai/bge-base-en-v1.5\n@cf/baai/bge-large-en-v1.5\n@cf/baai/bge-m3\n@cf/baai/bge-small-en-v1.5\n@cf/facebook/bart-large-cnn\n@cf/google/embeddinggemma-300m\n@cf/huggingface/distilbert-sst-2-int8\n@cf/microsoft/resnet-50",
+          "incident_id": "k9wl5k2hb13m",
+          "created_at": "2025-09-19T20:53:49.724Z",
+          "updated_at": "2025-09-19T20:53:49.724Z",
+          "display_at": "2025-09-19T20:53:49.724Z",
+          "affected_components": [
+            {
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "zvm7mqn92xzc",
+          "name": "Workers AI",
+          "status": "degraded_performance",
+          "created_at": "2024-02-14T15:05:51.274Z",
+          "updated_at": "2025-09-19T20:53:49.665Z",
+          "position": 99,
+          "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
+          "showcase": false,
+          "start_date": "2024-02-14",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "p1hmycqj6y5l",
       "name": "Unable to modify bindings in Workers dashboard",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2025-09-19T20:22:47.442Z",
-      "updated_at": "2025-09-19T20:22:47.546Z",
+      "updated_at": "2025-09-19T21:01:05.115Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7454,6 +7527,26 @@
       "started_at": "2025-09-19T20:22:47.433Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "64s520k9kt6z",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "p1hmycqj6y5l",
+          "created_at": "2025-09-19T21:01:05.111Z",
+          "updated_at": "2025-09-19T21:01:05.111Z",
+          "display_at": "2025-09-19T21:01:05.111Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "vydhbtmgnztc",
           "status": "investigating",
