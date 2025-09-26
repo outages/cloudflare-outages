@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-26T07:24:18.720Z"
+    "updated_at": "2025-09-26T08:20:48.488Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2297,9 +2297,9 @@
     {
       "id": "hf1csyqv3x7s",
       "name": "Dhaka, Bangladesh - (DAC)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2025-09-26T07:24:18.716Z",
+      "updated_at": "2025-09-26T08:06:02.197Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -3647,9 +3647,9 @@
     {
       "id": "nbxgf9nycs42",
       "name": "Omaha, NE, United States - (OMA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-09-27T05:44:51.215Z",
-      "updated_at": "2025-09-26T07:18:20.744Z",
+      "updated_at": "2025-09-26T08:14:16.192Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -3932,9 +3932,9 @@
     {
       "id": "gqhgn4jwr94s",
       "name": "Recife, Brazil - (REC)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2023-01-23T16:01:02.693Z",
-      "updated_at": "2025-09-26T06:48:30.616Z",
+      "updated_at": "2025-09-26T08:11:57.470Z",
       "position": 34,
       "description": null,
       "showcase": false,
@@ -5327,9 +5327,9 @@
     {
       "id": "05rpd663qrcp",
       "name": "St. George's, Grenada - (GND)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-02-20T13:20:55.472Z",
-      "updated_at": "2025-08-28T08:30:15.843Z",
+      "updated_at": "2025-09-26T08:17:57.096Z",
       "position": 54,
       "description": null,
       "showcase": false,
@@ -6707,9 +6707,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2025-09-15T22:19:23.010Z",
+      "updated_at": "2025-09-26T07:58:14.639Z",
       "position": 98,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7440,7 +7440,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "n87y1cfbmcgx",
+      "name": "Cloudflare Workers Issues",
+      "status": "identified",
+      "created_at": "2025-09-26T07:58:14.596Z",
+      "updated_at": "2025-09-26T08:07:17.445Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/9lfc458ttvzn",
+      "started_at": "2025-09-26T07:58:14.588Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "yfl8xk7zyglm",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "n87y1cfbmcgx",
+          "created_at": "2025-09-26T08:04:00.900Z",
+          "updated_at": "2025-09-26T08:04:00.900Z",
+          "display_at": "2025-09-26T08:04:00.900Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "7xs68v0rsk2y",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an increased level of errors for customers running Workers scripts.\n\nWe are working to analyse and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "n87y1cfbmcgx",
+          "created_at": "2025-09-26T07:58:14.705Z",
+          "updated_at": "2025-09-26T07:58:14.705Z",
+          "display_at": "2025-09-26T07:58:14.705Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2025-09-26T07:58:14.639Z",
+          "position": 98,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "p4l23vytyq85",
