@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-30T19:25:47.391Z"
+    "updated_at": "2025-09-30T19:47:36.319Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "major_outage",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -384,9 +384,9 @@
     {
       "id": "5nlf038vr3n8",
       "name": "Almaty, Kazakhstan - (ALA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-11-02T12:04:47.034Z",
-      "updated_at": "2025-09-30T19:25:47.385Z",
+      "updated_at": "2025-09-30T19:43:43.585Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1029,9 +1029,9 @@
     {
       "id": "xpjxwz2x742k",
       "name": "Beirut, Lebanon - (BEY)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-02-08T11:33:14.561Z",
-      "updated_at": "2025-09-30T18:13:58.809Z",
+      "updated_at": "2025-09-30T19:45:46.709Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -1848,9 +1848,9 @@
     {
       "id": "w3hq2xmx91ll",
       "name": "Cork, Ireland -  (ORK)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-08-09T14:32:12.442Z",
-      "updated_at": "2025-09-29T21:00:48.015Z",
+      "updated_at": "2025-09-30T19:37:36.348Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -5688,9 +5688,9 @@
     {
       "id": "4rpfj8cc2h46",
       "name": "Skopje, North Macedonia - (SKP)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-05-02T22:50:14.963Z",
-      "updated_at": "2025-09-30T14:32:11.002Z",
+      "updated_at": "2025-09-30T19:38:56.956Z",
       "position": 59,
       "description": null,
       "showcase": false,
@@ -6183,9 +6183,9 @@
     {
       "id": "5s616lljfwdz",
       "name": "Realtime TURN Service",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2025-05-16T17:07:34.278Z",
-      "updated_at": "2025-09-29T09:11:26.340Z",
+      "updated_at": "2025-09-30T19:46:39.231Z",
       "position": 73,
       "description": "Separately from the SFU, Realtime offers a managed TURN service. TURN acts as a relay point for traffic between WebRTC clients like the browser and SFUs, particularly in scenarios where direct communication is obstructed by NATs or firewalls. TURN maintains an allocation of public IP addresses and ports for each session, ensuring connectivity even in restrictive network environments.\r\n\r\nUsing Cloudflare Realtime TURN service is available free of charge when used together with the Realtime SFU. Otherwise, it costs $0.05/real-time GB outbound from Cloudflare to the TURN client.",
       "showcase": false,
@@ -6198,9 +6198,9 @@
     {
       "id": "yxhtws7ltl9t",
       "name": "RealtimeKit",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2025-05-16T17:08:23.427Z",
-      "updated_at": "2025-09-29T09:11:26.352Z",
+      "updated_at": "2025-09-30T19:46:39.249Z",
       "position": 74,
       "description": "Build real-time serverless video, audio and data applications.\r\n\r\nCloudflare Realtime is infrastructure for real-time audio/video/data applications. It allows you to build real-time apps without worrying about scaling or regions. It can act as a selective forwarding unit (WebRTC SFU), as a fanout delivery system for broadcasting (WebRTC CDN) or anything in between.",
       "showcase": false,
@@ -6408,9 +6408,9 @@
     {
       "id": "47xg28c02lnk",
       "name": "Stream",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2019-01-24T16:53:34.953Z",
-      "updated_at": "2025-09-29T09:11:21.714Z",
+      "updated_at": "2025-09-30T19:46:39.266Z",
       "position": 84,
       "description": "Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7458,6 +7458,133 @@
   ],
   "incidents": [
     {
+      "id": "djgyxxfmwg8d",
+      "name": "Customers may be experiencing dropped connections using Stream Live, Realtime, and TURN",
+      "status": "identified",
+      "created_at": "2025-09-30T19:46:39.179Z",
+      "updated_at": "2025-09-30T19:47:36.310Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "critical",
+      "shortlink": "https://stspg.io/75yzc2gd2rzx",
+      "started_at": "2025-09-30T19:46:39.166Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "lq93lqgd63gr",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "djgyxxfmwg8d",
+          "created_at": "2025-09-30T19:47:36.307Z",
+          "updated_at": "2025-09-30T19:47:36.307Z",
+          "display_at": "2025-09-30T19:47:36.307Z",
+          "affected_components": [
+            {
+              "code": "5s616lljfwdz",
+              "name": "Cloudflare Sites and Services - Realtime TURN Service",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "yxhtws7ltl9t",
+              "name": "Cloudflare Sites and Services - RealtimeKit",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "j0cp5b8lw3ym",
+          "status": "investigating",
+          "body": "Customers may be experiencing dropped connections while using Stream Live, Realtime, and TURN. The issue has been identified and a fix is being applied immediately.",
+          "incident_id": "djgyxxfmwg8d",
+          "created_at": "2025-09-30T19:46:39.321Z",
+          "updated_at": "2025-09-30T19:46:39.321Z",
+          "display_at": "2025-09-30T19:46:39.321Z",
+          "affected_components": [
+            {
+              "code": "5s616lljfwdz",
+              "name": "Cloudflare Sites and Services - Realtime TURN Service",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "yxhtws7ltl9t",
+              "name": "Cloudflare Sites and Services - RealtimeKit",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5s616lljfwdz",
+          "name": "Realtime TURN Service",
+          "status": "major_outage",
+          "created_at": "2025-05-16T17:07:34.278Z",
+          "updated_at": "2025-09-30T19:46:39.231Z",
+          "position": 73,
+          "description": "Separately from the SFU, Realtime offers a managed TURN service. TURN acts as a relay point for traffic between WebRTC clients like the browser and SFUs, particularly in scenarios where direct communication is obstructed by NATs or firewalls. TURN maintains an allocation of public IP addresses and ports for each session, ensuring connectivity even in restrictive network environments.\r\n\r\nUsing Cloudflare Realtime TURN service is available free of charge when used together with the Realtime SFU. Otherwise, it costs $0.05/real-time GB outbound from Cloudflare to the TURN client.",
+          "showcase": false,
+          "start_date": "2025-05-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "yxhtws7ltl9t",
+          "name": "RealtimeKit",
+          "status": "major_outage",
+          "created_at": "2025-05-16T17:08:23.427Z",
+          "updated_at": "2025-09-30T19:46:39.249Z",
+          "position": 74,
+          "description": "Build real-time serverless video, audio and data applications.\r\n\r\nCloudflare Realtime is infrastructure for real-time audio/video/data applications. It allows you to build real-time apps without worrying about scaling or regions. It can act as a selective forwarding unit (WebRTC SFU), as a fanout delivery system for broadcasting (WebRTC CDN) or anything in between.",
+          "showcase": false,
+          "start_date": "2025-05-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "47xg28c02lnk",
+          "name": "Stream",
+          "status": "major_outage",
+          "created_at": "2019-01-24T16:53:34.953Z",
+          "updated_at": "2025-09-30T19:46:39.266Z",
+          "position": 84,
+          "description": "Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "k0jp0229h8l8",
       "name": "WARP connectivity",
       "status": "investigating",
@@ -7568,7 +7695,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "major",
+    "description": "Partial System Outage"
   }
 }
