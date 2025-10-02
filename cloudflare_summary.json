@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-02T19:22:51.757Z"
+    "updated_at": "2025-10-02T19:30:58.890Z"
   },
   "components": [
     {
@@ -7476,24 +7476,44 @@
     {
       "id": "6ygv5jl9r7ls",
       "name": "Missing Cloudflare Access Login Events",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2025-10-02T19:13:47.404Z",
-      "updated_at": "2025-10-02T19:13:57.899Z",
+      "updated_at": "2025-10-02T19:30:58.879Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/bflv8n0skq4d",
-      "started_at": "2025-10-02T19:13:47.395Z",
+      "started_at": "2025-10-02T19:13:47.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
+          "id": "0936wbd2dwtr",
+          "status": "identified",
+          "body": "Cloudflare Engineering identified a path to recover the Access logs lost during the impact window. Recovering these logs could result in a handful of duplicate login events. These logs should show up with identical timestamps and request IDs; the duplicates can be disregarded.",
+          "incident_id": "6ygv5jl9r7ls",
+          "created_at": "2025-10-02T19:30:58.876Z",
+          "updated_at": "2025-10-02T19:30:58.876Z",
+          "display_at": "2025-10-02T19:30:58.876Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
           "id": "bprfs8r0l55p",
           "status": "investigating",
-          "body": "Cloudflare engineering identified an issue that caused Access Login events to fail for a 48 minute period from 2025-10-02 17:40 UTC until 2025-10-02 18:33 UTC (there could be observed impact slightly before or after). All login events during this period would not have been logged via Access Request logs. Logs sent via Logpush were not impacted.\n\nAccess authentication and other services were not impacted during this window.\n\nCloudflare engineering is working on recovering these logs and will post updates during this investigation.",
+          "body": "Cloudflare engineering identified an issue that caused Access Login events to fail from 2025-10-02 17:40 UTC until 2025-10-02 18:33 UTC (there could be observed impact slightly before or after). All login events during this period would not have been logged via Access Request logs. Logs sent via Logpush were not impacted.\n\nAccess authentication and other services were not impacted during this window.\n\nCloudflare engineering is working on recovering these logs and will post updates during this investigation.",
           "incident_id": "6ygv5jl9r7ls",
           "created_at": "2025-10-02T19:13:47.476Z",
-          "updated_at": "2025-10-02T19:13:47.476Z",
-          "display_at": "2025-10-02T19:13:47.476Z",
+          "updated_at": "2025-10-02T19:30:38.176Z",
+          "display_at": "2025-10-02T19:13:47.000Z",
           "affected_components": [
             {
               "code": "w4k8yvhfb3vp",
