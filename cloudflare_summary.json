@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-02T18:55:03.558Z"
+    "updated_at": "2025-10-02T19:13:57.904Z"
   },
   "components": [
     {
@@ -310,9 +310,9 @@
     {
       "id": "c0f26cc4m7xk",
       "name": "Auckland, New Zealand - (AKL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2015-01-23T13:11:06.894Z",
-      "updated_at": "2025-07-21T17:11:36.505Z",
+      "updated_at": "2025-10-02T19:05:00.876Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -675,9 +675,9 @@
     {
       "id": "vhpdc0y3qty9",
       "name": "Bangalore, India - (BLR)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-10-03T23:15:06.784Z",
-      "updated_at": "2025-10-01T21:13:09.727Z",
+      "updated_at": "2025-10-02T19:11:00.673Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1369,9 +1369,9 @@
     {
       "id": "dwlvwq5gnym8",
       "name": "Charlotte, NC, United States - (CLT)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-11-30T01:17:45.019Z",
-      "updated_at": "2025-09-25T09:31:29.575Z",
+      "updated_at": "2025-10-02T19:08:01.484Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -1444,7 +1444,7 @@
     {
       "id": "q6qm6fvkst4h",
       "name": "Oceania",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-28T00:12:04.846Z",
       "updated_at": "2022-04-26T19:49:08.623Z",
       "position": 9,
@@ -7474,6 +7474,59 @@
   ],
   "incidents": [
     {
+      "id": "6ygv5jl9r7ls",
+      "name": "Missing Cloudflare Access Login Events",
+      "status": "investigating",
+      "created_at": "2025-10-02T19:13:47.404Z",
+      "updated_at": "2025-10-02T19:13:57.899Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/bflv8n0skq4d",
+      "started_at": "2025-10-02T19:13:47.395Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "bprfs8r0l55p",
+          "status": "investigating",
+          "body": "Cloudflare engineering identified an issue that caused Access Login events to fail for a 48 minute period from 2025-10-02 17:40 UTC until 2025-10-02 18:33 UTC (there could be observed impact slightly before or after). All login events during this period would not have been logged via Access Request logs. Logs sent via Logpush were not impacted.\n\nAccess authentication and other services were not impacted during this window.\n\nCloudflare engineering is working on recovering these logs and will post updates during this investigation.",
+          "incident_id": "6ygv5jl9r7ls",
+          "created_at": "2025-10-02T19:13:47.476Z",
+          "updated_at": "2025-10-02T19:13:47.476Z",
+          "display_at": "2025-10-02T19:13:47.476Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "w4k8yvhfb3vp",
+          "name": "Access",
+          "status": "operational",
+          "created_at": "2018-02-09T21:46:39.049Z",
+          "updated_at": "2025-09-09T19:20:35.463Z",
+          "position": 2,
+          "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "t3fcwqt72ql5",
       "name": "Issues with Bot Management",
       "status": "identified",
@@ -7819,9 +7872,9 @@
         {
           "id": "c0f26cc4m7xk",
           "name": "Auckland, New Zealand - (AKL)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2015-01-23T13:11:06.894Z",
-          "updated_at": "2025-07-21T17:11:36.505Z",
+          "updated_at": "2025-10-02T19:05:00.876Z",
           "position": 2,
           "description": null,
           "showcase": false,
