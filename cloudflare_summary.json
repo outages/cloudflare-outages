@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-02T17:35:17.392Z"
+    "updated_at": "2025-10-02T18:22:24.264Z"
   },
   "components": [
     {
@@ -930,9 +930,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2025-10-01T17:44:14.093Z",
+      "updated_at": "2025-10-02T17:51:05.331Z",
       "position": 6,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -1804,9 +1804,9 @@
     {
       "id": "47440brmvtq2",
       "name": "Gaborone, Botswana - (GBE)",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2022-06-01T10:45:54.571Z",
-      "updated_at": "2025-10-02T16:23:40.093Z",
+      "updated_at": "2025-10-02T18:22:24.260Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -2299,9 +2299,9 @@
     {
       "id": "hf1csyqv3x7s",
       "name": "Dhaka, Bangladesh - (DAC)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2025-10-02T17:35:17.389Z",
+      "updated_at": "2025-10-02T18:11:19.309Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -3874,9 +3874,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2025-10-01T17:44:14.114Z",
+      "updated_at": "2025-10-02T17:51:05.352Z",
       "position": 34,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -3979,9 +3979,9 @@
     {
       "id": "f95c4c2zcg0t",
       "name": "Karachi, Pakistan - (KHI)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-12-04T16:17:59.275Z",
-      "updated_at": "2025-10-02T15:59:48.283Z",
+      "updated_at": "2025-10-02T18:11:16.453Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -4189,9 +4189,9 @@
     {
       "id": "lwmhcftlr9vx",
       "name": "San José, Costa Rica - (SJO)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2020-10-23T21:53:19.030Z",
-      "updated_at": "2025-10-02T00:36:14.843Z",
+      "updated_at": "2025-10-02T17:59:17.762Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -7473,6 +7473,106 @@
     }
   ],
   "incidents": [
+    {
+      "id": "g6ct18v2gv68",
+      "name": "Canadian Billing Address Fails Validation in Registrar",
+      "status": "identified",
+      "created_at": "2025-10-02T17:51:05.291Z",
+      "updated_at": "2025-10-02T18:02:57.833Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/gwz80mt48qv0",
+      "started_at": "2025-10-02T17:51:05.281Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "rg23nhs8tzvn",
+          "status": "identified",
+          "body": "The cause of this issue has been identified and a fix is being implemented.",
+          "incident_id": "g6ct18v2gv68",
+          "created_at": "2025-10-02T18:02:57.829Z",
+          "updated_at": "2025-10-02T18:02:57.829Z",
+          "display_at": "2025-10-02T18:02:57.829Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "syvq776v04tk",
+          "status": "investigating",
+          "body": "Billing validation is failing in Registrar for Canadian billing addresses. This is impacting domain name registration and transfers. The team is investigating.",
+          "incident_id": "g6ct18v2gv68",
+          "created_at": "2025-10-02T17:51:05.411Z",
+          "updated_at": "2025-10-02T17:51:05.411Z",
+          "display_at": "2025-10-02T17:51:05.411Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2025-10-02T17:51:05.331Z",
+          "position": 6,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2025-10-02T17:51:05.352Z",
+          "position": 34,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "t3fcwqt72ql5",
       "name": "Issues with Bot Management",
