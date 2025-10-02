@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-02T15:35:59.187Z"
+    "updated_at": "2025-10-02T15:47:51.969Z"
   },
   "components": [
     {
@@ -1804,9 +1804,9 @@
     {
       "id": "47440brmvtq2",
       "name": "Gaborone, Botswana - (GBE)",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2022-06-01T10:45:54.571Z",
-      "updated_at": "2025-10-02T12:24:53.353Z",
+      "updated_at": "2025-10-02T15:44:00.316Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -4054,9 +4054,9 @@
     {
       "id": "gw1cztbpft9b",
       "name": "Kathmandu, Nepal - (KTM)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2025-10-01T07:53:14.308Z",
+      "updated_at": "2025-10-02T15:47:51.963Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -7474,6 +7474,119 @@
   ],
   "incidents": [
     {
+      "id": "t3fcwqt72ql5",
+      "name": "Issues with Bot Management",
+      "status": "identified",
+      "created_at": "2025-10-01T18:56:31.081Z",
+      "updated_at": "2025-10-02T15:45:37.813Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/kptcxls58p55",
+      "started_at": "2025-10-01T18:56:31.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "lktnnn7b5zkh",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "t3fcwqt72ql5",
+          "created_at": "2025-10-02T15:45:37.809Z",
+          "updated_at": "2025-10-02T15:45:37.809Z",
+          "display_at": "2025-10-02T15:45:37.809Z",
+          "affected_components": [
+            {
+              "code": "s0991jwsqllx",
+              "name": "Cloudflare Sites and Services - Bot Management",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "7pdbm3zjbmlz",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue. To give us time to test the fix thoroughly, we plan to roll out tomorrow.",
+          "incident_id": "t3fcwqt72ql5",
+          "created_at": "2025-10-02T01:57:51.859Z",
+          "updated_at": "2025-10-02T01:57:51.859Z",
+          "display_at": "2025-10-02T01:57:51.859Z",
+          "affected_components": [
+            {
+              "code": "s0991jwsqllx",
+              "name": "Cloudflare Sites and Services - Bot Management",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "wsq7cl769wbk",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "t3fcwqt72ql5",
+          "created_at": "2025-10-01T23:19:22.325Z",
+          "updated_at": "2025-10-01T23:19:22.325Z",
+          "display_at": "2025-10-01T23:19:22.325Z",
+          "affected_components": [
+            {
+              "code": "s0991jwsqllx",
+              "name": "Cloudflare Sites and Services - Bot Management",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "hnhnj0jpsztx",
+          "status": "investigating",
+          "body": "Some customers might see Cloudflare's Managed robots.txt not rendered for their website. Customers who are experiencing the issue can turn off the feature by disabling managed robot.txt feature. The team is investigating the issue.",
+          "incident_id": "t3fcwqt72ql5",
+          "created_at": "2025-10-01T18:56:31.179Z",
+          "updated_at": "2025-10-01T19:18:31.444Z",
+          "display_at": "2025-10-01T18:56:31.000Z",
+          "affected_components": [
+            {
+              "code": "s0991jwsqllx",
+              "name": "Cloudflare Sites and Services - Bot Management",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "s0991jwsqllx",
+          "name": "Bot Management",
+          "status": "degraded_performance",
+          "created_at": "2022-12-02T09:33:01.317Z",
+          "updated_at": "2025-10-01T18:56:31.118Z",
+          "position": 18,
+          "description": "Bot Management provides sophisticated bot protection for your domain. Customers can identify automated traffic, take appropriate action, and view detailed analytics within the dashboard. Bot Management also supports custom solutions via Workers and Logs.",
+          "showcase": false,
+          "start_date": "2022-12-02",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "k8wn9d8kn7tz",
       "name": "SSL Provisioning Delays",
       "status": "identified",
@@ -7658,99 +7771,6 @@
           "description": "Magic WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
           "showcase": false,
           "start_date": "2022-12-22",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "t3fcwqt72ql5",
-      "name": "Issues with Bot Management",
-      "status": "identified",
-      "created_at": "2025-10-01T18:56:31.081Z",
-      "updated_at": "2025-10-02T01:57:51.863Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/kptcxls58p55",
-      "started_at": "2025-10-01T18:56:31.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "7pdbm3zjbmlz",
-          "status": "identified",
-          "body": "We are continuing to work on a fix for this issue. To give us time to test the fix thoroughly, we plan to roll out tomorrow.",
-          "incident_id": "t3fcwqt72ql5",
-          "created_at": "2025-10-02T01:57:51.859Z",
-          "updated_at": "2025-10-02T01:57:51.859Z",
-          "display_at": "2025-10-02T01:57:51.859Z",
-          "affected_components": [
-            {
-              "code": "s0991jwsqllx",
-              "name": "Cloudflare Sites and Services - Bot Management",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "wsq7cl769wbk",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "t3fcwqt72ql5",
-          "created_at": "2025-10-01T23:19:22.325Z",
-          "updated_at": "2025-10-01T23:19:22.325Z",
-          "display_at": "2025-10-01T23:19:22.325Z",
-          "affected_components": [
-            {
-              "code": "s0991jwsqllx",
-              "name": "Cloudflare Sites and Services - Bot Management",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "hnhnj0jpsztx",
-          "status": "investigating",
-          "body": "Some customers might see Cloudflare's Managed robots.txt not rendered for their website. Customers who are experiencing the issue can turn off the feature by disabling managed robot.txt feature. The team is investigating the issue.",
-          "incident_id": "t3fcwqt72ql5",
-          "created_at": "2025-10-01T18:56:31.179Z",
-          "updated_at": "2025-10-01T19:18:31.444Z",
-          "display_at": "2025-10-01T18:56:31.000Z",
-          "affected_components": [
-            {
-              "code": "s0991jwsqllx",
-              "name": "Cloudflare Sites and Services - Bot Management",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "s0991jwsqllx",
-          "name": "Bot Management",
-          "status": "degraded_performance",
-          "created_at": "2022-12-02T09:33:01.317Z",
-          "updated_at": "2025-10-01T18:56:31.118Z",
-          "position": 18,
-          "description": "Bot Management provides sophisticated bot protection for your domain. Customers can identify automated traffic, take appropriate action, and view detailed analytics within the dashboard. Bot Management also supports custom solutions via Workers and Logs.",
-          "showcase": false,
-          "start_date": "2022-12-02",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
