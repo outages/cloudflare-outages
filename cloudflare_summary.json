@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-03T15:18:50.413Z"
+    "updated_at": "2025-10-03T15:35:50.842Z"
   },
   "components": [
     {
@@ -1045,9 +1045,9 @@
     {
       "id": "bz9bt1q3m2jy",
       "name": "Buffalo, NY, United States - (BUF)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-04-15T18:28:27.006Z",
-      "updated_at": "2025-10-03T14:37:07.195Z",
+      "updated_at": "2025-10-03T15:23:49.711Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2089,9 +2089,9 @@
     {
       "id": "3796s01hm2hj",
       "name": "Chittagong, Bangladesh - (CGP)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-10-29T19:05:17.659Z",
-      "updated_at": "2025-09-26T10:41:08.702Z",
+      "updated_at": "2025-10-03T15:35:50.838Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -6424,9 +6424,9 @@
     {
       "id": "47xg28c02lnk",
       "name": "Stream",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:53:34.953Z",
-      "updated_at": "2025-09-30T21:33:53.823Z",
+      "updated_at": "2025-10-03T15:29:58.059Z",
       "position": 84,
       "description": "Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7473,6 +7473,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "zkbr1kgkpg9l",
+      "name": "Stream is seeing longer time-to-ready for uploads",
+      "status": "investigating",
+      "created_at": "2025-10-03T15:29:58.023Z",
+      "updated_at": "2025-10-03T15:29:58.122Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/v359mqx0y9xt",
+      "started_at": "2025-10-03T15:29:58.016Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "xb9lkhmjrs6h",
+          "status": "investigating",
+          "body": "Cloudflare Stream is currently investigating longer than usual times for new uploaded videos to be ready to play. Live Streaming, Playback, WebRTC unaffected.",
+          "incident_id": "zkbr1kgkpg9l",
+          "created_at": "2025-10-03T15:29:58.119Z",
+          "updated_at": "2025-10-03T15:29:58.119Z",
+          "display_at": "2025-10-03T15:29:58.119Z",
+          "affected_components": [
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "47xg28c02lnk",
+          "name": "Stream",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:53:34.953Z",
+          "updated_at": "2025-10-03T15:29:58.059Z",
+          "position": 84,
+          "description": "Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "ynjcw3zqrvp2",
       "name": "Network Performance Issues in India",
