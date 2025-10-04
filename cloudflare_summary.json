@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-04T11:49:25.453Z"
+    "updated_at": "2025-10-04T12:30:43.839Z"
   },
   "components": [
     {
@@ -445,9 +445,9 @@
     {
       "id": "3lsyxp2s1khw",
       "name": "Barcelona, Spain - (BCN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-10-10T21:36:13.143Z",
-      "updated_at": "2025-10-04T11:09:00.068Z",
+      "updated_at": "2025-10-04T12:18:55.100Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -7384,9 +7384,9 @@
     {
       "id": "4jh0k3clz5b6",
       "name": "Male, Maldives - (MLE)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2024-11-09T09:01:00.175Z",
-      "updated_at": "2025-10-04T11:49:25.449Z",
+      "updated_at": "2025-10-04T12:30:43.835Z",
       "position": 460,
       "description": null,
       "showcase": false,
@@ -7473,6 +7473,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "xk38mg3tk1k2",
+      "name": "Cloudflare Workers Issues",
+      "status": "monitoring",
+      "created_at": "2025-10-03T13:41:18.707Z",
+      "updated_at": "2025-10-04T12:18:44.895Z",
+      "monitoring_at": "2025-10-04T12:18:44.875Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/b2z8gjpttft0",
+      "started_at": "2025-10-03T13:41:18.698Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8s4ttxv9246n",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "xk38mg3tk1k2",
+          "created_at": "2025-10-04T12:18:44.875Z",
+          "updated_at": "2025-10-04T12:18:44.875Z",
+          "display_at": "2025-10-04T12:18:44.875Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "mhhhspbmzfy0",
+          "status": "identified",
+          "body": "Cloudflare has identified an increased level of errors on Workers: customers may observe sporadic 1022 errors in requests.\nThe issue has been identified, and a fix is in progress.\n\nMore updates shall be made available as the mitigation progresses.",
+          "incident_id": "xk38mg3tk1k2",
+          "created_at": "2025-10-03T13:41:18.825Z",
+          "updated_at": "2025-10-03T13:41:18.825Z",
+          "display_at": "2025-10-03T13:41:18.825Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2025-10-03T13:41:18.746Z",
+          "position": 99,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "927b7nj76y9q",
       "name": "Subset of Magic Transit and WAN tunnel health checks failing",
@@ -7643,59 +7716,6 @@
           "description": "Magic WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
           "showcase": false,
           "start_date": "2022-12-22",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "xk38mg3tk1k2",
-      "name": "Cloudflare Workers Issues",
-      "status": "identified",
-      "created_at": "2025-10-03T13:41:18.707Z",
-      "updated_at": "2025-10-03T13:41:18.829Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/b2z8gjpttft0",
-      "started_at": "2025-10-03T13:41:18.698Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "mhhhspbmzfy0",
-          "status": "identified",
-          "body": "Cloudflare has identified an increased level of errors on Workers: customers may observe sporadic 1022 errors in requests.\nThe issue has been identified, and a fix is in progress.\n\nMore updates shall be made available as the mitigation progresses.",
-          "incident_id": "xk38mg3tk1k2",
-          "created_at": "2025-10-03T13:41:18.825Z",
-          "updated_at": "2025-10-03T13:41:18.825Z",
-          "display_at": "2025-10-03T13:41:18.825Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "57srcl8zcn7c",
-          "name": "Workers",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2025-10-03T13:41:18.746Z",
-          "position": 99,
-          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
-          "showcase": false,
-          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
