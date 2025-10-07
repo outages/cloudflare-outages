@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-07T23:14:36.061Z"
+    "updated_at": "2025-10-07T23:33:41.770Z"
   },
   "components": [
     {
@@ -1089,9 +1089,9 @@
     {
       "id": "5r6d2zthcqm4",
       "name": "Hagatna, Guam - (GUM)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-05-05T08:28:03.157Z",
-      "updated_at": "2025-10-07T12:11:47.461Z",
+      "updated_at": "2025-10-07T23:23:30.037Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -1443,7 +1443,7 @@
     {
       "id": "q6qm6fvkst4h",
       "name": "Oceania",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-28T00:12:04.846Z",
       "updated_at": "2022-04-26T19:49:08.623Z",
       "position": 9,
@@ -2613,9 +2613,9 @@
     {
       "id": "ljllh1921z0m",
       "name": "Nairobi, Kenya - (NBO)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2020-10-30T04:22:58.259Z",
-      "updated_at": "2025-10-07T21:56:37.592Z",
+      "updated_at": "2025-10-07T23:20:36.551Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -4188,9 +4188,9 @@
     {
       "id": "lwmhcftlr9vx",
       "name": "San José, Costa Rica - (SJO)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2020-10-23T21:53:19.030Z",
-      "updated_at": "2025-10-06T14:27:54.014Z",
+      "updated_at": "2025-10-07T23:20:34.860Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -5373,9 +5373,9 @@
     {
       "id": "8xc65dbhbrd5",
       "name": "Phnom Penh, Cambodia - (PNH)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2018-02-09T20:38:28.093Z",
-      "updated_at": "2025-10-07T12:09:38.249Z",
+      "updated_at": "2025-10-07T23:26:36.244Z",
       "position": 55,
       "description": null,
       "showcase": false,
@@ -6063,9 +6063,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2025-10-07T18:06:24.836Z",
+      "updated_at": "2025-10-07T23:26:35.551Z",
       "position": 68,
       "description": null,
       "showcase": false,
@@ -6078,9 +6078,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2025-10-03T16:56:30.030Z",
+      "updated_at": "2025-10-07T23:26:35.573Z",
       "position": 69,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -7460,9 +7460,9 @@
     {
       "id": "vj7w9wckqn4f",
       "name": "Durable Object and D1 Analytics Delayed",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2025-10-07T22:00:44.554Z",
-      "updated_at": "2025-10-07T22:00:44.694Z",
+      "updated_at": "2025-10-07T23:33:41.761Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7470,6 +7470,32 @@
       "started_at": "2025-10-07T22:00:44.544Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "2qxbhyhy0rxq",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "vj7w9wckqn4f",
+          "created_at": "2025-10-07T23:33:41.757Z",
+          "updated_at": "2025-10-07T23:33:41.757Z",
+          "display_at": "2025-10-07T23:33:41.757Z",
+          "affected_components": [
+            {
+              "code": "z0yd3sxqjqdm",
+              "name": "Cloudflare Sites and Services - D1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "pmp3dld66t1g",
           "status": "investigating",
@@ -7530,6 +7556,110 @@
         }
       ],
       "reminder_intervals": null
+    },
+    {
+      "id": "91b9x59xc277",
+      "name": "R2 & Pages custom domain may experience errors",
+      "status": "investigating",
+      "created_at": "2025-10-07T23:26:35.512Z",
+      "updated_at": "2025-10-07T23:26:35.632Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/n9mw630t4gmm",
+      "started_at": "2025-10-07T23:26:35.503Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "22tw4f8c1yp7",
+          "status": "investigating",
+          "body": "Cloudflare is currently investigating an issue affecting R2 and Pages custom domains, which may have led to degraded functionality for customers. We are actively working to understand the full impact and mitigation measures. More updates will be provided shortly.",
+          "incident_id": "91b9x59xc277",
+          "created_at": "2025-10-07T23:26:35.629Z",
+          "updated_at": "2025-10-07T23:26:35.629Z",
+          "display_at": "2025-10-07T23:26:35.629Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2025-10-07T23:26:35.551Z",
+          "position": 68,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2025-10-07T23:26:35.573Z",
+          "position": 69,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "d4ymq7m4h167",
+      "name": "Media Transformations returning errors for uncached requests",
+      "status": "investigating",
+      "created_at": "2025-10-07T23:22:38.177Z",
+      "updated_at": "2025-10-07T23:22:49.889Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/m4bh5k481w9h",
+      "started_at": "2025-10-07T23:22:38.171Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ym38fzqj1tvy",
+          "status": "investigating",
+          "body": "Stream engineering has identified an error causing uncached requests for media transformations (short form video optimization) are returning errors. Stream on-demand and live broadcasts are not affected. Image Transformations are not affected.",
+          "incident_id": "d4ymq7m4h167",
+          "created_at": "2025-10-07T23:22:38.222Z",
+          "updated_at": "2025-10-07T23:22:38.222Z",
+          "display_at": "2025-10-07T23:22:38.222Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "reminder_intervals": null
     }
   ],
   "scheduled_maintenances": [
@@ -7586,6 +7716,60 @@
       ],
       "scheduled_for": "2025-10-08T08:00:00.000Z",
       "scheduled_until": "2025-10-09T09:00:00.000Z"
+    },
+    {
+      "id": "0vpvytz85xnl",
+      "name": "BAQ (Barranquilla) on 2025-10-08",
+      "status": "scheduled",
+      "created_at": "2025-10-07T23:24:15.801Z",
+      "updated_at": "2025-10-07T23:24:15.870Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/pzhn07swk6r3",
+      "started_at": "2025-10-07T23:24:15.793Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "vtc47txxwxnn",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in BAQ (Barranquilla) datacenter on 2025-10-08 between 14:00 and 23:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "0vpvytz85xnl",
+          "created_at": "2025-10-07T23:24:15.866Z",
+          "updated_at": "2025-10-07T23:24:15.866Z",
+          "display_at": "2025-10-07T23:24:15.866Z",
+          "affected_components": [
+            {
+              "code": "g3xfb8yfhk9l",
+              "name": "Latin America & the Caribbean - Barranquilla, Colombia - (BAQ)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g3xfb8yfhk9l",
+          "name": "Barranquilla, Colombia - (BAQ)",
+          "status": "operational",
+          "created_at": "2024-04-26T17:08:39.583Z",
+          "updated_at": "2025-10-07T17:46:31.042Z",
+          "position": 59,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-04-26",
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-08T14:00:00.000Z",
+      "scheduled_until": "2025-10-08T23:00:00.000Z"
     },
     {
       "id": "kfp9mzz8dmpz",
@@ -7804,60 +7988,6 @@
       "scheduled_until": "2025-10-17T08:00:00.000Z"
     },
     {
-      "id": "b8pv9ztxw1cb",
-      "name": "LAX (Los Angeles) on 2025-10-20",
-      "status": "scheduled",
-      "created_at": "2025-10-07T22:12:20.765Z",
-      "updated_at": "2025-10-07T22:12:20.833Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/7rb8g7ld4wym",
-      "started_at": "2025-10-07T22:12:20.756Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "33dvs8sv8gts",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter between 2025-10-20 08:00 and 2025-10-21 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "b8pv9ztxw1cb",
-          "created_at": "2025-10-07T22:12:20.830Z",
-          "updated_at": "2025-10-07T22:12:20.830Z",
-          "display_at": "2025-10-07T22:12:20.830Z",
-          "affected_components": [
-            {
-              "code": "38w4zp21dlkc",
-              "name": "North America - Los Angeles, CA, United States - (LAX)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "38w4zp21dlkc",
-          "name": "Los Angeles, CA, United States - (LAX)",
-          "status": "operational",
-          "created_at": "2014-10-27T19:24:27.591Z",
-          "updated_at": "2024-06-18T21:50:20.618Z",
-          "position": 20,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-10-20T08:00:00.000Z",
-      "scheduled_until": "2025-10-21T09:00:00.000Z"
-    },
-    {
       "id": "nr5657fm4jys",
       "name": "DUS (Düsseldorf) on 2025-10-20",
       "status": "scheduled",
@@ -7910,6 +8040,60 @@
       ],
       "scheduled_for": "2025-10-20T08:00:00.000Z",
       "scheduled_until": "2025-10-20T17:00:00.000Z"
+    },
+    {
+      "id": "b8pv9ztxw1cb",
+      "name": "LAX (Los Angeles) on 2025-10-20",
+      "status": "scheduled",
+      "created_at": "2025-10-07T22:12:20.765Z",
+      "updated_at": "2025-10-07T22:12:20.833Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/7rb8g7ld4wym",
+      "started_at": "2025-10-07T22:12:20.756Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "33dvs8sv8gts",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter between 2025-10-20 08:00 and 2025-10-21 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "b8pv9ztxw1cb",
+          "created_at": "2025-10-07T22:12:20.830Z",
+          "updated_at": "2025-10-07T22:12:20.830Z",
+          "display_at": "2025-10-07T22:12:20.830Z",
+          "affected_components": [
+            {
+              "code": "38w4zp21dlkc",
+              "name": "North America - Los Angeles, CA, United States - (LAX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "38w4zp21dlkc",
+          "name": "Los Angeles, CA, United States - (LAX)",
+          "status": "operational",
+          "created_at": "2014-10-27T19:24:27.591Z",
+          "updated_at": "2024-06-18T21:50:20.618Z",
+          "position": 20,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-20T08:00:00.000Z",
+      "scheduled_until": "2025-10-21T09:00:00.000Z"
     },
     {
       "id": "bzcqtpylml27",
