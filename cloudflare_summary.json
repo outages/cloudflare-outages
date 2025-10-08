@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-08T02:26:13.447Z"
+    "updated_at": "2025-10-08T03:29:09.190Z"
   },
   "components": [
     {
@@ -4578,9 +4578,9 @@
     {
       "id": "73mbn78m0yzm",
       "name": "São Paulo, Brazil - (GRU)",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2014-10-27T21:45:14.885Z",
-      "updated_at": "2025-10-08T01:32:25.926Z",
+      "updated_at": "2025-10-08T03:29:09.187Z",
       "position": 43,
       "description": null,
       "showcase": false,
@@ -7458,6 +7458,132 @@
   ],
   "incidents": [
     {
+      "id": "vj7w9wckqn4f",
+      "name": "Durable Object and D1 Analytics Delayed",
+      "status": "monitoring",
+      "created_at": "2025-10-07T22:00:44.554Z",
+      "updated_at": "2025-10-08T03:18:41.403Z",
+      "monitoring_at": "2025-10-08T03:18:41.386Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/71m23hrcsmc9",
+      "started_at": "2025-10-07T22:00:44.544Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "gfc82t0z6kny",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "vj7w9wckqn4f",
+          "created_at": "2025-10-08T03:18:41.386Z",
+          "updated_at": "2025-10-08T03:18:41.386Z",
+          "display_at": "2025-10-08T03:18:41.386Z",
+          "affected_components": [
+            {
+              "code": "z0yd3sxqjqdm",
+              "name": "Cloudflare Sites and Services - D1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "2qxbhyhy0rxq",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "vj7w9wckqn4f",
+          "created_at": "2025-10-07T23:33:41.757Z",
+          "updated_at": "2025-10-07T23:33:41.757Z",
+          "display_at": "2025-10-07T23:33:41.757Z",
+          "affected_components": [
+            {
+              "code": "z0yd3sxqjqdm",
+              "name": "Cloudflare Sites and Services - D1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "pmp3dld66t1g",
+          "status": "investigating",
+          "body": "The storage totals showed in Durable Object and D1 analytics pages are temporarily delayed. New writes may take a while to show up in the storage totals.",
+          "incident_id": "vj7w9wckqn4f",
+          "created_at": "2025-10-07T22:00:44.691Z",
+          "updated_at": "2025-10-07T22:00:44.691Z",
+          "display_at": "2025-10-07T22:00:44.691Z",
+          "affected_components": [
+            {
+              "code": "z0yd3sxqjqdm",
+              "name": "Cloudflare Sites and Services - D1",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "z0yd3sxqjqdm",
+          "name": "D1",
+          "status": "degraded_performance",
+          "created_at": "2024-02-09T08:57:38.825Z",
+          "updated_at": "2025-10-07T22:00:44.603Z",
+          "position": 31,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-02-09",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "bty1yz6dhh0v",
+          "name": "Durable Objects",
+          "status": "degraded_performance",
+          "created_at": "2023-06-12T14:55:22.631Z",
+          "updated_at": "2025-10-07T22:00:44.627Z",
+          "position": 41,
+          "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
+          "showcase": false,
+          "start_date": "2023-06-12",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "91b9x59xc277",
       "name": "R2 & Pages custom domain may experience errors",
       "status": "identified",
@@ -7549,106 +7675,6 @@
           "description": "High-performance storage for files and objects with zero egress charges",
           "showcase": false,
           "start_date": "2022-07-05",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "vj7w9wckqn4f",
-      "name": "Durable Object and D1 Analytics Delayed",
-      "status": "identified",
-      "created_at": "2025-10-07T22:00:44.554Z",
-      "updated_at": "2025-10-07T23:33:41.761Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/71m23hrcsmc9",
-      "started_at": "2025-10-07T22:00:44.544Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "2qxbhyhy0rxq",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "vj7w9wckqn4f",
-          "created_at": "2025-10-07T23:33:41.757Z",
-          "updated_at": "2025-10-07T23:33:41.757Z",
-          "display_at": "2025-10-07T23:33:41.757Z",
-          "affected_components": [
-            {
-              "code": "z0yd3sxqjqdm",
-              "name": "Cloudflare Sites and Services - D1",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "bty1yz6dhh0v",
-              "name": "Cloudflare Sites and Services - Durable Objects",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "pmp3dld66t1g",
-          "status": "investigating",
-          "body": "The storage totals showed in Durable Object and D1 analytics pages are temporarily delayed. New writes may take a while to show up in the storage totals.",
-          "incident_id": "vj7w9wckqn4f",
-          "created_at": "2025-10-07T22:00:44.691Z",
-          "updated_at": "2025-10-07T22:00:44.691Z",
-          "display_at": "2025-10-07T22:00:44.691Z",
-          "affected_components": [
-            {
-              "code": "z0yd3sxqjqdm",
-              "name": "Cloudflare Sites and Services - D1",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "bty1yz6dhh0v",
-              "name": "Cloudflare Sites and Services - Durable Objects",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "z0yd3sxqjqdm",
-          "name": "D1",
-          "status": "degraded_performance",
-          "created_at": "2024-02-09T08:57:38.825Z",
-          "updated_at": "2025-10-07T22:00:44.603Z",
-          "position": 31,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-02-09",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "bty1yz6dhh0v",
-          "name": "Durable Objects",
-          "status": "degraded_performance",
-          "created_at": "2023-06-12T14:55:22.631Z",
-          "updated_at": "2025-10-07T22:00:44.627Z",
-          "position": 41,
-          "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
-          "showcase": false,
-          "start_date": "2023-06-12",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
