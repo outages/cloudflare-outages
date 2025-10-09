@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-09T20:43:07.625Z"
+    "updated_at": "2025-10-09T21:12:32.252Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1517,9 +1517,9 @@
     {
       "id": "38tc7m3dl7v6",
       "name": "Budapest, Hungary - (BUD)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2017-04-13T20:46:19.120Z",
-      "updated_at": "2025-10-09T20:43:06.950Z",
+      "updated_at": "2025-10-09T21:06:46.167Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -4352,9 +4352,9 @@
     {
       "id": "17x9hc6l3qzd",
       "name": "Riga, Latvia - (RIX)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-03-27T12:54:32.203Z",
-      "updated_at": "2025-10-09T20:43:07.265Z",
+      "updated_at": "2025-10-09T21:06:44.168Z",
       "position": 40,
       "description": null,
       "showcase": false,
@@ -6707,9 +6707,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2025-10-08T09:12:58.296Z",
+      "updated_at": "2025-10-09T21:12:32.190Z",
       "position": 99,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7440,7 +7440,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "zdnvb153j2vn",
+      "name": "Workers cron trigger issue",
+      "status": "identified",
+      "created_at": "2025-10-09T21:12:32.151Z",
+      "updated_at": "2025-10-09T21:12:32.249Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/tl1tpcw6q94h",
+      "started_at": "2025-10-09T21:12:32.140Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8d1kwb08fcfg",
+          "status": "identified",
+          "body": "Cloudflare has identified an issue with a subset of cron triggers not being invoked. We are working to mitigate the impact. More updates to follow shortly.",
+          "incident_id": "zdnvb153j2vn",
+          "created_at": "2025-10-09T21:12:32.246Z",
+          "updated_at": "2025-10-09T21:12:32.246Z",
+          "display_at": "2025-10-09T21:12:32.246Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2025-10-09T21:12:32.190Z",
+          "position": 99,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "ptsxngz7rqhb",
