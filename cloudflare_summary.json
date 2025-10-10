@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-10T20:28:46.641Z"
+    "updated_at": "2025-10-10T20:46:38.968Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3632,9 +3632,9 @@
     {
       "id": "skqbwdvp70c6",
       "name": "Kampala, Uganda - (EBB)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-07-17T09:56:48.732Z",
-      "updated_at": "2025-10-10T20:28:46.637Z",
+      "updated_at": "2025-10-10T20:46:38.962Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -3872,9 +3872,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2025-10-10T07:07:35.950Z",
+      "updated_at": "2025-10-10T20:44:44.106Z",
       "position": 34,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -7441,6 +7441,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "7jv9tr6793pd",
+      "name": "Some Dashboard Features are Unavailable",
+      "status": "investigating",
+      "created_at": "2025-10-10T20:44:44.063Z",
+      "updated_at": "2025-10-10T20:44:44.179Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/ldx26ds1vz9x",
+      "started_at": "2025-10-10T20:44:44.054Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "3dbs4t7q8w4q",
+          "status": "investigating",
+          "body": "Cloudflare is aware of an issue where some dashboard features are missing or users are met with older Dashboard Interfaces. These issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge.",
+          "incident_id": "7jv9tr6793pd",
+          "created_at": "2025-10-10T20:44:44.175Z",
+          "updated_at": "2025-10-10T20:44:44.175Z",
+          "display_at": "2025-10-10T20:44:44.175Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2025-10-10T20:44:44.106Z",
+          "position": 34,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "n10y82qsd3lp",
       "name": "Issues with Rate Limiting Rules",
