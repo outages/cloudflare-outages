@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-12T21:38:11.302Z"
+    "updated_at": "2025-10-12T22:02:26.225Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -4877,9 +4877,9 @@
     {
       "id": "gyx2yygg7lmd",
       "name": "Gateway",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-10T09:28:36.367Z",
-      "updated_at": "2025-09-18T20:50:09.545Z",
+      "updated_at": "2025-10-12T22:02:26.157Z",
       "position": 47,
       "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
       "showcase": false,
@@ -7440,7 +7440,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "vr35bm1cqfbq",
+      "name": "Cloudflare One Application Library Status Not Updating",
+      "status": "investigating",
+      "created_at": "2025-10-12T22:02:26.114Z",
+      "updated_at": "2025-10-12T22:02:26.222Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/vh2gsgzvv9tr",
+      "started_at": "2025-10-12T22:02:26.104Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "xfvn2bj4b7q8",
+          "status": "investigating",
+          "body": "We are currently investigating an issue where some users are observing intermittent inability to update application statuses in Cloudflare One.",
+          "incident_id": "vr35bm1cqfbq",
+          "created_at": "2025-10-12T22:02:26.219Z",
+          "updated_at": "2025-10-12T22:02:26.219Z",
+          "display_at": "2025-10-12T22:02:26.219Z",
+          "affected_components": [
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gyx2yygg7lmd",
+          "name": "Gateway",
+          "status": "degraded_performance",
+          "created_at": "2023-01-10T09:28:36.367Z",
+          "updated_at": "2025-10-12T22:02:26.157Z",
+          "position": 47,
+          "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
+          "showcase": false,
+          "start_date": "2023-01-10",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "7knzbkqdmp5x",
