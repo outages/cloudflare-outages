@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-17T11:11:44.099Z"
+    "updated_at": "2025-10-17T11:35:14.127Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1936,9 +1936,9 @@
     {
       "id": "mvb027gs2881",
       "name": "Kuwait City, Kuwait - (KWI)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-07-06T11:24:13.241Z",
-      "updated_at": "2025-10-17T04:23:14.850Z",
+      "updated_at": "2025-10-17T11:17:33.203Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2071,9 +2071,9 @@
     {
       "id": "tdwwnvf8nv6h",
       "name": "Kigali, Rwanda - (KGL)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-06-17T03:27:21.977Z",
-      "updated_at": "2025-10-17T11:11:44.095Z",
+      "updated_at": "2025-10-17T11:35:14.122Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -5506,9 +5506,9 @@
     {
       "id": "k0mgxrls5y1b",
       "name": "Logs",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2016-03-20T18:49:07.613Z",
-      "updated_at": "2025-09-30T07:56:26.224Z",
+      "updated_at": "2025-10-17T11:32:57.200Z",
       "position": 57,
       "description": "Enterprise Logpull and Logpush services",
       "showcase": false,
@@ -7156,9 +7156,9 @@
     {
       "id": "ffrmxl6mgywd",
       "name": "Da Nang, Vietnam - (DAD)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-04-26T21:34:08.466Z",
-      "updated_at": "2025-10-17T10:00:32.340Z",
+      "updated_at": "2025-10-17T11:23:29.275Z",
       "position": 349,
       "description": null,
       "showcase": false,
@@ -7424,7 +7424,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "19njv6mn9nrz",
+      "name": "Cloudflare Bandwidth Logging Inaccuracy",
+      "status": "identified",
+      "created_at": "2025-10-17T11:32:57.162Z",
+      "updated_at": "2025-10-17T11:32:57.261Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/br061wrm6qfh",
+      "started_at": "2025-10-17T11:32:57.154Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "y7mltv2t7hv6",
+          "status": "identified",
+          "body": "Cloudflare has identified an issue where in some cases, logs are showing higher bandwidth than is actually being used. Content is being delivered correctly, and this only affects reported metrics in logs and dashboards.\nWe are currently working on a resolution and will provide an update as soon as possible.",
+          "incident_id": "19njv6mn9nrz",
+          "created_at": "2025-10-17T11:32:57.258Z",
+          "updated_at": "2025-10-17T11:32:57.258Z",
+          "display_at": "2025-10-17T11:32:57.258Z",
+          "affected_components": [
+            {
+              "code": "k0mgxrls5y1b",
+              "name": "Cloudflare Sites and Services - Logs",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k0mgxrls5y1b",
+          "name": "Logs",
+          "status": "degraded_performance",
+          "created_at": "2016-03-20T18:49:07.613Z",
+          "updated_at": "2025-10-17T11:32:57.200Z",
+          "position": 57,
+          "description": "Enterprise Logpull and Logpush services",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "fft96sw8ydss",
