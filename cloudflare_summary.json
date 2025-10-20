@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-20T22:48:41.248Z"
+    "updated_at": "2025-10-20T23:16:04.822Z"
   },
   "components": [
     {
@@ -688,9 +688,9 @@
     {
       "id": "z1w301p8vhfq",
       "name": "Antananarivo, Madagascar - (TNR)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-11-13T08:36:12.092Z",
-      "updated_at": "2025-10-09T13:52:18.410Z",
+      "updated_at": "2025-10-20T22:53:04.429Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1485,9 +1485,9 @@
     {
       "id": "h3smcpzt8hq6",
       "name": "Dubai, United Arab Emirates - (DXB)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2015-07-23T02:23:36.617Z",
-      "updated_at": "2025-10-20T22:48:41.245Z",
+      "updated_at": "2025-10-20T22:53:05.108Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -1937,7 +1937,7 @@
       "name": "Kuwait City, Kuwait - (KWI)",
       "status": "operational",
       "created_at": "2015-07-06T11:24:13.241Z",
-      "updated_at": "2025-10-20T22:17:43.510Z",
+      "updated_at": "2025-10-20T23:16:04.818Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -3647,7 +3647,7 @@
       "name": "Porto Alegre, Brazil - (POA)",
       "status": "under_maintenance",
       "created_at": "2019-04-01T16:32:01.138Z",
-      "updated_at": "2025-10-13T14:58:21.357Z",
+      "updated_at": "2025-10-20T23:04:12.564Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -3840,9 +3840,9 @@
     {
       "id": "zqlfzq5bzwdq",
       "name": "Dar es Salaam, Tanzania - (DAR)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2024-11-09T08:40:09.983Z",
-      "updated_at": "2025-10-20T20:00:57.145Z",
+      "updated_at": "2025-10-20T23:10:10.574Z",
       "position": 33,
       "description": null,
       "showcase": false,
@@ -7412,16 +7412,36 @@
     {
       "id": "68ff2rnzb6b4",
       "name": "Load Balancing Health Monitor Delays",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2025-10-20T21:29:56.283Z",
-      "updated_at": "2025-10-20T21:29:56.384Z",
-      "monitoring_at": null,
+      "updated_at": "2025-10-20T22:54:52.660Z",
+      "monitoring_at": "2025-10-20T22:54:52.645Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/tjpsq973rcx3",
       "started_at": "2025-10-20T21:29:56.276Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "071dlmd466rs",
+          "status": "monitoring",
+          "body": "We have identified and implemented a fix for this issue. We are currently monitoring the results.",
+          "incident_id": "68ff2rnzb6b4",
+          "created_at": "2025-10-20T22:54:52.645Z",
+          "updated_at": "2025-10-20T22:54:52.645Z",
+          "display_at": "2025-10-20T22:54:52.645Z",
+          "affected_components": [
+            {
+              "code": "8sn2w5kyxfnp",
+              "name": "Cloudflare Sites and Services - Load Balancing and Monitoring",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "yxyh74w9knvp",
           "status": "investigating",
@@ -7558,212 +7578,11 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "3bl17qn99l81",
-      "name": "TNR (Antananarivo) on 2025-10-20",
-      "status": "scheduled",
-      "created_at": "2025-10-15T23:04:44.947Z",
-      "updated_at": "2025-10-20T22:00:24.416Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/hfb8zklsv28g",
-      "started_at": "2025-10-15T23:04:44.941Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "mx3d292t6kwc",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "3bl17qn99l81",
-          "created_at": "2025-10-20T22:00:24.312Z",
-          "updated_at": "2025-10-20T22:00:24.312Z",
-          "display_at": "2025-10-20T22:00:24.312Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "lf3gc2r70thz",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in TNR (Antananarivo) datacenter between 2025-10-20 23:00 and 2025-10-21 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "3bl17qn99l81",
-          "created_at": "2025-10-15T23:04:45.002Z",
-          "updated_at": "2025-10-15T23:04:45.002Z",
-          "display_at": "2025-10-15T23:04:45.002Z",
-          "affected_components": [
-            {
-              "code": "z1w301p8vhfq",
-              "name": "Africa - Antananarivo, Madagascar - (TNR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "z1w301p8vhfq",
-          "name": "Antananarivo, Madagascar - (TNR)",
-          "status": "operational",
-          "created_at": "2019-11-13T08:36:12.092Z",
-          "updated_at": "2025-10-09T13:52:18.410Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "00gpj4s37mz4",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-10-20T23:00:00.000Z",
-      "scheduled_until": "2025-10-21T03:00:00.000Z"
-    },
-    {
-      "id": "7r72d1zk5611",
-      "name": "NBO (Nairobi) on 2025-10-20",
-      "status": "scheduled",
-      "created_at": "2025-10-15T23:04:43.835Z",
-      "updated_at": "2025-10-20T22:00:23.552Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/6z7k58jzn1d3",
-      "started_at": "2025-10-15T23:04:43.828Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "8m70n7rvslmf",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "7r72d1zk5611",
-          "created_at": "2025-10-20T22:00:23.426Z",
-          "updated_at": "2025-10-20T22:00:23.426Z",
-          "display_at": "2025-10-20T22:00:23.426Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "w31hflfcbrj5",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in NBO (Nairobi) datacenter between 2025-10-20 23:00 and 2025-10-21 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "7r72d1zk5611",
-          "created_at": "2025-10-15T23:04:43.882Z",
-          "updated_at": "2025-10-15T23:04:43.882Z",
-          "display_at": "2025-10-15T23:04:43.882Z",
-          "affected_components": [
-            {
-              "code": "ljllh1921z0m",
-              "name": "Africa - Nairobi, Kenya - (NBO)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ljllh1921z0m",
-          "name": "Nairobi, Kenya - (NBO)",
-          "status": "under_maintenance",
-          "created_at": "2020-10-30T04:22:58.259Z",
-          "updated_at": "2025-10-20T12:41:41.427Z",
-          "position": 19,
-          "description": null,
-          "showcase": false,
-          "start_date": "2020-10-30",
-          "group_id": "00gpj4s37mz4",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-10-20T23:00:00.000Z",
-      "scheduled_until": "2025-10-21T03:00:00.000Z"
-    },
-    {
-      "id": "vn3t6m9szks8",
-      "name": "DAR (Dar es Salaam) on 2025-10-20",
-      "status": "scheduled",
-      "created_at": "2025-10-15T23:04:45.289Z",
-      "updated_at": "2025-10-20T22:00:24.657Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/pjk6vbhfd8bh",
-      "started_at": "2025-10-15T23:04:45.282Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "fxxb3k4ndc01",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "vn3t6m9szks8",
-          "created_at": "2025-10-20T22:00:24.545Z",
-          "updated_at": "2025-10-20T22:00:24.545Z",
-          "display_at": "2025-10-20T22:00:24.545Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "mx0v8yk9sg03",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DAR (Dar es Salaam) datacenter between 2025-10-20 23:00 and 2025-10-21 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "vn3t6m9szks8",
-          "created_at": "2025-10-15T23:04:45.360Z",
-          "updated_at": "2025-10-15T23:04:45.360Z",
-          "display_at": "2025-10-15T23:04:45.360Z",
-          "affected_components": [
-            {
-              "code": "cscgtg7yfz1b",
-              "name": "Africa - Dar Es Salaam, Tanzania - (DAR)",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "cscgtg7yfz1b",
-          "name": "Dar Es Salaam, Tanzania - (DAR)",
-          "status": "partial_outage",
-          "created_at": "2019-06-10T05:19:20.533Z",
-          "updated_at": "2025-10-16T18:43:46.356Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "00gpj4s37mz4",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-10-20T23:00:00.000Z",
-      "scheduled_until": "2025-10-21T03:00:00.000Z"
-    },
-    {
       "id": "117z46bz6v58",
       "name": "FRA (Frankfurt) on 2025-10-21",
       "status": "scheduled",
       "created_at": "2025-10-16T23:20:12.650Z",
-      "updated_at": "2025-10-16T23:20:12.715Z",
+      "updated_at": "2025-10-20T23:00:22.709Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7771,6 +7590,19 @@
       "started_at": "2025-10-16T23:20:12.642Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "vxpxwch5ycr9",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "117z46bz6v58",
+          "created_at": "2025-10-20T23:00:22.484Z",
+          "updated_at": "2025-10-20T23:00:22.484Z",
+          "display_at": "2025-10-20T23:00:22.484Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "dyt0zw6fqxnr",
           "status": "scheduled",
@@ -7865,6 +7697,60 @@
       ],
       "scheduled_for": "2025-10-21T01:00:00.000Z",
       "scheduled_until": "2025-10-21T05:00:00.000Z"
+    },
+    {
+      "id": "41y6znjtvxfj",
+      "name": "POA (Porto Alegre) on 2025-10-21",
+      "status": "scheduled",
+      "created_at": "2025-10-20T23:02:31.592Z",
+      "updated_at": "2025-10-20T23:02:31.686Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/099gt5h7xbml",
+      "started_at": "2025-10-20T23:02:31.584Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "c11j3qy99h2s",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in POA (Porto Alegre) datacenter on 2025-10-21 between 05:00 and 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "41y6znjtvxfj",
+          "created_at": "2025-10-20T23:02:31.683Z",
+          "updated_at": "2025-10-20T23:02:31.683Z",
+          "display_at": "2025-10-20T23:02:31.683Z",
+          "affected_components": [
+            {
+              "code": "7k05x28lndzb",
+              "name": "Latin America & the Caribbean - Porto Alegre, Brazil - (POA)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7k05x28lndzb",
+          "name": "Porto Alegre, Brazil - (POA)",
+          "status": "under_maintenance",
+          "created_at": "2019-04-01T16:32:01.138Z",
+          "updated_at": "2025-10-20T23:04:12.564Z",
+          "position": 31,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-21T05:00:00.000Z",
+      "scheduled_until": "2025-10-21T09:00:00.000Z"
     },
     {
       "id": "88j1rhld0844",
@@ -8083,6 +7969,60 @@
       "scheduled_until": "2025-10-21T11:00:00.000Z"
     },
     {
+      "id": "pnfnbtdx676h",
+      "name": "DUS (Düsseldorf) on 2025-10-21",
+      "status": "scheduled",
+      "created_at": "2025-10-07T22:12:21.989Z",
+      "updated_at": "2025-10-07T22:12:22.056Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/r3hlswwc47gk",
+      "started_at": "2025-10-07T22:12:21.981Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "c900wsk9tl5d",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in DUS (Düsseldorf) datacenter on 2025-10-21 between 08:00 and 17:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "pnfnbtdx676h",
+          "created_at": "2025-10-07T22:12:22.053Z",
+          "updated_at": "2025-10-07T22:12:22.053Z",
+          "display_at": "2025-10-07T22:12:22.053Z",
+          "affected_components": [
+            {
+              "code": "7h95kvc52rn6",
+              "name": "Europe - Düsseldorf, Germany - (DUS)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7h95kvc52rn6",
+          "name": "Düsseldorf, Germany - (DUS)",
+          "status": "operational",
+          "created_at": "2015-03-05T01:45:25.931Z",
+          "updated_at": "2024-12-07T21:05:01.466Z",
+          "position": 14,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-21T08:00:00.000Z",
+      "scheduled_until": "2025-10-21T17:00:00.000Z"
+    },
+    {
       "id": "bzcqtpylml27",
       "name": "ORD (Chicago) on 2025-10-21",
       "status": "scheduled",
@@ -8175,60 +8115,6 @@
       ],
       "scheduled_for": "2025-10-21T08:00:00.000Z",
       "scheduled_until": "2025-10-22T09:00:00.000Z"
-    },
-    {
-      "id": "pnfnbtdx676h",
-      "name": "DUS (Düsseldorf) on 2025-10-21",
-      "status": "scheduled",
-      "created_at": "2025-10-07T22:12:21.989Z",
-      "updated_at": "2025-10-07T22:12:22.056Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/r3hlswwc47gk",
-      "started_at": "2025-10-07T22:12:21.981Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "c900wsk9tl5d",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DUS (Düsseldorf) datacenter on 2025-10-21 between 08:00 and 17:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "pnfnbtdx676h",
-          "created_at": "2025-10-07T22:12:22.053Z",
-          "updated_at": "2025-10-07T22:12:22.053Z",
-          "display_at": "2025-10-07T22:12:22.053Z",
-          "affected_components": [
-            {
-              "code": "7h95kvc52rn6",
-              "name": "Europe - Düsseldorf, Germany - (DUS)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7h95kvc52rn6",
-          "name": "Düsseldorf, Germany - (DUS)",
-          "status": "operational",
-          "created_at": "2015-03-05T01:45:25.931Z",
-          "updated_at": "2024-12-07T21:05:01.466Z",
-          "position": 14,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-10-21T08:00:00.000Z",
-      "scheduled_until": "2025-10-21T17:00:00.000Z"
     },
     {
       "id": "c3stkjfwd8v1",
@@ -8578,9 +8464,9 @@
         {
           "id": "h3smcpzt8hq6",
           "name": "Dubai, United Arab Emirates - (DXB)",
-          "status": "partial_outage",
+          "status": "under_maintenance",
           "created_at": "2015-07-23T02:23:36.617Z",
-          "updated_at": "2025-10-20T22:48:41.245Z",
+          "updated_at": "2025-10-20T22:53:05.108Z",
           "position": 9,
           "description": null,
           "showcase": false,
@@ -8649,60 +8535,6 @@
       "scheduled_until": "2025-10-22T03:00:00.000Z"
     },
     {
-      "id": "bkjxbz7vj7n8",
-      "name": "BSR (Basra) on 2025-10-21",
-      "status": "scheduled",
-      "created_at": "2025-10-17T06:38:12.028Z",
-      "updated_at": "2025-10-17T06:38:12.100Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/564ydkrr1ccg",
-      "started_at": "2025-10-17T06:38:12.020Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "q6b3q0h584jc",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BSR (Basra) datacenter between 2025-10-21 23:00 and 2025-10-22 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "bkjxbz7vj7n8",
-          "created_at": "2025-10-17T06:38:12.097Z",
-          "updated_at": "2025-10-17T06:38:12.097Z",
-          "display_at": "2025-10-17T06:38:12.097Z",
-          "affected_components": [
-            {
-              "code": "qtcxyrxkt6tm",
-              "name": "Middle East - Basra, Iraq - (BSR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qtcxyrxkt6tm",
-          "name": "Basra, Iraq - (BSR)",
-          "status": "operational",
-          "created_at": "2022-05-11T15:05:18.724Z",
-          "updated_at": "2025-10-16T12:37:30.765Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-11",
-          "group_id": "m3639x4txd08",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-10-21T23:00:00.000Z",
-      "scheduled_until": "2025-10-22T03:00:00.000Z"
-    },
-    {
       "id": "k72qksxd4l5n",
       "name": "ADB (Izmir) on 2025-10-21",
       "status": "scheduled",
@@ -8748,6 +8580,60 @@
           "showcase": false,
           "start_date": "2022-12-27",
           "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-21T23:00:00.000Z",
+      "scheduled_until": "2025-10-22T03:00:00.000Z"
+    },
+    {
+      "id": "bkjxbz7vj7n8",
+      "name": "BSR (Basra) on 2025-10-21",
+      "status": "scheduled",
+      "created_at": "2025-10-17T06:38:12.028Z",
+      "updated_at": "2025-10-17T06:38:12.100Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/564ydkrr1ccg",
+      "started_at": "2025-10-17T06:38:12.020Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "q6b3q0h584jc",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in BSR (Basra) datacenter between 2025-10-21 23:00 and 2025-10-22 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "bkjxbz7vj7n8",
+          "created_at": "2025-10-17T06:38:12.097Z",
+          "updated_at": "2025-10-17T06:38:12.097Z",
+          "display_at": "2025-10-17T06:38:12.097Z",
+          "affected_components": [
+            {
+              "code": "qtcxyrxkt6tm",
+              "name": "Middle East - Basra, Iraq - (BSR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qtcxyrxkt6tm",
+          "name": "Basra, Iraq - (BSR)",
+          "status": "operational",
+          "created_at": "2022-05-11T15:05:18.724Z",
+          "updated_at": "2025-10-16T12:37:30.765Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-11",
+          "group_id": "m3639x4txd08",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
@@ -8852,6 +8738,60 @@
           "created_at": "2014-10-27T20:30:01.380Z",
           "updated_at": "2025-08-21T19:48:34.659Z",
           "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-22T06:00:00.000Z",
+      "scheduled_until": "2025-10-22T10:00:00.000Z"
+    },
+    {
+      "id": "9bb3spjfzyf0",
+      "name": "MIA (Miami) on 2025-10-22",
+      "status": "scheduled",
+      "created_at": "2025-10-17T16:57:07.922Z",
+      "updated_at": "2025-10-17T16:57:07.998Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/0lzfrbhl3pff",
+      "started_at": "2025-10-17T16:57:07.912Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "k6scnw21lv00",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MIA (Miami) datacenter on 2025-10-22 between 06:00 and 10:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "9bb3spjfzyf0",
+          "created_at": "2025-10-17T16:57:07.994Z",
+          "updated_at": "2025-10-17T16:57:07.994Z",
+          "display_at": "2025-10-17T16:57:07.994Z",
+          "affected_components": [
+            {
+              "code": "mvbjk0vw3krv",
+              "name": "North America - Miami, FL, United States - (MIA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mvbjk0vw3krv",
+          "name": "Miami, FL, United States - (MIA)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:31:43.401Z",
+          "updated_at": "2025-05-15T00:51:25.574Z",
+          "position": 24,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -8973,30 +8913,30 @@
       "scheduled_until": "2025-10-22T12:00:00.000Z"
     },
     {
-      "id": "9bb3spjfzyf0",
-      "name": "MIA (Miami) on 2025-10-22",
+      "id": "1gg3kww4y661",
+      "name": "ORD (Chicago) on 2025-10-22",
       "status": "scheduled",
-      "created_at": "2025-10-17T16:57:07.922Z",
-      "updated_at": "2025-10-17T16:57:07.998Z",
+      "created_at": "2025-10-17T16:03:20.274Z",
+      "updated_at": "2025-10-17T16:03:20.338Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/0lzfrbhl3pff",
-      "started_at": "2025-10-17T16:57:07.912Z",
+      "shortlink": "https://stspg.io/j417x5v772t3",
+      "started_at": "2025-10-17T16:03:20.266Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "k6scnw21lv00",
+          "id": "8nbnfwgpv9lj",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MIA (Miami) datacenter on 2025-10-22 between 06:00 and 10:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "9bb3spjfzyf0",
-          "created_at": "2025-10-17T16:57:07.994Z",
-          "updated_at": "2025-10-17T16:57:07.994Z",
-          "display_at": "2025-10-17T16:57:07.994Z",
+          "body": "We will be performing scheduled maintenance in ORD (Chicago) datacenter on 2025-10-22 between 07:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "1gg3kww4y661",
+          "created_at": "2025-10-17T16:03:20.335Z",
+          "updated_at": "2025-10-17T16:03:20.335Z",
+          "display_at": "2025-10-17T16:03:20.335Z",
           "affected_components": [
             {
-              "code": "mvbjk0vw3krv",
-              "name": "North America - Miami, FL, United States - (MIA)",
+              "code": "z9v8znl25w0f",
+              "name": "North America - Chicago, IL, United States - (ORD)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -9008,12 +8948,12 @@
       ],
       "components": [
         {
-          "id": "mvbjk0vw3krv",
-          "name": "Miami, FL, United States - (MIA)",
+          "id": "z9v8znl25w0f",
+          "name": "Chicago, IL, United States - (ORD)",
           "status": "operational",
-          "created_at": "2014-10-27T20:31:43.401Z",
-          "updated_at": "2025-05-15T00:51:25.574Z",
-          "position": 24,
+          "created_at": "2014-10-27T19:57:04.863Z",
+          "updated_at": "2025-09-03T02:00:22.818Z",
+          "position": 9,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -9023,8 +8963,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-10-22T06:00:00.000Z",
-      "scheduled_until": "2025-10-22T10:00:00.000Z"
+      "scheduled_for": "2025-10-22T07:00:00.000Z",
+      "scheduled_until": "2025-10-22T11:00:00.000Z"
     },
     {
       "id": "8xn62pjf08ms",
@@ -9068,60 +9008,6 @@
           "created_at": "2014-10-27T19:52:05.585Z",
           "updated_at": "2025-01-16T08:26:55.452Z",
           "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-10-22T07:00:00.000Z",
-      "scheduled_until": "2025-10-22T11:00:00.000Z"
-    },
-    {
-      "id": "1gg3kww4y661",
-      "name": "ORD (Chicago) on 2025-10-22",
-      "status": "scheduled",
-      "created_at": "2025-10-17T16:03:20.274Z",
-      "updated_at": "2025-10-17T16:03:20.338Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/j417x5v772t3",
-      "started_at": "2025-10-17T16:03:20.266Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "8nbnfwgpv9lj",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ORD (Chicago) datacenter on 2025-10-22 between 07:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "1gg3kww4y661",
-          "created_at": "2025-10-17T16:03:20.335Z",
-          "updated_at": "2025-10-17T16:03:20.335Z",
-          "display_at": "2025-10-17T16:03:20.335Z",
-          "affected_components": [
-            {
-              "code": "z9v8znl25w0f",
-              "name": "North America - Chicago, IL, United States - (ORD)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "z9v8znl25w0f",
-          "name": "Chicago, IL, United States - (ORD)",
-          "status": "operational",
-          "created_at": "2014-10-27T19:57:04.863Z",
-          "updated_at": "2025-09-03T02:00:22.818Z",
-          "position": 9,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -9567,60 +9453,6 @@
       "scheduled_until": "2025-10-23T13:00:00.000Z"
     },
     {
-      "id": "v7cwyv7mr350",
-      "name": "SYD (Sydney) on 2025-10-23",
-      "status": "scheduled",
-      "created_at": "2025-10-20T20:34:13.080Z",
-      "updated_at": "2025-10-20T20:34:13.143Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/l5hvky2clyys",
-      "started_at": "2025-10-20T20:34:13.072Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "fvb36fntt7s2",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SYD (Sydney) datacenter on 2025-10-23 between 15:00 and 19:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "v7cwyv7mr350",
-          "created_at": "2025-10-20T20:34:13.140Z",
-          "updated_at": "2025-10-20T20:34:13.140Z",
-          "display_at": "2025-10-20T20:34:13.140Z",
-          "affected_components": [
-            {
-              "code": "fvqfrchfl8yc",
-              "name": "Oceania - Sydney, NSW, Australia - (SYD)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "fvqfrchfl8yc",
-          "name": "Sydney, NSW, Australia - (SYD)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:45:36.735Z",
-          "updated_at": "2025-03-05T21:24:17.414Z",
-          "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "q6qm6fvkst4h",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-10-23T15:00:00.000Z",
-      "scheduled_until": "2025-10-23T19:00:00.000Z"
-    },
-    {
       "id": "7g2ltdt4wdwq",
       "name": "MEL (Melbourne) on 2025-10-23",
       "status": "scheduled",
@@ -9673,6 +9505,60 @@
       ],
       "scheduled_for": "2025-10-23T15:00:00.000Z",
       "scheduled_until": "2025-10-23T23:00:00.000Z"
+    },
+    {
+      "id": "v7cwyv7mr350",
+      "name": "SYD (Sydney) on 2025-10-23",
+      "status": "scheduled",
+      "created_at": "2025-10-20T20:34:13.080Z",
+      "updated_at": "2025-10-20T20:34:13.143Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/l5hvky2clyys",
+      "started_at": "2025-10-20T20:34:13.072Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "fvb36fntt7s2",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SYD (Sydney) datacenter on 2025-10-23 between 15:00 and 19:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "v7cwyv7mr350",
+          "created_at": "2025-10-20T20:34:13.140Z",
+          "updated_at": "2025-10-20T20:34:13.140Z",
+          "display_at": "2025-10-20T20:34:13.140Z",
+          "affected_components": [
+            {
+              "code": "fvqfrchfl8yc",
+              "name": "Oceania - Sydney, NSW, Australia - (SYD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "fvqfrchfl8yc",
+          "name": "Sydney, NSW, Australia - (SYD)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:45:36.735Z",
+          "updated_at": "2025-03-05T21:24:17.414Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "q6qm6fvkst4h",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-23T15:00:00.000Z",
+      "scheduled_until": "2025-10-23T19:00:00.000Z"
     },
     {
       "id": "43gwqx9xymvn",
@@ -9783,60 +9669,6 @@
       "scheduled_until": "2025-10-24T04:00:00.000Z"
     },
     {
-      "id": "mqlb1qwzwhl9",
-      "name": "EWR (Newark) on 2025-10-24",
-      "status": "scheduled",
-      "created_at": "2025-10-17T16:03:10.804Z",
-      "updated_at": "2025-10-17T16:03:10.879Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/ylhbl1ksclr3",
-      "started_at": "2025-10-17T16:03:10.795Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "cct371hzv3n9",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in EWR (Newark) datacenter on 2025-10-24 between 06:00 and 10:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "mqlb1qwzwhl9",
-          "created_at": "2025-10-17T16:03:10.876Z",
-          "updated_at": "2025-10-17T16:03:10.876Z",
-          "display_at": "2025-10-17T16:03:10.876Z",
-          "affected_components": [
-            {
-              "code": "grpnztl4pd46",
-              "name": "North America - Newark, NJ, United States - (EWR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "grpnztl4pd46",
-          "name": "Newark, NJ, United States - (EWR)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:30:34.850Z",
-          "updated_at": "2025-02-15T23:45:46.728Z",
-          "position": 29,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-10-24T06:00:00.000Z",
-      "scheduled_until": "2025-10-24T10:00:00.000Z"
-    },
-    {
       "id": "1v7jbc0ysh09",
       "name": "IAD (Ashburn) on 2025-10-24",
       "status": "scheduled",
@@ -9878,6 +9710,60 @@
           "created_at": "2014-10-27T20:30:01.380Z",
           "updated_at": "2025-08-21T19:48:34.659Z",
           "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-24T06:00:00.000Z",
+      "scheduled_until": "2025-10-24T10:00:00.000Z"
+    },
+    {
+      "id": "mqlb1qwzwhl9",
+      "name": "EWR (Newark) on 2025-10-24",
+      "status": "scheduled",
+      "created_at": "2025-10-17T16:03:10.804Z",
+      "updated_at": "2025-10-17T16:03:10.879Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/ylhbl1ksclr3",
+      "started_at": "2025-10-17T16:03:10.795Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "cct371hzv3n9",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in EWR (Newark) datacenter on 2025-10-24 between 06:00 and 10:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "mqlb1qwzwhl9",
+          "created_at": "2025-10-17T16:03:10.876Z",
+          "updated_at": "2025-10-17T16:03:10.876Z",
+          "display_at": "2025-10-17T16:03:10.876Z",
+          "affected_components": [
+            {
+              "code": "grpnztl4pd46",
+              "name": "North America - Newark, NJ, United States - (EWR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "grpnztl4pd46",
+          "name": "Newark, NJ, United States - (EWR)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:30:34.850Z",
+          "updated_at": "2025-02-15T23:45:46.728Z",
+          "position": 29,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -10375,6 +10261,354 @@
       ],
       "scheduled_for": "2025-10-30T06:00:00.000Z",
       "scheduled_until": "2025-10-30T10:00:00.000Z"
+    },
+    {
+      "id": "3zy43cf6p62n",
+      "name": "SJC (San Jose) on 2025-10-30",
+      "status": "scheduled",
+      "created_at": "2025-10-14T15:46:35.795Z",
+      "updated_at": "2025-10-14T15:46:35.851Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/t9zjbg29q9qz",
+      "started_at": "2025-10-14T15:46:35.790Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8ppdsd1jhj96",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SJC (San Jose) datacenter between 2025-10-30 08:00 and 2025-10-31 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "3zy43cf6p62n",
+          "created_at": "2025-10-14T15:46:35.849Z",
+          "updated_at": "2025-10-14T15:46:35.849Z",
+          "display_at": "2025-10-14T15:46:35.849Z",
+          "affected_components": [
+            {
+              "code": "4xvd68d7k70c",
+              "name": "North America - San Jose, CA, United States - (SJC)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4xvd68d7k70c",
+          "name": "San Jose, CA, United States - (SJC)",
+          "status": "operational",
+          "created_at": "2014-10-16T04:33:22.992Z",
+          "updated_at": "2025-07-02T18:37:23.427Z",
+          "position": 42,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-30T08:00:00.000Z",
+      "scheduled_until": "2025-10-31T09:00:00.000Z"
+    },
+    {
+      "id": "22dbv9d4j6g1",
+      "name": "IAD (Ashburn) on 2025-11-03",
+      "status": "scheduled",
+      "created_at": "2025-10-13T17:14:31.173Z",
+      "updated_at": "2025-10-13T17:14:31.242Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/6710mfrkhzj1",
+      "started_at": "2025-10-13T17:14:31.165Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "k55p08h78yps",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in IAD (Ashburn) datacenter between 2025-11-03 08:00 and 2025-11-04 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "22dbv9d4j6g1",
+          "created_at": "2025-10-13T17:14:31.238Z",
+          "updated_at": "2025-10-13T17:14:31.238Z",
+          "display_at": "2025-10-13T17:14:31.238Z",
+          "affected_components": [
+            {
+              "code": "3t0npclljyyg",
+              "name": "North America - Ashburn, VA, United States - (IAD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3t0npclljyyg",
+          "name": "Ashburn, VA, United States - (IAD)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:30:01.380Z",
+          "updated_at": "2025-08-21T19:48:34.659Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-11-03T08:00:00.000Z",
+      "scheduled_until": "2025-11-04T09:00:00.000Z"
+    },
+    {
+      "id": "3bl17qn99l81",
+      "name": "TNR (Antananarivo) on 2025-10-20",
+      "status": "in_progress",
+      "created_at": "2025-10-15T23:04:44.947Z",
+      "updated_at": "2025-10-20T23:01:21.422Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/hfb8zklsv28g",
+      "started_at": "2025-10-15T23:04:44.941Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "k68wtqf2z5mf",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "3bl17qn99l81",
+          "created_at": "2025-10-20T23:01:21.419Z",
+          "updated_at": "2025-10-20T23:01:21.419Z",
+          "display_at": "2025-10-20T23:01:21.419Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "mx3d292t6kwc",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "3bl17qn99l81",
+          "created_at": "2025-10-20T22:00:24.312Z",
+          "updated_at": "2025-10-20T22:00:24.312Z",
+          "display_at": "2025-10-20T22:00:24.312Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "lf3gc2r70thz",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in TNR (Antananarivo) datacenter between 2025-10-20 23:00 and 2025-10-21 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "3bl17qn99l81",
+          "created_at": "2025-10-15T23:04:45.002Z",
+          "updated_at": "2025-10-15T23:04:45.002Z",
+          "display_at": "2025-10-15T23:04:45.002Z",
+          "affected_components": [
+            {
+              "code": "z1w301p8vhfq",
+              "name": "Africa - Antananarivo, Madagascar - (TNR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "z1w301p8vhfq",
+          "name": "Antananarivo, Madagascar - (TNR)",
+          "status": "partial_outage",
+          "created_at": "2019-11-13T08:36:12.092Z",
+          "updated_at": "2025-10-20T22:53:04.429Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "00gpj4s37mz4",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-20T23:00:00.000Z",
+      "scheduled_until": "2025-10-21T03:00:00.000Z"
+    },
+    {
+      "id": "vn3t6m9szks8",
+      "name": "DAR (Dar es Salaam) on 2025-10-20",
+      "status": "in_progress",
+      "created_at": "2025-10-15T23:04:45.289Z",
+      "updated_at": "2025-10-20T23:01:21.162Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/pjk6vbhfd8bh",
+      "started_at": "2025-10-15T23:04:45.282Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "qjsybhbrkz4j",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "vn3t6m9szks8",
+          "created_at": "2025-10-20T23:01:21.158Z",
+          "updated_at": "2025-10-20T23:01:21.158Z",
+          "display_at": "2025-10-20T23:01:21.158Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "fxxb3k4ndc01",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "vn3t6m9szks8",
+          "created_at": "2025-10-20T22:00:24.545Z",
+          "updated_at": "2025-10-20T22:00:24.545Z",
+          "display_at": "2025-10-20T22:00:24.545Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "mx0v8yk9sg03",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in DAR (Dar es Salaam) datacenter between 2025-10-20 23:00 and 2025-10-21 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "vn3t6m9szks8",
+          "created_at": "2025-10-15T23:04:45.360Z",
+          "updated_at": "2025-10-15T23:04:45.360Z",
+          "display_at": "2025-10-15T23:04:45.360Z",
+          "affected_components": [
+            {
+              "code": "cscgtg7yfz1b",
+              "name": "Africa - Dar Es Salaam, Tanzania - (DAR)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "cscgtg7yfz1b",
+          "name": "Dar Es Salaam, Tanzania - (DAR)",
+          "status": "partial_outage",
+          "created_at": "2019-06-10T05:19:20.533Z",
+          "updated_at": "2025-10-16T18:43:46.356Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "00gpj4s37mz4",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-20T23:00:00.000Z",
+      "scheduled_until": "2025-10-21T03:00:00.000Z"
+    },
+    {
+      "id": "7r72d1zk5611",
+      "name": "NBO (Nairobi) on 2025-10-20",
+      "status": "in_progress",
+      "created_at": "2025-10-15T23:04:43.835Z",
+      "updated_at": "2025-10-20T23:00:21.250Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/6z7k58jzn1d3",
+      "started_at": "2025-10-15T23:04:43.828Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "sdd3c3qtrf8h",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "7r72d1zk5611",
+          "created_at": "2025-10-20T23:00:21.246Z",
+          "updated_at": "2025-10-20T23:00:21.246Z",
+          "display_at": "2025-10-20T23:00:21.246Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "8m70n7rvslmf",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "7r72d1zk5611",
+          "created_at": "2025-10-20T22:00:23.426Z",
+          "updated_at": "2025-10-20T22:00:23.426Z",
+          "display_at": "2025-10-20T22:00:23.426Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "w31hflfcbrj5",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in NBO (Nairobi) datacenter between 2025-10-20 23:00 and 2025-10-21 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "7r72d1zk5611",
+          "created_at": "2025-10-15T23:04:43.882Z",
+          "updated_at": "2025-10-15T23:04:43.882Z",
+          "display_at": "2025-10-15T23:04:43.882Z",
+          "affected_components": [
+            {
+              "code": "ljllh1921z0m",
+              "name": "Africa - Nairobi, Kenya - (NBO)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ljllh1921z0m",
+          "name": "Nairobi, Kenya - (NBO)",
+          "status": "under_maintenance",
+          "created_at": "2020-10-30T04:22:58.259Z",
+          "updated_at": "2025-10-20T12:41:41.427Z",
+          "position": 19,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-10-30",
+          "group_id": "00gpj4s37mz4",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-20T23:00:00.000Z",
+      "scheduled_until": "2025-10-21T03:00:00.000Z"
     },
     {
       "id": "7q1b5t8fb6b3",
