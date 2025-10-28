@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-28T16:38:50.375Z"
+    "updated_at": "2025-10-28T17:19:10.943Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2056,9 +2056,9 @@
     {
       "id": "tdwwnvf8nv6h",
       "name": "Kigali, Rwanda - (KGL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-06-17T03:27:21.977Z",
-      "updated_at": "2025-10-27T18:17:22.153Z",
+      "updated_at": "2025-10-28T17:19:10.939Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -2358,7 +2358,7 @@
       "name": "Maputo, Mozambique - (MPM)",
       "status": "partial_outage",
       "created_at": "2019-06-27T06:54:32.139Z",
-      "updated_at": "2025-08-04T17:38:01.266Z",
+      "updated_at": "2025-10-28T17:08:54.946Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -4891,9 +4891,9 @@
     {
       "id": "gyx2yygg7lmd",
       "name": "Gateway",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-10T09:28:36.367Z",
-      "updated_at": "2025-10-21T15:13:13.335Z",
+      "updated_at": "2025-10-28T16:53:05.015Z",
       "position": 48,
       "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
       "showcase": false,
@@ -7426,6 +7426,59 @@
   ],
   "incidents": [
     {
+      "id": "09pp8t19kqpk",
+      "name": "Connectivity Issues when using Zero Trust Gateway Egress and Network Policies",
+      "status": "identified",
+      "created_at": "2025-10-28T16:53:04.972Z",
+      "updated_at": "2025-10-28T16:53:05.082Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/761dpm5spzlk",
+      "started_at": "2025-10-28T16:53:04.962Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "vzj4k763qwnb",
+          "status": "identified",
+          "body": "Cloudflare has identified an issue causing connectivity problems for a subset of Cloudflare One customers when the traffic requires Zero Trust Gateway Egress (specifically with Hostname selector) or Network policies. We are currently working on applying a fix.",
+          "incident_id": "09pp8t19kqpk",
+          "created_at": "2025-10-28T16:53:05.078Z",
+          "updated_at": "2025-10-28T16:53:05.078Z",
+          "display_at": "2025-10-28T16:53:05.078Z",
+          "affected_components": [
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gyx2yygg7lmd",
+          "name": "Gateway",
+          "status": "degraded_performance",
+          "created_at": "2023-01-10T09:28:36.367Z",
+          "updated_at": "2025-10-28T16:53:05.015Z",
+          "position": 48,
+          "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
+          "showcase": false,
+          "start_date": "2023-01-10",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "yl5svj5gsqz9",
       "name": "Cloudflare for Saas Custom Hostname search issue",
       "status": "identified",
@@ -7558,7 +7611,7 @@
       "name": "CEB (Cebu) on 2025-10-28",
       "status": "scheduled",
       "created_at": "2025-10-27T17:30:27.681Z",
-      "updated_at": "2025-10-27T17:30:27.745Z",
+      "updated_at": "2025-10-28T17:00:24.224Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7566,6 +7619,19 @@
       "started_at": "2025-10-27T17:30:27.675Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "jz8mdn577stb",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "d9bg3trfszhn",
+          "created_at": "2025-10-28T17:00:24.103Z",
+          "updated_at": "2025-10-28T17:00:24.103Z",
+          "display_at": "2025-10-28T17:00:24.103Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "wxpw4k8bbkr5",
           "status": "scheduled",
@@ -7932,6 +7998,114 @@
       "scheduled_until": "2025-10-29T06:00:00.000Z"
     },
     {
+      "id": "ccclndyh2c3m",
+      "name": "IAD (Ashburn) on 2025-10-29",
+      "status": "scheduled",
+      "created_at": "2025-10-17T16:03:18.433Z",
+      "updated_at": "2025-10-17T16:03:18.493Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/trpytfrpqckr",
+      "started_at": "2025-10-17T16:03:18.426Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "0t282f9zt1dc",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in IAD (Ashburn) datacenter on 2025-10-29 between 06:00 and 10:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "ccclndyh2c3m",
+          "created_at": "2025-10-17T16:03:18.490Z",
+          "updated_at": "2025-10-17T16:03:18.490Z",
+          "display_at": "2025-10-17T16:03:18.490Z",
+          "affected_components": [
+            {
+              "code": "3t0npclljyyg",
+              "name": "North America - Ashburn, VA, United States - (IAD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3t0npclljyyg",
+          "name": "Ashburn, VA, United States - (IAD)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:30:01.380Z",
+          "updated_at": "2025-08-21T19:48:34.659Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-29T06:00:00.000Z",
+      "scheduled_until": "2025-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "b5dvhfqd3b49",
+      "name": "CMH (Columbus) on 2025-10-29",
+      "status": "scheduled",
+      "created_at": "2025-10-28T11:16:43.395Z",
+      "updated_at": "2025-10-28T11:16:43.465Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/k5xh2j5qwvlp",
+      "started_at": "2025-10-28T11:16:43.386Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "jr3tdfk1fcs2",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in CMH (Columbus) datacenter on 2025-10-29 between 06:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "b5dvhfqd3b49",
+          "created_at": "2025-10-28T11:16:43.462Z",
+          "updated_at": "2025-10-28T11:16:43.462Z",
+          "display_at": "2025-10-28T11:16:43.462Z",
+          "affected_components": [
+            {
+              "code": "rq16k3q6yz17",
+              "name": "North America - Columbus, OH, United States - (CMH)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rq16k3q6yz17",
+          "name": "Columbus, OH, United States - (CMH)",
+          "status": "operational",
+          "created_at": "2019-01-23T08:27:40.920Z",
+          "updated_at": "2025-06-16T08:12:56.799Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-29T06:00:00.000Z",
+      "scheduled_until": "2025-10-29T11:00:00.000Z"
+    },
+    {
       "id": "pllbz3nnxk1l",
       "name": "EWR (Newark) on 2025-10-29",
       "status": "scheduled",
@@ -8004,114 +8178,6 @@
       ],
       "scheduled_for": "2025-10-29T06:00:00.000Z",
       "scheduled_until": "2025-10-29T11:00:00.000Z"
-    },
-    {
-      "id": "b5dvhfqd3b49",
-      "name": "CMH (Columbus) on 2025-10-29",
-      "status": "scheduled",
-      "created_at": "2025-10-28T11:16:43.395Z",
-      "updated_at": "2025-10-28T11:16:43.465Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/k5xh2j5qwvlp",
-      "started_at": "2025-10-28T11:16:43.386Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "jr3tdfk1fcs2",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in CMH (Columbus) datacenter on 2025-10-29 between 06:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "b5dvhfqd3b49",
-          "created_at": "2025-10-28T11:16:43.462Z",
-          "updated_at": "2025-10-28T11:16:43.462Z",
-          "display_at": "2025-10-28T11:16:43.462Z",
-          "affected_components": [
-            {
-              "code": "rq16k3q6yz17",
-              "name": "North America - Columbus, OH, United States - (CMH)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rq16k3q6yz17",
-          "name": "Columbus, OH, United States - (CMH)",
-          "status": "operational",
-          "created_at": "2019-01-23T08:27:40.920Z",
-          "updated_at": "2025-06-16T08:12:56.799Z",
-          "position": 10,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-10-29T06:00:00.000Z",
-      "scheduled_until": "2025-10-29T11:00:00.000Z"
-    },
-    {
-      "id": "ccclndyh2c3m",
-      "name": "IAD (Ashburn) on 2025-10-29",
-      "status": "scheduled",
-      "created_at": "2025-10-17T16:03:18.433Z",
-      "updated_at": "2025-10-17T16:03:18.493Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/trpytfrpqckr",
-      "started_at": "2025-10-17T16:03:18.426Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "0t282f9zt1dc",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in IAD (Ashburn) datacenter on 2025-10-29 between 06:00 and 10:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "ccclndyh2c3m",
-          "created_at": "2025-10-17T16:03:18.490Z",
-          "updated_at": "2025-10-17T16:03:18.490Z",
-          "display_at": "2025-10-17T16:03:18.490Z",
-          "affected_components": [
-            {
-              "code": "3t0npclljyyg",
-              "name": "North America - Ashburn, VA, United States - (IAD)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "3t0npclljyyg",
-          "name": "Ashburn, VA, United States - (IAD)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:30:01.380Z",
-          "updated_at": "2025-08-21T19:48:34.659Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-10-29T06:00:00.000Z",
-      "scheduled_until": "2025-10-29T10:00:00.000Z"
     },
     {
       "id": "dk2d5flb1sr5",
