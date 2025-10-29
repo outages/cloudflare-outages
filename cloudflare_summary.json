@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-29T13:30:22.259Z"
+    "updated_at": "2025-10-29T13:49:59.258Z"
   },
   "components": [
     {
@@ -838,9 +838,9 @@
     {
       "id": "5wtvzd626rd8",
       "name": "Bangkok, Thailand - (BKK)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-04-21T05:37:43.134Z",
-      "updated_at": "2025-10-28T23:16:22.422Z",
+      "updated_at": "2025-10-29T13:49:59.254Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2253,7 +2253,7 @@
       "name": "Dhaka, Bangladesh - (DAC)",
       "status": "under_maintenance",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2025-10-29T12:38:02.057Z",
+      "updated_at": "2025-10-29T13:49:18.479Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -7424,7 +7424,82 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "fl1t394ymlyp",
+      "name": "Cloudflare Zero Trust: High latency for zero trust users connected to our Copenhagen PoP",
+      "status": "investigating",
+      "created_at": "2025-10-29T13:35:52.439Z",
+      "updated_at": "2025-10-29T13:38:40.934Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/cnq0khbb8qcx",
+      "started_at": "2025-10-29T13:35:52.427Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "1bp9wl45tvvb",
+          "status": "investigating",
+          "body": "Cloudflare is currently investigating elevated latency impacting Zero Trust users connected to our Copenhagen PoP (CPH01). Other services connected through this PoP may also be experiencing degraded performance.\n\nWe are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "fl1t394ymlyp",
+          "created_at": "2025-10-29T13:35:52.506Z",
+          "updated_at": "2025-10-29T13:35:52.506Z",
+          "display_at": "2025-10-29T13:35:52.506Z",
+          "affected_components": [
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "gt279m9y3f8q",
+              "name": "Europe - Copenhagen, Denmark - (CPH)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gt279m9y3f8q",
+          "name": "Copenhagen, Denmark - (CPH)",
+          "status": "operational",
+          "created_at": "2015-11-03T02:10:58.762Z",
+          "updated_at": "2025-10-24T03:01:04.301Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "kf0ktv29xrfy",
+          "name": "Zero Trust",
+          "status": "operational",
+          "created_at": "2021-04-08T15:53:09.058Z",
+          "updated_at": "2025-10-22T09:26:26.222Z",
+          "position": 111,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "tdf3krmvltfb",
@@ -8741,7 +8816,7 @@
           "name": "Dhaka, Bangladesh - (DAC)",
           "status": "under_maintenance",
           "created_at": "2019-12-17T22:56:25.827Z",
-          "updated_at": "2025-10-29T12:38:02.057Z",
+          "updated_at": "2025-10-29T13:49:18.479Z",
           "position": 16,
           "description": null,
           "showcase": false,
