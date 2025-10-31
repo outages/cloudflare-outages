@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-31T19:20:27.093Z"
+    "updated_at": "2025-10-31T19:48:49.626Z"
   },
   "components": [
     {
@@ -2866,9 +2866,9 @@
     {
       "id": "fbvx0hxhhdj0",
       "name": "CDN Cache Purge",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-31T16:54:52.510Z",
-      "updated_at": "2025-10-31T18:51:25.357Z",
+      "updated_at": "2025-10-31T19:48:49.557Z",
       "position": 22,
       "description": "CDN single file cache purging service",
       "showcase": false,
@@ -2971,9 +2971,9 @@
     {
       "id": "68bsmrhm5xgq",
       "name": "Joinville, Brazil - (JOI)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-02-11T10:50:07.944Z",
-      "updated_at": "2025-10-31T18:56:21.833Z",
+      "updated_at": "2025-10-31T19:40:36.069Z",
       "position": 23,
       "description": null,
       "showcase": false,
@@ -4411,9 +4411,9 @@
     {
       "id": "3hdcvfzv4qbc",
       "name": "São José do Rio Preto, Brazil - (SJP)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-09-21T17:42:47.447Z",
-      "updated_at": "2025-10-31T19:04:59.200Z",
+      "updated_at": "2025-10-31T19:40:34.344Z",
       "position": 41,
       "description": null,
       "showcase": false,
@@ -7425,241 +7425,6 @@
     }
   ],
   "incidents": [
-    {
-      "id": "68gxvkzxmgqg",
-      "name": "CDN Single-File Cache Purge Delays In Some Colos",
-      "status": "monitoring",
-      "created_at": "2025-10-31T18:51:25.303Z",
-      "updated_at": "2025-10-31T19:16:34.061Z",
-      "monitoring_at": "2025-10-31T19:16:34.040Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/jsc57rfvkkc2",
-      "started_at": "2025-10-31T18:51:25.281Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "05wrfhkkz4f2",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are currently monitoring the results.",
-          "incident_id": "68gxvkzxmgqg",
-          "created_at": "2025-10-31T19:16:34.040Z",
-          "updated_at": "2025-10-31T19:16:34.040Z",
-          "display_at": "2025-10-31T19:16:34.040Z",
-          "affected_components": [
-            {
-              "code": "fbvx0hxhhdj0",
-              "name": "Cloudflare Sites and Services - CDN Cache Purge",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "bbx7ndl66dmp",
-              "name": "North America - Detroit, MI, United States - (DTW)",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "3cg9wbk5hzg4",
-              "name": "North America - Salt Lake City, UT, United States - (SLC)",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "5dhjdhgdqjzd",
-              "name": "North America - San Antonio, United States - (SAT)",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "qshn45g5q59m",
-              "name": "Europe - Lisbon, Portugal - (LIS)",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "vhpdc0y3qty9",
-              "name": "Asia - Bangalore, India - (BLR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "hr78s04g1r5b",
-              "name": "Asia - Kuala Lumpur, Malaysia - (KUL)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "b1v21qlm03k4",
-          "status": "identified",
-          "body": "Cloudflare single-file cache purging called via the API is running behind in a subset of colos. As a result some customers may be observing stale content for requests to those facilities.\n\nWe are working to eliminate this issue. Until it is resolved, use the Purge All feature, which may cause a surge in traffic to your origin server.",
-          "incident_id": "68gxvkzxmgqg",
-          "created_at": "2025-10-31T18:51:25.420Z",
-          "updated_at": "2025-10-31T18:51:25.420Z",
-          "display_at": "2025-10-31T18:51:25.420Z",
-          "affected_components": [
-            {
-              "code": "fbvx0hxhhdj0",
-              "name": "Cloudflare Sites and Services - CDN Cache Purge",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "bbx7ndl66dmp",
-              "name": "North America - Detroit, MI, United States - (DTW)",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "3cg9wbk5hzg4",
-              "name": "North America - Salt Lake City, UT, United States - (SLC)",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "5dhjdhgdqjzd",
-              "name": "North America - San Antonio, United States - (SAT)",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "qshn45g5q59m",
-              "name": "Europe - Lisbon, Portugal - (LIS)",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "vhpdc0y3qty9",
-              "name": "Asia - Bangalore, India - (BLR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "hr78s04g1r5b",
-              "name": "Asia - Kuala Lumpur, Malaysia - (KUL)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "vhpdc0y3qty9",
-          "name": "Bangalore, India - (BLR)",
-          "status": "operational",
-          "created_at": "2019-10-03T23:15:06.784Z",
-          "updated_at": "2025-10-30T22:44:50.820Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "bbx7ndl66dmp",
-          "name": "Detroit, MI, United States - (DTW)",
-          "status": "operational",
-          "created_at": "2017-04-10T16:40:13.626Z",
-          "updated_at": "2025-10-22T19:25:21.744Z",
-          "position": 13,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "fbvx0hxhhdj0",
-          "name": "CDN Cache Purge",
-          "status": "degraded_performance",
-          "created_at": "2019-01-31T16:54:52.510Z",
-          "updated_at": "2025-10-31T18:51:25.357Z",
-          "position": 22,
-          "description": "CDN single file cache purging service",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "qshn45g5q59m",
-          "name": "Lisbon, Portugal - (LIS)",
-          "status": "operational",
-          "created_at": "2016-10-18T20:43:36.754Z",
-          "updated_at": "2025-10-27T12:43:30.121Z",
-          "position": 24,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "hr78s04g1r5b",
-          "name": "Kuala Lumpur, Malaysia - (KUL)",
-          "status": "operational",
-          "created_at": "2015-08-31T01:11:27.364Z",
-          "updated_at": "2025-10-27T18:40:48.766Z",
-          "position": 40,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "3cg9wbk5hzg4",
-          "name": "Salt Lake City, UT, United States - (SLC)",
-          "status": "operational",
-          "created_at": "2018-01-10T08:57:51.162Z",
-          "updated_at": "2025-10-14T13:06:44.096Z",
-          "position": 40,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "5dhjdhgdqjzd",
-          "name": "San Antonio, United States - (SAT)",
-          "status": "operational",
-          "created_at": "2023-08-14T14:20:37.637Z",
-          "updated_at": "2025-10-30T10:41:39.858Z",
-          "position": 58,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-08-14",
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
     {
       "id": "z2q5c25qghvp",
       "name": "Workers Tracing has been temporarily disabled",
