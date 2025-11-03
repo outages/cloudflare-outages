@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-03T10:30:27.670Z"
+    "updated_at": "2025-11-03T11:15:35.251Z"
   },
   "components": [
     {
@@ -4186,9 +4186,9 @@
     {
       "id": "wg0b1zzm2f2w",
       "name": "Santiago, Chile - (SCL)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-27T21:47:59.478Z",
-      "updated_at": "2025-10-31T07:34:42.904Z",
+      "updated_at": "2025-11-03T10:54:11.963Z",
       "position": 39,
       "description": null,
       "showcase": false,
@@ -5551,9 +5551,9 @@
     {
       "id": "5dhjdhgdqjzd",
       "name": "San Antonio, United States - (SAT)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-08-14T14:20:37.637Z",
-      "updated_at": "2025-11-03T10:24:36.731Z",
+      "updated_at": "2025-11-03T10:48:12.949Z",
       "position": 58,
       "description": null,
       "showcase": false,
@@ -6571,9 +6571,9 @@
     {
       "id": "m4jywscr0n0k",
       "name": "Turnstile",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-19T17:03:40.590Z",
-      "updated_at": "2025-10-23T19:44:18.183Z",
+      "updated_at": "2025-11-03T10:47:04.418Z",
       "position": 94,
       "description": "Turnstile is a user-friendly, privacy-preserving alternative to CAPTCHA.",
       "showcase": false,
@@ -7425,6 +7425,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "c83f2p7w9r8m",
+      "name": "Cloudflare challenge pages issues",
+      "status": "investigating",
+      "created_at": "2025-11-03T10:47:04.370Z",
+      "updated_at": "2025-11-03T11:15:35.247Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/465m9v1153rv",
+      "started_at": "2025-11-03T10:47:04.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "vtf6hd033z5y",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue which potentially impacts multiple customers: Challenge pages may be unexpectedly redirected as POST requests.\nFurther detail will be provided as more information becomes available.",
+          "incident_id": "c83f2p7w9r8m",
+          "created_at": "2025-11-03T10:47:04.495Z",
+          "updated_at": "2025-11-03T11:15:35.199Z",
+          "display_at": "2025-11-03T10:47:04.000Z",
+          "affected_components": [
+            {
+              "code": "m4jywscr0n0k",
+              "name": "Cloudflare Sites and Services - Turnstile",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "m4jywscr0n0k",
+          "name": "Turnstile",
+          "status": "degraded_performance",
+          "created_at": "2023-01-19T17:03:40.590Z",
+          "updated_at": "2025-11-03T10:47:04.418Z",
+          "position": 94,
+          "description": "Turnstile is a user-friendly, privacy-preserving alternative to CAPTCHA.",
+          "showcase": false,
+          "start_date": "2023-01-19",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "f2bxvkc2mbk5",
       "name": "Email Delivery Delays",
