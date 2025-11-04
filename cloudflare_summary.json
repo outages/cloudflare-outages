@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-04T03:01:21.144Z"
+    "updated_at": "2025-11-04T03:40:12.274Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "partial_outage",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -343,9 +343,9 @@
     {
       "id": "w4k8yvhfb3vp",
       "name": "Access",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2018-02-09T21:46:39.049Z",
-      "updated_at": "2025-11-04T00:57:58.030Z",
+      "updated_at": "2025-11-04T03:40:12.195Z",
       "position": 2,
       "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
       "showcase": false,
@@ -3901,9 +3901,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2025-11-04T00:57:58.050Z",
+      "updated_at": "2025-11-04T03:40:12.215Z",
       "position": 35,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -5956,9 +5956,9 @@
     {
       "id": "5xvn0m7tthlf",
       "name": "Notifications",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-09-13T12:50:58.081Z",
-      "updated_at": "2025-11-03T09:41:50.658Z",
+      "updated_at": "2025-11-04T03:20:57.109Z",
       "position": 66,
       "description": null,
       "showcase": false,
@@ -7428,16 +7428,42 @@
     {
       "id": "49t1zfhv1t8p",
       "name": "Network Performance Issues in Seoul",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2025-11-04T01:51:39.872Z",
-      "updated_at": "2025-11-04T01:51:39.970Z",
-      "monitoring_at": null,
+      "updated_at": "2025-11-04T03:21:43.812Z",
+      "monitoring_at": "2025-11-04T03:21:43.797Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/8hly0txyk9r6",
       "started_at": "2025-11-04T01:51:39.862Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "t61mlzw7ksgr",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "49t1zfhv1t8p",
+          "created_at": "2025-11-04T03:21:43.797Z",
+          "updated_at": "2025-11-04T03:21:43.797Z",
+          "display_at": "2025-11-04T03:21:43.797Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "v4s7np92f0dh",
+              "name": "Asia - Seoul, South Korea - (ICN)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "kssws9shfzy0",
           "status": "identified",
@@ -7491,199 +7517,6 @@
           "description": null,
           "showcase": false,
           "start_date": "2023-01-13",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "b26lpp468gjt",
-      "name": "Dashboard SSO Onboarding Outage",
-      "status": "monitoring",
-      "created_at": "2025-11-04T00:57:57.992Z",
-      "updated_at": "2025-11-04T01:06:57.410Z",
-      "monitoring_at": "2025-11-04T01:06:57.394Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/5w4gczr9z5w5",
-      "started_at": "2025-11-04T00:57:57.983Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "tkbgxpknpyn7",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "b26lpp468gjt",
-          "created_at": "2025-11-04T01:06:57.394Z",
-          "updated_at": "2025-11-04T01:06:57.394Z",
-          "display_at": "2025-11-04T01:06:57.394Z",
-          "affected_components": [
-            {
-              "code": "w4k8yvhfb3vp",
-              "name": "Cloudflare Sites and Services - Access",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "3sq3s4d20ywk",
-              "name": "Cloudflare Sites and Services - Dashboard",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "zj30hswnphxt",
-          "status": "investigating",
-          "body": "We are currently investigating an issue where onboarding new SSO connectors and integrations via Cloudflare Access is currently malfunctioning. Dashboard customers will see errors on the onboarding page and will need to resume creation following resolution of this incident.\n\nLogging in via SSO is not impacted. Customers with active SSO integrations are not affected.",
-          "incident_id": "b26lpp468gjt",
-          "created_at": "2025-11-04T00:57:58.105Z",
-          "updated_at": "2025-11-04T00:57:58.105Z",
-          "display_at": "2025-11-04T00:57:58.105Z",
-          "affected_components": [
-            {
-              "code": "w4k8yvhfb3vp",
-              "name": "Cloudflare Sites and Services - Access",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "3sq3s4d20ywk",
-              "name": "Cloudflare Sites and Services - Dashboard",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "w4k8yvhfb3vp",
-          "name": "Access",
-          "status": "partial_outage",
-          "created_at": "2018-02-09T21:46:39.049Z",
-          "updated_at": "2025-11-04T00:57:58.030Z",
-          "position": 2,
-          "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "3sq3s4d20ywk",
-          "name": "Dashboard",
-          "status": "degraded_performance",
-          "created_at": "2014-10-09T03:32:07.173Z",
-          "updated_at": "2025-11-04T00:57:58.050Z",
-          "position": 35,
-          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "f2bxvkc2mbk5",
-      "name": "Email Delivery Delays",
-      "status": "monitoring",
-      "created_at": "2025-11-03T09:41:50.623Z",
-      "updated_at": "2025-11-04T00:10:28.173Z",
-      "monitoring_at": "2025-11-04T00:10:28.157Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/53q2pctnfxgw",
-      "started_at": "2025-11-03T09:41:50.615Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "tz1hx3kfq8ch",
-          "status": "monitoring",
-          "body": "We have identified and implemented a fix for this issue. We are currently monitoring the results.",
-          "incident_id": "f2bxvkc2mbk5",
-          "created_at": "2025-11-04T00:10:28.157Z",
-          "updated_at": "2025-11-04T00:10:28.157Z",
-          "display_at": "2025-11-04T00:10:28.157Z",
-          "affected_components": [
-            {
-              "code": "5xvn0m7tthlf",
-              "name": "Cloudflare Sites and Services - Notifications",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "pz00bxvvc63b",
-          "status": "investigating",
-          "body": "We are continuing to investigate this issue.",
-          "incident_id": "f2bxvkc2mbk5",
-          "created_at": "2025-11-03T12:21:57.026Z",
-          "updated_at": "2025-11-03T12:21:57.026Z",
-          "display_at": "2025-11-03T12:21:57.026Z",
-          "affected_components": [
-            {
-              "code": "5xvn0m7tthlf",
-              "name": "Cloudflare Sites and Services - Notifications",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "8n1d2vmr30g0",
-          "status": "investigating",
-          "body": "Cloudflare is investigating a delay in our ability to send emails. This does not affect our support platform communication capabilities.\nWe are working to resolve the issue, more updates to follow shortly.",
-          "incident_id": "f2bxvkc2mbk5",
-          "created_at": "2025-11-03T09:41:50.714Z",
-          "updated_at": "2025-11-03T09:41:50.714Z",
-          "display_at": "2025-11-03T09:41:50.714Z",
-          "affected_components": [
-            {
-              "code": "5xvn0m7tthlf",
-              "name": "Cloudflare Sites and Services - Notifications",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "5xvn0m7tthlf",
-          "name": "Notifications",
-          "status": "degraded_performance",
-          "created_at": "2022-09-13T12:50:58.081Z",
-          "updated_at": "2025-11-03T09:41:50.658Z",
-          "position": 66,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-09-13",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
