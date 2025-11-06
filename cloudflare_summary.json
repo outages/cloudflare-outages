@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-06T15:11:04.741Z"
+    "updated_at": "2025-11-06T15:42:04.315Z"
   },
   "components": [
     {
@@ -4456,9 +4456,9 @@
     {
       "id": "ks6zgqry9c1p",
       "name": "Saint Petersburg, Russia - (LED)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-11-20T12:20:31.492Z",
-      "updated_at": "2025-11-06T09:31:53.922Z",
+      "updated_at": "2025-11-06T15:38:21.962Z",
       "position": 42,
       "description": null,
       "showcase": false,
@@ -7425,6 +7425,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "34qv9mdr0mnt",
+      "name": "Cloudflare Dashboard and Cloudflare API service issues",
+      "status": "investigating",
+      "created_at": "2025-11-06T15:41:51.357Z",
+      "updated_at": "2025-11-06T15:42:04.309Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/j34v4mkkc8dg",
+      "started_at": "2025-11-06T15:41:51.348Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "r24zx9ht5p9f",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare Dashboard and related APIs.\n\nThese issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge.\n\nCustomers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
+          "incident_id": "34qv9mdr0mnt",
+          "created_at": "2025-11-06T15:41:51.411Z",
+          "updated_at": "2025-11-06T15:41:51.411Z",
+          "display_at": "2025-11-06T15:41:51.411Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "operational",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2025-11-04T01:16:05.769Z",
+          "position": 6,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "operational",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2025-11-05T19:09:35.865Z",
+          "position": 35,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "z2q5c25qghvp",
       "name": "Workers Tracing has been temporarily disabled",
