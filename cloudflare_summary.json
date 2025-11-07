@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-07T11:10:56.857Z"
+    "updated_at": "2025-11-07T11:30:43.961Z"
   },
   "components": [
     {
@@ -2056,9 +2056,9 @@
     {
       "id": "tdwwnvf8nv6h",
       "name": "Kigali, Rwanda - (KGL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-06-17T03:27:21.977Z",
-      "updated_at": "2025-11-07T11:10:56.853Z",
+      "updated_at": "2025-11-07T11:18:40.248Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -7426,11 +7426,84 @@
   ],
   "incidents": [
     {
+      "id": "lrj056qn71ks",
+      "name": "Cloudflare WAF: Issues with Duplicate Rate Limiting Rules",
+      "status": "monitoring",
+      "created_at": "2025-11-07T10:59:42.619Z",
+      "updated_at": "2025-11-07T11:30:43.959Z",
+      "monitoring_at": "2025-11-07T11:30:43.944Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/qzl6bmd4ckmw",
+      "started_at": "2025-11-07T10:59:42.611Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "hytst3nzdqxx",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "lrj056qn71ks",
+          "created_at": "2025-11-07T11:30:43.944Z",
+          "updated_at": "2025-11-07T11:30:43.944Z",
+          "display_at": "2025-11-07T11:30:43.944Z",
+          "affected_components": [
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "822cb293205f",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue which potentially impacts multiple customers: zones that have migrated from our former Rate Limiting rules might observe duplicated rules. This means that in some cases, expected rate limiting rules are not taking effect. This impacts only customers that use rate limits based on response codes.\n\nWe are working to resolve the issue. More updates to follow shortly.",
+          "incident_id": "lrj056qn71ks",
+          "created_at": "2025-11-07T10:59:42.682Z",
+          "updated_at": "2025-11-07T10:59:42.682Z",
+          "display_at": "2025-11-07T10:59:42.682Z",
+          "affected_components": [
+            {
+              "code": "ts05t1p1j7r4",
+              "name": "Cloudflare Sites and Services - DNS Firewall",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d1r0plwsl5qb",
+          "name": "Firewall",
+          "status": "degraded_performance",
+          "created_at": "2020-09-04T17:53:26.383Z",
+          "updated_at": "2025-11-07T00:08:43.005Z",
+          "position": 47,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-09-04",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "5yj2r6dbv886",
       "name": "Cloudflare WAF: Issues with malicious uploads detection",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2025-11-07T00:08:42.965Z",
-      "updated_at": "2025-11-07T11:08:41.916Z",
+      "updated_at": "2025-11-07T11:20:41.601Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7438,6 +7511,26 @@
       "started_at": "2025-11-07T00:08:42.957Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "mpgt12tnpmbv",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "5yj2r6dbv886",
+          "created_at": "2025-11-07T11:20:41.598Z",
+          "updated_at": "2025-11-07T11:20:41.598Z",
+          "display_at": "2025-11-07T11:20:41.598Z",
+          "affected_components": [
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "hw0v10bwg8qp",
           "status": "investigating",
@@ -7490,59 +7583,6 @@
           "description": null,
           "showcase": false,
           "start_date": "2020-09-04",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "lrj056qn71ks",
-      "name": "Cloudflare WAF: Issues with Duplicate Rate Limiting Rules",
-      "status": "investigating",
-      "created_at": "2025-11-07T10:59:42.619Z",
-      "updated_at": "2025-11-07T10:59:59.057Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/qzl6bmd4ckmw",
-      "started_at": "2025-11-07T10:59:42.611Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "822cb293205f",
-          "status": "investigating",
-          "body": "Cloudflare is aware of, and investigating an issue which potentially impacts multiple customers: zones that have migrated from our former Rate Limiting rules might observe duplicated rules. This means that in some cases, expected rate limiting rules are not taking effect. This impacts only customers that use rate limits based on response codes.\n\nWe are working to resolve the issue. More updates to follow shortly.",
-          "incident_id": "lrj056qn71ks",
-          "created_at": "2025-11-07T10:59:42.682Z",
-          "updated_at": "2025-11-07T10:59:42.682Z",
-          "display_at": "2025-11-07T10:59:42.682Z",
-          "affected_components": [
-            {
-              "code": "ts05t1p1j7r4",
-              "name": "Cloudflare Sites and Services - DNS Firewall",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ts05t1p1j7r4",
-          "name": "DNS Firewall",
-          "status": "operational",
-          "created_at": "2024-09-12T11:55:20.873Z",
-          "updated_at": "2025-10-21T15:13:13.217Z",
-          "position": 39,
-          "description": "DNS Firewall proxies all DNS queries to your nameservers through Cloudflare’s global network.",
-          "showcase": false,
-          "start_date": "2024-09-12",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
