@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-07T20:31:10.263Z"
+    "updated_at": "2025-11-07T20:47:43.455Z"
   },
   "components": [
     {
@@ -1515,9 +1515,9 @@
     {
       "id": "38tc7m3dl7v6",
       "name": "Budapest, Hungary - (BUD)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2017-04-13T20:46:19.120Z",
-      "updated_at": "2025-10-24T03:01:02.801Z",
+      "updated_at": "2025-11-07T20:47:43.451Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -5310,9 +5310,9 @@
     {
       "id": "8xc65dbhbrd5",
       "name": "Phnom Penh, Cambodia - (PNH)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2018-02-09T20:38:28.093Z",
-      "updated_at": "2025-11-07T19:13:38.407Z",
+      "updated_at": "2025-11-07T20:43:09.321Z",
       "position": 55,
       "description": null,
       "showcase": false,
@@ -5445,9 +5445,9 @@
     {
       "id": "cl9hc9q83k9n",
       "name": "Lyon, France - (LYS)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-05-25T18:00:48.504Z",
-      "updated_at": "2025-11-06T04:52:03.972Z",
+      "updated_at": "2025-11-07T20:47:42.216Z",
       "position": 57,
       "description": null,
       "showcase": false,
@@ -6060,9 +6060,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2025-10-22T09:26:41.188Z",
+      "updated_at": "2025-11-07T20:40:01.128Z",
       "position": 71,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -6360,9 +6360,9 @@
     {
       "id": "47xg28c02lnk",
       "name": "Stream",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:53:34.953Z",
-      "updated_at": "2025-10-22T09:26:41.397Z",
+      "updated_at": "2025-11-07T20:40:01.150Z",
       "position": 86,
       "description": "Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7409,6 +7409,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "7dmxbv808l1w",
+      "name": "Increase latency on R2 operations on WNAM buckets",
+      "status": "investigating",
+      "created_at": "2025-11-07T20:40:01.087Z",
+      "updated_at": "2025-11-07T20:40:01.228Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/59x3yl4wl4n8",
+      "started_at": "2025-11-07T20:40:01.078Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ttm1d8h6ndsk",
+          "status": "investigating",
+          "body": "We are currently investigating high long-tail latency on some R2 requests with buckets in the WNAM region. Impacted buckets will see increased latency on PutObject operations. Impacting Stream Live broadcasts, R2. Stream on-demand and media transformations are not affected.",
+          "incident_id": "7dmxbv808l1w",
+          "created_at": "2025-11-07T20:40:01.225Z",
+          "updated_at": "2025-11-07T20:40:01.225Z",
+          "display_at": "2025-11-07T20:40:01.225Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2025-11-07T20:40:01.128Z",
+          "position": 71,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "47xg28c02lnk",
+          "name": "Stream",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:53:34.953Z",
+          "updated_at": "2025-11-07T20:40:01.150Z",
+          "position": 86,
+          "description": "Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "46b4jc89xqq9",
       "name": "Android Zero Trust WARP Connectivity",
@@ -10485,9 +10559,9 @@
         {
           "id": "8xc65dbhbrd5",
           "name": "Phnom Penh, Cambodia - (PNH)",
-          "status": "partial_outage",
+          "status": "under_maintenance",
           "created_at": "2018-02-09T20:38:28.093Z",
-          "updated_at": "2025-11-07T19:13:38.407Z",
+          "updated_at": "2025-11-07T20:43:09.321Z",
           "position": 55,
           "description": null,
           "showcase": false,
