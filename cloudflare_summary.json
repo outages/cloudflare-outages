@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-12T09:52:34.057Z"
+    "updated_at": "2025-11-12T10:20:44.470Z"
   },
   "components": [
     {
@@ -2671,9 +2671,9 @@
     {
       "id": "srz7zhpwynys",
       "name": "Guatemala City, Guatemala - (GUA)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-08-15T07:22:07.430Z",
-      "updated_at": "2025-11-12T08:11:41.081Z",
+      "updated_at": "2025-11-12T10:10:32.111Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -3211,9 +3211,9 @@
     {
       "id": "jr54h8jh727k",
       "name": "Cairo, Egypt - (CAI)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-08-28T09:00:44.061Z",
-      "updated_at": "2025-10-31T02:07:40.815Z",
+      "updated_at": "2025-11-12T10:13:08.439Z",
       "position": 26,
       "description": null,
       "showcase": false,
@@ -4201,9 +4201,9 @@
     {
       "id": "2k1qvzk3763q",
       "name": "Sacramento, CA, United States - (SMF)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-03-26T07:13:13.204Z",
-      "updated_at": "2025-11-11T11:19:12.075Z",
+      "updated_at": "2025-11-12T10:10:34.113Z",
       "position": 39,
       "description": null,
       "showcase": false,
@@ -7428,9 +7428,9 @@
     {
       "id": "0j76ytwdk7p0",
       "name": "Network Performance Issues in Madrid, Spain",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2025-11-12T09:33:21.543Z",
-      "updated_at": "2025-11-12T09:33:36.187Z",
+      "updated_at": "2025-11-12T10:09:39.251Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7438,6 +7438,32 @@
       "started_at": "2025-11-12T09:33:21.531Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "xxz40bhfqqwd",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "0j76ytwdk7p0",
+          "created_at": "2025-11-12T10:09:39.248Z",
+          "updated_at": "2025-11-12T10:09:39.248Z",
+          "display_at": "2025-11-12T10:09:39.248Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qwrpqdwqxy7r",
+              "name": "Europe - Madrid, Spain - (MAD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "qsx8394f8chx",
           "status": "investigating",
@@ -7498,47 +7524,38 @@
         }
       ],
       "reminder_intervals": null
-    }
-  ],
-  "scheduled_maintenances": [
+    },
     {
-      "id": "l9rl6f7hn5l2",
-      "name": "SMF (Sacramento) on 2025-11-12",
-      "status": "scheduled",
-      "created_at": "2025-11-10T14:34:41.389Z",
-      "updated_at": "2025-11-12T09:00:24.890Z",
+      "id": "t50vt3nbdhz4",
+      "name": "Issues with Cloudflare Images Plans",
+      "status": "investigating",
+      "created_at": "2025-11-12T10:02:43.643Z",
+      "updated_at": "2025-11-12T10:03:00.858Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/06s29mx3k0gz",
-      "started_at": "2025-11-10T14:34:41.381Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/9wfcsr30lr0s",
+      "started_at": "2025-11-12T10:02:43.634Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "jhk0q5v2x4m4",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "l9rl6f7hn5l2",
-          "created_at": "2025-11-12T09:00:24.761Z",
-          "updated_at": "2025-11-12T09:00:24.761Z",
-          "display_at": "2025-11-12T09:00:24.761Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "kb3lthv40v7c",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SMF (Sacramento) datacenter on 2025-11-12 between 10:00 and 14:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "l9rl6f7hn5l2",
-          "created_at": "2025-11-10T14:34:41.452Z",
-          "updated_at": "2025-11-10T14:34:41.452Z",
-          "display_at": "2025-11-10T14:34:41.452Z",
+          "id": "vz5pfvy2m69f",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with customers being unable to see or change their Cloudflare Images Plan. Impact is to the Dashboard only and does not affect any existing image plans, security or CDN functionality. \n\nWe are working to understand the full impact and mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "t50vt3nbdhz4",
+          "created_at": "2025-11-12T10:02:43.708Z",
+          "updated_at": "2025-11-12T10:02:43.708Z",
+          "display_at": "2025-11-12T10:02:43.708Z",
           "affected_components": [
             {
-              "code": "2k1qvzk3763q",
-              "name": "North America - Sacramento, CA, United States - (SMF)",
+              "code": "ll1x88wwz4fq",
+              "name": "Cloudflare Sites and Services - Billing",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3lbj8lp3d750",
+              "name": "Cloudflare Sites and Services - Images",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -7550,24 +7567,40 @@
       ],
       "components": [
         {
-          "id": "2k1qvzk3763q",
-          "name": "Sacramento, CA, United States - (SMF)",
+          "id": "ll1x88wwz4fq",
+          "name": "Billing",
           "status": "operational",
-          "created_at": "2018-03-26T07:13:13.204Z",
-          "updated_at": "2025-11-11T11:19:12.075Z",
-          "position": 39,
-          "description": null,
+          "created_at": "2016-05-09T21:12:38.309Z",
+          "updated_at": "2025-09-30T11:32:41.185Z",
+          "position": 14,
+          "description": "Billing and payment service",
           "showcase": false,
           "start_date": null,
-          "group_id": "4l01sk5cdn5c",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3lbj8lp3d750",
+          "name": "Images",
+          "status": "operational",
+          "created_at": "2022-02-25T17:30:01.272Z",
+          "updated_at": "2025-10-21T15:13:13.406Z",
+          "position": 53,
+          "description": "Cloudflare service to build a scalable image pipeline to store, resize, optimize and deliver images in a fast and secure manner.",
+          "showcase": false,
+          "start_date": "2022-02-25",
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-11-12T10:00:00.000Z",
-      "scheduled_until": "2025-11-12T14:00:00.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "dn6nhmcgfwyj",
       "name": "KHH (Kaohsiung City) on 2025-11-12",
@@ -8308,9 +8341,9 @@
         {
           "id": "srz7zhpwynys",
           "name": "Guatemala City, Guatemala - (GUA)",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2019-08-15T07:22:07.430Z",
-          "updated_at": "2025-11-12T08:11:41.081Z",
+          "updated_at": "2025-11-12T10:10:32.111Z",
           "position": 20,
           "description": null,
           "showcase": false,
@@ -10235,6 +10268,140 @@
       "scheduled_until": "2025-11-24T05:00:00.000Z"
     },
     {
+      "id": "vvh5nmmh7gfk",
+      "name": "FRA (Frankfurt) on 2025-11-24",
+      "status": "scheduled",
+      "created_at": "2025-11-11T02:12:31.252Z",
+      "updated_at": "2025-11-11T02:12:31.330Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/7xw0nz5hv8bl",
+      "started_at": "2025-11-11T02:12:31.244Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "b75n8cd19987",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in FRA (Frankfurt) datacenter on 2025-11-24 between 01:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "vvh5nmmh7gfk",
+          "created_at": "2025-11-11T02:12:31.326Z",
+          "updated_at": "2025-11-11T02:12:31.326Z",
+          "display_at": "2025-11-11T02:12:31.326Z",
+          "affected_components": [
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rbnhbzgld936",
+          "name": "Frankfurt, Germany - (FRA)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:37:25.480Z",
+          "updated_at": "2024-09-14T13:55:21.360Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-11-24T01:00:00.000Z",
+      "scheduled_until": "2025-11-24T05:00:00.000Z"
+    },
+    {
+      "id": "l9rl6f7hn5l2",
+      "name": "SMF (Sacramento) on 2025-11-12",
+      "status": "in_progress",
+      "created_at": "2025-11-10T14:34:41.389Z",
+      "updated_at": "2025-11-12T10:00:22.187Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/06s29mx3k0gz",
+      "started_at": "2025-11-10T14:34:41.381Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "z94hyj504slb",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "l9rl6f7hn5l2",
+          "created_at": "2025-11-12T10:00:22.171Z",
+          "updated_at": "2025-11-12T10:00:22.171Z",
+          "display_at": "2025-11-12T10:00:22.171Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "jhk0q5v2x4m4",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "l9rl6f7hn5l2",
+          "created_at": "2025-11-12T09:00:24.761Z",
+          "updated_at": "2025-11-12T09:00:24.761Z",
+          "display_at": "2025-11-12T09:00:24.761Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "kb3lthv40v7c",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SMF (Sacramento) datacenter on 2025-11-12 between 10:00 and 14:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "l9rl6f7hn5l2",
+          "created_at": "2025-11-10T14:34:41.452Z",
+          "updated_at": "2025-11-10T14:34:41.452Z",
+          "display_at": "2025-11-10T14:34:41.452Z",
+          "affected_components": [
+            {
+              "code": "2k1qvzk3763q",
+              "name": "North America - Sacramento, CA, United States - (SMF)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2k1qvzk3763q",
+          "name": "Sacramento, CA, United States - (SMF)",
+          "status": "partial_outage",
+          "created_at": "2018-03-26T07:13:13.204Z",
+          "updated_at": "2025-11-12T10:10:34.113Z",
+          "position": 39,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-11-12T10:00:00.000Z",
+      "scheduled_until": "2025-11-12T14:00:00.000Z"
+    },
+    {
       "id": "gq061c2byr19",
       "name": "LAX (Los Angeles) on 2025-11-12",
       "status": "in_progress",
@@ -10458,9 +10625,9 @@
         {
           "id": "srz7zhpwynys",
           "name": "Guatemala City, Guatemala - (GUA)",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2019-08-15T07:22:07.430Z",
-          "updated_at": "2025-11-12T08:11:41.081Z",
+          "updated_at": "2025-11-12T10:10:32.111Z",
           "position": 20,
           "description": null,
           "showcase": false,
