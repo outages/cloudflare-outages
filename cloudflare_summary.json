@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-17T22:19:53.019Z"
+    "updated_at": "2025-11-17T22:39:58.238Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1799,9 +1799,9 @@
     {
       "id": "47440brmvtq2",
       "name": "Gaborone, Botswana - (GBE)",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2022-06-01T10:45:54.571Z",
-      "updated_at": "2025-11-14T07:36:33.951Z",
+      "updated_at": "2025-11-17T22:39:58.232Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -3704,9 +3704,9 @@
     {
       "id": "r66zh17lxd91",
       "name": "Quito, Ecuador - (UIO)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2017-03-13T21:23:02.885Z",
-      "updated_at": "2025-11-17T22:03:13.068Z",
+      "updated_at": "2025-11-17T22:31:50.556Z",
       "position": 33,
       "description": null,
       "showcase": false,
@@ -6704,9 +6704,9 @@
     {
       "id": "zvm7mqn92xzc",
       "name": "Workers AI",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-02-14T15:05:51.274Z",
-      "updated_at": "2025-11-04T01:16:05.788Z",
+      "updated_at": "2025-11-17T22:24:12.845Z",
       "position": 103,
       "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
       "showcase": false,
@@ -7392,7 +7392,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "ygk8q7rzt4rg",
+      "name": "Workers AI: @cf/meta/llama-3.3-70b-instruct-sd high error rate",
+      "status": "investigating",
+      "created_at": "2025-11-17T22:24:12.802Z",
+      "updated_at": "2025-11-17T22:24:22.866Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/7g8mbvcmxr7l",
+      "started_at": "2025-11-17T22:24:12.793Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "q5hs3wwt92w8",
+          "status": "investigating",
+          "body": "We are currently investigating an issue where we are observing a high error rate and increased latency for @cf/meta/llama-3.3-70b-instruct-sd.",
+          "incident_id": "ygk8q7rzt4rg",
+          "created_at": "2025-11-17T22:24:12.905Z",
+          "updated_at": "2025-11-17T22:24:12.905Z",
+          "display_at": "2025-11-17T22:24:12.905Z",
+          "affected_components": [
+            {
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "zvm7mqn92xzc",
+          "name": "Workers AI",
+          "status": "degraded_performance",
+          "created_at": "2024-02-14T15:05:51.274Z",
+          "updated_at": "2025-11-17T22:24:12.845Z",
+          "position": 103,
+          "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
+          "showcase": false,
+          "start_date": "2024-02-14",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "bfbr5flvs84y",
@@ -7702,9 +7756,9 @@
         {
           "id": "r66zh17lxd91",
           "name": "Quito, Ecuador - (UIO)",
-          "status": "partial_outage",
+          "status": "under_maintenance",
           "created_at": "2017-03-13T21:23:02.885Z",
-          "updated_at": "2025-11-17T22:03:13.068Z",
+          "updated_at": "2025-11-17T22:31:50.556Z",
           "position": 33,
           "description": null,
           "showcase": false,
