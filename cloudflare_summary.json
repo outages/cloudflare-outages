@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-18T14:20:48.017Z"
+    "updated_at": "2025-11-18T14:42:37.468Z"
   },
   "components": [
     {
@@ -883,9 +883,9 @@
     {
       "id": "6vll3w5p50f9",
       "name": "Belo Horizonte, Brazil - (CNF)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-13T13:51:00.191Z",
-      "updated_at": "2025-11-18T12:38:39.349Z",
+      "updated_at": "2025-11-18T14:38:52.174Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3586,7 +3586,7 @@
       "name": "Porto Alegre, Brazil - (POA)",
       "status": "under_maintenance",
       "created_at": "2019-04-01T16:32:01.138Z",
-      "updated_at": "2025-11-18T05:13:57.921Z",
+      "updated_at": "2025-11-18T14:38:52.561Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -3841,7 +3841,7 @@
       "name": "Recife, Brazil - (REC)",
       "status": "operational",
       "created_at": "2023-01-23T16:01:02.693Z",
-      "updated_at": "2025-11-17T07:07:54.635Z",
+      "updated_at": "2025-11-18T14:38:49.430Z",
       "position": 34,
       "description": null,
       "showcase": false,
@@ -4799,9 +4799,9 @@
     {
       "id": "3s8mgt6mwbfg",
       "name": "Timbó, Brazil - (NVT)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-10-24T19:35:00.671Z",
-      "updated_at": "2025-11-10T17:40:41.143Z",
+      "updated_at": "2025-11-18T14:31:42.311Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -7379,9 +7379,9 @@
     {
       "id": "7xlx52krlzcx",
       "name": "Malang, Indonesia - (MLG)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-11-10T23:16:38.599Z",
-      "updated_at": "2025-11-18T02:13:40.491Z",
+      "updated_at": "2025-11-18T14:33:01.103Z",
       "position": 676,
       "description": null,
       "showcase": false,
@@ -7396,16 +7396,196 @@
     {
       "id": "8gmgl950y3h7",
       "name": "Cloudflare Global Network experiencing issues",
-      "status": "identified",
-      "created_at": "2025-11-18T11:48:27.144Z",
-      "updated_at": "2025-11-18T13:58:14.732Z",
-      "monitoring_at": null,
+      "status": "monitoring",
+      "created_at": "2025-11-18T11:48:27.000Z",
+      "updated_at": "2025-11-18T14:42:37.462Z",
+      "monitoring_at": "2025-11-18T14:42:37.434Z",
       "resolved_at": null,
       "impact": "critical",
       "shortlink": "https://stspg.io/jy35p45xkbpq",
       "started_at": "2025-11-18T11:48:27.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "w76qv9ggmr4q",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we believe the incident is now resolved. We are continuing to monitor for errors to ensure all services are back to normal.",
+          "incident_id": "8gmgl950y3h7",
+          "created_at": "2025-11-18T14:42:37.434Z",
+          "updated_at": "2025-11-18T14:42:37.434Z",
+          "display_at": "2025-11-18T14:42:37.434Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "s0991jwsqllx",
+              "name": "Cloudflare Sites and Services - Bot Management",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "n5jcszl5ht7q",
+          "status": "identified",
+          "body": "We've deployed a change which has restored dashboard services.  We are still working to remediate broad application services impact",
+          "incident_id": "8gmgl950y3h7",
+          "created_at": "2025-11-18T14:34:03.876Z",
+          "updated_at": "2025-11-18T14:34:03.876Z",
+          "display_at": "2025-11-18T14:34:03.876Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "s0991jwsqllx",
+              "name": "Cloudflare Sites and Services - Bot Management",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "8hbqlcfbcx2n",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "8gmgl950y3h7",
+          "created_at": "2025-11-18T14:22:57.311Z",
+          "updated_at": "2025-11-18T14:22:57.311Z",
+          "display_at": "2025-11-18T14:22:57.311Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "s0991jwsqllx",
+              "name": "Cloudflare Sites and Services - Bot Management",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "d1r0plwsl5qb",
+              "name": "Cloudflare Sites and Services - Firewall",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "8rsrryzn6hhd",
           "status": "identified",
@@ -7706,6 +7886,21 @@
           "updated_at": "2025-11-18T13:58:14.641Z",
           "position": 21,
           "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "operational",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2025-11-13T17:23:39.429Z",
+          "position": 35,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
           "showcase": false,
           "start_date": null,
           "group_id": "1km35smx8p41",
@@ -9874,7 +10069,7 @@
           "name": "Porto Alegre, Brazil - (POA)",
           "status": "under_maintenance",
           "created_at": "2019-04-01T16:32:01.138Z",
-          "updated_at": "2025-11-18T05:13:57.921Z",
+          "updated_at": "2025-11-18T14:38:52.561Z",
           "position": 31,
           "description": null,
           "showcase": false,
