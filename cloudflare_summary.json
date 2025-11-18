@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-18T12:38:41.250Z"
+    "updated_at": "2025-11-18T13:20:37.322Z"
   },
   "components": [
     {
@@ -3524,9 +3524,9 @@
     {
       "id": "3bkfn92yb194",
       "name": "Paramaribo, Suriname - (PBM)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2020-05-05T22:19:58.418Z",
-      "updated_at": "2025-11-18T12:38:41.246Z",
+      "updated_at": "2025-11-18T13:14:38.652Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -4154,9 +4154,9 @@
     {
       "id": "wg0b1zzm2f2w",
       "name": "Santiago, Chile - (SCL)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-27T21:47:59.478Z",
-      "updated_at": "2025-11-18T06:08:07.929Z",
+      "updated_at": "2025-11-18T12:56:41.608Z",
       "position": 39,
       "description": null,
       "showcase": false,
@@ -6061,7 +6061,7 @@
       "name": "Yerevan, Armenia - (EVN)",
       "status": "under_maintenance",
       "created_at": "2017-03-06T05:40:56.147Z",
-      "updated_at": "2025-11-18T12:02:34.971Z",
+      "updated_at": "2025-11-18T13:20:37.318Z",
       "position": 72,
       "description": null,
       "showcase": false,
@@ -7396,9 +7396,9 @@
     {
       "id": "8gmgl950y3h7",
       "name": "Cloudflare Global Network experiencing issues",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2025-11-18T11:48:27.144Z",
-      "updated_at": "2025-11-18T12:37:49.646Z",
+      "updated_at": "2025-11-18T13:14:40.928Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "critical",
@@ -7406,6 +7406,98 @@
       "started_at": "2025-11-18T11:48:27.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "ws34894vrssw",
+          "status": "identified",
+          "body": "We have made changes that have allowed Cloudflare Access and WARP to recover. Error levels for Access and WARP users have returned to pre-incident rates. \nWe have re-enabled WARP access in London.\n\nWe are continuing to work towards restoring other services.",
+          "incident_id": "8gmgl950y3h7",
+          "created_at": "2025-11-18T13:13:39.773Z",
+          "updated_at": "2025-11-18T13:14:40.925Z",
+          "display_at": "2025-11-18T13:13:39.000Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "f1p48q6rj8ql",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "8gmgl950y3h7",
+          "created_at": "2025-11-18T13:09:53.734Z",
+          "updated_at": "2025-11-18T13:09:53.734Z",
+          "display_at": "2025-11-18T13:09:53.734Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "mt6457l6ljmy",
+          "status": "investigating",
+          "body": "During our attempts to remediate, we have disabled WARP access in London.  Users in London trying to access the Internet via WARP will see a failure to connect.",
+          "incident_id": "8gmgl950y3h7",
+          "created_at": "2025-11-18T13:04:09.763Z",
+          "updated_at": "2025-11-18T13:04:09.763Z",
+          "display_at": "2025-11-18T13:04:09.763Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "cjf6rhr4t6g2",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "8gmgl950y3h7",
+          "created_at": "2025-11-18T12:53:50.885Z",
+          "updated_at": "2025-11-18T12:53:50.885Z",
+          "display_at": "2025-11-18T12:53:50.885Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "zzmsvmylzn9t",
           "status": "investigating",
@@ -7469,10 +7561,10 @@
         {
           "id": "hznybsbxlsns",
           "status": "investigating",
-          "body": "Cloudflare is aware of, and investigating an issue which impacts multiple customers: Widespread 500 errors, Cloudflare Dashboard and API also failing.\nWe are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "body": "Cloudflare is experiencing an internal service degradation. Some services may be intermittently impacted. We are focused on restoring service. We will update as we are able to remediate. More updates to follow shortly.",
           "incident_id": "8gmgl950y3h7",
           "created_at": "2025-11-18T11:48:27.270Z",
-          "updated_at": "2025-11-18T12:05:53.433Z",
+          "updated_at": "2025-11-18T12:40:36.656Z",
           "display_at": "2025-11-18T11:48:27.000Z",
           "affected_components": [
             {
@@ -7489,6 +7581,21 @@
       ],
       "components": [
         {
+          "id": "w4k8yvhfb3vp",
+          "name": "Access",
+          "status": "operational",
+          "created_at": "2018-02-09T21:46:39.049Z",
+          "updated_at": "2025-11-13T17:23:39.397Z",
+          "position": 2,
+          "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
           "id": "4n0gb0kh02gf",
           "name": "Network",
           "status": "major_outage",
@@ -7498,6 +7605,21 @@
           "description": null,
           "showcase": false,
           "start_date": "2023-01-13",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "k04jkcpzxn94",
+          "name": "WARP",
+          "status": "operational",
+          "created_at": "2019-09-30T09:25:38.587Z",
+          "updated_at": "2025-11-14T20:08:08.242Z",
+          "position": 99,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -8887,9 +9009,9 @@
         {
           "id": "wg0b1zzm2f2w",
           "name": "Santiago, Chile - (SCL)",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2014-10-27T21:47:59.478Z",
-          "updated_at": "2025-11-18T06:08:07.929Z",
+          "updated_at": "2025-11-18T12:56:41.608Z",
           "position": 39,
           "description": null,
           "showcase": false,
@@ -9535,9 +9657,9 @@
         {
           "id": "wg0b1zzm2f2w",
           "name": "Santiago, Chile - (SCL)",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2014-10-27T21:47:59.478Z",
-          "updated_at": "2025-11-18T06:08:07.929Z",
+          "updated_at": "2025-11-18T12:56:41.608Z",
           "position": 39,
           "description": null,
           "showcase": false,
@@ -10445,9 +10567,9 @@
         {
           "id": "wg0b1zzm2f2w",
           "name": "Santiago, Chile - (SCL)",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2014-10-27T21:47:59.478Z",
-          "updated_at": "2025-11-18T06:08:07.929Z",
+          "updated_at": "2025-11-18T12:56:41.608Z",
           "position": 39,
           "description": null,
           "showcase": false,
