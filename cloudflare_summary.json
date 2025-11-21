@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-21T23:32:41.113Z"
+    "updated_at": "2025-11-21T23:46:35.003Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -4979,9 +4979,9 @@
     {
       "id": "vn1h2pfctsvn",
       "name": "Health Checks",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-01-19T14:38:24.595Z",
-      "updated_at": "2025-10-21T15:13:13.363Z",
+      "updated_at": "2025-11-21T23:46:34.914Z",
       "position": 50,
       "description": "A Health Check is a service that runs on Cloudflare’s edge network to monitor whether an origin server is online.",
       "showcase": false,
@@ -5309,9 +5309,9 @@
     {
       "id": "8sn2w5kyxfnp",
       "name": "Load Balancing and Monitoring",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:54:07.994Z",
-      "updated_at": "2025-10-21T15:13:13.434Z",
+      "updated_at": "2025-11-21T23:46:34.938Z",
       "position": 55,
       "description": "Load balancing and failover service, including origin server monitoring",
       "showcase": false,
@@ -7392,7 +7392,82 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "h5ygbdgfr84h",
+      "name": "Load Balancing and Health Checks degraded performance",
+      "status": "investigating",
+      "created_at": "2025-11-21T23:46:34.872Z",
+      "updated_at": "2025-11-21T23:46:35.000Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/snt3s9vft3xc",
+      "started_at": "2025-11-21T23:46:34.862Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "1sqdrtnbbjk2",
+          "status": "investigating",
+          "body": "Cloudflare is investigating health processing delays on the Load Balancing and Health Checks products, leading to delayed customer notifications, analytics, and potentially stale steering decisions.",
+          "incident_id": "h5ygbdgfr84h",
+          "created_at": "2025-11-21T23:46:34.997Z",
+          "updated_at": "2025-11-21T23:46:34.997Z",
+          "display_at": "2025-11-21T23:46:34.997Z",
+          "affected_components": [
+            {
+              "code": "vn1h2pfctsvn",
+              "name": "Cloudflare Sites and Services - Health Checks",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "8sn2w5kyxfnp",
+              "name": "Cloudflare Sites and Services - Load Balancing and Monitoring",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vn1h2pfctsvn",
+          "name": "Health Checks",
+          "status": "degraded_performance",
+          "created_at": "2024-01-19T14:38:24.595Z",
+          "updated_at": "2025-11-21T23:46:34.914Z",
+          "position": 50,
+          "description": "A Health Check is a service that runs on Cloudflare’s edge network to monitor whether an origin server is online.",
+          "showcase": false,
+          "start_date": "2024-01-19",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "8sn2w5kyxfnp",
+          "name": "Load Balancing and Monitoring",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:54:07.994Z",
+          "updated_at": "2025-11-21T23:46:34.938Z",
+          "position": 55,
+          "description": "Load balancing and failover service, including origin server monitoring",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "4q5ygm872g4h",
