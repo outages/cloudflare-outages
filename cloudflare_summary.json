@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-25T15:45:23.816Z"
+    "updated_at": "2025-11-25T16:28:26.190Z"
   },
   "components": [
     {
@@ -2354,9 +2354,9 @@
     {
       "id": "3mfmstzmyp8r",
       "name": "Maputo, Mozambique - (MPM)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-06-27T06:54:32.139Z",
-      "updated_at": "2025-11-24T17:18:33.533Z",
+      "updated_at": "2025-11-25T16:09:50.077Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -2564,9 +2564,9 @@
     {
       "id": "ljllh1921z0m",
       "name": "Nairobi, Kenya - (NBO)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2020-10-30T04:22:58.259Z",
-      "updated_at": "2025-11-24T23:00:07.102Z",
+      "updated_at": "2025-11-25T15:57:48.596Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -3779,9 +3779,9 @@
     {
       "id": "zqlfzq5bzwdq",
       "name": "Dar es Salaam, Tanzania - (DAR)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2024-11-09T08:40:09.983Z",
-      "updated_at": "2025-11-19T01:28:15.738Z",
+      "updated_at": "2025-11-25T16:09:50.444Z",
       "position": 33,
       "description": null,
       "showcase": false,
@@ -5611,7 +5611,7 @@
       "name": "Skopje, North Macedonia - (SKP)",
       "status": "partial_outage",
       "created_at": "2024-05-02T22:50:14.963Z",
-      "updated_at": "2025-11-25T15:44:59.597Z",
+      "updated_at": "2025-11-25T16:28:26.186Z",
       "position": 59,
       "description": null,
       "showcase": false,
@@ -7396,16 +7396,36 @@
     {
       "id": "z8symsd2mjy6",
       "name": "Audit Log v2 (beta) Delays",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2025-11-25T14:57:57.632Z",
-      "updated_at": "2025-11-25T15:45:23.807Z",
-      "monitoring_at": null,
+      "updated_at": "2025-11-25T16:09:34.176Z",
+      "monitoring_at": "2025-11-25T16:09:34.161Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/3kjh7s7w1k3m",
       "started_at": "2025-11-25T14:57:57.626Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "p4006zypkjbj",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "z8symsd2mjy6",
+          "created_at": "2025-11-25T16:09:34.161Z",
+          "updated_at": "2025-11-25T16:09:34.161Z",
+          "display_at": "2025-11-25T16:09:34.161Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "pf4qdw644d61",
           "status": "identified",
@@ -7562,30 +7582,43 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "v2s3b5xg0vkx",
-      "name": "OKA (Naha) on 2025-11-25",
+      "id": "ytg34m7hjx8r",
+      "name": "SAN (San Diego) on 2025-11-25",
       "status": "scheduled",
-      "created_at": "2025-11-24T15:44:16.096Z",
-      "updated_at": "2025-11-24T15:44:16.362Z",
+      "created_at": "2025-11-24T15:30:15.549Z",
+      "updated_at": "2025-11-25T16:00:31.015Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/4y1lsn3vqk34",
-      "started_at": "2025-11-24T15:44:16.089Z",
+      "shortlink": "https://stspg.io/tlg1gnl178th",
+      "started_at": "2025-11-24T15:30:15.540Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "y0wgl34t0ppr",
+          "id": "ylggmnwxggh0",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in OKA (Naha) datacenter on 2025-11-25 between 17:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "v2s3b5xg0vkx",
-          "created_at": "2025-11-24T15:44:16.359Z",
-          "updated_at": "2025-11-24T15:44:16.359Z",
-          "display_at": "2025-11-24T15:44:16.359Z",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "ytg34m7hjx8r",
+          "created_at": "2025-11-25T16:00:30.912Z",
+          "updated_at": "2025-11-25T16:00:30.912Z",
+          "display_at": "2025-11-25T16:00:30.912Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "pf4qn8lg68yc",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SAN (San Diego) datacenter on 2025-11-25 between 17:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "ytg34m7hjx8r",
+          "created_at": "2025-11-24T15:30:15.618Z",
+          "updated_at": "2025-11-24T15:30:15.618Z",
+          "display_at": "2025-11-24T15:30:15.618Z",
           "affected_components": [
             {
-              "code": "3m5j79csl5d2",
-              "name": "Asia - Naha, Japan  - (OKA)",
+              "code": "pxfjpfczss60",
+              "name": "North America - San Diego, CA, United States - (SAN)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -7597,16 +7630,16 @@
       ],
       "components": [
         {
-          "id": "3m5j79csl5d2",
-          "name": "Naha, Japan  - (OKA)",
+          "id": "pxfjpfczss60",
+          "name": "San Diego, CA, United States - (SAN)",
           "status": "operational",
-          "created_at": "2022-07-23T16:18:03.254Z",
-          "updated_at": "2025-11-13T18:29:54.710Z",
-          "position": 51,
+          "created_at": "2017-05-09T22:07:46.925Z",
+          "updated_at": "2025-11-11T22:45:31.573Z",
+          "position": 41,
           "description": null,
           "showcase": false,
-          "start_date": "2022-07-23",
-          "group_id": "77867vxkttgw",
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
@@ -7620,7 +7653,7 @@
       "name": "NRT (Tokyo) on 2025-11-25",
       "status": "scheduled",
       "created_at": "2025-11-24T15:36:15.071Z",
-      "updated_at": "2025-11-24T15:36:15.130Z",
+      "updated_at": "2025-11-25T16:00:32.458Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7628,6 +7661,19 @@
       "started_at": "2025-11-24T15:36:15.064Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "zd9lbxw74909",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "qhqy8p3tvqk4",
+          "created_at": "2025-11-25T16:00:32.335Z",
+          "updated_at": "2025-11-25T16:00:32.335Z",
+          "display_at": "2025-11-25T16:00:32.335Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "l961l5l7r5wm",
           "status": "scheduled",
@@ -7670,30 +7716,43 @@
       "scheduled_until": "2025-11-25T21:00:00.000Z"
     },
     {
-      "id": "ytg34m7hjx8r",
-      "name": "SAN (San Diego) on 2025-11-25",
+      "id": "v2s3b5xg0vkx",
+      "name": "OKA (Naha) on 2025-11-25",
       "status": "scheduled",
-      "created_at": "2025-11-24T15:30:15.549Z",
-      "updated_at": "2025-11-24T15:30:15.621Z",
+      "created_at": "2025-11-24T15:44:16.096Z",
+      "updated_at": "2025-11-25T16:00:29.050Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/tlg1gnl178th",
-      "started_at": "2025-11-24T15:30:15.540Z",
+      "shortlink": "https://stspg.io/4y1lsn3vqk34",
+      "started_at": "2025-11-24T15:44:16.089Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "pf4qn8lg68yc",
+          "id": "ghz1vwz0t4l6",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SAN (San Diego) datacenter on 2025-11-25 between 17:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "ytg34m7hjx8r",
-          "created_at": "2025-11-24T15:30:15.618Z",
-          "updated_at": "2025-11-24T15:30:15.618Z",
-          "display_at": "2025-11-24T15:30:15.618Z",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "v2s3b5xg0vkx",
+          "created_at": "2025-11-25T16:00:28.943Z",
+          "updated_at": "2025-11-25T16:00:28.943Z",
+          "display_at": "2025-11-25T16:00:28.943Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "y0wgl34t0ppr",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in OKA (Naha) datacenter on 2025-11-25 between 17:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "v2s3b5xg0vkx",
+          "created_at": "2025-11-24T15:44:16.359Z",
+          "updated_at": "2025-11-24T15:44:16.359Z",
+          "display_at": "2025-11-24T15:44:16.359Z",
           "affected_components": [
             {
-              "code": "pxfjpfczss60",
-              "name": "North America - San Diego, CA, United States - (SAN)",
+              "code": "3m5j79csl5d2",
+              "name": "Asia - Naha, Japan  - (OKA)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -7705,16 +7764,16 @@
       ],
       "components": [
         {
-          "id": "pxfjpfczss60",
-          "name": "San Diego, CA, United States - (SAN)",
+          "id": "3m5j79csl5d2",
+          "name": "Naha, Japan  - (OKA)",
           "status": "operational",
-          "created_at": "2017-05-09T22:07:46.925Z",
-          "updated_at": "2025-11-11T22:45:31.573Z",
-          "position": 41,
+          "created_at": "2022-07-23T16:18:03.254Z",
+          "updated_at": "2025-11-13T18:29:54.710Z",
+          "position": 51,
           "description": null,
           "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
+          "start_date": "2022-07-23",
+          "group_id": "77867vxkttgw",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
@@ -8034,6 +8093,60 @@
       "scheduled_until": "2025-12-02T11:00:00.000Z"
     },
     {
+      "id": "zblkkgtc998h",
+      "name": "SJO (San José) on 2025-12-02",
+      "status": "scheduled",
+      "created_at": "2025-11-21T17:53:07.976Z",
+      "updated_at": "2025-11-21T17:53:08.063Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/d2dkjzr2gtdj",
+      "started_at": "2025-11-21T17:53:07.968Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "jhfhfyw41qxd",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SJO (San José) datacenter on 2025-12-02 between 08:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "zblkkgtc998h",
+          "created_at": "2025-11-21T17:53:08.059Z",
+          "updated_at": "2025-11-21T17:53:08.059Z",
+          "display_at": "2025-11-21T17:53:08.059Z",
+          "affected_components": [
+            {
+              "code": "lwmhcftlr9vx",
+              "name": "Latin America & the Caribbean - San José, Costa Rica - (SJO)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lwmhcftlr9vx",
+          "name": "San José, Costa Rica - (SJO)",
+          "status": "operational",
+          "created_at": "2020-10-23T21:53:19.030Z",
+          "updated_at": "2025-11-20T10:10:44.173Z",
+          "position": 38,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-10-23",
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-02T08:00:00.000Z",
+      "scheduled_until": "2025-12-02T12:00:00.000Z"
+    },
+    {
       "id": "xb0z539ntqkj",
       "name": "DFW (Dallas) on 2025-12-02",
       "status": "scheduled",
@@ -8133,60 +8246,6 @@
           "showcase": false,
           "start_date": null,
           "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-12-02T08:00:00.000Z",
-      "scheduled_until": "2025-12-02T12:00:00.000Z"
-    },
-    {
-      "id": "zblkkgtc998h",
-      "name": "SJO (San José) on 2025-12-02",
-      "status": "scheduled",
-      "created_at": "2025-11-21T17:53:07.976Z",
-      "updated_at": "2025-11-21T17:53:08.063Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/d2dkjzr2gtdj",
-      "started_at": "2025-11-21T17:53:07.968Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "jhfhfyw41qxd",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SJO (San José) datacenter on 2025-12-02 between 08:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "zblkkgtc998h",
-          "created_at": "2025-11-21T17:53:08.059Z",
-          "updated_at": "2025-11-21T17:53:08.059Z",
-          "display_at": "2025-11-21T17:53:08.059Z",
-          "affected_components": [
-            {
-              "code": "lwmhcftlr9vx",
-              "name": "Latin America & the Caribbean - San José, Costa Rica - (SJO)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "lwmhcftlr9vx",
-          "name": "San José, Costa Rica - (SJO)",
-          "status": "operational",
-          "created_at": "2020-10-23T21:53:19.030Z",
-          "updated_at": "2025-11-20T10:10:44.173Z",
-          "position": 38,
-          "description": null,
-          "showcase": false,
-          "start_date": "2020-10-23",
-          "group_id": "91blz4ztt7dm",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
