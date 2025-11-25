@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-25T17:09:45.662Z"
+    "updated_at": "2025-11-25T17:40:22.723Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -6629,9 +6629,9 @@
     {
       "id": "qt59p3cr1grx",
       "name": "Web Analytics",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-08-01T12:11:32.221Z",
-      "updated_at": "2025-10-22T09:26:26.118Z",
+      "updated_at": "2025-11-25T17:40:03.453Z",
       "position": 100,
       "description": "Cloudflare Web Analytics provides free, privacy-first analytics for your website without changing your DNS or using Cloudflare’s proxy. Cloudflare Web Analytics helps you understand the performance of your web pages as experienced by your site visitors.",
       "showcase": false,
@@ -7109,9 +7109,9 @@
     {
       "id": "ffrmxl6mgywd",
       "name": "Da Nang, Vietnam - (DAD)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-04-26T21:34:08.466Z",
-      "updated_at": "2025-11-21T19:50:21.469Z",
+      "updated_at": "2025-11-25T17:36:10.084Z",
       "position": 349,
       "description": null,
       "showcase": false,
@@ -7394,6 +7394,59 @@
   ],
   "incidents": [
     {
+      "id": "ym3jzjlxpm6y",
+      "name": "Web Analytics weekly emails not sent",
+      "status": "identified",
+      "created_at": "2025-11-25T17:40:03.419Z",
+      "updated_at": "2025-11-25T17:40:03.504Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/pwkw01db28ft",
+      "started_at": "2025-11-25T17:40:03.412Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "nv6c5mm4yv1h",
+          "status": "identified",
+          "body": "Weekly emails for Web Analytics data were not sent to subscribed users.",
+          "incident_id": "ym3jzjlxpm6y",
+          "created_at": "2025-11-25T17:40:03.502Z",
+          "updated_at": "2025-11-25T17:40:03.502Z",
+          "display_at": "2025-11-25T17:40:03.502Z",
+          "affected_components": [
+            {
+              "code": "qt59p3cr1grx",
+              "name": "Cloudflare Sites and Services - Web Analytics",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qt59p3cr1grx",
+          "name": "Web Analytics",
+          "status": "degraded_performance",
+          "created_at": "2023-08-01T12:11:32.221Z",
+          "updated_at": "2025-11-25T17:40:03.453Z",
+          "position": 100,
+          "description": "Cloudflare Web Analytics provides free, privacy-first analytics for your website without changing your DNS or using Cloudflare’s proxy. Cloudflare Web Analytics helps you understand the performance of your web pages as experienced by your site visitors.",
+          "showcase": false,
+          "start_date": "2023-08-01",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "z8symsd2mjy6",
       "name": "Audit Log v2 (beta) Delays",
       "status": "monitoring",
@@ -7581,6 +7634,60 @@
     }
   ],
   "scheduled_maintenances": [
+    {
+      "id": "h57xq0cvcr5v",
+      "name": "SIN (Singapore) on 2025-11-25",
+      "status": "scheduled",
+      "created_at": "2025-11-25T17:28:19.242Z",
+      "updated_at": "2025-11-25T17:28:19.313Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/nw3gzz9xg5wq",
+      "started_at": "2025-11-25T17:28:19.235Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "0d15hvq8qxn9",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SIN (Singapore) datacenter between 2025-11-25 17:45 and 2025-11-26 00:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "h57xq0cvcr5v",
+          "created_at": "2025-11-25T17:28:19.309Z",
+          "updated_at": "2025-11-25T17:28:19.309Z",
+          "display_at": "2025-11-25T17:28:19.309Z",
+          "affected_components": [
+            {
+              "code": "18p6r93swmbl",
+              "name": "Asia - Singapore, Singapore - (SIN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "18p6r93swmbl",
+          "name": "Singapore, Singapore - (SIN)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:44:15.897Z",
+          "updated_at": "2025-11-21T14:49:16.739Z",
+          "position": 59,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-11-25T17:45:00.000Z",
+      "scheduled_until": "2025-11-26T00:00:00.000Z"
+    },
     {
       "id": "vx97m2p2rzjy",
       "name": "HKG (Hong Kong) on 2025-11-25",
@@ -7810,119 +7917,11 @@
       "scheduled_until": "2025-11-26T08:00:00.000Z"
     },
     {
-      "id": "0mhwcxp86tbb",
-      "name": "GRU (São Paulo) on 2025-12-02",
-      "status": "scheduled",
-      "created_at": "2025-11-21T17:59:04.031Z",
-      "updated_at": "2025-11-21T17:59:04.137Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/64bmzlpzdg9b",
-      "started_at": "2025-11-21T17:59:04.023Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "dyc6k53c2tcn",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in GRU (São Paulo) datacenter on 2025-12-02 between 05:00 and 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "0mhwcxp86tbb",
-          "created_at": "2025-11-21T17:59:04.133Z",
-          "updated_at": "2025-11-21T17:59:04.133Z",
-          "display_at": "2025-11-21T17:59:04.133Z",
-          "affected_components": [
-            {
-              "code": "73mbn78m0yzm",
-              "name": "Latin America & the Caribbean - São Paulo, Brazil - (GRU)",
-              "old_status": "under_maintenance",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "73mbn78m0yzm",
-          "name": "São Paulo, Brazil - (GRU)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:45:14.885Z",
-          "updated_at": "2025-11-24T12:12:43.778Z",
-          "position": 43,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-12-02T05:00:00.000Z",
-      "scheduled_until": "2025-12-02T09:00:00.000Z"
-    },
-    {
-      "id": "qkwnhjblfxp7",
-      "name": "MDE (Medellín) on 2025-12-02",
-      "status": "scheduled",
-      "created_at": "2025-11-21T17:57:03.375Z",
-      "updated_at": "2025-11-21T17:57:03.447Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/v4syk4dxy7dp",
-      "started_at": "2025-11-21T17:57:03.367Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "5bm5nt0ss2rt",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MDE (Medellín) datacenter on 2025-12-02 between 07:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "qkwnhjblfxp7",
-          "created_at": "2025-11-21T17:57:03.444Z",
-          "updated_at": "2025-11-21T17:57:03.444Z",
-          "display_at": "2025-11-21T17:57:03.444Z",
-          "affected_components": [
-            {
-              "code": "51644s4prm7b",
-              "name": "Latin America & the Caribbean - Medellín, Colombia - (MDE)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "51644s4prm7b",
-          "name": "Medellín, Colombia - (MDE)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:44:54.481Z",
-          "updated_at": "2025-11-17T09:19:18.482Z",
-          "position": 27,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-12-02T07:00:00.000Z",
-      "scheduled_until": "2025-12-02T11:00:00.000Z"
-    },
-    {
       "id": "zblkkgtc998h",
       "name": "SJO (San José) on 2025-12-02",
       "status": "scheduled",
       "created_at": "2025-11-21T17:53:07.976Z",
-      "updated_at": "2025-11-21T17:53:08.063Z",
+      "updated_at": "2025-11-25T17:32:20.059Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7930,6 +7929,26 @@
       "started_at": "2025-11-21T17:53:07.968Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "v76cl25bb72f",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SJO (San José) datacenter on 2025-12-02 between 09:00 and 13:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "zblkkgtc998h",
+          "created_at": "2025-11-25T17:32:20.057Z",
+          "updated_at": "2025-11-25T17:32:20.057Z",
+          "display_at": "2025-11-25T17:32:20.057Z",
+          "affected_components": [
+            {
+              "code": "lwmhcftlr9vx",
+              "name": "Latin America & the Caribbean - San José, Costa Rica - (SJO)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "jhfhfyw41qxd",
           "status": "scheduled",
@@ -7968,15 +7987,15 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-12-02T08:00:00.000Z",
-      "scheduled_until": "2025-12-02T12:00:00.000Z"
+      "scheduled_for": "2025-12-02T09:00:00.000Z",
+      "scheduled_until": "2025-12-02T13:00:00.000Z"
     },
     {
       "id": "xb0z539ntqkj",
       "name": "DFW (Dallas) on 2025-12-02",
       "status": "scheduled",
       "created_at": "2025-11-21T18:49:06.987Z",
-      "updated_at": "2025-11-21T18:49:07.075Z",
+      "updated_at": "2025-11-25T17:32:21.637Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7984,6 +8003,26 @@
       "started_at": "2025-11-21T18:49:06.978Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "x0mqdxgk85rg",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in DFW (Dallas) datacenter on 2025-12-02 between 09:00 and 13:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "xb0z539ntqkj",
+          "created_at": "2025-11-25T17:32:21.634Z",
+          "updated_at": "2025-11-25T17:32:21.634Z",
+          "display_at": "2025-11-25T17:32:21.634Z",
+          "affected_components": [
+            {
+              "code": "r8ppmb3xm98j",
+              "name": "North America - Dallas, TX, United States - (DFW)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "sj69k7zny9bq",
           "status": "scheduled",
@@ -8022,15 +8061,15 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-12-02T08:00:00.000Z",
-      "scheduled_until": "2025-12-02T12:00:00.000Z"
+      "scheduled_for": "2025-12-02T09:00:00.000Z",
+      "scheduled_until": "2025-12-02T13:00:00.000Z"
     },
     {
       "id": "bxfnzcr05dpd",
       "name": "QRO (Queretaro) on 2025-12-02",
       "status": "scheduled",
       "created_at": "2025-11-21T17:43:02.779Z",
-      "updated_at": "2025-11-21T17:43:02.839Z",
+      "updated_at": "2025-11-25T17:30:24.451Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -8038,6 +8077,26 @@
       "started_at": "2025-11-21T17:43:02.772Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "578q9lh3brxp",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in QRO (Queretaro) datacenter on 2025-12-02 between 09:00 and 13:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "bxfnzcr05dpd",
+          "created_at": "2025-11-25T17:30:24.447Z",
+          "updated_at": "2025-11-25T17:30:24.447Z",
+          "display_at": "2025-11-25T17:30:24.447Z",
+          "affected_components": [
+            {
+              "code": "0n209sgnr1dp",
+              "name": "North America - Queretaro, MX, Mexico - (QRO)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "98nhdjwct1yl",
           "status": "scheduled",
@@ -8076,8 +8135,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-12-02T08:00:00.000Z",
-      "scheduled_until": "2025-12-02T12:00:00.000Z"
+      "scheduled_for": "2025-12-02T09:00:00.000Z",
+      "scheduled_until": "2025-12-02T13:00:00.000Z"
     },
     {
       "id": "cmz0p2qsv76x",
@@ -8132,6 +8191,222 @@
       ],
       "scheduled_for": "2025-12-02T17:00:00.000Z",
       "scheduled_until": "2025-12-02T22:30:00.000Z"
+    },
+    {
+      "id": "23ppzgllxfrd",
+      "name": "EZE (Buenos Aires) on 2025-12-03",
+      "status": "scheduled",
+      "created_at": "2025-11-25T17:38:19.648Z",
+      "updated_at": "2025-11-25T17:38:19.716Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/4gh6q84zy73v",
+      "started_at": "2025-11-25T17:38:19.640Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "k9fvk7yp71mb",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in EZE (Buenos Aires) datacenter on 2025-12-03 between 05:00 and 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "23ppzgllxfrd",
+          "created_at": "2025-11-25T17:38:19.713Z",
+          "updated_at": "2025-11-25T17:38:19.713Z",
+          "display_at": "2025-11-25T17:38:19.713Z",
+          "affected_components": [
+            {
+              "code": "26gznn8sts5z",
+              "name": "Latin America & the Caribbean - Buenos Aires, Argentina - (EZE)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "26gznn8sts5z",
+          "name": "Buenos Aires, Argentina - (EZE)",
+          "status": "operational",
+          "created_at": "2015-04-01T11:05:40.089Z",
+          "updated_at": "2025-11-25T17:09:42.479Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-03T05:00:00.000Z",
+      "scheduled_until": "2025-12-03T09:00:00.000Z"
+    },
+    {
+      "id": "y52pm1ggb7cd",
+      "name": "GRU (São Paulo) on 2025-12-03",
+      "status": "scheduled",
+      "created_at": "2025-11-25T17:30:25.066Z",
+      "updated_at": "2025-11-25T17:30:25.131Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/cbcdx65cdfqy",
+      "started_at": "2025-11-25T17:30:25.058Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8tk5jdvx12l6",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in GRU (São Paulo) datacenter on 2025-12-03 between 05:00 and 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "y52pm1ggb7cd",
+          "created_at": "2025-11-25T17:30:25.128Z",
+          "updated_at": "2025-11-25T17:30:25.128Z",
+          "display_at": "2025-11-25T17:30:25.128Z",
+          "affected_components": [
+            {
+              "code": "73mbn78m0yzm",
+              "name": "Latin America & the Caribbean - São Paulo, Brazil - (GRU)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "73mbn78m0yzm",
+          "name": "São Paulo, Brazil - (GRU)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:45:14.885Z",
+          "updated_at": "2025-11-24T12:12:43.778Z",
+          "position": 43,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-03T05:00:00.000Z",
+      "scheduled_until": "2025-12-03T09:00:00.000Z"
+    },
+    {
+      "id": "ny0mkb3dl5jg",
+      "name": "NVT (Timbo) on 2025-12-03",
+      "status": "scheduled",
+      "created_at": "2025-11-25T17:40:22.651Z",
+      "updated_at": "2025-11-25T17:40:22.719Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/kjd4rvf4n85s",
+      "started_at": "2025-11-25T17:40:22.643Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "2bkhxk8vmswm",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in NVT (Timbo) datacenter on 2025-12-03 between 05:00 and 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "ny0mkb3dl5jg",
+          "created_at": "2025-11-25T17:40:22.716Z",
+          "updated_at": "2025-11-25T17:40:22.716Z",
+          "display_at": "2025-11-25T17:40:22.716Z",
+          "affected_components": [
+            {
+              "code": "3s8mgt6mwbfg",
+              "name": "Latin America & the Caribbean - Timbó, Brazil - (NVT)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3s8mgt6mwbfg",
+          "name": "Timbó, Brazil - (NVT)",
+          "status": "operational",
+          "created_at": "2022-10-24T19:35:00.671Z",
+          "updated_at": "2025-11-19T17:28:02.334Z",
+          "position": 47,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-10-24",
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-03T05:00:00.000Z",
+      "scheduled_until": "2025-12-03T09:00:00.000Z"
+    },
+    {
+      "id": "362t6h7z3x2m",
+      "name": "MDE (Medellín) on 2025-12-03",
+      "status": "scheduled",
+      "created_at": "2025-11-25T17:30:25.741Z",
+      "updated_at": "2025-11-25T17:30:25.812Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/y40kjc4ggp4w",
+      "started_at": "2025-11-25T17:30:25.732Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "cnrwkqf80mhx",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MDE (Medellín) datacenter on 2025-12-03 between 07:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "362t6h7z3x2m",
+          "created_at": "2025-11-25T17:30:25.808Z",
+          "updated_at": "2025-11-25T17:30:25.808Z",
+          "display_at": "2025-11-25T17:30:25.808Z",
+          "affected_components": [
+            {
+              "code": "51644s4prm7b",
+              "name": "Latin America & the Caribbean - Medellín, Colombia - (MDE)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "51644s4prm7b",
+          "name": "Medellín, Colombia - (MDE)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:44:54.481Z",
+          "updated_at": "2025-11-17T09:19:18.482Z",
+          "position": 27,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-03T07:00:00.000Z",
+      "scheduled_until": "2025-12-03T11:00:00.000Z"
     },
     {
       "id": "f2906mw93610",
