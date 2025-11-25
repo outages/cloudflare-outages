@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-25T06:23:28.700Z"
+    "updated_at": "2025-11-25T06:47:23.548Z"
   },
   "components": [
     {
@@ -3944,9 +3944,9 @@
     {
       "id": "7rvrsd9g0f1v",
       "name": "Rio de Janeiro, Brazil - (GIG)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2017-06-22T22:19:02.210Z",
-      "updated_at": "2025-11-25T06:23:28.696Z",
+      "updated_at": "2025-11-25T06:47:23.543Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -7094,9 +7094,9 @@
     {
       "id": "0p60jr5nb630",
       "name": "Xiangyang, China - (XFN)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-04-03T08:30:16.263Z",
-      "updated_at": "2025-05-14T11:01:40.751Z",
+      "updated_at": "2025-11-25T06:44:18.705Z",
       "position": 346,
       "description": null,
       "showcase": false,
@@ -7392,7 +7392,82 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "n9hssmq1dqr8",
+      "name": "Network Performance Issues in XFN",
+      "status": "investigating",
+      "created_at": "2025-11-25T06:44:18.632Z",
+      "updated_at": "2025-11-25T06:44:18.793Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/h8rb1h8p9x3f",
+      "started_at": "2025-11-25T06:44:18.619Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "br0b057v7rf3",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Network Performance in Xiangyang, China.\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "n9hssmq1dqr8",
+          "created_at": "2025-11-25T06:44:18.790Z",
+          "updated_at": "2025-11-25T06:44:18.790Z",
+          "display_at": "2025-11-25T06:44:18.790Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "0p60jr5nb630",
+              "name": "Asia - Xiangyang, China - (XFN)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4n0gb0kh02gf",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2023-01-13T13:39:19.804Z",
+          "updated_at": "2025-11-21T14:49:16.765Z",
+          "position": 65,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-01-13",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "0p60jr5nb630",
+          "name": "Xiangyang, China - (XFN)",
+          "status": "degraded_performance",
+          "created_at": "2024-04-03T08:30:16.263Z",
+          "updated_at": "2025-11-25T06:44:18.705Z",
+          "position": 346,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-04-03",
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "3p7rbpp0fm7w",
@@ -8045,7 +8120,7 @@
       "name": "FRA (Frankfurt) on 2025-11-26",
       "status": "scheduled",
       "created_at": "2025-11-19T17:29:11.381Z",
-      "updated_at": "2025-11-20T23:43:01.532Z",
+      "updated_at": "2025-11-25T06:44:18.205Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -8053,6 +8128,26 @@
       "started_at": "2025-11-19T17:29:11.374Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "9djntjh3q9yx",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in FRA (Frankfurt) datacenter on 2025-11-26 between 00:00 and 08:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "smmvp8lglgf1",
+          "created_at": "2025-11-25T06:44:18.201Z",
+          "updated_at": "2025-11-25T06:44:18.201Z",
+          "display_at": "2025-11-25T06:44:18.201Z",
+          "affected_components": [
+            {
+              "code": "rbnhbzgld936",
+              "name": "Europe - Frankfurt, Germany - (FRA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "4v64k38pcw9w",
           "status": "scheduled",
@@ -8111,8 +8206,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-11-26T00:30:00.000Z",
-      "scheduled_until": "2025-11-26T07:00:00.000Z"
+      "scheduled_for": "2025-11-26T00:00:00.000Z",
+      "scheduled_until": "2025-11-26T08:00:00.000Z"
     },
     {
       "id": "0mhwcxp86tbb",
