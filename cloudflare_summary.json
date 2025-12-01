@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-12-01T11:36:44.039Z"
+    "updated_at": "2025-12-01T11:48:42.214Z"
   },
   "components": [
     {
@@ -811,9 +811,9 @@
     {
       "id": "4c231tkdlpcl",
       "name": "Analytics",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-11-13T11:54:10.191Z",
-      "updated_at": "2025-11-10T03:55:27.048Z",
+      "updated_at": "2025-12-01T11:48:13.942Z",
       "position": 5,
       "description": "Customer analytics aggregation service",
       "showcase": false,
@@ -1654,7 +1654,7 @@
       "name": "Erbil, Iraq - (EBL)",
       "status": "operational",
       "created_at": "2022-02-02T10:59:20.698Z",
-      "updated_at": "2025-12-01T11:36:44.034Z",
+      "updated_at": "2025-12-01T11:48:42.211Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -7441,6 +7441,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "gy9xndgrs3t3",
+      "name": "Workers Analytics delays in EU",
+      "status": "identified",
+      "created_at": "2025-12-01T11:48:13.901Z",
+      "updated_at": "2025-12-01T11:48:14.016Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/wlyfv62dy86f",
+      "started_at": "2025-12-01T11:48:13.893Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "4j84hz6yq3q0",
+          "status": "identified",
+          "body": "Cloudflare has identified an issue causing Workers analytics to be delayed for European customers. The Workers services are still fully operational, only analytics are delayed. We are working to mitigate this problem. More updates to follow shortly.",
+          "incident_id": "gy9xndgrs3t3",
+          "created_at": "2025-12-01T11:48:14.011Z",
+          "updated_at": "2025-12-01T11:48:14.011Z",
+          "display_at": "2025-12-01T11:48:14.011Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "degraded_performance",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2025-12-01T11:48:13.942Z",
+          "position": 5,
+          "description": "Customer analytics aggregation service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "6fz86w02n2gv",
       "name": "Cloudflare Logpush Delays",
