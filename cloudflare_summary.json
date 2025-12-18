@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-12-18T14:49:35.491Z"
+    "updated_at": "2025-12-18T15:20:29.510Z"
   },
   "components": [
     {
@@ -2794,9 +2794,9 @@
     {
       "id": "33b7rn1tln88",
       "name": "Haikou, China - (HAK)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-01-13T16:10:12.528Z",
-      "updated_at": "2025-02-11T18:43:30.816Z",
+      "updated_at": "2025-12-18T15:04:27.275Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -4819,9 +4819,9 @@
     {
       "id": "ss09y7v3wzwd",
       "name": "Manila, Philippines - (MNL)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2016-04-29T12:14:56.581Z",
-      "updated_at": "2025-12-18T13:25:46.565Z",
+      "updated_at": "2025-12-18T15:13:32.962Z",
       "position": 48,
       "description": null,
       "showcase": false,
@@ -7429,9 +7429,9 @@
     {
       "id": "96bgq3x3tq93",
       "name": "Lahore, Pakistan - (LHE)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2025-11-25T18:48:17.555Z",
-      "updated_at": "2025-12-17T13:13:00.111Z",
+      "updated_at": "2025-12-18T14:55:34.856Z",
       "position": 677,
       "description": null,
       "showcase": false,
@@ -7472,7 +7472,108 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "vsr4mpyt98b4",
+      "name": "Network Performance Issues in Haikou, China",
+      "status": "investigating",
+      "created_at": "2025-12-18T15:04:27.244Z",
+      "updated_at": "2025-12-18T15:05:51.546Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/38fgll1ddwk1",
+      "started_at": "2025-12-18T15:04:27.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "2lt0qdf453jz",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "vsr4mpyt98b4",
+          "created_at": "2025-12-18T15:05:51.543Z",
+          "updated_at": "2025-12-18T15:05:51.543Z",
+          "display_at": "2025-12-18T15:05:51.543Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "33b7rn1tln88",
+              "name": "Asia - Haikou, China - (HAK)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "cq7ym6kv9ps6",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Network Performance in Haikou, China.\n\nWe are working to analyze and mitigate this problem. More updates will follow shortly.",
+          "incident_id": "vsr4mpyt98b4",
+          "created_at": "2025-12-18T15:04:27.322Z",
+          "updated_at": "2025-12-18T15:05:30.592Z",
+          "display_at": "2025-12-18T15:04:27.000Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "33b7rn1tln88",
+              "name": "Asia - Haikou, China - (HAK)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "33b7rn1tln88",
+          "name": "Haikou, China - (HAK)",
+          "status": "degraded_performance",
+          "created_at": "2022-01-13T16:10:12.528Z",
+          "updated_at": "2025-12-18T15:04:27.275Z",
+          "position": 21,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-01-13",
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "4n0gb0kh02gf",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2023-01-13T13:39:19.804Z",
+          "updated_at": "2025-12-11T10:49:40.521Z",
+          "position": 65,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-01-13",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "w5w7h49spns9",
@@ -7797,86 +7898,6 @@
       ],
       "scheduled_for": "2026-01-08T17:00:00.000Z",
       "scheduled_until": "2026-01-08T23:00:00.000Z"
-    },
-    {
-      "id": "3v7qpjnhrqjn",
-      "name": "LAX (Los Angeles) on 2025-12-18",
-      "status": "in_progress",
-      "created_at": "2025-12-17T15:48:43.491Z",
-      "updated_at": "2025-12-18T09:00:24.949Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/xtqz7b1pj56x",
-      "started_at": "2025-12-17T15:48:43.482Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "cwjt7gmsj47l",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "3v7qpjnhrqjn",
-          "created_at": "2025-12-18T09:00:24.945Z",
-          "updated_at": "2025-12-18T09:00:24.945Z",
-          "display_at": "2025-12-18T09:00:24.945Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "9z68p6sk0sxc",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "3v7qpjnhrqjn",
-          "created_at": "2025-12-18T08:00:36.526Z",
-          "updated_at": "2025-12-18T08:00:36.526Z",
-          "display_at": "2025-12-18T08:00:36.526Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "rbss0kyg8zj6",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2025-12-18 between 09:00 and 15:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "3v7qpjnhrqjn",
-          "created_at": "2025-12-17T15:48:43.561Z",
-          "updated_at": "2025-12-17T15:48:43.561Z",
-          "display_at": "2025-12-17T15:48:43.561Z",
-          "affected_components": [
-            {
-              "code": "38w4zp21dlkc",
-              "name": "North America - Los Angeles, CA, United States - (LAX)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "38w4zp21dlkc",
-          "name": "Los Angeles, CA, United States - (LAX)",
-          "status": "operational",
-          "created_at": "2014-10-27T19:24:27.591Z",
-          "updated_at": "2024-06-18T21:50:20.618Z",
-          "position": 20,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-12-18T09:00:00.000Z",
-      "scheduled_until": "2025-12-18T15:00:00.000Z"
     }
   ],
   "status": {
