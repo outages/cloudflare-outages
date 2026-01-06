@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-06T13:49:04.634Z"
+    "updated_at": "2026-01-06T14:28:14.940Z"
   },
   "components": [
     {
@@ -891,9 +891,9 @@
     {
       "id": "6vll3w5p50f9",
       "name": "Belo Horizonte, Brazil - (CNF)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-13T13:51:00.191Z",
-      "updated_at": "2025-12-23T09:43:07.922Z",
+      "updated_at": "2026-01-06T14:18:39.494Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -4897,9 +4897,9 @@
     {
       "id": "t3d07wlg67nl",
       "name": "Mumbai, India - (BOM)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2015-10-27T20:12:43.833Z",
-      "updated_at": "2026-01-06T13:25:12.610Z",
+      "updated_at": "2026-01-06T14:00:55.076Z",
       "position": 49,
       "description": null,
       "showcase": false,
@@ -7524,9 +7524,9 @@
     {
       "id": "lf0dqz56h97v",
       "name": "Increased HTTP Errors in Mumbai",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2026-01-06T12:29:10.810Z",
-      "updated_at": "2026-01-06T12:29:10.917Z",
+      "updated_at": "2026-01-06T14:28:14.930Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7534,6 +7534,32 @@
       "started_at": "2026-01-06T12:29:10.799Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "sknhlm6d74ml",
+          "status": "identified",
+          "body": "Cloudflare has mitigated the impact and is working towards a resolution of the root cause. More updates will follow.",
+          "incident_id": "lf0dqz56h97v",
+          "created_at": "2026-01-06T14:28:14.927Z",
+          "updated_at": "2026-01-06T14:28:14.927Z",
+          "display_at": "2026-01-06T14:28:14.927Z",
+          "affected_components": [
+            {
+              "code": "4n0gb0kh02gf",
+              "name": "Cloudflare Sites and Services - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "t3d07wlg67nl",
+              "name": "Asia - Mumbai, India - (BOM)",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "h4kvrj330yz6",
           "status": "investigating",
@@ -7565,9 +7591,9 @@
         {
           "id": "t3d07wlg67nl",
           "name": "Mumbai, India - (BOM)",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2015-10-27T20:12:43.833Z",
-          "updated_at": "2026-01-06T13:25:12.610Z",
+          "updated_at": "2026-01-06T14:00:55.076Z",
           "position": 49,
           "description": null,
           "showcase": false,
@@ -10316,86 +10342,6 @@
       ],
       "scheduled_for": "2026-01-13T06:00:00.000Z",
       "scheduled_until": "2026-01-13T10:00:00.000Z"
-    },
-    {
-      "id": "k5x9nh7v3976",
-      "name": "SJC (San Jose) on 2026-01-06",
-      "status": "in_progress",
-      "created_at": "2025-12-22T12:19:02.981Z",
-      "updated_at": "2026-01-06T10:00:22.236Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/bbcg9g0thbjx",
-      "started_at": "2025-12-22T12:19:02.974Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "10fkxxfq2khg",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "k5x9nh7v3976",
-          "created_at": "2026-01-06T10:00:22.230Z",
-          "updated_at": "2026-01-06T10:00:22.230Z",
-          "display_at": "2026-01-06T10:00:22.230Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "0x7fz7w9z6q9",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "k5x9nh7v3976",
-          "created_at": "2026-01-06T09:00:25.749Z",
-          "updated_at": "2026-01-06T09:00:25.749Z",
-          "display_at": "2026-01-06T09:00:25.749Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "m00wy0w60nw1",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SJC (San Jose) datacenter on 2026-01-06 between 10:00 and 14:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "k5x9nh7v3976",
-          "created_at": "2025-12-22T12:19:03.038Z",
-          "updated_at": "2025-12-22T12:19:03.038Z",
-          "display_at": "2025-12-22T12:19:03.038Z",
-          "affected_components": [
-            {
-              "code": "4xvd68d7k70c",
-              "name": "North America - San Jose, CA, United States - (SJC)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "4xvd68d7k70c",
-          "name": "San Jose, CA, United States - (SJC)",
-          "status": "operational",
-          "created_at": "2014-10-16T04:33:22.992Z",
-          "updated_at": "2025-07-02T18:37:23.427Z",
-          "position": 42,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-06T10:00:00.000Z",
-      "scheduled_until": "2026-01-06T14:00:00.000Z"
     }
   ],
   "status": {
