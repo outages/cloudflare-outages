@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-07T19:28:43.540Z"
+    "updated_at": "2026-01-07T20:20:22.708Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -2122,9 +2122,9 @@
     {
       "id": "0dtt4htlgpdh",
       "name": "Muscat, Oman - (MCT)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-08-04T00:56:44.345Z",
-      "updated_at": "2026-01-07T19:28:43.536Z",
+      "updated_at": "2026-01-07T20:16:32.886Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -4132,9 +4132,9 @@
     {
       "id": "nmp96vgn1hpl",
       "name": "Digital Experience Monitoring (DEX)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-03-23T09:33:12.310Z",
-      "updated_at": "2025-12-31T16:16:30.354Z",
+      "updated_at": "2026-01-07T19:56:09.316Z",
       "position": 38,
       "description": "Digital Experience Monitoring (DEX) enables Zero Trust administrators to pinpoint and resolve issues impacting end-user connectivity and performance.",
       "showcase": false,
@@ -7520,7 +7520,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "dxr8sz521h7y",
+      "name": "Digital Experience Monitoring device state may be out of date",
+      "status": "investigating",
+      "created_at": "2026-01-07T19:56:09.275Z",
+      "updated_at": "2026-01-07T19:56:09.379Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/vgbmt2ynqpk8",
+      "started_at": "2026-01-07T19:56:09.267Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "6k9f55zvngwv",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with its Digital Experience Monitoring (DEX) suite. Customers may notice that device state (Who is connected, what mode, etc.) is out of date.",
+          "incident_id": "dxr8sz521h7y",
+          "created_at": "2026-01-07T19:56:09.376Z",
+          "updated_at": "2026-01-07T19:56:09.376Z",
+          "display_at": "2026-01-07T19:56:09.376Z",
+          "affected_components": [
+            {
+              "code": "nmp96vgn1hpl",
+              "name": "Cloudflare Sites and Services - Digital Experience Monitoring (DEX)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nmp96vgn1hpl",
+          "name": "Digital Experience Monitoring (DEX)",
+          "status": "degraded_performance",
+          "created_at": "2023-03-23T09:33:12.310Z",
+          "updated_at": "2026-01-07T19:56:09.316Z",
+          "position": 38,
+          "description": "Digital Experience Monitoring (DEX) enables Zero Trust administrators to pinpoint and resolve issues impacting end-user connectivity and performance.",
+          "showcase": false,
+          "start_date": "2023-03-23",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "gv7ndrpv2h4y",
