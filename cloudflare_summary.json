@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-15T10:48:33.369Z"
+    "updated_at": "2026-01-15T11:20:30.561Z"
   },
   "components": [
     {
@@ -2122,9 +2122,9 @@
     {
       "id": "tdwwnvf8nv6h",
       "name": "Kigali, Rwanda - (KGL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-06-17T03:27:21.977Z",
-      "updated_at": "2026-01-13T12:50:20.750Z",
+      "updated_at": "2026-01-15T11:00:29.835Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -3517,9 +3517,9 @@
     {
       "id": "pd8tz1050d4g",
       "name": "Panama City, Panama - (PTY)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2016-12-20T03:15:58.393Z",
-      "updated_at": "2026-01-13T19:40:54.768Z",
+      "updated_at": "2026-01-15T11:02:34.604Z",
       "position": 29,
       "description": null,
       "showcase": false,
@@ -5752,9 +5752,9 @@
     {
       "id": "k0mgxrls5y1b",
       "name": "Logs",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2016-03-20T18:49:07.613Z",
-      "updated_at": "2026-01-15T10:43:32.193Z",
+      "updated_at": "2026-01-15T11:02:35.068Z",
       "position": 60,
       "description": "Enterprise Logpull and Logpush services",
       "showcase": false,
@@ -7522,6 +7522,79 @@
   ],
   "incidents": [
     {
+      "id": "c7ssfm1dcwwz",
+      "name": "Cloudflare Realtime SFU issues in Frankfurt, Germany - (FRA)",
+      "status": "identified",
+      "created_at": "2026-01-15T10:17:44.052Z",
+      "updated_at": "2026-01-15T11:08:12.055Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/hmlqbvdxj7mw",
+      "started_at": "2026-01-15T10:17:44.043Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "xxvdqf23m35j",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "c7ssfm1dcwwz",
+          "created_at": "2026-01-15T11:08:12.051Z",
+          "updated_at": "2026-01-15T11:08:12.051Z",
+          "display_at": "2026-01-15T11:08:12.051Z",
+          "affected_components": [
+            {
+              "code": "z4wlt5jx9szq",
+              "name": "Cloudflare Sites and Services - Realtime SFU",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3vjqwtlcw4ds",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Realtime SFU in Frankfurt, Germany - (FRA)\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "c7ssfm1dcwwz",
+          "created_at": "2026-01-15T10:17:44.183Z",
+          "updated_at": "2026-01-15T10:17:44.183Z",
+          "display_at": "2026-01-15T10:17:44.183Z",
+          "affected_components": [
+            {
+              "code": "z4wlt5jx9szq",
+              "name": "Cloudflare Sites and Services - Realtime SFU",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "z4wlt5jx9szq",
+          "name": "Realtime SFU",
+          "status": "degraded_performance",
+          "created_at": "2025-05-16T17:06:53.045Z",
+          "updated_at": "2026-01-15T10:17:44.098Z",
+          "position": 76,
+          "description": "Cloudflare Realtime is infrastructure for real-time audio/video/data applications. It allows you to build real-time apps without worrying about scaling or regions. It can act as a selective forwarding unit (WebRTC SFU), as a fanout delivery system for broadcasting (WebRTC CDN) or anything in between.",
+          "showcase": false,
+          "start_date": "2025-05-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "g5yr19yq13hx",
       "name": "Cloudflare Turnstile issues",
       "status": "identified",
@@ -7626,112 +7699,6 @@
           "description": "Turnstile is a user-friendly, privacy-preserving alternative to CAPTCHA.",
           "showcase": false,
           "start_date": "2023-01-19",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "k5fwy2wlc385",
-      "name": "Network Event Log issues",
-      "status": "investigating",
-      "created_at": "2026-01-15T10:43:32.148Z",
-      "updated_at": "2026-01-15T10:43:32.263Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/8xgw9jx7nhvv",
-      "started_at": "2026-01-15T10:43:32.140Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "b6t61wnqvd4n",
-          "status": "investigating",
-          "body": "Cloudflare is investigating issues with the Network Event Log. During this time, some customers may experience problems when attempting to access network event logs via the Dashboard. We are working to identify the cause and will provide updates as they become available.",
-          "incident_id": "k5fwy2wlc385",
-          "created_at": "2026-01-15T10:43:32.260Z",
-          "updated_at": "2026-01-15T10:43:32.260Z",
-          "display_at": "2026-01-15T10:43:32.260Z",
-          "affected_components": [
-            {
-              "code": "k0mgxrls5y1b",
-              "name": "Cloudflare Sites and Services - Logs",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "k0mgxrls5y1b",
-          "name": "Logs",
-          "status": "degraded_performance",
-          "created_at": "2016-03-20T18:49:07.613Z",
-          "updated_at": "2026-01-15T10:43:32.193Z",
-          "position": 60,
-          "description": "Enterprise Logpull and Logpush services",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "c7ssfm1dcwwz",
-      "name": "Cloudflare Realtime SFU issues in Frankfurt, Germany - (FRA)",
-      "status": "investigating",
-      "created_at": "2026-01-15T10:17:44.052Z",
-      "updated_at": "2026-01-15T10:17:44.187Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/hmlqbvdxj7mw",
-      "started_at": "2026-01-15T10:17:44.043Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "3vjqwtlcw4ds",
-          "status": "investigating",
-          "body": "Cloudflare is investigating issues with Realtime SFU in Frankfurt, Germany - (FRA)\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
-          "incident_id": "c7ssfm1dcwwz",
-          "created_at": "2026-01-15T10:17:44.183Z",
-          "updated_at": "2026-01-15T10:17:44.183Z",
-          "display_at": "2026-01-15T10:17:44.183Z",
-          "affected_components": [
-            {
-              "code": "z4wlt5jx9szq",
-              "name": "Cloudflare Sites and Services - Realtime SFU",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "z4wlt5jx9szq",
-          "name": "Realtime SFU",
-          "status": "degraded_performance",
-          "created_at": "2025-05-16T17:06:53.045Z",
-          "updated_at": "2026-01-15T10:17:44.098Z",
-          "position": 76,
-          "description": "Cloudflare Realtime is infrastructure for real-time audio/video/data applications. It allows you to build real-time apps without worrying about scaling or regions. It can act as a selective forwarding unit (WebRTC SFU), as a fanout delivery system for broadcasting (WebRTC CDN) or anything in between.",
-          "showcase": false,
-          "start_date": "2025-05-16",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -9404,166 +9371,6 @@
       "scheduled_until": "2026-01-15T14:00:00.000Z"
     },
     {
-      "id": "0sf9gmh6k21s",
-      "name": "IAD (Ashburn) on 2026-01-15",
-      "status": "in_progress",
-      "created_at": "2026-01-12T17:44:38.239Z",
-      "updated_at": "2026-01-15T07:01:21.612Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/gmh6nkd26wjh",
-      "started_at": "2026-01-12T17:44:38.231Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "4jx4mck8q01d",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "0sf9gmh6k21s",
-          "created_at": "2026-01-15T07:01:21.609Z",
-          "updated_at": "2026-01-15T07:01:21.609Z",
-          "display_at": "2026-01-15T07:01:21.609Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "jqjy8gb9396j",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "0sf9gmh6k21s",
-          "created_at": "2026-01-15T06:00:33.737Z",
-          "updated_at": "2026-01-15T06:00:33.737Z",
-          "display_at": "2026-01-15T06:00:33.737Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "txn6p148mk88",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in IAD (Ashburn) datacenter on 2026-01-15 between 07:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "0sf9gmh6k21s",
-          "created_at": "2026-01-12T17:44:38.297Z",
-          "updated_at": "2026-01-12T17:44:38.297Z",
-          "display_at": "2026-01-12T17:44:38.297Z",
-          "affected_components": [
-            {
-              "code": "3t0npclljyyg",
-              "name": "North America - Ashburn, VA, United States - (IAD)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "3t0npclljyyg",
-          "name": "Ashburn, VA, United States - (IAD)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:30:01.380Z",
-          "updated_at": "2026-01-14T23:51:07.612Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-15T07:00:00.000Z",
-      "scheduled_until": "2026-01-15T11:00:00.000Z"
-    },
-    {
-      "id": "6x88081l2rdw",
-      "name": "JAX (Jacksonville) on 2026-01-15",
-      "status": "in_progress",
-      "created_at": "2026-01-12T17:56:39.015Z",
-      "updated_at": "2026-01-15T07:00:21.483Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/v5y9fd2h3c0k",
-      "started_at": "2026-01-12T17:56:39.007Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "qqm2sybjzbjy",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "6x88081l2rdw",
-          "created_at": "2026-01-15T07:00:21.479Z",
-          "updated_at": "2026-01-15T07:00:21.479Z",
-          "display_at": "2026-01-15T07:00:21.479Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "hdj64g0zfs1k",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "6x88081l2rdw",
-          "created_at": "2026-01-15T06:00:35.800Z",
-          "updated_at": "2026-01-15T06:00:35.800Z",
-          "display_at": "2026-01-15T06:00:35.800Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "ylsn6dfp7cr6",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in JAX (Jacksonville) datacenter on 2026-01-15 between 07:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "6x88081l2rdw",
-          "created_at": "2026-01-12T17:56:39.110Z",
-          "updated_at": "2026-01-12T17:56:39.110Z",
-          "display_at": "2026-01-12T17:56:39.110Z",
-          "affected_components": [
-            {
-              "code": "yst1cfbj49q2",
-              "name": "North America - Jacksonville, FL, United States - (JAX)",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "yst1cfbj49q2",
-          "name": "Jacksonville, FL, United States - (JAX)",
-          "status": "partial_outage",
-          "created_at": "2018-04-10T18:04:05.667Z",
-          "updated_at": "2026-01-14T23:51:18.533Z",
-          "position": 23,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-15T07:00:00.000Z",
-      "scheduled_until": "2026-01-15T11:00:00.000Z"
-    },
-    {
       "id": "xq1p584qpw4b",
       "name": "YVR (Vancouver) on 2026-01-15",
       "status": "in_progress",
@@ -9662,86 +9469,6 @@
       ],
       "scheduled_for": "2026-01-15T06:45:00.000Z",
       "scheduled_until": "2026-01-15T15:45:00.000Z"
-    },
-    {
-      "id": "nc49r2w2v214",
-      "name": "MCI (Kansas City) on 2026-01-15",
-      "status": "in_progress",
-      "created_at": "2026-01-12T18:30:57.441Z",
-      "updated_at": "2026-01-15T06:00:21.531Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/j4bpqmyy2jbb",
-      "started_at": "2026-01-12T18:30:57.431Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "jld3nrzn7j9r",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "nc49r2w2v214",
-          "created_at": "2026-01-15T06:00:21.521Z",
-          "updated_at": "2026-01-15T06:00:21.521Z",
-          "display_at": "2026-01-15T06:00:21.521Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "t18czsnr0g35",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "nc49r2w2v214",
-          "created_at": "2026-01-15T05:00:26.022Z",
-          "updated_at": "2026-01-15T05:00:26.022Z",
-          "display_at": "2026-01-15T05:00:26.022Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "tjqdc9mr6wrq",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MCI (Kansas City) datacenter on 2026-01-15 between 06:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "nc49r2w2v214",
-          "created_at": "2026-01-12T18:30:57.515Z",
-          "updated_at": "2026-01-12T18:30:57.515Z",
-          "display_at": "2026-01-12T18:30:57.515Z",
-          "affected_components": [
-            {
-              "code": "t6hj728hzf16",
-              "name": "North America - Kansas City, MO, United States - (MCI)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "t6hj728hzf16",
-          "name": "Kansas City, MO, United States - (MCI)",
-          "status": "operational",
-          "created_at": "2017-03-31T14:39:31.135Z",
-          "updated_at": "2026-01-14T23:51:18.542Z",
-          "position": 24,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-15T06:00:00.000Z",
-      "scheduled_until": "2026-01-15T11:00:00.000Z"
     }
   ],
   "status": {
