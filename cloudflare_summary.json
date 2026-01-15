@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-15T04:55:29.012Z"
+    "updated_at": "2026-01-15T05:31:47.460Z"
   },
   "components": [
     {
@@ -846,9 +846,9 @@
     {
       "id": "4c231tkdlpcl",
       "name": "Analytics",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-11-13T11:54:10.191Z",
-      "updated_at": "2026-01-10T12:28:44.119Z",
+      "updated_at": "2026-01-15T05:08:06.099Z",
       "position": 5,
       "description": "Customer analytics aggregation service",
       "showcase": false,
@@ -1777,9 +1777,9 @@
     {
       "id": "z9w398bsjvnq",
       "name": "Argo Smart Routing",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-31T03:46:12.547Z",
-      "updated_at": "2024-09-12T11:58:30.682Z",
+      "updated_at": "2026-01-15T05:31:47.409Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -6382,9 +6382,9 @@
     {
       "id": "6dd6ssg7plt0",
       "name": "Spectrum",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:49:55.919Z",
-      "updated_at": "2026-01-15T04:02:57.835Z",
+      "updated_at": "2026-01-15T05:08:06.136Z",
       "position": 86,
       "description": "Spectrum allows you to route MQTT, email, file transfer, version control, games, and more over TCP or UDP through Cloudflare to mask the origin and protect it from DDoS attacks",
       "showcase": false,
@@ -7523,10 +7523,10 @@
   "incidents": [
     {
       "id": "2l6rkfhhqk58",
-      "name": "Spectrum Analytics Issues",
+      "name": "Analytics Issues",
       "status": "investigating",
       "created_at": "2026-01-15T04:02:57.800Z",
-      "updated_at": "2026-01-15T04:13:34.762Z",
+      "updated_at": "2026-01-15T05:31:47.452Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7534,6 +7534,70 @@
       "started_at": "2026-01-15T04:02:57.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "zqcbp4z5nv7t",
+          "status": "investigating",
+          "body": "Impact also includes Argo Smart Routing. Customers may experience degraded performance.\n\nWe are continuing to investigate this issue.",
+          "incident_id": "2l6rkfhhqk58",
+          "created_at": "2026-01-15T05:31:47.450Z",
+          "updated_at": "2026-01-15T05:31:47.450Z",
+          "display_at": "2026-01-15T05:31:47.450Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "z9w398bsjvnq",
+              "name": "Cloudflare Sites and Services - Argo Smart Routing",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "6dd6ssg7plt0",
+              "name": "Cloudflare Sites and Services - Spectrum",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3zv046w50xpg",
+          "status": "investigating",
+          "body": "Impact also includes Argo Smart Routing Analytics. \n\nWe are continuing to investigate this issue.",
+          "incident_id": "2l6rkfhhqk58",
+          "created_at": "2026-01-15T05:08:06.238Z",
+          "updated_at": "2026-01-15T05:08:06.238Z",
+          "display_at": "2026-01-15T05:08:06.238Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "z9w398bsjvnq",
+              "name": "Cloudflare Sites and Services - Argo Smart Routing",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "6dd6ssg7plt0",
+              "name": "Cloudflare Sites and Services - Spectrum",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "xlnyfkd52ppf",
           "status": "investigating",
@@ -7577,11 +7641,41 @@
       ],
       "components": [
         {
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "degraded_performance",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2026-01-15T05:08:06.099Z",
+          "position": 5,
+          "description": "Customer analytics aggregation service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "z9w398bsjvnq",
+          "name": "Argo Smart Routing",
+          "status": "degraded_performance",
+          "created_at": "2020-03-31T03:46:12.547Z",
+          "updated_at": "2026-01-15T05:31:47.409Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
           "id": "6dd6ssg7plt0",
           "name": "Spectrum",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2019-01-24T16:49:55.919Z",
-          "updated_at": "2026-01-15T04:02:57.835Z",
+          "updated_at": "2026-01-15T05:08:06.136Z",
           "position": 86,
           "description": "Spectrum allows you to route MQTT, email, file transfer, version control, games, and more over TCP or UDP through Cloudflare to mask the origin and protect it from DDoS attacks",
           "showcase": false,
@@ -7690,212 +7784,11 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "c0lyz0q9gpnv",
-      "name": "GIG (Rio de Janeiro) on 2026-01-15",
-      "status": "scheduled",
-      "created_at": "2026-01-14T15:48:31.935Z",
-      "updated_at": "2026-01-15T04:00:32.192Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/s6d20kg57hdl",
-      "started_at": "2026-01-14T15:48:31.927Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "n1jg39lrc4pb",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "c0lyz0q9gpnv",
-          "created_at": "2026-01-15T04:00:32.049Z",
-          "updated_at": "2026-01-15T04:00:32.049Z",
-          "display_at": "2026-01-15T04:00:32.049Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "kvpcmswmdpn2",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in GIG (Rio de Janeiro) datacenter on 2026-01-15 between 05:00 and 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "c0lyz0q9gpnv",
-          "created_at": "2026-01-14T15:48:32.021Z",
-          "updated_at": "2026-01-14T15:48:32.021Z",
-          "display_at": "2026-01-14T15:48:32.021Z",
-          "affected_components": [
-            {
-              "code": "7rvrsd9g0f1v",
-              "name": "Latin America & the Caribbean - Rio de Janeiro, Brazil - (GIG)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7rvrsd9g0f1v",
-          "name": "Rio de Janeiro, Brazil - (GIG)",
-          "status": "operational",
-          "created_at": "2017-06-22T22:19:02.210Z",
-          "updated_at": "2026-01-13T07:29:00.353Z",
-          "position": 36,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-15T05:00:00.000Z",
-      "scheduled_until": "2026-01-15T09:00:00.000Z"
-    },
-    {
-      "id": "mw0vfp43chqs",
-      "name": "VCP (Campinas) on 2026-01-15",
-      "status": "scheduled",
-      "created_at": "2025-12-31T12:06:17.781Z",
-      "updated_at": "2026-01-15T04:00:30.097Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/3lm5l0rxx4ck",
-      "started_at": "2025-12-31T12:06:17.772Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "5kjq9yjj2xzq",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "mw0vfp43chqs",
-          "created_at": "2026-01-15T04:00:29.977Z",
-          "updated_at": "2026-01-15T04:00:29.977Z",
-          "display_at": "2026-01-15T04:00:29.977Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "k9j48s9vxq2y",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in VCP (Campinas) datacenter on 2026-01-15 between 05:00 and 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "mw0vfp43chqs",
-          "created_at": "2025-12-31T12:06:17.849Z",
-          "updated_at": "2025-12-31T12:06:17.849Z",
-          "display_at": "2025-12-31T12:06:17.849Z",
-          "affected_components": [
-            {
-              "code": "ns7bhkw6xxkj",
-              "name": "Latin America & the Caribbean - Campinas, Brazil - (VCP)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ns7bhkw6xxkj",
-          "name": "Campinas, Brazil - (VCP)",
-          "status": "operational",
-          "created_at": "2021-01-11T20:28:44.964Z",
-          "updated_at": "2026-01-14T09:10:25.224Z",
-          "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-01-11",
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-15T05:00:00.000Z",
-      "scheduled_until": "2026-01-15T09:00:00.000Z"
-    },
-    {
-      "id": "smrtbvyj6t04",
-      "name": "GRU (São Paulo) on 2026-01-15",
-      "status": "scheduled",
-      "created_at": "2026-01-07T18:18:30.777Z",
-      "updated_at": "2026-01-15T04:00:28.495Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/zz8l3l7x74k7",
-      "started_at": "2026-01-07T18:18:30.769Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "j9zhl42vx9lp",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "smrtbvyj6t04",
-          "created_at": "2026-01-15T04:00:28.349Z",
-          "updated_at": "2026-01-15T04:00:28.349Z",
-          "display_at": "2026-01-15T04:00:28.349Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "yj5mt0q3g6t3",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in GRU (São Paulo) datacenter on 2026-01-15 between 05:00 and 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "smrtbvyj6t04",
-          "created_at": "2026-01-07T18:18:30.859Z",
-          "updated_at": "2026-01-07T18:18:30.859Z",
-          "display_at": "2026-01-07T18:18:30.859Z",
-          "affected_components": [
-            {
-              "code": "73mbn78m0yzm",
-              "name": "Latin America & the Caribbean - São Paulo, Brazil - (GRU)",
-              "old_status": "under_maintenance",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "73mbn78m0yzm",
-          "name": "São Paulo, Brazil - (GRU)",
-          "status": "under_maintenance",
-          "created_at": "2014-10-27T21:45:14.885Z",
-          "updated_at": "2026-01-14T15:17:48.316Z",
-          "position": 43,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-15T05:00:00.000Z",
-      "scheduled_until": "2026-01-15T09:00:00.000Z"
-    },
-    {
       "id": "nc49r2w2v214",
       "name": "MCI (Kansas City) on 2026-01-15",
       "status": "scheduled",
       "created_at": "2026-01-12T18:30:57.441Z",
-      "updated_at": "2026-01-12T18:30:57.519Z",
+      "updated_at": "2026-01-15T05:00:26.097Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7903,6 +7796,19 @@
       "started_at": "2026-01-12T18:30:57.431Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "t18czsnr0g35",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "nc49r2w2v214",
+          "created_at": "2026-01-15T05:00:26.022Z",
+          "updated_at": "2026-01-15T05:00:26.022Z",
+          "display_at": "2026-01-15T05:00:26.022Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "tjqdc9mr6wrq",
           "status": "scheduled",
@@ -7942,60 +7848,6 @@
         }
       ],
       "scheduled_for": "2026-01-15T06:00:00.000Z",
-      "scheduled_until": "2026-01-15T11:00:00.000Z"
-    },
-    {
-      "id": "6x88081l2rdw",
-      "name": "JAX (Jacksonville) on 2026-01-15",
-      "status": "scheduled",
-      "created_at": "2026-01-12T17:56:39.015Z",
-      "updated_at": "2026-01-12T17:56:39.113Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/v5y9fd2h3c0k",
-      "started_at": "2026-01-12T17:56:39.007Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "ylsn6dfp7cr6",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in JAX (Jacksonville) datacenter on 2026-01-15 between 07:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "6x88081l2rdw",
-          "created_at": "2026-01-12T17:56:39.110Z",
-          "updated_at": "2026-01-12T17:56:39.110Z",
-          "display_at": "2026-01-12T17:56:39.110Z",
-          "affected_components": [
-            {
-              "code": "yst1cfbj49q2",
-              "name": "North America - Jacksonville, FL, United States - (JAX)",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "yst1cfbj49q2",
-          "name": "Jacksonville, FL, United States - (JAX)",
-          "status": "partial_outage",
-          "created_at": "2018-04-10T18:04:05.667Z",
-          "updated_at": "2026-01-14T23:51:18.533Z",
-          "position": 23,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-15T07:00:00.000Z",
       "scheduled_until": "2026-01-15T11:00:00.000Z"
     },
     {
@@ -8040,6 +7892,60 @@
           "created_at": "2014-10-27T20:30:01.380Z",
           "updated_at": "2026-01-14T23:51:07.612Z",
           "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-01-15T07:00:00.000Z",
+      "scheduled_until": "2026-01-15T11:00:00.000Z"
+    },
+    {
+      "id": "6x88081l2rdw",
+      "name": "JAX (Jacksonville) on 2026-01-15",
+      "status": "scheduled",
+      "created_at": "2026-01-12T17:56:39.015Z",
+      "updated_at": "2026-01-12T17:56:39.113Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/v5y9fd2h3c0k",
+      "started_at": "2026-01-12T17:56:39.007Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ylsn6dfp7cr6",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in JAX (Jacksonville) datacenter on 2026-01-15 between 07:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "6x88081l2rdw",
+          "created_at": "2026-01-12T17:56:39.110Z",
+          "updated_at": "2026-01-12T17:56:39.110Z",
+          "display_at": "2026-01-12T17:56:39.110Z",
+          "affected_components": [
+            {
+              "code": "yst1cfbj49q2",
+              "name": "North America - Jacksonville, FL, United States - (JAX)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "yst1cfbj49q2",
+          "name": "Jacksonville, FL, United States - (JAX)",
+          "status": "partial_outage",
+          "created_at": "2018-04-10T18:04:05.667Z",
+          "updated_at": "2026-01-14T23:51:18.533Z",
+          "position": 23,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -8647,6 +8553,80 @@
       "scheduled_until": "2026-01-16T14:00:00.000Z"
     },
     {
+      "id": "n4f8gdl6ztpz",
+      "name": "DFW (Dallas) on 2026-01-16",
+      "status": "scheduled",
+      "created_at": "2026-01-12T19:20:49.082Z",
+      "updated_at": "2026-01-13T22:22:33.531Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/zkp0kxfc7t7d",
+      "started_at": "2026-01-12T19:20:49.076Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "3s3crwjwhnkf",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in DFW (Dallas) datacenter on 2026-01-16 between 08:00 and 13:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "n4f8gdl6ztpz",
+          "created_at": "2026-01-13T22:22:33.528Z",
+          "updated_at": "2026-01-13T22:22:33.528Z",
+          "display_at": "2026-01-13T22:22:33.528Z",
+          "affected_components": [
+            {
+              "code": "r8ppmb3xm98j",
+              "name": "North America - Dallas, TX, United States - (DFW)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "l09bk2rwx8hq",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in DFW (Dallas) datacenter on 2026-01-16 between 10:00 and 15:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "n4f8gdl6ztpz",
+          "created_at": "2026-01-12T19:20:49.140Z",
+          "updated_at": "2026-01-12T19:20:49.140Z",
+          "display_at": "2026-01-12T19:20:49.140Z",
+          "affected_components": [
+            {
+              "code": "r8ppmb3xm98j",
+              "name": "North America - Dallas, TX, United States - (DFW)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r8ppmb3xm98j",
+          "name": "Dallas, TX, United States - (DFW)",
+          "status": "operational",
+          "created_at": "2014-10-27T19:52:05.585Z",
+          "updated_at": "2026-01-14T23:51:07.719Z",
+          "position": 14,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-01-16T08:00:00.000Z",
+      "scheduled_until": "2026-01-16T13:00:00.000Z"
+    },
+    {
       "id": "pxqqj6f0l2x2",
       "name": "YYZ (Toronto) on 2026-01-16",
       "status": "scheduled",
@@ -8753,80 +8733,6 @@
       ],
       "scheduled_for": "2026-01-16T08:00:00.000Z",
       "scheduled_until": "2026-01-16T14:00:00.000Z"
-    },
-    {
-      "id": "n4f8gdl6ztpz",
-      "name": "DFW (Dallas) on 2026-01-16",
-      "status": "scheduled",
-      "created_at": "2026-01-12T19:20:49.082Z",
-      "updated_at": "2026-01-13T22:22:33.531Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/zkp0kxfc7t7d",
-      "started_at": "2026-01-12T19:20:49.076Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "3s3crwjwhnkf",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DFW (Dallas) datacenter on 2026-01-16 between 08:00 and 13:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "n4f8gdl6ztpz",
-          "created_at": "2026-01-13T22:22:33.528Z",
-          "updated_at": "2026-01-13T22:22:33.528Z",
-          "display_at": "2026-01-13T22:22:33.528Z",
-          "affected_components": [
-            {
-              "code": "r8ppmb3xm98j",
-              "name": "North America - Dallas, TX, United States - (DFW)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "l09bk2rwx8hq",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DFW (Dallas) datacenter on 2026-01-16 between 10:00 and 15:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "n4f8gdl6ztpz",
-          "created_at": "2026-01-12T19:20:49.140Z",
-          "updated_at": "2026-01-12T19:20:49.140Z",
-          "display_at": "2026-01-12T19:20:49.140Z",
-          "affected_components": [
-            {
-              "code": "r8ppmb3xm98j",
-              "name": "North America - Dallas, TX, United States - (DFW)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "r8ppmb3xm98j",
-          "name": "Dallas, TX, United States - (DFW)",
-          "status": "operational",
-          "created_at": "2014-10-27T19:52:05.585Z",
-          "updated_at": "2026-01-14T23:51:07.719Z",
-          "position": 14,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-16T08:00:00.000Z",
-      "scheduled_until": "2026-01-16T13:00:00.000Z"
     },
     {
       "id": "984hlfzqsj7s",
@@ -8937,60 +8843,6 @@
       "scheduled_until": "2026-01-19T09:00:00.000Z"
     },
     {
-      "id": "8pmkt5trr4yd",
-      "name": "CLT (Charlotte) on 2026-01-19",
-      "status": "scheduled",
-      "created_at": "2026-01-14T17:46:30.922Z",
-      "updated_at": "2026-01-14T17:46:30.989Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/5371y4jmq2wb",
-      "started_at": "2026-01-14T17:46:30.914Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "y6zkp0q9wwrb",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in CLT (Charlotte) datacenter on 2026-01-19 between 08:00 and 14:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "8pmkt5trr4yd",
-          "created_at": "2026-01-14T17:46:30.986Z",
-          "updated_at": "2026-01-14T17:46:30.986Z",
-          "display_at": "2026-01-14T17:46:30.986Z",
-          "affected_components": [
-            {
-              "code": "dwlvwq5gnym8",
-              "name": "North America - Charlotte, NC, United States - (CLT)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "dwlvwq5gnym8",
-          "name": "Charlotte, NC, United States - (CLT)",
-          "status": "operational",
-          "created_at": "2018-11-30T01:17:45.019Z",
-          "updated_at": "2026-01-14T23:51:07.681Z",
-          "position": 10,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-19T08:00:00.000Z",
-      "scheduled_until": "2026-01-19T14:00:00.000Z"
-    },
-    {
       "id": "lskbk1677zvz",
       "name": "EZE (Buenos Aires) on 2026-01-19",
       "status": "scheduled",
@@ -9086,6 +8938,60 @@
           "created_at": "2019-01-23T08:27:40.920Z",
           "updated_at": "2026-01-14T23:51:07.710Z",
           "position": 13,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-01-19T08:00:00.000Z",
+      "scheduled_until": "2026-01-19T14:00:00.000Z"
+    },
+    {
+      "id": "8pmkt5trr4yd",
+      "name": "CLT (Charlotte) on 2026-01-19",
+      "status": "scheduled",
+      "created_at": "2026-01-14T17:46:30.922Z",
+      "updated_at": "2026-01-14T17:46:30.989Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/5371y4jmq2wb",
+      "started_at": "2026-01-14T17:46:30.914Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "y6zkp0q9wwrb",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in CLT (Charlotte) datacenter on 2026-01-19 between 08:00 and 14:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "8pmkt5trr4yd",
+          "created_at": "2026-01-14T17:46:30.986Z",
+          "updated_at": "2026-01-14T17:46:30.986Z",
+          "display_at": "2026-01-14T17:46:30.986Z",
+          "affected_components": [
+            {
+              "code": "dwlvwq5gnym8",
+              "name": "North America - Charlotte, NC, United States - (CLT)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "dwlvwq5gnym8",
+          "name": "Charlotte, NC, United States - (CLT)",
+          "status": "operational",
+          "created_at": "2018-11-30T01:17:45.019Z",
+          "updated_at": "2026-01-14T23:51:07.681Z",
+          "position": 10,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -9475,6 +9381,246 @@
       ],
       "scheduled_for": "2026-01-27T07:00:00.000Z",
       "scheduled_until": "2026-01-27T12:00:00.000Z"
+    },
+    {
+      "id": "c0lyz0q9gpnv",
+      "name": "GIG (Rio de Janeiro) on 2026-01-15",
+      "status": "in_progress",
+      "created_at": "2026-01-14T15:48:31.935Z",
+      "updated_at": "2026-01-15T05:02:21.139Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/s6d20kg57hdl",
+      "started_at": "2026-01-14T15:48:31.927Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "fj6pz838z10r",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "c0lyz0q9gpnv",
+          "created_at": "2026-01-15T05:02:21.135Z",
+          "updated_at": "2026-01-15T05:02:21.135Z",
+          "display_at": "2026-01-15T05:02:21.135Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "n1jg39lrc4pb",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "c0lyz0q9gpnv",
+          "created_at": "2026-01-15T04:00:32.049Z",
+          "updated_at": "2026-01-15T04:00:32.049Z",
+          "display_at": "2026-01-15T04:00:32.049Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "kvpcmswmdpn2",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in GIG (Rio de Janeiro) datacenter on 2026-01-15 between 05:00 and 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "c0lyz0q9gpnv",
+          "created_at": "2026-01-14T15:48:32.021Z",
+          "updated_at": "2026-01-14T15:48:32.021Z",
+          "display_at": "2026-01-14T15:48:32.021Z",
+          "affected_components": [
+            {
+              "code": "7rvrsd9g0f1v",
+              "name": "Latin America & the Caribbean - Rio de Janeiro, Brazil - (GIG)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7rvrsd9g0f1v",
+          "name": "Rio de Janeiro, Brazil - (GIG)",
+          "status": "operational",
+          "created_at": "2017-06-22T22:19:02.210Z",
+          "updated_at": "2026-01-13T07:29:00.353Z",
+          "position": 36,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-01-15T05:00:00.000Z",
+      "scheduled_until": "2026-01-15T09:00:00.000Z"
+    },
+    {
+      "id": "mw0vfp43chqs",
+      "name": "VCP (Campinas) on 2026-01-15",
+      "status": "in_progress",
+      "created_at": "2025-12-31T12:06:17.781Z",
+      "updated_at": "2026-01-15T05:01:21.135Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/3lm5l0rxx4ck",
+      "started_at": "2025-12-31T12:06:17.772Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "j6fr9dk4ps80",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "mw0vfp43chqs",
+          "created_at": "2026-01-15T05:01:21.131Z",
+          "updated_at": "2026-01-15T05:01:21.131Z",
+          "display_at": "2026-01-15T05:01:21.131Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "5kjq9yjj2xzq",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "mw0vfp43chqs",
+          "created_at": "2026-01-15T04:00:29.977Z",
+          "updated_at": "2026-01-15T04:00:29.977Z",
+          "display_at": "2026-01-15T04:00:29.977Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "k9j48s9vxq2y",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in VCP (Campinas) datacenter on 2026-01-15 between 05:00 and 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "mw0vfp43chqs",
+          "created_at": "2025-12-31T12:06:17.849Z",
+          "updated_at": "2025-12-31T12:06:17.849Z",
+          "display_at": "2025-12-31T12:06:17.849Z",
+          "affected_components": [
+            {
+              "code": "ns7bhkw6xxkj",
+              "name": "Latin America & the Caribbean - Campinas, Brazil - (VCP)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ns7bhkw6xxkj",
+          "name": "Campinas, Brazil - (VCP)",
+          "status": "operational",
+          "created_at": "2021-01-11T20:28:44.964Z",
+          "updated_at": "2026-01-14T09:10:25.224Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-01-11",
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-01-15T05:00:00.000Z",
+      "scheduled_until": "2026-01-15T09:00:00.000Z"
+    },
+    {
+      "id": "smrtbvyj6t04",
+      "name": "GRU (São Paulo) on 2026-01-15",
+      "status": "in_progress",
+      "created_at": "2026-01-07T18:18:30.777Z",
+      "updated_at": "2026-01-15T05:00:21.156Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/zz8l3l7x74k7",
+      "started_at": "2026-01-07T18:18:30.769Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "s0xjfjr4bfn5",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "smrtbvyj6t04",
+          "created_at": "2026-01-15T05:00:21.153Z",
+          "updated_at": "2026-01-15T05:00:21.153Z",
+          "display_at": "2026-01-15T05:00:21.153Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "j9zhl42vx9lp",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "smrtbvyj6t04",
+          "created_at": "2026-01-15T04:00:28.349Z",
+          "updated_at": "2026-01-15T04:00:28.349Z",
+          "display_at": "2026-01-15T04:00:28.349Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "yj5mt0q3g6t3",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in GRU (São Paulo) datacenter on 2026-01-15 between 05:00 and 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "smrtbvyj6t04",
+          "created_at": "2026-01-07T18:18:30.859Z",
+          "updated_at": "2026-01-07T18:18:30.859Z",
+          "display_at": "2026-01-07T18:18:30.859Z",
+          "affected_components": [
+            {
+              "code": "73mbn78m0yzm",
+              "name": "Latin America & the Caribbean - São Paulo, Brazil - (GRU)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "73mbn78m0yzm",
+          "name": "São Paulo, Brazil - (GRU)",
+          "status": "under_maintenance",
+          "created_at": "2014-10-27T21:45:14.885Z",
+          "updated_at": "2026-01-14T15:17:48.316Z",
+          "position": 43,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-01-15T05:00:00.000Z",
+      "scheduled_until": "2026-01-15T09:00:00.000Z"
     },
     {
       "id": "gz5f1pjsqq3s",
