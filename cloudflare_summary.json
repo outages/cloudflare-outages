@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-16T10:25:23.266Z"
+    "updated_at": "2026-01-16T10:42:26.687Z"
   },
   "components": [
     {
@@ -1912,9 +1912,9 @@
     {
       "id": "2469qcw8rvjp",
       "name": "Audit Logs",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-08-01T04:49:28.841Z",
-      "updated_at": "2026-01-02T22:28:46.997Z",
+      "updated_at": "2026-01-16T10:42:26.617Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -7521,6 +7521,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "h0bxltqfvt4q",
+      "name": "Issue with Ruleset Modification Audit Logs",
+      "status": "investigating",
+      "created_at": "2026-01-16T10:42:26.574Z",
+      "updated_at": "2026-01-16T10:42:26.684Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/krc4sb626m30",
+      "started_at": "2026-01-16T10:42:26.565Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "qbj35qgwyfmw",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue where some audit logs for ruleset modifications are not appearing in the Dashboard. We are working to resolve the issue. More updates to follow shortly.",
+          "incident_id": "h0bxltqfvt4q",
+          "created_at": "2026-01-16T10:42:26.681Z",
+          "updated_at": "2026-01-16T10:42:26.681Z",
+          "display_at": "2026-01-16T10:42:26.681Z",
+          "affected_components": [
+            {
+              "code": "2469qcw8rvjp",
+              "name": "Cloudflare Sites and Services - Audit Logs",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2469qcw8rvjp",
+          "name": "Audit Logs",
+          "status": "degraded_performance",
+          "created_at": "2022-08-01T04:49:28.841Z",
+          "updated_at": "2026-01-16T10:42:26.617Z",
+          "position": 12,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-08-01",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "g5yr19yq13hx",
       "name": "Cloudflare Turnstile issues",
