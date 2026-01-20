@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-20T13:45:21.128Z"
+    "updated_at": "2026-01-20T14:22:27.918Z"
   },
   "components": [
     {
@@ -3862,9 +3862,9 @@
     {
       "id": "z0yd3sxqjqdm",
       "name": "D1",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-02-09T08:57:38.825Z",
-      "updated_at": "2025-12-31T16:16:30.307Z",
+      "updated_at": "2026-01-20T14:22:27.827Z",
       "position": 33,
       "description": null,
       "showcase": false,
@@ -4072,9 +4072,9 @@
     {
       "id": "gw1cztbpft9b",
       "name": "Kathmandu, Nepal - (KTM)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2026-01-20T03:54:24.134Z",
+      "updated_at": "2026-01-20T14:17:53.443Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -4627,9 +4627,9 @@
     {
       "id": "bty1yz6dhh0v",
       "name": "Durable Objects",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-06-12T14:55:22.631Z",
-      "updated_at": "2026-01-17T00:11:01.792Z",
+      "updated_at": "2026-01-20T14:22:27.850Z",
       "position": 43,
       "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
       "showcase": false,
@@ -6097,9 +6097,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2026-01-20T13:43:21.339Z",
+      "updated_at": "2026-01-20T14:02:26.627Z",
       "position": 71,
       "description": null,
       "showcase": false,
@@ -7522,30 +7522,36 @@
   ],
   "incidents": [
     {
-      "id": "gp3hy6g7174s",
-      "name": "Cloudflare Pages build failures",
+      "id": "nn8vjw74mcf2",
+      "name": "Minor increase in D1 and Durable Object errors",
       "status": "investigating",
-      "created_at": "2026-01-20T13:43:21.305Z",
-      "updated_at": "2026-01-20T13:43:21.402Z",
+      "created_at": "2026-01-20T14:22:27.784Z",
+      "updated_at": "2026-01-20T14:22:27.915Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/bmqf050g0zxw",
-      "started_at": "2026-01-20T13:43:21.298Z",
+      "shortlink": "https://stspg.io/sxzfgjvvklmb",
+      "started_at": "2026-01-20T14:22:27.774Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "7315mrsjz0hh",
+          "id": "dgdr24c4qqbm",
           "status": "investigating",
-          "body": "Cloudflare is investigating issues with Cloudflare Pages builds: customers are likely to experience errors starting builds or builds finishing.\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
-          "incident_id": "gp3hy6g7174s",
-          "created_at": "2026-01-20T13:43:21.399Z",
-          "updated_at": "2026-01-20T13:43:21.399Z",
-          "display_at": "2026-01-20T13:43:21.399Z",
+          "body": "Cloudflare is aware of, and investigating an issue with D1 and Durable Objects which might potentially impact some customers: D1 and Durable Objects are experiencing a slightly increased level of errors. We are currently investigating this issue, more updates to follow shortly.",
+          "incident_id": "nn8vjw74mcf2",
+          "created_at": "2026-01-20T14:22:27.912Z",
+          "updated_at": "2026-01-20T14:22:27.912Z",
+          "display_at": "2026-01-20T14:22:27.912Z",
           "affected_components": [
             {
-              "code": "vgxj684rcw7t",
-              "name": "Cloudflare Sites and Services - Pages",
+              "code": "z0yd3sxqjqdm",
+              "name": "Cloudflare Sites and Services - D1",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
               "old_status": "operational",
               "new_status": "degraded_performance"
             }
@@ -7557,15 +7563,30 @@
       ],
       "components": [
         {
-          "id": "vgxj684rcw7t",
-          "name": "Pages",
+          "id": "z0yd3sxqjqdm",
+          "name": "D1",
           "status": "degraded_performance",
-          "created_at": "2021-04-16T21:04:08.018Z",
-          "updated_at": "2026-01-20T13:43:21.339Z",
-          "position": 71,
+          "created_at": "2024-02-09T08:57:38.825Z",
+          "updated_at": "2026-01-20T14:22:27.827Z",
+          "position": 33,
           "description": null,
           "showcase": false,
-          "start_date": "2021-04-16",
+          "start_date": "2024-02-09",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "bty1yz6dhh0v",
+          "name": "Durable Objects",
+          "status": "degraded_performance",
+          "created_at": "2023-06-12T14:55:22.631Z",
+          "updated_at": "2026-01-20T14:22:27.850Z",
+          "position": 43,
+          "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
+          "showcase": false,
+          "start_date": "2023-06-12",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -8837,140 +8858,6 @@
       ],
       "scheduled_for": "2026-01-29T16:00:00.000Z",
       "scheduled_until": "2026-01-30T01:00:00.000Z"
-    },
-    {
-      "id": "wvkqjl7xk4m3",
-      "name": "STL (St. Louis) on 2026-01-20",
-      "status": "in_progress",
-      "created_at": "2026-01-20T08:42:44.337Z",
-      "updated_at": "2026-01-20T09:01:22.328Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/v6ldzwjlb2zj",
-      "started_at": "2026-01-20T08:42:44.330Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "fr1f0bd7whqz",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "wvkqjl7xk4m3",
-          "created_at": "2026-01-20T09:01:22.311Z",
-          "updated_at": "2026-01-20T09:01:22.311Z",
-          "display_at": "2026-01-20T09:01:22.311Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "s8h944gr9ms5",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in STL (St. Louis) datacenter on 2026-01-20 between 09:00 and 14:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "wvkqjl7xk4m3",
-          "created_at": "2026-01-20T08:42:44.387Z",
-          "updated_at": "2026-01-20T08:42:44.387Z",
-          "display_at": "2026-01-20T08:42:44.387Z",
-          "affected_components": [
-            {
-              "code": "f4kdktnb8sz2",
-              "name": "North America - St. Louis, MO, United States - (STL)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "f4kdktnb8sz2",
-          "name": "St. Louis, MO, United States - (STL)",
-          "status": "operational",
-          "created_at": "2016-09-14T18:53:59.600Z",
-          "updated_at": "2026-01-20T12:42:55.278Z",
-          "position": 54,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-20T09:00:00.000Z",
-      "scheduled_until": "2026-01-20T14:00:00.000Z"
-    },
-    {
-      "id": "9sf1jvq74hrm",
-      "name": "DTW (Detroit) on 2026-01-20",
-      "status": "in_progress",
-      "created_at": "2026-01-20T08:44:43.822Z",
-      "updated_at": "2026-01-20T09:00:21.364Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/b65stdmwst0z",
-      "started_at": "2026-01-20T08:44:43.816Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "hr3p3jvfln2h",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "9sf1jvq74hrm",
-          "created_at": "2026-01-20T09:00:21.358Z",
-          "updated_at": "2026-01-20T09:00:21.358Z",
-          "display_at": "2026-01-20T09:00:21.358Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "cwptyq2074dg",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DTW (Detroit) datacenter on 2026-01-20 between 09:00 and 14:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "9sf1jvq74hrm",
-          "created_at": "2026-01-20T08:44:43.882Z",
-          "updated_at": "2026-01-20T08:44:43.882Z",
-          "display_at": "2026-01-20T08:44:43.882Z",
-          "affected_components": [
-            {
-              "code": "bbx7ndl66dmp",
-              "name": "North America - Detroit, MI, United States - (DTW)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "bbx7ndl66dmp",
-          "name": "Detroit, MI, United States - (DTW)",
-          "status": "operational",
-          "created_at": "2017-04-10T16:40:13.626Z",
-          "updated_at": "2026-01-20T12:36:59.509Z",
-          "position": 16,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-20T09:00:00.000Z",
-      "scheduled_until": "2026-01-20T14:00:00.000Z"
     }
   ],
   "status": {
