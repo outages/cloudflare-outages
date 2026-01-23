@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-23T18:20:23.008Z"
+    "updated_at": "2026-01-23T19:00:21.198Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3651,9 +3651,9 @@
     {
       "id": "skqbwdvp70c6",
       "name": "Kampala, Uganda - (EBB)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-07-17T09:56:48.732Z",
-      "updated_at": "2026-01-23T16:03:29.612Z",
+      "updated_at": "2026-01-23T18:59:02.545Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -3861,9 +3861,9 @@
     {
       "id": "z0yd3sxqjqdm",
       "name": "D1",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-02-09T08:57:38.825Z",
-      "updated_at": "2026-01-20T15:51:11.234Z",
+      "updated_at": "2026-01-23T18:46:54.616Z",
       "position": 33,
       "description": null,
       "showcase": false,
@@ -4626,9 +4626,9 @@
     {
       "id": "bty1yz6dhh0v",
       "name": "Durable Objects",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-06-12T14:55:22.631Z",
-      "updated_at": "2026-01-20T15:51:11.259Z",
+      "updated_at": "2026-01-23T18:46:54.641Z",
       "position": 43,
       "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
       "showcase": false,
@@ -7504,7 +7504,82 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "kzvk0c2s5fy7",
+      "name": "Durable Objects elevated errors",
+      "status": "investigating",
+      "created_at": "2026-01-23T18:46:54.573Z",
+      "updated_at": "2026-01-23T18:47:21.864Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/ndssy7yqj2d9",
+      "started_at": "2026-01-23T18:46:54.564Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "4yp3tmvxfysh",
+          "status": "investigating",
+          "body": "Cloudflare SQLite-backed Durable Objects are seeing elevated errors across multiple regions. Services that depend on SQLite-backed Durable Objects like D1 are also impacted.",
+          "incident_id": "kzvk0c2s5fy7",
+          "created_at": "2026-01-23T18:46:54.710Z",
+          "updated_at": "2026-01-23T18:46:54.710Z",
+          "display_at": "2026-01-23T18:46:54.710Z",
+          "affected_components": [
+            {
+              "code": "z0yd3sxqjqdm",
+              "name": "Cloudflare Sites and Services - D1",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "z0yd3sxqjqdm",
+          "name": "D1",
+          "status": "degraded_performance",
+          "created_at": "2024-02-09T08:57:38.825Z",
+          "updated_at": "2026-01-23T18:46:54.616Z",
+          "position": 33,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-02-09",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "bty1yz6dhh0v",
+          "name": "Durable Objects",
+          "status": "degraded_performance",
+          "created_at": "2023-06-12T14:55:22.631Z",
+          "updated_at": "2026-01-23T18:46:54.641Z",
+          "position": 43,
+          "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
+          "showcase": false,
+          "start_date": "2023-06-12",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "yjj8jfndgw05",
@@ -10137,106 +10212,6 @@
       ],
       "scheduled_for": "2026-02-03T16:00:00.000Z",
       "scheduled_until": "2026-02-04T01:00:00.000Z"
-    },
-    {
-      "id": "bwp9yj32pn45",
-      "name": "CWB (Curitiba) on 2026-01-23",
-      "status": "in_progress",
-      "created_at": "2026-01-22T19:24:58.745Z",
-      "updated_at": "2026-01-23T15:00:21.274Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/7qrbhqpg3559",
-      "started_at": "2026-01-22T19:24:58.739Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "sjh00mbqs1f3",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "bwp9yj32pn45",
-          "created_at": "2026-01-23T15:00:21.268Z",
-          "updated_at": "2026-01-23T15:00:21.268Z",
-          "display_at": "2026-01-23T15:00:21.268Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "pfryqgsw22zg",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in CWB (Curitiba) datacenter on 2026-01-23 between 15:00 and 19:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "bwp9yj32pn45",
-          "created_at": "2026-01-23T14:50:54.571Z",
-          "updated_at": "2026-01-23T14:50:54.571Z",
-          "display_at": "2026-01-23T14:50:54.571Z",
-          "affected_components": [
-            {
-              "code": "n5017xzrnrsc",
-              "name": "Latin America & the Caribbean - Curitiba, Brazil - (CWB)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "z5fq97gvqdc6",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "bwp9yj32pn45",
-          "created_at": "2026-01-23T14:30:21.341Z",
-          "updated_at": "2026-01-23T14:30:21.341Z",
-          "display_at": "2026-01-23T14:30:21.341Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "1mqxq99hzfg9",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in CWB (Curitiba) datacenter on 2026-01-23 between 15:30 and 19:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "bwp9yj32pn45",
-          "created_at": "2026-01-22T19:24:58.816Z",
-          "updated_at": "2026-01-22T19:24:58.816Z",
-          "display_at": "2026-01-22T19:24:58.816Z",
-          "affected_components": [
-            {
-              "code": "n5017xzrnrsc",
-              "name": "Latin America & the Caribbean - Curitiba, Brazil - (CWB)",
-              "old_status": "under_maintenance",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "n5017xzrnrsc",
-          "name": "Curitiba, Brazil - (CWB)",
-          "status": "operational",
-          "created_at": "2019-04-01T08:05:14.526Z",
-          "updated_at": "2026-01-22T22:35:48.126Z",
-          "position": 15,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-23T15:00:00.000Z",
-      "scheduled_until": "2026-01-23T19:00:00.000Z"
     }
   ],
   "status": {
