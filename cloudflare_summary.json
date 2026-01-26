@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-26T23:20:22.122Z"
+    "updated_at": "2026-01-26T23:44:00.385Z"
   },
   "components": [
     {
@@ -3696,9 +3696,9 @@
     {
       "id": "6h060y0sxvv6",
       "name": "Minsk, Belarus - (MSQ)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-12-01T13:54:46.179Z",
-      "updated_at": "2026-01-21T09:39:51.103Z",
+      "updated_at": "2026-01-26T23:28:28.746Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -5226,9 +5226,9 @@
     {
       "id": "wr8jt2slt0cp",
       "name": "New Delhi, India - (DEL)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-10-27T20:12:23.920Z",
-      "updated_at": "2026-01-26T17:21:52.426Z",
+      "updated_at": "2026-01-26T23:44:00.381Z",
       "position": 52,
       "description": null,
       "showcase": false,
@@ -7510,7 +7510,7 @@
       "name": "Elevated Errors and Query Timeouts for D1 Databases and SQLite Durable Objects",
       "status": "identified",
       "created_at": "2026-01-25T21:07:55.548Z",
-      "updated_at": "2026-01-26T15:22:33.076Z",
+      "updated_at": "2026-01-26T23:29:40.606Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7518,6 +7518,32 @@
       "started_at": "2026-01-25T21:07:55.538Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "kgqhmc618gqb",
+          "status": "identified",
+          "body": "One implemented fix is being rolled out across Cloudflare's network but has not yet reached locations running Durable Objects or D1. The release will progress over several more hours after which we will monitor throughout 2025-01-27 for the desired reduction in errors and timeouts.",
+          "incident_id": "54h1hbfvchlf",
+          "created_at": "2026-01-26T23:29:40.603Z",
+          "updated_at": "2026-01-26T23:29:40.603Z",
+          "display_at": "2026-01-26T23:29:40.603Z",
+          "affected_components": [
+            {
+              "code": "z0yd3sxqjqdm",
+              "name": "Cloudflare Sites and Services - D1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "xq4qfv36p931",
           "status": "identified",
