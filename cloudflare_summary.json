@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-27T17:50:31.188Z"
+    "updated_at": "2026-01-27T18:46:32.447Z"
   },
   "components": [
     {
@@ -159,7 +159,7 @@
       "name": "Amman, Jordan - (AMM)",
       "status": "under_maintenance",
       "created_at": "2019-04-02T06:42:27.907Z",
-      "updated_at": "2026-01-23T16:45:09.026Z",
+      "updated_at": "2026-01-27T18:39:54.761Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -344,9 +344,9 @@
     {
       "id": "w4k8yvhfb3vp",
       "name": "Access",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2018-02-09T21:46:39.049Z",
-      "updated_at": "2025-11-27T15:37:20.007Z",
+      "updated_at": "2026-01-27T18:46:32.323Z",
       "position": 2,
       "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
       "showcase": false,
@@ -875,9 +875,9 @@
     {
       "id": "5wtvzd626rd8",
       "name": "Bangkok, Thailand - (BKK)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2016-04-21T05:37:43.134Z",
-      "updated_at": "2026-01-25T18:55:18.030Z",
+      "updated_at": "2026-01-27T18:16:12.062Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -6096,9 +6096,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2026-01-20T14:02:26.627Z",
+      "updated_at": "2026-01-27T18:46:32.344Z",
       "position": 71,
       "description": null,
       "showcase": false,
@@ -6771,9 +6771,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2026-01-16T16:18:12.392Z",
+      "updated_at": "2026-01-27T18:46:32.365Z",
       "position": 104,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -6831,9 +6831,9 @@
     {
       "id": "tmh50tx2nprs",
       "name": "Workers KV",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:32.394Z",
-      "updated_at": "2025-12-31T16:15:54.706Z",
+      "updated_at": "2026-01-27T18:46:32.386Z",
       "position": 108,
       "description": "Workers KV is a data storage that allows you to store and retrieve data globally to build dynamic and performant APIs and websites that support high read volumes with low latency",
       "showcase": false,
@@ -7505,6 +7505,175 @@
     }
   ],
   "incidents": [
+    {
+      "id": "7chp8znbgl6s",
+      "name": "Workers KV elevated latency and errors",
+      "status": "investigating",
+      "created_at": "2026-01-27T18:46:32.278Z",
+      "updated_at": "2026-01-27T18:46:32.444Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/45pg1dz6rcxb",
+      "started_at": "2026-01-27T18:46:32.266Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "r3p9y0tqqq13",
+          "status": "investigating",
+          "body": "Cloudflare is aware of issues impacting Workers KV and downstream services such as Cloudflare Access, Cloudflare Pages and Workers Assets.\n\nAccess customers may be experiencing issues logging in or changing configuration. Existing authenticated traffic is not impacted.\n\nPages and Workers Assets customers may have issues uploading new assets.",
+          "incident_id": "7chp8znbgl6s",
+          "created_at": "2026-01-27T18:46:32.441Z",
+          "updated_at": "2026-01-27T18:46:32.441Z",
+          "display_at": "2026-01-27T18:46:32.441Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "tmh50tx2nprs",
+              "name": "Cloudflare Sites and Services - Workers KV",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "w4k8yvhfb3vp",
+          "name": "Access",
+          "status": "degraded_performance",
+          "created_at": "2018-02-09T21:46:39.049Z",
+          "updated_at": "2026-01-27T18:46:32.323Z",
+          "position": 2,
+          "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2026-01-27T18:46:32.344Z",
+          "position": 71,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2026-01-27T18:46:32.365Z",
+          "position": 104,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "tmh50tx2nprs",
+          "name": "Workers KV",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:32.394Z",
+          "updated_at": "2026-01-27T18:46:32.386Z",
+          "position": 108,
+          "description": "Workers KV is a data storage that allows you to store and retrieve data globally to build dynamic and performant APIs and websites that support high read volumes with low latency",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "3xb30dhqfkw7",
+      "name": "Network Degraded in Chicago, IL",
+      "status": "investigating",
+      "created_at": "2026-01-27T18:36:14.134Z",
+      "updated_at": "2026-01-27T18:36:14.194Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "none",
+      "shortlink": "https://stspg.io/yzjql5gcwwr5",
+      "started_at": "2026-01-27T18:36:14.127Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "99ds5wzs75sx",
+          "status": "investigating",
+          "body": "We are working to resolve network degradation near Chicago, IL in North America.",
+          "incident_id": "3xb30dhqfkw7",
+          "created_at": "2026-01-27T18:36:14.191Z",
+          "updated_at": "2026-01-27T18:36:14.191Z",
+          "display_at": "2026-01-27T18:36:14.191Z",
+          "affected_components": [
+            {
+              "code": "z9v8znl25w0f",
+              "name": "North America - Chicago, IL, United States - (ORD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "z9v8znl25w0f",
+          "name": "Chicago, IL, United States - (ORD)",
+          "status": "operational",
+          "created_at": "2014-10-27T19:57:04.863Z",
+          "updated_at": "2026-01-14T23:51:07.690Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "54h1hbfvchlf",
       "name": "Elevated Errors and Query Timeouts for D1 Databases and SQLite Durable Objects",
@@ -8181,9 +8350,9 @@
         {
           "id": "5wtvzd626rd8",
           "name": "Bangkok, Thailand - (BKK)",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2016-04-21T05:37:43.134Z",
-          "updated_at": "2026-01-25T18:55:18.030Z",
+          "updated_at": "2026-01-27T18:16:12.062Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -10104,9 +10273,9 @@
         {
           "id": "5wtvzd626rd8",
           "name": "Bangkok, Thailand - (BKK)",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2016-04-21T05:37:43.134Z",
-          "updated_at": "2026-01-25T18:55:18.030Z",
+          "updated_at": "2026-01-27T18:16:12.062Z",
           "position": 5,
           "description": null,
           "showcase": false,
