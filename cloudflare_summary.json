@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-03T19:12:21.443Z"
+    "updated_at": "2026-02-03T19:45:29.613Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1553,7 +1553,7 @@
       "name": "Calgary, AB, Canada - (YYC)",
       "status": "operational",
       "created_at": "2018-03-15T19:43:31.836Z",
-      "updated_at": "2026-01-28T13:07:05.945Z",
+      "updated_at": "2026-02-03T19:40:01.294Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -5123,7 +5123,7 @@
       "name": "Saskatoon, SK, Canada - (YXE)",
       "status": "operational",
       "created_at": "2018-04-02T01:43:30.221Z",
-      "updated_at": "2026-01-28T13:07:06.741Z",
+      "updated_at": "2026-02-03T19:40:03.386Z",
       "position": 51,
       "description": null,
       "showcase": false,
@@ -6096,9 +6096,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2026-02-03T19:09:47.847Z",
+      "updated_at": "2026-02-03T19:45:29.534Z",
       "position": 71,
       "description": null,
       "showcase": false,
@@ -7504,14 +7504,68 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "m1xvmqf37z97",
+      "name": "Increase in 404s and 500s for Cloudflare Pages",
+      "status": "investigating",
+      "created_at": "2026-02-03T19:45:29.484Z",
+      "updated_at": "2026-02-03T19:45:29.609Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5k81jn5fx4dy",
+      "started_at": "2026-02-03T19:45:29.473Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "gc2zk0rgl5tk",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating an issue impacting some Pages projects where they may return an increase of 404s of 500s. We are working to analyze and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "m1xvmqf37z97",
+          "created_at": "2026-02-03T19:45:29.606Z",
+          "updated_at": "2026-02-03T19:45:29.606Z",
+          "display_at": "2026-02-03T19:45:29.606Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2026-02-03T19:45:29.534Z",
+          "position": 71,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "4gpf2rg61n70",
       "name": "MAA (Chennai) on 2026-02-03",
       "status": "scheduled",
       "created_at": "2026-02-02T20:00:48.390Z",
-      "updated_at": "2026-02-02T20:00:48.452Z",
+      "updated_at": "2026-02-03T19:30:21.679Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7519,6 +7573,19 @@
       "started_at": "2026-02-02T20:00:48.383Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "4knybvym4ftt",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "4gpf2rg61n70",
+          "created_at": "2026-02-03T19:30:21.569Z",
+          "updated_at": "2026-02-03T19:30:21.569Z",
+          "display_at": "2026-02-03T19:30:21.569Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "pt2ptpm3p9gm",
           "status": "scheduled",
@@ -8699,6 +8766,60 @@
       ],
       "scheduled_for": "2026-02-10T14:00:00.000Z",
       "scheduled_until": "2026-02-10T23:59:00.000Z"
+    },
+    {
+      "id": "8dlwbwzp2zcn",
+      "name": "EWR (Newark) on 2026-02-11",
+      "status": "scheduled",
+      "created_at": "2026-02-03T19:28:20.705Z",
+      "updated_at": "2026-02-03T19:28:20.780Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/06fghnl1zphp",
+      "started_at": "2026-02-03T19:28:20.696Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "2d5bw06k5yqy",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in EWR (Newark) datacenter on 2026-02-11 between 07:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "8dlwbwzp2zcn",
+          "created_at": "2026-02-03T19:28:20.777Z",
+          "updated_at": "2026-02-03T19:28:20.777Z",
+          "display_at": "2026-02-03T19:28:20.777Z",
+          "affected_components": [
+            {
+              "code": "grpnztl4pd46",
+              "name": "North America - Newark, NJ, United States - (EWR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "grpnztl4pd46",
+          "name": "Newark, NJ, United States - (EWR)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:30:34.850Z",
+          "updated_at": "2026-01-14T23:51:18.634Z",
+          "position": 34,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-02-11T07:00:00.000Z",
+      "scheduled_until": "2026-02-11T12:00:00.000Z"
     },
     {
       "id": "jyxxhmklj4bq",
