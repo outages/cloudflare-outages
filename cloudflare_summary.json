@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-03T20:30:21.993Z"
+    "updated_at": "2026-02-03T21:08:19.603Z"
   },
   "components": [
     {
@@ -479,9 +479,9 @@
     {
       "id": "gxjcfyf5pht1",
       "name": "Baghdad, Iraq - (BGW)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-03-12T14:18:23.436Z",
-      "updated_at": "2026-02-03T20:21:57.746Z",
+      "updated_at": "2026-02-03T21:03:36.047Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -4506,9 +4506,9 @@
     {
       "id": "9b9tyrd9x3xr",
       "name": "Portland, OR, United States - (PDX)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2017-08-31T11:47:10.621Z",
-      "updated_at": "2026-01-21T12:37:43.409Z",
+      "updated_at": "2026-02-03T21:03:37.575Z",
       "position": 42,
       "description": null,
       "showcase": false,
@@ -5781,9 +5781,9 @@
     {
       "id": "m50pw1dxjp51",
       "name": "Palmas, Brazil - (PMW)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-04-30T21:38:59.647Z",
-      "updated_at": "2026-01-14T20:43:46.779Z",
+      "updated_at": "2026-02-03T20:57:41.232Z",
       "position": 60,
       "description": null,
       "showcase": false,
@@ -7508,16 +7508,36 @@
     {
       "id": "m1xvmqf37z97",
       "name": "Increase in 404s and 500s for Cloudflare Pages",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2026-02-03T19:45:29.484Z",
-      "updated_at": "2026-02-03T19:45:29.609Z",
-      "monitoring_at": null,
+      "updated_at": "2026-02-03T21:05:38.422Z",
+      "monitoring_at": "2026-02-03T21:05:38.402Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/5k81jn5fx4dy",
       "started_at": "2026-02-03T19:45:29.473Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "wd9707fx2g4q",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.\n\nIf your site is still experiencing 404s/500s a redeployment will resolve the issue.",
+          "incident_id": "m1xvmqf37z97",
+          "created_at": "2026-02-03T21:05:38.402Z",
+          "updated_at": "2026-02-03T21:05:38.402Z",
+          "display_at": "2026-02-03T21:05:38.402Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "gc2zk0rgl5tk",
           "status": "investigating",
@@ -8576,9 +8596,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
@@ -8684,9 +8704,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
@@ -8699,6 +8719,60 @@
       ],
       "scheduled_for": "2026-02-10T14:00:00.000Z",
       "scheduled_until": "2026-02-10T23:59:00.000Z"
+    },
+    {
+      "id": "vvgdnl4r2317",
+      "name": "CFC (Cacador) on 2026-02-11",
+      "status": "scheduled",
+      "created_at": "2026-02-03T21:08:19.533Z",
+      "updated_at": "2026-02-03T21:08:19.600Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/2dy20m77j19b",
+      "started_at": "2026-02-03T21:08:19.525Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "s8gk0z9xyy65",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in CFC (Cacador) datacenter on 2026-02-11 between 02:30 and 05:45 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "vvgdnl4r2317",
+          "created_at": "2026-02-03T21:08:19.597Z",
+          "updated_at": "2026-02-03T21:08:19.597Z",
+          "display_at": "2026-02-03T21:08:19.597Z",
+          "affected_components": [
+            {
+              "code": "ry378yzsq7kp",
+              "name": "Latin America & the Caribbean - Caçador, Brazil - (CFC)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ry378yzsq7kp",
+          "name": "Caçador, Brazil - (CFC)",
+          "status": "operational",
+          "created_at": "2021-07-08T07:57:05.268Z",
+          "updated_at": "2026-01-22T19:01:19.329Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-08",
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-02-11T02:30:00.000Z",
+      "scheduled_until": "2026-02-11T05:45:00.000Z"
     },
     {
       "id": "8dlwbwzp2zcn",
@@ -8792,9 +8866,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
@@ -8846,9 +8920,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
@@ -8900,9 +8974,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
@@ -8954,9 +9028,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
@@ -9008,9 +9082,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
@@ -9062,9 +9136,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
@@ -9116,9 +9190,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
@@ -9170,9 +9244,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
@@ -9224,9 +9298,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
@@ -9278,9 +9352,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
@@ -9332,9 +9406,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
@@ -9386,9 +9460,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
@@ -9440,9 +9514,9 @@
         {
           "id": "9b9tyrd9x3xr",
           "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-01-21T12:37:43.409Z",
+          "updated_at": "2026-02-03T21:03:37.575Z",
           "position": 42,
           "description": null,
           "showcase": false,
