@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-03T16:00:39.209Z"
+    "updated_at": "2026-02-03T17:09:18.830Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1971,9 +1971,9 @@
     {
       "id": "mvb027gs2881",
       "name": "Kuwait City, Kuwait - (KWI)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-07-06T11:24:13.241Z",
-      "updated_at": "2026-02-03T15:47:50.354Z",
+      "updated_at": "2026-02-03T16:11:51.059Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -3651,9 +3651,9 @@
     {
       "id": "skqbwdvp70c6",
       "name": "Kampala, Uganda - (EBB)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-07-17T09:56:48.732Z",
-      "updated_at": "2026-02-03T15:12:06.916Z",
+      "updated_at": "2026-02-03T17:09:18.826Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -4326,9 +4326,9 @@
     {
       "id": "plgz1dn2y920",
       "name": "Lusaka, Zambia - (LUN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2025-03-06T16:18:43.749Z",
-      "updated_at": "2026-02-03T15:14:30.665Z",
+      "updated_at": "2026-02-03T16:11:51.378Z",
       "position": 39,
       "description": null,
       "showcase": false,
@@ -5423,7 +5423,7 @@
       "name": "Phnom Penh, Cambodia - (PNH)",
       "status": "under_maintenance",
       "created_at": "2018-02-09T20:38:28.093Z",
-      "updated_at": "2026-02-03T08:56:46.028Z",
+      "updated_at": "2026-02-03T16:47:42.088Z",
       "position": 55,
       "description": null,
       "showcase": false,
@@ -6096,9 +6096,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2026-01-28T01:53:53.239Z",
+      "updated_at": "2026-02-03T17:00:42.969Z",
       "position": 71,
       "description": null,
       "showcase": false,
@@ -6141,9 +6141,9 @@
     {
       "id": "yrlfvdv9yv53",
       "name": "Yogyakarta, Indonesia - (JOG)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-04-19T00:50:29.234Z",
-      "updated_at": "2026-02-03T15:55:36.071Z",
+      "updated_at": "2026-02-03T16:29:40.850Z",
       "position": 73,
       "description": null,
       "showcase": false,
@@ -6756,9 +6756,9 @@
     {
       "id": "7g58rb9tl036",
       "name": "San Pedro Sula, Honduras - (SAP)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-04-30T23:46:32.236Z",
-      "updated_at": "2026-01-30T22:23:26.237Z",
+      "updated_at": "2026-02-03T16:56:05.829Z",
       "position": 103,
       "description": null,
       "showcase": false,
@@ -6801,9 +6801,9 @@
     {
       "id": "vcpsk0w6g86k",
       "name": "Workers Builds",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-05-27T17:04:31.385Z",
-      "updated_at": "2025-12-31T16:15:54.687Z",
+      "updated_at": "2026-02-03T16:09:11.057Z",
       "position": 106,
       "description": "Workers Builds is Cloudflare's native CI/CD system that allows you to integrate with GitHub or GitLab to automatically deploy changes with each new push to a selected branch (e.g. main).",
       "showcase": false,
@@ -7504,14 +7504,129 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "jk2mx637l9k9",
+      "name": "Workers and Pages Builds not triggering",
+      "status": "investigating",
+      "created_at": "2026-02-03T16:09:11.008Z",
+      "updated_at": "2026-02-03T17:00:43.020Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/zcrlwvw3kx35",
+      "started_at": "2026-02-03T16:09:10.998Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "29zslk42l9tz",
+          "status": "investigating",
+          "body": "Workers API has recovered. We have identified this issue is also impacting Pages builds. We are continuing to investigate.",
+          "incident_id": "jk2mx637l9k9",
+          "created_at": "2026-02-03T17:00:43.017Z",
+          "updated_at": "2026-02-03T17:00:43.017Z",
+          "display_at": "2026-02-03T17:00:43.017Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "vcpsk0w6g86k",
+              "name": "Cloudflare Sites and Services - Workers Builds",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "r6fjnfnbscph",
+          "status": "investigating",
+          "body": "We are also seeing some issues for the Workers API. Investigation is ongoing, we will share more information as it becomes available.",
+          "incident_id": "jk2mx637l9k9",
+          "created_at": "2026-02-03T16:56:09.738Z",
+          "updated_at": "2026-02-03T16:56:41.871Z",
+          "display_at": "2026-02-03T16:56:09.000Z",
+          "affected_components": [
+            {
+              "code": "vcpsk0w6g86k",
+              "name": "Cloudflare Sites and Services - Workers Builds",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "jw1dz1wkg11r",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating reports of an issue triggering Workers Builds from Git commits. We are working to analyze and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "jk2mx637l9k9",
+          "created_at": "2026-02-03T16:09:11.129Z",
+          "updated_at": "2026-02-03T16:09:11.129Z",
+          "display_at": "2026-02-03T16:09:11.129Z",
+          "affected_components": [
+            {
+              "code": "vcpsk0w6g86k",
+              "name": "Cloudflare Sites and Services - Workers Builds",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2026-02-03T17:00:42.969Z",
+          "position": 71,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "vcpsk0w6g86k",
+          "name": "Workers Builds",
+          "status": "degraded_performance",
+          "created_at": "2025-05-27T17:04:31.385Z",
+          "updated_at": "2026-02-03T16:09:11.057Z",
+          "position": 106,
+          "description": "Workers Builds is Cloudflare's native CI/CD system that allows you to integrate with GitHub or GitLab to automatically deploy changes with each new push to a selected branch (e.g. main).",
+          "showcase": false,
+          "start_date": "2025-05-27",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "mbxcp801x1bp",
       "name": "HKG (Hong Kong) on 2026-02-03",
       "status": "scheduled",
       "created_at": "2026-01-30T17:34:35.597Z",
-      "updated_at": "2026-01-30T17:34:35.661Z",
+      "updated_at": "2026-02-03T17:00:22.277Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7519,6 +7634,19 @@
       "started_at": "2026-01-30T17:34:35.590Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "565yztzd6gpf",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "mbxcp801x1bp",
+          "created_at": "2026-02-03T17:00:22.048Z",
+          "updated_at": "2026-02-03T17:00:22.048Z",
+          "display_at": "2026-02-03T17:00:22.048Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "jvl0fcggm2m3",
           "status": "scheduled",
@@ -7939,6 +8067,60 @@
       "scheduled_until": "2026-02-04T18:00:00.000Z"
     },
     {
+      "id": "1vk5s6k7f66x",
+      "name": "MNL (Manila) on 2026-02-04",
+      "status": "scheduled",
+      "created_at": "2026-01-30T23:50:34.896Z",
+      "updated_at": "2026-01-30T23:50:35.007Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/9m6xgnfm0jqy",
+      "started_at": "2026-01-30T23:50:34.886Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "0b3dhpqpzxjr",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MNL (Manila) datacenter on 2026-02-04 between 18:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "1vk5s6k7f66x",
+          "created_at": "2026-01-30T23:50:35.003Z",
+          "updated_at": "2026-01-30T23:50:35.003Z",
+          "display_at": "2026-01-30T23:50:35.003Z",
+          "affected_components": [
+            {
+              "code": "ss09y7v3wzwd",
+              "name": "Asia - Manila, Philippines - (MNL)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ss09y7v3wzwd",
+          "name": "Manila, Philippines - (MNL)",
+          "status": "under_maintenance",
+          "created_at": "2016-04-29T12:14:56.581Z",
+          "updated_at": "2026-01-31T09:56:09.712Z",
+          "position": 48,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-02-04T18:00:00.000Z",
+      "scheduled_until": "2026-02-04T22:00:00.000Z"
+    },
+    {
       "id": "wdb03gth5jn9",
       "name": "SIN (Singapore) on 2026-02-04",
       "status": "scheduled",
@@ -8020,60 +8202,6 @@
           "created_at": "2014-10-27T21:44:15.897Z",
           "updated_at": "2026-01-28T02:13:39.032Z",
           "position": 59,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-02-04T18:00:00.000Z",
-      "scheduled_until": "2026-02-04T22:00:00.000Z"
-    },
-    {
-      "id": "1vk5s6k7f66x",
-      "name": "MNL (Manila) on 2026-02-04",
-      "status": "scheduled",
-      "created_at": "2026-01-30T23:50:34.896Z",
-      "updated_at": "2026-01-30T23:50:35.007Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/9m6xgnfm0jqy",
-      "started_at": "2026-01-30T23:50:34.886Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "0b3dhpqpzxjr",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MNL (Manila) datacenter on 2026-02-04 between 18:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "1vk5s6k7f66x",
-          "created_at": "2026-01-30T23:50:35.003Z",
-          "updated_at": "2026-01-30T23:50:35.003Z",
-          "display_at": "2026-01-30T23:50:35.003Z",
-          "affected_components": [
-            {
-              "code": "ss09y7v3wzwd",
-              "name": "Asia - Manila, Philippines - (MNL)",
-              "old_status": "under_maintenance",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ss09y7v3wzwd",
-          "name": "Manila, Philippines - (MNL)",
-          "status": "under_maintenance",
-          "created_at": "2016-04-29T12:14:56.581Z",
-          "updated_at": "2026-01-31T09:56:09.712Z",
-          "position": 48,
           "description": null,
           "showcase": false,
           "start_date": null,
@@ -8195,60 +8323,6 @@
       "scheduled_until": "2026-02-05T00:00:00.000Z"
     },
     {
-      "id": "f4nxgnnrmw40",
-      "name": "DAR (Dar es Salaam) on 2026-02-04",
-      "status": "scheduled",
-      "created_at": "2026-02-02T00:24:35.642Z",
-      "updated_at": "2026-02-02T00:24:35.742Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/x4t4fqptn8wg",
-      "started_at": "2026-02-02T00:24:35.634Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "rymv5k19v418",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in DAR (Dar es Salaam) datacenter between 2026-02-04 23:00 and 2026-02-05 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "f4nxgnnrmw40",
-          "created_at": "2026-02-02T00:24:35.739Z",
-          "updated_at": "2026-02-02T00:24:35.739Z",
-          "display_at": "2026-02-02T00:24:35.739Z",
-          "affected_components": [
-            {
-              "code": "cscgtg7yfz1b",
-              "name": "Africa - Dar Es Salaam, Tanzania - (DAR)",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "cscgtg7yfz1b",
-          "name": "Dar Es Salaam, Tanzania - (DAR)",
-          "status": "operational",
-          "created_at": "2019-06-10T05:19:20.533Z",
-          "updated_at": "2026-02-02T00:24:35.688Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "00gpj4s37mz4",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-02-04T23:00:00.000Z",
-      "scheduled_until": "2026-02-05T03:00:00.000Z"
-    },
-    {
       "id": "1pdgqzygr903",
       "name": "ADB (Izmir) on 2026-02-04",
       "status": "scheduled",
@@ -8294,6 +8368,60 @@
           "showcase": false,
           "start_date": "2022-12-27",
           "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-02-04T23:00:00.000Z",
+      "scheduled_until": "2026-02-05T03:00:00.000Z"
+    },
+    {
+      "id": "f4nxgnnrmw40",
+      "name": "DAR (Dar es Salaam) on 2026-02-04",
+      "status": "scheduled",
+      "created_at": "2026-02-02T00:24:35.642Z",
+      "updated_at": "2026-02-02T00:24:35.742Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/x4t4fqptn8wg",
+      "started_at": "2026-02-02T00:24:35.634Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "rymv5k19v418",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in DAR (Dar es Salaam) datacenter between 2026-02-04 23:00 and 2026-02-05 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "f4nxgnnrmw40",
+          "created_at": "2026-02-02T00:24:35.739Z",
+          "updated_at": "2026-02-02T00:24:35.739Z",
+          "display_at": "2026-02-02T00:24:35.739Z",
+          "affected_components": [
+            {
+              "code": "cscgtg7yfz1b",
+              "name": "Africa - Dar Es Salaam, Tanzania - (DAR)",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "cscgtg7yfz1b",
+          "name": "Dar Es Salaam, Tanzania - (DAR)",
+          "status": "operational",
+          "created_at": "2019-06-10T05:19:20.533Z",
+          "updated_at": "2026-02-02T00:24:35.688Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "00gpj4s37mz4",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
