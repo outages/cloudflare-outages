@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-04T15:52:06.228Z"
+    "updated_at": "2026-02-04T16:46:00.152Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1371,9 +1371,9 @@
     {
       "id": "h02k6rrcwpbr",
       "name": "Doha, Qatar - (DOH)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-06-18T15:21:54.451Z",
-      "updated_at": "2026-02-04T15:34:07.973Z",
+      "updated_at": "2026-02-04T15:58:07.974Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -1973,7 +1973,7 @@
       "name": "Kuwait City, Kuwait - (KWI)",
       "status": "under_maintenance",
       "created_at": "2015-07-06T11:24:13.241Z",
-      "updated_at": "2026-02-04T15:46:01.125Z",
+      "updated_at": "2026-02-04T16:46:00.149Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2796,9 +2796,9 @@
     {
       "id": "shqj304834s4",
       "name": "Tel Aviv, Israel - (TLV)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-03-13T14:28:48.746Z",
-      "updated_at": "2026-02-04T15:34:07.610Z",
+      "updated_at": "2026-02-04T15:58:06.779Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -6441,9 +6441,9 @@
     {
       "id": "47xg28c02lnk",
       "name": "Stream",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2019-01-24T16:53:34.953Z",
-      "updated_at": "2025-12-31T16:16:02.883Z",
+      "updated_at": "2026-02-04T16:45:15.872Z",
       "position": 88,
       "description": "Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7504,14 +7504,68 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "gx9nbv7l3yqs",
+      "name": "Cloudflare Stream Issues",
+      "status": "investigating",
+      "created_at": "2026-02-04T16:45:15.835Z",
+      "updated_at": "2026-02-04T16:45:15.931Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "critical",
+      "shortlink": "https://stspg.io/jpjhwb1m0lj3",
+      "started_at": "2026-02-04T16:45:15.826Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "7tgdz59xwcwl",
+          "status": "investigating",
+          "body": "Cloudflare is currently investigating issues loading live broadcasts using the Stream player. On-demand videos and custom players are unaffected. We are working to understand the full impact and mitigate this problem, more updates to follow shortly.",
+          "incident_id": "gx9nbv7l3yqs",
+          "created_at": "2026-02-04T16:45:15.929Z",
+          "updated_at": "2026-02-04T16:45:15.929Z",
+          "display_at": "2026-02-04T16:45:15.929Z",
+          "affected_components": [
+            {
+              "code": "47xg28c02lnk",
+              "name": "Cloudflare Sites and Services - Stream",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "47xg28c02lnk",
+          "name": "Stream",
+          "status": "major_outage",
+          "created_at": "2019-01-24T16:53:34.953Z",
+          "updated_at": "2026-02-04T16:45:15.872Z",
+          "position": 88,
+          "description": "Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "9sc92pk8jw47",
       "name": "IAH (Houston) on 2026-02-04",
       "status": "scheduled",
       "created_at": "2026-02-03T23:12:21.077Z",
-      "updated_at": "2026-02-03T23:12:21.143Z",
+      "updated_at": "2026-02-04T16:00:25.946Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7519,6 +7573,19 @@
       "started_at": "2026-02-03T23:12:21.069Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "2p4fkbnn1wnj",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "9sc92pk8jw47",
+          "created_at": "2026-02-04T16:00:25.816Z",
+          "updated_at": "2026-02-04T16:00:25.816Z",
+          "display_at": "2026-02-04T16:00:25.816Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "kp1c84wypsws",
           "status": "scheduled",
@@ -9700,7 +9767,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "major",
+    "description": "Partial System Outage"
   }
 }
