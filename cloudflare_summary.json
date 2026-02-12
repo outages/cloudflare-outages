@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-12T18:00:27.172Z"
+    "updated_at": "2026-02-12T19:12:30.086Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -4176,9 +4176,9 @@
     {
       "id": "mslkxsqftrnn",
       "name": "Kolkata, India - (CCU)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-08-12T14:37:30.005Z",
-      "updated_at": "2026-01-28T18:47:07.823Z",
+      "updated_at": "2026-02-12T19:12:30.082Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -4731,9 +4731,9 @@
     {
       "id": "tws4xpyksdfq",
       "name": "Macau - (MFM)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-03-12T04:07:56.557Z",
-      "updated_at": "2026-02-06T18:21:43.741Z",
+      "updated_at": "2026-02-12T19:12:29.448Z",
       "position": 45,
       "description": null,
       "showcase": false,
@@ -5226,9 +5226,9 @@
     {
       "id": "wr8jt2slt0cp",
       "name": "New Delhi, India - (DEL)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2015-10-27T20:12:23.920Z",
-      "updated_at": "2026-02-06T08:26:49.889Z",
+      "updated_at": "2026-02-12T19:12:29.755Z",
       "position": 52,
       "description": null,
       "showcase": false,
@@ -6156,9 +6156,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2026-02-10T23:19:42.141Z",
+      "updated_at": "2026-02-12T18:15:38.278Z",
       "position": 73,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -6516,9 +6516,9 @@
     {
       "id": "bn06brrnz2n2",
       "name": "Kannur, India - (CNN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-06-08T15:40:49.155Z",
-      "updated_at": "2026-02-04T12:46:32.845Z",
+      "updated_at": "2026-02-12T19:12:29.151Z",
       "position": 90,
       "description": null,
       "showcase": false,
@@ -6966,9 +6966,9 @@
     {
       "id": "wst86pq2g9y9",
       "name": "Bogota, Colombia - (BOG)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2025-06-02T15:04:47.704Z",
-      "updated_at": "2026-02-11T16:59:32.397Z",
+      "updated_at": "2026-02-12T19:00:34.691Z",
       "position": 186,
       "description": null,
       "showcase": false,
@@ -7504,7 +7504,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "79c2573c1n3r",
+      "name": "Increase in R2 Sippy 404s",
+      "status": "investigating",
+      "created_at": "2026-02-12T18:15:38.230Z",
+      "updated_at": "2026-02-12T18:15:55.939Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/fjcyg24kdg0r",
+      "started_at": "2026-02-12T18:15:38.219Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8kffctnfbxv0",
+          "status": "investigating",
+          "body": "Cloudflare is investigating reports of Sippy returning 404 on objects which do exist at the upstream provider. We are working to understand the full impact and mitigate this problem. \nUpdates will be posted as they become available.",
+          "incident_id": "79c2573c1n3r",
+          "created_at": "2026-02-12T18:15:38.342Z",
+          "updated_at": "2026-02-12T18:15:38.342Z",
+          "display_at": "2026-02-12T18:15:38.342Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "partial_outage",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2026-02-12T18:15:38.278Z",
+          "position": 73,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "kmnjhm8g95yd",
