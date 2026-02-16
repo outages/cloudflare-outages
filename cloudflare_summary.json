@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-16T10:03:08.520Z"
+    "updated_at": "2026-02-16T11:02:20.737Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -218,9 +218,9 @@
     {
       "id": "xjfk3l4dykrs",
       "name": "Ahmedabad, India - (AMD)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-03-28T11:54:07.498Z",
-      "updated_at": "2026-02-15T22:23:57.353Z",
+      "updated_at": "2026-02-16T10:06:43.566Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1253,7 +1253,7 @@
       "name": "Dammam, Saudi Arabia - (DMM)",
       "status": "operational",
       "created_at": "2021-07-30T11:39:33.707Z",
-      "updated_at": "2026-02-16T09:12:40.908Z",
+      "updated_at": "2026-02-16T10:42:20.958Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -2274,7 +2274,7 @@
       "name": "Luanda, Angola - (LAD)",
       "status": "under_maintenance",
       "created_at": "2016-09-19T04:46:37.401Z",
-      "updated_at": "2026-02-16T09:18:39.864Z",
+      "updated_at": "2026-02-16T10:18:43.579Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -4087,9 +4087,9 @@
     {
       "id": "rppy995xymxv",
       "name": "Data Loss Prevention (DLP)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-04-05T20:47:05.487Z",
-      "updated_at": "2026-02-13T13:31:15.476Z",
+      "updated_at": "2026-02-16T10:23:33.691Z",
       "position": 36,
       "description": "Cloudflare Data Loss Prevention (DLP)",
       "showcase": false,
@@ -4914,7 +4914,7 @@
       "name": "Manila, Philippines - (MNL)",
       "status": "operational",
       "created_at": "2016-04-29T12:14:56.581Z",
-      "updated_at": "2026-02-15T16:45:29.905Z",
+      "updated_at": "2026-02-16T10:53:37.397Z",
       "position": 48,
       "description": null,
       "showcase": false,
@@ -5422,9 +5422,9 @@
     {
       "id": "8xc65dbhbrd5",
       "name": "Phnom Penh, Cambodia - (PNH)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2018-02-09T20:38:28.093Z",
-      "updated_at": "2026-02-16T10:03:08.515Z",
+      "updated_at": "2026-02-16T10:06:48.221Z",
       "position": 55,
       "description": null,
       "showcase": false,
@@ -6172,9 +6172,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2026-02-13T13:30:44.345Z",
+      "updated_at": "2026-02-16T10:26:49.406Z",
       "position": 74,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -7520,7 +7520,181 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "53q8j8wnctyc",
+      "name": "Increased Error Rates Accessing R2 from APAC",
+      "status": "identified",
+      "created_at": "2026-02-16T10:26:49.361Z",
+      "updated_at": "2026-02-16T11:02:20.728Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/r94qfy2t9xvr",
+      "started_at": "2026-02-16T10:26:49.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "9lzngwrmzvtb",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "53q8j8wnctyc",
+          "created_at": "2026-02-16T11:02:20.725Z",
+          "updated_at": "2026-02-16T11:02:20.725Z",
+          "display_at": "2026-02-16T11:02:20.725Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "54sndkht6g3z",
+          "status": "investigating",
+          "body": "We are currently investigating an issue where users accessing R2 and dependent services from APAC will see an increase in HTTP 5xx error responses. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "53q8j8wnctyc",
+          "created_at": "2026-02-16T10:26:49.473Z",
+          "updated_at": "2026-02-16T10:33:26.224Z",
+          "display_at": "2026-02-16T10:26:49.000Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2026-02-16T10:26:49.406Z",
+          "position": 74,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "391rky29892m",
+      "name": "Newark (EWR) Datacenter Increase in HTTP Request latency",
+      "status": "investigating",
+      "created_at": "2026-02-16T10:19:45.719Z",
+      "updated_at": "2026-02-16T10:23:33.753Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/fdpjyjw6gt0f",
+      "started_at": "2026-02-16T10:19:45.707Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "2g4z7sd59msw",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "391rky29892m",
+          "created_at": "2026-02-16T10:23:33.749Z",
+          "updated_at": "2026-02-16T10:23:33.749Z",
+          "display_at": "2026-02-16T10:23:33.749Z",
+          "affected_components": [
+            {
+              "code": "rppy995xymxv",
+              "name": "Cloudflare Sites and Services - Data Loss Prevention (DLP)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "grpnztl4pd46",
+              "name": "North America - Newark, NJ, United States - (EWR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "0g8c3wsxr6b9",
+          "status": "investigating",
+          "body": "Cloudflare has detected an issue regarding elevated latency affecting a subset of HTTP requests in Newark, NJ. we are investigating this region actively. Some customers using  Cloudflare Data Loss Prevention (DLP) suite may see intermittent errors for traffic in this datacenter.",
+          "incident_id": "391rky29892m",
+          "created_at": "2026-02-16T10:19:45.785Z",
+          "updated_at": "2026-02-16T10:19:45.785Z",
+          "display_at": "2026-02-16T10:19:45.785Z",
+          "affected_components": [
+            {
+              "code": "rppy995xymxv",
+              "name": "Cloudflare Sites and Services - Data Loss Prevention (DLP)",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "grpnztl4pd46",
+              "name": "North America - Newark, NJ, United States - (EWR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "grpnztl4pd46",
+          "name": "Newark, NJ, United States - (EWR)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:30:34.850Z",
+          "updated_at": "2026-02-10T19:37:03.384Z",
+          "position": 34,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "rppy995xymxv",
+          "name": "Data Loss Prevention (DLP)",
+          "status": "degraded_performance",
+          "created_at": "2023-04-05T20:47:05.487Z",
+          "updated_at": "2026-02-16T10:23:33.691Z",
+          "position": 36,
+          "description": "Cloudflare Data Loss Prevention (DLP)",
+          "showcase": false,
+          "start_date": "2023-04-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "3gks6mjl7jjm",
