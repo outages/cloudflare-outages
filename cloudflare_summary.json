@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-18T00:00:07.825Z"
+    "updated_at": "2026-02-18T02:57:10.180Z"
   },
   "components": [
     {
@@ -405,9 +405,9 @@
     {
       "id": "2rh9z2dgcy8y",
       "name": "Astara, Azerbaijan - (LLK)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-03-15T10:53:01.323Z",
-      "updated_at": "2026-02-17T23:46:29.116Z",
+      "updated_at": "2026-02-18T01:48:30.420Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -908,7 +908,7 @@
       "name": "Belo Horizonte, Brazil - (CNF)",
       "status": "under_maintenance",
       "created_at": "2021-07-13T13:51:00.191Z",
-      "updated_at": "2026-02-11T21:56:43.014Z",
+      "updated_at": "2026-02-18T01:12:50.547Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1974,7 +1974,7 @@
       "name": "Kuwait City, Kuwait - (KWI)",
       "status": "operational",
       "created_at": "2015-07-06T11:24:13.241Z",
-      "updated_at": "2026-02-17T21:11:41.659Z",
+      "updated_at": "2026-02-18T02:12:21.121Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -7462,9 +7462,9 @@
     {
       "id": "96bgq3x3tq93",
       "name": "Lahore, Pakistan - (LHE)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2025-11-25T18:48:17.555Z",
-      "updated_at": "2026-02-17T21:23:51.517Z",
+      "updated_at": "2026-02-18T02:57:10.177Z",
       "position": 677,
       "description": null,
       "showcase": false,
@@ -7524,16 +7524,42 @@
     {
       "id": "0nfrgzwdrjpl",
       "name": "Certificate Issuance through Google Trust Services Unavailable",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2026-02-17T20:53:21.496Z",
-      "updated_at": "2026-02-17T21:08:32.580Z",
-      "monitoring_at": null,
+      "updated_at": "2026-02-18T01:16:39.586Z",
+      "monitoring_at": "2026-02-18T01:16:39.554Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/t180pdjy928w",
       "started_at": "2026-02-17T20:53:21.489Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "ycpxgy7jtj13",
+          "status": "monitoring",
+          "body": "Engineering have moved pending certificate orders to another certificate authority where appropriate and are closely monitoring the third party incident.",
+          "incident_id": "0nfrgzwdrjpl",
+          "created_at": "2026-02-18T01:16:39.554Z",
+          "updated_at": "2026-02-18T01:16:39.554Z",
+          "display_at": "2026-02-18T01:16:39.554Z",
+          "affected_components": [
+            {
+              "code": "cghykwlwsmn5",
+              "name": "Cloudflare Sites and Services - SSL Certificate Provisioning",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "9p2qlpt19nqb",
+              "name": "Cloudflare Sites and Services - SSL for SaaS Provisioning",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "1gdzv8664fh4",
           "status": "investigating",
@@ -7776,60 +7802,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "vngqbvk94f94",
-      "name": "JAX (Jacksonville) on 2026-02-18",
-      "status": "scheduled",
-      "created_at": "2026-02-16T16:44:18.424Z",
-      "updated_at": "2026-02-16T16:44:18.490Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/c42yvtbshz6d",
-      "started_at": "2026-02-16T16:44:18.417Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "z419w4rdxqrh",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in JAX (Jacksonville) datacenter on 2026-02-18 between 07:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "vngqbvk94f94",
-          "created_at": "2026-02-16T16:44:18.487Z",
-          "updated_at": "2026-02-16T16:44:18.487Z",
-          "display_at": "2026-02-16T16:44:18.487Z",
-          "affected_components": [
-            {
-              "code": "yst1cfbj49q2",
-              "name": "North America - Jacksonville, FL, United States - (JAX)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "yst1cfbj49q2",
-          "name": "Jacksonville, FL, United States - (JAX)",
-          "status": "operational",
-          "created_at": "2018-04-10T18:04:05.667Z",
-          "updated_at": "2026-02-17T08:22:27.960Z",
-          "position": 23,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-02-18T07:00:00.000Z",
-      "scheduled_until": "2026-02-18T11:00:00.000Z"
-    },
-    {
       "id": "6jrjwrntwrz0",
       "name": "BOG (Bogota) on 2026-02-18",
       "status": "scheduled",
@@ -7875,6 +7847,60 @@
           "showcase": false,
           "start_date": null,
           "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-02-18T07:00:00.000Z",
+      "scheduled_until": "2026-02-18T11:00:00.000Z"
+    },
+    {
+      "id": "vngqbvk94f94",
+      "name": "JAX (Jacksonville) on 2026-02-18",
+      "status": "scheduled",
+      "created_at": "2026-02-16T16:44:18.424Z",
+      "updated_at": "2026-02-16T16:44:18.490Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/c42yvtbshz6d",
+      "started_at": "2026-02-16T16:44:18.417Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "z419w4rdxqrh",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in JAX (Jacksonville) datacenter on 2026-02-18 between 07:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "vngqbvk94f94",
+          "created_at": "2026-02-16T16:44:18.487Z",
+          "updated_at": "2026-02-16T16:44:18.487Z",
+          "display_at": "2026-02-16T16:44:18.487Z",
+          "affected_components": [
+            {
+              "code": "yst1cfbj49q2",
+              "name": "North America - Jacksonville, FL, United States - (JAX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "yst1cfbj49q2",
+          "name": "Jacksonville, FL, United States - (JAX)",
+          "status": "operational",
+          "created_at": "2018-04-10T18:04:05.667Z",
+          "updated_at": "2026-02-17T08:22:27.960Z",
+          "position": 23,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
@@ -8246,6 +8272,60 @@
       ],
       "scheduled_for": "2026-02-18T20:30:00.000Z",
       "scheduled_until": "2026-02-18T23:00:00.000Z"
+    },
+    {
+      "id": "mx0tx5nfkgrm",
+      "name": "IST (Istanbul) on 2026-02-18",
+      "status": "scheduled",
+      "created_at": "2026-02-18T01:50:50.307Z",
+      "updated_at": "2026-02-18T01:50:50.367Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/plsrt9d8pbs3",
+      "started_at": "2026-02-18T01:50:50.298Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "5kz2dsq7sdd8",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in IST (Istanbul) datacenter between 2026-02-18 23:00 and 2026-02-19 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "mx0tx5nfkgrm",
+          "created_at": "2026-02-18T01:50:50.364Z",
+          "updated_at": "2026-02-18T01:50:50.364Z",
+          "display_at": "2026-02-18T01:50:50.364Z",
+          "affected_components": [
+            {
+              "code": "1njzngd1wdrj",
+              "name": "Europe - Istanbul, Turkey - (IST)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "1njzngd1wdrj",
+          "name": "Istanbul, Turkey - (IST)",
+          "status": "operational",
+          "created_at": "2018-02-28T13:32:42.674Z",
+          "updated_at": "2026-02-05T03:01:59.618Z",
+          "position": 20,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-02-18T23:00:00.000Z",
+      "scheduled_until": "2026-02-19T05:00:00.000Z"
     },
     {
       "id": "7gmqnbmqnrz7",
@@ -9326,6 +9406,73 @@
       ],
       "scheduled_for": "2026-03-04T01:00:00.000Z",
       "scheduled_until": "2026-03-04T04:30:00.000Z"
+    },
+    {
+      "id": "6fbg8bsj6cmc",
+      "name": "MAN (Manchester) on 2026-02-18",
+      "status": "in_progress",
+      "created_at": "2026-02-18T01:46:50.095Z",
+      "updated_at": "2026-02-18T02:00:07.914Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/mtfjjr4x7rt3",
+      "started_at": "2026-02-18T01:46:50.087Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "hjk1mt1hzw71",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "6fbg8bsj6cmc",
+          "created_at": "2026-02-18T02:00:07.902Z",
+          "updated_at": "2026-02-18T02:00:07.902Z",
+          "display_at": "2026-02-18T02:00:07.902Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "fs7b6m1h75c4",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MAN (Manchester) datacenter on 2026-02-18 between 02:00 and 06:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "6fbg8bsj6cmc",
+          "created_at": "2026-02-18T01:46:50.160Z",
+          "updated_at": "2026-02-18T01:46:50.160Z",
+          "display_at": "2026-02-18T01:46:50.160Z",
+          "affected_components": [
+            {
+              "code": "7z1q346n4s38",
+              "name": "Europe - Manchester, United Kingdom - (MAN)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7z1q346n4s38",
+          "name": "Manchester, United Kingdom - (MAN)",
+          "status": "operational",
+          "created_at": "2015-10-05T03:57:10.538Z",
+          "updated_at": "2026-01-21T05:13:21.381Z",
+          "position": 28,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-02-18T02:00:00.000Z",
+      "scheduled_until": "2026-02-18T06:00:00.000Z"
     },
     {
       "id": "588y5544hqf7",
