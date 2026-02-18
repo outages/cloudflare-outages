@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-18T17:55:12.587Z"
+    "updated_at": "2026-02-18T19:06:16.397Z"
   },
   "components": [
     {
@@ -1974,7 +1974,7 @@
       "name": "Kuwait City, Kuwait - (KWI)",
       "status": "under_maintenance",
       "created_at": "2015-07-06T11:24:13.241Z",
-      "updated_at": "2026-02-18T17:07:42.997Z",
+      "updated_at": "2026-02-18T18:42:36.314Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -3937,9 +3937,9 @@
     {
       "id": "gqhgn4jwr94s",
       "name": "Recife, Brazil - (REC)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2023-01-23T16:01:02.693Z",
-      "updated_at": "2026-02-18T17:55:12.583Z",
+      "updated_at": "2026-02-18T18:48:29.171Z",
       "position": 34,
       "description": null,
       "showcase": false,
@@ -5424,7 +5424,7 @@
       "name": "Phnom Penh, Cambodia - (PNH)",
       "status": "under_maintenance",
       "created_at": "2018-02-09T20:38:28.093Z",
-      "updated_at": "2026-02-18T16:55:51.166Z",
+      "updated_at": "2026-02-18T18:54:28.589Z",
       "position": 55,
       "description": null,
       "showcase": false,
@@ -6742,9 +6742,9 @@
     {
       "id": "s0xwzmmmmv3l",
       "name": "Cali, Colombia - (CLO)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-11-27T22:02:49.338Z",
-      "updated_at": "2026-02-18T17:25:31.275Z",
+      "updated_at": "2026-02-18T19:06:16.393Z",
       "position": 102,
       "description": null,
       "showcase": false,
@@ -6817,9 +6817,9 @@
     {
       "id": "zvm7mqn92xzc",
       "name": "Workers AI",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-02-14T15:05:51.274Z",
-      "updated_at": "2026-02-13T13:30:16.405Z",
+      "updated_at": "2026-02-18T18:42:53.554Z",
       "position": 106,
       "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
       "showcase": false,
@@ -7521,6 +7521,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "vbnc13cks551",
+      "name": "Workers AI elevated error rates",
+      "status": "identified",
+      "created_at": "2026-02-18T18:42:53.519Z",
+      "updated_at": "2026-02-18T18:42:53.609Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/l8ktk1hn0q6t",
+      "started_at": "2026-02-18T18:42:53.511Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "sbkgtwbwv6k7",
+          "status": "identified",
+          "body": "Users might experience higher 429 errors",
+          "incident_id": "vbnc13cks551",
+          "created_at": "2026-02-18T18:42:53.606Z",
+          "updated_at": "2026-02-18T18:42:53.606Z",
+          "display_at": "2026-02-18T18:42:53.606Z",
+          "affected_components": [
+            {
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "zvm7mqn92xzc",
+          "name": "Workers AI",
+          "status": "degraded_performance",
+          "created_at": "2024-02-14T15:05:51.274Z",
+          "updated_at": "2026-02-18T18:42:53.554Z",
+          "position": 106,
+          "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
+          "showcase": false,
+          "start_date": "2024-02-14",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "391rky29892m",
       "name": "Newark (EWR) Datacenter Increase in HTTP Request latency",
