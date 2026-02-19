@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-19T10:55:40.359Z"
+    "updated_at": "2026-02-19T11:52:21.063Z"
   },
   "components": [
     {
@@ -1822,9 +1822,9 @@
     {
       "id": "47440brmvtq2",
       "name": "Gaborone, Botswana - (GBE)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-06-01T10:45:54.571Z",
-      "updated_at": "2026-02-19T10:55:40.355Z",
+      "updated_at": "2026-02-19T11:26:29.377Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -1974,7 +1974,7 @@
       "name": "Kuwait City, Kuwait - (KWI)",
       "status": "under_maintenance",
       "created_at": "2015-07-06T11:24:13.241Z",
-      "updated_at": "2026-02-19T10:26:13.233Z",
+      "updated_at": "2026-02-19T11:32:28.148Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -3652,9 +3652,9 @@
     {
       "id": "skqbwdvp70c6",
       "name": "Kampala, Uganda - (EBB)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-07-17T09:56:48.732Z",
-      "updated_at": "2026-02-19T09:56:34.285Z",
+      "updated_at": "2026-02-19T11:46:09.777Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -7522,117 +7522,11 @@
   ],
   "incidents": [
     {
-      "id": "xhmtd6x13cw1",
-      "name": "Increased HTTP 5xx Errors",
-      "status": "investigating",
-      "created_at": "2026-02-19T10:39:57.895Z",
-      "updated_at": "2026-02-19T10:39:57.983Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/2msb6nrvx7k1",
-      "started_at": "2026-02-19T10:39:57.888Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "njgjvy7g1n3f",
-          "status": "investigating",
-          "body": "Cloudflare is investigating an increased level of HTTP 5xx errors for content served by cdnjs.cloudflare.com\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
-          "incident_id": "xhmtd6x13cw1",
-          "created_at": "2026-02-19T10:39:57.981Z",
-          "updated_at": "2026-02-19T10:39:57.981Z",
-          "display_at": "2026-02-19T10:39:57.981Z",
-          "affected_components": [
-            {
-              "code": "5wnz34mhfhrk",
-              "name": "Cloudflare Sites and Services - CDN/Cache",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "5wnz34mhfhrk",
-          "name": "CDN/Cache",
-          "status": "degraded_performance",
-          "created_at": "2020-03-25T19:03:33.850Z",
-          "updated_at": "2026-02-19T10:39:57.930Z",
-          "position": 23,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "q2dl751rxp53",
-      "name": "Occasional loss of WARP connectivity on iOS",
-      "status": "identified",
-      "created_at": "2026-02-19T03:36:54.186Z",
-      "updated_at": "2026-02-19T03:36:54.310Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/0fqlvzxw8w40",
-      "started_at": "2026-02-19T03:36:54.177Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "sz61ycnghhpp",
-          "status": "identified",
-          "body": "Cloudflare has identified an issue with WARP connectivity on iOS and a fix is being implemented. \n\nIt is possible for the latest version of the Cloudflare One Agent app on iOS to end up in a bad state where it cannot connect to Cloudflare's edge network. When the app is open and this issue is occurring, the on/off toggle will be rapidly changing between states endlessly. This is caused by a bug in app version 1.12.0. A fix has been developed, and we are working on deploying a new app version that includes it. For now, a known workaround is to uninstall then reinstall the app.",
-          "incident_id": "q2dl751rxp53",
-          "created_at": "2026-02-19T03:36:54.307Z",
-          "updated_at": "2026-02-19T03:36:54.307Z",
-          "display_at": "2026-02-19T03:36:54.307Z",
-          "affected_components": [
-            {
-              "code": "k04jkcpzxn94",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "k04jkcpzxn94",
-          "name": "WARP",
-          "status": "degraded_performance",
-          "created_at": "2019-09-30T09:25:38.587Z",
-          "updated_at": "2026-02-19T03:36:54.228Z",
-          "position": 102,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
       "id": "vbnc13cks551",
       "name": "Workers AI elevated error rates",
       "status": "monitoring",
       "created_at": "2026-02-18T18:42:53.519Z",
-      "updated_at": "2026-02-18T19:47:40.532Z",
+      "updated_at": "2026-02-19T11:52:21.041Z",
       "monitoring_at": "2026-02-18T19:47:40.514Z",
       "resolved_at": null,
       "impact": "minor",
@@ -7640,6 +7534,26 @@
       "started_at": "2026-02-18T18:42:53.511Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "kh0bf1cg5m50",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "vbnc13cks551",
+          "created_at": "2026-02-19T11:52:21.037Z",
+          "updated_at": "2026-02-19T11:52:21.037Z",
+          "display_at": "2026-02-19T11:52:21.037Z",
+          "affected_components": [
+            {
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "vbwy79zz6ytb",
           "status": "monitoring",
@@ -7701,11 +7615,84 @@
       "reminder_intervals": null
     },
     {
+      "id": "q2dl751rxp53",
+      "name": "Occasional loss of WARP connectivity on iOS",
+      "status": "identified",
+      "created_at": "2026-02-19T03:36:54.186Z",
+      "updated_at": "2026-02-19T11:49:51.865Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/0fqlvzxw8w40",
+      "started_at": "2026-02-19T03:36:54.177Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "651fx2wxjljs",
+          "status": "identified",
+          "body": "Cloudflare has identified an issue with WARP connectivity on iOS and a fix is being implemented.",
+          "incident_id": "q2dl751rxp53",
+          "created_at": "2026-02-19T11:49:51.861Z",
+          "updated_at": "2026-02-19T11:49:51.861Z",
+          "display_at": "2026-02-19T11:49:51.861Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "sz61ycnghhpp",
+          "status": "identified",
+          "body": "Cloudflare has identified an issue with WARP connectivity on iOS and a fix is being implemented. \n\nIt is possible for the latest version of the Cloudflare One Agent app on iOS to end up in a bad state where it cannot connect to Cloudflare's edge network. When the app is open and this issue is occurring, the on/off toggle will be rapidly changing between states endlessly. This is caused by a bug in app version 1.12.0. A fix has been developed, and we are working on deploying a new app version that includes it. For now, a known workaround is to uninstall then reinstall the app.",
+          "incident_id": "q2dl751rxp53",
+          "created_at": "2026-02-19T03:36:54.307Z",
+          "updated_at": "2026-02-19T03:36:54.307Z",
+          "display_at": "2026-02-19T03:36:54.307Z",
+          "affected_components": [
+            {
+              "code": "k04jkcpzxn94",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k04jkcpzxn94",
+          "name": "WARP",
+          "status": "degraded_performance",
+          "created_at": "2019-09-30T09:25:38.587Z",
+          "updated_at": "2026-02-19T03:36:54.228Z",
+          "position": 102,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "391rky29892m",
       "name": "Newark (EWR) Datacenter Increase in HTTP Request latency",
       "status": "identified",
       "created_at": "2026-02-16T10:19:45.719Z",
-      "updated_at": "2026-02-18T14:36:59.645Z",
+      "updated_at": "2026-02-19T11:25:25.113Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7713,6 +7700,32 @@
       "started_at": "2026-02-16T10:19:45.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "8vlrr2c34wby",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "391rky29892m",
+          "created_at": "2026-02-19T11:25:25.110Z",
+          "updated_at": "2026-02-19T11:25:25.110Z",
+          "display_at": "2026-02-19T11:25:25.110Z",
+          "affected_components": [
+            {
+              "code": "rppy995xymxv",
+              "name": "Cloudflare Sites and Services - Data Loss Prevention (DLP)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "grpnztl4pd46",
+              "name": "North America - Newark, NJ, United States - (EWR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "6f5w1rjbz12g",
           "status": "identified",
@@ -7870,6 +7883,79 @@
           "description": "Cloudflare Data Loss Prevention (DLP)",
           "showcase": false,
           "start_date": "2023-04-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "xhmtd6x13cw1",
+      "name": "Increased HTTP 5xx Errors",
+      "status": "identified",
+      "created_at": "2026-02-19T10:39:57.895Z",
+      "updated_at": "2026-02-19T11:20:10.472Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/2msb6nrvx7k1",
+      "started_at": "2026-02-19T10:39:57.888Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "pd00d1nnk20f",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "xhmtd6x13cw1",
+          "created_at": "2026-02-19T11:20:10.468Z",
+          "updated_at": "2026-02-19T11:20:10.468Z",
+          "display_at": "2026-02-19T11:20:10.468Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "njgjvy7g1n3f",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an increased level of HTTP 5xx errors for content served by cdnjs.cloudflare.com\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "xhmtd6x13cw1",
+          "created_at": "2026-02-19T10:39:57.981Z",
+          "updated_at": "2026-02-19T10:39:57.981Z",
+          "display_at": "2026-02-19T10:39:57.981Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5wnz34mhfhrk",
+          "name": "CDN/Cache",
+          "status": "degraded_performance",
+          "created_at": "2020-03-25T19:03:33.850Z",
+          "updated_at": "2026-02-19T10:39:57.930Z",
+          "position": 23,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
