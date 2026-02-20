@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-20T23:32:20.454Z"
+    "updated_at": "2026-02-20T23:52:21.072Z"
   },
   "components": [
     {
@@ -2319,7 +2319,7 @@
       "name": "Dhaka, Bangladesh - (DAC)",
       "status": "under_maintenance",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2026-02-18T06:25:56.392Z",
+      "updated_at": "2026-02-20T23:40:33.644Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -5872,9 +5872,9 @@
     {
       "id": "bjlxcss20fsl",
       "name": "Magic Transit",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2020-12-17T09:48:10.912Z",
-      "updated_at": "2026-02-20T18:45:17.004Z",
+      "updated_at": "2026-02-20T23:50:58.601Z",
       "position": 63,
       "description": null,
       "showcase": false,
@@ -6727,9 +6727,9 @@
     {
       "id": "k04jkcpzxn94",
       "name": "WARP",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-09-30T09:25:38.587Z",
-      "updated_at": "2026-02-20T18:45:17.025Z",
+      "updated_at": "2026-02-20T23:50:58.622Z",
       "position": 102,
       "description": null,
       "showcase": false,
@@ -7521,262 +7521,6 @@
     }
   ],
   "incidents": [
-    {
-      "id": "kwy3dt82bwbt",
-      "name": "Cloudflare is investigating connectivity issues",
-      "status": "identified",
-      "created_at": "2026-02-20T18:45:16.965Z",
-      "updated_at": "2026-02-20T23:03:53.226Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/7qchhv2d2lxk",
-      "started_at": "2026-02-20T18:45:17.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "57w82mnvqj12",
-          "status": "identified",
-          "body": "Cloudflare continues working to mitigate impact from the last subset of prefixes which were withdrawn and were unable to be mitigated through toggling advertisement on the dashboard.",
-          "incident_id": "kwy3dt82bwbt",
-          "created_at": "2026-02-20T23:03:53.223Z",
-          "updated_at": "2026-02-20T23:03:53.223Z",
-          "display_at": "2026-02-20T23:03:53.223Z",
-          "affected_components": [
-            {
-              "code": "bjlxcss20fsl",
-              "name": "Cloudflare Sites and Services - Magic Transit",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "k04jkcpzxn94",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "kftthrvv40mv",
-          "status": "identified",
-          "body": "Cloudflare is working to mitigate impact from the last subset of prefixes which were withdrawn and were unable to be mitigated through toggling advertisement on the dashboard.",
-          "incident_id": "kwy3dt82bwbt",
-          "created_at": "2026-02-20T22:16:22.949Z",
-          "updated_at": "2026-02-20T22:16:22.949Z",
-          "display_at": "2026-02-20T22:16:22.949Z",
-          "affected_components": [
-            {
-              "code": "bjlxcss20fsl",
-              "name": "Cloudflare Sites and Services - Magic Transit",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "k04jkcpzxn94",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "tn3gv2ksmvhw",
-          "status": "identified",
-          "body": "Cloudflare is continuing to restore prefixes to their previous state.  Any customer who withdrew their IPs as a result of this incident will see their IPs withdrawn upon full impact mitigation.\n\nCustomers are still able to restore service from the dashboard by readvertising their IPs.\n\nCloudflare is aware that some customers are unable to reload their IPs through the dashboard and are working on a fix.",
-          "incident_id": "kwy3dt82bwbt",
-          "created_at": "2026-02-20T20:50:40.383Z",
-          "updated_at": "2026-02-20T20:50:40.383Z",
-          "display_at": "2026-02-20T20:50:40.383Z",
-          "affected_components": [
-            {
-              "code": "bjlxcss20fsl",
-              "name": "Cloudflare Sites and Services - Magic Transit",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "k04jkcpzxn94",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "xzw7c1617043",
-          "status": "identified",
-          "body": "Cloudflare is continuing to restore prefixes to their previous state.\n\nCustomers are still able to restore service from the dashboard by readvertising their IPs. Refer to: https://developers.cloudflare.com/magic-transit/how-to/advertise-prefixes/#advertise-or-withdraw-a-bgp-prefix\n\nCloudflare is aware that some customers are unable to reload their IPs through the dashboard and are working on a fix.",
-          "incident_id": "kwy3dt82bwbt",
-          "created_at": "2026-02-20T20:35:26.360Z",
-          "updated_at": "2026-02-20T20:35:26.360Z",
-          "display_at": "2026-02-20T20:35:26.360Z",
-          "affected_components": [
-            {
-              "code": "bjlxcss20fsl",
-              "name": "Cloudflare Sites and Services - Magic Transit",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "k04jkcpzxn94",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "wztlt74mw44r",
-          "status": "identified",
-          "body": "Cloudflare is continuing to work on restoring service for impacted customers to what it was before the outage.  Customers can self-mitigate by readvertising their prefixes in the dashboard. Refer to: https://developers.cloudflare.com/magic-transit/how-to/advertise-prefixes/#advertise-or-withdraw-a-bgp-prefix for details on how to advertise a prefix.",
-          "incident_id": "kwy3dt82bwbt",
-          "created_at": "2026-02-20T19:45:56.989Z",
-          "updated_at": "2026-02-20T19:45:56.989Z",
-          "display_at": "2026-02-20T19:45:56.989Z",
-          "affected_components": [
-            {
-              "code": "bjlxcss20fsl",
-              "name": "Cloudflare Sites and Services - Magic Transit",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "k04jkcpzxn94",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "4fspz72xyf41",
-          "status": "identified",
-          "body": "Cloudflare is continuing to restore service to customers.  Cloudflare has also identified a way for impacted customers to self-resolve impact by readvertising prefixes via the Cloudflare dashboard. Refer to: https://developers.cloudflare.com/magic-transit/how-to/advertise-prefixes/#advertise-or-withdraw-a-bgp-prefix for details on how to advertise a prefix.",
-          "incident_id": "kwy3dt82bwbt",
-          "created_at": "2026-02-20T19:20:03.077Z",
-          "updated_at": "2026-02-20T19:44:49.043Z",
-          "display_at": "2026-02-20T19:20:03.000Z",
-          "affected_components": [
-            {
-              "code": "bjlxcss20fsl",
-              "name": "Cloudflare Sites and Services - Magic Transit",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "k04jkcpzxn94",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "04vlgy3w1tn8",
-          "status": "identified",
-          "body": "Cloudflare has identified impact to a subset of BYOIP prefixes. Cloudflare has identified and mitigated the underlying issue and is working to restore availability to impacted advertisements.",
-          "incident_id": "kwy3dt82bwbt",
-          "created_at": "2026-02-20T19:09:46.644Z",
-          "updated_at": "2026-02-20T19:09:46.644Z",
-          "display_at": "2026-02-20T19:09:46.644Z",
-          "affected_components": [
-            {
-              "code": "bjlxcss20fsl",
-              "name": "Cloudflare Sites and Services - Magic Transit",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "k04jkcpzxn94",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "bb03sn3dtfwl",
-          "status": "investigating",
-          "body": "Cloudflare is investigating issues with our services and/or network. Users may experience errors or timeouts reaching Cloudflare’s network or services. We will update this status page to clarify the scope of impact as we continue the investigation.",
-          "incident_id": "kwy3dt82bwbt",
-          "created_at": "2026-02-20T18:45:17.082Z",
-          "updated_at": "2026-02-20T18:53:04.840Z",
-          "display_at": "2026-02-20T18:45:17.000Z",
-          "affected_components": [
-            {
-              "code": "bjlxcss20fsl",
-              "name": "Cloudflare Sites and Services - Magic Transit",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "k04jkcpzxn94",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "bjlxcss20fsl",
-          "name": "Magic Transit",
-          "status": "degraded_performance",
-          "created_at": "2020-12-17T09:48:10.912Z",
-          "updated_at": "2026-02-20T18:45:17.004Z",
-          "position": 63,
-          "description": null,
-          "showcase": false,
-          "start_date": "2020-12-17",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "k04jkcpzxn94",
-          "name": "WARP",
-          "status": "degraded_performance",
-          "created_at": "2019-09-30T09:25:38.587Z",
-          "updated_at": "2026-02-20T18:45:17.025Z",
-          "position": 102,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
     {
       "id": "vbnc13cks551",
       "name": "Workers AI elevated error rates",
@@ -8760,6 +8504,60 @@
       ],
       "scheduled_for": "2026-02-24T14:00:00.000Z",
       "scheduled_until": "2026-02-24T23:59:00.000Z"
+    },
+    {
+      "id": "ky6xj7d76w9h",
+      "name": "BGW (Baghdad) on 2026-02-24",
+      "status": "scheduled",
+      "created_at": "2026-02-20T23:52:21.008Z",
+      "updated_at": "2026-02-20T23:52:21.068Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/g84jj78vph2y",
+      "started_at": "2026-02-20T23:52:20.999Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "3x4560gc6y11",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in BGW (Baghdad) datacenter on 2026-02-24 between 14:45 and 18:45 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "ky6xj7d76w9h",
+          "created_at": "2026-02-20T23:52:21.064Z",
+          "updated_at": "2026-02-20T23:52:21.064Z",
+          "display_at": "2026-02-20T23:52:21.064Z",
+          "affected_components": [
+            {
+              "code": "gxjcfyf5pht1",
+              "name": "Middle East - Baghdad, Iraq - (BGW)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gxjcfyf5pht1",
+          "name": "Baghdad, Iraq - (BGW)",
+          "status": "operational",
+          "created_at": "2018-03-12T14:18:23.436Z",
+          "updated_at": "2026-02-20T12:25:38.400Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "m3639x4txd08",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-02-24T14:45:00.000Z",
+      "scheduled_until": "2026-02-24T18:45:00.000Z"
     },
     {
       "id": "8m3s3vv36qgv",
