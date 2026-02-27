@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-27T17:00:07.148Z"
+    "updated_at": "2026-02-27T17:52:17.373Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1153,9 +1153,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2026-02-27T10:09:37.739Z",
+      "updated_at": "2026-02-27T17:21:45.725Z",
       "position": 7,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -3429,7 +3429,7 @@
       "name": "Memphis, TN, United States - (MEM)",
       "status": "operational",
       "created_at": "2018-03-28T09:07:42.032Z",
-      "updated_at": "2026-02-19T10:26:10.537Z",
+      "updated_at": "2026-02-27T17:34:09.755Z",
       "position": 28,
       "description": null,
       "showcase": false,
@@ -3774,7 +3774,7 @@
       "name": "Saint-Denis, Réunion - (RUN)",
       "status": "partial_outage",
       "created_at": "2024-09-03T09:59:40.272Z",
-      "updated_at": "2026-02-27T16:47:30.149Z",
+      "updated_at": "2026-02-27T17:52:17.370Z",
       "position": 32,
       "description": null,
       "showcase": false,
@@ -5227,9 +5227,9 @@
     {
       "id": "wr8jt2slt0cp",
       "name": "New Delhi, India - (DEL)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-10-27T20:12:23.920Z",
-      "updated_at": "2026-02-27T13:10:46.425Z",
+      "updated_at": "2026-02-27T17:16:21.632Z",
       "position": 52,
       "description": null,
       "showcase": false,
@@ -6937,9 +6937,9 @@
     {
       "id": "kf0ktv29xrfy",
       "name": "Zero Trust",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-08T15:53:09.058Z",
-      "updated_at": "2026-02-25T23:55:55.527Z",
+      "updated_at": "2026-02-27T17:21:45.749Z",
       "position": 114,
       "description": null,
       "showcase": false,
@@ -7521,6 +7521,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "nzqx41m4y0hv",
+      "name": "Issues creating API tokens involving Zero Trust Write permissions",
+      "status": "investigating",
+      "created_at": "2026-02-27T17:21:45.679Z",
+      "updated_at": "2026-02-27T17:21:45.815Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/2dyc8dnh13gd",
+      "started_at": "2026-02-27T17:21:45.670Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "9yv12xnj1mn3",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues creating API tokens that result in a \"1001: Failed common permission check against resources\" error. \n\nThis specifically impacts token creation attempts that include the Zero Trust Write permission group for accounts where the token owner is not a Super Admin. API token creation for users with Super Admin privileges or payloads excluding this specific permission group remain unaffected.\n\nWe will provide further updates as soon as more information is available.",
+          "incident_id": "nzqx41m4y0hv",
+          "created_at": "2026-02-27T17:21:45.812Z",
+          "updated_at": "2026-02-27T17:21:45.812Z",
+          "display_at": "2026-02-27T17:21:45.812Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2026-02-27T17:21:45.725Z",
+          "position": 7,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "kf0ktv29xrfy",
+          "name": "Zero Trust",
+          "status": "degraded_performance",
+          "created_at": "2021-04-08T15:53:09.058Z",
+          "updated_at": "2026-02-27T17:21:45.749Z",
+          "position": 114,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "391rky29892m",
       "name": "Newark (EWR) Datacenter Increase in HTTP Request latency",
