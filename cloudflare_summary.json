@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-27T23:26:45.695Z"
+    "updated_at": "2026-02-27T23:45:02.432Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -158,9 +158,9 @@
     {
       "id": "y12kn5nkvb44",
       "name": "Amman, Jordan - (AMM)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-04-02T06:42:27.907Z",
-      "updated_at": "2026-02-20T03:05:57.647Z",
+      "updated_at": "2026-02-27T23:32:42.071Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2137,9 +2137,9 @@
     {
       "id": "3796s01hm2hj",
       "name": "Chittagong, Bangladesh - (CGP)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-10-29T19:05:17.659Z",
-      "updated_at": "2026-02-27T21:27:21.325Z",
+      "updated_at": "2026-02-27T23:32:52.556Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -2319,7 +2319,7 @@
       "name": "Dhaka, Bangladesh - (DAC)",
       "status": "under_maintenance",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2026-02-27T21:09:34.539Z",
+      "updated_at": "2026-02-27T23:38:38.270Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -4012,9 +4012,9 @@
     {
       "id": "jdn42y3nlhjm",
       "name": "Ribeirao Preto, Brazil - (RAO)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-13T13:59:09.219Z",
-      "updated_at": "2026-02-12T18:00:27.168Z",
+      "updated_at": "2026-02-27T23:32:43.481Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -5872,9 +5872,9 @@
     {
       "id": "bjlxcss20fsl",
       "name": "Magic Transit",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2020-12-17T09:48:10.912Z",
-      "updated_at": "2026-02-20T23:50:58.601Z",
+      "updated_at": "2026-02-27T23:32:50.621Z",
       "position": 63,
       "description": null,
       "showcase": false,
@@ -5902,9 +5902,9 @@
     {
       "id": "qgnxz00j1f2v",
       "name": "Cloudflare WAN",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2022-12-22T09:51:36.130Z",
-      "updated_at": "2026-02-18T17:46:05.343Z",
+      "updated_at": "2026-02-27T23:32:50.639Z",
       "position": 64,
       "description": "Cloudflare WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
       "showcase": false,
@@ -7522,6 +7522,80 @@
   ],
   "incidents": [
     {
+      "id": "ybx14rhks0fp",
+      "name": "Magic Transit Control Plane Issues",
+      "status": "identified",
+      "created_at": "2026-02-27T23:32:50.587Z",
+      "updated_at": "2026-02-27T23:45:02.428Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "critical",
+      "shortlink": "https://stspg.io/xnl7bb2gl556",
+      "started_at": "2026-02-27T23:32:50.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "p7n3x8m597s7",
+          "status": "identified",
+          "body": "Cloudflare is investigating issues with the Magic Transit and Cloudflare WAN control plane. Customers may be unable to make configuration changes to GRE/IPsec tunnels, CNI connections or routing policies via the Dashboard or API. \n\nExisting Magic Transit and Cloudflare WAN tunnel configurations and traffic forwarding are operating normally. This issue does not affect the data plane - active tunnels and health checks continue to function.\n\nWe are working to mitigate this problem. More updates to follow shortly.",
+          "incident_id": "ybx14rhks0fp",
+          "created_at": "2026-02-27T23:32:50.688Z",
+          "updated_at": "2026-02-27T23:44:31.170Z",
+          "display_at": "2026-02-27T23:32:50.000Z",
+          "affected_components": [
+            {
+              "code": "bjlxcss20fsl",
+              "name": "Cloudflare Sites and Services - Magic Transit",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "qgnxz00j1f2v",
+              "name": "Cloudflare Sites and Services - Cloudflare WAN",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bjlxcss20fsl",
+          "name": "Magic Transit",
+          "status": "major_outage",
+          "created_at": "2020-12-17T09:48:10.912Z",
+          "updated_at": "2026-02-27T23:32:50.621Z",
+          "position": 63,
+          "description": null,
+          "showcase": false,
+          "start_date": "2020-12-17",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qgnxz00j1f2v",
+          "name": "Cloudflare WAN",
+          "status": "major_outage",
+          "created_at": "2022-12-22T09:51:36.130Z",
+          "updated_at": "2026-02-27T23:32:50.639Z",
+          "position": 64,
+          "description": "Cloudflare WAN replaces legacy WAN architectures with Cloudflare’s network, providing global connectivity, cloud-based security, performance, and control through one simple user interface.",
+          "showcase": false,
+          "start_date": "2022-12-22",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "391rky29892m",
       "name": "Newark (EWR) Datacenter Increase in HTTP Request latency",
       "status": "monitoring",
@@ -8864,7 +8938,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "major",
+    "description": "Partial System Outage"
   }
 }
