@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-02T19:59:28.892Z"
+    "updated_at": "2026-03-02T20:45:38.422Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -390,9 +390,9 @@
     {
       "id": "5nlf038vr3n8",
       "name": "Almaty, Kazakhstan - (ALA)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-11-02T12:04:47.034Z",
-      "updated_at": "2026-03-02T19:59:28.889Z",
+      "updated_at": "2026-03-02T20:26:57.951Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -6127,9 +6127,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2026-02-24T23:25:03.437Z",
+      "updated_at": "2026-03-02T20:45:38.358Z",
       "position": 72,
       "description": null,
       "showcase": false,
@@ -7520,7 +7520,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "8vw91kg0nx5h",
+      "name": "Pages API and builds unavailable",
+      "status": "investigating",
+      "created_at": "2026-03-02T20:45:38.319Z",
+      "updated_at": "2026-03-02T20:45:38.419Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/pj853pjpk84f",
+      "started_at": "2026-03-02T20:45:38.312Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "zd908q37fkh3",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating an issue impacting the Cloudflare Pages API and Pages builds. Customers may experience 5xx errors, and builds may fail to start or complete.\n\nWe are actively working to understand and mitigate the impact.",
+          "incident_id": "8vw91kg0nx5h",
+          "created_at": "2026-03-02T20:45:38.416Z",
+          "updated_at": "2026-03-02T20:45:38.416Z",
+          "display_at": "2026-03-02T20:45:38.416Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2026-03-02T20:45:38.358Z",
+          "position": 72,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "thvz3px3pl7z",
