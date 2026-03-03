@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-03T23:31:04.558Z"
+    "updated_at": "2026-03-03T23:52:44.622Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -480,9 +480,9 @@
     {
       "id": "gxjcfyf5pht1",
       "name": "Baghdad, Iraq - (BGW)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-03-12T14:18:23.436Z",
-      "updated_at": "2026-03-03T23:07:07.491Z",
+      "updated_at": "2026-03-03T23:43:14.677Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2797,9 +2797,9 @@
     {
       "id": "shqj304834s4",
       "name": "Tel Aviv, Israel - (TLV)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-03-13T14:28:48.746Z",
-      "updated_at": "2026-03-03T23:13:03.172Z",
+      "updated_at": "2026-03-03T23:37:01.381Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -5002,9 +5002,9 @@
     {
       "id": "d1r0plwsl5qb",
       "name": "Firewall",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2020-09-04T17:53:26.383Z",
-      "updated_at": "2026-03-03T22:15:50.602Z",
+      "updated_at": "2026-03-03T23:42:13.477Z",
       "position": 49,
       "description": null,
       "showcase": false,
@@ -7520,34 +7520,35 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [
+  "incidents": [],
+  "scheduled_maintenances": [
     {
-      "id": "t2skq2t69g5s",
-      "name": "WAF Challenge requests incorrectly forwarded to origin",
-      "status": "investigating",
-      "created_at": "2026-03-03T22:15:50.566Z",
-      "updated_at": "2026-03-03T22:15:50.665Z",
+      "id": "jl164w9kdkym",
+      "name": "IST (Istanbul) on 2026-03-04",
+      "status": "scheduled",
+      "created_at": "2026-03-03T23:52:44.565Z",
+      "updated_at": "2026-03-03T23:52:44.619Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/nbq74p9xl42b",
-      "started_at": "2026-03-03T22:15:50.558Z",
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/wqgnj3qbqht7",
+      "started_at": "2026-03-03T23:52:44.558Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "qy4rqbplv609",
-          "status": "investigating",
-          "body": "Cloudflare is investigating an issue where origins may receive challenge solve requests instead of the original challenged request. This issue affects customers using WAF Challenge actions globally.\n\nWe are actively working to resolve this issue and will provide updates as more information becomes available.",
-          "incident_id": "t2skq2t69g5s",
-          "created_at": "2026-03-03T22:15:50.662Z",
-          "updated_at": "2026-03-03T22:15:50.662Z",
-          "display_at": "2026-03-03T22:15:50.662Z",
+          "id": "y1dhbx6bbr04",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in IST (Istanbul) datacenter on 2026-03-04 between 00:00 and 01:15 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "jl164w9kdkym",
+          "created_at": "2026-03-03T23:52:44.617Z",
+          "updated_at": "2026-03-03T23:52:44.617Z",
+          "display_at": "2026-03-03T23:52:44.617Z",
           "affected_components": [
             {
-              "code": "d1r0plwsl5qb",
-              "name": "Cloudflare Sites and Services - Firewall",
+              "code": "1njzngd1wdrj",
+              "name": "Europe - Istanbul, Turkey - (IST)",
               "old_status": "operational",
-              "new_status": "degraded_performance"
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -7557,31 +7558,30 @@
       ],
       "components": [
         {
-          "id": "d1r0plwsl5qb",
-          "name": "Firewall",
-          "status": "degraded_performance",
-          "created_at": "2020-09-04T17:53:26.383Z",
-          "updated_at": "2026-03-03T22:15:50.602Z",
-          "position": 49,
+          "id": "1njzngd1wdrj",
+          "name": "Istanbul, Turkey - (IST)",
+          "status": "operational",
+          "created_at": "2018-02-28T13:32:42.674Z",
+          "updated_at": "2026-02-19T03:02:03.546Z",
+          "position": 20,
           "description": null,
           "showcase": false,
-          "start_date": "2020-09-04",
-          "group_id": "1km35smx8p41",
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "reminder_intervals": null
-    }
-  ],
-  "scheduled_maintenances": [
+      "scheduled_for": "2026-03-04T00:00:00.000Z",
+      "scheduled_until": "2026-03-04T01:15:00.000Z"
+    },
     {
       "id": "v9vgxzg79zx6",
       "name": "LIS (Lisbon) on 2026-03-04",
       "status": "scheduled",
       "created_at": "2026-02-14T00:48:44.043Z",
-      "updated_at": "2026-02-23T23:52:41.153Z",
+      "updated_at": "2026-03-03T23:45:07.300Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7589,6 +7589,19 @@
       "started_at": "2026-02-14T00:48:44.037Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "qnhhmc3t1sd0",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "v9vgxzg79zx6",
+          "created_at": "2026-03-03T23:45:07.206Z",
+          "updated_at": "2026-03-03T23:45:07.206Z",
+          "display_at": "2026-03-03T23:45:07.206Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "lm9xh8gsrhj4",
           "status": "scheduled",
