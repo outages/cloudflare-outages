@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-03T15:16:32.242Z"
+    "updated_at": "2026-03-03T16:57:51.216Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1462,7 +1462,7 @@
     {
       "id": "q6qm6fvkst4h",
       "name": "Oceania",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2014-10-28T00:12:04.846Z",
       "updated_at": "2022-04-26T19:49:08.623Z",
       "position": 9,
@@ -2047,9 +2047,9 @@
     {
       "id": "m3zc04ynknwv",
       "name": "Suva, Fiji - (SUV)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-01-19T20:40:46.179Z",
-      "updated_at": "2026-03-03T14:59:49.422Z",
+      "updated_at": "2026-03-03T16:51:42.341Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -5107,9 +5107,9 @@
     {
       "id": "gyx2yygg7lmd",
       "name": "Gateway",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-10T09:28:36.367Z",
-      "updated_at": "2026-02-13T13:31:15.597Z",
+      "updated_at": "2026-03-03T16:44:40.698Z",
       "position": 50,
       "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
       "showcase": false,
@@ -7520,7 +7520,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "7msnpn3f09fm",
+      "name": "Cloudflare Zero Trust: Gateway Issues",
+      "status": "monitoring",
+      "created_at": "2026-03-03T16:44:40.665Z",
+      "updated_at": "2026-03-03T16:57:51.213Z",
+      "monitoring_at": "2026-03-03T16:57:51.197Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/9yzq749vl4jx",
+      "started_at": "2026-03-03T16:44:40.658Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "qj7403s2cj7f",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "7msnpn3f09fm",
+          "created_at": "2026-03-03T16:57:51.197Z",
+          "updated_at": "2026-03-03T16:57:51.197Z",
+          "display_at": "2026-03-03T16:57:51.197Z",
+          "affected_components": [
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "6j7gb3byf3dq",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Gateway. Performance and connectivity through Gateway may be impacted. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "7msnpn3f09fm",
+          "created_at": "2026-03-03T16:44:40.754Z",
+          "updated_at": "2026-03-03T16:44:40.754Z",
+          "display_at": "2026-03-03T16:44:40.754Z",
+          "affected_components": [
+            {
+              "code": "gyx2yygg7lmd",
+              "name": "Cloudflare Sites and Services - Gateway",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gyx2yygg7lmd",
+          "name": "Gateway",
+          "status": "degraded_performance",
+          "created_at": "2023-01-10T09:28:36.367Z",
+          "updated_at": "2026-03-03T16:44:40.698Z",
+          "position": 50,
+          "description": "Cloudflare’s secure web gateway keeps your data safe from malware, ransomware, phishing, command & control, Shadow IT, and other Internet risks over all ports and protocols. Log every user interaction with rich details.",
+          "showcase": false,
+          "start_date": "2023-01-10",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "gpcp40xzgrhf",
