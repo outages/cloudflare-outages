@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-04T17:35:19.246Z"
+    "updated_at": "2026-03-04T18:20:29.886Z"
   },
   "components": [
     {
@@ -2319,7 +2319,7 @@
       "name": "Dhaka, Bangladesh - (DAC)",
       "status": "under_maintenance",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2026-03-04T04:05:28.659Z",
+      "updated_at": "2026-03-04T18:16:58.403Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -3442,9 +3442,9 @@
     {
       "id": "gdywyg76bgy3",
       "name": "Jakarta, Indonesia - (CGK)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2019-08-21T06:55:28.100Z",
-      "updated_at": "2026-03-04T17:35:19.243Z",
+      "updated_at": "2026-03-04T17:41:14.259Z",
       "position": 28,
       "description": null,
       "showcase": false,
@@ -4117,9 +4117,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2026-02-27T10:09:37.762Z",
+      "updated_at": "2026-03-04T18:13:54.561Z",
       "position": 37,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -7521,6 +7521,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "xl7s60h7nmzg",
+      "name": "Cloudflare Dashboard displaying incorrect API token type",
+      "status": "identified",
+      "created_at": "2026-03-04T18:13:54.530Z",
+      "updated_at": "2026-03-04T18:17:34.321Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5575w0gbnr6x",
+      "started_at": "2026-03-04T18:13:54.523Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "l1tbfw0gwmg4",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "xl7s60h7nmzg",
+          "created_at": "2026-03-04T18:17:34.318Z",
+          "updated_at": "2026-03-04T18:17:34.318Z",
+          "display_at": "2026-03-04T18:17:34.318Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3x0jnwmb915c",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue with the Cloudflare Dashboard where Account API Tokens are not being displayed correctly. Customers may see User API Tokens returned instead of Account API Tokens.\n\nThis issue does not impact existing active Account API Tokens. API functionality remains unaffected.\n\nWe are actively working to resolve this issue and will provide updates as more information becomes available.",
+          "incident_id": "xl7s60h7nmzg",
+          "created_at": "2026-03-04T18:13:54.610Z",
+          "updated_at": "2026-03-04T18:13:54.610Z",
+          "display_at": "2026-03-04T18:13:54.610Z",
+          "affected_components": [
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2026-03-04T18:13:54.561Z",
+          "position": 37,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "30nh3w30gzqm",
       "name": "CNI Degraded Performance",
