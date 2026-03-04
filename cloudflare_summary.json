@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-04T09:14:49.843Z"
+    "updated_at": "2026-03-04T09:50:48.756Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1251,9 +1251,9 @@
     {
       "id": "2dg91ffn660j",
       "name": "Dammam, Saudi Arabia - (DMM)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-30T11:39:33.707Z",
-      "updated_at": "2026-03-04T09:08:53.333Z",
+      "updated_at": "2026-03-04T09:50:46.336Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -2047,9 +2047,9 @@
     {
       "id": "m3zc04ynknwv",
       "name": "Suva, Fiji - (SUV)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-01-19T20:40:46.179Z",
-      "updated_at": "2026-03-04T09:07:03.918Z",
+      "updated_at": "2026-03-04T09:50:48.752Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2602,9 +2602,9 @@
     {
       "id": "gg8xxj0j3d32",
       "name": "Riyadh, Saudi Arabia - (RUH)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-03-07T02:32:33.544Z",
-      "updated_at": "2026-03-04T09:14:49.839Z",
+      "updated_at": "2026-03-04T09:44:51.759Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -6322,9 +6322,9 @@
     {
       "id": "kn2xkt469vyh",
       "name": "Registrar",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-07-31T14:19:17.585Z",
-      "updated_at": "2026-02-13T13:30:27.496Z",
+      "updated_at": "2026-03-04T09:38:50.941Z",
       "position": 81,
       "description": "Cloudflare Registrar securely registers and manages customer domain names",
       "showcase": false,
@@ -7520,7 +7520,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "b2y6gjtq6s4s",
+      "name": "Domain Registration unavailable",
+      "status": "investigating",
+      "created_at": "2026-03-04T09:38:50.909Z",
+      "updated_at": "2026-03-04T09:38:50.996Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/l3d3ndgvxxvv",
+      "started_at": "2026-03-04T09:38:50.902Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "b5zhfln9r2kr",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue which potentially impacts multiple customers for domain registrations. Further detail will be provided as more information becomes available.",
+          "incident_id": "b2y6gjtq6s4s",
+          "created_at": "2026-03-04T09:38:50.993Z",
+          "updated_at": "2026-03-04T09:38:50.993Z",
+          "display_at": "2026-03-04T09:38:50.993Z",
+          "affected_components": [
+            {
+              "code": "kn2xkt469vyh",
+              "name": "Cloudflare Sites and Services - Registrar",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kn2xkt469vyh",
+          "name": "Registrar",
+          "status": "degraded_performance",
+          "created_at": "2019-07-31T14:19:17.585Z",
+          "updated_at": "2026-03-04T09:38:50.941Z",
+          "position": 81,
+          "description": "Cloudflare Registrar securely registers and manages customer domain names",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "9r82996rrcn7",
