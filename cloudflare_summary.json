@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-06T09:40:10.473Z"
+    "updated_at": "2026-03-06T10:15:47.889Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1763,9 +1763,9 @@
     {
       "id": "6h2876nh78k9",
       "name": "Chișinău, Moldova - (KIV)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-04-02T08:55:56.587Z",
-      "updated_at": "2026-03-06T09:10:30.478Z",
+      "updated_at": "2026-03-06T09:58:01.841Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -2183,9 +2183,9 @@
     {
       "id": "0dtt4htlgpdh",
       "name": "Muscat, Oman - (MCT)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-08-04T00:56:44.345Z",
-      "updated_at": "2026-03-06T08:52:45.089Z",
+      "updated_at": "2026-03-06T10:03:57.139Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -3803,9 +3803,9 @@
     {
       "id": "r66zh17lxd91",
       "name": "Quito, Ecuador - (UIO)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2017-03-13T21:23:02.885Z",
-      "updated_at": "2026-03-06T07:35:16.489Z",
+      "updated_at": "2026-03-06T10:15:45.997Z",
       "position": 33,
       "description": null,
       "showcase": false,
@@ -4043,9 +4043,9 @@
     {
       "id": "7rvrsd9g0f1v",
       "name": "Rio de Janeiro, Brazil - (GIG)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2017-06-22T22:19:02.210Z",
-      "updated_at": "2026-03-06T07:53:19.484Z",
+      "updated_at": "2026-03-06T10:03:59.066Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -4208,9 +4208,9 @@
     {
       "id": "lwmhcftlr9vx",
       "name": "San José, Costa Rica - (SJO)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2020-10-23T21:53:19.030Z",
-      "updated_at": "2026-03-05T21:47:44.759Z",
+      "updated_at": "2026-03-06T10:15:47.884Z",
       "position": 38,
       "description": null,
       "showcase": false,
@@ -6263,9 +6263,9 @@
     {
       "id": "yxhtws7ltl9t",
       "name": "RealtimeKit",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-05-16T17:08:23.427Z",
-      "updated_at": "2026-02-13T13:30:37.590Z",
+      "updated_at": "2026-03-06T10:15:03.987Z",
       "position": 79,
       "description": "Build real-time serverless video, audio and data applications.\r\n\r\nCloudflare Realtime is infrastructure for real-time audio/video/data applications. It allows you to build real-time apps without worrying about scaling or regions. It can act as a selective forwarding unit (WebRTC SFU), as a fanout delivery system for broadcasting (WebRTC CDN) or anything in between.",
       "showcase": false,
@@ -7536,7 +7536,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "cs9vyjjj4trx",
+      "name": "Title: Cloudflare Realtime - Realtimekit",
+      "status": "investigating",
+      "created_at": "2026-03-06T10:15:03.947Z",
+      "updated_at": "2026-03-06T10:15:04.056Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5mwv58kvykz3",
+      "started_at": "2026-03-06T10:15:03.939Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "m5rgfk7dzlxs",
+          "status": "investigating",
+          "body": "Cloudflare is aware of, and investigating an issue affecting Android users using v1.6.0 and upwards. Users can downgraded to v1.5.7 in the meantime as workaround. Further detail will be provided as more information becomes available.",
+          "incident_id": "cs9vyjjj4trx",
+          "created_at": "2026-03-06T10:15:04.052Z",
+          "updated_at": "2026-03-06T10:15:04.052Z",
+          "display_at": "2026-03-06T10:15:04.052Z",
+          "affected_components": [
+            {
+              "code": "yxhtws7ltl9t",
+              "name": "Cloudflare Sites and Services - RealtimeKit",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "yxhtws7ltl9t",
+          "name": "RealtimeKit",
+          "status": "degraded_performance",
+          "created_at": "2025-05-16T17:08:23.427Z",
+          "updated_at": "2026-03-06T10:15:03.987Z",
+          "position": 79,
+          "description": "Build real-time serverless video, audio and data applications.\r\n\r\nCloudflare Realtime is infrastructure for real-time audio/video/data applications. It allows you to build real-time apps without worrying about scaling or regions. It can act as a selective forwarding unit (WebRTC SFU), as a fanout delivery system for broadcasting (WebRTC CDN) or anything in between.",
+          "showcase": false,
+          "start_date": "2025-05-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "bs8ck6pqlsnv",
