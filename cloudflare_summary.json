@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-11T16:28:18.765Z"
+    "updated_at": "2026-03-11T17:20:28.540Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -952,9 +952,9 @@
     {
       "id": "3l8dxwjtgpp6",
       "name": "Austin, TX, United States - (AUS)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2023-04-21T15:40:55.635Z",
-      "updated_at": "2026-03-11T16:28:18.761Z",
+      "updated_at": "2026-03-11T16:52:14.515Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1628,9 +1628,9 @@
     {
       "id": "38tc7m3dl7v6",
       "name": "Budapest, Hungary - (BUD)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2017-04-13T20:46:19.120Z",
-      "updated_at": "2026-02-18T04:47:22.308Z",
+      "updated_at": "2026-03-11T16:52:14.820Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -3773,9 +3773,9 @@
     {
       "id": "qsps56n4xtjt",
       "name": "Saint-Denis, Réunion - (RUN)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-09-03T09:59:40.272Z",
-      "updated_at": "2026-03-11T15:40:44.297Z",
+      "updated_at": "2026-03-11T17:04:01.460Z",
       "position": 32,
       "description": null,
       "showcase": false,
@@ -5933,9 +5933,9 @@
     {
       "id": "q3t6mnpmpgt8",
       "name": "Cloudflare One Appliance",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-12-14T14:28:05.444Z",
-      "updated_at": "2026-02-18T17:46:58.718Z",
+      "updated_at": "2026-03-11T16:50:33.081Z",
       "position": 65,
       "description": null,
       "showcase": false,
@@ -7536,48 +7536,40 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "lfyhm78w27h7",
-      "name": "ICN (Seoul) on 2026-03-11",
-      "status": "scheduled",
-      "created_at": "2026-03-10T16:16:50.784Z",
-      "updated_at": "2026-03-11T16:00:11.080Z",
+      "id": "gzlr0c5k0hg3",
+      "name": "Increased Errors in the Budapest regio",
+      "status": "investigating",
+      "created_at": "2026-03-11T16:50:33.017Z",
+      "updated_at": "2026-03-11T16:50:33.137Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/q87zqf81bx7w",
-      "started_at": "2026-03-10T16:16:50.776Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/4bbm05snq7b0",
+      "started_at": "2026-03-11T16:50:33.006Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "ml07ctbhgdg9",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "lfyhm78w27h7",
-          "created_at": "2026-03-11T16:00:10.974Z",
-          "updated_at": "2026-03-11T16:00:10.974Z",
-          "display_at": "2026-03-11T16:00:10.974Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "354fyxkbxyj3",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ICN (Seoul) datacenter on 2026-03-11 between 17:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "lfyhm78w27h7",
-          "created_at": "2026-03-10T16:16:50.850Z",
-          "updated_at": "2026-03-10T16:16:50.850Z",
-          "display_at": "2026-03-10T16:16:50.850Z",
+          "id": "g4pz0gflhv5d",
+          "status": "investigating",
+          "body": "Cloudflare One traffic routed through Cloudflare's Budapest point of presence may experience an increase in the frequency in timeouts.",
+          "incident_id": "gzlr0c5k0hg3",
+          "created_at": "2026-03-11T16:50:33.133Z",
+          "updated_at": "2026-03-11T16:50:33.133Z",
+          "display_at": "2026-03-11T16:50:33.133Z",
           "affected_components": [
             {
-              "code": "v4s7np92f0dh",
-              "name": "Asia - Seoul, South Korea - (ICN)",
+              "code": "q3t6mnpmpgt8",
+              "name": "Cloudflare Sites and Services - Cloudflare One Appliance",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "38tc7m3dl7v6",
+              "name": "Europe - Budapest, Hungary - (BUD)",
+              "old_status": "partial_outage",
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -7587,24 +7579,40 @@
       ],
       "components": [
         {
-          "id": "v4s7np92f0dh",
-          "name": "Seoul, South Korea - (ICN)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:43:15.944Z",
-          "updated_at": "2025-11-04T04:37:32.505Z",
-          "position": 57,
+          "id": "38tc7m3dl7v6",
+          "name": "Budapest, Hungary - (BUD)",
+          "status": "partial_outage",
+          "created_at": "2017-04-13T20:46:19.120Z",
+          "updated_at": "2026-03-11T16:52:14.820Z",
+          "position": 10,
           "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "77867vxkttgw",
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "q3t6mnpmpgt8",
+          "name": "Cloudflare One Appliance",
+          "status": "degraded_performance",
+          "created_at": "2023-12-14T14:28:05.444Z",
+          "updated_at": "2026-03-11T16:50:33.081Z",
+          "position": 65,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-12-14",
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2026-03-11T17:00:00.000Z",
-      "scheduled_until": "2026-03-11T21:00:00.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "g29b91700k09",
       "name": "CDG (Paris) on 2026-03-12",
@@ -7899,9 +7907,9 @@
         {
           "id": "3l8dxwjtgpp6",
           "name": "Austin, TX, United States - (AUS)",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2023-04-21T15:40:55.635Z",
-          "updated_at": "2026-03-11T16:28:18.761Z",
+          "updated_at": "2026-03-11T16:52:14.515Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -8746,76 +8754,56 @@
       "scheduled_until": "2026-04-07T22:59:00.000Z"
     },
     {
-      "id": "ykbk6ss5kzv4",
-      "name": "LAX (Los Angeles) on 2026-03-11",
+      "id": "lfyhm78w27h7",
+      "name": "ICN (Seoul) on 2026-03-11",
       "status": "in_progress",
-      "created_at": "2026-03-09T10:28:25.547Z",
-      "updated_at": "2026-03-11T07:00:07.255Z",
+      "created_at": "2026-03-10T16:16:50.784Z",
+      "updated_at": "2026-03-11T17:00:07.256Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/1m5ztmhtndvb",
-      "started_at": "2026-03-09T10:28:25.539Z",
+      "shortlink": "https://stspg.io/q87zqf81bx7w",
+      "started_at": "2026-03-10T16:16:50.776Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "cjvynmmvcs9n",
+          "id": "k4qhcjgtwj3j",
           "status": "in_progress",
           "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "ykbk6ss5kzv4",
-          "created_at": "2026-03-11T07:00:07.249Z",
-          "updated_at": "2026-03-11T07:00:07.249Z",
-          "display_at": "2026-03-11T07:00:07.249Z",
+          "incident_id": "lfyhm78w27h7",
+          "created_at": "2026-03-11T17:00:07.249Z",
+          "updated_at": "2026-03-11T17:00:07.249Z",
+          "display_at": "2026-03-11T17:00:07.249Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "hztj7r811c6v",
+          "id": "ml07ctbhgdg9",
           "status": "scheduled",
           "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "ykbk6ss5kzv4",
-          "created_at": "2026-03-11T06:00:12.681Z",
-          "updated_at": "2026-03-11T06:00:12.681Z",
-          "display_at": "2026-03-11T06:00:12.681Z",
+          "incident_id": "lfyhm78w27h7",
+          "created_at": "2026-03-11T16:00:10.974Z",
+          "updated_at": "2026-03-11T16:00:10.974Z",
+          "display_at": "2026-03-11T16:00:10.974Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "y0b31znx2jwn",
+          "id": "354fyxkbxyj3",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2026-03-11 between 07:00 and 16:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "ykbk6ss5kzv4",
-          "created_at": "2026-03-09T18:16:23.130Z",
-          "updated_at": "2026-03-09T18:16:23.130Z",
-          "display_at": "2026-03-09T18:16:23.130Z",
+          "body": "We will be performing scheduled maintenance in ICN (Seoul) datacenter on 2026-03-11 between 17:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "lfyhm78w27h7",
+          "created_at": "2026-03-10T16:16:50.850Z",
+          "updated_at": "2026-03-10T16:16:50.850Z",
+          "display_at": "2026-03-10T16:16:50.850Z",
           "affected_components": [
             {
-              "code": "38w4zp21dlkc",
-              "name": "North America - Los Angeles, CA, United States - (LAX)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "nvr3q363t1m4",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2026-03-11 between 07:00 and 15:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "ykbk6ss5kzv4",
-          "created_at": "2026-03-09T10:28:25.605Z",
-          "updated_at": "2026-03-09T10:28:25.605Z",
-          "display_at": "2026-03-09T10:28:25.605Z",
-          "affected_components": [
-            {
-              "code": "38w4zp21dlkc",
-              "name": "North America - Los Angeles, CA, United States - (LAX)",
+              "code": "v4s7np92f0dh",
+              "name": "Asia - Seoul, South Korea - (ICN)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -8827,23 +8815,23 @@
       ],
       "components": [
         {
-          "id": "38w4zp21dlkc",
-          "name": "Los Angeles, CA, United States - (LAX)",
+          "id": "v4s7np92f0dh",
+          "name": "Seoul, South Korea - (ICN)",
           "status": "operational",
-          "created_at": "2014-10-27T19:24:27.591Z",
-          "updated_at": "2026-02-10T19:37:00.797Z",
-          "position": 27,
+          "created_at": "2014-10-27T21:43:15.944Z",
+          "updated_at": "2025-11-04T04:37:32.505Z",
+          "position": 57,
           "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "4l01sk5cdn5c",
+          "group_id": "77867vxkttgw",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2026-03-11T07:00:00.000Z",
-      "scheduled_until": "2026-03-11T16:30:00.000Z"
+      "scheduled_for": "2026-03-11T17:00:00.000Z",
+      "scheduled_until": "2026-03-11T21:00:00.000Z"
     }
   ],
   "status": {
