@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-16T13:36:01.860Z"
+    "updated_at": "2026-03-16T14:41:19.659Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -480,9 +480,9 @@
     {
       "id": "gxjcfyf5pht1",
       "name": "Baghdad, Iraq - (BGW)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2018-03-12T14:18:23.436Z",
-      "updated_at": "2026-03-16T02:57:30.277Z",
+      "updated_at": "2026-03-16T14:29:18.975Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1252,9 +1252,9 @@
     {
       "id": "2dg91ffn660j",
       "name": "Dammam, Saudi Arabia - (DMM)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-30T11:39:33.707Z",
-      "updated_at": "2026-03-16T13:36:01.858Z",
+      "updated_at": "2026-03-16T13:53:50.142Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -1691,7 +1691,7 @@
       "name": "Erbil, Iraq - (EBL)",
       "status": "under_maintenance",
       "created_at": "2022-02-02T10:59:20.698Z",
-      "updated_at": "2026-03-16T11:38:04.830Z",
+      "updated_at": "2026-03-16T14:17:28.960Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -3729,9 +3729,9 @@
     {
       "id": "6h060y0sxvv6",
       "name": "Minsk, Belarus - (MSQ)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-12-01T13:54:46.179Z",
-      "updated_at": "2026-03-12T00:48:20.474Z",
+      "updated_at": "2026-03-16T14:35:27.308Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -5424,9 +5424,9 @@
     {
       "id": "05rpd663qrcp",
       "name": "St. George's, Grenada - (GND)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-02-20T13:20:55.472Z",
-      "updated_at": "2026-03-12T09:02:03.934Z",
+      "updated_at": "2026-03-16T14:41:19.657Z",
       "position": 54,
       "description": null,
       "showcase": false,
@@ -6834,9 +6834,9 @@
     {
       "id": "zvm7mqn92xzc",
       "name": "Workers AI",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-02-14T15:05:51.274Z",
-      "updated_at": "2026-02-21T10:12:27.292Z",
+      "updated_at": "2026-03-16T13:58:32.856Z",
       "position": 106,
       "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
       "showcase": false,
@@ -7552,48 +7552,34 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "pbm65c0ly0hb",
-      "name": "PDX (Portland) on 2026-03-16",
-      "status": "scheduled",
-      "created_at": "2026-03-09T13:58:21.317Z",
-      "updated_at": "2026-03-16T13:00:09.991Z",
+      "id": "3l2jrx25235k",
+      "name": "Elevated Error Rates for Workers AI Services",
+      "status": "investigating",
+      "created_at": "2026-03-16T13:58:32.804Z",
+      "updated_at": "2026-03-16T13:58:32.933Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/ftfnsq3fxgyq",
-      "started_at": "2026-03-09T13:58:21.309Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/ntts9rfl2kv6",
+      "started_at": "2026-03-16T13:58:32.794Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "dj13w304b0vr",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "pbm65c0ly0hb",
-          "created_at": "2026-03-16T13:00:09.825Z",
-          "updated_at": "2026-03-16T13:00:09.825Z",
-          "display_at": "2026-03-16T13:00:09.825Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "gvvr85b9gz1y",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in PDX (Portland) datacenter on 2026-03-16 between 14:00 and 23:45 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "pbm65c0ly0hb",
-          "created_at": "2026-03-09T13:58:21.379Z",
-          "updated_at": "2026-03-09T13:58:21.379Z",
-          "display_at": "2026-03-09T13:58:21.379Z",
+          "id": "43l8p2yblh4n",
+          "status": "investigating",
+          "body": "We are currently investigating an elevated rate of errors, specifically an increase in timeout (408) errors, affecting multiple Workers AI models. Our engineering teams are actively engaged in identifying the root cause and implementing a fix. Further updates will be provided.",
+          "incident_id": "3l2jrx25235k",
+          "created_at": "2026-03-16T13:58:32.929Z",
+          "updated_at": "2026-03-16T13:58:32.929Z",
+          "display_at": "2026-03-16T13:58:32.929Z",
           "affected_components": [
             {
-              "code": "9b9tyrd9x3xr",
-              "name": "North America - Portland, OR, United States - (PDX)",
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -7603,24 +7589,25 @@
       ],
       "components": [
         {
-          "id": "9b9tyrd9x3xr",
-          "name": "Portland, OR, United States - (PDX)",
-          "status": "operational",
-          "created_at": "2017-08-31T11:47:10.621Z",
-          "updated_at": "2026-03-12T22:09:56.023Z",
-          "position": 42,
-          "description": null,
+          "id": "zvm7mqn92xzc",
+          "name": "Workers AI",
+          "status": "degraded_performance",
+          "created_at": "2024-02-14T15:05:51.274Z",
+          "updated_at": "2026-03-16T13:58:32.856Z",
+          "position": 106,
+          "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
           "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
+          "start_date": "2024-02-14",
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2026-03-16T14:00:00.000Z",
-      "scheduled_until": "2026-03-16T23:45:00.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "lcp4vb4kqbgt",
       "name": "YUL (Montréal) on 2026-03-17",
@@ -8700,6 +8687,86 @@
       ],
       "scheduled_for": "2026-04-07T13:00:00.000Z",
       "scheduled_until": "2026-04-07T22:59:00.000Z"
+    },
+    {
+      "id": "pbm65c0ly0hb",
+      "name": "PDX (Portland) on 2026-03-16",
+      "status": "in_progress",
+      "created_at": "2026-03-09T13:58:21.317Z",
+      "updated_at": "2026-03-16T14:00:07.257Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/ftfnsq3fxgyq",
+      "started_at": "2026-03-09T13:58:21.309Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "jqz4z616syzy",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "pbm65c0ly0hb",
+          "created_at": "2026-03-16T14:00:07.252Z",
+          "updated_at": "2026-03-16T14:00:07.252Z",
+          "display_at": "2026-03-16T14:00:07.252Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "dj13w304b0vr",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "pbm65c0ly0hb",
+          "created_at": "2026-03-16T13:00:09.825Z",
+          "updated_at": "2026-03-16T13:00:09.825Z",
+          "display_at": "2026-03-16T13:00:09.825Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "gvvr85b9gz1y",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in PDX (Portland) datacenter on 2026-03-16 between 14:00 and 23:45 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "pbm65c0ly0hb",
+          "created_at": "2026-03-09T13:58:21.379Z",
+          "updated_at": "2026-03-09T13:58:21.379Z",
+          "display_at": "2026-03-09T13:58:21.379Z",
+          "affected_components": [
+            {
+              "code": "9b9tyrd9x3xr",
+              "name": "North America - Portland, OR, United States - (PDX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9b9tyrd9x3xr",
+          "name": "Portland, OR, United States - (PDX)",
+          "status": "operational",
+          "created_at": "2017-08-31T11:47:10.621Z",
+          "updated_at": "2026-03-12T22:09:56.023Z",
+          "position": 42,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-03-16T14:00:00.000Z",
+      "scheduled_until": "2026-03-16T23:45:00.000Z"
     },
     {
       "id": "ylknvc7h9ft9",
