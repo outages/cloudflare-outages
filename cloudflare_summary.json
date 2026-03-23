@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-23T14:31:12.101Z"
+    "updated_at": "2026-03-23T15:40:33.226Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -218,9 +218,9 @@
     {
       "id": "xjfk3l4dykrs",
       "name": "Ahmedabad, India - (AMD)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-03-28T11:54:07.498Z",
-      "updated_at": "2026-03-23T08:47:02.018Z",
+      "updated_at": "2026-03-23T15:21:29.934Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -540,9 +540,9 @@
     {
       "id": "03wwgmh4vbnl",
       "name": "Atlanta, GA, United States - (ATL)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T20:33:06.198Z",
-      "updated_at": "2026-03-19T15:56:55.395Z",
+      "updated_at": "2026-03-23T15:34:14.540Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2124,9 +2124,9 @@
     {
       "id": "tdwwnvf8nv6h",
       "name": "Kigali, Rwanda - (KGL)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2019-06-17T03:27:21.977Z",
-      "updated_at": "2026-03-18T16:35:53.943Z",
+      "updated_at": "2026-03-23T14:58:02.448Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -6819,9 +6819,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2026-03-19T15:57:33.206Z",
+      "updated_at": "2026-03-23T15:02:37.804Z",
       "position": 105,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7389,9 +7389,9 @@
     {
       "id": "4jh0k3clz5b6",
       "name": "Male, Maldives - (MLE)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2024-11-09T09:01:00.175Z",
-      "updated_at": "2026-03-23T07:59:54.299Z",
+      "updated_at": "2026-03-23T15:09:48.064Z",
       "position": 460,
       "description": null,
       "showcase": false,
@@ -7552,7 +7552,134 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "m5zwgfp7yzzf",
+      "name": "Increased HTTP 530 Errors in Atlanta (ATL)",
+      "status": "monitoring",
+      "created_at": "2026-03-23T15:34:14.501Z",
+      "updated_at": "2026-03-23T15:35:00.587Z",
+      "monitoring_at": "2026-03-23T15:35:00.569Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/j42nm1rr06h6",
+      "started_at": "2026-03-23T15:34:14.493Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "yj3r3008lfv0",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "m5zwgfp7yzzf",
+          "created_at": "2026-03-23T15:35:00.569Z",
+          "updated_at": "2026-03-23T15:35:00.569Z",
+          "display_at": "2026-03-23T15:35:00.569Z",
+          "affected_components": [
+            {
+              "code": "03wwgmh4vbnl",
+              "name": "North America - Atlanta, GA, United States - (ATL)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xmxy0rzg9rpn",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an increased rate of HTTP 530 errors specifically affecting \".cloud\" and \".tech\" traffic routed through our Atlanta (ATL) data center. \nWe are working to identify the root cause and will provide updates as they become available",
+          "incident_id": "m5zwgfp7yzzf",
+          "created_at": "2026-03-23T15:34:14.601Z",
+          "updated_at": "2026-03-23T15:34:14.601Z",
+          "display_at": "2026-03-23T15:34:14.601Z",
+          "affected_components": [
+            {
+              "code": "03wwgmh4vbnl",
+              "name": "North America - Atlanta, GA, United States - (ATL)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "03wwgmh4vbnl",
+          "name": "Atlanta, GA, United States - (ATL)",
+          "status": "degraded_performance",
+          "created_at": "2014-10-27T20:33:06.198Z",
+          "updated_at": "2026-03-23T15:34:14.540Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "65g5fr99tlwg",
+      "name": "Workers API increased latency",
+      "status": "investigating",
+      "created_at": "2026-03-23T15:02:37.767Z",
+      "updated_at": "2026-03-23T15:02:37.859Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/crykcjpgn25b",
+      "started_at": "2026-03-23T15:02:37.756Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "x97y3mlpjc4g",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue causing increased latency for the Workers API",
+          "incident_id": "65g5fr99tlwg",
+          "created_at": "2026-03-23T15:02:37.857Z",
+          "updated_at": "2026-03-23T15:02:37.857Z",
+          "display_at": "2026-03-23T15:02:37.857Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2026-03-23T15:02:37.804Z",
+          "position": 105,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "zdgr1ly4tnb5",
@@ -7771,60 +7898,6 @@
       "scheduled_until": "2026-03-24T16:00:00.000Z"
     },
     {
-      "id": "m48zpl2h8d7n",
-      "name": "PMO (Palermo) on 2026-03-24",
-      "status": "scheduled",
-      "created_at": "2026-03-18T13:54:56.491Z",
-      "updated_at": "2026-03-18T13:54:56.556Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/5c8tc9d7ydm2",
-      "started_at": "2026-03-18T13:54:56.484Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "fgxtj4q25fbq",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in PMO (Palermo) datacenter on 2026-03-24 between 09:00 and 17:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "m48zpl2h8d7n",
-          "created_at": "2026-03-18T13:54:56.552Z",
-          "updated_at": "2026-03-18T13:54:56.552Z",
-          "display_at": "2026-03-18T13:54:56.552Z",
-          "affected_components": [
-            {
-              "code": "q68nlq1486z7",
-              "name": "Europe - Palermo, Italy - (PMO)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "q68nlq1486z7",
-          "name": "Palermo, Italy - (PMO)",
-          "status": "operational",
-          "created_at": "2021-04-07T15:46:17.622Z",
-          "updated_at": "2026-03-02T05:31:38.327Z",
-          "position": 36,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-04-07",
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-03-24T09:00:00.000Z",
-      "scheduled_until": "2026-03-24T17:00:00.000Z"
-    },
-    {
       "id": "fqtwx7pf1zd0",
       "name": "KIX (Osaka) on 2026-03-24",
       "status": "scheduled",
@@ -7985,6 +8058,60 @@
       ],
       "scheduled_for": "2026-03-24T23:30:00.000Z",
       "scheduled_until": "2026-03-25T06:00:00.000Z"
+    },
+    {
+      "id": "91rz4gjp17l4",
+      "name": "PMO (Palermo) on 2026-03-25",
+      "status": "scheduled",
+      "created_at": "2026-03-23T15:40:32.662Z",
+      "updated_at": "2026-03-23T15:40:32.734Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/w0qjrhk2mz0v",
+      "started_at": "2026-03-23T15:40:32.654Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "1sqcdg65bzr2",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in PMO (Palermo) datacenter on 2026-03-25 between 10:00 and 18:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "91rz4gjp17l4",
+          "created_at": "2026-03-23T15:40:32.731Z",
+          "updated_at": "2026-03-23T15:40:32.731Z",
+          "display_at": "2026-03-23T15:40:32.731Z",
+          "affected_components": [
+            {
+              "code": "q68nlq1486z7",
+              "name": "Europe - Palermo, Italy - (PMO)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "q68nlq1486z7",
+          "name": "Palermo, Italy - (PMO)",
+          "status": "operational",
+          "created_at": "2021-04-07T15:46:17.622Z",
+          "updated_at": "2026-03-02T05:31:38.327Z",
+          "position": 36,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-07",
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-03-25T10:00:00.000Z",
+      "scheduled_until": "2026-03-25T18:00:00.000Z"
     },
     {
       "id": "r9chv3z3x0bh",
