@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-24T17:37:27.954Z"
+    "updated_at": "2026-03-24T18:37:41.660Z"
   },
   "components": [
     {
@@ -743,9 +743,9 @@
     {
       "id": "d4nfj71p66fy",
       "name": "Belém, Brazil - (BEL)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-08-19T14:52:39.395Z",
-      "updated_at": "2026-03-24T14:49:13.733Z",
+      "updated_at": "2026-03-24T18:37:41.656Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -880,7 +880,7 @@
       "name": "Bangkok, Thailand - (BKK)",
       "status": "under_maintenance",
       "created_at": "2016-04-21T05:37:43.134Z",
-      "updated_at": "2026-03-24T16:10:00.528Z",
+      "updated_at": "2026-03-24T18:01:10.826Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1050,9 +1050,9 @@
     {
       "id": "4c231tkdlpcl",
       "name": "Analytics",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-11-13T11:54:10.191Z",
-      "updated_at": "2026-03-18T23:49:48.217Z",
+      "updated_at": "2026-03-24T17:58:52.230Z",
       "position": 6,
       "description": "Customer analytics aggregation service",
       "showcase": false,
@@ -1155,9 +1155,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2026-03-18T20:16:44.989Z",
+      "updated_at": "2026-03-24T17:58:52.255Z",
       "position": 7,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -6042,7 +6042,7 @@
       "name": "Network",
       "status": "operational",
       "created_at": "2023-01-13T13:39:19.804Z",
-      "updated_at": "2026-03-21T08:45:33.949Z",
+      "updated_at": "2026-03-24T18:32:48.182Z",
       "position": 68,
       "description": null,
       "showcase": false,
@@ -6535,9 +6535,9 @@
     {
       "id": "bn06brrnz2n2",
       "name": "Kannur, India - (CNN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-06-08T15:40:49.155Z",
-      "updated_at": "2026-03-24T11:09:53.069Z",
+      "updated_at": "2026-03-24T18:26:40.089Z",
       "position": 90,
       "description": null,
       "showcase": false,
@@ -6820,9 +6820,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2026-03-23T18:13:22.672Z",
+      "updated_at": "2026-03-24T17:52:58.732Z",
       "position": 105,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7570,6 +7570,185 @@
   ],
   "incidents": [
     {
+      "id": "sn641zvm39tz",
+      "name": "Cloudflare API service issues",
+      "status": "monitoring",
+      "created_at": "2026-03-24T17:52:58.688Z",
+      "updated_at": "2026-03-24T18:15:17.414Z",
+      "monitoring_at": "2026-03-24T18:15:17.393Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/crlv8tfl1qrn",
+      "started_at": "2026-03-24T17:52:58.680Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "cp59n5mzqsfv",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "sn641zvm39tz",
+          "created_at": "2026-03-24T18:15:17.393Z",
+          "updated_at": "2026-03-24T18:15:17.393Z",
+          "display_at": "2026-03-24T18:15:17.393Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "jsbnn72dmp2r",
+          "status": "investigating",
+          "body": "The Cloudflare Workers and GraphQL API is experiencing increased errors and changes to Cron Triggers may be delayed. Already deployed Workers and existing Cron Triggers are unaffected.",
+          "incident_id": "sn641zvm39tz",
+          "created_at": "2026-03-24T17:59:49.511Z",
+          "updated_at": "2026-03-24T17:59:49.511Z",
+          "display_at": "2026-03-24T17:59:49.511Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "zy4j7w93jcx9",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "sn641zvm39tz",
+          "created_at": "2026-03-24T17:58:52.310Z",
+          "updated_at": "2026-03-24T17:58:52.310Z",
+          "display_at": "2026-03-24T17:58:52.310Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "gkmqt9tsc0z3",
+          "status": "investigating",
+          "body": "The Cloudflare Workers API is experiencing increased errors and changes to Cron Triggers may be delayed. Already deployed Workers and existing Cron Triggers are unaffected.",
+          "incident_id": "sn641zvm39tz",
+          "created_at": "2026-03-24T17:52:58.800Z",
+          "updated_at": "2026-03-24T17:52:58.800Z",
+          "display_at": "2026-03-24T17:52:58.800Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "degraded_performance",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2026-03-24T17:58:52.230Z",
+          "position": 6,
+          "description": "Customer analytics aggregation service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2026-03-24T17:58:52.255Z",
+          "position": 7,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2026-03-24T17:52:58.732Z",
+          "position": 105,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "k4p963r6606k",
       "name": "Schema Validation Block Reason Not Displayed on Dashboard",
       "status": "identified",
@@ -7641,79 +7820,6 @@
         }
       ],
       "reminder_intervals": null
-    },
-    {
-      "id": "m5zwgfp7yzzf",
-      "name": "Increased HTTP 530 Errors in Atlanta (ATL)",
-      "status": "monitoring",
-      "created_at": "2026-03-23T15:34:14.501Z",
-      "updated_at": "2026-03-23T15:35:00.587Z",
-      "monitoring_at": "2026-03-23T15:35:00.569Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/j42nm1rr06h6",
-      "started_at": "2026-03-23T15:34:14.493Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "yj3r3008lfv0",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "m5zwgfp7yzzf",
-          "created_at": "2026-03-23T15:35:00.569Z",
-          "updated_at": "2026-03-23T15:35:00.569Z",
-          "display_at": "2026-03-23T15:35:00.569Z",
-          "affected_components": [
-            {
-              "code": "03wwgmh4vbnl",
-              "name": "North America - Atlanta, GA, United States - (ATL)",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "xmxy0rzg9rpn",
-          "status": "investigating",
-          "body": "Cloudflare is investigating an increased rate of HTTP 530 errors specifically affecting \".cloud\" and \".tech\" traffic routed through our Atlanta (ATL) data center. \nWe are working to identify the root cause and will provide updates as they become available",
-          "incident_id": "m5zwgfp7yzzf",
-          "created_at": "2026-03-23T15:34:14.601Z",
-          "updated_at": "2026-03-23T15:34:14.601Z",
-          "display_at": "2026-03-23T15:34:14.601Z",
-          "affected_components": [
-            {
-              "code": "03wwgmh4vbnl",
-              "name": "North America - Atlanta, GA, United States - (ATL)",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "03wwgmh4vbnl",
-          "name": "Atlanta, GA, United States - (ATL)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:33:06.198Z",
-          "updated_at": "2026-03-24T02:52:28.948Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
     }
   ],
   "scheduled_maintenances": [
@@ -7722,7 +7828,7 @@
       "name": "SIN (Singapore) on 2026-03-24",
       "status": "scheduled",
       "created_at": "2026-03-20T19:28:49.217Z",
-      "updated_at": "2026-03-20T19:28:49.276Z",
+      "updated_at": "2026-03-24T18:00:10.804Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7730,6 +7836,19 @@
       "started_at": "2026-03-20T19:28:49.210Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "4hydcchn8146",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "c31z131v43p9",
+          "created_at": "2026-03-24T18:00:10.701Z",
+          "updated_at": "2026-03-24T18:00:10.701Z",
+          "display_at": "2026-03-24T18:00:10.701Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "vh7m6zp73yh5",
           "status": "scheduled",
@@ -8406,168 +8525,6 @@
       "scheduled_until": "2026-03-30T15:00:00.000Z"
     },
     {
-      "id": "l453cl76brrq",
-      "name": "LAX (Los Angeles) on 2026-03-31",
-      "status": "scheduled",
-      "created_at": "2026-03-24T16:42:28.871Z",
-      "updated_at": "2026-03-24T16:42:28.950Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/g82wcb1shxh0",
-      "started_at": "2026-03-24T16:42:28.863Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "k6h7cyvcv5d3",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2026-03-31 between 07:00 and 15:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "l453cl76brrq",
-          "created_at": "2026-03-24T16:42:28.947Z",
-          "updated_at": "2026-03-24T16:42:28.947Z",
-          "display_at": "2026-03-24T16:42:28.947Z",
-          "affected_components": [
-            {
-              "code": "38w4zp21dlkc",
-              "name": "North America - Los Angeles, CA, United States - (LAX)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "38w4zp21dlkc",
-          "name": "Los Angeles, CA, United States - (LAX)",
-          "status": "operational",
-          "created_at": "2014-10-27T19:24:27.591Z",
-          "updated_at": "2026-03-18T23:48:52.094Z",
-          "position": 27,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-03-31T07:00:00.000Z",
-      "scheduled_until": "2026-03-31T15:00:00.000Z"
-    },
-    {
-      "id": "l41hj26rvfft",
-      "name": "LAX (Los Angeles) on 2026-04-01",
-      "status": "scheduled",
-      "created_at": "2026-03-24T16:46:28.350Z",
-      "updated_at": "2026-03-24T16:46:28.428Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/f6b70vzttblq",
-      "started_at": "2026-03-24T16:46:28.342Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "vzbh5hwm9vvn",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2026-04-01 between 07:00 and 15:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "l41hj26rvfft",
-          "created_at": "2026-03-24T16:46:28.425Z",
-          "updated_at": "2026-03-24T16:46:28.425Z",
-          "display_at": "2026-03-24T16:46:28.425Z",
-          "affected_components": [
-            {
-              "code": "38w4zp21dlkc",
-              "name": "North America - Los Angeles, CA, United States - (LAX)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "38w4zp21dlkc",
-          "name": "Los Angeles, CA, United States - (LAX)",
-          "status": "operational",
-          "created_at": "2014-10-27T19:24:27.591Z",
-          "updated_at": "2026-03-18T23:48:52.094Z",
-          "position": 27,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-04-01T07:00:00.000Z",
-      "scheduled_until": "2026-04-01T15:00:00.000Z"
-    },
-    {
-      "id": "jf9t56d64z23",
-      "name": "LAX (Los Angeles) on 2026-04-02",
-      "status": "scheduled",
-      "created_at": "2026-03-24T16:48:27.315Z",
-      "updated_at": "2026-03-24T16:48:27.394Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/1qhvlyqf05nx",
-      "started_at": "2026-03-24T16:48:27.307Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "bgqyhxw1rvzp",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2026-04-02 between 07:00 and 15:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "jf9t56d64z23",
-          "created_at": "2026-03-24T16:48:27.391Z",
-          "updated_at": "2026-03-24T16:48:27.391Z",
-          "display_at": "2026-03-24T16:48:27.391Z",
-          "affected_components": [
-            {
-              "code": "38w4zp21dlkc",
-              "name": "North America - Los Angeles, CA, United States - (LAX)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "38w4zp21dlkc",
-          "name": "Los Angeles, CA, United States - (LAX)",
-          "status": "operational",
-          "created_at": "2014-10-27T19:24:27.591Z",
-          "updated_at": "2026-03-18T23:48:52.094Z",
-          "position": 27,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-04-02T07:00:00.000Z",
-      "scheduled_until": "2026-04-02T15:00:00.000Z"
-    },
-    {
       "id": "2nrf3jk95m19",
       "name": "TPE (Taipei) on 2026-03-24",
       "status": "in_progress",
@@ -8793,106 +8750,6 @@
       ],
       "scheduled_for": "2026-03-24T13:00:00.000Z",
       "scheduled_until": "2026-03-26T06:45:00.000Z"
-    },
-    {
-      "id": "0g2vpw491t23",
-      "name": "ZRH (Zurich) on 2026-03-24",
-      "status": "in_progress",
-      "created_at": "2026-03-20T17:30:57.463Z",
-      "updated_at": "2026-03-24T07:30:07.223Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/yrzz2hg5wjxk",
-      "started_at": "2026-03-20T17:30:57.454Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "z16ys7697k4t",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "0g2vpw491t23",
-          "created_at": "2026-03-24T07:30:07.218Z",
-          "updated_at": "2026-03-24T07:30:07.218Z",
-          "display_at": "2026-03-24T07:30:07.218Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "k2s2wxgyr1pg",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "0g2vpw491t23",
-          "created_at": "2026-03-24T06:30:08.022Z",
-          "updated_at": "2026-03-24T06:30:08.022Z",
-          "display_at": "2026-03-24T06:30:08.022Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "wp6wms0h8pl3",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ZRH (Zurich) datacenter on 2026-03-24 between 07:30 and 18:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "0g2vpw491t23",
-          "created_at": "2026-03-23T17:32:33.012Z",
-          "updated_at": "2026-03-23T17:32:33.012Z",
-          "display_at": "2026-03-23T17:32:33.012Z",
-          "affected_components": [
-            {
-              "code": "7f4lcm62x6x2",
-              "name": "Europe - Zurich, Switzerland - (ZRH)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "55h02hml94y4",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ZRH (Zurich) datacenter on 2026-03-24 between 07:30 and 16:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "0g2vpw491t23",
-          "created_at": "2026-03-20T17:30:57.553Z",
-          "updated_at": "2026-03-20T17:30:57.553Z",
-          "display_at": "2026-03-20T17:30:57.553Z",
-          "affected_components": [
-            {
-              "code": "7f4lcm62x6x2",
-              "name": "Europe - Zurich, Switzerland - (ZRH)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7f4lcm62x6x2",
-          "name": "Zurich, Switzerland - (ZRH)",
-          "status": "operational",
-          "created_at": "2025-06-02T14:48:10.085Z",
-          "updated_at": "2026-03-16T04:26:21.785Z",
-          "position": 57,
-          "description": null,
-          "showcase": false,
-          "start_date": "2025-06-02",
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-03-24T07:30:00.000Z",
-      "scheduled_until": "2026-03-24T18:00:00.000Z"
     }
   ],
   "status": {
