@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-24T16:32:14.432Z"
+    "updated_at": "2026-03-24T17:37:27.954Z"
   },
   "components": [
     {
@@ -2260,9 +2260,9 @@
     {
       "id": "n5017xzrnrsc",
       "name": "Curitiba, Brazil - (CWB)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-04-01T08:05:14.526Z",
-      "updated_at": "2026-03-24T16:26:09.776Z",
+      "updated_at": "2026-03-24T17:25:02.306Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -4317,7 +4317,7 @@
       "name": "Krasnoyarsk, Russia - (KJA)",
       "status": "partial_outage",
       "created_at": "2021-09-22T09:43:29.298Z",
-      "updated_at": "2026-03-24T16:32:14.429Z",
+      "updated_at": "2026-03-24T17:37:27.952Z",
       "position": 39,
       "description": null,
       "showcase": false,
@@ -7572,9 +7572,9 @@
     {
       "id": "k4p963r6606k",
       "name": "Schema Validation Block Reason Not Displayed on Dashboard",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2026-03-24T16:10:23.477Z",
-      "updated_at": "2026-03-24T16:10:23.575Z",
+      "updated_at": "2026-03-24T16:42:29.570Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7582,6 +7582,26 @@
       "started_at": "2026-03-24T16:10:23.442Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "ych342tts0x0",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "k4p963r6606k",
+          "created_at": "2026-03-24T16:42:29.566Z",
+          "updated_at": "2026-03-24T16:42:29.566Z",
+          "display_at": "2026-03-24T16:42:29.566Z",
+          "affected_components": [
+            {
+              "code": "g9yx473yjk9t",
+              "name": "Cloudflare Sites and Services - API Shield",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "t6kb5hsb5fz2",
           "status": "investigating",
@@ -7697,60 +7717,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "2nrf3jk95m19",
-      "name": "TPE (Taipei) on 2026-03-24",
-      "status": "scheduled",
-      "created_at": "2026-03-24T16:28:27.538Z",
-      "updated_at": "2026-03-24T16:28:27.625Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/lbdrdxvvrhb3",
-      "started_at": "2026-03-24T16:28:27.531Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "yc6ls23h06n8",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in TPE (Taipei) datacenter on 2026-03-24 between 17:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "2nrf3jk95m19",
-          "created_at": "2026-03-24T16:28:27.622Z",
-          "updated_at": "2026-03-24T16:28:27.622Z",
-          "display_at": "2026-03-24T16:28:27.622Z",
-          "affected_components": [
-            {
-              "code": "hk319v924h0m",
-              "name": "Asia - Taipei - (TPE)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hk319v924h0m",
-          "name": "Taipei - (TPE)",
-          "status": "operational",
-          "created_at": "2016-03-15T11:51:08.712Z",
-          "updated_at": "2026-03-06T20:30:59.163Z",
-          "position": 61,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-03-24T17:00:00.000Z",
-      "scheduled_until": "2026-03-24T22:00:00.000Z"
-    },
     {
       "id": "c31z131v43p9",
       "name": "SIN (Singapore) on 2026-03-24",
@@ -8438,6 +8404,235 @@
       ],
       "scheduled_for": "2026-03-30T07:00:00.000Z",
       "scheduled_until": "2026-03-30T15:00:00.000Z"
+    },
+    {
+      "id": "l453cl76brrq",
+      "name": "LAX (Los Angeles) on 2026-03-31",
+      "status": "scheduled",
+      "created_at": "2026-03-24T16:42:28.871Z",
+      "updated_at": "2026-03-24T16:42:28.950Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/g82wcb1shxh0",
+      "started_at": "2026-03-24T16:42:28.863Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "k6h7cyvcv5d3",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2026-03-31 between 07:00 and 15:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "l453cl76brrq",
+          "created_at": "2026-03-24T16:42:28.947Z",
+          "updated_at": "2026-03-24T16:42:28.947Z",
+          "display_at": "2026-03-24T16:42:28.947Z",
+          "affected_components": [
+            {
+              "code": "38w4zp21dlkc",
+              "name": "North America - Los Angeles, CA, United States - (LAX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "38w4zp21dlkc",
+          "name": "Los Angeles, CA, United States - (LAX)",
+          "status": "operational",
+          "created_at": "2014-10-27T19:24:27.591Z",
+          "updated_at": "2026-03-18T23:48:52.094Z",
+          "position": 27,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-03-31T07:00:00.000Z",
+      "scheduled_until": "2026-03-31T15:00:00.000Z"
+    },
+    {
+      "id": "l41hj26rvfft",
+      "name": "LAX (Los Angeles) on 2026-04-01",
+      "status": "scheduled",
+      "created_at": "2026-03-24T16:46:28.350Z",
+      "updated_at": "2026-03-24T16:46:28.428Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/f6b70vzttblq",
+      "started_at": "2026-03-24T16:46:28.342Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "vzbh5hwm9vvn",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2026-04-01 between 07:00 and 15:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "l41hj26rvfft",
+          "created_at": "2026-03-24T16:46:28.425Z",
+          "updated_at": "2026-03-24T16:46:28.425Z",
+          "display_at": "2026-03-24T16:46:28.425Z",
+          "affected_components": [
+            {
+              "code": "38w4zp21dlkc",
+              "name": "North America - Los Angeles, CA, United States - (LAX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "38w4zp21dlkc",
+          "name": "Los Angeles, CA, United States - (LAX)",
+          "status": "operational",
+          "created_at": "2014-10-27T19:24:27.591Z",
+          "updated_at": "2026-03-18T23:48:52.094Z",
+          "position": 27,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-01T07:00:00.000Z",
+      "scheduled_until": "2026-04-01T15:00:00.000Z"
+    },
+    {
+      "id": "jf9t56d64z23",
+      "name": "LAX (Los Angeles) on 2026-04-02",
+      "status": "scheduled",
+      "created_at": "2026-03-24T16:48:27.315Z",
+      "updated_at": "2026-03-24T16:48:27.394Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/1qhvlyqf05nx",
+      "started_at": "2026-03-24T16:48:27.307Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "bgqyhxw1rvzp",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LAX (Los Angeles) datacenter on 2026-04-02 between 07:00 and 15:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "jf9t56d64z23",
+          "created_at": "2026-03-24T16:48:27.391Z",
+          "updated_at": "2026-03-24T16:48:27.391Z",
+          "display_at": "2026-03-24T16:48:27.391Z",
+          "affected_components": [
+            {
+              "code": "38w4zp21dlkc",
+              "name": "North America - Los Angeles, CA, United States - (LAX)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "38w4zp21dlkc",
+          "name": "Los Angeles, CA, United States - (LAX)",
+          "status": "operational",
+          "created_at": "2014-10-27T19:24:27.591Z",
+          "updated_at": "2026-03-18T23:48:52.094Z",
+          "position": 27,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-02T07:00:00.000Z",
+      "scheduled_until": "2026-04-02T15:00:00.000Z"
+    },
+    {
+      "id": "2nrf3jk95m19",
+      "name": "TPE (Taipei) on 2026-03-24",
+      "status": "in_progress",
+      "created_at": "2026-03-24T16:28:27.538Z",
+      "updated_at": "2026-03-24T17:00:10.509Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/lbdrdxvvrhb3",
+      "started_at": "2026-03-24T16:28:27.531Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8zj3nnl079xr",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "2nrf3jk95m19",
+          "created_at": "2026-03-24T17:00:10.501Z",
+          "updated_at": "2026-03-24T17:00:10.501Z",
+          "display_at": "2026-03-24T17:00:10.501Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "yc6ls23h06n8",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in TPE (Taipei) datacenter on 2026-03-24 between 17:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "2nrf3jk95m19",
+          "created_at": "2026-03-24T16:28:27.622Z",
+          "updated_at": "2026-03-24T16:28:27.622Z",
+          "display_at": "2026-03-24T16:28:27.622Z",
+          "affected_components": [
+            {
+              "code": "hk319v924h0m",
+              "name": "Asia - Taipei - (TPE)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hk319v924h0m",
+          "name": "Taipei - (TPE)",
+          "status": "operational",
+          "created_at": "2016-03-15T11:51:08.712Z",
+          "updated_at": "2026-03-06T20:30:59.163Z",
+          "position": 61,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-03-24T17:00:00.000Z",
+      "scheduled_until": "2026-03-24T22:00:00.000Z"
     },
     {
       "id": "fqtwx7pf1zd0",
