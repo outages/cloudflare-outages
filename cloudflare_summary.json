@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-26T16:33:52.202Z"
+    "updated_at": "2026-03-26T17:36:19.810Z"
   },
   "components": [
     {
@@ -1253,9 +1253,9 @@
     {
       "id": "2dg91ffn660j",
       "name": "Dammam, Saudi Arabia - (DMM)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-30T11:39:33.707Z",
-      "updated_at": "2026-03-26T16:33:52.198Z",
+      "updated_at": "2026-03-26T17:13:48.413Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -1915,9 +1915,9 @@
     {
       "id": "652rf3j94nfv",
       "name": "Jeddah, Saudi Arabia - (JED)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-06-08T13:59:14.645Z",
-      "updated_at": "2026-03-26T16:28:41.571Z",
+      "updated_at": "2026-03-26T17:08:33.859Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -2620,9 +2620,9 @@
     {
       "id": "gg8xxj0j3d32",
       "name": "Riyadh, Saudi Arabia - (RUH)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-03-07T02:32:33.544Z",
-      "updated_at": "2026-03-26T16:33:51.434Z",
+      "updated_at": "2026-03-26T17:13:51.837Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -4017,7 +4017,7 @@
       "name": "Karachi, Pakistan - (KHI)",
       "status": "operational",
       "created_at": "2018-12-04T16:17:59.275Z",
-      "updated_at": "2026-03-16T23:51:46.069Z",
+      "updated_at": "2026-03-26T17:13:49.704Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -4062,7 +4062,7 @@
       "name": "Rio de Janeiro, Brazil - (GIG)",
       "status": "operational",
       "created_at": "2017-06-22T22:19:02.210Z",
-      "updated_at": "2026-03-26T13:44:59.721Z",
+      "updated_at": "2026-03-26T17:36:19.807Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -6460,9 +6460,9 @@
     {
       "id": "6dd6ssg7plt0",
       "name": "Spectrum",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:55.919Z",
-      "updated_at": "2026-02-13T13:30:27.548Z",
+      "updated_at": "2026-03-26T17:08:56.804Z",
       "position": 87,
       "description": "Spectrum allows you to route MQTT, email, file transfer, version control, games, and more over TCP or UDP through Cloudflare to mask the origin and protect it from DDoS attacks",
       "showcase": false,
@@ -7570,6 +7570,59 @@
   ],
   "incidents": [
     {
+      "id": "jbj95zp0rnd6",
+      "name": "Incorrect IP source information in spectrum HTTP/HTTPS apps",
+      "status": "investigating",
+      "created_at": "2026-03-26T17:08:56.768Z",
+      "updated_at": "2026-03-26T17:08:56.860Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/wxt5wc65s0r9",
+      "started_at": "2026-03-26T17:08:56.758Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8hjwrfkbvgxh",
+          "status": "investigating",
+          "body": "Cloudflare is investigating reports of incorrect client source IP addresses and geolocation information being reported for Spectrum HTTP/HTTPS applications.",
+          "incident_id": "jbj95zp0rnd6",
+          "created_at": "2026-03-26T17:08:56.857Z",
+          "updated_at": "2026-03-26T17:08:56.857Z",
+          "display_at": "2026-03-26T17:08:56.857Z",
+          "affected_components": [
+            {
+              "code": "6dd6ssg7plt0",
+              "name": "Cloudflare Sites and Services - Spectrum",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "6dd6ssg7plt0",
+          "name": "Spectrum",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:55.919Z",
+          "updated_at": "2026-03-26T17:08:56.804Z",
+          "position": 87,
+          "description": "Spectrum allows you to route MQTT, email, file transfer, version control, games, and more over TCP or UDP through Cloudflare to mask the origin and protect it from DDoS attacks",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "rt17d8zh9x4n",
       "name": "Network Error Logging Issues",
       "status": "monitoring",
@@ -8060,106 +8113,6 @@
       ],
       "scheduled_for": "2026-03-30T23:30:00.000Z",
       "scheduled_until": "2026-03-31T05:30:00.000Z"
-    },
-    {
-      "id": "rhvyd6rmnh02",
-      "name": "ZRH (Zurich) on 2026-03-26",
-      "status": "in_progress",
-      "created_at": "2026-03-26T10:02:30.845Z",
-      "updated_at": "2026-03-26T11:00:07.640Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/266cryj6st64",
-      "started_at": "2026-03-26T10:02:30.837Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "zbw6q1c72j23",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "rhvyd6rmnh02",
-          "created_at": "2026-03-26T11:00:07.635Z",
-          "updated_at": "2026-03-26T11:00:07.635Z",
-          "display_at": "2026-03-26T11:00:07.635Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "hxw45zxdhcxb",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ZRH (Zurich) datacenter on 2026-03-26 between 11:00 and 17:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "rhvyd6rmnh02",
-          "created_at": "2026-03-26T10:38:30.538Z",
-          "updated_at": "2026-03-26T10:38:30.538Z",
-          "display_at": "2026-03-26T10:38:30.538Z",
-          "affected_components": [
-            {
-              "code": "7f4lcm62x6x2",
-              "name": "Europe - Zurich, Switzerland - (ZRH)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "vx846fky6k6p",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "rhvyd6rmnh02",
-          "created_at": "2026-03-26T10:30:07.762Z",
-          "updated_at": "2026-03-26T10:30:07.762Z",
-          "display_at": "2026-03-26T10:30:07.762Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "kc9vflrmntm3",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in ZRH (Zurich) datacenter on 2026-03-26 between 11:30 and 17:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "rhvyd6rmnh02",
-          "created_at": "2026-03-26T10:02:30.905Z",
-          "updated_at": "2026-03-26T10:02:30.905Z",
-          "display_at": "2026-03-26T10:02:30.905Z",
-          "affected_components": [
-            {
-              "code": "7f4lcm62x6x2",
-              "name": "Europe - Zurich, Switzerland - (ZRH)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7f4lcm62x6x2",
-          "name": "Zurich, Switzerland - (ZRH)",
-          "status": "operational",
-          "created_at": "2025-06-02T14:48:10.085Z",
-          "updated_at": "2026-03-16T04:26:21.785Z",
-          "position": 57,
-          "description": null,
-          "showcase": false,
-          "start_date": "2025-06-02",
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-03-26T11:00:00.000Z",
-      "scheduled_until": "2026-03-26T17:00:00.000Z"
     }
   ],
   "status": {
