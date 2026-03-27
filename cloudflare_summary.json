@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-27T23:32:53.282Z"
+    "updated_at": "2026-03-27T23:57:07.961Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3685,9 +3685,9 @@
     {
       "id": "gfbkjpmmjmkj",
       "name": "Minneapolis, MN, United States - (MSP)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2016-01-11T04:39:23.475Z",
-      "updated_at": "2026-03-27T19:36:25.437Z",
+      "updated_at": "2026-03-27T23:49:29.104Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -6280,9 +6280,9 @@
     {
       "id": "yxhtws7ltl9t",
       "name": "RealtimeKit",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-05-16T17:08:23.427Z",
-      "updated_at": "2026-03-06T12:56:09.239Z",
+      "updated_at": "2026-03-27T23:57:07.891Z",
       "position": 79,
       "description": "Build real-time serverless video, audio and data applications.\r\n\r\nCloudflare Realtime is infrastructure for real-time audio/video/data applications. It allows you to build real-time apps without worrying about scaling or regions. It can act as a selective forwarding unit (WebRTC SFU), as a fanout delivery system for broadcasting (WebRTC CDN) or anything in between.",
       "showcase": false,
@@ -7568,7 +7568,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "zmmcl8p948xk",
+      "name": "Intermittent 500s on RealtimeKit API",
+      "status": "investigating",
+      "created_at": "2026-03-27T23:57:07.847Z",
+      "updated_at": "2026-03-27T23:57:07.958Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/hrg0jn9pz5c5",
+      "started_at": "2026-03-27T23:57:07.835Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "blbsfh1j6dtn",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare Realtime APIs. RealtimeKit meetings are unaffected.\n\nThese issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge.",
+          "incident_id": "zmmcl8p948xk",
+          "created_at": "2026-03-27T23:57:07.954Z",
+          "updated_at": "2026-03-27T23:57:07.954Z",
+          "display_at": "2026-03-27T23:57:07.954Z",
+          "affected_components": [
+            {
+              "code": "yxhtws7ltl9t",
+              "name": "Cloudflare Sites and Services - RealtimeKit",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "yxhtws7ltl9t",
+          "name": "RealtimeKit",
+          "status": "degraded_performance",
+          "created_at": "2025-05-16T17:08:23.427Z",
+          "updated_at": "2026-03-27T23:57:07.891Z",
+          "position": 79,
+          "description": "Build real-time serverless video, audio and data applications.\r\n\r\nCloudflare Realtime is infrastructure for real-time audio/video/data applications. It allows you to build real-time apps without worrying about scaling or regions. It can act as a selective forwarding unit (WebRTC SFU), as a fanout delivery system for broadcasting (WebRTC CDN) or anything in between.",
+          "showcase": false,
+          "start_date": "2025-05-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "s06mzdg9bqw3",
