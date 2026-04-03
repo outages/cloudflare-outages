@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-03T16:38:47.494Z"
+    "updated_at": "2026-04-03T17:18:37.107Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3942,9 +3942,9 @@
     {
       "id": "byh0gc9t4g6m",
       "name": "Kaohsiung City, Taiwan - (KHH)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-09-20T11:25:16.085Z",
-      "updated_at": "2026-03-13T17:37:42.393Z",
+      "updated_at": "2026-04-03T16:43:46.118Z",
       "position": 34,
       "description": null,
       "showcase": false,
@@ -4077,9 +4077,9 @@
     {
       "id": "gw1cztbpft9b",
       "name": "Kathmandu, Nepal - (KTM)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2026-04-03T16:20:11.414Z",
+      "updated_at": "2026-04-03T17:06:13.951Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -4767,9 +4767,9 @@
     {
       "id": "2k1qvzk3763q",
       "name": "Sacramento, CA, United States - (SMF)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2018-03-26T07:13:13.204Z",
-      "updated_at": "2026-03-10T22:55:01.472Z",
+      "updated_at": "2026-04-03T17:01:16.097Z",
       "position": 45,
       "description": null,
       "showcase": false,
@@ -6147,9 +6147,9 @@
     {
       "id": "vgxj684rcw7t",
       "name": "Pages",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-16T21:04:08.018Z",
-      "updated_at": "2026-03-27T23:32:53.221Z",
+      "updated_at": "2026-04-03T16:50:13.811Z",
       "position": 72,
       "description": null,
       "showcase": false,
@@ -7600,7 +7600,101 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "45bv19jtvnl9",
+      "name": "Pages increased deployment errors",
+      "status": "monitoring",
+      "created_at": "2026-04-03T16:50:13.775Z",
+      "updated_at": "2026-04-03T17:18:37.096Z",
+      "monitoring_at": "2026-04-03T17:18:34.256Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/w45xxqhlbq1t",
+      "started_at": "2026-04-03T16:50:13.767Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "61q2tmm6qdlr",
+          "status": "monitoring",
+          "body": "We are continuing to monitor for any further issues.",
+          "incident_id": "45bv19jtvnl9",
+          "created_at": "2026-04-03T17:18:37.092Z",
+          "updated_at": "2026-04-03T17:18:37.092Z",
+          "display_at": "2026-04-03T17:18:37.092Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "wl4j30k6mkyd",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "45bv19jtvnl9",
+          "created_at": "2026-04-03T17:18:34.256Z",
+          "updated_at": "2026-04-03T17:18:34.256Z",
+          "display_at": "2026-04-03T17:18:34.256Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "98075xcgj32l",
+          "status": "identified",
+          "body": "Cloudflare has identified an issue impacting Cloudflare Pages deployments of Pages Functions with R2 bindings. \nCustomers may experience failures deploying their Pages Functions\n\nWe are working to analyze and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "45bv19jtvnl9",
+          "created_at": "2026-04-03T16:50:13.868Z",
+          "updated_at": "2026-04-03T16:50:13.868Z",
+          "display_at": "2026-04-03T16:50:13.868Z",
+          "affected_components": [
+            {
+              "code": "vgxj684rcw7t",
+              "name": "Cloudflare Sites and Services - Pages",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vgxj684rcw7t",
+          "name": "Pages",
+          "status": "degraded_performance",
+          "created_at": "2021-04-16T21:04:08.018Z",
+          "updated_at": "2026-04-03T16:50:13.811Z",
+          "position": 72,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "r9509q993qrt",
@@ -7891,6 +7985,60 @@
       ],
       "scheduled_for": "2026-04-07T00:00:00.000Z",
       "scheduled_until": "2026-04-07T05:00:00.000Z"
+    },
+    {
+      "id": "2rvxpy94mpds",
+      "name": "ORD (Chicago) on 2026-04-07",
+      "status": "scheduled",
+      "created_at": "2026-04-03T16:44:38.942Z",
+      "updated_at": "2026-04-03T16:44:39.004Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/301h7kg0t608",
+      "started_at": "2026-04-03T16:44:38.934Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8l7dnqssxvbs",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in ORD (Chicago) datacenter on 2026-04-07 between 06:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "2rvxpy94mpds",
+          "created_at": "2026-04-03T16:44:39.002Z",
+          "updated_at": "2026-04-03T16:44:39.002Z",
+          "display_at": "2026-04-03T16:44:39.002Z",
+          "affected_components": [
+            {
+              "code": "z9v8znl25w0f",
+              "name": "North America - Chicago, IL, United States - (ORD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "z9v8znl25w0f",
+          "name": "Chicago, IL, United States - (ORD)",
+          "status": "operational",
+          "created_at": "2014-10-27T19:57:04.863Z",
+          "updated_at": "2026-04-02T08:28:59.586Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-07T06:00:00.000Z",
+      "scheduled_until": "2026-04-07T12:00:00.000Z"
     },
     {
       "id": "qhcxt0813h5p",
@@ -8468,9 +8616,9 @@
         {
           "id": "2k1qvzk3763q",
           "name": "Sacramento, CA, United States - (SMF)",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2018-03-26T07:13:13.204Z",
-          "updated_at": "2026-03-10T22:55:01.472Z",
+          "updated_at": "2026-04-03T17:01:16.097Z",
           "position": 45,
           "description": null,
           "showcase": false,
