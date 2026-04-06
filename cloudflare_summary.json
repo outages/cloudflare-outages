@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-06T14:34:21.948Z"
+    "updated_at": "2026-04-06T15:18:27.296Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -5832,9 +5832,9 @@
     {
       "id": "k0mgxrls5y1b",
       "name": "Logs",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2016-03-20T18:49:07.613Z",
-      "updated_at": "2026-02-13T13:30:50.394Z",
+      "updated_at": "2026-04-06T15:18:27.225Z",
       "position": 61,
       "description": "Enterprise Logpull and Logpush services",
       "showcase": false,
@@ -7602,6 +7602,59 @@
   ],
   "incidents": [
     {
+      "id": "5gk4x9zhw6tx",
+      "name": "Digital experience Logpush delay",
+      "status": "identified",
+      "created_at": "2026-04-06T15:18:27.183Z",
+      "updated_at": "2026-04-06T15:18:27.292Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/p4h4mf6fr9jf",
+      "started_at": "2026-04-06T15:18:27.174Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ckkdk74zrpft",
+          "status": "identified",
+          "body": "Cloudflare One customers that use LogPush to ingest DEX Device State Events will see up to a 20 minute delay. DEX data in the dashboard and the API is not impacted",
+          "incident_id": "5gk4x9zhw6tx",
+          "created_at": "2026-04-06T15:18:27.289Z",
+          "updated_at": "2026-04-06T15:18:27.289Z",
+          "display_at": "2026-04-06T15:18:27.289Z",
+          "affected_components": [
+            {
+              "code": "k0mgxrls5y1b",
+              "name": "Cloudflare Sites and Services - Logs",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k0mgxrls5y1b",
+          "name": "Logs",
+          "status": "degraded_performance",
+          "created_at": "2016-03-20T18:49:07.613Z",
+          "updated_at": "2026-04-06T15:18:27.225Z",
+          "position": 61,
+          "description": "Enterprise Logpull and Logpush services",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "vm3bgs566nrv",
       "name": "Delayed Cloudflare Page Shield data updates",
       "status": "monitoring",
@@ -7681,7 +7734,7 @@
       "name": "SMF (Sacramento) on 2026-04-06",
       "status": "scheduled",
       "created_at": "2026-04-05T21:50:40.240Z",
-      "updated_at": "2026-04-05T21:50:40.304Z",
+      "updated_at": "2026-04-06T15:00:08.020Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7689,6 +7742,19 @@
       "started_at": "2026-04-05T21:50:40.232Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "xlml5807t13t",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "p1g4jrlfv5pz",
+          "created_at": "2026-04-06T15:00:07.914Z",
+          "updated_at": "2026-04-06T15:00:07.914Z",
+          "display_at": "2026-04-06T15:00:07.914Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "j0rpfg1qysqd",
           "status": "scheduled",
