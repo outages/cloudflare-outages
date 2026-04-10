@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-10T13:17:38.846Z"
+    "updated_at": "2026-04-10T14:31:55.670Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1439,7 +1439,7 @@
       "name": "Brasilia, Brazil - (BSB)",
       "status": "under_maintenance",
       "created_at": "2021-05-24T14:45:56.017Z",
-      "updated_at": "2026-04-10T02:47:40.176Z",
+      "updated_at": "2026-04-10T14:31:31.514Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -1498,9 +1498,9 @@
     {
       "id": "26gznn8sts5z",
       "name": "Buenos Aires, Argentina - (EZE)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2015-04-01T11:05:40.089Z",
-      "updated_at": "2026-04-06T08:32:54.927Z",
+      "updated_at": "2026-04-10T14:31:31.150Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -2638,9 +2638,9 @@
     {
       "id": "ljllh1921z0m",
       "name": "Nairobi, Kenya - (NBO)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2020-10-30T04:22:58.259Z",
-      "updated_at": "2026-04-10T13:17:36.182Z",
+      "updated_at": "2026-04-10T14:19:04.038Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -6868,9 +6868,9 @@
     {
       "id": "pg21w9xb991r",
       "name": "Workers Assets",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2026-03-30T11:50:12.220Z",
-      "updated_at": "2026-04-02T18:47:13.569Z",
+      "updated_at": "2026-04-10T14:06:38.494Z",
       "position": 107,
       "description": null,
       "showcase": false,
@@ -7513,9 +7513,9 @@
     {
       "id": "96bgq3x3tq93",
       "name": "Lahore, Pakistan - (LHE)",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2025-11-25T18:48:17.555Z",
-      "updated_at": "2026-04-09T22:00:00.072Z",
+      "updated_at": "2026-04-10T14:31:55.668Z",
       "position": 677,
       "description": null,
       "showcase": false,
@@ -7616,7 +7616,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "wt7ydt03k9hb",
+      "name": "Workers Assets increased upload failure",
+      "status": "identified",
+      "created_at": "2026-04-10T14:06:38.463Z",
+      "updated_at": "2026-04-10T14:06:38.549Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/1dytcb9yxvc5",
+      "started_at": "2026-04-10T14:06:38.456Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "6vhxq3m4w57t",
+          "status": "identified",
+          "body": "Cloudflare has identified an issue impacting Workers Assets uploads. Customers may be seeing an increase in Workers Assets upload failures.\n\nThis issues does not affect the serving of Workers Assets traffic. We are working to mitigate this problem. More updates to follow shortly.",
+          "incident_id": "wt7ydt03k9hb",
+          "created_at": "2026-04-10T14:06:38.547Z",
+          "updated_at": "2026-04-10T14:06:38.547Z",
+          "display_at": "2026-04-10T14:06:38.547Z",
+          "affected_components": [
+            {
+              "code": "pg21w9xb991r",
+              "name": "Cloudflare Sites and Services - Workers Assets",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "pg21w9xb991r",
+          "name": "Workers Assets",
+          "status": "degraded_performance",
+          "created_at": "2026-03-30T11:50:12.220Z",
+          "updated_at": "2026-04-10T14:06:38.494Z",
+          "position": 107,
+          "description": null,
+          "showcase": false,
+          "start_date": "2026-03-30",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "5g8ms3bjrjd1",
