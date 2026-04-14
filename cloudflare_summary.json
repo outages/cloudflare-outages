@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-14T09:14:59.867Z"
+    "updated_at": "2026-04-14T10:38:28.623Z"
   },
   "components": [
     {
@@ -481,9 +481,9 @@
     {
       "id": "gxjcfyf5pht1",
       "name": "Baghdad, Iraq - (BGW)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2018-03-12T14:18:23.436Z",
-      "updated_at": "2026-04-14T09:14:59.864Z",
+      "updated_at": "2026-04-14T10:23:44.151Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2503,9 +2503,9 @@
     {
       "id": "sbk2cql7ktgz",
       "name": "Mombasa, Kenya - (MBA)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2015-08-25T23:48:50.991Z",
-      "updated_at": "2026-04-10T01:55:10.090Z",
+      "updated_at": "2026-04-14T10:06:22.044Z",
       "position": 18,
       "description": null,
       "showcase": false,
@@ -3673,9 +3673,9 @@
     {
       "id": "skqbwdvp70c6",
       "name": "Kampala, Uganda - (EBB)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-07-17T09:56:48.732Z",
-      "updated_at": "2026-04-13T22:09:57.402Z",
+      "updated_at": "2026-04-14T10:21:56.027Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -4903,9 +4903,9 @@
     {
       "id": "5dhjdhgdqjzd",
       "name": "San Antonio, TX, United States - (SAT)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-08-14T14:20:37.637Z",
-      "updated_at": "2026-04-14T09:13:13.684Z",
+      "updated_at": "2026-04-14T10:06:20.248Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -7618,118 +7618,78 @@
   ],
   "incidents": [
     {
-      "id": "lq1vw7z9xthq",
-      "name": "Increased KV latency and timeouts",
-      "status": "investigating",
-      "created_at": "2026-04-13T20:15:54.236Z",
-      "updated_at": "2026-04-14T08:20:23.072Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/4d8jkt4xxbjq",
-      "started_at": "2026-04-13T20:15:54.228Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "7zf5mzyj4rhj",
-          "status": "investigating",
-          "body": "Cloudflare continues to investigate an issue impacting a subset of KV API requests, resulting in increased latency and timeouts.",
-          "incident_id": "lq1vw7z9xthq",
-          "created_at": "2026-04-14T08:20:23.069Z",
-          "updated_at": "2026-04-14T08:20:23.069Z",
-          "display_at": "2026-04-14T08:20:23.069Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "tmh50tx2nprs",
-              "name": "Cloudflare Sites and Services - Workers KV",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "3qm7hgb915mc",
-          "status": "investigating",
-          "body": "Cloudflare is aware of and investigating an issue impacting a subset of KV API requests, resulting in increased latency and timeouts. Workers using Assets are also experiencing errors. This does not impact KV through the binding.",
-          "incident_id": "lq1vw7z9xthq",
-          "created_at": "2026-04-13T20:15:54.359Z",
-          "updated_at": "2026-04-13T20:15:54.359Z",
-          "display_at": "2026-04-13T20:15:54.359Z",
-          "affected_components": [
-            {
-              "code": "57srcl8zcn7c",
-              "name": "Cloudflare Sites and Services - Workers",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "tmh50tx2nprs",
-              "name": "Cloudflare Sites and Services - Workers KV",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "57srcl8zcn7c",
-          "name": "Workers",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:49:08.728Z",
-          "updated_at": "2026-04-13T20:15:54.282Z",
-          "position": 105,
-          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "tmh50tx2nprs",
-          "name": "Workers KV",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:49:32.394Z",
-          "updated_at": "2026-04-13T20:15:54.300Z",
-          "position": 110,
-          "description": "Workers KV is a data storage that allows you to store and retrieve data globally to build dynamic and performant APIs and websites that support high read volumes with low latency",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
       "id": "kstz7r3fq5cf",
       "name": "WARP device configuration issues",
       "status": "investigating",
       "created_at": "2026-04-14T06:49:00.000Z",
-      "updated_at": "2026-04-14T08:14:05.986Z",
+      "updated_at": "2026-04-14T10:02:34.166Z",
       "monitoring_at": "2026-04-14T07:51:07.709Z",
       "resolved_at": null,
-      "impact": "minor",
+      "impact": "major",
       "shortlink": "https://stspg.io/y90f676lj8m2",
       "started_at": "2026-04-14T06:49:00.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "36fq7cdnf8ph",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "kstz7r3fq5cf",
+          "created_at": "2026-04-14T10:02:34.164Z",
+          "updated_at": "2026-04-14T10:02:34.164Z",
+          "display_at": "2026-04-14T10:02:34.164Z",
+          "affected_components": [
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "wztgmrqh63s3",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "kstz7r3fq5cf",
+          "created_at": "2026-04-14T10:01:47.076Z",
+          "updated_at": "2026-04-14T10:01:47.076Z",
+          "display_at": "2026-04-14T10:01:47.076Z",
+          "affected_components": [
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "2mfwtq2d6hkb",
+          "status": "investigating",
+          "body": "We are continuing to investigate and work on a fix for the Warp registration issues",
+          "incident_id": "kstz7r3fq5cf",
+          "created_at": "2026-04-14T09:35:44.324Z",
+          "updated_at": "2026-04-14T10:02:21.958Z",
+          "display_at": "2026-04-14T09:35:44.000Z",
+          "affected_components": [
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "qjc6vpgcb207",
           "status": "investigating",
@@ -7882,6 +7842,106 @@
           "description": null,
           "showcase": false,
           "start_date": "2021-04-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "lq1vw7z9xthq",
+      "name": "Increased KV latency and timeouts",
+      "status": "investigating",
+      "created_at": "2026-04-13T20:15:54.236Z",
+      "updated_at": "2026-04-14T08:20:23.072Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/4d8jkt4xxbjq",
+      "started_at": "2026-04-13T20:15:54.228Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "7zf5mzyj4rhj",
+          "status": "investigating",
+          "body": "Cloudflare continues to investigate an issue impacting a subset of KV API requests, resulting in increased latency and timeouts.",
+          "incident_id": "lq1vw7z9xthq",
+          "created_at": "2026-04-14T08:20:23.069Z",
+          "updated_at": "2026-04-14T08:20:23.069Z",
+          "display_at": "2026-04-14T08:20:23.069Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "tmh50tx2nprs",
+              "name": "Cloudflare Sites and Services - Workers KV",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3qm7hgb915mc",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating an issue impacting a subset of KV API requests, resulting in increased latency and timeouts. Workers using Assets are also experiencing errors. This does not impact KV through the binding.",
+          "incident_id": "lq1vw7z9xthq",
+          "created_at": "2026-04-13T20:15:54.359Z",
+          "updated_at": "2026-04-13T20:15:54.359Z",
+          "display_at": "2026-04-13T20:15:54.359Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "tmh50tx2nprs",
+              "name": "Cloudflare Sites and Services - Workers KV",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2026-04-13T20:15:54.282Z",
+          "position": 105,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "tmh50tx2nprs",
+          "name": "Workers KV",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:32.394Z",
+          "updated_at": "2026-04-13T20:15:54.300Z",
+          "position": 110,
+          "description": "Workers KV is a data storage that allows you to store and retrieve data globally to build dynamic and performant APIs and websites that support high read volumes with low latency",
+          "showcase": false,
+          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
