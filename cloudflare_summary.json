@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-16T12:51:25.352Z"
+    "updated_at": "2026-04-16T14:50:43.398Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1053,9 +1053,9 @@
     {
       "id": "4c231tkdlpcl",
       "name": "Analytics",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-11-13T11:54:10.191Z",
-      "updated_at": "2026-04-07T17:04:09.422Z",
+      "updated_at": "2026-04-16T14:22:38.892Z",
       "position": 6,
       "description": "Customer analytics aggregation service",
       "showcase": false,
@@ -1467,7 +1467,7 @@
     {
       "id": "q6qm6fvkst4h",
       "name": "Oceania",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2014-10-28T00:12:04.846Z",
       "updated_at": "2022-04-26T19:49:08.623Z",
       "position": 9,
@@ -1933,9 +1933,9 @@
     {
       "id": "pxhwtstlbf2j",
       "name": "Tahiti, French Polynesia - (PPT)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-12-19T23:42:51.432Z",
-      "updated_at": "2026-04-02T16:51:39.636Z",
+      "updated_at": "2026-04-16T14:41:50.546Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -2503,9 +2503,9 @@
     {
       "id": "sbk2cql7ktgz",
       "name": "Mombasa, Kenya - (MBA)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-08-25T23:48:50.991Z",
-      "updated_at": "2026-04-14T10:06:22.044Z",
+      "updated_at": "2026-04-16T12:57:19.828Z",
       "position": 18,
       "description": null,
       "showcase": false,
@@ -3403,9 +3403,9 @@
     {
       "id": "zq3rs0stgc8p",
       "name": "Windhoek, Namibia - (WDH)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-05-28T18:09:23.822Z",
-      "updated_at": "2026-04-14T20:46:16.348Z",
+      "updated_at": "2026-04-16T14:43:59.423Z",
       "position": 27,
       "description": null,
       "showcase": false,
@@ -3793,9 +3793,9 @@
     {
       "id": "qsps56n4xtjt",
       "name": "Saint-Denis, Réunion - (RUN)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-09-03T09:59:40.272Z",
-      "updated_at": "2026-04-16T11:58:06.782Z",
+      "updated_at": "2026-04-16T14:26:12.808Z",
       "position": 32,
       "description": null,
       "showcase": false,
@@ -7616,14 +7616,68 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "hj0sdpxfz18g",
+      "name": "API Analytics Delays",
+      "status": "investigating",
+      "created_at": "2026-04-16T14:22:38.865Z",
+      "updated_at": "2026-04-16T14:22:38.938Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/r2wt6gb0g1qb",
+      "started_at": "2026-04-16T14:22:38.859Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "x0mr56wq056s",
+          "status": "investigating",
+          "body": "We are currently investigating a temporary drop in the availability of our Analytics API. We are working to mitigate this problem. More updates to follow shortly.",
+          "incident_id": "hj0sdpxfz18g",
+          "created_at": "2026-04-16T14:22:38.936Z",
+          "updated_at": "2026-04-16T14:22:38.936Z",
+          "display_at": "2026-04-16T14:22:38.936Z",
+          "affected_components": [
+            {
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4c231tkdlpcl",
+          "name": "Analytics",
+          "status": "degraded_performance",
+          "created_at": "2014-11-13T11:54:10.191Z",
+          "updated_at": "2026-04-16T14:22:38.892Z",
+          "position": 6,
+          "description": "Customer analytics aggregation service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "l4kwtgjnjlpy",
       "name": "SYD (Sydney) on 2026-04-16",
       "status": "scheduled",
       "created_at": "2026-04-16T12:28:40.967Z",
-      "updated_at": "2026-04-16T12:28:41.030Z",
+      "updated_at": "2026-04-16T14:00:07.658Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7631,6 +7685,19 @@
       "started_at": "2026-04-16T12:28:40.959Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "hz97kvpjzd4h",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "l4kwtgjnjlpy",
+          "created_at": "2026-04-16T14:00:07.572Z",
+          "updated_at": "2026-04-16T14:00:07.572Z",
+          "display_at": "2026-04-16T14:00:07.572Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "x2yxxphn8w58",
           "status": "scheduled",
@@ -7671,114 +7738,6 @@
       ],
       "scheduled_for": "2026-04-16T15:00:00.000Z",
       "scheduled_until": "2026-04-16T21:00:00.000Z"
-    },
-    {
-      "id": "wwl60jp6lsmj",
-      "name": "BOG (Bogota) on 2026-04-16",
-      "status": "scheduled",
-      "created_at": "2026-04-16T02:46:12.588Z",
-      "updated_at": "2026-04-16T02:46:12.683Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/21yjzvrf81dz",
-      "started_at": "2026-04-16T02:46:12.579Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "70r2yv1977y1",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BOG (Bogota) datacenter on 2026-04-16 between 16:30 and 19:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "wwl60jp6lsmj",
-          "created_at": "2026-04-16T02:46:12.680Z",
-          "updated_at": "2026-04-16T02:46:12.680Z",
-          "display_at": "2026-04-16T02:46:12.680Z",
-          "affected_components": [
-            {
-              "code": "171wlzvlxttk",
-              "name": "Latin America & the Caribbean - Bogotá, Colombia - (BOG)",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "171wlzvlxttk",
-          "name": "Bogotá, Colombia - (BOG)",
-          "status": "operational",
-          "created_at": "2018-03-28T06:25:42.210Z",
-          "updated_at": "2026-04-16T02:46:12.634Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-04-16T16:30:00.000Z",
-      "scheduled_until": "2026-04-16T19:00:00.000Z"
-    },
-    {
-      "id": "vxky8hmc5w3w",
-      "name": "WAW (Warsaw) on 2026-04-17",
-      "status": "scheduled",
-      "created_at": "2026-04-16T12:28:41.532Z",
-      "updated_at": "2026-04-16T12:28:41.615Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/kgq3x0t1bsw1",
-      "started_at": "2026-04-16T12:28:41.522Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "nq3z1pqzpy4j",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in WAW (Warsaw) datacenter on 2026-04-17 between 00:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "vxky8hmc5w3w",
-          "created_at": "2026-04-16T12:28:41.611Z",
-          "updated_at": "2026-04-16T12:28:41.611Z",
-          "display_at": "2026-04-16T12:28:41.611Z",
-          "affected_components": [
-            {
-              "code": "0gh2jr9mdr7v",
-              "name": "Europe - Warsaw, Poland - (WAW)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "0gh2jr9mdr7v",
-          "name": "Warsaw, Poland - (WAW)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:07:37.647Z",
-          "updated_at": "2026-01-14T23:54:32.471Z",
-          "position": 54,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-04-17T00:00:00.000Z",
-      "scheduled_until": "2026-04-17T04:00:00.000Z"
     },
     {
       "id": "s4jxm0sxn5lr",
@@ -7876,6 +7835,60 @@
           "created_at": "2014-10-27T20:35:05.259Z",
           "updated_at": "2026-04-16T00:14:19.850Z",
           "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-17T00:00:00.000Z",
+      "scheduled_until": "2026-04-17T04:00:00.000Z"
+    },
+    {
+      "id": "vxky8hmc5w3w",
+      "name": "WAW (Warsaw) on 2026-04-17",
+      "status": "scheduled",
+      "created_at": "2026-04-16T12:28:41.532Z",
+      "updated_at": "2026-04-16T12:28:41.615Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/kgq3x0t1bsw1",
+      "started_at": "2026-04-16T12:28:41.522Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "nq3z1pqzpy4j",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in WAW (Warsaw) datacenter on 2026-04-17 between 00:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "vxky8hmc5w3w",
+          "created_at": "2026-04-16T12:28:41.611Z",
+          "updated_at": "2026-04-16T12:28:41.611Z",
+          "display_at": "2026-04-16T12:28:41.611Z",
+          "affected_components": [
+            {
+              "code": "0gh2jr9mdr7v",
+              "name": "Europe - Warsaw, Poland - (WAW)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "0gh2jr9mdr7v",
+          "name": "Warsaw, Poland - (WAW)",
+          "status": "operational",
+          "created_at": "2014-10-27T21:07:37.647Z",
+          "updated_at": "2026-01-14T23:54:32.471Z",
+          "position": 54,
           "description": null,
           "showcase": false,
           "start_date": null,
