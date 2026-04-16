@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-16T21:51:02.683Z"
+    "updated_at": "2026-04-16T22:44:41.491Z"
   },
   "components": [
     {
@@ -685,9 +685,9 @@
     {
       "id": "76swzd6htswh",
       "name": "Baku, Azerbaijan - (GYD)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-04-29T13:18:47.916Z",
-      "updated_at": "2026-04-15T01:13:25.948Z",
+      "updated_at": "2026-04-16T22:44:41.487Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -3568,9 +3568,9 @@
     {
       "id": "nxdg2bbkf525",
       "name": "Abidjan, Ivory Coast - (ABJ)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-06-20T16:45:08.676Z",
-      "updated_at": "2025-11-22T02:15:17.248Z",
+      "updated_at": "2026-04-16T22:44:39.820Z",
       "position": 29,
       "description": null,
       "showcase": false,
@@ -4333,9 +4333,9 @@
     {
       "id": "nmp96vgn1hpl",
       "name": "Digital Experience Monitoring (DEX)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-03-23T09:33:12.310Z",
-      "updated_at": "2026-04-02T18:17:24.781Z",
+      "updated_at": "2026-04-16T22:10:28.023Z",
       "position": 39,
       "description": "Digital Experience Monitoring (DEX) enables Zero Trust administrators to pinpoint and resolve issues impacting end-user connectivity and performance.",
       "showcase": false,
@@ -6988,9 +6988,9 @@
     {
       "id": "kf0ktv29xrfy",
       "name": "Zero Trust",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-04-08T15:53:09.058Z",
-      "updated_at": "2026-04-16T00:27:37.832Z",
+      "updated_at": "2026-04-16T22:10:28.046Z",
       "position": 115,
       "description": null,
       "showcase": false,
@@ -7617,6 +7617,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "gyyz704fpjmj",
+      "name": "CF1 Client DEX - Device analytics overtime gaps",
+      "status": "identified",
+      "created_at": "2026-04-16T22:10:27.979Z",
+      "updated_at": "2026-04-16T22:10:28.124Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/q6n170rsxwck",
+      "started_at": "2026-04-16T22:10:27.970Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "2h8vd0v7hwkp",
+          "status": "identified",
+          "body": "The DEX analytics overtime data for CF1 client devices may show missing data.",
+          "incident_id": "gyyz704fpjmj",
+          "created_at": "2026-04-16T22:10:28.120Z",
+          "updated_at": "2026-04-16T22:10:28.120Z",
+          "display_at": "2026-04-16T22:10:28.120Z",
+          "affected_components": [
+            {
+              "code": "nmp96vgn1hpl",
+              "name": "Cloudflare Sites and Services - Digital Experience Monitoring (DEX)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "kf0ktv29xrfy",
+              "name": "Cloudflare Sites and Services - Zero Trust",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nmp96vgn1hpl",
+          "name": "Digital Experience Monitoring (DEX)",
+          "status": "degraded_performance",
+          "created_at": "2023-03-23T09:33:12.310Z",
+          "updated_at": "2026-04-16T22:10:28.023Z",
+          "position": 39,
+          "description": "Digital Experience Monitoring (DEX) enables Zero Trust administrators to pinpoint and resolve issues impacting end-user connectivity and performance.",
+          "showcase": false,
+          "start_date": "2023-03-23",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "kf0ktv29xrfy",
+          "name": "Zero Trust",
+          "status": "degraded_performance",
+          "created_at": "2021-04-08T15:53:09.058Z",
+          "updated_at": "2026-04-16T22:10:28.046Z",
+          "position": 115,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-04-08",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "hj0sdpxfz18g",
       "name": "API Analytics Delays",
