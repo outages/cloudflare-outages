@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-17T09:24:38.898Z"
+    "updated_at": "2026-04-17T10:20:42.585Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -4333,9 +4333,9 @@
     {
       "id": "nmp96vgn1hpl",
       "name": "Digital Experience Monitoring (DEX)",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2023-03-23T09:33:12.310Z",
-      "updated_at": "2026-04-16T22:10:28.023Z",
+      "updated_at": "2026-04-17T09:54:57.217Z",
       "position": 39,
       "description": "Digital Experience Monitoring (DEX) enables Zero Trust administrators to pinpoint and resolve issues impacting end-user connectivity and performance.",
       "showcase": false,
@@ -6988,9 +6988,9 @@
     {
       "id": "kf0ktv29xrfy",
       "name": "Zero Trust",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-04-08T15:53:09.058Z",
-      "updated_at": "2026-04-16T22:10:28.046Z",
+      "updated_at": "2026-04-17T09:54:57.239Z",
       "position": 115,
       "description": null,
       "showcase": false,
@@ -7616,40 +7616,35 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [
+  "incidents": [],
+  "scheduled_maintenances": [
     {
-      "id": "gyyz704fpjmj",
-      "name": "CF1 Client DEX - Device analytics overtime gaps",
-      "status": "identified",
-      "created_at": "2026-04-16T22:10:27.979Z",
-      "updated_at": "2026-04-16T22:10:28.124Z",
+      "id": "p24m5n92jf58",
+      "name": "D1 control plane upgrade",
+      "status": "scheduled",
+      "created_at": "2026-04-17T10:16:25.218Z",
+      "updated_at": "2026-04-17T10:16:25.282Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/q6n170rsxwck",
-      "started_at": "2026-04-16T22:10:27.970Z",
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/tmdy5b2gk18n",
+      "started_at": "2026-04-17T10:16:25.211Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "2h8vd0v7hwkp",
-          "status": "identified",
-          "body": "The DEX analytics overtime data for CF1 client devices may show missing data.",
-          "incident_id": "gyyz704fpjmj",
-          "created_at": "2026-04-16T22:10:28.120Z",
-          "updated_at": "2026-04-16T22:10:28.120Z",
-          "display_at": "2026-04-16T22:10:28.120Z",
+          "id": "sdhk960p23g8",
+          "status": "scheduled",
+          "body": "Cloudflare is performing an upgrade in internal D1 related systems. Control plane operations may fail during this maintenance window. Deployment of a worker with a D1 binding will also be affected (possibly returning a 500 status code).\n\nUsers accessing D1 databases via Cloudflare Workers bindings should not be affected.",
+          "incident_id": "p24m5n92jf58",
+          "created_at": "2026-04-17T10:16:25.280Z",
+          "updated_at": "2026-04-17T10:16:25.280Z",
+          "display_at": "2026-04-17T10:16:25.280Z",
           "affected_components": [
             {
-              "code": "nmp96vgn1hpl",
-              "name": "Cloudflare Sites and Services - Digital Experience Monitoring (DEX)",
+              "code": "z0yd3sxqjqdm",
+              "name": "Cloudflare Sites and Services - D1",
               "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "kf0ktv29xrfy",
-              "name": "Cloudflare Sites and Services - Zero Trust",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -7659,40 +7654,24 @@
       ],
       "components": [
         {
-          "id": "nmp96vgn1hpl",
-          "name": "Digital Experience Monitoring (DEX)",
-          "status": "degraded_performance",
-          "created_at": "2023-03-23T09:33:12.310Z",
-          "updated_at": "2026-04-16T22:10:28.023Z",
-          "position": 39,
-          "description": "Digital Experience Monitoring (DEX) enables Zero Trust administrators to pinpoint and resolve issues impacting end-user connectivity and performance.",
-          "showcase": false,
-          "start_date": "2023-03-23",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "kf0ktv29xrfy",
-          "name": "Zero Trust",
-          "status": "degraded_performance",
-          "created_at": "2021-04-08T15:53:09.058Z",
-          "updated_at": "2026-04-16T22:10:28.046Z",
-          "position": 115,
+          "id": "z0yd3sxqjqdm",
+          "name": "D1",
+          "status": "operational",
+          "created_at": "2024-02-09T08:57:38.825Z",
+          "updated_at": "2026-02-13T13:31:15.459Z",
+          "position": 34,
           "description": null,
           "showcase": false,
-          "start_date": "2021-04-08",
+          "start_date": "2024-02-09",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "reminder_intervals": null
-    }
-  ],
-  "scheduled_maintenances": [
+      "scheduled_for": "2026-04-17T12:00:00.000Z",
+      "scheduled_until": "2026-04-17T13:00:00.000Z"
+    },
     {
       "id": "08ds7dnk8f24",
       "name": "STL (St. Louis) on 2026-04-17",
