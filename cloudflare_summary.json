@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-22T07:06:37.167Z"
+    "updated_at": "2026-04-22T08:38:06.180Z"
   },
   "components": [
     {
@@ -2338,9 +2338,9 @@
     {
       "id": "hf1csyqv3x7s",
       "name": "Dhaka, Bangladesh - (DAC)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2026-04-22T07:06:37.164Z",
+      "updated_at": "2026-04-22T07:40:33.623Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2745,7 +2745,7 @@
       "name": "Guatemala City, Guatemala - (GUA)",
       "status": "under_maintenance",
       "created_at": "2019-08-15T07:22:07.430Z",
-      "updated_at": "2026-04-10T17:38:36.500Z",
+      "updated_at": "2026-04-22T07:22:46.375Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -4620,7 +4620,7 @@
       "name": "São Paulo, Brazil - (GRU)",
       "status": "operational",
       "created_at": "2014-10-27T21:45:14.885Z",
-      "updated_at": "2026-04-15T02:32:01.915Z",
+      "updated_at": "2026-04-22T08:00:23.287Z",
       "position": 43,
       "description": null,
       "showcase": false,
@@ -7616,75 +7616,39 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "rfgjz45pr80b",
-      "name": "SLC (Salt Lake City) on 2026-04-22",
-      "status": "scheduled",
-      "created_at": "2026-04-20T23:12:57.443Z",
-      "updated_at": "2026-04-22T07:00:09.384Z",
+      "id": "9wx6bv6lfnr7",
+      "name": "Zone Activation Delays",
+      "status": "investigating",
+      "created_at": "2026-04-22T08:30:33.428Z",
+      "updated_at": "2026-04-22T08:30:54.268Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/f0jc2lpmbdqj",
-      "started_at": "2026-04-20T23:12:57.437Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/7npv1q05wy5d",
+      "started_at": "2026-04-22T08:30:33.422Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "0h559wgl0nd0",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "rfgjz45pr80b",
-          "created_at": "2026-04-22T07:00:09.032Z",
-          "updated_at": "2026-04-22T07:00:09.032Z",
-          "display_at": "2026-04-22T07:00:09.032Z",
+          "id": "hcsb7gyzn1bk",
+          "status": "investigating",
+          "body": "Cloudflare is experiencing delays in activating customer sites. This does not impact existing active sites already in production. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "9wx6bv6lfnr7",
+          "created_at": "2026-04-22T08:30:33.474Z",
+          "updated_at": "2026-04-22T08:30:33.474Z",
+          "display_at": "2026-04-22T08:30:33.474Z",
           "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "xhv9nlksv2hx",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SLC (Salt Lake City) datacenter on 2026-04-22 between 08:00 and 16:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "rfgjz45pr80b",
-          "created_at": "2026-04-20T23:12:57.503Z",
-          "updated_at": "2026-04-20T23:12:57.503Z",
-          "display_at": "2026-04-20T23:12:57.503Z",
-          "affected_components": [
-            {
-              "code": "3cg9wbk5hzg4",
-              "name": "North America - Salt Lake City, UT, United States - (SLC)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
+          "deliver_notifications": false,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": [
-        {
-          "id": "3cg9wbk5hzg4",
-          "name": "Salt Lake City, UT, United States - (SLC)",
-          "status": "partial_outage",
-          "created_at": "2018-01-10T08:57:51.162Z",
-          "updated_at": "2026-04-22T06:15:14.342Z",
-          "position": 46,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-04-22T08:00:00.000Z",
-      "scheduled_until": "2026-04-22T16:00:00.000Z"
-    },
+      "components": [],
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "2qj0yxz4nn9h",
       "name": "VIE (Vienna) on 2026-04-23",
@@ -8224,6 +8188,86 @@
       ],
       "scheduled_for": "2026-04-30T06:00:00.000Z",
       "scheduled_until": "2026-04-30T11:00:00.000Z"
+    },
+    {
+      "id": "rfgjz45pr80b",
+      "name": "SLC (Salt Lake City) on 2026-04-22",
+      "status": "in_progress",
+      "created_at": "2026-04-20T23:12:57.443Z",
+      "updated_at": "2026-04-22T08:00:07.493Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/f0jc2lpmbdqj",
+      "started_at": "2026-04-20T23:12:57.437Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "ljrbvpfy7fw4",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "rfgjz45pr80b",
+          "created_at": "2026-04-22T08:00:07.488Z",
+          "updated_at": "2026-04-22T08:00:07.488Z",
+          "display_at": "2026-04-22T08:00:07.488Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "0h559wgl0nd0",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "rfgjz45pr80b",
+          "created_at": "2026-04-22T07:00:09.032Z",
+          "updated_at": "2026-04-22T07:00:09.032Z",
+          "display_at": "2026-04-22T07:00:09.032Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xhv9nlksv2hx",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SLC (Salt Lake City) datacenter on 2026-04-22 between 08:00 and 16:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "rfgjz45pr80b",
+          "created_at": "2026-04-20T23:12:57.503Z",
+          "updated_at": "2026-04-20T23:12:57.503Z",
+          "display_at": "2026-04-20T23:12:57.503Z",
+          "affected_components": [
+            {
+              "code": "3cg9wbk5hzg4",
+              "name": "North America - Salt Lake City, UT, United States - (SLC)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3cg9wbk5hzg4",
+          "name": "Salt Lake City, UT, United States - (SLC)",
+          "status": "partial_outage",
+          "created_at": "2018-01-10T08:57:51.162Z",
+          "updated_at": "2026-04-22T06:15:14.342Z",
+          "position": 46,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-22T08:00:00.000Z",
+      "scheduled_until": "2026-04-22T16:00:00.000Z"
     },
     {
       "id": "3tm6dqfwbszs",
