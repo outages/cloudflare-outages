@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-24T06:06:59.606Z"
+    "updated_at": "2026-04-24T08:11:03.740Z"
   },
   "components": [
     {
@@ -914,7 +914,7 @@
       "name": "Belo Horizonte, Brazil - (CNF)",
       "status": "under_maintenance",
       "created_at": "2021-07-13T13:51:00.191Z",
-      "updated_at": "2026-04-24T06:06:59.603Z",
+      "updated_at": "2026-04-24T08:11:03.737Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3796,7 +3796,7 @@
       "name": "Saint-Denis, Réunion - (RUN)",
       "status": "operational",
       "created_at": "2024-09-03T09:59:40.272Z",
-      "updated_at": "2026-04-22T19:58:31.581Z",
+      "updated_at": "2026-04-24T08:11:03.386Z",
       "position": 32,
       "description": null,
       "showcase": false,
@@ -3824,9 +3824,9 @@
     {
       "id": "r66zh17lxd91",
       "name": "Quito, Ecuador - (UIO)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2017-03-13T21:23:02.885Z",
-      "updated_at": "2026-04-23T10:23:00.059Z",
+      "updated_at": "2026-04-24T08:05:10.890Z",
       "position": 33,
       "description": null,
       "showcase": false,
@@ -4904,9 +4904,9 @@
     {
       "id": "5dhjdhgdqjzd",
       "name": "San Antonio, TX, United States - (SAT)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-08-14T14:20:37.637Z",
-      "updated_at": "2026-04-24T05:37:40.733Z",
+      "updated_at": "2026-04-24T06:30:35.807Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -7634,30 +7634,42 @@
   ],
   "incidents": [
     {
-      "id": "yfsclk2fc70s",
-      "name": "Intermittent 5xx errors for Cloudflare Access authentication requests",
-      "status": "monitoring",
-      "created_at": "2026-04-23T21:05:59.180Z",
-      "updated_at": "2026-04-24T05:05:15.605Z",
-      "monitoring_at": "2026-04-24T05:05:15.586Z",
+      "id": "0n62ktcf8sb7",
+      "name": "Cloudflare Health check issues",
+      "status": "identified",
+      "created_at": "2026-04-24T02:40:12.901Z",
+      "updated_at": "2026-04-24T06:45:05.405Z",
+      "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/q3f65t2gdy8w",
-      "started_at": "2026-04-23T21:05:59.173Z",
+      "shortlink": "https://stspg.io/ft6dsfgmrcpv",
+      "started_at": "2026-04-24T02:40:12.891Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "7mh4dpjh5ztq",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "yfsclk2fc70s",
-          "created_at": "2026-04-24T05:05:15.586Z",
-          "updated_at": "2026-04-24T05:05:15.586Z",
-          "display_at": "2026-04-24T05:05:15.586Z",
+          "id": "y1ypkpdsbzz9",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "0n62ktcf8sb7",
+          "created_at": "2026-04-24T06:45:05.403Z",
+          "updated_at": "2026-04-24T06:45:05.403Z",
+          "display_at": "2026-04-24T06:45:05.403Z",
           "affected_components": [
             {
-              "code": "w4k8yvhfb3vp",
-              "name": "Cloudflare Sites and Services - Access",
+              "code": "4c231tkdlpcl",
+              "name": "Cloudflare Sites and Services - Analytics",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "vn1h2pfctsvn",
+              "name": "Cloudflare Sites and Services - Health Checks",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "5xvn0m7tthlf",
+              "name": "Cloudflare Sites and Services - Notifications",
               "old_status": "degraded_performance",
               "new_status": "degraded_performance"
             }
@@ -7666,59 +7678,6 @@
           "custom_tweet": null,
           "tweet_id": null
         },
-        {
-          "id": "hhk2x033w4cd",
-          "status": "identified",
-          "body": "Beginning April 21, a subset of Cloudflare Access customers experienced intermittent HTTP 500 errors on authentication requests. Impact is limited to a small percentage of requests in specific geographies. Service authentication requests are seeing the highest share of the errors.\n\nCloudflare engineering is progressing a corrected rollout under tighter monitoring.",
-          "incident_id": "yfsclk2fc70s",
-          "created_at": "2026-04-23T21:05:59.277Z",
-          "updated_at": "2026-04-23T21:05:59.277Z",
-          "display_at": "2026-04-23T21:05:59.277Z",
-          "affected_components": [
-            {
-              "code": "w4k8yvhfb3vp",
-              "name": "Cloudflare Sites and Services - Access",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "w4k8yvhfb3vp",
-          "name": "Access",
-          "status": "degraded_performance",
-          "created_at": "2018-02-09T21:46:39.049Z",
-          "updated_at": "2026-04-23T21:05:59.218Z",
-          "position": 2,
-          "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "0n62ktcf8sb7",
-      "name": "Cloudflare Health check issues",
-      "status": "investigating",
-      "created_at": "2026-04-24T02:40:12.901Z",
-      "updated_at": "2026-04-24T02:40:13.031Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/ft6dsfgmrcpv",
-      "started_at": "2026-04-24T02:40:12.891Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
         {
           "id": "yx056f6r4ykd",
           "status": "investigating",
@@ -7800,49 +7759,54 @@
         }
       ],
       "reminder_intervals": null
-    }
-  ],
-  "scheduled_maintenances": [
+    },
     {
-      "id": "6hjx9ssxd4q8",
-      "name": "SEA (Seattle) on 2026-04-24",
-      "status": "scheduled",
-      "created_at": "2026-04-23T09:48:41.699Z",
-      "updated_at": "2026-04-24T06:00:13.937Z",
-      "monitoring_at": null,
+      "id": "yfsclk2fc70s",
+      "name": "Intermittent 5xx errors for Cloudflare Access authentication requests",
+      "status": "monitoring",
+      "created_at": "2026-04-23T21:05:59.180Z",
+      "updated_at": "2026-04-24T05:05:15.605Z",
+      "monitoring_at": "2026-04-24T05:05:15.586Z",
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/l93zbw38w1fm",
-      "started_at": "2026-04-23T09:48:41.692Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/q3f65t2gdy8w",
+      "started_at": "2026-04-23T21:05:59.173Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "htcplmv1x3kb",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "6hjx9ssxd4q8",
-          "created_at": "2026-04-24T06:00:13.664Z",
-          "updated_at": "2026-04-24T06:00:13.664Z",
-          "display_at": "2026-04-24T06:00:13.664Z",
-          "affected_components": null,
+          "id": "7mh4dpjh5ztq",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "yfsclk2fc70s",
+          "created_at": "2026-04-24T05:05:15.586Z",
+          "updated_at": "2026-04-24T05:05:15.586Z",
+          "display_at": "2026-04-24T05:05:15.586Z",
+          "affected_components": [
+            {
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "gv2zfv0g7047",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SEA (Seattle) datacenter on 2026-04-24 between 07:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "6hjx9ssxd4q8",
-          "created_at": "2026-04-23T09:48:41.751Z",
-          "updated_at": "2026-04-23T09:48:41.751Z",
-          "display_at": "2026-04-23T09:48:41.751Z",
+          "id": "hhk2x033w4cd",
+          "status": "identified",
+          "body": "Beginning April 21, a subset of Cloudflare Access customers experienced intermittent HTTP 500 errors on authentication requests. Impact is limited to a small percentage of requests in specific geographies. Service authentication requests are seeing the highest share of the errors.\n\nCloudflare engineering is progressing a corrected rollout under tighter monitoring.",
+          "incident_id": "yfsclk2fc70s",
+          "created_at": "2026-04-23T21:05:59.277Z",
+          "updated_at": "2026-04-23T21:05:59.277Z",
+          "display_at": "2026-04-23T21:05:59.277Z",
           "affected_components": [
             {
-              "code": "bvtc2f85ft3p",
-              "name": "North America - Seattle, WA, United States - (SEA)",
+              "code": "w4k8yvhfb3vp",
+              "name": "Cloudflare Sites and Services - Access",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -7852,30 +7816,31 @@
       ],
       "components": [
         {
-          "id": "bvtc2f85ft3p",
-          "name": "Seattle, WA, United States - (SEA)",
-          "status": "operational",
-          "created_at": "2014-10-27T19:57:30.743Z",
-          "updated_at": "2026-04-17T19:50:39.606Z",
-          "position": 52,
-          "description": null,
+          "id": "w4k8yvhfb3vp",
+          "name": "Access",
+          "status": "degraded_performance",
+          "created_at": "2018-02-09T21:46:39.049Z",
+          "updated_at": "2026-04-23T21:05:59.218Z",
+          "position": 2,
+          "description": "Cloudflare Access determines who can reach your application by applying the Access policies you configure",
           "showcase": false,
           "start_date": null,
-          "group_id": "4l01sk5cdn5c",
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2026-04-24T07:00:00.000Z",
-      "scheduled_until": "2026-04-24T12:00:00.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "7dcsxk101pfz",
       "name": "YUL (Montréal) on 2026-04-24",
       "status": "scheduled",
       "created_at": "2026-04-23T17:23:07.782Z",
-      "updated_at": "2026-04-23T17:23:07.836Z",
+      "updated_at": "2026-04-24T07:30:07.517Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7883,6 +7848,19 @@
       "started_at": "2026-04-23T17:23:07.776Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "w64zcg5qcrl7",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "7dcsxk101pfz",
+          "created_at": "2026-04-24T07:30:07.180Z",
+          "updated_at": "2026-04-24T07:30:07.180Z",
+          "display_at": "2026-04-24T07:30:07.180Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "19jlyf93y7dk",
           "status": "scheduled",
@@ -8483,6 +8461,86 @@
       ],
       "scheduled_for": "2026-05-05T20:00:00.000Z",
       "scheduled_until": "2026-05-06T01:00:00.000Z"
+    },
+    {
+      "id": "6hjx9ssxd4q8",
+      "name": "SEA (Seattle) on 2026-04-24",
+      "status": "in_progress",
+      "created_at": "2026-04-23T09:48:41.699Z",
+      "updated_at": "2026-04-24T07:00:07.155Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/l93zbw38w1fm",
+      "started_at": "2026-04-23T09:48:41.692Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "khljph4ktgy6",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "6hjx9ssxd4q8",
+          "created_at": "2026-04-24T07:00:07.151Z",
+          "updated_at": "2026-04-24T07:00:07.151Z",
+          "display_at": "2026-04-24T07:00:07.151Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "htcplmv1x3kb",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "6hjx9ssxd4q8",
+          "created_at": "2026-04-24T06:00:13.664Z",
+          "updated_at": "2026-04-24T06:00:13.664Z",
+          "display_at": "2026-04-24T06:00:13.664Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "gv2zfv0g7047",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in SEA (Seattle) datacenter on 2026-04-24 between 07:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "6hjx9ssxd4q8",
+          "created_at": "2026-04-23T09:48:41.751Z",
+          "updated_at": "2026-04-23T09:48:41.751Z",
+          "display_at": "2026-04-23T09:48:41.751Z",
+          "affected_components": [
+            {
+              "code": "bvtc2f85ft3p",
+              "name": "North America - Seattle, WA, United States - (SEA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bvtc2f85ft3p",
+          "name": "Seattle, WA, United States - (SEA)",
+          "status": "operational",
+          "created_at": "2014-10-27T19:57:30.743Z",
+          "updated_at": "2026-04-17T19:50:39.606Z",
+          "position": 52,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-24T07:00:00.000Z",
+      "scheduled_until": "2026-04-24T12:00:00.000Z"
     }
   ],
   "status": {
