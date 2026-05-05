@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-05-05T14:21:17.021Z"
+    "updated_at": "2026-05-05T16:01:09.002Z"
   },
   "components": [
     {
@@ -12,7 +12,7 @@
       "name": "Amsterdam, Netherlands - (AMS)",
       "status": "under_maintenance",
       "created_at": "2014-10-27T20:35:05.259Z",
-      "updated_at": "2026-05-01T10:21:49.386Z",
+      "updated_at": "2026-05-05T16:01:08.495Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -482,9 +482,9 @@
     {
       "id": "gxjcfyf5pht1",
       "name": "Baghdad, Iraq - (BGW)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2018-03-12T14:18:23.436Z",
-      "updated_at": "2026-05-05T14:19:56.803Z",
+      "updated_at": "2026-05-05T16:01:08.999Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1071,7 +1071,7 @@
       "name": "Beirut, Lebanon - (BEY)",
       "status": "partial_outage",
       "created_at": "2018-02-08T11:33:14.561Z",
-      "updated_at": "2026-05-05T14:21:17.019Z",
+      "updated_at": "2026-05-05T15:05:22.389Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2639,9 +2639,9 @@
     {
       "id": "ljllh1921z0m",
       "name": "Nairobi, Kenya - (NBO)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2020-10-30T04:22:58.259Z",
-      "updated_at": "2026-05-04T05:35:11.923Z",
+      "updated_at": "2026-05-05T15:07:39.209Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -3314,9 +3314,9 @@
     {
       "id": "cl9hc9q83k9n",
       "name": "Lyon, France - (LYS)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-05-25T18:00:48.504Z",
-      "updated_at": "2026-05-05T14:19:57.769Z",
+      "updated_at": "2026-05-05T14:51:58.813Z",
       "position": 26,
       "description": null,
       "showcase": false,
@@ -6899,9 +6899,9 @@
     {
       "id": "vcpsk0w6g86k",
       "name": "Workers Builds",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-05-27T17:04:31.385Z",
-      "updated_at": "2026-05-04T22:01:50.509Z",
+      "updated_at": "2026-05-05T15:24:56.618Z",
       "position": 109,
       "description": "Workers Builds is Cloudflare's native CI/CD system that allows you to integrate with GitHub or GitLab to automatically deploy changes with each new push to a selected branch (e.g. main).",
       "showcase": false,
@@ -7638,7 +7638,7 @@
       "name": "Bot Management Issues",
       "status": "identified",
       "created_at": "2026-05-05T08:04:41.960Z",
-      "updated_at": "2026-05-05T09:17:42.487Z",
+      "updated_at": "2026-05-05T15:59:59.521Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7646,6 +7646,26 @@
       "started_at": "2026-05-05T08:04:41.951Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "1xv3t2splz7b",
+          "status": "identified",
+          "body": "We have identified an issue with our Bot Management feature causing rules with IDs 50331648 and 50331649 to match traffic unexpectedly.  Customers using Bot Management may have seen an increase in requests flagged by these rules.  We have disabled the affected feature to prevent further impact. Our team is actively working on a fix.",
+          "incident_id": "xlh20wf0hd70",
+          "created_at": "2026-05-05T15:59:59.518Z",
+          "updated_at": "2026-05-05T15:59:59.518Z",
+          "display_at": "2026-05-05T15:59:59.518Z",
+          "affected_components": [
+            {
+              "code": "s0991jwsqllx",
+              "name": "Cloudflare Sites and Services - Bot Management",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "phm1kqkqypz0",
           "status": "identified",
@@ -7698,6 +7718,59 @@
           "description": "Bot Management provides sophisticated bot protection for your domain. Customers can identify automated traffic, take appropriate action, and view detailed analytics within the dashboard. Bot Management also supports custom solutions via Workers and Logs.",
           "showcase": false,
           "start_date": "2022-12-02",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "hpp89fn4g199",
+      "name": "Slower build start time in Workers Builds",
+      "status": "investigating",
+      "created_at": "2026-05-05T15:24:56.577Z",
+      "updated_at": "2026-05-05T15:24:56.683Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/4y67jr09fvc5",
+      "started_at": "2026-05-05T15:24:56.569Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "g06hsjswkfgv",
+          "status": "investigating",
+          "body": "Some Workers Builds users may experience increased build dequeue times",
+          "incident_id": "hpp89fn4g199",
+          "created_at": "2026-05-05T15:24:56.681Z",
+          "updated_at": "2026-05-05T15:24:56.681Z",
+          "display_at": "2026-05-05T15:24:56.681Z",
+          "affected_components": [
+            {
+              "code": "vcpsk0w6g86k",
+              "name": "Cloudflare Sites and Services - Workers Builds",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vcpsk0w6g86k",
+          "name": "Workers Builds",
+          "status": "degraded_performance",
+          "created_at": "2025-05-27T17:04:31.385Z",
+          "updated_at": "2026-05-05T15:24:56.618Z",
+          "position": 109,
+          "description": "Workers Builds is Cloudflare's native CI/CD system that allows you to integrate with GitHub or GitLab to automatically deploy changes with each new push to a selected branch (e.g. main).",
+          "showcase": false,
+          "start_date": "2025-05-27",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -8084,60 +8157,6 @@
       "scheduled_until": "2026-05-06T11:00:00.000Z"
     },
     {
-      "id": "s3jfq7wns4ys",
-      "name": "YUL (Montréal) on 2026-05-06",
-      "status": "scheduled",
-      "created_at": "2026-05-04T17:18:03.963Z",
-      "updated_at": "2026-05-04T17:18:04.028Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/xsc7lcvtwjd7",
-      "started_at": "2026-05-04T17:18:03.954Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "hntb5tykzpzh",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in YUL (Montréal) datacenter on 2026-05-06 between 08:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "s3jfq7wns4ys",
-          "created_at": "2026-05-04T17:18:04.025Z",
-          "updated_at": "2026-05-04T17:18:04.025Z",
-          "display_at": "2026-05-04T17:18:04.025Z",
-          "affected_components": [
-            {
-              "code": "1j6fbpfd4xrn",
-              "name": "North America - Montréal, QC, Canada - (YUL)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "1j6fbpfd4xrn",
-          "name": "Montréal, QC, Canada - (YUL)",
-          "status": "operational",
-          "created_at": "2015-12-08T11:48:10.247Z",
-          "updated_at": "2026-04-28T12:33:58.038Z",
-          "position": 32,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-05-06T08:00:00.000Z",
-      "scheduled_until": "2026-05-06T12:00:00.000Z"
-    },
-    {
       "id": "6htpx118v7zj",
       "name": "SYD (Sydney) on 2026-05-06",
       "status": "scheduled",
@@ -8244,6 +8263,114 @@
       ],
       "scheduled_for": "2026-05-07T00:30:00.000Z",
       "scheduled_until": "2026-05-07T07:00:00.000Z"
+    },
+    {
+      "id": "md4k1rqflz5x",
+      "name": "YUL (Montréal) on 2026-05-07",
+      "status": "scheduled",
+      "created_at": "2026-05-05T14:59:05.474Z",
+      "updated_at": "2026-05-05T14:59:05.525Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/v4kv60jk2h6t",
+      "started_at": "2026-05-05T14:59:05.467Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "yb5lrf8tl90w",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in YUL (Montréal) datacenter on 2026-05-07 between 08:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "md4k1rqflz5x",
+          "created_at": "2026-05-05T14:59:05.523Z",
+          "updated_at": "2026-05-05T14:59:05.523Z",
+          "display_at": "2026-05-05T14:59:05.523Z",
+          "affected_components": [
+            {
+              "code": "1j6fbpfd4xrn",
+              "name": "North America - Montréal, QC, Canada - (YUL)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "1j6fbpfd4xrn",
+          "name": "Montréal, QC, Canada - (YUL)",
+          "status": "operational",
+          "created_at": "2015-12-08T11:48:10.247Z",
+          "updated_at": "2026-04-28T12:33:58.038Z",
+          "position": 32,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-05-07T08:00:00.000Z",
+      "scheduled_until": "2026-05-07T12:00:00.000Z"
+    },
+    {
+      "id": "k6hjxqgtp16j",
+      "name": "AMS (Amsterdam) on 2026-05-08",
+      "status": "scheduled",
+      "created_at": "2026-05-05T15:57:03.233Z",
+      "updated_at": "2026-05-05T15:57:03.325Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/pw3bqmn736g1",
+      "started_at": "2026-05-05T15:57:03.226Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "4h7pqt4ky23y",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in AMS (Amsterdam) datacenter on 2026-05-08 between 00:00 and 08:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "k6hjxqgtp16j",
+          "created_at": "2026-05-05T15:57:03.322Z",
+          "updated_at": "2026-05-05T15:57:03.322Z",
+          "display_at": "2026-05-05T15:57:03.322Z",
+          "affected_components": [
+            {
+              "code": "57ctn3f2qsyj",
+              "name": "Europe - Amsterdam, Netherlands - (AMS)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57ctn3f2qsyj",
+          "name": "Amsterdam, Netherlands - (AMS)",
+          "status": "under_maintenance",
+          "created_at": "2014-10-27T20:35:05.259Z",
+          "updated_at": "2026-05-05T16:01:08.495Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-05-08T00:00:00.000Z",
+      "scheduled_until": "2026-05-08T08:00:00.000Z"
     },
     {
       "id": "f7k30kg35wt9",
