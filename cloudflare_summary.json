@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-05-05T20:20:22.969Z"
+    "updated_at": "2026-05-05T21:40:31.709Z"
   },
   "components": [
     {
@@ -160,9 +160,9 @@
     {
       "id": "y12kn5nkvb44",
       "name": "Amman, Jordan - (AMM)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-04-02T06:42:27.907Z",
-      "updated_at": "2026-05-05T20:17:07.271Z",
+      "updated_at": "2026-05-05T20:58:41.621Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1874,9 +1874,9 @@
     {
       "id": "d9znrq17k6ny",
       "name": "Chennai, India - (MAA)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2015-11-12T05:20:52.737Z",
-      "updated_at": "2026-04-21T21:51:10.777Z",
+      "updated_at": "2026-05-05T21:34:29.677Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -2641,7 +2641,7 @@
       "name": "Nairobi, Kenya - (NBO)",
       "status": "under_maintenance",
       "created_at": "2020-10-30T04:22:58.259Z",
-      "updated_at": "2026-05-05T16:36:46.246Z",
+      "updated_at": "2026-05-05T21:40:31.705Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -4559,9 +4559,9 @@
     {
       "id": "4l9qztbt6rbj",
       "name": "DNS Root Servers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-01-10T21:10:49.067Z",
-      "updated_at": "2026-02-13T13:31:15.529Z",
+      "updated_at": "2026-05-05T21:17:17.344Z",
       "position": 42,
       "description": null,
       "showcase": false,
@@ -5039,9 +5039,9 @@
     {
       "id": "x30v8nw2h4ck",
       "name": "Tbilisi, Georgia - (TBS)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2020-10-30T04:23:39.756Z",
-      "updated_at": "2026-05-05T01:16:08.398Z",
+      "updated_at": "2026-05-05T21:34:30.054Z",
       "position": 49,
       "description": null,
       "showcase": false,
@@ -7304,9 +7304,9 @@
     {
       "id": "fhgs8nzfr5rv",
       "name": "Thimphu, Bhutan - (PBH)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-06-25T16:04:14.804Z",
-      "updated_at": "2026-05-05T20:00:25.552Z",
+      "updated_at": "2026-05-05T21:34:25.687Z",
       "position": 352,
       "description": null,
       "showcase": false,
@@ -7514,9 +7514,9 @@
     {
       "id": "96bgq3x3tq93",
       "name": "Lahore, Pakistan - (LHE)",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2025-11-25T18:48:17.555Z",
-      "updated_at": "2026-05-05T19:59:17.637Z",
+      "updated_at": "2026-05-05T20:59:50.265Z",
       "position": 677,
       "description": null,
       "showcase": false,
@@ -7633,6 +7633,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "vjrk8c8w37lz",
+      "name": "Resolution Issues for .de Domains",
+      "status": "identified",
+      "created_at": "2026-05-05T21:17:17.316Z",
+      "updated_at": "2026-05-05T21:20:40.116Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/bjxbvj29ywrt",
+      "started_at": "2026-05-05T21:17:17.309Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "3t1lqzc566jn",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "vjrk8c8w37lz",
+          "created_at": "2026-05-05T21:20:40.113Z",
+          "updated_at": "2026-05-05T21:20:40.113Z",
+          "display_at": "2026-05-05T21:20:40.113Z",
+          "affected_components": [
+            {
+              "code": "4l9qztbt6rbj",
+              "name": "Cloudflare Sites and Services - DNS Root Servers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "jrqrzjp5yr32",
+          "status": "investigating",
+          "body": "We are observing issues with authoritative resolution for the .de TLD.",
+          "incident_id": "vjrk8c8w37lz",
+          "created_at": "2026-05-05T21:17:17.390Z",
+          "updated_at": "2026-05-05T21:17:17.390Z",
+          "display_at": "2026-05-05T21:17:17.390Z",
+          "affected_components": [
+            {
+              "code": "4l9qztbt6rbj",
+              "name": "Cloudflare Sites and Services - DNS Root Servers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4l9qztbt6rbj",
+          "name": "DNS Root Servers",
+          "status": "degraded_performance",
+          "created_at": "2020-01-10T21:10:49.067Z",
+          "updated_at": "2026-05-05T21:17:17.344Z",
+          "position": 42,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "h3q019bkfw6b",
       "name": "Issues with Cloudflare Tunnel connections and Browser Isolation sessions",
@@ -8098,7 +8171,7 @@
       "name": "CPT (Cape Town) on 2026-05-05",
       "status": "scheduled",
       "created_at": "2026-05-05T19:23:02.037Z",
-      "updated_at": "2026-05-05T19:23:02.153Z",
+      "updated_at": "2026-05-05T21:00:12.168Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -8106,6 +8179,19 @@
       "started_at": "2026-05-05T19:23:02.028Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "2rws1lvhy007",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "2b30p4ndmgrv",
+          "created_at": "2026-05-05T21:00:12.049Z",
+          "updated_at": "2026-05-05T21:00:12.049Z",
+          "display_at": "2026-05-05T21:00:12.049Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "9zp4hj1429y0",
           "status": "scheduled",
