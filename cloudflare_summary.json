@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-05-13T21:35:48.473Z"
+    "updated_at": "2026-05-13T22:47:12.463Z"
   },
   "components": [
     {
@@ -2401,9 +2401,9 @@
     {
       "id": "2fy0n0pw01nm",
       "name": "Fortaleza, Brazil - (FOR)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-04-01T15:16:43.011Z",
-      "updated_at": "2026-05-13T20:53:12.558Z",
+      "updated_at": "2026-05-13T22:47:12.460Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -3676,9 +3676,9 @@
     {
       "id": "skqbwdvp70c6",
       "name": "Kampala, Uganda - (EBB)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-07-17T09:56:48.732Z",
-      "updated_at": "2026-05-13T21:35:48.470Z",
+      "updated_at": "2026-05-13T22:47:11.078Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -7668,16 +7668,36 @@
     {
       "id": "6vssbvyphmlt",
       "name": "Errors with Email Sending via the Worker Binding",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2026-05-13T14:39:12.515Z",
-      "updated_at": "2026-05-13T15:30:38.869Z",
-      "monitoring_at": null,
+      "updated_at": "2026-05-13T22:24:12.022Z",
+      "monitoring_at": "2026-05-13T22:24:12.006Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/hs2ks123xz2x",
       "started_at": "2026-05-13T14:39:12.507Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "fgsx5622v0hx",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "6vssbvyphmlt",
+          "created_at": "2026-05-13T22:24:12.006Z",
+          "updated_at": "2026-05-13T22:24:12.006Z",
+          "display_at": "2026-05-13T22:24:12.006Z",
+          "affected_components": [
+            {
+              "code": "ljfdq8wbsmp6",
+              "name": "Cloudflare Sites and Services - Email Sending",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "nt6y56174b05",
           "status": "identified",
@@ -7750,79 +7770,6 @@
           "description": null,
           "showcase": false,
           "start_date": "2026-05-13",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "bht3z2p2mccb",
-      "name": "Increased HTTP 502 Errors in San Jose, CA, United States region",
-      "status": "monitoring",
-      "created_at": "2026-05-13T14:27:55.458Z",
-      "updated_at": "2026-05-13T14:38:36.444Z",
-      "monitoring_at": "2026-05-13T14:38:36.428Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/4c2pjwv31z45",
-      "started_at": "2026-05-13T14:27:55.446Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "yzrz5kjwsmfr",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "bht3z2p2mccb",
-          "created_at": "2026-05-13T14:38:36.428Z",
-          "updated_at": "2026-05-13T14:38:36.428Z",
-          "display_at": "2026-05-13T14:38:36.428Z",
-          "affected_components": [
-            {
-              "code": "4n0gb0kh02gf",
-              "name": "Cloudflare Sites and Services - Network",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "5fxmld43dl96",
-          "status": "investigating",
-          "body": "Cloudflare is investigating an increased level of HTTP 502 errors impacting customers in San Jose, CA, , United States region\n\nWe are working to analyse and mitigate this problem.  More updates to follow shortly.",
-          "incident_id": "bht3z2p2mccb",
-          "created_at": "2026-05-13T14:27:55.570Z",
-          "updated_at": "2026-05-13T14:27:55.570Z",
-          "display_at": "2026-05-13T14:27:55.570Z",
-          "affected_components": [
-            {
-              "code": "4n0gb0kh02gf",
-              "name": "Cloudflare Sites and Services - Network",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "4n0gb0kh02gf",
-          "name": "Network",
-          "status": "operational",
-          "created_at": "2023-01-13T13:39:19.804Z",
-          "updated_at": "2026-05-13T15:08:44.874Z",
-          "position": 70,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-01-13",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -7991,7 +7938,7 @@
       "name": "IST (Istanbul) on 2026-05-13",
       "status": "scheduled",
       "created_at": "2026-05-13T14:08:50.360Z",
-      "updated_at": "2026-05-13T14:08:50.472Z",
+      "updated_at": "2026-05-13T22:30:07.604Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7999,6 +7946,19 @@
       "started_at": "2026-05-13T14:08:50.351Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "tg3sx1xw90cp",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "f6th8nxb5xt0",
+          "created_at": "2026-05-13T22:30:07.494Z",
+          "updated_at": "2026-05-13T22:30:07.494Z",
+          "display_at": "2026-05-13T22:30:07.494Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "z1bqp9k51czz",
           "status": "scheduled",
@@ -8417,166 +8377,6 @@
       ],
       "scheduled_for": "2026-06-01T12:00:00.000Z",
       "scheduled_until": "2026-06-01T13:00:00.000Z"
-    },
-    {
-      "id": "3bz2scs6tx0d",
-      "name": "SCL (Santiago) on 2026-05-13",
-      "status": "in_progress",
-      "created_at": "2026-05-07T10:50:39.918Z",
-      "updated_at": "2026-05-13T08:31:07.149Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/b02nk093qlqp",
-      "started_at": "2026-05-07T10:50:39.910Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "7zyf8klh8pbb",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "3bz2scs6tx0d",
-          "created_at": "2026-05-13T08:31:07.146Z",
-          "updated_at": "2026-05-13T08:31:07.146Z",
-          "display_at": "2026-05-13T08:31:07.146Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "0kfzd0zpp24z",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "3bz2scs6tx0d",
-          "created_at": "2026-05-13T07:30:08.388Z",
-          "updated_at": "2026-05-13T07:30:08.388Z",
-          "display_at": "2026-05-13T07:30:08.388Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "t00swvvxp41z",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SCL (Santiago) datacenter on 2026-05-13 between 08:30 and 22:45 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "3bz2scs6tx0d",
-          "created_at": "2026-05-07T10:50:39.975Z",
-          "updated_at": "2026-05-07T10:50:39.975Z",
-          "display_at": "2026-05-07T10:50:39.975Z",
-          "affected_components": [
-            {
-              "code": "wg0b1zzm2f2w",
-              "name": "Latin America & the Caribbean - Santiago, Chile - (SCL)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "wg0b1zzm2f2w",
-          "name": "Santiago, Chile - (SCL)",
-          "status": "under_maintenance",
-          "created_at": "2014-10-27T21:47:59.478Z",
-          "updated_at": "2026-05-13T11:02:35.902Z",
-          "position": 39,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-05-13T08:30:00.000Z",
-      "scheduled_until": "2026-05-13T22:45:00.000Z"
-    },
-    {
-      "id": "dznfmqgjjfp3",
-      "name": "CAN (Guangzhou) on 2026-05-13",
-      "status": "in_progress",
-      "created_at": "2026-05-07T10:50:40.290Z",
-      "updated_at": "2026-05-13T08:30:07.163Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/m8stg83psmjc",
-      "started_at": "2026-05-07T10:50:40.282Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "12p6ffcrsbgv",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "dznfmqgjjfp3",
-          "created_at": "2026-05-13T08:30:07.158Z",
-          "updated_at": "2026-05-13T08:30:07.158Z",
-          "display_at": "2026-05-13T08:30:07.158Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "qxm8l3v8x12c",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "dznfmqgjjfp3",
-          "created_at": "2026-05-13T07:30:08.060Z",
-          "updated_at": "2026-05-13T07:30:08.060Z",
-          "display_at": "2026-05-13T07:30:08.060Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "tvx0bhm9kbj3",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in CAN (Guangzhou) datacenter on 2026-05-13 between 08:30 and 22:45 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "dznfmqgjjfp3",
-          "created_at": "2026-05-07T10:50:40.355Z",
-          "updated_at": "2026-05-07T10:50:40.355Z",
-          "display_at": "2026-05-07T10:50:40.355Z",
-          "affected_components": [
-            {
-              "code": "rkf7026fyhnl",
-              "name": "Asia - Guangzhou, China - (CAN)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rkf7026fyhnl",
-          "name": "Guangzhou, China - (CAN)",
-          "status": "operational",
-          "created_at": "2015-09-30T17:26:54.386Z",
-          "updated_at": "2025-02-11T18:43:30.798Z",
-          "position": 20,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-05-13T08:30:00.000Z",
-      "scheduled_until": "2026-05-13T22:45:00.000Z"
     }
   ],
   "status": {
