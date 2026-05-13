@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-05-12T23:38:46.212Z"
+    "updated_at": "2026-05-13T01:26:31.972Z"
   },
   "components": [
     {
@@ -205,9 +205,9 @@
     {
       "id": "8h9sn12x310t",
       "name": "Accra, Ghana - (ACC)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-02-11T11:46:37.349Z",
-      "updated_at": "2026-05-04T03:24:36.066Z",
+      "updated_at": "2026-05-13T00:38:49.107Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1920,9 +1920,9 @@
     {
       "id": "652rf3j94nfv",
       "name": "Jeddah, Saudi Arabia - (JED)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-06-08T13:59:14.645Z",
-      "updated_at": "2026-05-12T12:10:00.613Z",
+      "updated_at": "2026-05-13T00:26:46.661Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -3677,7 +3677,7 @@
       "name": "Kampala, Uganda - (EBB)",
       "status": "operational",
       "created_at": "2024-07-17T09:56:48.732Z",
-      "updated_at": "2026-05-11T15:11:25.466Z",
+      "updated_at": "2026-05-13T01:26:31.970Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -6210,9 +6210,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2026-05-05T13:26:01.195Z",
+      "updated_at": "2026-05-13T00:57:22.618Z",
       "position": 75,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -7650,6 +7650,59 @@
   ],
   "incidents": [
     {
+      "id": "4gnymdwds91g",
+      "name": "Network Route Leak",
+      "status": "identified",
+      "created_at": "2026-05-13T00:57:22.583Z",
+      "updated_at": "2026-05-13T00:57:22.677Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/pcn030z2cwrt",
+      "started_at": "2026-05-13T00:57:22.574Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8zg03sg0ttrq",
+          "status": "identified",
+          "body": "One of Cloudflare's upstream transit providers is currently experiencing a route leak, impacting a subset of traffic reaching Cloudflare's network. Customers whose traffic traverses affected paths may experience connection timeouts or errors. We have identified the source and are working with the transit provider to resolve the issue.",
+          "incident_id": "4gnymdwds91g",
+          "created_at": "2026-05-13T00:57:22.675Z",
+          "updated_at": "2026-05-13T00:57:22.675Z",
+          "display_at": "2026-05-13T00:57:22.675Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2026-05-13T00:57:22.618Z",
+          "position": 75,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "xlh20wf0hd70",
       "name": "Bot Management Issues",
       "status": "identified",
@@ -7804,73 +7857,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "l1szdpj3sqw8",
-      "name": "LHR (London) on 2026-05-13",
-      "status": "scheduled",
-      "created_at": "2026-05-08T02:50:36.752Z",
-      "updated_at": "2026-05-12T23:00:12.145Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/fspzv1w18q4x",
-      "started_at": "2026-05-08T02:50:36.746Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "kq62vp66fjqb",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "l1szdpj3sqw8",
-          "created_at": "2026-05-12T23:00:12.052Z",
-          "updated_at": "2026-05-12T23:00:12.052Z",
-          "display_at": "2026-05-12T23:00:12.052Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "n8g5tvksddwn",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in LHR (London) datacenter on 2026-05-13 between 00:00 and 06:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "l1szdpj3sqw8",
-          "created_at": "2026-05-08T02:50:36.804Z",
-          "updated_at": "2026-05-08T02:50:36.804Z",
-          "display_at": "2026-05-08T02:50:36.804Z",
-          "affected_components": [
-            {
-              "code": "shcqh0p22750",
-              "name": "Europe - London, United Kingdom - (LHR)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "shcqh0p22750",
-          "name": "London, United Kingdom - (LHR)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:36:04.069Z",
-          "updated_at": "2026-01-28T06:48:03.136Z",
-          "position": 24,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-05-13T00:00:00.000Z",
-      "scheduled_until": "2026-05-13T06:00:00.000Z"
-    },
     {
       "id": "3bz2scs6tx0d",
       "name": "SCL (Santiago) on 2026-05-13",
@@ -8268,6 +8254,86 @@
       ],
       "scheduled_for": "2026-05-19T17:00:00.000Z",
       "scheduled_until": "2026-05-19T23:00:00.000Z"
+    },
+    {
+      "id": "l1szdpj3sqw8",
+      "name": "LHR (London) on 2026-05-13",
+      "status": "in_progress",
+      "created_at": "2026-05-08T02:50:36.752Z",
+      "updated_at": "2026-05-13T00:00:07.590Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/fspzv1w18q4x",
+      "started_at": "2026-05-08T02:50:36.746Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "4436t5nv5xlm",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "l1szdpj3sqw8",
+          "created_at": "2026-05-13T00:00:07.583Z",
+          "updated_at": "2026-05-13T00:00:07.583Z",
+          "display_at": "2026-05-13T00:00:07.583Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "kq62vp66fjqb",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "l1szdpj3sqw8",
+          "created_at": "2026-05-12T23:00:12.052Z",
+          "updated_at": "2026-05-12T23:00:12.052Z",
+          "display_at": "2026-05-12T23:00:12.052Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "n8g5tvksddwn",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in LHR (London) datacenter on 2026-05-13 between 00:00 and 06:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "l1szdpj3sqw8",
+          "created_at": "2026-05-08T02:50:36.804Z",
+          "updated_at": "2026-05-08T02:50:36.804Z",
+          "display_at": "2026-05-08T02:50:36.804Z",
+          "affected_components": [
+            {
+              "code": "shcqh0p22750",
+              "name": "Europe - London, United Kingdom - (LHR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "shcqh0p22750",
+          "name": "London, United Kingdom - (LHR)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:36:04.069Z",
+          "updated_at": "2026-01-28T06:48:03.136Z",
+          "position": 24,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-05-13T00:00:00.000Z",
+      "scheduled_until": "2026-05-13T06:00:00.000Z"
     }
   ],
   "status": {
