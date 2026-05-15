@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "http://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-05-15T12:57:20.272Z"
+    "updated_at": "2026-05-15T14:57:15.903Z"
   },
   "components": [
     {
@@ -12,7 +12,7 @@
       "name": "Amsterdam, Netherlands - (AMS)",
       "status": "under_maintenance",
       "created_at": "2014-10-27T20:35:05.259Z",
-      "updated_at": "2026-05-11T23:35:55.193Z",
+      "updated_at": "2026-05-15T13:26:29.743Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -900,9 +900,9 @@
     {
       "id": "qvf223pw6cfx",
       "name": "Cape Town, South Africa - (CPT)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2017-04-25T13:57:05.717Z",
-      "updated_at": "2026-05-15T11:18:03.291Z",
+      "updated_at": "2026-05-15T13:03:15.413Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -932,7 +932,7 @@
       "name": "Basra, Iraq - (BSR)",
       "status": "operational",
       "created_at": "2022-05-11T15:05:18.724Z",
-      "updated_at": "2026-05-13T09:29:25.621Z",
+      "updated_at": "2026-05-15T14:24:12.654Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2431,9 +2431,9 @@
     {
       "id": "3mfmstzmyp8r",
       "name": "Maputo, Mozambique - (MPM)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2019-06-27T06:54:32.139Z",
-      "updated_at": "2026-05-15T12:17:22.304Z",
+      "updated_at": "2026-05-15T13:26:27.677Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -3798,7 +3798,7 @@
       "name": "Saint-Denis, Réunion - (RUN)",
       "status": "operational",
       "created_at": "2024-09-03T09:59:40.272Z",
-      "updated_at": "2026-05-15T09:20:12.232Z",
+      "updated_at": "2026-05-15T14:53:03.662Z",
       "position": 32,
       "description": null,
       "showcase": false,
@@ -4081,9 +4081,9 @@
     {
       "id": "gw1cztbpft9b",
       "name": "Kathmandu, Nepal - (KTM)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2026-05-15T08:55:40.452Z",
+      "updated_at": "2026-05-15T13:43:49.396Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -6423,7 +6423,7 @@
       "name": "Rules",
       "status": "operational",
       "created_at": "2024-01-19T14:56:52.618Z",
-      "updated_at": "2026-05-13T14:42:31.098Z",
+      "updated_at": "2026-05-15T14:17:07.429Z",
       "position": 85,
       "description": "This component includes WAF Rules, Transform Rules, Configuration Rules, Origin Rules, Compression Rules, Redirect Rules, Cache Rules, Waiting Room Bypass Rules, URL Normalization, DDoS L4/L7 Rules, Super Bot Fight Mode Rules, Rate Limiting Rules and others",
       "showcase": false,
@@ -7666,11 +7666,64 @@
   ],
   "incidents": [
     {
+      "id": "pb698fm8kkzd",
+      "name": "Bot Management Issues",
+      "status": "investigating",
+      "created_at": "2026-05-15T14:57:15.836Z",
+      "updated_at": "2026-05-15T14:57:15.898Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/tp9rq4m8w3gt",
+      "started_at": "2026-05-15T14:57:15.826Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "xdnvf5sgvn5w",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with our Bot Management feature. Customers may experience an increase in the percentage of traffic detected as automated. We are working to mitigate this problem. More updates to follow shortly.",
+          "incident_id": "pb698fm8kkzd",
+          "created_at": "2026-05-15T14:57:15.896Z",
+          "updated_at": "2026-05-15T14:57:15.896Z",
+          "display_at": "2026-05-15T14:57:15.896Z",
+          "affected_components": [
+            {
+              "code": "s0991jwsqllx",
+              "name": "Cloudflare Sites and Services - Bot Management",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "s0991jwsqllx",
+          "name": "Bot Management",
+          "status": "degraded_performance",
+          "created_at": "2022-12-02T09:33:01.317Z",
+          "updated_at": "2026-05-05T08:04:41.995Z",
+          "position": 20,
+          "description": "Bot Management provides sophisticated bot protection for your domain. Customers can identify automated traffic, take appropriate action, and view detailed analytics within the dashboard. Bot Management also supports custom solutions via Workers and Logs.",
+          "showcase": false,
+          "start_date": "2022-12-02",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "xlh20wf0hd70",
       "name": "Bot Management Issues",
       "status": "identified",
       "created_at": "2026-05-05T08:04:41.960Z",
-      "updated_at": "2026-05-11T15:49:54.588Z",
+      "updated_at": "2026-05-15T13:19:18.754Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7678,6 +7731,26 @@
       "started_at": "2026-05-06T09:39:51.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "my8mb1mbg45h",
+          "status": "identified",
+          "body": "We are continuing to update the identified issues with our Bot Management features for the rule IDs: 50331648, 50331649. After an additional review, we determined that impact existed prior to April 1st, 2026, and was present for a subset of Bot Management Customers. We have disabled the affected feature globally to prevent further impact; we are currently monitoring for stability over the weekend and detections are scheduled to be re-enabled on Monday, May 18th.",
+          "incident_id": "xlh20wf0hd70",
+          "created_at": "2026-05-15T13:19:18.752Z",
+          "updated_at": "2026-05-15T13:19:18.752Z",
+          "display_at": "2026-05-15T13:19:18.752Z",
+          "affected_components": [
+            {
+              "code": "s0991jwsqllx",
+              "name": "Cloudflare Sites and Services - Bot Management",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "d9xv22bnq989",
           "status": "identified",
@@ -8172,6 +8245,168 @@
       "scheduled_until": "2026-05-19T23:00:00.000Z"
     },
     {
+      "id": "9jxgpcn29sb4",
+      "name": "EWR (Newark) on 2026-05-21",
+      "status": "scheduled",
+      "created_at": "2026-05-15T13:26:18.583Z",
+      "updated_at": "2026-05-15T13:26:18.645Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/kqg94svqf4j9",
+      "started_at": "2026-05-15T13:26:18.573Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "hjswxc2k11mf",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in EWR (Newark) datacenter on 2026-05-21 between 07:30 and 22:45 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "9jxgpcn29sb4",
+          "created_at": "2026-05-15T13:26:18.642Z",
+          "updated_at": "2026-05-15T13:26:18.642Z",
+          "display_at": "2026-05-15T13:26:18.642Z",
+          "affected_components": [
+            {
+              "code": "grpnztl4pd46",
+              "name": "North America - Newark, NJ, United States - (EWR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "grpnztl4pd46",
+          "name": "Newark, NJ, United States - (EWR)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:30:34.850Z",
+          "updated_at": "2026-02-10T19:37:03.384Z",
+          "position": 34,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-05-21T07:30:00.000Z",
+      "scheduled_until": "2026-05-21T22:45:00.000Z"
+    },
+    {
+      "id": "8rqs0pjhq6fn",
+      "name": "AUS (Austin) on 2026-05-21",
+      "status": "scheduled",
+      "created_at": "2026-05-15T13:26:19.511Z",
+      "updated_at": "2026-05-15T13:26:19.574Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/vnrj1mm0l8q8",
+      "started_at": "2026-05-15T13:26:19.503Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "2f4xdyxfq736",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in AUS (Austin) datacenter on 2026-05-21 between 07:30 and 22:45 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "8rqs0pjhq6fn",
+          "created_at": "2026-05-15T13:26:19.571Z",
+          "updated_at": "2026-05-15T13:26:19.571Z",
+          "display_at": "2026-05-15T13:26:19.571Z",
+          "affected_components": [
+            {
+              "code": "3l8dxwjtgpp6",
+              "name": "North America - Austin, TX, United States - (AUS)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3l8dxwjtgpp6",
+          "name": "Austin, TX, United States - (AUS)",
+          "status": "operational",
+          "created_at": "2023-04-21T15:40:55.635Z",
+          "updated_at": "2026-05-06T09:10:31.139Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-04-21",
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-05-21T07:30:00.000Z",
+      "scheduled_until": "2026-05-21T22:45:00.000Z"
+    },
+    {
+      "id": "t3d7tht3wvz7",
+      "name": "AMS (Amsterdam) on 2026-05-21",
+      "status": "scheduled",
+      "created_at": "2026-05-15T13:26:20.243Z",
+      "updated_at": "2026-05-15T13:26:20.363Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/dy3jkvz3qw0p",
+      "started_at": "2026-05-15T13:26:20.234Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "x1f9l7yvvmg3",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in AMS (Amsterdam) datacenter on 2026-05-21 between 07:30 and 22:45 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "t3d7tht3wvz7",
+          "created_at": "2026-05-15T13:26:20.359Z",
+          "updated_at": "2026-05-15T13:26:20.359Z",
+          "display_at": "2026-05-15T13:26:20.359Z",
+          "affected_components": [
+            {
+              "code": "57ctn3f2qsyj",
+              "name": "Europe - Amsterdam, Netherlands - (AMS)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57ctn3f2qsyj",
+          "name": "Amsterdam, Netherlands - (AMS)",
+          "status": "under_maintenance",
+          "created_at": "2014-10-27T20:35:05.259Z",
+          "updated_at": "2026-05-15T13:26:29.743Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-05-21T07:30:00.000Z",
+      "scheduled_until": "2026-05-21T22:45:00.000Z"
+    },
+    {
       "id": "kq85fljj12w1",
       "name": "MAA (Chennai) on 2026-05-21",
       "status": "scheduled",
@@ -8348,7 +8583,7 @@
           "name": "Rules",
           "status": "operational",
           "created_at": "2024-01-19T14:56:52.618Z",
-          "updated_at": "2026-05-13T14:42:31.098Z",
+          "updated_at": "2026-05-15T14:17:07.429Z",
           "position": 85,
           "description": "This component includes WAF Rules, Transform Rules, Configuration Rules, Origin Rules, Compression Rules, Redirect Rules, Cache Rules, Waiting Room Bypass Rules, URL Normalization, DDoS L4/L7 Rules, Super Bot Fight Mode Rules, Rate Limiting Rules and others",
           "showcase": false,
