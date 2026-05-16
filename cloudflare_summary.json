@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "http://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-05-16T00:00:12.531Z"
+    "updated_at": "2026-05-16T02:27:45.002Z"
   },
   "components": [
     {
@@ -2298,7 +2298,7 @@
       "name": "Luanda, Angola - (LAD)",
       "status": "under_maintenance",
       "created_at": "2016-09-19T04:46:37.401Z",
-      "updated_at": "2026-05-15T22:31:40.610Z",
+      "updated_at": "2026-05-16T01:50:08.466Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -4713,7 +4713,7 @@
       "name": "Durable Objects",
       "status": "operational",
       "created_at": "2023-06-12T14:55:22.631Z",
-      "updated_at": "2026-05-12T17:12:07.542Z",
+      "updated_at": "2026-05-16T02:27:44.905Z",
       "position": 44,
       "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
       "showcase": false,
@@ -6228,7 +6228,7 @@
       "name": "R2",
       "status": "operational",
       "created_at": "2022-07-05T10:55:24.503Z",
-      "updated_at": "2026-05-13T14:42:43.025Z",
+      "updated_at": "2026-05-16T02:27:44.925Z",
       "position": 76,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -6978,7 +6978,7 @@
       "name": "Workflows",
       "status": "operational",
       "created_at": "2025-04-04T09:39:26.964Z",
-      "updated_at": "2026-05-13T14:42:20.349Z",
+      "updated_at": "2026-05-16T02:27:44.943Z",
       "position": 114,
       "description": "Workflows is Cloudflare Durable Execution engine, that give the ability to build and execute applications that are durable in the face of errors, network issues, upstream API outages, rate limits, and (most importantly) infrastructure failure.",
       "showcase": false,
@@ -7665,6 +7665,159 @@
     }
   ],
   "incidents": [
+    {
+      "id": "n2bvslm3854y",
+      "name": "R2 and Durable Objects increased errors in Eastern North America",
+      "status": "monitoring",
+      "created_at": "2026-05-16T01:55:48.035Z",
+      "updated_at": "2026-05-16T02:27:45.000Z",
+      "monitoring_at": "2026-05-16T02:27:44.984Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/svwfj8vz6jb5",
+      "started_at": "2026-05-16T01:55:48.026Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "70djyk2fkgxj",
+          "status": "monitoring",
+          "body": "The increase in errors are resolved and the services are stable again.\n\nCustomers using Queues, Cache Reserve and Cache Purge API may have also been impacted.",
+          "incident_id": "n2bvslm3854y",
+          "created_at": "2026-05-16T02:27:44.984Z",
+          "updated_at": "2026-05-16T02:27:44.984Z",
+          "display_at": "2026-05-16T02:27:44.984Z",
+          "affected_components": [
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "5df6y9z3fsky",
+              "name": "Cloudflare Sites and Services - Workflows",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "bclywklnvkt8",
+          "status": "investigating",
+          "body": "Customers may also see impact with Worker uploads with R2 bindings and when creating Workflow instances.",
+          "incident_id": "n2bvslm3854y",
+          "created_at": "2026-05-16T02:07:13.924Z",
+          "updated_at": "2026-05-16T02:07:13.924Z",
+          "display_at": "2026-05-16T02:07:13.924Z",
+          "affected_components": [
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "5df6y9z3fsky",
+              "name": "Cloudflare Sites and Services - Workflows",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "41rv3n4t832t",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating an increase of R2 and Durable Object errors in Eastern North America. We are working to analyse and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "n2bvslm3854y",
+          "created_at": "2026-05-16T01:55:48.143Z",
+          "updated_at": "2026-05-16T01:55:48.143Z",
+          "display_at": "2026-05-16T01:55:48.143Z",
+          "affected_components": [
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bty1yz6dhh0v",
+          "name": "Durable Objects",
+          "status": "operational",
+          "created_at": "2023-06-12T14:55:22.631Z",
+          "updated_at": "2026-05-16T02:27:44.905Z",
+          "position": 44,
+          "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
+          "showcase": false,
+          "start_date": "2023-06-12",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "operational",
+          "created_at": "2022-07-05T10:55:24.503Z",
+          "updated_at": "2026-05-16T02:27:44.925Z",
+          "position": 76,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5df6y9z3fsky",
+          "name": "Workflows",
+          "status": "operational",
+          "created_at": "2025-04-04T09:39:26.964Z",
+          "updated_at": "2026-05-16T02:27:44.943Z",
+          "position": 114,
+          "description": "Workflows is Cloudflare Durable Execution engine, that give the ability to build and execute applications that are durable in the face of errors, network issues, upstream API outages, rate limits, and (most importantly) infrastructure failure.",
+          "showcase": false,
+          "start_date": "2025-04-04",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "pb698fm8kkzd",
       "name": "Bot Management Issues",
