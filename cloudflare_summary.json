@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-05-20T15:53:28.823Z"
+    "updated_at": "2026-05-20T17:47:47.866Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -690,9 +690,9 @@
     {
       "id": "76swzd6htswh",
       "name": "Baku, Azerbaijan - (GYD)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-04-29T13:18:47.916Z",
-      "updated_at": "2026-05-11T22:19:23.488Z",
+      "updated_at": "2026-05-20T17:21:51.065Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1262,7 +1262,7 @@
       "name": "Dammam, Saudi Arabia - (DMM)",
       "status": "operational",
       "created_at": "2021-07-30T11:39:33.707Z",
-      "updated_at": "2026-05-20T09:13:47.001Z",
+      "updated_at": "2026-05-20T17:21:48.689Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -1984,7 +1984,7 @@
       "name": "Kuwait City, Kuwait - (KWI)",
       "status": "under_maintenance",
       "created_at": "2015-07-06T11:24:13.241Z",
-      "updated_at": "2026-05-20T13:53:49.477Z",
+      "updated_at": "2026-05-20T17:47:47.863Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -3167,9 +3167,9 @@
     {
       "id": "wf2gdmxg7cv3",
       "name": "Hong Kong - (HKG)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2014-10-27T21:46:42.606Z",
-      "updated_at": "2026-05-19T13:59:08.319Z",
+      "updated_at": "2026-05-20T16:29:49.390Z",
       "position": 25,
       "description": null,
       "showcase": false,
@@ -3709,7 +3709,7 @@
       "name": "Porto Alegre, Brazil - (POA)",
       "status": "operational",
       "created_at": "2019-04-01T16:32:01.138Z",
-      "updated_at": "2026-05-20T14:09:21.153Z",
+      "updated_at": "2026-05-20T17:32:10.061Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -4279,7 +4279,7 @@
       "name": "Santiago, Chile - (SCL)",
       "status": "under_maintenance",
       "created_at": "2014-10-27T21:47:59.478Z",
-      "updated_at": "2026-05-13T11:02:35.902Z",
+      "updated_at": "2026-05-20T17:42:35.416Z",
       "position": 39,
       "description": null,
       "showcase": false,
@@ -6887,9 +6887,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2026-05-19T22:09:16.624Z",
+      "updated_at": "2026-05-20T17:19:34.389Z",
       "position": 108,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -7397,9 +7397,9 @@
     {
       "id": "f8thsvkzg572",
       "name": "Kuching, Malaysia - (KCH)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-10-21T12:20:16.067Z",
-      "updated_at": "2026-05-20T15:53:28.819Z",
+      "updated_at": "2026-05-20T16:40:13.863Z",
       "position": 370,
       "description": null,
       "showcase": false,
@@ -7681,6 +7681,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "37szr7sz1t5r",
+      "name": "Workers subrequests returning 1006",
+      "status": "identified",
+      "created_at": "2026-05-20T17:19:34.337Z",
+      "updated_at": "2026-05-20T17:21:06.012Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/x5fw1tw6z9ww",
+      "started_at": "2026-05-20T17:19:34.317Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "bfbjkj4s4x40",
+          "status": "identified",
+          "body": "We have identified the problem and working to resolve.",
+          "incident_id": "37szr7sz1t5r",
+          "created_at": "2026-05-20T17:21:06.009Z",
+          "updated_at": "2026-05-20T17:21:06.009Z",
+          "display_at": "2026-05-20T17:21:06.009Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4bvfqt09m0t6",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating customer reports of some Workers subrequests returning 1006 errors.\nWe are working to analyse and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "37szr7sz1t5r",
+          "created_at": "2026-05-20T17:19:34.466Z",
+          "updated_at": "2026-05-20T17:19:34.466Z",
+          "display_at": "2026-05-20T17:19:34.466Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2026-05-20T17:19:34.389Z",
+          "position": 108,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "cd2wntsc21lq",
       "name": "Increased HTTP 502 Errors in Buenos Aires",
@@ -8276,7 +8349,7 @@
       "name": "EWR (Newark) on 2026-05-27",
       "status": "scheduled",
       "created_at": "2026-05-20T13:56:55.493Z",
-      "updated_at": "2026-05-20T13:56:55.592Z",
+      "updated_at": "2026-05-20T16:10:56.078Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -8284,6 +8357,26 @@
       "started_at": "2026-05-20T13:56:55.484Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "tskjqsljj0h6",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in EWR (Newark) datacenter on 2026-05-27 between 10:00 and 14:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "csdwb2fwcqnk",
+          "created_at": "2026-05-20T16:10:56.075Z",
+          "updated_at": "2026-05-20T16:10:56.075Z",
+          "display_at": "2026-05-20T16:10:56.075Z",
+          "affected_components": [
+            {
+              "code": "grpnztl4pd46",
+              "name": "North America - Newark, NJ, United States - (EWR)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "973v9kzd214d",
           "status": "scheduled",
@@ -8323,7 +8416,7 @@
         }
       ],
       "scheduled_for": "2026-05-27T10:00:00.000Z",
-      "scheduled_until": "2026-05-27T13:00:00.000Z"
+      "scheduled_until": "2026-05-27T14:00:00.000Z"
     },
     {
       "id": "p26n1r7krnyx",
