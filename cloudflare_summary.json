@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-06-03T21:55:33.945Z"
+    "updated_at": "2026-06-03T23:26:11.467Z"
   },
   "components": [
     {
@@ -1248,7 +1248,7 @@
       "name": "Dammam, Saudi Arabia - (DMM)",
       "status": "under_maintenance",
       "created_at": "2021-07-30T11:39:33.707Z",
-      "updated_at": "2026-05-31T09:30:29.644Z",
+      "updated_at": "2026-06-03T23:26:11.460Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -1910,7 +1910,7 @@
       "name": "Jeddah, Saudi Arabia - (JED)",
       "status": "operational",
       "created_at": "2022-06-08T13:59:14.645Z",
-      "updated_at": "2026-06-03T08:44:10.893Z",
+      "updated_at": "2026-06-03T22:30:05.331Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -1955,7 +1955,7 @@
       "name": "Johannesburg, South Africa - (JNB)",
       "status": "operational",
       "created_at": "2014-12-04T20:38:08.839Z",
-      "updated_at": "2026-05-22T20:25:57.248Z",
+      "updated_at": "2026-06-03T22:45:27.903Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2330,7 +2330,7 @@
       "name": "Dhaka, Bangladesh - (DAC)",
       "status": "operational",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2026-06-03T21:49:20.581Z",
+      "updated_at": "2026-06-03T23:00:45.540Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2778,9 +2778,9 @@
     {
       "id": "s0991jwsqllx",
       "name": "Bot Management",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-12-02T09:33:01.317Z",
-      "updated_at": "2026-05-18T09:56:19.353Z",
+      "updated_at": "2026-06-03T22:31:58.645Z",
       "position": 20,
       "description": "Bot Management provides sophisticated bot protection for your domain. Customers can identify automated traffic, take appropriate action, and view detailed analytics within the dashboard. Bot Management also supports custom solutions via Workers and Logs.",
       "showcase": false,
@@ -3185,7 +3185,7 @@
       "name": "Luxembourg City, Luxembourg - (LUX)",
       "status": "operational",
       "created_at": "2018-04-06T09:40:03.991Z",
-      "updated_at": "2026-05-05T03:50:26.006Z",
+      "updated_at": "2026-06-03T23:10:52.394Z",
       "position": 25,
       "description": null,
       "showcase": false,
@@ -4250,7 +4250,7 @@
       "name": "Reykjavík, Iceland - (KEF)",
       "status": "operational",
       "created_at": "2018-03-08T15:52:43.033Z",
-      "updated_at": "2026-05-28T04:50:12.791Z",
+      "updated_at": "2026-06-03T23:21:04.197Z",
       "position": 39,
       "description": null,
       "showcase": false,
@@ -4625,7 +4625,7 @@
       "name": "Santa Venera, Malta - (MLA)",
       "status": "operational",
       "created_at": "2025-12-04T15:34:50.575Z",
-      "updated_at": "2026-05-21T13:54:07.102Z",
+      "updated_at": "2026-06-03T22:40:19.703Z",
       "position": 43,
       "description": null,
       "showcase": false,
@@ -4983,9 +4983,9 @@
     {
       "id": "x30v8nw2h4ck",
       "name": "Tbilisi, Georgia - (TBS)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2020-10-30T04:23:39.756Z",
-      "updated_at": "2026-06-03T21:55:33.940Z",
+      "updated_at": "2026-06-03T21:59:30.818Z",
       "position": 49,
       "description": null,
       "showcase": false,
@@ -7457,6 +7457,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "4fcyr2k53l61",
+      "name": "Issue with Bot Management Traffic Categorization For Verified Bots",
+      "status": "identified",
+      "created_at": "2026-06-03T22:31:58.605Z",
+      "updated_at": "2026-06-03T22:36:52.723Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/yc5r3cdb5j7k",
+      "started_at": "2026-06-03T22:31:58.594Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "h6h6nrqbqbcb",
+          "status": "identified",
+          "body": "The cause of this issue has been identified and a fix is being implemented.",
+          "incident_id": "4fcyr2k53l61",
+          "created_at": "2026-06-03T22:36:52.720Z",
+          "updated_at": "2026-06-03T22:36:52.720Z",
+          "display_at": "2026-06-03T22:36:52.720Z",
+          "affected_components": [
+            {
+              "code": "s0991jwsqllx",
+              "name": "Cloudflare Sites and Services - Bot Management",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "7lbnbtgq7knv",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with our Bot Management feature. Customers may observe a limited number of verified bots incorrectly identified as automated traffic.",
+          "incident_id": "4fcyr2k53l61",
+          "created_at": "2026-06-03T22:31:58.707Z",
+          "updated_at": "2026-06-03T22:31:58.707Z",
+          "display_at": "2026-06-03T22:31:58.707Z",
+          "affected_components": [
+            {
+              "code": "s0991jwsqllx",
+              "name": "Cloudflare Sites and Services - Bot Management",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "s0991jwsqllx",
+          "name": "Bot Management",
+          "status": "degraded_performance",
+          "created_at": "2022-12-02T09:33:01.317Z",
+          "updated_at": "2026-06-03T22:31:58.645Z",
+          "position": 20,
+          "description": "Bot Management provides sophisticated bot protection for your domain. Customers can identify automated traffic, take appropriate action, and view detailed analytics within the dashboard. Bot Management also supports custom solutions via Workers and Logs.",
+          "showcase": false,
+          "start_date": "2022-12-02",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "vjbxys0gy9bb",
       "name": "Network Performance Issues in TLV",
