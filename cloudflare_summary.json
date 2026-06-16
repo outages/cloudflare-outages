@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-06-16T10:25:32.276Z"
+    "updated_at": "2026-06-16T15:28:52.155Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -209,7 +209,7 @@
       "name": "Accra, Ghana - (ACC)",
       "status": "operational",
       "created_at": "2022-02-11T11:46:37.349Z",
-      "updated_at": "2026-06-12T01:54:06.036Z",
+      "updated_at": "2026-06-16T12:10:16.448Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -953,9 +953,9 @@
     {
       "id": "3l8dxwjtgpp6",
       "name": "Austin, TX, United States - (AUS)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2023-04-21T15:40:55.635Z",
-      "updated_at": "2026-06-16T10:25:32.271Z",
+      "updated_at": "2026-06-16T11:12:39.698Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1369,7 +1369,7 @@
       "name": "Doha, Qatar - (DOH)",
       "status": "operational",
       "created_at": "2015-06-18T15:21:54.451Z",
-      "updated_at": "2026-06-14T01:43:20.084Z",
+      "updated_at": "2026-06-16T12:20:44.693Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -1970,7 +1970,7 @@
       "name": "Kuwait City, Kuwait - (KWI)",
       "status": "under_maintenance",
       "created_at": "2015-07-06T11:24:13.241Z",
-      "updated_at": "2026-06-16T10:09:49.554Z",
+      "updated_at": "2026-06-16T15:08:05.299Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2328,9 +2328,9 @@
     {
       "id": "hf1csyqv3x7s",
       "name": "Dhaka, Bangladesh - (DAC)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2026-06-16T10:15:25.790Z",
+      "updated_at": "2026-06-16T10:36:01.294Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -4055,7 +4055,7 @@
       "name": "Kathmandu, Nepal - (KTM)",
       "status": "under_maintenance",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2026-06-15T23:18:40.786Z",
+      "updated_at": "2026-06-16T14:57:38.152Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -6335,7 +6335,7 @@
       "name": "Kochi, India - (COK)",
       "status": "operational",
       "created_at": "2023-01-23T16:01:04.045Z",
-      "updated_at": "2026-06-16T06:29:24.173Z",
+      "updated_at": "2026-06-16T13:18:18.488Z",
       "position": 86,
       "description": null,
       "showcase": false,
@@ -6768,9 +6768,9 @@
     {
       "id": "zvm7mqn92xzc",
       "name": "Workers AI",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-02-14T15:05:51.274Z",
-      "updated_at": "2026-05-19T22:09:16.632Z",
+      "updated_at": "2026-06-16T14:02:19.282Z",
       "position": 109,
       "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
       "showcase": false,
@@ -7456,35 +7456,54 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "8clsy339jv94",
-      "name": "PHL (Philadelphia) on 2026-06-16",
-      "status": "scheduled",
-      "created_at": "2026-06-15T11:50:25.449Z",
-      "updated_at": "2026-06-15T11:50:25.802Z",
+      "id": "ps1snnzz54pq",
+      "name": "Cloudflare is aware of and investigating Workers AI experiencing degraded availability in some models.",
+      "status": "investigating",
+      "created_at": "2026-06-16T14:02:19.241Z",
+      "updated_at": "2026-06-16T14:04:46.242Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/l790kn6zd1zs",
-      "started_at": "2026-06-15T11:50:25.417Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/hp348196t57r",
+      "started_at": "2026-06-16T14:02:19.230Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "g21f1pkb47f7",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in PHL (Philadelphia) datacenter between 2026-06-16 12:00 and 2026-06-17 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "8clsy339jv94",
-          "created_at": "2026-06-15T11:50:25.795Z",
-          "updated_at": "2026-06-15T11:50:25.795Z",
-          "display_at": "2026-06-15T11:50:25.795Z",
+          "id": "sp190n77mfpq",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating Workers AI experiencing degraded availability in some models.\n\nImpacted models:\n- @cf/moonshotai/kimi-k2.6\n- @cf/moonshotai/kimi-k2.7-code",
+          "incident_id": "ps1snnzz54pq",
+          "created_at": "2026-06-16T14:04:46.239Z",
+          "updated_at": "2026-06-16T14:04:46.239Z",
+          "display_at": "2026-06-16T14:04:46.239Z",
           "affected_components": [
             {
-              "code": "bss3xc7lbmgw",
-              "name": "North America - Philadelphia, United States - (PHL)",
-              "old_status": "under_maintenance",
-              "new_status": "operational"
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "t6537yvkh2pr",
+          "status": "investigating",
+          "body": "We are currently investigating this issue.",
+          "incident_id": "ps1snnzz54pq",
+          "created_at": "2026-06-16T14:02:19.338Z",
+          "updated_at": "2026-06-16T14:02:19.338Z",
+          "display_at": "2026-06-16T14:02:19.338Z",
+          "affected_components": [
+            {
+              "code": "zvm7mqn92xzc",
+              "name": "Cloudflare Sites and Services - Workers AI",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -7494,30 +7513,31 @@
       ],
       "components": [
         {
-          "id": "bss3xc7lbmgw",
-          "name": "Philadelphia, United States - (PHL)",
-          "status": "under_maintenance",
-          "created_at": "2019-08-09T14:40:06.536Z",
-          "updated_at": "2026-06-15T11:51:34.164Z",
-          "position": 39,
-          "description": null,
+          "id": "zvm7mqn92xzc",
+          "name": "Workers AI",
+          "status": "degraded_performance",
+          "created_at": "2024-02-14T15:05:51.274Z",
+          "updated_at": "2026-06-16T14:02:19.282Z",
+          "position": 109,
+          "description": "Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code – whether that be from Workers, Pages, or anywhere via REST API.",
           "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
+          "start_date": "2024-02-14",
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2026-06-16T12:00:00.000Z",
-      "scheduled_until": "2026-06-17T22:00:00.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "bpks2w6x90dg",
       "name": "NRT (Tokyo) on 2026-06-16",
       "status": "scheduled",
       "created_at": "2026-06-16T08:24:36.637Z",
-      "updated_at": "2026-06-16T08:24:36.897Z",
+      "updated_at": "2026-06-16T15:00:16.877Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7525,6 +7545,19 @@
       "started_at": "2026-06-16T08:24:36.612Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "cy6kfnpkphyb",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "bpks2w6x90dg",
+          "created_at": "2026-06-16T15:00:16.588Z",
+          "updated_at": "2026-06-16T15:00:16.588Z",
+          "display_at": "2026-06-16T15:00:16.588Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "f6jnl85ll1dr",
           "status": "scheduled",
@@ -8146,6 +8179,86 @@
       "scheduled_until": "2026-06-22T13:00:00.000Z"
     },
     {
+      "id": "8clsy339jv94",
+      "name": "PHL (Philadelphia) on 2026-06-16",
+      "status": "in_progress",
+      "created_at": "2026-06-15T11:50:25.449Z",
+      "updated_at": "2026-06-16T12:00:07.485Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/l790kn6zd1zs",
+      "started_at": "2026-06-15T11:50:25.417Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "wn973m8bjq44",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "8clsy339jv94",
+          "created_at": "2026-06-16T12:00:07.478Z",
+          "updated_at": "2026-06-16T12:00:07.478Z",
+          "display_at": "2026-06-16T12:00:07.478Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3tx1gxrcf07x",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "8clsy339jv94",
+          "created_at": "2026-06-16T11:00:27.136Z",
+          "updated_at": "2026-06-16T11:00:27.136Z",
+          "display_at": "2026-06-16T11:00:27.136Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "g21f1pkb47f7",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in PHL (Philadelphia) datacenter between 2026-06-16 12:00 and 2026-06-17 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "8clsy339jv94",
+          "created_at": "2026-06-15T11:50:25.795Z",
+          "updated_at": "2026-06-15T11:50:25.795Z",
+          "display_at": "2026-06-15T11:50:25.795Z",
+          "affected_components": [
+            {
+              "code": "bss3xc7lbmgw",
+              "name": "North America - Philadelphia, United States - (PHL)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bss3xc7lbmgw",
+          "name": "Philadelphia, United States - (PHL)",
+          "status": "under_maintenance",
+          "created_at": "2019-08-09T14:40:06.536Z",
+          "updated_at": "2026-06-15T11:51:34.164Z",
+          "position": 39,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-06-16T12:00:00.000Z",
+      "scheduled_until": "2026-06-17T22:00:00.000Z"
+    },
+    {
       "id": "m50b6rrm7d8n",
       "name": "BOG (Bogotá) on 2026-06-16",
       "status": "in_progress",
@@ -8224,166 +8337,6 @@
       ],
       "scheduled_for": "2026-06-16T10:00:00.000Z",
       "scheduled_until": "2026-06-16T18:00:00.000Z"
-    },
-    {
-      "id": "y1v29qkh5zxv",
-      "name": "SJC (San Jose) on 2026-06-16",
-      "status": "in_progress",
-      "created_at": "2026-06-11T10:12:59.916Z",
-      "updated_at": "2026-06-16T08:00:07.832Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/my8jlkvjslk7",
-      "started_at": "2026-06-11T10:12:59.903Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "sx6zfr8m8gbr",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "y1v29qkh5zxv",
-          "created_at": "2026-06-16T08:00:07.818Z",
-          "updated_at": "2026-06-16T08:00:07.818Z",
-          "display_at": "2026-06-16T08:00:07.818Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "dbzf2jfv0h69",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "y1v29qkh5zxv",
-          "created_at": "2026-06-16T07:01:17.861Z",
-          "updated_at": "2026-06-16T07:01:17.861Z",
-          "display_at": "2026-06-16T07:01:17.861Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "3tl0kcg8fpdy",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SJC (San Jose) datacenter on 2026-06-16 between 08:00 and 14:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "y1v29qkh5zxv",
-          "created_at": "2026-06-11T10:13:00.077Z",
-          "updated_at": "2026-06-11T10:13:00.077Z",
-          "display_at": "2026-06-11T10:13:00.077Z",
-          "affected_components": [
-            {
-              "code": "4xvd68d7k70c",
-              "name": "North America - San Jose, CA, United States - (SJC)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "4xvd68d7k70c",
-          "name": "San Jose, CA, United States - (SJC)",
-          "status": "operational",
-          "created_at": "2014-10-16T04:33:22.992Z",
-          "updated_at": "2026-02-10T19:37:00.167Z",
-          "position": 50,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-06-16T08:00:00.000Z",
-      "scheduled_until": "2026-06-16T14:30:00.000Z"
-    },
-    {
-      "id": "dk19dkwd29l4",
-      "name": "YUL (Montréal) on 2026-06-16",
-      "status": "in_progress",
-      "created_at": "2026-06-11T22:44:57.182Z",
-      "updated_at": "2026-06-16T04:00:07.587Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/8t0lxt125g4b",
-      "started_at": "2026-06-11T22:44:57.169Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "qkvn79kz1p1s",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "dk19dkwd29l4",
-          "created_at": "2026-06-16T04:00:07.577Z",
-          "updated_at": "2026-06-16T04:00:07.577Z",
-          "display_at": "2026-06-16T04:00:07.577Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "mgpzj8rvtm06",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "dk19dkwd29l4",
-          "created_at": "2026-06-16T03:00:32.679Z",
-          "updated_at": "2026-06-16T03:00:32.679Z",
-          "display_at": "2026-06-16T03:00:32.679Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "86fsfxk1ts3h",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in YUL (Montréal) datacenter on 2026-06-16 between 04:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "dk19dkwd29l4",
-          "created_at": "2026-06-11T22:44:57.294Z",
-          "updated_at": "2026-06-11T22:44:57.294Z",
-          "display_at": "2026-06-11T22:44:57.294Z",
-          "affected_components": [
-            {
-              "code": "1j6fbpfd4xrn",
-              "name": "North America - Montréal, QC, Canada - (YUL)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "1j6fbpfd4xrn",
-          "name": "Montréal, QC, Canada - (YUL)",
-          "status": "operational",
-          "created_at": "2015-12-08T11:48:10.247Z",
-          "updated_at": "2026-06-16T06:45:11.845Z",
-          "position": 32,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-06-16T04:00:00.000Z",
-      "scheduled_until": "2026-06-16T12:00:00.000Z"
     }
   ],
   "status": {
