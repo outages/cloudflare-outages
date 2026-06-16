@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-06-16T15:28:52.155Z"
+    "updated_at": "2026-06-16T18:51:26.550Z"
   },
   "components": [
     {
@@ -1970,7 +1970,7 @@
       "name": "Kuwait City, Kuwait - (KWI)",
       "status": "under_maintenance",
       "created_at": "2015-07-06T11:24:13.241Z",
-      "updated_at": "2026-06-16T15:08:05.299Z",
+      "updated_at": "2026-06-16T18:09:36.290Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2193,9 +2193,9 @@
     {
       "id": "ll1x88wwz4fq",
       "name": "Billing",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2016-05-09T21:12:38.309Z",
-      "updated_at": "2026-06-12T11:50:59.450Z",
+      "updated_at": "2026-06-16T15:53:20.190Z",
       "position": 15,
       "description": "Billing and payment service",
       "showcase": false,
@@ -2328,9 +2328,9 @@
     {
       "id": "hf1csyqv3x7s",
       "name": "Dhaka, Bangladesh - (DAC)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2026-06-16T10:36:01.294Z",
+      "updated_at": "2026-06-16T18:51:26.542Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -3663,9 +3663,9 @@
     {
       "id": "skqbwdvp70c6",
       "name": "Kampala, Uganda - (EBB)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-07-17T09:56:48.732Z",
-      "updated_at": "2026-06-15T14:01:18.995Z",
+      "updated_at": "2026-06-16T16:47:24.815Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -4038,9 +4038,9 @@
     {
       "id": "7rvrsd9g0f1v",
       "name": "Rio de Janeiro, Brazil - (GIG)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2017-06-22T22:19:02.210Z",
-      "updated_at": "2026-06-15T20:26:11.993Z",
+      "updated_at": "2026-06-16T17:13:34.122Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -4445,7 +4445,7 @@
       "name": "São José do Rio Preto, Brazil - (SJP)",
       "status": "operational",
       "created_at": "2021-09-21T17:42:47.447Z",
-      "updated_at": "2026-06-12T01:48:48.566Z",
+      "updated_at": "2026-06-16T17:08:15.683Z",
       "position": 41,
       "description": null,
       "showcase": false,
@@ -4848,9 +4848,9 @@
     {
       "id": "62rk8nsdbjg1",
       "name": "Stuttgart, Germany   - (STR)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-01-05T17:31:45.013Z",
-      "updated_at": "2026-06-16T08:14:26.561Z",
+      "updated_at": "2026-06-16T16:10:50.156Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -5898,9 +5898,9 @@
     {
       "id": "rmjk2n758yzc",
       "name": "Tokyo, Japan - (NRT)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-27T21:42:49.579Z",
-      "updated_at": "2026-06-08T23:15:38.756Z",
+      "updated_at": "2026-06-16T16:16:06.876Z",
       "position": 65,
       "description": null,
       "showcase": false,
@@ -7458,6 +7458,79 @@
   ],
   "incidents": [
     {
+      "id": "pg2kpy6vkd71",
+      "name": "We are investigating an issue where customers see paid invoices as unpaid.",
+      "status": "identified",
+      "created_at": "2026-06-16T15:53:20.145Z",
+      "updated_at": "2026-06-16T16:32:29.663Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/z91llst0mddd",
+      "started_at": "2026-06-16T15:53:20.133Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "jsck6jymwjh7",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "pg2kpy6vkd71",
+          "created_at": "2026-06-16T16:32:29.660Z",
+          "updated_at": "2026-06-16T16:32:29.660Z",
+          "display_at": "2026-06-16T16:32:29.660Z",
+          "affected_components": [
+            {
+              "code": "ll1x88wwz4fq",
+              "name": "Cloudflare Sites and Services - Billing",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "n9rp11w6wfb8",
+          "status": "investigating",
+          "body": "Customers may not see invoice payment status accurately reflected in the Cloudflare UI for payments made since June 11.\n\nImpacted customers will see paid Invoices shown as Unpaid via the Cloudflare Dashboard.",
+          "incident_id": "pg2kpy6vkd71",
+          "created_at": "2026-06-16T15:53:20.256Z",
+          "updated_at": "2026-06-16T15:53:20.256Z",
+          "display_at": "2026-06-16T15:53:20.256Z",
+          "affected_components": [
+            {
+              "code": "ll1x88wwz4fq",
+              "name": "Cloudflare Sites and Services - Billing",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ll1x88wwz4fq",
+          "name": "Billing",
+          "status": "degraded_performance",
+          "created_at": "2016-05-09T21:12:38.309Z",
+          "updated_at": "2026-06-16T15:53:20.190Z",
+          "position": 15,
+          "description": "Billing and payment service",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "ps1snnzz54pq",
       "name": "Cloudflare is aware of and investigating Workers AI experiencing degraded availability in some models.",
       "status": "investigating",
@@ -7533,73 +7606,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "bpks2w6x90dg",
-      "name": "NRT (Tokyo) on 2026-06-16",
-      "status": "scheduled",
-      "created_at": "2026-06-16T08:24:36.637Z",
-      "updated_at": "2026-06-16T15:00:16.877Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/wh3brj2f2x9c",
-      "started_at": "2026-06-16T08:24:36.612Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "cy6kfnpkphyb",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "bpks2w6x90dg",
-          "created_at": "2026-06-16T15:00:16.588Z",
-          "updated_at": "2026-06-16T15:00:16.588Z",
-          "display_at": "2026-06-16T15:00:16.588Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "f6jnl85ll1dr",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in NRT (Tokyo) datacenter between 2026-06-16 16:00 and 2026-06-17 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "bpks2w6x90dg",
-          "created_at": "2026-06-16T08:24:36.892Z",
-          "updated_at": "2026-06-16T08:24:36.892Z",
-          "display_at": "2026-06-16T08:24:36.892Z",
-          "affected_components": [
-            {
-              "code": "rmjk2n758yzc",
-              "name": "Asia - Tokyo, Japan - (NRT)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rmjk2n758yzc",
-          "name": "Tokyo, Japan - (NRT)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:42:49.579Z",
-          "updated_at": "2026-06-08T23:15:38.756Z",
-          "position": 65,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-06-16T16:00:00.000Z",
-      "scheduled_until": "2026-06-17T03:00:00.000Z"
-    },
-    {
       "id": "6n7lddf6xyjt",
       "name": "LHR (London) on 2026-06-17",
       "status": "scheduled",
@@ -7652,6 +7658,60 @@
       ],
       "scheduled_for": "2026-06-17T00:00:00.000Z",
       "scheduled_until": "2026-06-17T03:00:00.000Z"
+    },
+    {
+      "id": "4ssz4cqwlwnx",
+      "name": "POA (Porto Alegre) on 2026-06-17",
+      "status": "scheduled",
+      "created_at": "2026-06-16T15:40:58.584Z",
+      "updated_at": "2026-06-16T15:40:58.740Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/dhkth52wp2pf",
+      "started_at": "2026-06-16T15:40:58.567Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "py0qsbxh3hlj",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in POA (Porto Alegre) datacenter on 2026-06-17 between 08:00 and 18:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "4ssz4cqwlwnx",
+          "created_at": "2026-06-16T15:40:58.734Z",
+          "updated_at": "2026-06-16T15:40:58.734Z",
+          "display_at": "2026-06-16T15:40:58.734Z",
+          "affected_components": [
+            {
+              "code": "7k05x28lndzb",
+              "name": "Latin America & the Caribbean - Porto Alegre, Brazil - (POA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7k05x28lndzb",
+          "name": "Porto Alegre, Brazil - (POA)",
+          "status": "operational",
+          "created_at": "2019-04-01T16:32:01.138Z",
+          "updated_at": "2026-06-16T03:20:28.523Z",
+          "position": 31,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-06-17T08:00:00.000Z",
+      "scheduled_until": "2026-06-17T18:00:00.000Z"
     },
     {
       "id": "fw50f9w0q4d3",
@@ -8020,6 +8080,60 @@
       "scheduled_until": "2026-06-18T13:00:00.000Z"
     },
     {
+      "id": "3d821rsj2ycw",
+      "name": "TXL (Berlin) on 2026-06-19",
+      "status": "scheduled",
+      "created_at": "2026-06-16T15:41:00.028Z",
+      "updated_at": "2026-06-16T15:41:00.235Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/2nn5h4x1k3y3",
+      "started_at": "2026-06-16T15:40:59.999Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "7dj25rtmr1r5",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in TXL (Berlin) datacenter on 2026-06-19 between 00:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "3d821rsj2ycw",
+          "created_at": "2026-06-16T15:41:00.227Z",
+          "updated_at": "2026-06-16T15:41:00.227Z",
+          "display_at": "2026-06-16T15:41:00.227Z",
+          "affected_components": [
+            {
+              "code": "jvwstnc00sqn",
+              "name": "Europe - Berlin, Germany - (TXL)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jvwstnc00sqn",
+          "name": "Berlin, Germany - (TXL)",
+          "status": "operational",
+          "created_at": "2015-08-31T01:13:39.303Z",
+          "updated_at": "2026-06-12T03:53:38.949Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-06-19T00:00:00.000Z",
+      "scheduled_until": "2026-06-19T05:00:00.000Z"
+    },
+    {
       "id": "49xmtzsgk6cc",
       "name": "Scheduled Workers Platform Configuration Maintenance",
       "status": "scheduled",
@@ -8179,6 +8293,86 @@
       "scheduled_until": "2026-06-22T13:00:00.000Z"
     },
     {
+      "id": "bpks2w6x90dg",
+      "name": "NRT (Tokyo) on 2026-06-16",
+      "status": "in_progress",
+      "created_at": "2026-06-16T08:24:36.637Z",
+      "updated_at": "2026-06-16T16:00:08.306Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/wh3brj2f2x9c",
+      "started_at": "2026-06-16T08:24:36.612Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "jrmm4m0ct5yg",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "bpks2w6x90dg",
+          "created_at": "2026-06-16T16:00:08.274Z",
+          "updated_at": "2026-06-16T16:00:08.274Z",
+          "display_at": "2026-06-16T16:00:08.274Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "cy6kfnpkphyb",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "bpks2w6x90dg",
+          "created_at": "2026-06-16T15:00:16.588Z",
+          "updated_at": "2026-06-16T15:00:16.588Z",
+          "display_at": "2026-06-16T15:00:16.588Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "f6jnl85ll1dr",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in NRT (Tokyo) datacenter between 2026-06-16 16:00 and 2026-06-17 03:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "bpks2w6x90dg",
+          "created_at": "2026-06-16T08:24:36.892Z",
+          "updated_at": "2026-06-16T08:24:36.892Z",
+          "display_at": "2026-06-16T08:24:36.892Z",
+          "affected_components": [
+            {
+              "code": "rmjk2n758yzc",
+              "name": "Asia - Tokyo, Japan - (NRT)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rmjk2n758yzc",
+          "name": "Tokyo, Japan - (NRT)",
+          "status": "under_maintenance",
+          "created_at": "2014-10-27T21:42:49.579Z",
+          "updated_at": "2026-06-16T16:16:06.876Z",
+          "position": 65,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-06-16T16:00:00.000Z",
+      "scheduled_until": "2026-06-17T03:00:00.000Z"
+    },
+    {
       "id": "8clsy339jv94",
       "name": "PHL (Philadelphia) on 2026-06-16",
       "status": "in_progress",
@@ -8257,86 +8451,6 @@
       ],
       "scheduled_for": "2026-06-16T12:00:00.000Z",
       "scheduled_until": "2026-06-17T22:00:00.000Z"
-    },
-    {
-      "id": "m50b6rrm7d8n",
-      "name": "BOG (Bogotá) on 2026-06-16",
-      "status": "in_progress",
-      "created_at": "2026-06-15T19:28:15.407Z",
-      "updated_at": "2026-06-16T10:00:08.402Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/jh0yscy6v7w9",
-      "started_at": "2026-06-15T19:28:15.391Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "zkbzvtt3s0c7",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "m50b6rrm7d8n",
-          "created_at": "2026-06-16T10:00:08.373Z",
-          "updated_at": "2026-06-16T10:00:08.373Z",
-          "display_at": "2026-06-16T10:00:08.373Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "4km4kw14hzbk",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "m50b6rrm7d8n",
-          "created_at": "2026-06-16T09:00:09.391Z",
-          "updated_at": "2026-06-16T09:00:09.391Z",
-          "display_at": "2026-06-16T09:00:09.391Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "rqbq8bbr6rf0",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BOG (Bogotá) datacenter on 2026-06-16 between 10:00 and 18:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "m50b6rrm7d8n",
-          "created_at": "2026-06-15T19:28:15.635Z",
-          "updated_at": "2026-06-15T19:28:15.635Z",
-          "display_at": "2026-06-15T19:28:15.635Z",
-          "affected_components": [
-            {
-              "code": "171wlzvlxttk",
-              "name": "Latin America & the Caribbean - Bogotá, Colombia - (BOG)",
-              "old_status": "under_maintenance",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "171wlzvlxttk",
-          "name": "Bogotá, Colombia - (BOG)",
-          "status": "under_maintenance",
-          "created_at": "2018-03-28T06:25:42.210Z",
-          "updated_at": "2026-06-16T08:56:24.052Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "91blz4ztt7dm",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-06-16T10:00:00.000Z",
-      "scheduled_until": "2026-06-16T18:00:00.000Z"
     }
   ],
   "status": {
