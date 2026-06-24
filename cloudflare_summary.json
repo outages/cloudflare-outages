@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-06-24T15:06:21.105Z"
+    "updated_at": "2026-06-24T16:54:35.610Z"
   },
   "components": [
     {
@@ -1248,7 +1248,7 @@
       "name": "Dammam, Saudi Arabia - (DMM)",
       "status": "under_maintenance",
       "created_at": "2021-07-30T11:39:33.707Z",
-      "updated_at": "2026-06-23T03:16:57.904Z",
+      "updated_at": "2026-06-24T16:44:13.844Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -2013,9 +2013,9 @@
     {
       "id": "1xnjfx08wn5v",
       "name": "Córdoba, Argentina - (COR)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-05-31T15:34:24.032Z",
-      "updated_at": "2026-06-24T15:06:21.097Z",
+      "updated_at": "2026-06-24T16:13:03.711Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2328,9 +2328,9 @@
     {
       "id": "hf1csyqv3x7s",
       "name": "Dhaka, Bangladesh - (DAC)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-12-17T22:56:25.827Z",
-      "updated_at": "2026-06-24T14:08:43.035Z",
+      "updated_at": "2026-06-24T15:26:28.706Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2868,9 +2868,9 @@
     {
       "id": "czwk809chdjt",
       "name": "Ouagadougou, Burkina Faso   - (OUA)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-09-02T23:41:26.128Z",
-      "updated_at": "2026-06-24T13:37:35.549Z",
+      "updated_at": "2026-06-24T15:26:28.135Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -3558,9 +3558,9 @@
     {
       "id": "nxdg2bbkf525",
       "name": "Abidjan, Ivory Coast - (ABJ)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2024-06-20T16:45:08.676Z",
-      "updated_at": "2026-06-23T16:07:26.307Z",
+      "updated_at": "2026-06-24T16:13:04.235Z",
       "position": 29,
       "description": null,
       "showcase": false,
@@ -4053,9 +4053,9 @@
     {
       "id": "gw1cztbpft9b",
       "name": "Kathmandu, Nepal - (KTM)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2026-06-24T14:29:26.582Z",
+      "updated_at": "2026-06-24T16:54:35.606Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -6003,9 +6003,9 @@
     {
       "id": "8wk7c6y5dgfc",
       "name": "Mesh",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2026-04-22T17:29:56.202Z",
-      "updated_at": "2026-06-18T13:00:08.560Z",
+      "updated_at": "2026-06-24T15:16:41.547Z",
       "position": 69,
       "description": null,
       "showcase": false,
@@ -6588,9 +6588,9 @@
     {
       "id": "y98zlwj1d7zh",
       "name": "Tunnel",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:28:05.466Z",
-      "updated_at": "2026-06-15T13:00:11.515Z",
+      "updated_at": "2026-06-24T15:16:41.565Z",
       "position": 99,
       "description": "Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address",
       "showcase": false,
@@ -7457,6 +7457,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "nz2q9yl3lf3m",
+      "name": "Issues with granular roles for Cloudflare Tunnel and Mesh",
+      "status": "investigating",
+      "created_at": "2026-06-24T15:16:41.509Z",
+      "updated_at": "2026-06-24T15:16:41.618Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/05pyf0430db2",
+      "started_at": "2026-06-24T15:16:41.498Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "003lkv80cvlx",
+          "status": "investigating",
+          "body": "Cloudflare is investigating permission issues with resource-based granular roles where a subset of users are not being granted access to their scoped Cloudflare Tunnel and Cloudflare Mesh resources.\n\nThis specifically impacts users attempting to view, configure, or manage individual Tunnel instances or Mesh nodes via the Cloudflare Dashboard or API when relying on resource-scoped policies. All account-level roles, global permissions, and active tunnel and mesh data traffic remain unaffected.\n\nOur engineering team is actively working on resolving the root cause, and we will provide further updates as soon as more information is available.",
+          "incident_id": "nz2q9yl3lf3m",
+          "created_at": "2026-06-24T15:16:41.616Z",
+          "updated_at": "2026-06-24T15:16:41.616Z",
+          "display_at": "2026-06-24T15:16:41.616Z",
+          "affected_components": [
+            {
+              "code": "8wk7c6y5dgfc",
+              "name": "Cloudflare Sites and Services - Mesh",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "y98zlwj1d7zh",
+              "name": "Cloudflare Sites and Services - Tunnel",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "8wk7c6y5dgfc",
+          "name": "Mesh",
+          "status": "degraded_performance",
+          "created_at": "2026-04-22T17:29:56.202Z",
+          "updated_at": "2026-06-24T15:16:41.547Z",
+          "position": 69,
+          "description": null,
+          "showcase": false,
+          "start_date": "2026-04-22",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "y98zlwj1d7zh",
+          "name": "Tunnel",
+          "status": "degraded_performance",
+          "created_at": "2019-01-24T16:28:05.466Z",
+          "updated_at": "2026-06-24T15:16:41.565Z",
+          "position": 99,
+          "description": "Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "ps1snnzz54pq",
       "name": "Workers AI experiencing degraded availability in some models",
