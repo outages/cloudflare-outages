@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-07-03T21:42:21.290Z"
+    "updated_at": "2026-07-03T22:29:01.673Z"
   },
   "components": [
     {
@@ -1400,7 +1400,7 @@
       "name": "Dar Es Salaam, Tanzania - (DAR)",
       "status": "under_maintenance",
       "created_at": "2019-06-10T05:19:20.533Z",
-      "updated_at": "2026-07-03T21:31:58.341Z",
+      "updated_at": "2026-07-03T22:29:01.667Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -1954,9 +1954,9 @@
     {
       "id": "mvb027gs2881",
       "name": "Kuwait City, Kuwait - (KWI)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2015-07-06T11:24:13.241Z",
-      "updated_at": "2026-07-03T20:40:12.040Z",
+      "updated_at": "2026-07-03T22:13:26.361Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -5284,9 +5284,9 @@
     {
       "id": "vn1h2pfctsvn",
       "name": "Health Checks",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2024-01-19T14:38:24.595Z",
-      "updated_at": "2026-07-03T18:27:09.484Z",
+      "updated_at": "2026-07-03T21:56:52.971Z",
       "position": 53,
       "description": "A Health Check is a service that runs on Cloudflare’s edge network to monitor whether an origin server is online.",
       "showcase": false,
@@ -5494,9 +5494,9 @@
     {
       "id": "ldfjdvf7hr27",
       "name": "Tampa, FL, United States - (TPA)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-10-19T10:21:02.961Z",
-      "updated_at": "2026-07-03T19:01:36.418Z",
+      "updated_at": "2026-07-03T21:49:13.265Z",
       "position": 56,
       "description": null,
       "showcase": false,
@@ -5674,9 +5674,9 @@
     {
       "id": "8sn2w5kyxfnp",
       "name": "Load Balancing and Monitoring",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2019-01-24T16:54:07.994Z",
-      "updated_at": "2026-07-03T18:27:09.507Z",
+      "updated_at": "2026-07-03T21:56:52.992Z",
       "position": 59,
       "description": "Load balancing and failover service, including origin server monitoring",
       "showcase": false,
@@ -7476,16 +7476,56 @@
     {
       "id": "b05w8s2wh109",
       "name": "Free WARP and WARP+ new registrations",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2026-07-03T21:18:09.788Z",
-      "updated_at": "2026-07-03T21:18:09.894Z",
-      "monitoring_at": null,
+      "updated_at": "2026-07-03T21:57:23.822Z",
+      "monitoring_at": "2026-07-03T21:57:23.806Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/gwzq5pfrg8d6",
       "started_at": "2026-07-03T21:18:09.777Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "7qscrcjzwk6l",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "b05w8s2wh109",
+          "created_at": "2026-07-03T21:57:23.806Z",
+          "updated_at": "2026-07-03T21:57:23.806Z",
+          "display_at": "2026-07-03T21:57:23.806Z",
+          "affected_components": [
+            {
+              "code": "bjvy4v384csg",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "2r0jvmnchcnr",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "b05w8s2wh109",
+          "created_at": "2026-07-03T21:46:30.509Z",
+          "updated_at": "2026-07-03T21:46:30.509Z",
+          "display_at": "2026-07-03T21:46:30.509Z",
+          "affected_components": [
+            {
+              "code": "bjvy4v384csg",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "7kh8rzk9l72j",
           "status": "investigating",
@@ -7518,106 +7558,6 @@
           "description": null,
           "showcase": false,
           "start_date": "2026-07-03",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "vbpg34cx846v",
-      "name": "Loadbalancing and Standalone Healthcheck Services for FedRAMP customers are degraded",
-      "status": "identified",
-      "created_at": "2026-07-03T18:27:09.440Z",
-      "updated_at": "2026-07-03T20:43:10.524Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/vvfjhx32vxkj",
-      "started_at": "2026-07-03T18:27:09.427Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "49ytvpk8lcyx",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "vbpg34cx846v",
-          "created_at": "2026-07-03T20:43:10.520Z",
-          "updated_at": "2026-07-03T20:43:10.520Z",
-          "display_at": "2026-07-03T20:43:10.520Z",
-          "affected_components": [
-            {
-              "code": "vn1h2pfctsvn",
-              "name": "Cloudflare Sites and Services - Health Checks",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "8sn2w5kyxfnp",
-              "name": "Cloudflare Sites and Services - Load Balancing and Monitoring",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "hckkm1jw7cr0",
-          "status": "investigating",
-          "body": "FedRAMP customers may experience delays in receiving notification emails with health status updates for their origin servers.",
-          "incident_id": "vbpg34cx846v",
-          "created_at": "2026-07-03T18:27:09.568Z",
-          "updated_at": "2026-07-03T18:27:09.568Z",
-          "display_at": "2026-07-03T18:27:09.568Z",
-          "affected_components": [
-            {
-              "code": "vn1h2pfctsvn",
-              "name": "Cloudflare Sites and Services - Health Checks",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "8sn2w5kyxfnp",
-              "name": "Cloudflare Sites and Services - Load Balancing and Monitoring",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "vn1h2pfctsvn",
-          "name": "Health Checks",
-          "status": "degraded_performance",
-          "created_at": "2024-01-19T14:38:24.595Z",
-          "updated_at": "2026-07-03T18:27:09.484Z",
-          "position": 53,
-          "description": "A Health Check is a service that runs on Cloudflare’s edge network to monitor whether an origin server is online.",
-          "showcase": false,
-          "start_date": "2024-01-19",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "8sn2w5kyxfnp",
-          "name": "Load Balancing and Monitoring",
-          "status": "degraded_performance",
-          "created_at": "2019-01-24T16:54:07.994Z",
-          "updated_at": "2026-07-03T18:27:09.507Z",
-          "position": 59,
-          "description": "Load balancing and failover service, including origin server monitoring",
-          "showcase": false,
-          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
