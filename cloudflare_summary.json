@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-07-07T14:31:38.418Z"
+    "updated_at": "2026-07-07T16:39:26.560Z"
   },
   "components": [
     {
@@ -500,9 +500,9 @@
     {
       "id": "qppslrvlmbvt",
       "name": "Asunción, Paraguay - (ASU)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2019-06-05T14:07:10.591Z",
-      "updated_at": "2026-07-07T13:00:29.336Z",
+      "updated_at": "2026-07-07T15:45:58.230Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -868,7 +868,7 @@
       "name": "Bangkok, Thailand - (BKK)",
       "status": "under_maintenance",
       "created_at": "2016-04-21T05:37:43.134Z",
-      "updated_at": "2026-07-06T17:40:26.498Z",
+      "updated_at": "2026-07-07T15:51:11.122Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1520,9 +1520,9 @@
     {
       "id": "g2j3xffvhts8",
       "name": "Djibouti City, Djibouti - (JIB)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2017-04-10T09:38:48.957Z",
-      "updated_at": "2026-07-02T08:52:32.711Z",
+      "updated_at": "2026-07-07T16:28:18.794Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -2285,9 +2285,9 @@
     {
       "id": "fs644clrg00l",
       "name": "Luanda, Angola - (LAD)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2016-09-19T04:46:37.401Z",
-      "updated_at": "2026-07-07T14:31:37.902Z",
+      "updated_at": "2026-07-07T16:17:03.239Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -4552,7 +4552,7 @@
       "name": "São Paulo, Brazil - (GRU)",
       "status": "under_maintenance",
       "created_at": "2014-10-27T21:45:14.885Z",
-      "updated_at": "2026-07-03T09:37:03.036Z",
+      "updated_at": "2026-07-07T16:27:22.147Z",
       "position": 43,
       "description": null,
       "showcase": false,
@@ -5497,7 +5497,7 @@
       "name": "Tampa, FL, United States - (TPA)",
       "status": "operational",
       "created_at": "2023-10-19T10:21:02.961Z",
-      "updated_at": "2026-07-07T02:52:59.913Z",
+      "updated_at": "2026-07-07T16:22:10.668Z",
       "position": 56,
       "description": null,
       "showcase": false,
@@ -6305,9 +6305,9 @@
     {
       "id": "kn2xkt469vyh",
       "name": "Registrar",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-07-31T14:19:17.585Z",
-      "updated_at": "2026-07-07T10:21:41.112Z",
+      "updated_at": "2026-07-07T15:41:53.669Z",
       "position": 85,
       "description": "Cloudflare Registrar securely registers and manages customer domain names",
       "showcase": false,
@@ -7490,6 +7490,59 @@
   ],
   "incidents": [
     {
+      "id": "df7h7wy1ss1n",
+      "name": "Cloudflare Registrar operations issues",
+      "status": "investigating",
+      "created_at": "2026-07-07T15:41:53.628Z",
+      "updated_at": "2026-07-07T15:41:53.732Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/r813kq35f1tq",
+      "started_at": "2026-07-07T15:41:53.618Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "6b0q9l3xbddz",
+          "status": "investigating",
+          "body": "Cloudflare is aware of and investigating an issue with Cloudflare Registrar that may prevent customers from registering, renewing, updating and transferring domains.\n\nFurther detail will be provided as more information becomes available.",
+          "incident_id": "df7h7wy1ss1n",
+          "created_at": "2026-07-07T15:41:53.729Z",
+          "updated_at": "2026-07-07T15:41:53.729Z",
+          "display_at": "2026-07-07T15:41:53.729Z",
+          "affected_components": [
+            {
+              "code": "kn2xkt469vyh",
+              "name": "Cloudflare Sites and Services - Registrar",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kn2xkt469vyh",
+          "name": "Registrar",
+          "status": "degraded_performance",
+          "created_at": "2019-07-31T14:19:17.585Z",
+          "updated_at": "2026-07-07T15:41:53.669Z",
+          "position": 85,
+          "description": "Cloudflare Registrar securely registers and manages customer domain names",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "ps1snnzz54pq",
       "name": "Workers AI experiencing degraded availability in some models",
       "status": "investigating",
@@ -7799,6 +7852,80 @@
       ],
       "scheduled_for": "2026-07-08T02:00:00.000Z",
       "scheduled_until": "2026-07-08T07:00:00.000Z"
+    },
+    {
+      "id": "p6vg33hrxtsm",
+      "name": "GRU (São Paulo) on 2026-07-08",
+      "status": "scheduled",
+      "created_at": "2026-07-07T16:22:54.866Z",
+      "updated_at": "2026-07-07T16:26:54.788Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/8j2685hm5zy7",
+      "started_at": "2026-07-07T16:22:54.852Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "tzjc3j07j8wk",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in GRU (São Paulo) datacenter on 2026-07-08 between 05:00 and 09:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "p6vg33hrxtsm",
+          "created_at": "2026-07-07T16:26:54.782Z",
+          "updated_at": "2026-07-07T16:26:54.782Z",
+          "display_at": "2026-07-07T16:26:54.782Z",
+          "affected_components": [
+            {
+              "code": "73mbn78m0yzm",
+              "name": "Latin America & the Caribbean - São Paulo, Brazil - (GRU)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "cw160b7mmw2s",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in GRU (São Paulo) datacenter on 2026-07-08 between 02:00 and 06:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "p6vg33hrxtsm",
+          "created_at": "2026-07-07T16:22:55.029Z",
+          "updated_at": "2026-07-07T16:22:55.029Z",
+          "display_at": "2026-07-07T16:22:55.029Z",
+          "affected_components": [
+            {
+              "code": "73mbn78m0yzm",
+              "name": "Latin America & the Caribbean - São Paulo, Brazil - (GRU)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "73mbn78m0yzm",
+          "name": "São Paulo, Brazil - (GRU)",
+          "status": "under_maintenance",
+          "created_at": "2014-10-27T21:45:14.885Z",
+          "updated_at": "2026-07-07T16:27:22.147Z",
+          "position": 43,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-07-08T05:00:00.000Z",
+      "scheduled_until": "2026-07-08T09:00:00.000Z"
     },
     {
       "id": "zgnyn9ympp0g",
