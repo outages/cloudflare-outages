@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-07-12T21:03:56.960Z"
+    "updated_at": "2026-07-12T22:05:08.482Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -1264,9 +1264,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2026-07-07T10:22:08.853Z",
+      "updated_at": "2026-07-12T21:40:35.814Z",
       "position": 8,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -4146,9 +4146,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2026-07-12T13:53:33.327Z",
+      "updated_at": "2026-07-12T21:40:35.838Z",
       "position": 38,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -7505,6 +7505,106 @@
     }
   ],
   "incidents": [
+    {
+      "id": "cbtmdg3gyx4z",
+      "name": "Cloudflare dash is unavailable",
+      "status": "identified",
+      "created_at": "2026-07-12T21:40:35.766Z",
+      "updated_at": "2026-07-12T22:05:08.473Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/962y0j35fzq5",
+      "started_at": "2026-07-12T21:40:35.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "rbl7pjptnqx8",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "cbtmdg3gyx4z",
+          "created_at": "2026-07-12T22:05:08.470Z",
+          "updated_at": "2026-07-12T22:05:08.470Z",
+          "display_at": "2026-07-12T22:05:08.470Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "wtr67gllydnk",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare Dashboard and related APIs. These issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge. Customers using the Dashboard / Cloudflare APIs are impacted as requests might fail and/or errors may be displayed.",
+          "incident_id": "cbtmdg3gyx4z",
+          "created_at": "2026-07-12T21:40:35.889Z",
+          "updated_at": "2026-07-12T21:42:14.350Z",
+          "display_at": "2026-07-12T21:40:35.000Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2026-07-12T21:40:35.814Z",
+          "position": 8,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "degraded_performance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2026-07-12T21:40:35.838Z",
+          "position": 38,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "ps1snnzz54pq",
       "name": "Workers AI experiencing degraded availability in some models",
