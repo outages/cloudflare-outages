@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-07-17T15:35:01.957Z"
+    "updated_at": "2026-07-17T16:45:25.696Z"
   },
   "components": [
     {
@@ -1673,9 +1673,9 @@
     {
       "id": "ry378yzsq7kp",
       "name": "Caçador, Brazil - (CFC)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-08T07:57:05.268Z",
-      "updated_at": "2026-07-17T15:09:07.789Z",
+      "updated_at": "2026-07-17T16:26:49.263Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -1883,9 +1883,9 @@
     {
       "id": "652rf3j94nfv",
       "name": "Jeddah, Saudi Arabia - (JED)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-06-08T13:59:14.645Z",
-      "updated_at": "2026-07-17T15:24:40.968Z",
+      "updated_at": "2026-07-17T15:50:34.124Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -2453,9 +2453,9 @@
     {
       "id": "d8yztxmdkcc0",
       "name": "Nasiriyah, Iraq - (XNH)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-05-11T09:27:35.150Z",
-      "updated_at": "2026-07-17T14:12:09.820Z",
+      "updated_at": "2026-07-17T16:12:52.961Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -3188,9 +3188,9 @@
     {
       "id": "5wnz34mhfhrk",
       "name": "CDN/Cache",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2020-03-25T19:03:33.850Z",
-      "updated_at": "2026-07-17T15:06:16.115Z",
+      "updated_at": "2026-07-17T16:45:25.587Z",
       "position": 25,
       "description": null,
       "showcase": false,
@@ -3938,9 +3938,9 @@
     {
       "id": "nd77krz8224v",
       "name": "Containers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-07-23T11:03:53.266Z",
-      "updated_at": "2026-07-16T18:17:12.097Z",
+      "updated_at": "2026-07-17T16:40:07.524Z",
       "position": 34,
       "description": "Cloudflare Containers",
       "showcase": false,
@@ -4553,9 +4553,9 @@
     {
       "id": "73mbn78m0yzm",
       "name": "São Paulo, Brazil - (GRU)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2014-10-27T21:45:14.885Z",
-      "updated_at": "2026-07-17T15:14:19.301Z",
+      "updated_at": "2026-07-17T16:26:49.603Z",
       "position": 43,
       "description": null,
       "showcase": false,
@@ -6908,9 +6908,9 @@
     {
       "id": "pqt7t1dwt0dz",
       "name": "Workers Observability",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-12-12T22:27:27.098Z",
-      "updated_at": "2026-07-16T17:08:45.890Z",
+      "updated_at": "2026-07-17T16:40:07.544Z",
       "position": 118,
       "description": "Workers Logs",
       "showcase": false,
@@ -7538,30 +7538,36 @@
   ],
   "incidents": [
     {
-      "id": "652w59bvnbsj",
-      "name": "POST requests not succeeding",
+      "id": "266jj43lsnm3",
+      "name": "Containers Logs Issues",
       "status": "investigating",
-      "created_at": "2026-07-17T15:02:12.667Z",
-      "updated_at": "2026-07-17T15:06:16.174Z",
+      "created_at": "2026-07-17T16:40:07.477Z",
+      "updated_at": "2026-07-17T16:40:07.607Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/lsj63zw4wxt6",
-      "started_at": "2026-07-17T15:02:12.659Z",
+      "shortlink": "https://stspg.io/lbk6bgdh9nhh",
+      "started_at": "2026-07-17T16:40:07.464Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "49lvj0bbgjy5",
+          "id": "slnmt07dzx3f",
           "status": "investigating",
-          "body": "We are continuing to investigate this issue.",
-          "incident_id": "652w59bvnbsj",
-          "created_at": "2026-07-17T15:06:16.171Z",
-          "updated_at": "2026-07-17T15:06:16.171Z",
-          "display_at": "2026-07-17T15:06:16.171Z",
+          "body": "A subset of Containers logs for Containers applications that are configured with 'observability.enabled: true' are getting dropped.",
+          "incident_id": "266jj43lsnm3",
+          "created_at": "2026-07-17T16:40:07.604Z",
+          "updated_at": "2026-07-17T16:40:07.604Z",
+          "display_at": "2026-07-17T16:40:07.604Z",
           "affected_components": [
             {
-              "code": "5wnz34mhfhrk",
-              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "code": "nd77krz8224v",
+              "name": "Cloudflare Sites and Services - Containers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "pqt7t1dwt0dz",
+              "name": "Cloudflare Sites and Services - Workers Observability",
               "old_status": "operational",
               "new_status": "degraded_performance"
             }
@@ -7569,32 +7575,34 @@
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
-        },
-        {
-          "id": "30myyyy2kl8n",
-          "status": "investigating",
-          "body": "Cloudflare is aware of and investigating an issue where some customers may be experiencing POST requests not reaching origin servers correctly. We are working to analyse and mitigate this problem. More updates to follow shortly.",
-          "incident_id": "652w59bvnbsj",
-          "created_at": "2026-07-17T15:02:12.729Z",
-          "updated_at": "2026-07-17T15:02:12.729Z",
-          "display_at": "2026-07-17T15:02:12.729Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
         }
       ],
       "components": [
         {
-          "id": "5wnz34mhfhrk",
-          "name": "CDN/Cache",
+          "id": "nd77krz8224v",
+          "name": "Containers",
           "status": "degraded_performance",
-          "created_at": "2020-03-25T19:03:33.850Z",
-          "updated_at": "2026-07-17T15:06:16.115Z",
-          "position": 25,
-          "description": null,
+          "created_at": "2025-07-23T11:03:53.266Z",
+          "updated_at": "2026-07-17T16:40:07.524Z",
+          "position": 34,
+          "description": "Cloudflare Containers",
           "showcase": false,
-          "start_date": null,
+          "start_date": "2025-07-23",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "pqt7t1dwt0dz",
+          "name": "Workers Observability",
+          "status": "degraded_performance",
+          "created_at": "2024-12-12T22:27:27.098Z",
+          "updated_at": "2026-07-17T16:40:07.544Z",
+          "position": 118,
+          "description": "Workers Logs",
+          "showcase": false,
+          "start_date": "2024-12-12",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -7772,7 +7780,7 @@
       "name": "KUL (Kuala Lumpur) on 2026-07-17",
       "status": "scheduled",
       "created_at": "2026-07-17T02:57:01.154Z",
-      "updated_at": "2026-07-17T02:57:01.218Z",
+      "updated_at": "2026-07-17T16:00:14.968Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7780,6 +7788,19 @@
       "started_at": "2026-07-17T02:57:01.145Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "ynznwx0vk7dc",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "c0sps60pqxcm",
+          "created_at": "2026-07-17T16:00:14.783Z",
+          "updated_at": "2026-07-17T16:00:14.783Z",
+          "display_at": "2026-07-17T16:00:14.783Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "31k2701nzl6d",
           "status": "scheduled",
