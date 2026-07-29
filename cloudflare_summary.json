@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-07-29T15:20:34.801Z"
+    "updated_at": "2026-07-29T16:23:52.322Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3983,9 +3983,9 @@
     {
       "id": "f95c4c2zcg0t",
       "name": "Karachi, Pakistan - (KHI)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-12-04T16:17:59.275Z",
-      "updated_at": "2026-07-22T08:25:31.149Z",
+      "updated_at": "2026-07-29T16:20:51.157Z",
       "position": 35,
       "description": null,
       "showcase": false,
@@ -4043,9 +4043,9 @@
     {
       "id": "gw1cztbpft9b",
       "name": "Kathmandu, Nepal - (KTM)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2018-02-21T11:46:55.428Z",
-      "updated_at": "2026-07-23T00:40:09.727Z",
+      "updated_at": "2026-07-29T16:00:50.545Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -4208,9 +4208,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2026-07-29T15:09:05.266Z",
+      "updated_at": "2026-07-29T16:23:52.254Z",
       "position": 39,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -7536,34 +7536,35 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [
+  "incidents": [],
+  "scheduled_maintenances": [
     {
-      "id": "shq1h521dfl3",
-      "name": "Sensitive Data Detection Configuration Issue",
-      "status": "investigating",
-      "created_at": "2026-07-29T15:09:05.222Z",
-      "updated_at": "2026-07-29T15:09:05.336Z",
+      "id": "7qhk4v76j4tx",
+      "name": "KHI (Karachi) on 2026-07-29",
+      "status": "scheduled",
+      "created_at": "2026-07-29T16:20:51.115Z",
+      "updated_at": "2026-07-29T16:20:51.207Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/cpx24m6l1nlv",
-      "started_at": "2026-07-29T15:09:05.209Z",
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/32nyt4pdzg0b",
+      "started_at": "2026-07-29T16:20:51.106Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "b8t2cz8x8yqn",
-          "status": "investigating",
-          "body": "Cloudflare is investigating an issue with the Sensitive Data Detection feature in the Cloudflare Dashboard. Customers may be unable to enable Sensitive Data Detection via the Security settings toggle. Other dashboard features and security services remain unaffected. \nWe are working to identify and mitigate this problem.\nMore updates to follow shortly.",
-          "incident_id": "shq1h521dfl3",
-          "created_at": "2026-07-29T15:09:05.332Z",
-          "updated_at": "2026-07-29T15:09:05.332Z",
-          "display_at": "2026-07-29T15:09:05.332Z",
+          "id": "pwxltyjp4kzc",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in KHI (Karachi) datacenter on 2026-07-29 between 20:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "7qhk4v76j4tx",
+          "created_at": "2026-07-29T16:20:51.204Z",
+          "updated_at": "2026-07-29T16:20:51.204Z",
+          "display_at": "2026-07-29T16:20:51.204Z",
           "affected_components": [
             {
-              "code": "3sq3s4d20ywk",
-              "name": "Cloudflare Sites and Services - Dashboard",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
+              "code": "f95c4c2zcg0t",
+              "name": "Asia - Karachi, Pakistan - (KHI)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -7573,25 +7574,24 @@
       ],
       "components": [
         {
-          "id": "3sq3s4d20ywk",
-          "name": "Dashboard",
-          "status": "degraded_performance",
-          "created_at": "2014-10-09T03:32:07.173Z",
-          "updated_at": "2026-07-29T15:09:05.266Z",
-          "position": 39,
-          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "id": "f95c4c2zcg0t",
+          "name": "Karachi, Pakistan - (KHI)",
+          "status": "operational",
+          "created_at": "2018-12-04T16:17:59.275Z",
+          "updated_at": "2026-07-29T16:20:51.157Z",
+          "position": 35,
+          "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "1km35smx8p41",
+          "group_id": "77867vxkttgw",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "reminder_intervals": null
-    }
-  ],
-  "scheduled_maintenances": [
+      "scheduled_for": "2026-07-29T20:00:00.000Z",
+      "scheduled_until": "2026-07-29T22:00:00.000Z"
+    },
     {
       "id": "gg374l1rfnrm",
       "name": "CDG (Paris) on 2026-07-29",
@@ -7773,6 +7773,60 @@
       ],
       "scheduled_for": "2026-07-30T04:00:00.000Z",
       "scheduled_until": "2026-07-30T16:00:00.000Z"
+    },
+    {
+      "id": "tk59y7m0d3wp",
+      "name": "KTM (Kathmandu) on 2026-07-30",
+      "status": "scheduled",
+      "created_at": "2026-07-29T16:00:50.512Z",
+      "updated_at": "2026-07-29T16:00:50.593Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/p3gbs127972l",
+      "started_at": "2026-07-29T16:00:50.505Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "4nxqvqbsdwdf",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in KTM (Kathmandu) datacenter on 2026-07-30 between 05:30 and 07:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "tk59y7m0d3wp",
+          "created_at": "2026-07-29T16:00:50.590Z",
+          "updated_at": "2026-07-29T16:00:50.590Z",
+          "display_at": "2026-07-29T16:00:50.590Z",
+          "affected_components": [
+            {
+              "code": "gw1cztbpft9b",
+              "name": "Asia - Kathmandu, Nepal - (KTM)",
+              "old_status": "under_maintenance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gw1cztbpft9b",
+          "name": "Kathmandu, Nepal - (KTM)",
+          "status": "operational",
+          "created_at": "2018-02-21T11:46:55.428Z",
+          "updated_at": "2026-07-29T16:00:50.545Z",
+          "position": 36,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-07-30T05:30:00.000Z",
+      "scheduled_until": "2026-07-30T07:30:00.000Z"
     },
     {
       "id": "26mms9tzyhdd",
@@ -8412,86 +8466,6 @@
       ],
       "scheduled_for": "2026-07-29T11:00:00.000Z",
       "scheduled_until": "2026-07-30T06:00:00.000Z"
-    },
-    {
-      "id": "m6gmp39hbl3b",
-      "name": "MIA (Miami) on 2026-07-29",
-      "status": "in_progress",
-      "created_at": "2026-07-28T10:51:01.711Z",
-      "updated_at": "2026-07-29T04:00:08.172Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/nghm368vb80r",
-      "started_at": "2026-07-28T10:51:01.704Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "5tfyl841qtnz",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "m6gmp39hbl3b",
-          "created_at": "2026-07-29T04:00:08.131Z",
-          "updated_at": "2026-07-29T04:00:08.131Z",
-          "display_at": "2026-07-29T04:00:08.131Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "ssll11t1zrdp",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "m6gmp39hbl3b",
-          "created_at": "2026-07-29T03:01:15.785Z",
-          "updated_at": "2026-07-29T03:01:15.785Z",
-          "display_at": "2026-07-29T03:01:15.785Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "k83bls38cbd7",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MIA (Miami) datacenter on 2026-07-29 between 04:00 and 16:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "m6gmp39hbl3b",
-          "created_at": "2026-07-28T10:51:01.789Z",
-          "updated_at": "2026-07-28T10:51:01.789Z",
-          "display_at": "2026-07-28T10:51:01.789Z",
-          "affected_components": [
-            {
-              "code": "mvbjk0vw3krv",
-              "name": "North America - Miami, FL, United States - (MIA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "mvbjk0vw3krv",
-          "name": "Miami, FL, United States - (MIA)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:31:43.401Z",
-          "updated_at": "2026-06-02T04:32:50.379Z",
-          "position": 30,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-07-29T04:00:00.000Z",
-      "scheduled_until": "2026-07-29T16:00:00.000Z"
     }
   ],
   "status": {
