@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-07-31T17:20:23.021Z"
+    "updated_at": "2026-07-31T19:20:30.038Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3054,9 +3054,9 @@
     {
       "id": "shcqh0p22750",
       "name": "London, United Kingdom - (LHR)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T20:36:04.069Z",
-      "updated_at": "2026-07-08T02:32:05.192Z",
+      "updated_at": "2026-07-31T19:06:19.101Z",
       "position": 24,
       "description": null,
       "showcase": false,
@@ -3189,9 +3189,9 @@
     {
       "id": "5wnz34mhfhrk",
       "name": "CDN/Cache",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-25T19:03:33.850Z",
-      "updated_at": "2026-07-17T16:45:25.587Z",
+      "updated_at": "2026-07-31T19:06:19.117Z",
       "position": 25,
       "description": null,
       "showcase": false,
@@ -7554,6 +7554,80 @@
   ],
   "incidents": [
     {
+      "id": "k17p9vnmhkvp",
+      "name": "Increased HTTP Errors in London",
+      "status": "investigating",
+      "created_at": "2026-07-31T19:06:19.068Z",
+      "updated_at": "2026-07-31T19:06:19.167Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/4s4qc5sgjbcd",
+      "started_at": "2026-07-31T19:06:19.058Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "5bpwq13nyjwl",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an increased level of HTTP errors affecting a subset of customers. We are working to analyze and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "k17p9vnmhkvp",
+          "created_at": "2026-07-31T19:06:19.165Z",
+          "updated_at": "2026-07-31T19:06:19.165Z",
+          "display_at": "2026-07-31T19:06:19.165Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "shcqh0p22750",
+              "name": "Europe - London, United Kingdom - (LHR)",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "shcqh0p22750",
+          "name": "London, United Kingdom - (LHR)",
+          "status": "degraded_performance",
+          "created_at": "2014-10-27T20:36:04.069Z",
+          "updated_at": "2026-07-31T19:06:19.101Z",
+          "position": 24,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5wnz34mhfhrk",
+          "name": "CDN/Cache",
+          "status": "degraded_performance",
+          "created_at": "2020-03-25T19:03:33.850Z",
+          "updated_at": "2026-07-31T19:06:19.117Z",
+          "position": 25,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "3ywn8wy3kqh8",
       "name": "Network Performance Issues in Hamburg, Germany",
       "status": "monitoring",
@@ -7629,60 +7703,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "vjnfh04mzf16",
-      "name": "KHI (Karachi) on 2026-07-31",
-      "status": "scheduled",
-      "created_at": "2026-07-31T17:10:15.300Z",
-      "updated_at": "2026-07-31T17:10:15.368Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/rkf4m93kq249",
-      "started_at": "2026-07-31T17:10:15.292Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "rwwkgkbdc142",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in KHI (Karachi) datacenter on 2026-07-31 between 18:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "vjnfh04mzf16",
-          "created_at": "2026-07-31T17:10:15.365Z",
-          "updated_at": "2026-07-31T17:10:15.365Z",
-          "display_at": "2026-07-31T17:10:15.365Z",
-          "affected_components": [
-            {
-              "code": "f95c4c2zcg0t",
-              "name": "Asia - Karachi, Pakistan - (KHI)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "f95c4c2zcg0t",
-          "name": "Karachi, Pakistan - (KHI)",
-          "status": "operational",
-          "created_at": "2018-12-04T16:17:59.275Z",
-          "updated_at": "2026-07-29T16:20:51.157Z",
-          "position": 35,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-07-31T18:00:00.000Z",
-      "scheduled_until": "2026-07-31T22:00:00.000Z"
-    },
-    {
       "id": "rbtdsw2lbks9",
       "name": "LHR (London) on 2026-08-02",
       "status": "scheduled",
@@ -7720,9 +7740,9 @@
         {
           "id": "shcqh0p22750",
           "name": "London, United Kingdom - (LHR)",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2014-10-27T20:36:04.069Z",
-          "updated_at": "2026-07-08T02:32:05.192Z",
+          "updated_at": "2026-07-31T19:06:19.101Z",
           "position": 24,
           "description": null,
           "showcase": false,
@@ -7936,9 +7956,9 @@
         {
           "id": "shcqh0p22750",
           "name": "London, United Kingdom - (LHR)",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2014-10-27T20:36:04.069Z",
-          "updated_at": "2026-07-08T02:32:05.192Z",
+          "updated_at": "2026-07-31T19:06:19.101Z",
           "position": 24,
           "description": null,
           "showcase": false,
@@ -8044,9 +8064,9 @@
         {
           "id": "shcqh0p22750",
           "name": "London, United Kingdom - (LHR)",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2014-10-27T20:36:04.069Z",
-          "updated_at": "2026-07-08T02:32:05.192Z",
+          "updated_at": "2026-07-31T19:06:19.101Z",
           "position": 24,
           "description": null,
           "showcase": false,
@@ -8275,6 +8295,73 @@
       ],
       "scheduled_for": "2026-09-02T05:00:00.000Z",
       "scheduled_until": "2026-09-02T09:00:00.000Z"
+    },
+    {
+      "id": "vjnfh04mzf16",
+      "name": "KHI (Karachi) on 2026-07-31",
+      "status": "in_progress",
+      "created_at": "2026-07-31T17:10:15.300Z",
+      "updated_at": "2026-07-31T18:00:07.812Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/rkf4m93kq249",
+      "started_at": "2026-07-31T17:10:15.292Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "tk146wqfst4r",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "vjnfh04mzf16",
+          "created_at": "2026-07-31T18:00:07.799Z",
+          "updated_at": "2026-07-31T18:00:07.799Z",
+          "display_at": "2026-07-31T18:00:07.799Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "rwwkgkbdc142",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in KHI (Karachi) datacenter on 2026-07-31 between 18:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "vjnfh04mzf16",
+          "created_at": "2026-07-31T17:10:15.365Z",
+          "updated_at": "2026-07-31T17:10:15.365Z",
+          "display_at": "2026-07-31T17:10:15.365Z",
+          "affected_components": [
+            {
+              "code": "f95c4c2zcg0t",
+              "name": "Asia - Karachi, Pakistan - (KHI)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f95c4c2zcg0t",
+          "name": "Karachi, Pakistan - (KHI)",
+          "status": "operational",
+          "created_at": "2018-12-04T16:17:59.275Z",
+          "updated_at": "2026-07-29T16:20:51.157Z",
+          "position": 35,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-07-31T18:00:00.000Z",
+      "scheduled_until": "2026-07-31T22:00:00.000Z"
     },
     {
       "id": "vv6klq5krkb4",
