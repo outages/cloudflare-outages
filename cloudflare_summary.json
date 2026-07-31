@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-07-31T16:01:07.679Z"
+    "updated_at": "2026-07-31T17:20:23.021Z"
   },
   "components": [
     {
@@ -668,7 +668,8 @@
         "8815bky5jthm",
         "qwb01f6py1c3",
         "bjgm8mgjn0sm",
-        "0bnls29mcbkc"
+        "0bnls29mcbkc",
+        "nq69m9tlltrg"
       ]
     },
     {
@@ -7534,22 +7535,57 @@
       "page_id": "yh6f0r4529hb",
       "group": false,
       "only_show_if_degraded": false
+    },
+    {
+      "id": "nq69m9tlltrg",
+      "name": "Jamnagar, India - (BDQ)",
+      "status": "operational",
+      "created_at": "2026-07-31T17:10:11.752Z",
+      "updated_at": "2026-07-31T17:10:11.752Z",
+      "position": 688,
+      "description": null,
+      "showcase": false,
+      "start_date": "2026-07-31",
+      "group_id": "77867vxkttgw",
+      "page_id": "yh6f0r4529hb",
+      "group": false,
+      "only_show_if_degraded": false
     }
   ],
   "incidents": [
     {
       "id": "3ywn8wy3kqh8",
       "name": "Network Performance Issues in Hamburg, Germany",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2026-07-31T15:20:19.991Z",
-      "updated_at": "2026-07-31T15:20:20.080Z",
-      "monitoring_at": null,
+      "updated_at": "2026-07-31T16:58:19.599Z",
+      "monitoring_at": "2026-07-31T16:58:19.585Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/4zt05ljddcz6",
       "started_at": "2026-07-31T15:20:19.981Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "4z92dnzrj1cb",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "3ywn8wy3kqh8",
+          "created_at": "2026-07-31T16:58:19.585Z",
+          "updated_at": "2026-07-31T16:58:19.585Z",
+          "display_at": "2026-07-31T16:58:19.585Z",
+          "affected_components": [
+            {
+              "code": "dwmgwrxg7cx3",
+              "name": "Europe - Hamburg, Germany - (HAM)",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "29lqktxsz684",
           "status": "identified",
@@ -7592,6 +7628,60 @@
     }
   ],
   "scheduled_maintenances": [
+    {
+      "id": "vjnfh04mzf16",
+      "name": "KHI (Karachi) on 2026-07-31",
+      "status": "scheduled",
+      "created_at": "2026-07-31T17:10:15.300Z",
+      "updated_at": "2026-07-31T17:10:15.368Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/rkf4m93kq249",
+      "started_at": "2026-07-31T17:10:15.292Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "rwwkgkbdc142",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in KHI (Karachi) datacenter on 2026-07-31 between 18:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "vjnfh04mzf16",
+          "created_at": "2026-07-31T17:10:15.365Z",
+          "updated_at": "2026-07-31T17:10:15.365Z",
+          "display_at": "2026-07-31T17:10:15.365Z",
+          "affected_components": [
+            {
+              "code": "f95c4c2zcg0t",
+              "name": "Asia - Karachi, Pakistan - (KHI)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f95c4c2zcg0t",
+          "name": "Karachi, Pakistan - (KHI)",
+          "status": "operational",
+          "created_at": "2018-12-04T16:17:59.275Z",
+          "updated_at": "2026-07-29T16:20:51.157Z",
+          "position": 35,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-07-31T18:00:00.000Z",
+      "scheduled_until": "2026-07-31T22:00:00.000Z"
+    },
     {
       "id": "rbtdsw2lbks9",
       "name": "LHR (London) on 2026-08-02",
