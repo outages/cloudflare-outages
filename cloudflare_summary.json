@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-08-03T14:28:15.445Z"
+    "updated_at": "2026-08-03T16:20:59.262Z"
   },
   "components": [
     {
@@ -6804,9 +6804,9 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.728Z",
-      "updated_at": "2026-07-31T13:01:59.871Z",
+      "updated_at": "2026-08-03T15:13:33.290Z",
       "position": 112,
       "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
       "showcase": false,
@@ -6849,9 +6849,9 @@
     {
       "id": "vcpsk0w6g86k",
       "name": "Workers Builds",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2025-05-27T17:04:31.385Z",
-      "updated_at": "2026-08-03T14:20:37.347Z",
+      "updated_at": "2026-08-03T16:12:08.849Z",
       "position": 115,
       "description": "Workers Builds is Cloudflare's native CI/CD system that allows you to integrate with GitHub or GitLab to automatically deploy changes with each new push to a selected branch (e.g. main).",
       "showcase": false,
@@ -7554,30 +7554,50 @@
   ],
   "incidents": [
     {
-      "id": "x4lf6qsl3pb9",
-      "name": "Cloudflare Workers build failures",
-      "status": "investigating",
-      "created_at": "2026-08-03T14:20:37.314Z",
-      "updated_at": "2026-08-03T14:20:37.399Z",
+      "id": "238b69fw6l55",
+      "name": "Cloudflare Workers Runtime API issues",
+      "status": "identified",
+      "created_at": "2026-08-03T15:13:33.256Z",
+      "updated_at": "2026-08-03T15:21:54.178Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/m2hf75899d0n",
-      "started_at": "2026-08-03T14:20:37.305Z",
+      "shortlink": "https://stspg.io/m6sncw8b57f0",
+      "started_at": "2026-08-03T15:13:33.247Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "7ldg3v7l9pzw",
-          "status": "investigating",
-          "body": "Cloudflare is aware of and investigating an issue with Cloudflare Workers build failures which potentially impacts multiple customers. Further detail will be provided as more information becomes available.",
-          "incident_id": "x4lf6qsl3pb9",
-          "created_at": "2026-08-03T14:20:37.397Z",
-          "updated_at": "2026-08-03T14:20:37.397Z",
-          "display_at": "2026-08-03T14:20:37.397Z",
+          "id": "f1gqphz940b2",
+          "status": "identified",
+          "body": "Workers runtime: Temporal global exposed with an incorrect clock\n\nSince 2026-07-30, the Workers runtime has exposed a global Temporal object that was not intended to be available. Its clock is wrong: Temporal.Now reports 1970-01-01 rather than the current time. Date and Date.now() are unaffected and report the correct time.\n\nThis can affect Workers that install a Temporal polyfill only when no native Temporal is detected. On those Workers, the polyfill stopped being installed and time-dependent logic began computing against 1970 — for example, tokens minted with an issue time of 0 and an expiry in 1970, incorrect TTLs, or incorrect date arithmetic. No error is raised when this happens.",
+          "incident_id": "238b69fw6l55",
+          "created_at": "2026-08-03T15:21:54.175Z",
+          "updated_at": "2026-08-03T15:21:54.175Z",
+          "display_at": "2026-08-03T15:21:54.175Z",
           "affected_components": [
             {
-              "code": "vcpsk0w6g86k",
-              "name": "Cloudflare Sites and Services - Workers Builds",
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "vqpn00kjklqy",
+          "status": "investigating",
+          "body": "Cloudflare is aware of an issue with the latest Workers Runtime API release that exposes native Temporal with clock stuck at epoch 0.  Updates to follow.",
+          "incident_id": "238b69fw6l55",
+          "created_at": "2026-08-03T15:13:33.343Z",
+          "updated_at": "2026-08-03T15:13:33.343Z",
+          "display_at": "2026-08-03T15:13:33.343Z",
+          "affected_components": [
+            {
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
               "old_status": "operational",
               "new_status": "degraded_performance"
             }
@@ -7589,15 +7609,15 @@
       ],
       "components": [
         {
-          "id": "vcpsk0w6g86k",
-          "name": "Workers Builds",
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
           "status": "degraded_performance",
-          "created_at": "2025-05-27T17:04:31.385Z",
-          "updated_at": "2026-08-03T14:20:37.347Z",
-          "position": 115,
-          "description": "Workers Builds is Cloudflare's native CI/CD system that allows you to integrate with GitHub or GitLab to automatically deploy changes with each new push to a selected branch (e.g. main).",
+          "created_at": "2019-01-24T16:49:08.728Z",
+          "updated_at": "2026-08-03T15:13:33.290Z",
+          "position": 112,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
           "showcase": false,
-          "start_date": "2025-05-27",
+          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -7608,6 +7628,60 @@
     }
   ],
   "scheduled_maintenances": [
+    {
+      "id": "zvm77sm9v78d",
+      "name": "DAC (Dhaka) on 2026-08-03",
+      "status": "scheduled",
+      "created_at": "2026-08-03T16:20:59.188Z",
+      "updated_at": "2026-08-03T16:20:59.259Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/1m82n9n7t1lc",
+      "started_at": "2026-08-03T16:20:59.179Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "kh8kp1hmg8n7",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in DAC (Dhaka) datacenter on 2026-08-03 between 19:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "zvm77sm9v78d",
+          "created_at": "2026-08-03T16:20:59.255Z",
+          "updated_at": "2026-08-03T16:20:59.255Z",
+          "display_at": "2026-08-03T16:20:59.255Z",
+          "affected_components": [
+            {
+              "code": "hf1csyqv3x7s",
+              "name": "Asia - Dhaka, Bangladesh - (DAC)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hf1csyqv3x7s",
+          "name": "Dhaka, Bangladesh - (DAC)",
+          "status": "operational",
+          "created_at": "2019-12-17T22:56:25.827Z",
+          "updated_at": "2026-07-22T19:39:19.322Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-08-03T19:00:00.000Z",
+      "scheduled_until": "2026-08-03T22:00:00.000Z"
+    },
     {
       "id": "9jz5mkyh0csj",
       "name": "LHR (London) on 2026-08-03",
@@ -7715,6 +7789,60 @@
       ],
       "scheduled_for": "2026-08-03T23:30:00.000Z",
       "scheduled_until": "2026-08-04T11:30:00.000Z"
+    },
+    {
+      "id": "g1x99gfzdp01",
+      "name": "GVA (Geneva) on 2026-08-04",
+      "status": "scheduled",
+      "created_at": "2026-08-03T16:10:58.783Z",
+      "updated_at": "2026-08-03T16:10:58.849Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/pfpng11kdqy1",
+      "started_at": "2026-08-03T16:10:58.774Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "xq1q0c29z1zs",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in GVA (Geneva) datacenter on 2026-08-04 between 00:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "g1x99gfzdp01",
+          "created_at": "2026-08-03T16:10:58.846Z",
+          "updated_at": "2026-08-03T16:10:58.846Z",
+          "display_at": "2026-08-03T16:10:58.846Z",
+          "affected_components": [
+            {
+              "code": "5s83x498wyqw",
+              "name": "Europe - Geneva, Switzerland - (GVA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5s83x498wyqw",
+          "name": "Geneva, Switzerland - (GVA)",
+          "status": "operational",
+          "created_at": "2019-03-13T07:10:35.442Z",
+          "updated_at": "2026-07-18T07:28:22.891Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-08-04T00:00:00.000Z",
+      "scheduled_until": "2026-08-04T05:00:00.000Z"
     },
     {
       "id": "0jd8242q43np",
@@ -8274,86 +8402,6 @@
       ],
       "scheduled_for": "2026-08-03T10:00:00.000Z",
       "scheduled_until": "2026-08-04T06:00:00.000Z"
-    },
-    {
-      "id": "m3p7mmm8lbl3",
-      "name": "MIA (Miami) on 2026-08-03",
-      "status": "in_progress",
-      "created_at": "2026-07-31T06:00:07.406Z",
-      "updated_at": "2026-08-03T04:00:08.408Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/bdpjc96scskn",
-      "started_at": "2026-07-31T06:00:07.400Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "6gs34232g410",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "m3p7mmm8lbl3",
-          "created_at": "2026-08-03T04:00:08.299Z",
-          "updated_at": "2026-08-03T04:00:08.299Z",
-          "display_at": "2026-08-03T04:00:08.299Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "6jlqq1kcnjfq",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "m3p7mmm8lbl3",
-          "created_at": "2026-08-03T03:00:19.440Z",
-          "updated_at": "2026-08-03T03:00:19.440Z",
-          "display_at": "2026-08-03T03:00:19.440Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "4fxq6hf6mjs0",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in MIA (Miami) datacenter on 2026-08-03 between 04:00 and 16:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "m3p7mmm8lbl3",
-          "created_at": "2026-07-31T06:00:07.459Z",
-          "updated_at": "2026-07-31T06:00:07.459Z",
-          "display_at": "2026-07-31T06:00:07.459Z",
-          "affected_components": [
-            {
-              "code": "mvbjk0vw3krv",
-              "name": "North America - Miami, FL, United States - (MIA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "mvbjk0vw3krv",
-          "name": "Miami, FL, United States - (MIA)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:31:43.401Z",
-          "updated_at": "2026-06-02T04:32:50.379Z",
-          "position": 30,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-08-03T04:00:00.000Z",
-      "scheduled_until": "2026-08-03T16:00:00.000Z"
     }
   ],
   "status": {
