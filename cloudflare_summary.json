@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-08-04T17:20:51.762Z"
+    "updated_at": "2026-08-04T19:29:16.460Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -3190,9 +3190,9 @@
     {
       "id": "5wnz34mhfhrk",
       "name": "CDN/Cache",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2020-03-25T19:03:33.850Z",
-      "updated_at": "2026-07-31T20:40:43.106Z",
+      "updated_at": "2026-08-04T18:38:43.922Z",
       "position": 25,
       "description": null,
       "showcase": false,
@@ -7568,7 +7568,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "2fqjvjdq32dy",
+      "name": "502 errors observed around Singapore, Jakarta and Bangkok",
+      "status": "identified",
+      "created_at": "2026-08-04T18:38:43.889Z",
+      "updated_at": "2026-08-04T19:23:49.885Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/q4r3bkj9nht9",
+      "started_at": "2026-08-04T18:38:43.878Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "4wyh9cm2hx93",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "2fqjvjdq32dy",
+          "created_at": "2026-08-04T19:23:49.883Z",
+          "updated_at": "2026-08-04T19:23:49.883Z",
+          "display_at": "2026-08-04T19:23:49.883Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xbm9dshc4jy9",
+          "status": "investigating",
+          "body": "Cloudflare is investigating elevated 502 errors around Singapore, Jakarta and Bangkok. Further detail will be provided as more information becomes available.",
+          "incident_id": "2fqjvjdq32dy",
+          "created_at": "2026-08-04T18:38:43.973Z",
+          "updated_at": "2026-08-04T18:38:43.973Z",
+          "display_at": "2026-08-04T18:38:43.973Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5wnz34mhfhrk",
+          "name": "CDN/Cache",
+          "status": "degraded_performance",
+          "created_at": "2020-03-25T19:03:33.850Z",
+          "updated_at": "2026-08-04T18:38:43.922Z",
+          "position": 25,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "8g99g3fyxtrr",
@@ -7859,6 +7933,60 @@
       ],
       "scheduled_for": "2026-08-05T23:30:00.000Z",
       "scheduled_until": "2026-08-06T11:30:00.000Z"
+    },
+    {
+      "id": "xrjnsr65fthp",
+      "name": "STL (St. Louis) on 2026-08-10",
+      "status": "scheduled",
+      "created_at": "2026-08-04T18:40:51.242Z",
+      "updated_at": "2026-08-04T18:40:51.320Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/ct1hk91k4qnf",
+      "started_at": "2026-08-04T18:40:51.233Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "lydhymbkcm3m",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in STL (St. Louis) datacenter on 2026-08-10 between 05:00 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "xrjnsr65fthp",
+          "created_at": "2026-08-04T18:40:51.317Z",
+          "updated_at": "2026-08-04T18:40:51.317Z",
+          "display_at": "2026-08-04T18:40:51.317Z",
+          "affected_components": [
+            {
+              "code": "f4kdktnb8sz2",
+              "name": "North America - St. Louis, MO, United States - (STL)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f4kdktnb8sz2",
+          "name": "St. Louis, MO, United States - (STL)",
+          "status": "operational",
+          "created_at": "2016-09-14T18:53:59.600Z",
+          "updated_at": "2026-07-21T06:16:42.889Z",
+          "position": 54,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-08-10T05:00:00.000Z",
+      "scheduled_until": "2026-08-10T12:00:00.000Z"
     },
     {
       "id": "2r50j1phnvp4",
