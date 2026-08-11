@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-08-11T11:28:59.384Z"
+    "updated_at": "2026-08-11T12:24:14.921Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-27T21:59:30.264Z",
       "updated_at": "2020-11-11T20:12:30.167Z",
       "position": 1,
@@ -161,7 +161,9 @@
         "kf0ktv29xrfy",
         "276xk3r83js7",
         "4vx2clltvc89",
-        "4tv81hqpt2jt"
+        "4tv81hqpt2jt",
+        "xr712w0ly7nr",
+        "4mhr088g84gz"
       ]
     },
     {
@@ -1268,9 +1270,9 @@
     {
       "id": "g4tb35rs9yw7",
       "name": "API",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-09T03:32:07.158Z",
-      "updated_at": "2026-07-31T13:01:59.795Z",
+      "updated_at": "2026-08-11T12:00:07.872Z",
       "position": 8,
       "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
       "showcase": false,
@@ -4210,9 +4212,9 @@
     {
       "id": "3sq3s4d20ywk",
       "name": "Dashboard",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2014-10-09T03:32:07.173Z",
-      "updated_at": "2026-07-31T13:01:59.822Z",
+      "updated_at": "2026-08-11T12:00:07.966Z",
       "position": 39,
       "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
       "showcase": false,
@@ -7028,6 +7030,36 @@
       "only_show_if_degraded": false
     },
     {
+      "id": "xr712w0ly7nr",
+      "name": "Pipelines",
+      "status": "operational",
+      "created_at": "2026-08-11T12:16:30.173Z",
+      "updated_at": "2026-08-11T12:16:30.173Z",
+      "position": 126,
+      "description": "Managed streaming data pipeline service that ingests events, applies SQL transformations, and delivers them to R2 as Apache Iceberg tables or Parquet/JSON files.",
+      "showcase": false,
+      "start_date": "2026-08-11",
+      "group_id": "1km35smx8p41",
+      "page_id": "yh6f0r4529hb",
+      "group": false,
+      "only_show_if_degraded": false
+    },
+    {
+      "id": "4mhr088g84gz",
+      "name": "R2 SQL",
+      "status": "operational",
+      "created_at": "2026-08-11T12:20:58.663Z",
+      "updated_at": "2026-08-11T12:20:58.663Z",
+      "position": 127,
+      "description": "Serverless distributed SQL query engine for running analytics queries against Apache Iceberg tables stored in R2 Data Catalog.",
+      "showcase": false,
+      "start_date": "2026-08-11",
+      "group_id": "1km35smx8p41",
+      "page_id": "yh6f0r4529hb",
+      "group": false,
+      "only_show_if_degraded": false
+    },
+    {
       "id": "nbvb8842jnn0",
       "name": "Shenzhen, China - (SZX)",
       "status": "operational",
@@ -7570,148 +7602,6 @@
   ],
   "incidents": [],
   "scheduled_maintenances": [
-    {
-      "id": "dsjg7xj50r9r",
-      "name": "Cloudflare Storage Maintenance",
-      "status": "scheduled",
-      "created_at": "2026-08-07T16:41:30.301Z",
-      "updated_at": "2026-08-11T11:00:26.169Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/25v9wrlkk5y4",
-      "started_at": "2026-08-07T16:41:30.285Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "pwmjsc914ph1",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "dsjg7xj50r9r",
-          "created_at": "2026-08-11T11:00:25.648Z",
-          "updated_at": "2026-08-11T11:00:25.648Z",
-          "display_at": "2026-08-11T11:00:25.648Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "4lvjl60mvc5d",
-          "status": "scheduled",
-          "body": "Cloudflare has scheduled maintenance for our backend storage systems. Services will continue to operate normally, but customers will be unable to add or remove services via the Dashboard or the public API for a period of up to 3 minutes. This restriction includes all dashboard edits and API write calls.\n\nThe following services will experience configuration and new connections limitations during this window:\n- Dashboard & API write calls",
-          "incident_id": "dsjg7xj50r9r",
-          "created_at": "2026-08-07T16:41:30.397Z",
-          "updated_at": "2026-08-07T16:41:30.397Z",
-          "display_at": "2026-08-07T16:41:30.397Z",
-          "affected_components": [
-            {
-              "code": "g4tb35rs9yw7",
-              "name": "Cloudflare Sites and Services - API",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "3sq3s4d20ywk",
-              "name": "Cloudflare Sites and Services - Dashboard",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "g4tb35rs9yw7",
-          "name": "API",
-          "status": "operational",
-          "created_at": "2014-10-09T03:32:07.158Z",
-          "updated_at": "2026-07-31T13:01:59.795Z",
-          "position": 8,
-          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "3sq3s4d20ywk",
-          "name": "Dashboard",
-          "status": "operational",
-          "created_at": "2014-10-09T03:32:07.173Z",
-          "updated_at": "2026-07-31T13:01:59.822Z",
-          "position": 39,
-          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
-          "showcase": false,
-          "start_date": null,
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-08-11T12:00:00.000Z",
-      "scheduled_until": "2026-08-11T13:00:00.000Z"
-    },
-    {
-      "id": "mhvm13mcqwc9",
-      "name": "IAD (Ashburn) on 2026-08-12",
-      "status": "scheduled",
-      "created_at": "2026-08-05T13:10:44.043Z",
-      "updated_at": "2026-08-05T13:10:44.105Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/kd1x0k8k7353",
-      "started_at": "2026-08-05T13:10:44.035Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "mm7nn6scybf0",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in IAD (Ashburn) datacenter on 2026-08-12 between 05:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "mhvm13mcqwc9",
-          "created_at": "2026-08-05T13:10:44.102Z",
-          "updated_at": "2026-08-05T13:10:44.102Z",
-          "display_at": "2026-08-05T13:10:44.102Z",
-          "affected_components": [
-            {
-              "code": "3t0npclljyyg",
-              "name": "North America - Ashburn, VA, United States - (IAD)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "3t0npclljyyg",
-          "name": "Ashburn, VA, United States - (IAD)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:30:01.380Z",
-          "updated_at": "2026-06-25T07:24:35.143Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-08-12T05:00:00.000Z",
-      "scheduled_until": "2026-08-12T11:00:00.000Z"
-    },
     {
       "id": "sj2bf6tz54hn",
       "name": "DNS Record Management Maintenance",
@@ -8271,6 +8161,120 @@
       "scheduled_until": "2026-09-02T09:00:00.000Z"
     },
     {
+      "id": "dsjg7xj50r9r",
+      "name": "Cloudflare Storage Maintenance",
+      "status": "in_progress",
+      "created_at": "2026-08-07T16:41:30.301Z",
+      "updated_at": "2026-08-11T12:00:08.265Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/25v9wrlkk5y4",
+      "started_at": "2026-08-07T16:41:30.285Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "wzhcbs3wv0z9",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "dsjg7xj50r9r",
+          "created_at": "2026-08-11T12:00:08.245Z",
+          "updated_at": "2026-08-11T12:00:08.245Z",
+          "display_at": "2026-08-11T12:00:08.245Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "pwmjsc914ph1",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "dsjg7xj50r9r",
+          "created_at": "2026-08-11T11:00:25.648Z",
+          "updated_at": "2026-08-11T11:00:25.648Z",
+          "display_at": "2026-08-11T11:00:25.648Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4lvjl60mvc5d",
+          "status": "scheduled",
+          "body": "Cloudflare has scheduled maintenance for our backend storage systems. Services will continue to operate normally, but customers will be unable to add or remove services via the Dashboard or the public API for a period of up to 3 minutes. This restriction includes all dashboard edits and API write calls.\n\nThe following services will experience configuration and new connections limitations during this window:\n- Dashboard & API write calls",
+          "incident_id": "dsjg7xj50r9r",
+          "created_at": "2026-08-07T16:41:30.397Z",
+          "updated_at": "2026-08-07T16:41:30.397Z",
+          "display_at": "2026-08-07T16:41:30.397Z",
+          "affected_components": [
+            {
+              "code": "g4tb35rs9yw7",
+              "name": "Cloudflare Sites and Services - API",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3sq3s4d20ywk",
+              "name": "Cloudflare Sites and Services - Dashboard",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g4tb35rs9yw7",
+          "name": "API",
+          "status": "under_maintenance",
+          "created_at": "2014-10-09T03:32:07.158Z",
+          "updated_at": "2026-08-11T12:00:07.872Z",
+          "position": 8,
+          "description": "Application programming interface (API) for customers to read and write their configurations at https://api.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3sq3s4d20ywk",
+          "name": "Dashboard",
+          "status": "under_maintenance",
+          "created_at": "2014-10-09T03:32:07.173Z",
+          "updated_at": "2026-08-11T12:00:07.966Z",
+          "position": 39,
+          "description": "Dashboard where customers can view and make changes to their configurations at https://dash.cloudflare.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-08-11T12:00:00.000Z",
+      "scheduled_until": "2026-08-11T13:00:00.000Z"
+    },
+    {
       "id": "2r50j1phnvp4",
       "name": "STL (St. Louis) on 2026-08-11",
       "status": "in_progress",
@@ -8369,73 +8373,6 @@
       ],
       "scheduled_for": "2026-08-11T09:00:00.000Z",
       "scheduled_until": "2026-08-12T22:00:00.000Z"
-    },
-    {
-      "id": "vb6yqr1p1hm2",
-      "name": "BCN (Barcelona) on 2026-08-11",
-      "status": "in_progress",
-      "created_at": "2026-08-11T00:10:27.950Z",
-      "updated_at": "2026-08-11T00:15:09.349Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/th3z52z8mn6h",
-      "started_at": "2026-08-11T00:10:27.943Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "rfgpb1szvq1l",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "vb6yqr1p1hm2",
-          "created_at": "2026-08-11T00:15:09.342Z",
-          "updated_at": "2026-08-11T00:15:09.342Z",
-          "display_at": "2026-08-11T00:15:09.342Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "cx5yzljvs0d8",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BCN (Barcelona) datacenter on 2026-08-11 between 00:15 and 12:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "vb6yqr1p1hm2",
-          "created_at": "2026-08-11T00:10:28.010Z",
-          "updated_at": "2026-08-11T00:10:28.010Z",
-          "display_at": "2026-08-11T00:10:28.010Z",
-          "affected_components": [
-            {
-              "code": "3lsyxp2s1khw",
-              "name": "Europe - Barcelona, Spain - (BCN)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "3lsyxp2s1khw",
-          "name": "Barcelona, Spain - (BCN)",
-          "status": "operational",
-          "created_at": "2016-10-10T21:36:13.143Z",
-          "updated_at": "2026-07-15T22:27:14.449Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-08-11T00:15:00.000Z",
-      "scheduled_until": "2026-08-11T12:00:00.000Z"
     }
   ],
   "status": {
