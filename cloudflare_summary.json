@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-08-20T19:02:26.505Z"
+    "updated_at": "2026-08-20T19:45:29.357Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T21:59:30.000Z",
       "updated_at": "2020-11-11T20:12:30.000Z",
       "position": 1,
@@ -4814,9 +4814,9 @@
     {
       "id": "bty1yz6dhh0v",
       "name": "Durable Objects",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2023-06-12T14:55:22.000Z",
-      "updated_at": "2026-08-20T18:51:08.000Z",
+      "updated_at": "2026-08-20T19:32:37.000Z",
       "position": 46,
       "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
       "showcase": false,
@@ -6269,9 +6269,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-07-05T10:55:24.000Z",
-      "updated_at": "2026-08-20T18:51:08.000Z",
+      "updated_at": "2026-08-20T19:32:37.000Z",
       "position": 81,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -7634,64 +7634,32 @@
   ],
   "incidents": [
     {
-      "id": "rq2nwg85qqn4",
-      "name": "Elevated Errors R2 and Durable Objects",
-      "status": "monitoring",
-      "created_at": "2026-08-20T18:51:08.000Z",
-      "updated_at": "2026-08-20T19:00:34.000Z",
-      "monitoring_at": "2026-08-20T19:00:34.000Z",
+      "id": "jn37dmb9s37p",
+      "name": "Missing R2 Audit Logs",
+      "status": "identified",
+      "created_at": "2026-08-20T19:19:19.000Z",
+      "updated_at": "2026-08-20T19:19:19.843Z",
+      "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/rq2nwg85qqn4",
-      "started_at": "2026-08-20T18:51:08.000Z",
+      "impact": "none",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/jn37dmb9s37p",
+      "started_at": "2026-08-20T19:19:19.789Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "7n2gxr7cd034",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "rq2nwg85qqn4",
-          "created_at": "2026-08-20T19:00:34.587Z",
-          "updated_at": "2026-08-20T19:00:34.587Z",
-          "display_at": "2026-08-20T19:00:34.587Z",
-          "affected_components": [
-            {
-              "code": "bty1yz6dhh0v",
-              "name": "Cloudflare Sites and Services - Durable Objects",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "s2h3xtws2tkd",
+          "id": "2s5gc4qqgx29",
           "status": "identified",
-          "body": "We have identified and issue that is causing elevated errors for R2 and Durable Objects.",
-          "incident_id": "rq2nwg85qqn4",
-          "created_at": "2026-08-20T18:51:08.566Z",
-          "updated_at": "2026-08-20T18:51:08.566Z",
-          "display_at": "2026-08-20T18:51:08.566Z",
+          "body": "We have identified an issue where audit logs for R2 are missing in the dashboard, we are working to resolve the issue.",
+          "incident_id": "jn37dmb9s37p",
+          "created_at": "2026-08-20T19:19:19.840Z",
+          "updated_at": "2026-08-20T19:19:19.840Z",
+          "display_at": "2026-08-20T19:19:19.840Z",
           "affected_components": [
             {
-              "code": "bty1yz6dhh0v",
-              "name": "Cloudflare Sites and Services - Durable Objects",
+              "code": "2469qcw8rvjp",
+              "name": "Cloudflare Sites and Services - Audit Logs",
               "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "hb7g5sq2zz0h",
-              "name": "Cloudflare Sites and Services - R2",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -7701,30 +7669,15 @@
       ],
       "components": [
         {
-          "id": "bty1yz6dhh0v",
-          "name": "Durable Objects",
-          "status": "degraded_performance",
-          "created_at": "2023-06-12T14:55:22.000Z",
-          "updated_at": "2026-08-20T18:51:08.000Z",
-          "position": 46,
-          "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
+          "id": "2469qcw8rvjp",
+          "name": "Audit Logs",
+          "status": "operational",
+          "created_at": "2022-08-01T04:49:28.000Z",
+          "updated_at": "2026-07-21T10:40:35.000Z",
+          "position": 15,
+          "description": null,
           "showcase": false,
-          "start_date": "2023-06-12",
-          "group_id": "1km35smx8p41",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "hb7g5sq2zz0h",
-          "name": "R2",
-          "status": "degraded_performance",
-          "created_at": "2022-07-05T10:55:24.000Z",
-          "updated_at": "2026-08-20T18:51:08.000Z",
-          "position": 81,
-          "description": "High-performance storage for files and objects with zero egress charges",
-          "showcase": false,
-          "start_date": "2022-07-05",
+          "start_date": "2022-08-01",
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -7740,12 +7693,12 @@
       "name": "VIE (Vienna) on 2026-08-21",
       "status": "scheduled",
       "created_at": "2026-08-18T10:00:40.000Z",
-      "updated_at": "2026-08-18T10:00:40.000Z",
+      "updated_at": "2026-08-18T10:00:40.598Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/r0wb29jhjt70",
-      "started_at": "2026-08-18T10:00:40.000Z",
+      "started_at": "2026-08-18T10:00:40.503Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -7794,12 +7747,12 @@
       "name": "MEX (Mexico City) on 2026-08-21",
       "status": "scheduled",
       "created_at": "2026-08-18T08:50:41.000Z",
-      "updated_at": "2026-08-18T08:50:41.000Z",
+      "updated_at": "2026-08-18T08:50:41.175Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/lgs3ylp55qtr",
-      "started_at": "2026-08-18T08:50:41.000Z",
+      "started_at": "2026-08-18T08:50:41.114Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -7848,12 +7801,12 @@
       "name": "SIN (Singapore) on 2026-08-21",
       "status": "scheduled",
       "created_at": "2026-08-19T20:31:07.000Z",
-      "updated_at": "2026-08-19T20:31:07.000Z",
+      "updated_at": "2026-08-19T20:31:07.515Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/yz2xr3ysr2vk",
-      "started_at": "2026-08-19T20:31:07.000Z",
+      "started_at": "2026-08-19T20:31:07.464Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -7902,12 +7855,12 @@
       "name": "YUL (Montréal) on 2026-08-24",
       "status": "scheduled",
       "created_at": "2026-08-20T17:31:05.000Z",
-      "updated_at": "2026-08-20T17:31:05.000Z",
+      "updated_at": "2026-08-20T17:31:05.642Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/rpppllrxjv61",
-      "started_at": "2026-08-20T17:31:05.000Z",
+      "started_at": "2026-08-20T17:31:05.586Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -7956,12 +7909,12 @@
       "name": "SSL/TLS Certificate Management Maintenance",
       "status": "scheduled",
       "created_at": "2026-08-04T07:31:49.000Z",
-      "updated_at": "2026-08-04T07:31:49.000Z",
+      "updated_at": "2026-08-04T07:31:49.240Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/n6lvrbqrkd5x",
-      "started_at": "2026-08-04T07:31:49.000Z",
+      "started_at": "2026-08-04T07:31:49.138Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8010,12 +7963,12 @@
       "name": "HAM (Hamburg) on 2026-08-25",
       "status": "scheduled",
       "created_at": "2026-08-17T13:30:50.000Z",
-      "updated_at": "2026-08-17T13:30:50.000Z",
+      "updated_at": "2026-08-17T13:30:50.572Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/x6cdkn5qlsv2",
-      "started_at": "2026-08-17T13:30:50.000Z",
+      "started_at": "2026-08-17T13:30:50.500Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8064,12 +8017,12 @@
       "name": "VIE (Vienna) on 2026-08-25",
       "status": "scheduled",
       "created_at": "2026-08-18T10:10:41.000Z",
-      "updated_at": "2026-08-18T10:10:41.000Z",
+      "updated_at": "2026-08-18T10:10:41.770Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/pr39d2vc4583",
-      "started_at": "2026-08-18T10:10:41.000Z",
+      "started_at": "2026-08-18T10:10:41.710Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8118,12 +8071,12 @@
       "name": "ATL (Atlanta) on 2026-08-25",
       "status": "scheduled",
       "created_at": "2026-08-20T04:31:01.000Z",
-      "updated_at": "2026-08-20T04:31:01.000Z",
+      "updated_at": "2026-08-20T04:31:01.825Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/kydrb1slp7z6",
-      "started_at": "2026-08-20T04:31:01.000Z",
+      "started_at": "2026-08-20T04:31:01.769Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8172,12 +8125,12 @@
       "name": "SJC (San Jose) on 2026-08-25",
       "status": "scheduled",
       "created_at": "2026-08-17T14:20:46.000Z",
-      "updated_at": "2026-08-17T14:20:46.000Z",
+      "updated_at": "2026-08-17T14:20:46.603Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/xrmp0vy35nlx",
-      "started_at": "2026-08-17T14:20:46.000Z",
+      "started_at": "2026-08-17T14:20:46.524Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8226,12 +8179,12 @@
       "name": "PDX (Portland) on 2026-08-25",
       "status": "scheduled",
       "created_at": "2026-08-18T07:50:41.000Z",
-      "updated_at": "2026-08-18T07:50:41.000Z",
+      "updated_at": "2026-08-18T07:50:41.469Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/0shvvclq2bld",
-      "started_at": "2026-08-18T07:50:41.000Z",
+      "started_at": "2026-08-18T07:50:41.386Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8280,12 +8233,12 @@
       "name": "SJC (San Jose) on 2026-08-26",
       "status": "scheduled",
       "created_at": "2026-08-17T14:30:48.000Z",
-      "updated_at": "2026-08-17T14:30:48.000Z",
+      "updated_at": "2026-08-17T14:30:48.470Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/30qh3dmtsdvd",
-      "started_at": "2026-08-17T14:30:48.000Z",
+      "started_at": "2026-08-17T14:30:48.409Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8334,12 +8287,12 @@
       "name": "Maintenance for core backend database systems (cfdb)",
       "status": "scheduled",
       "created_at": "2026-08-05T08:57:48.000Z",
-      "updated_at": "2026-08-12T09:22:32.000Z",
+      "updated_at": "2026-08-12T09:22:32.041Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/qwqw8lkssydy",
-      "started_at": "2026-08-05T08:57:48.000Z",
+      "started_at": "2026-08-05T08:57:48.808Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8514,12 +8467,12 @@
       "name": "EWR (Newark) on 2026-09-01",
       "status": "scheduled",
       "created_at": "2026-07-21T14:00:20.000Z",
-      "updated_at": "2026-07-21T14:00:20.000Z",
+      "updated_at": "2026-07-21T14:00:20.546Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/54grhrwqb50s",
-      "started_at": "2026-07-21T14:00:20.000Z",
+      "started_at": "2026-07-21T14:00:20.477Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8568,12 +8521,12 @@
       "name": "EWR (Newark) on 2026-09-02",
       "status": "scheduled",
       "created_at": "2026-07-21T15:30:28.000Z",
-      "updated_at": "2026-07-21T15:30:28.000Z",
+      "updated_at": "2026-07-21T15:30:28.658Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/39w6066rxf6l",
-      "started_at": "2026-07-21T15:30:28.000Z",
+      "started_at": "2026-07-21T15:30:28.592Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8622,12 +8575,12 @@
       "name": "SJU (San Juan) on 2026-08-20",
       "status": "in_progress",
       "created_at": "2026-08-20T15:21:00.000Z",
-      "updated_at": "2026-08-20T19:00:07.000Z",
+      "updated_at": "2026-08-20T19:00:07.532Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/zs59h5bxt1mq",
-      "started_at": "2026-08-20T15:21:00.000Z",
+      "started_at": "2026-08-20T15:21:00.212Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8702,12 +8655,12 @@
       "name": "SIN (Singapore) on 2026-08-20",
       "status": "in_progress",
       "created_at": "2026-08-19T20:31:06.000Z",
-      "updated_at": "2026-08-20T18:00:07.000Z",
+      "updated_at": "2026-08-20T18:00:07.747Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/nd77rb8vr6lg",
-      "started_at": "2026-08-19T20:31:06.000Z",
+      "started_at": "2026-08-19T20:31:06.500Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8782,12 +8735,12 @@
       "name": "ORD (Chicago) on 2026-08-20",
       "status": "in_progress",
       "created_at": "2026-08-18T11:10:41.000Z",
-      "updated_at": "2026-08-20T08:00:12.000Z",
+      "updated_at": "2026-08-20T08:00:12.029Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/0zw3tt43ggf5",
-      "started_at": "2026-08-18T11:10:41.000Z",
+      "started_at": "2026-08-18T11:10:41.002Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
