@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-08-20T16:42:16.882Z"
+    "updated_at": "2026-08-20T17:11:19.760Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.000Z",
       "updated_at": "2020-11-11T20:12:30.000Z",
       "position": 1,
@@ -965,9 +965,9 @@
     {
       "id": "c9mqrzw6nzvg",
       "name": "AI Search",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2026-02-13T13:28:33.000Z",
-      "updated_at": "2026-07-16T18:17:12.000Z",
+      "updated_at": "2026-08-20T16:48:25.000Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2039,9 +2039,9 @@
     {
       "id": "2cwyccg7b7xb",
       "name": "Artifacts",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2026-07-16T17:07:32.000Z",
-      "updated_at": "2026-07-16T18:17:12.000Z",
+      "updated_at": "2026-08-20T16:48:25.000Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -3944,9 +3944,9 @@
     {
       "id": "nd77krz8224v",
       "name": "Containers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-07-23T11:03:53.000Z",
-      "updated_at": "2026-07-17T19:53:00.000Z",
+      "updated_at": "2026-08-20T16:48:25.000Z",
       "position": 34,
       "description": "Cloudflare Containers",
       "showcase": false,
@@ -4094,9 +4094,9 @@
     {
       "id": "z0yd3sxqjqdm",
       "name": "D1",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-02-09T08:57:38.000Z",
-      "updated_at": "2026-07-16T18:17:12.000Z",
+      "updated_at": "2026-08-20T16:48:25.000Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -4814,9 +4814,9 @@
     {
       "id": "bty1yz6dhh0v",
       "name": "Durable Objects",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-06-12T14:55:22.000Z",
-      "updated_at": "2026-08-20T14:00:10.000Z",
+      "updated_at": "2026-08-20T16:48:25.000Z",
       "position": 46,
       "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
       "showcase": false,
@@ -6899,9 +6899,9 @@
     {
       "id": "pg21w9xb991r",
       "name": "Workers Assets",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2026-03-30T11:50:12.000Z",
-      "updated_at": "2026-08-11T12:31:06.000Z",
+      "updated_at": "2026-08-20T16:48:25.000Z",
       "position": 117,
       "description": null,
       "showcase": false,
@@ -6974,9 +6974,9 @@
     {
       "id": "5df6y9z3fsky",
       "name": "Workflows",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-04-04T09:39:26.000Z",
-      "updated_at": "2026-08-14T20:05:45.000Z",
+      "updated_at": "2026-08-20T16:48:25.000Z",
       "position": 122,
       "description": "Workflows is Cloudflare Durable Execution engine, that give the ability to build and execute applications that are durable in the face of errors, network issues, upstream API outages, rate limits, and (most importantly) infrastructure failure.",
       "showcase": false,
@@ -7632,14 +7632,250 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "f35vbpr3dv4h",
+      "name": "Durable Objects and Downstream Service Errors",
+      "status": "monitoring",
+      "created_at": "2026-08-20T16:48:25.000Z",
+      "updated_at": "2026-08-20T16:56:11.000Z",
+      "monitoring_at": "2026-08-20T16:56:11.000Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/f35vbpr3dv4h",
+      "started_at": "2026-08-20T16:48:25.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "bd0wrm9d9wzx",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "f35vbpr3dv4h",
+          "created_at": "2026-08-20T16:56:11.288Z",
+          "updated_at": "2026-08-20T16:56:11.288Z",
+          "display_at": "2026-08-20T16:56:11.288Z",
+          "affected_components": [
+            {
+              "code": "c9mqrzw6nzvg",
+              "name": "Cloudflare Sites and Services - AI Search",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "2cwyccg7b7xb",
+              "name": "Cloudflare Sites and Services - Artifacts",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "nd77krz8224v",
+              "name": "Cloudflare Sites and Services - Containers",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "z0yd3sxqjqdm",
+              "name": "Cloudflare Sites and Services - D1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "pg21w9xb991r",
+              "name": "Cloudflare Sites and Services - Workers Assets",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "5df6y9z3fsky",
+              "name": "Cloudflare Sites and Services - Workflows",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "j4qf9412638t",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues causing an increase of errors for Durable Objects and downstream services in ENAM region. We are working to analyse and mitigate this problem. More updates to follow shortly.",
+          "incident_id": "f35vbpr3dv4h",
+          "created_at": "2026-08-20T16:48:25.634Z",
+          "updated_at": "2026-08-20T16:48:25.634Z",
+          "display_at": "2026-08-20T16:48:25.634Z",
+          "affected_components": [
+            {
+              "code": "c9mqrzw6nzvg",
+              "name": "Cloudflare Sites and Services - AI Search",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "2cwyccg7b7xb",
+              "name": "Cloudflare Sites and Services - Artifacts",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "nd77krz8224v",
+              "name": "Cloudflare Sites and Services - Containers",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "z0yd3sxqjqdm",
+              "name": "Cloudflare Sites and Services - D1",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "bty1yz6dhh0v",
+              "name": "Cloudflare Sites and Services - Durable Objects",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "pg21w9xb991r",
+              "name": "Cloudflare Sites and Services - Workers Assets",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "5df6y9z3fsky",
+              "name": "Cloudflare Sites and Services - Workflows",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "c9mqrzw6nzvg",
+          "name": "AI Search",
+          "status": "degraded_performance",
+          "created_at": "2026-02-13T13:28:33.000Z",
+          "updated_at": "2026-08-20T16:48:25.000Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2026-02-13",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2cwyccg7b7xb",
+          "name": "Artifacts",
+          "status": "degraded_performance",
+          "created_at": "2026-07-16T17:07:32.000Z",
+          "updated_at": "2026-08-20T16:48:25.000Z",
+          "position": 13,
+          "description": null,
+          "showcase": false,
+          "start_date": "2026-07-16",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "nd77krz8224v",
+          "name": "Containers",
+          "status": "degraded_performance",
+          "created_at": "2025-07-23T11:03:53.000Z",
+          "updated_at": "2026-08-20T16:48:25.000Z",
+          "position": 34,
+          "description": "Cloudflare Containers",
+          "showcase": false,
+          "start_date": "2025-07-23",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "z0yd3sxqjqdm",
+          "name": "D1",
+          "status": "degraded_performance",
+          "created_at": "2024-02-09T08:57:38.000Z",
+          "updated_at": "2026-08-20T16:48:25.000Z",
+          "position": 36,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-02-09",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "bty1yz6dhh0v",
+          "name": "Durable Objects",
+          "status": "degraded_performance",
+          "created_at": "2023-06-12T14:55:22.000Z",
+          "updated_at": "2026-08-20T16:48:25.000Z",
+          "position": 46,
+          "description": "Durable Objects provide low-latency coordination and consistent permanent storage for the Workers platform.",
+          "showcase": false,
+          "start_date": "2023-06-12",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "pg21w9xb991r",
+          "name": "Workers Assets",
+          "status": "degraded_performance",
+          "created_at": "2026-03-30T11:50:12.000Z",
+          "updated_at": "2026-08-20T16:48:25.000Z",
+          "position": 117,
+          "description": null,
+          "showcase": false,
+          "start_date": "2026-03-30",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5df6y9z3fsky",
+          "name": "Workflows",
+          "status": "degraded_performance",
+          "created_at": "2025-04-04T09:39:26.000Z",
+          "updated_at": "2026-08-20T16:48:25.000Z",
+          "position": 122,
+          "description": "Workflows is Cloudflare Durable Execution engine, that give the ability to build and execute applications that are durable in the face of errors, network issues, upstream API outages, rate limits, and (most importantly) infrastructure failure.",
+          "showcase": false,
+          "start_date": "2025-04-04",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "nd77rb8vr6lg",
       "name": "SIN (Singapore) on 2026-08-20",
       "status": "scheduled",
       "created_at": "2026-08-19T20:31:06.000Z",
-      "updated_at": "2026-08-19T20:31:06.000Z",
+      "updated_at": "2026-08-20T17:00:19.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7647,6 +7883,19 @@
       "started_at": "2026-08-19T20:31:06.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "8qbnd7j3tz68",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "nd77rb8vr6lg",
+          "created_at": "2026-08-20T17:00:19.502Z",
+          "updated_at": "2026-08-20T17:00:19.502Z",
+          "display_at": "2026-08-20T17:00:19.502Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "rc3nsmpvwqxf",
           "status": "scheduled",
