@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-08-24T21:55:28.199Z"
+    "updated_at": "2026-08-24T22:27:22.207Z"
   },
   "components": [
     {
@@ -7652,9 +7652,9 @@
     {
       "id": "d68x0kzjwhqf",
       "name": "Increased Latency",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2026-08-24T20:38:27.000Z",
-      "updated_at": "2026-08-24T20:38:27.000Z",
+      "updated_at": "2026-08-24T22:24:02.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7662,6 +7662,26 @@
       "started_at": "2026-08-24T20:38:27.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "xbn8gwkhcbzr",
+          "status": "identified",
+          "body": "We have identified the cause of this issue and are implementing a fix.",
+          "incident_id": "d68x0kzjwhqf",
+          "created_at": "2026-08-24T22:24:02.213Z",
+          "updated_at": "2026-08-24T22:24:02.213Z",
+          "display_at": "2026-08-24T22:24:02.213Z",
+          "affected_components": [
+            {
+              "code": "5wnz34mhfhrk",
+              "name": "Cloudflare Sites and Services - CDN/Cache",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "rp56yt8xvybx",
           "status": "investigating",
@@ -8611,86 +8631,6 @@
       "scheduled_until": "2026-09-02T09:00:00.000Z"
     },
     {
-      "id": "t9thzqspxjbz",
-      "name": "SIN (Singapore) on 2026-08-24",
-      "status": "in_progress",
-      "created_at": "2026-08-21T20:20:31.000Z",
-      "updated_at": "2026-08-24T18:00:07.000Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/t9thzqspxjbz",
-      "started_at": "2026-08-21T20:20:31.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "yyb2w1dw163p",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "t9thzqspxjbz",
-          "created_at": "2026-08-24T18:00:07.383Z",
-          "updated_at": "2026-08-24T18:00:07.383Z",
-          "display_at": "2026-08-24T18:00:07.383Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "1mb4v4lnxwt5",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "t9thzqspxjbz",
-          "created_at": "2026-08-24T17:01:16.886Z",
-          "updated_at": "2026-08-24T17:01:16.886Z",
-          "display_at": "2026-08-24T17:01:16.886Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "h6llkl32fcdy",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in SIN (Singapore) datacenter on 2026-08-24 between 18:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "t9thzqspxjbz",
-          "created_at": "2026-08-21T20:20:31.973Z",
-          "updated_at": "2026-08-21T20:20:31.973Z",
-          "display_at": "2026-08-21T20:20:31.973Z",
-          "affected_components": [
-            {
-              "code": "18p6r93swmbl",
-              "name": "Asia - Singapore, Singapore - (SIN)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "18p6r93swmbl",
-          "name": "Singapore, Singapore - (SIN)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:44:15.000Z",
-          "updated_at": "2026-08-24T08:28:22.000Z",
-          "position": 59,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-08-24T18:00:00.000Z",
-      "scheduled_until": "2026-08-24T22:00:00.000Z"
-    },
-    {
       "id": "gwjpjd2rvjp1",
       "name": "IAD (Ashburn) on 2026-08-24",
       "status": "in_progress",
@@ -8769,86 +8709,6 @@
       ],
       "scheduled_for": "2026-08-24T08:00:00.000Z",
       "scheduled_until": "2026-08-25T07:00:00.000Z"
-    },
-    {
-      "id": "0gf3rdn81fl7",
-      "name": "NQZ (Astana) on 2026-08-21",
-      "status": "in_progress",
-      "created_at": "2026-08-21T16:50:32.000Z",
-      "updated_at": "2026-08-21T19:00:07.000Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/0gf3rdn81fl7",
-      "started_at": "2026-08-21T16:50:32.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "4442f576bt10",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "0gf3rdn81fl7",
-          "created_at": "2026-08-21T19:00:07.976Z",
-          "updated_at": "2026-08-21T19:00:07.976Z",
-          "display_at": "2026-08-21T19:00:07.976Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "jzcm2jrncpjy",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "0gf3rdn81fl7",
-          "created_at": "2026-08-21T18:00:10.386Z",
-          "updated_at": "2026-08-21T18:00:10.386Z",
-          "display_at": "2026-08-21T18:00:10.386Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "64tgypgs6rvl",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in NQZ (Astana) datacenter between 2026-08-21 19:00 and 2026-08-24 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "0gf3rdn81fl7",
-          "created_at": "2026-08-21T16:50:32.187Z",
-          "updated_at": "2026-08-21T16:50:32.187Z",
-          "display_at": "2026-08-21T16:50:32.187Z",
-          "affected_components": [
-            {
-              "code": "0bnls29mcbkc",
-              "name": "Asia - Astana, Kazakhstan - (NQZ)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "0bnls29mcbkc",
-          "name": "Astana, Kazakhstan - (NQZ)",
-          "status": "partial_outage",
-          "created_at": "2026-07-29T05:30:44.000Z",
-          "updated_at": "2026-08-24T12:36:27.000Z",
-          "position": 687,
-          "description": null,
-          "showcase": false,
-          "start_date": "2026-07-29",
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-08-21T19:00:00.000Z",
-      "scheduled_until": "2026-08-24T22:00:00.000Z"
     }
   ],
   "status": {
