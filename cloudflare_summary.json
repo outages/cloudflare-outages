@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-08-27T14:28:49.280Z"
+    "updated_at": "2026-08-27T23:54:29.366Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "1km35smx8p41",
       "name": "Cloudflare Sites and Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T21:59:30.000Z",
       "updated_at": "2020-11-11T20:12:30.000Z",
       "position": 1,
@@ -6738,7 +6738,7 @@
       "name": "Turnstile",
       "status": "operational",
       "created_at": "2023-01-19T17:03:40.000Z",
-      "updated_at": "2026-08-11T12:31:12.000Z",
+      "updated_at": "2026-08-27T19:29:35.000Z",
       "position": 106,
       "description": "Turnstile is a user-friendly, privacy-preserving alternative to CAPTCHA.",
       "showcase": false,
@@ -6826,9 +6826,9 @@
     {
       "id": "bjvy4v384csg",
       "name": "WARP",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2026-07-03T21:14:10.000Z",
-      "updated_at": "2026-08-11T12:31:12.000Z",
+      "updated_at": "2026-08-27T18:46:19.000Z",
       "position": 112,
       "description": null,
       "showcase": false,
@@ -6918,7 +6918,7 @@
       "name": "Workers Builds",
       "status": "operational",
       "created_at": "2025-05-27T17:04:31.000Z",
-      "updated_at": "2026-08-11T12:31:06.000Z",
+      "updated_at": "2026-08-27T22:58:12.000Z",
       "position": 118,
       "description": "Workers Builds is Cloudflare's native CI/CD system that allows you to integrate with GitHub or GitLab to automatically deploy changes with each new push to a selected branch (e.g. main).",
       "showcase": false,
@@ -7664,35 +7664,34 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "hxnzy4f838ny",
-      "name": "HKG (Hong Kong) on 2026-08-27",
-      "status": "scheduled",
-      "created_at": "2026-08-25T15:41:03.000Z",
-      "updated_at": "2026-08-25T20:31:04.000Z",
+      "id": "9g65dxfbcjln",
+      "name": "Incorrect geo location for some Cloudflare WARP users",
+      "status": "identified",
+      "created_at": "2026-08-27T18:46:19.000Z",
+      "updated_at": "2026-08-27T18:56:11.000Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/hxnzy4f838ny",
-      "started_at": "2026-08-25T15:41:03.000Z",
+      "impact": "minor",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
+      "started_at": "2026-08-27T18:46:19.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "z4zzy5wxvl36",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in HKG (Hong Kong) datacenter on 2026-08-27 between 18:00 and 23:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "hxnzy4f838ny",
-          "created_at": "2026-08-25T20:31:04.764Z",
-          "updated_at": "2026-08-25T20:31:04.764Z",
-          "display_at": "2026-08-25T20:31:04.764Z",
+          "id": "tmxm91dk7f98",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "9g65dxfbcjln",
+          "created_at": "2026-08-27T18:56:11.313Z",
+          "updated_at": "2026-08-27T18:56:11.313Z",
+          "display_at": "2026-08-27T18:56:11.313Z",
           "affected_components": [
             {
-              "code": "wf2gdmxg7cv3",
-              "name": "Asia - Hong Kong - (HKG)",
-              "old_status": "operational",
-              "new_status": "operational"
+              "code": "bjvy4v384csg",
+              "name": "Cloudflare Sites and Services - WARP",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -7700,19 +7699,19 @@
           "tweet_id": null
         },
         {
-          "id": "b3t147sfyk1d",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in HKG (Hong Kong) datacenter on 2026-08-27 between 18:00 and 22:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "hxnzy4f838ny",
-          "created_at": "2026-08-25T15:41:03.783Z",
-          "updated_at": "2026-08-25T15:41:03.783Z",
-          "display_at": "2026-08-25T15:41:03.783Z",
+          "id": "fgk96scpz2l7",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with Cloudflare WARP and Cloudflare Zero Trust users being incorrectly geolocated by some third party services.",
+          "incident_id": "9g65dxfbcjln",
+          "created_at": "2026-08-27T18:46:19.105Z",
+          "updated_at": "2026-08-27T18:46:19.105Z",
+          "display_at": "2026-08-27T18:46:19.105Z",
           "affected_components": [
             {
-              "code": "wf2gdmxg7cv3",
-              "name": "Asia - Hong Kong - (HKG)",
+              "code": "bjvy4v384csg",
+              "name": "Cloudflare Sites and Services - WARP",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -7722,84 +7721,31 @@
       ],
       "components": [
         {
-          "id": "wf2gdmxg7cv3",
-          "name": "Hong Kong - (HKG)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:46:42.000Z",
-          "updated_at": "2026-08-24T08:28:22.000Z",
-          "position": 25,
+          "id": "bjvy4v384csg",
+          "name": "WARP",
+          "status": "degraded_performance",
+          "created_at": "2026-07-03T21:14:10.000Z",
+          "updated_at": "2026-08-27T18:46:19.000Z",
+          "position": 112,
           "description": null,
           "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
+          "start_date": "2026-07-03",
+          "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2026-08-27T18:00:00.000Z",
-      "scheduled_until": "2026-08-27T23:00:00.000Z"
-    },
-    {
-      "id": "ggnwtl6t26lk",
-      "name": "CDG (Paris) on 2026-08-28",
-      "status": "scheduled",
-      "created_at": "2026-08-27T12:50:17.000Z",
-      "updated_at": "2026-08-27T12:50:17.000Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/ggnwtl6t26lk",
-      "started_at": "2026-08-27T12:50:17.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "4977vm1416xx",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in CDG (Paris) datacenter on 2026-08-28 between 00:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "ggnwtl6t26lk",
-          "created_at": "2026-08-27T12:50:17.719Z",
-          "updated_at": "2026-08-27T12:50:17.719Z",
-          "display_at": "2026-08-27T12:50:17.719Z",
-          "affected_components": [
-            {
-              "code": "w1br383gmlwj",
-              "name": "Europe - Paris, France - (CDG)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "w1br383gmlwj",
-          "name": "Paris, France - (CDG)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:36:46.000Z",
-          "updated_at": "2026-03-03T10:46:33.000Z",
-          "position": 37,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-08-28T00:00:00.000Z",
-      "scheduled_until": "2026-08-28T05:00:00.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "lfvfk74zxgl6",
       "name": "AMS (Amsterdam) on 2026-08-28",
       "status": "scheduled",
       "created_at": "2026-08-26T06:31:01.000Z",
-      "updated_at": "2026-08-26T06:31:01.000Z",
+      "updated_at": "2026-08-27T23:00:19.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7807,6 +7753,19 @@
       "started_at": "2026-08-26T06:31:01.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "slr51p8x7bjb",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "lfvfk74zxgl6",
+          "created_at": "2026-08-27T23:00:19.805Z",
+          "updated_at": "2026-08-27T23:00:19.805Z",
+          "display_at": "2026-08-27T23:00:19.805Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "yrw4gyjccr0v",
           "status": "scheduled",
@@ -7849,30 +7808,43 @@
       "scheduled_until": "2026-08-28T05:30:00.000Z"
     },
     {
-      "id": "gtqj37qq1337",
-      "name": "PHL (Philadelphia) on 2026-08-28",
+      "id": "ggnwtl6t26lk",
+      "name": "CDG (Paris) on 2026-08-28",
       "status": "scheduled",
-      "created_at": "2026-08-27T13:10:17.000Z",
-      "updated_at": "2026-08-27T13:10:17.000Z",
+      "created_at": "2026-08-27T12:50:17.000Z",
+      "updated_at": "2026-08-27T23:00:10.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/gtqj37qq1337",
-      "started_at": "2026-08-27T13:10:17.000Z",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/ggnwtl6t26lk",
+      "started_at": "2026-08-27T12:50:17.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "8lwvh815knhx",
+          "id": "q2jgztp5pdrj",
           "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in PHL (Philadelphia) datacenter on 2026-08-28 between 03:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "gtqj37qq1337",
-          "created_at": "2026-08-27T13:10:17.984Z",
-          "updated_at": "2026-08-27T13:10:17.984Z",
-          "display_at": "2026-08-27T13:10:17.984Z",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "ggnwtl6t26lk",
+          "created_at": "2026-08-27T23:00:09.901Z",
+          "updated_at": "2026-08-27T23:00:09.901Z",
+          "display_at": "2026-08-27T23:00:09.901Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4977vm1416xx",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in CDG (Paris) datacenter on 2026-08-28 between 00:00 and 05:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "ggnwtl6t26lk",
+          "created_at": "2026-08-27T12:50:17.719Z",
+          "updated_at": "2026-08-27T12:50:17.719Z",
+          "display_at": "2026-08-27T12:50:17.719Z",
           "affected_components": [
             {
-              "code": "bss3xc7lbmgw",
-              "name": "North America - Philadelphia, United States - (PHL)",
+              "code": "w1br383gmlwj",
+              "name": "Europe - Paris, France - (CDG)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -7884,30 +7856,30 @@
       ],
       "components": [
         {
-          "id": "bss3xc7lbmgw",
-          "name": "Philadelphia, United States - (PHL)",
+          "id": "w1br383gmlwj",
+          "name": "Paris, France - (CDG)",
           "status": "operational",
-          "created_at": "2019-08-09T14:40:06.000Z",
-          "updated_at": "2026-08-24T12:47:32.000Z",
-          "position": 39,
+          "created_at": "2014-10-27T20:36:46.000Z",
+          "updated_at": "2026-03-03T10:46:33.000Z",
+          "position": 37,
           "description": null,
           "showcase": false,
           "start_date": null,
-          "group_id": "4l01sk5cdn5c",
+          "group_id": "zqxhg7y54vy8",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2026-08-28T03:00:00.000Z",
-      "scheduled_until": "2026-08-28T11:00:00.000Z"
+      "scheduled_for": "2026-08-28T00:00:00.000Z",
+      "scheduled_until": "2026-08-28T05:00:00.000Z"
     },
     {
       "id": "lqphplwb5h7q",
       "name": "GRU (São Paulo) on 2026-08-28",
       "status": "scheduled",
       "created_at": "2026-08-25T02:10:53.000Z",
-      "updated_at": "2026-08-26T04:10:18.000Z",
+      "updated_at": "2026-08-27T23:50:15.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7915,6 +7887,26 @@
       "started_at": "2026-08-25T02:10:53.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "vlb0x6rcqmz3",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in GRU (São Paulo) datacenter on 2026-08-28 between 01:30 and 10:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "lqphplwb5h7q",
+          "created_at": "2026-08-27T23:50:15.735Z",
+          "updated_at": "2026-08-27T23:50:15.735Z",
+          "display_at": "2026-08-27T23:50:15.735Z",
+          "affected_components": [
+            {
+              "code": "73mbn78m0yzm",
+              "name": "Latin America & the Caribbean - São Paulo, Brazil - (GRU)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "rc5p9m3yltgt",
           "status": "scheduled",
@@ -7973,8 +7965,116 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2026-08-28T03:00:00.000Z",
+      "scheduled_for": "2026-08-28T01:30:00.000Z",
       "scheduled_until": "2026-08-28T10:00:00.000Z"
+    },
+    {
+      "id": "gtqj37qq1337",
+      "name": "PHL (Philadelphia) on 2026-08-28",
+      "status": "scheduled",
+      "created_at": "2026-08-27T13:10:17.000Z",
+      "updated_at": "2026-08-27T13:10:17.000Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/gtqj37qq1337",
+      "started_at": "2026-08-27T13:10:17.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "8lwvh815knhx",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in PHL (Philadelphia) datacenter on 2026-08-28 between 03:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "gtqj37qq1337",
+          "created_at": "2026-08-27T13:10:17.984Z",
+          "updated_at": "2026-08-27T13:10:17.984Z",
+          "display_at": "2026-08-27T13:10:17.984Z",
+          "affected_components": [
+            {
+              "code": "bss3xc7lbmgw",
+              "name": "North America - Philadelphia, United States - (PHL)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bss3xc7lbmgw",
+          "name": "Philadelphia, United States - (PHL)",
+          "status": "operational",
+          "created_at": "2019-08-09T14:40:06.000Z",
+          "updated_at": "2026-08-24T12:47:32.000Z",
+          "position": 39,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-08-28T03:00:00.000Z",
+      "scheduled_until": "2026-08-28T11:00:00.000Z"
+    },
+    {
+      "id": "3y9d198wqpd3",
+      "name": "BOG (Bogotá) on 2026-08-28",
+      "status": "scheduled",
+      "created_at": "2026-08-27T22:50:14.000Z",
+      "updated_at": "2026-08-27T22:50:14.000Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/3y9d198wqpd3",
+      "started_at": "2026-08-27T22:50:14.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "j3h7hgy50ghp",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in BOG (Bogotá) datacenter on 2026-08-28 between 13:00 and 21:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "3y9d198wqpd3",
+          "created_at": "2026-08-27T22:50:14.171Z",
+          "updated_at": "2026-08-27T22:50:14.171Z",
+          "display_at": "2026-08-27T22:50:14.171Z",
+          "affected_components": [
+            {
+              "code": "171wlzvlxttk",
+              "name": "Latin America & the Caribbean - Bogotá, Colombia - (BOG)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "171wlzvlxttk",
+          "name": "Bogotá, Colombia - (BOG)",
+          "status": "operational",
+          "created_at": "2018-03-28T06:25:42.000Z",
+          "updated_at": "2026-07-23T08:21:23.000Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "91blz4ztt7dm",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-08-28T13:00:00.000Z",
+      "scheduled_until": "2026-08-28T21:00:00.000Z"
     },
     {
       "id": "qwqw8lkssydy",
@@ -8321,6 +8421,60 @@
       ],
       "scheduled_for": "2026-08-31T04:00:00.000Z",
       "scheduled_until": "2026-08-31T10:00:00.000Z"
+    },
+    {
+      "id": "qyjc4ffjfsyl",
+      "name": "IAD (Ashburn) on 2026-08-31",
+      "status": "scheduled",
+      "created_at": "2026-08-27T19:30:15.000Z",
+      "updated_at": "2026-08-27T19:30:15.000Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/qyjc4ffjfsyl",
+      "started_at": "2026-08-27T19:30:15.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "83kkz1nht7m7",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in IAD (Ashburn) datacenter on 2026-08-31 between 05:00 and 11:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "qyjc4ffjfsyl",
+          "created_at": "2026-08-27T19:30:15.339Z",
+          "updated_at": "2026-08-27T19:30:15.339Z",
+          "display_at": "2026-08-27T19:30:15.339Z",
+          "affected_components": [
+            {
+              "code": "3t0npclljyyg",
+              "name": "North America - Ashburn, VA, United States - (IAD)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3t0npclljyyg",
+          "name": "Ashburn, VA, United States - (IAD)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:30:01.000Z",
+          "updated_at": "2026-08-24T17:50:25.000Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "4l01sk5cdn5c",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-08-31T05:00:00.000Z",
+      "scheduled_until": "2026-08-31T11:00:00.000Z"
     },
     {
       "id": "qmqs75slrvw7",
