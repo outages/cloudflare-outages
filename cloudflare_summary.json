@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-09-01T20:55:58.415Z"
+    "updated_at": "2026-09-01T23:06:06.563Z"
   },
   "components": [
     {
@@ -5746,9 +5746,9 @@
     {
       "id": "m50pw1dxjp51",
       "name": "Palmas, Brazil - (PMW)",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-04-30T21:38:59.000Z",
-      "updated_at": "2026-07-14T19:13:44.000Z",
+      "updated_at": "2026-09-01T22:05:44.000Z",
       "position": 60,
       "description": null,
       "showcase": false,
@@ -6211,9 +6211,9 @@
     {
       "id": "xr712w0ly7nr",
       "name": "Pipelines",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2026-08-11T12:16:30.000Z",
-      "updated_at": "2026-08-11T12:31:24.000Z",
+      "updated_at": "2026-09-01T21:51:16.000Z",
       "position": 79,
       "description": "Managed streaming data pipeline service that ingests events, applies SQL transformations, and delivers them to R2 as Apache Iceberg tables or Parquet/JSON files.",
       "showcase": false,
@@ -7666,16 +7666,89 @@
   ],
   "incidents": [
     {
+      "id": "w6ng4jcxv7m1",
+      "name": "Pipelines Creation Issue",
+      "status": "identified",
+      "created_at": "2026-09-01T21:51:16.000Z",
+      "updated_at": "2026-09-01T23:00:55.000Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/w6ng4jcxv7m1",
+      "started_at": "2026-09-01T21:51:16.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "dnsbgk43r780",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "w6ng4jcxv7m1",
+          "created_at": "2026-09-01T23:00:55.643Z",
+          "updated_at": "2026-09-01T23:00:55.643Z",
+          "display_at": "2026-09-01T23:00:55.643Z",
+          "affected_components": [
+            {
+              "code": "xr712w0ly7nr",
+              "name": "Cloudflare Sites and Services - Pipelines",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "56s8c419y6l7",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue with creating new Pipeline resources, including Pipelines, Streams, and Sinks. Existing Pipelines are unaffected. More updates to follow shortly.",
+          "incident_id": "w6ng4jcxv7m1",
+          "created_at": "2026-09-01T21:51:16.798Z",
+          "updated_at": "2026-09-01T21:51:16.798Z",
+          "display_at": "2026-09-01T21:51:16.798Z",
+          "affected_components": [
+            {
+              "code": "xr712w0ly7nr",
+              "name": "Cloudflare Sites and Services - Pipelines",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xr712w0ly7nr",
+          "name": "Pipelines",
+          "status": "degraded_performance",
+          "created_at": "2026-08-11T12:16:30.000Z",
+          "updated_at": "2026-09-01T21:51:16.000Z",
+          "position": 79,
+          "description": "Managed streaming data pipeline service that ingests events, applies SQL transformations, and delivers them to R2 as Apache Iceberg tables or Parquet/JSON files.",
+          "showcase": false,
+          "start_date": "2026-08-11",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "cczd80189gvc",
       "name": "Cloudflare Access one-time PIN emails blocked by certain email security gateways, including Proofpoint",
       "status": "investigating",
       "created_at": "2026-09-01T20:06:47.000Z",
-      "updated_at": "2026-09-01T20:06:47.383Z",
+      "updated_at": "2026-09-01T20:06:47.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://www.cloudflarestatus.com/incidents/cczd80189gvc",
-      "started_at": "2026-09-01T20:06:47.276Z",
+      "started_at": "2026-09-01T20:06:47.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -7723,12 +7796,12 @@
       "name": "HTTP/3 issue affecting R2 custom domains",
       "status": "identified",
       "created_at": "2026-08-31T18:47:05.000Z",
-      "updated_at": "2026-09-01T14:46:03.899Z",
+      "updated_at": "2026-09-01T14:46:03.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://www.cloudflarestatus.com/incidents/8x66bpk6p9kk",
-      "started_at": "2026-08-31T18:47:05.841Z",
+      "started_at": "2026-08-31T18:47:05.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -7796,12 +7869,12 @@
       "name": "Incorrect geo location for some Cloudflare WARP users",
       "status": "identified",
       "created_at": "2026-08-27T18:46:19.000Z",
-      "updated_at": "2026-09-01T08:29:56.953Z",
+      "updated_at": "2026-09-01T08:29:56.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
-      "started_at": "2026-08-27T18:46:19.023Z",
+      "started_at": "2026-08-27T18:46:19.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -7991,14 +8064,27 @@
       "name": "AMS (Amsterdam) on 2026-09-02",
       "status": "scheduled",
       "created_at": "2026-08-28T01:30:15.000Z",
-      "updated_at": "2026-08-28T01:30:15.079Z",
+      "updated_at": "2026-09-01T23:00:19.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/syrb871xx0m0",
-      "started_at": "2026-08-28T01:30:15.027Z",
+      "started_at": "2026-08-28T01:30:15.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "4wrb8j0jcyn5",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "syrb871xx0m0",
+          "created_at": "2026-09-01T23:00:19.664Z",
+          "updated_at": "2026-09-01T23:00:19.664Z",
+          "display_at": "2026-09-01T23:00:19.664Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "bwym5ncrrwws",
           "status": "scheduled",
@@ -8045,12 +8131,12 @@
       "name": "GRU (São Paulo) on 2026-09-02",
       "status": "scheduled",
       "created_at": "2026-08-31T05:00:32.000Z",
-      "updated_at": "2026-08-31T05:00:32.273Z",
+      "updated_at": "2026-08-31T05:00:32.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/lrbfhpn6gspb",
-      "started_at": "2026-08-31T05:00:32.199Z",
+      "started_at": "2026-08-31T05:00:32.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8099,12 +8185,12 @@
       "name": "EWR (Newark) on 2026-09-02",
       "status": "scheduled",
       "created_at": "2026-07-21T15:30:28.000Z",
-      "updated_at": "2026-07-21T15:30:28.658Z",
+      "updated_at": "2026-07-21T15:30:28.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/39w6066rxf6l",
-      "started_at": "2026-07-21T15:30:28.592Z",
+      "started_at": "2026-07-21T15:30:28.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8153,12 +8239,12 @@
       "name": "SJC (San Jose) on 2026-09-02",
       "status": "scheduled",
       "created_at": "2026-08-30T07:50:21.000Z",
-      "updated_at": "2026-08-30T07:50:21.149Z",
+      "updated_at": "2026-08-30T07:50:21.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/2c2lf7y51xcb",
-      "started_at": "2026-08-30T07:50:21.069Z",
+      "started_at": "2026-08-30T07:50:21.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8207,12 +8293,12 @@
       "name": "BNA (Nashville) on 2026-09-02",
       "status": "scheduled",
       "created_at": "2026-08-31T15:01:04.000Z",
-      "updated_at": "2026-08-31T15:01:04.094Z",
+      "updated_at": "2026-08-31T15:01:04.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/wsfjj8q5sxm2",
-      "started_at": "2026-08-31T15:01:04.020Z",
+      "started_at": "2026-08-31T15:01:04.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8261,12 +8347,12 @@
       "name": "ORD (Chicago) on 2026-09-03",
       "status": "scheduled",
       "created_at": "2026-08-31T18:20:51.000Z",
-      "updated_at": "2026-08-31T18:20:51.213Z",
+      "updated_at": "2026-08-31T18:20:51.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/gnmdch82m7s8",
-      "started_at": "2026-08-31T18:20:51.145Z",
+      "started_at": "2026-08-31T18:20:51.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8315,12 +8401,12 @@
       "name": "AMS (Amsterdam) on 2026-09-06",
       "status": "scheduled",
       "created_at": "2026-08-31T04:00:30.000Z",
-      "updated_at": "2026-08-31T04:00:30.411Z",
+      "updated_at": "2026-08-31T04:00:30.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/6jz9r0dh05dw",
-      "started_at": "2026-08-31T04:00:30.347Z",
+      "started_at": "2026-08-31T04:00:30.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8369,12 +8455,12 @@
       "name": "AMS (Amsterdam) on 2026-09-07",
       "status": "scheduled",
       "created_at": "2026-08-31T04:00:30.000Z",
-      "updated_at": "2026-08-31T04:00:30.818Z",
+      "updated_at": "2026-08-31T04:00:30.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/r1jyzxhmglpn",
-      "started_at": "2026-08-31T04:00:30.759Z",
+      "started_at": "2026-08-31T04:00:30.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8423,12 +8509,12 @@
       "name": "AMS (Amsterdam) on 2026-09-08",
       "status": "scheduled",
       "created_at": "2026-08-31T04:00:31.000Z",
-      "updated_at": "2026-08-31T04:00:31.425Z",
+      "updated_at": "2026-08-31T04:00:31.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/l9thq5qx31wv",
-      "started_at": "2026-08-31T04:00:31.376Z",
+      "started_at": "2026-08-31T04:00:31.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8477,12 +8563,12 @@
       "name": "AMS (Amsterdam) on 2026-09-09",
       "status": "scheduled",
       "created_at": "2026-08-31T04:00:31.000Z",
-      "updated_at": "2026-09-01T08:10:49.406Z",
+      "updated_at": "2026-09-01T08:10:49.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/3wyr0qt0slc4",
-      "started_at": "2026-08-31T04:00:31.761Z",
+      "started_at": "2026-08-31T04:00:31.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8551,12 +8637,12 @@
       "name": "DUB (Dublin) on 2026-09-09",
       "status": "scheduled",
       "created_at": "2026-08-27T10:10:17.000Z",
-      "updated_at": "2026-08-27T13:20:17.155Z",
+      "updated_at": "2026-08-27T13:20:17.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/xj6fk1t7nmrl",
-      "started_at": "2026-08-27T10:10:17.900Z",
+      "started_at": "2026-08-27T10:10:17.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8625,12 +8711,12 @@
       "name": "DUB (Dublin) on 2026-09-10",
       "status": "scheduled",
       "created_at": "2026-08-27T13:20:17.000Z",
-      "updated_at": "2026-08-27T13:20:17.536Z",
+      "updated_at": "2026-08-27T13:20:17.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/xhc74kdfggps",
-      "started_at": "2026-08-27T13:20:17.454Z",
+      "started_at": "2026-08-27T13:20:17.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8679,12 +8765,12 @@
       "name": "KHH (Kaohsiung City) on 2026-09-01",
       "status": "in_progress",
       "created_at": "2026-09-01T11:40:51.000Z",
-      "updated_at": "2026-09-01T20:30:07.650Z",
+      "updated_at": "2026-09-01T20:30:07.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/2b3nfxk5yyz1",
-      "started_at": "2026-09-01T11:40:51.598Z",
+      "started_at": "2026-09-01T11:40:51.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8753,86 +8839,6 @@
       ],
       "scheduled_for": "2026-09-01T20:30:00.000Z",
       "scheduled_until": "2026-09-02T06:15:00.000Z"
-    },
-    {
-      "id": "mzfcfzsn2d5p",
-      "name": "HKG (Hong Kong) on 2026-09-01",
-      "status": "in_progress",
-      "created_at": "2026-08-28T19:01:11.000Z",
-      "updated_at": "2026-09-01T18:00:07.912Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/mzfcfzsn2d5p",
-      "started_at": "2026-08-28T19:01:11.074Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "wj97ldj08xnx",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "mzfcfzsn2d5p",
-          "created_at": "2026-09-01T18:00:07.899Z",
-          "updated_at": "2026-09-01T18:00:07.899Z",
-          "display_at": "2026-09-01T18:00:07.899Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "m6xr6rfzz448",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "mzfcfzsn2d5p",
-          "created_at": "2026-09-01T17:00:18.525Z",
-          "updated_at": "2026-09-01T17:00:18.525Z",
-          "display_at": "2026-09-01T17:00:18.525Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "v111kxzf0rmz",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in HKG (Hong Kong) datacenter on 2026-09-01 between 18:00 and 23:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "mzfcfzsn2d5p",
-          "created_at": "2026-08-28T19:01:11.134Z",
-          "updated_at": "2026-08-28T19:01:11.134Z",
-          "display_at": "2026-08-28T19:01:11.134Z",
-          "affected_components": [
-            {
-              "code": "wf2gdmxg7cv3",
-              "name": "Asia - Hong Kong - (HKG)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "wf2gdmxg7cv3",
-          "name": "Hong Kong - (HKG)",
-          "status": "operational",
-          "created_at": "2014-10-27T21:46:42.000Z",
-          "updated_at": "2026-08-24T08:28:22.000Z",
-          "position": 25,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-09-01T18:00:00.000Z",
-      "scheduled_until": "2026-09-01T23:00:00.000Z"
     }
   ],
   "status": {
