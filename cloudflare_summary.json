@@ -4,7 +4,7 @@
     "name": "Cloudflare",
     "url": "https://www.cloudflarestatus.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-09-01T23:06:06.563Z"
+    "updated_at": "2026-09-02T01:01:41.997Z"
   },
   "components": [
     {
@@ -7668,16 +7668,36 @@
     {
       "id": "w6ng4jcxv7m1",
       "name": "Pipelines Creation Issue",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2026-09-01T21:51:16.000Z",
-      "updated_at": "2026-09-01T23:00:55.000Z",
-      "monitoring_at": null,
+      "updated_at": "2026-09-01T23:46:44.000Z",
+      "monitoring_at": "2026-09-01T23:46:44.000Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://www.cloudflarestatus.com/incidents/w6ng4jcxv7m1",
       "started_at": "2026-09-01T21:51:16.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "h1szcqmc7ydv",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "w6ng4jcxv7m1",
+          "created_at": "2026-09-01T23:46:44.411Z",
+          "updated_at": "2026-09-01T23:46:44.411Z",
+          "display_at": "2026-09-01T23:46:44.411Z",
+          "affected_components": [
+            {
+              "code": "xr712w0ly7nr",
+              "name": "Cloudflare Sites and Services - Pipelines",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "dnsbgk43r780",
           "status": "identified",
@@ -8059,73 +8079,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "syrb871xx0m0",
-      "name": "AMS (Amsterdam) on 2026-09-02",
-      "status": "scheduled",
-      "created_at": "2026-08-28T01:30:15.000Z",
-      "updated_at": "2026-09-01T23:00:19.000Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/syrb871xx0m0",
-      "started_at": "2026-08-28T01:30:15.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "4wrb8j0jcyn5",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "syrb871xx0m0",
-          "created_at": "2026-09-01T23:00:19.664Z",
-          "updated_at": "2026-09-01T23:00:19.664Z",
-          "display_at": "2026-09-01T23:00:19.664Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "bwym5ncrrwws",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in AMS (Amsterdam) datacenter on 2026-09-02 between 00:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "syrb871xx0m0",
-          "created_at": "2026-08-28T01:30:15.076Z",
-          "updated_at": "2026-08-28T01:30:15.076Z",
-          "display_at": "2026-08-28T01:30:15.076Z",
-          "affected_components": [
-            {
-              "code": "57ctn3f2qsyj",
-              "name": "Europe - Amsterdam, Netherlands - (AMS)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "57ctn3f2qsyj",
-          "name": "Amsterdam, Netherlands - (AMS)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:35:05.000Z",
-          "updated_at": "2026-07-23T16:04:59.000Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-09-02T00:00:00.000Z",
-      "scheduled_until": "2026-09-02T04:00:00.000Z"
-    },
     {
       "id": "lrbfhpn6gspb",
       "name": "GRU (São Paulo) on 2026-09-02",
@@ -8759,6 +8712,86 @@
       ],
       "scheduled_for": "2026-09-10T02:00:00.000Z",
       "scheduled_until": "2026-09-10T05:00:00.000Z"
+    },
+    {
+      "id": "syrb871xx0m0",
+      "name": "AMS (Amsterdam) on 2026-09-02",
+      "status": "in_progress",
+      "created_at": "2026-08-28T01:30:15.000Z",
+      "updated_at": "2026-09-02T00:00:10.000Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/syrb871xx0m0",
+      "started_at": "2026-08-28T01:30:15.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "kb9tg530wm87",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "syrb871xx0m0",
+          "created_at": "2026-09-02T00:00:10.905Z",
+          "updated_at": "2026-09-02T00:00:10.905Z",
+          "display_at": "2026-09-02T00:00:10.905Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4wrb8j0jcyn5",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "syrb871xx0m0",
+          "created_at": "2026-09-01T23:00:19.664Z",
+          "updated_at": "2026-09-01T23:00:19.664Z",
+          "display_at": "2026-09-01T23:00:19.664Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "bwym5ncrrwws",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in AMS (Amsterdam) datacenter on 2026-09-02 between 00:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "syrb871xx0m0",
+          "created_at": "2026-08-28T01:30:15.076Z",
+          "updated_at": "2026-08-28T01:30:15.076Z",
+          "display_at": "2026-08-28T01:30:15.076Z",
+          "affected_components": [
+            {
+              "code": "57ctn3f2qsyj",
+              "name": "Europe - Amsterdam, Netherlands - (AMS)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "57ctn3f2qsyj",
+          "name": "Amsterdam, Netherlands - (AMS)",
+          "status": "operational",
+          "created_at": "2014-10-27T20:35:05.000Z",
+          "updated_at": "2026-07-23T16:04:59.000Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-09-02T00:00:00.000Z",
+      "scheduled_until": "2026-09-02T04:00:00.000Z"
     },
     {
       "id": "2b3nfxk5yyz1",
