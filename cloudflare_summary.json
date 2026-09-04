@@ -386,9 +386,9 @@
     {
       "id": "rfkpkllgfmrq",
       "name": "Algiers, Algeria - (ALG)",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2021-08-06T15:49:20.000Z",
-      "updated_at": "2026-09-04T19:58:28.000Z",
+      "updated_at": "2026-09-04T21:13:57.000Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1426,9 +1426,9 @@
     {
       "id": "cscgtg7yfz1b",
       "name": "Dar Es Salaam, Tanzania - (DAR)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2019-06-10T05:19:20.000Z",
-      "updated_at": "2026-09-04T10:39:40.000Z",
+      "updated_at": "2026-09-04T22:23:56.000Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2344,7 +2344,7 @@
       "name": "Dhaka, Bangladesh - (DAC)",
       "status": "partial_outage",
       "created_at": "2019-12-17T22:56:25.000Z",
-      "updated_at": "2026-09-04T20:43:15.000Z",
+      "updated_at": "2026-09-04T22:31:43.000Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2792,9 +2792,9 @@
     {
       "id": "41m926djhxpd",
       "name": "Oran, Algeria - (ORN)",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2023-05-05T16:40:30.000Z",
-      "updated_at": "2026-09-04T20:20:04.000Z",
+      "updated_at": "2026-09-04T21:13:56.000Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -3799,7 +3799,7 @@
       "name": "Saint-Denis, Réunion - (RUN)",
       "status": "operational",
       "created_at": "2024-09-03T09:59:40.000Z",
-      "updated_at": "2026-09-04T19:47:41.000Z",
+      "updated_at": "2026-09-04T22:07:47.000Z",
       "position": 32,
       "description": null,
       "showcase": false,
@@ -6272,9 +6272,9 @@
     {
       "id": "hb7g5sq2zz0h",
       "name": "R2",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-07-05T10:55:24.000Z",
-      "updated_at": "2026-09-04T03:28:06.000Z",
+      "updated_at": "2026-09-04T21:10:29.000Z",
       "position": 81,
       "description": "High-performance storage for files and objects with zero egress charges",
       "showcase": false,
@@ -7681,6 +7681,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "ftvf8c3m4mv5",
+      "name": "Elevated number of R2 503 errors in Eastern North America region",
+      "status": "identified",
+      "created_at": "2026-09-04T21:10:29.000Z",
+      "updated_at": "2026-09-04T21:27:22.000Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/ftvf8c3m4mv5",
+      "started_at": "2026-09-04T21:10:29.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "smck78ggkbzm",
+          "status": "identified",
+          "body": "The cause of this issue has been identified and a fix is being implemented.",
+          "incident_id": "ftvf8c3m4mv5",
+          "created_at": "2026-09-04T21:27:22.631Z",
+          "updated_at": "2026-09-04T21:27:22.631Z",
+          "display_at": "2026-09-04T21:27:22.631Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "kp935bj3p4s7",
+          "status": "investigating",
+          "body": "Cloudflare is investigating issues with R2 buckets in Eastern North America.",
+          "incident_id": "ftvf8c3m4mv5",
+          "created_at": "2026-09-04T21:10:29.438Z",
+          "updated_at": "2026-09-04T21:10:29.438Z",
+          "display_at": "2026-09-04T21:10:29.438Z",
+          "affected_components": [
+            {
+              "code": "hb7g5sq2zz0h",
+              "name": "Cloudflare Sites and Services - R2",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hb7g5sq2zz0h",
+          "name": "R2",
+          "status": "degraded_performance",
+          "created_at": "2022-07-05T10:55:24.000Z",
+          "updated_at": "2026-09-04T21:10:29.000Z",
+          "position": 81,
+          "description": "High-performance storage for files and objects with zero egress charges",
+          "showcase": false,
+          "start_date": "2022-07-05",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "9g65dxfbcjln",
       "name": "Incorrect geo location for some Cloudflare WARP users",
