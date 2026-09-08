@@ -2989,7 +2989,7 @@
       "name": "Lisbon, Portugal - (LIS)",
       "status": "operational",
       "created_at": "2016-10-18T20:43:36.000Z",
-      "updated_at": "2026-06-29T15:07:11.000Z",
+      "updated_at": "2026-09-08T01:59:31.000Z",
       "position": 23,
       "description": null,
       "showcase": false,
@@ -3137,9 +3137,9 @@
     {
       "id": "3q1jnbdbn845",
       "name": "Cache Reserve",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-06-12T16:52:52.000Z",
-      "updated_at": "2026-07-17T19:50:47.000Z",
+      "updated_at": "2026-09-08T03:25:59.000Z",
       "position": 24,
       "description": "Cache Reserve is a large, persistent data store implemented on top of R2. By pushing a single button in the dashboard, your website’s cacheable content will be written to Cache Reserve.",
       "showcase": false,
@@ -4054,7 +4054,7 @@
       "name": "Kathmandu, Nepal - (KTM)",
       "status": "operational",
       "created_at": "2018-02-21T11:46:55.000Z",
-      "updated_at": "2026-09-07T03:15:46.000Z",
+      "updated_at": "2026-09-08T03:46:05.000Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -4894,7 +4894,7 @@
       "name": "Manila, Philippines - (MNL)",
       "status": "under_maintenance",
       "created_at": "2016-04-29T12:14:56.000Z",
-      "updated_at": "2026-09-07T21:03:33.000Z",
+      "updated_at": "2026-09-08T03:08:49.000Z",
       "position": 48,
       "description": null,
       "showcase": false,
@@ -5524,7 +5524,7 @@
       "name": "La Paz, Bolivia - (LPB)",
       "status": "operational",
       "created_at": "2024-02-28T01:03:02.000Z",
-      "updated_at": "2026-07-23T06:17:05.000Z",
+      "updated_at": "2026-09-08T04:23:21.000Z",
       "position": 56,
       "description": null,
       "showcase": false,
@@ -7682,30 +7682,62 @@
   ],
   "incidents": [
     {
-      "id": "pjr4m9q1xxb1",
-      "name": "Cloudflare Account Member Invite Issue",
-      "status": "investigating",
-      "created_at": "2026-09-08T00:35:28.000Z",
-      "updated_at": "2026-09-08T00:35:43.000Z",
+      "id": "qz292kvy220g",
+      "name": "Cache Reserve Issue in Paris",
+      "status": "identified",
+      "created_at": "2026-09-08T03:25:59.000Z",
+      "updated_at": "2026-09-08T04:42:58.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/pjr4m9q1xxb1",
-      "started_at": "2026-09-08T00:35:28.000Z",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/qz292kvy220g",
+      "started_at": "2026-09-08T03:25:59.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "j9h8b7wlp4mh",
-          "status": "investigating",
-          "body": "Cloudflare customers may experience an issue when invited to a new account. An error message is displayed, \"Invaild redirect_url\". \n\nA workaround can be used:\n* Invited members create an account directly from the dashboard (not using the email link)\n* Admin resends invitation\n* Invited member clicks new link and signs into their Cloudflare account\n* Accepts invitation to join without issue\n\nWe are continuing to investigate this issue.",
-          "incident_id": "pjr4m9q1xxb1",
-          "created_at": "2026-09-08T00:35:28.683Z",
-          "updated_at": "2026-09-08T00:35:28.683Z",
-          "display_at": "2026-09-08T00:35:28.683Z",
+          "id": "zgcnngx956f5",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "qz292kvy220g",
+          "created_at": "2026-09-08T04:42:58.905Z",
+          "updated_at": "2026-09-08T04:42:58.905Z",
+          "display_at": "2026-09-08T04:42:58.905Z",
           "affected_components": [
             {
-              "code": "wq0b65msmwpb",
-              "name": "Cloudflare Sites and Services - Account Management",
+              "code": "3q1jnbdbn845",
+              "name": "Cloudflare Sites and Services - Cache Reserve",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "w1br383gmlwj",
+              "name": "Europe - Paris, France - (CDG)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "fkxdtnj67ggs",
+          "status": "investigating",
+          "body": "Cloudflare is investigating an issue with Cache Reserve errors in Paris (CDG). Customers may see an elevated request volume to origin servers in the forementioned region.\n\nWe are working to analyse and mitigate this problem.  More updates to follow shortly.",
+          "incident_id": "qz292kvy220g",
+          "created_at": "2026-09-08T03:25:59.425Z",
+          "updated_at": "2026-09-08T03:25:59.425Z",
+          "display_at": "2026-09-08T03:25:59.425Z",
+          "affected_components": [
+            {
+              "code": "3q1jnbdbn845",
+              "name": "Cloudflare Sites and Services - Cache Reserve",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "w1br383gmlwj",
+              "name": "Europe - Paris, France - (CDG)",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -7717,16 +7749,31 @@
       ],
       "components": [
         {
-          "id": "wq0b65msmwpb",
-          "name": "Account Management",
+          "id": "3q1jnbdbn845",
+          "name": "Cache Reserve",
+          "status": "degraded_performance",
+          "created_at": "2023-06-12T16:52:52.000Z",
+          "updated_at": "2026-09-08T03:25:59.000Z",
+          "position": 24,
+          "description": "Cache Reserve is a large, persistent data store implemented on top of R2. By pushing a single button in the dashboard, your website’s cacheable content will be written to Cache Reserve.",
+          "showcase": false,
+          "start_date": "2023-06-12",
+          "group_id": "1km35smx8p41",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "w1br383gmlwj",
+          "name": "Paris, France - (CDG)",
           "status": "operational",
-          "created_at": "2026-07-07T10:20:34.000Z",
-          "updated_at": "2026-08-29T10:48:32.000Z",
-          "position": 3,
+          "created_at": "2014-10-27T20:36:46.000Z",
+          "updated_at": "2026-03-03T10:46:33.000Z",
+          "position": 37,
           "description": null,
           "showcase": false,
-          "start_date": "2026-07-07",
-          "group_id": "1km35smx8p41",
+          "start_date": null,
+          "group_id": "zqxhg7y54vy8",
           "page_id": "yh6f0r4529hb",
           "group": false,
           "only_show_if_degraded": false
@@ -7934,7 +7981,7 @@
       "name": "PHL (Philadelphia) on 2026-09-08",
       "status": "scheduled",
       "created_at": "2026-09-07T23:40:16.000Z",
-      "updated_at": "2026-09-07T23:40:16.000Z",
+      "updated_at": "2026-09-08T05:01:19.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -7942,6 +7989,32 @@
       "started_at": "2026-09-07T23:40:16.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "vw791wm3x93f",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "lmjgj9lkmf3f",
+          "created_at": "2026-09-08T05:01:14.738Z",
+          "updated_at": "2026-09-08T05:01:14.738Z",
+          "display_at": "2026-09-08T05:01:14.738Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "mt3zl6zmj6px",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "lmjgj9lkmf3f",
+          "created_at": "2026-09-08T05:01:11.434Z",
+          "updated_at": "2026-09-08T05:01:11.434Z",
+          "display_at": "2026-09-08T05:01:11.434Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "2zx91s3qgtms",
           "status": "scheduled",
@@ -8508,6 +8581,60 @@
       ],
       "scheduled_for": "2026-09-09T23:00:00.000Z",
       "scheduled_until": "2026-09-10T02:00:00.000Z"
+    },
+    {
+      "id": "y3hrqnyr71kr",
+      "name": "MAA (Chennai) on 2026-09-10",
+      "status": "scheduled",
+      "created_at": "2026-09-08T03:10:17.000Z",
+      "updated_at": "2026-09-08T03:10:17.000Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/y3hrqnyr71kr",
+      "started_at": "2026-09-08T03:10:17.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "z0kwxv87zstb",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in MAA (Chennai) datacenter on 2026-09-10 between 00:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "y3hrqnyr71kr",
+          "created_at": "2026-09-08T03:10:17.668Z",
+          "updated_at": "2026-09-08T03:10:17.668Z",
+          "display_at": "2026-09-08T03:10:17.668Z",
+          "affected_components": [
+            {
+              "code": "d9znrq17k6ny",
+              "name": "Asia - Chennai, India - (MAA)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d9znrq17k6ny",
+          "name": "Chennai, India - (MAA)",
+          "status": "operational",
+          "created_at": "2015-11-12T05:20:52.000Z",
+          "updated_at": "2026-07-15T23:19:13.000Z",
+          "position": 12,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-09-10T00:00:00.000Z",
+      "scheduled_until": "2026-09-10T04:00:00.000Z"
     },
     {
       "id": "xhc74kdfggps",
