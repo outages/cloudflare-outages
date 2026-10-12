@@ -791,7 +791,7 @@
     {
       "id": "zqxhg7y54vy8",
       "name": "Europe",
-      "status": "major_outage",
+      "status": "degraded_performance",
       "created_at": "2014-10-27T23:56:21.000Z",
       "updated_at": "2022-04-26T19:49:08.000Z",
       "position": 5,
@@ -956,9 +956,9 @@
     {
       "id": "3l8dxwjtgpp6",
       "name": "Austin, TX, United States - (AUS)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-04-21T15:40:55.000Z",
-      "updated_at": "2026-10-11T03:37:45.000Z",
+      "updated_at": "2026-10-12T05:33:47.000Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2601,7 +2601,7 @@
       "name": "Riyadh, Saudi Arabia - (RUH)",
       "status": "operational",
       "created_at": "2018-03-07T02:32:33.000Z",
-      "updated_at": "2026-10-11T12:46:46.000Z",
+      "updated_at": "2026-10-12T02:52:00.000Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -2824,9 +2824,9 @@
     {
       "id": "55x4rmjlwfq8",
       "name": "Guayaquil, Ecuador - (GYE)",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-05T16:18:47.000Z",
-      "updated_at": "2026-10-05T18:12:30.000Z",
+      "updated_at": "2026-10-12T00:58:33.000Z",
       "position": 21,
       "description": null,
       "showcase": false,
@@ -2946,7 +2946,7 @@
       "name": "Hanoi, Vietnam - (HAN)",
       "status": "operational",
       "created_at": "2018-12-18T06:51:18.000Z",
-      "updated_at": "2026-09-21T09:14:23.000Z",
+      "updated_at": "2026-10-12T05:23:01.000Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -3049,7 +3049,7 @@
     {
       "id": "shcqh0p22750",
       "name": "London, United Kingdom - (LHR)",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2014-10-27T20:36:04.000Z",
       "updated_at": "2026-09-22T03:36:56.000Z",
       "position": 24,
@@ -3096,7 +3096,7 @@
       "name": "Tunis, Tunisia - (TUN)",
       "status": "operational",
       "created_at": "2021-04-27T04:29:20.000Z",
-      "updated_at": "2026-09-24T21:10:27.000Z",
+      "updated_at": "2026-10-12T04:02:06.000Z",
       "position": 24,
       "description": null,
       "showcase": false,
@@ -3169,9 +3169,9 @@
     {
       "id": "v2fkx130pc7t",
       "name": "Luxembourg City, Luxembourg - (LUX)",
-      "status": "major_outage",
+      "status": "operational",
       "created_at": "2018-04-06T09:40:03.000Z",
-      "updated_at": "2026-10-12T00:01:39.000Z",
+      "updated_at": "2026-10-12T01:03:57.000Z",
       "position": 25,
       "description": null,
       "showcase": false,
@@ -4026,7 +4026,7 @@
       "name": "Rio de Janeiro, Brazil - (GIG)",
       "status": "operational",
       "created_at": "2017-06-22T22:19:02.000Z",
-      "updated_at": "2026-10-12T00:15:09.000Z",
+      "updated_at": "2026-10-12T01:47:12.000Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -4849,9 +4849,9 @@
     {
       "id": "5dhjdhgdqjzd",
       "name": "San Antonio, TX, United States - (SAT)",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2023-08-14T14:20:37.000Z",
-      "updated_at": "2026-10-07T06:45:19.000Z",
+      "updated_at": "2026-10-12T05:32:06.000Z",
       "position": 47,
       "description": null,
       "showcase": false,
@@ -7718,7 +7718,7 @@
       "name": "Elevated Errors in China Network Colos",
       "status": "identified",
       "created_at": "2026-10-10T04:13:17.000Z",
-      "updated_at": "2026-10-10T05:48:24.000Z",
+      "updated_at": "2026-10-12T04:23:57.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7726,6 +7726,26 @@
       "started_at": "2026-10-10T04:13:17.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "p0k13x9wvtsg",
+          "status": "identified",
+          "body": "We are investigating reports of degraded performance for traffic traversing the public internet between certain cities and provinces in mainland China and origin servers located outside the region. The impact is being reported across multiple ISPs and manifests as slower speeds or intermittent timeouts. \n\nWhile this congestion occurs upstream of Cloudflare's network, our engineering team is actively working to mitigate the effects. Intermittent 524 timeout errors is expected to continue due to ongoing congestion. While there is no fixed timeline for full resolution, as there are dependencies outside our network, we are taking steps to reduce customer impact.",
+          "incident_id": "cyxclg7nnhjy",
+          "created_at": "2026-10-12T04:23:57.604Z",
+          "updated_at": "2026-10-12T04:23:57.604Z",
+          "display_at": "2026-10-12T04:23:57.604Z",
+          "affected_components": [
+            {
+              "code": "zd5dlf64bwf8",
+              "name": "Cloudflare Sites and Services - China Network",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "x8sfb788f16p",
           "status": "identified",
@@ -8055,132 +8075,11 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "vjn2znzxtvb9",
-      "name": "FRA (Frankfurt) on 2026-10-12",
-      "status": "scheduled",
-      "created_at": "2026-10-11T23:30:52.000Z",
-      "updated_at": "2026-10-12T00:00:39.000Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/vjn2znzxtvb9",
-      "started_at": "2026-10-11T23:30:52.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "4vd5dbrld813",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "vjn2znzxtvb9",
-          "created_at": "2026-10-12T00:00:37.530Z",
-          "updated_at": "2026-10-12T00:00:37.530Z",
-          "display_at": "2026-10-12T00:00:37.530Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "9xpkpbltgngc",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in FRA (Frankfurt) datacenter on 2026-10-12 between 01:00 and 04:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "vjn2znzxtvb9",
-          "created_at": "2026-10-11T23:30:52.243Z",
-          "updated_at": "2026-10-11T23:30:52.243Z",
-          "display_at": "2026-10-11T23:30:52.243Z",
-          "affected_components": [
-            {
-              "code": "rbnhbzgld936",
-              "name": "Europe - Frankfurt, Germany - (FRA)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rbnhbzgld936",
-          "name": "Frankfurt, Germany - (FRA)",
-          "status": "operational",
-          "created_at": "2014-10-27T20:37:25.000Z",
-          "updated_at": "2026-01-14T23:53:53.000Z",
-          "position": 15,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "zqxhg7y54vy8",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-10-12T01:00:00.000Z",
-      "scheduled_until": "2026-10-12T04:00:00.000Z"
-    },
-    {
-      "id": "t1qlsjwb9rvb",
-      "name": "BOS (Boston) on 2026-10-12",
-      "status": "scheduled",
-      "created_at": "2026-10-08T07:50:52.000Z",
-      "updated_at": "2026-10-08T07:50:52.000Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/t1qlsjwb9rvb",
-      "started_at": "2026-10-08T07:50:52.000Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "nxp4hmmfmhfw",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in BOS (Boston) datacenter on 2026-10-12 between 06:30 and 12:30 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "t1qlsjwb9rvb",
-          "created_at": "2026-10-08T07:50:52.546Z",
-          "updated_at": "2026-10-08T07:50:52.546Z",
-          "display_at": "2026-10-08T07:50:52.546Z",
-          "affected_components": [
-            {
-              "code": "mfwf3n729rpy",
-              "name": "North America - Boston, MA, United States - (BOS)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "mfwf3n729rpy",
-          "name": "Boston, MA, United States - (BOS)",
-          "status": "operational",
-          "created_at": "2016-09-02T11:22:00.000Z",
-          "updated_at": "2026-02-10T19:36:56.000Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "4l01sk5cdn5c",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-10-12T06:30:00.000Z",
-      "scheduled_until": "2026-10-12T12:30:00.000Z"
-    },
-    {
       "id": "cxnzsk0z93q9",
       "name": "BNA (Nashville) on 2026-10-12",
       "status": "scheduled",
       "created_at": "2026-10-09T14:51:24.000Z",
-      "updated_at": "2026-10-09T16:01:24.000Z",
+      "updated_at": "2026-10-12T06:01:21.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -8188,6 +8087,19 @@
       "started_at": "2026-10-09T14:51:24.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
+        {
+          "id": "zm37tvwk3zjz",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "cxnzsk0z93q9",
+          "created_at": "2026-10-12T06:01:20.976Z",
+          "updated_at": "2026-10-12T06:01:20.976Z",
+          "display_at": "2026-10-12T06:01:20.976Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "l2ghfd8vgvkc",
           "status": "scheduled",
@@ -8469,7 +8381,7 @@
         {
           "id": "shcqh0p22750",
           "name": "London, United Kingdom - (LHR)",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2014-10-27T20:36:04.000Z",
           "updated_at": "2026-09-22T03:36:56.000Z",
           "position": 24,
@@ -8525,7 +8437,7 @@
           "name": "Rio de Janeiro, Brazil - (GIG)",
           "status": "operational",
           "created_at": "2017-06-22T22:19:02.000Z",
-          "updated_at": "2026-10-12T00:15:09.000Z",
+          "updated_at": "2026-10-12T01:47:12.000Z",
           "position": 36,
           "description": null,
           "showcase": false,
@@ -8685,7 +8597,7 @@
         {
           "id": "shcqh0p22750",
           "name": "London, United Kingdom - (LHR)",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2014-10-27T20:36:04.000Z",
           "updated_at": "2026-09-22T03:36:56.000Z",
           "position": 24,
@@ -8922,12 +8834,12 @@
       "name": "BOM (Mumbai) on 2026-10-14",
       "status": "scheduled",
       "created_at": "2026-09-17T17:01:47.000Z",
-      "updated_at": "2026-09-17T17:01:48.051Z",
+      "updated_at": "2026-09-17T17:01:48.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/k3z3p3xqcxj8",
-      "started_at": "2026-09-17T17:01:47.956Z",
+      "started_at": "2026-09-17T17:01:47.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -8976,12 +8888,12 @@
       "name": "KIX (Osaka) on 2026-10-15",
       "status": "scheduled",
       "created_at": "2026-09-17T17:01:48.000Z",
-      "updated_at": "2026-09-17T17:01:48.511Z",
+      "updated_at": "2026-09-17T17:01:48.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/03t0gg88br5n",
-      "started_at": "2026-09-17T17:01:48.454Z",
+      "started_at": "2026-09-17T17:01:48.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -9030,12 +8942,12 @@
       "name": "SIN (Singapore) on 2026-10-15",
       "status": "scheduled",
       "created_at": "2026-09-17T17:11:10.000Z",
-      "updated_at": "2026-09-17T17:11:10.657Z",
+      "updated_at": "2026-09-17T17:11:10.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/n7rxpb8cdmlj",
-      "started_at": "2026-09-17T17:11:10.560Z",
+      "started_at": "2026-09-17T17:11:10.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -9084,12 +8996,12 @@
       "name": "BOM (Mumbai) on 2026-10-15",
       "status": "scheduled",
       "created_at": "2026-09-17T17:11:11.000Z",
-      "updated_at": "2026-09-17T17:11:11.862Z",
+      "updated_at": "2026-09-17T17:11:11.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/v41lsg1y8rgp",
-      "started_at": "2026-09-17T17:11:11.798Z",
+      "started_at": "2026-09-17T17:11:11.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -9138,12 +9050,12 @@
       "name": "KIX (Osaka) on 2026-10-16",
       "status": "scheduled",
       "created_at": "2026-09-17T17:11:12.000Z",
-      "updated_at": "2026-09-17T17:11:12.627Z",
+      "updated_at": "2026-09-17T17:11:12.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/rp4hjmdz3jr6",
-      "started_at": "2026-09-17T17:11:12.546Z",
+      "started_at": "2026-09-17T17:11:12.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -9192,12 +9104,12 @@
       "name": "SIN (Singapore) on 2026-10-16",
       "status": "scheduled",
       "created_at": "2026-09-17T17:11:13.000Z",
-      "updated_at": "2026-09-17T17:11:13.398Z",
+      "updated_at": "2026-09-17T17:11:13.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/62ymjv0qw1rr",
-      "started_at": "2026-09-17T17:11:13.316Z",
+      "started_at": "2026-09-17T17:11:13.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -9246,12 +9158,12 @@
       "name": "DAC (Dhaka) on 2026-10-19",
       "status": "scheduled",
       "created_at": "2026-09-17T17:11:14.000Z",
-      "updated_at": "2026-09-17T17:11:14.304Z",
+      "updated_at": "2026-09-17T17:11:14.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/46jjnfk93vft",
-      "started_at": "2026-09-17T17:11:14.221Z",
+      "started_at": "2026-09-17T17:11:14.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -9296,70 +9208,16 @@
       "scheduled_until": "2026-10-20T00:00:00.000Z"
     },
     {
-      "id": "x00trqwvvs3t",
-      "name": "KTM (Kathmandu) on 2026-10-19",
-      "status": "scheduled",
-      "created_at": "2026-09-17T17:11:15.000Z",
-      "updated_at": "2026-09-17T17:11:15.885Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/x00trqwvvs3t",
-      "started_at": "2026-09-17T17:11:15.819Z",
-      "page_id": "yh6f0r4529hb",
-      "incident_updates": [
-        {
-          "id": "2srh143m4s0q",
-          "status": "scheduled",
-          "body": "We will be performing scheduled maintenance in KTM (Kathmandu) datacenter between 2026-10-19 21:00 and 2026-10-20 01:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "x00trqwvvs3t",
-          "created_at": "2026-09-17T17:11:15.882Z",
-          "updated_at": "2026-09-17T17:11:15.882Z",
-          "display_at": "2026-09-17T17:11:15.882Z",
-          "affected_components": [
-            {
-              "code": "gw1cztbpft9b",
-              "name": "Asia - Kathmandu, Nepal - (KTM)",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "gw1cztbpft9b",
-          "name": "Kathmandu, Nepal - (KTM)",
-          "status": "operational",
-          "created_at": "2018-02-21T11:46:55.000Z",
-          "updated_at": "2026-10-08T17:38:18.000Z",
-          "position": 36,
-          "description": null,
-          "showcase": false,
-          "start_date": null,
-          "group_id": "77867vxkttgw",
-          "page_id": "yh6f0r4529hb",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-10-19T21:00:00.000Z",
-      "scheduled_until": "2026-10-20T01:00:00.000Z"
-    },
-    {
       "id": "wrvkm078yspr",
       "name": "BOM (Mumbai) on 2026-10-19",
       "status": "scheduled",
       "created_at": "2026-09-17T17:11:15.000Z",
-      "updated_at": "2026-09-17T17:11:15.152Z",
+      "updated_at": "2026-09-17T17:11:15.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/wrvkm078yspr",
-      "started_at": "2026-09-17T17:11:15.086Z",
+      "started_at": "2026-09-17T17:11:15.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -9404,16 +9262,70 @@
       "scheduled_until": "2026-10-20T01:00:00.000Z"
     },
     {
+      "id": "x00trqwvvs3t",
+      "name": "KTM (Kathmandu) on 2026-10-19",
+      "status": "scheduled",
+      "created_at": "2026-09-17T17:11:15.000Z",
+      "updated_at": "2026-09-17T17:11:15.000Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/x00trqwvvs3t",
+      "started_at": "2026-09-17T17:11:15.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "2srh143m4s0q",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in KTM (Kathmandu) datacenter between 2026-10-19 21:00 and 2026-10-20 01:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "x00trqwvvs3t",
+          "created_at": "2026-09-17T17:11:15.882Z",
+          "updated_at": "2026-09-17T17:11:15.882Z",
+          "display_at": "2026-09-17T17:11:15.882Z",
+          "affected_components": [
+            {
+              "code": "gw1cztbpft9b",
+              "name": "Asia - Kathmandu, Nepal - (KTM)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gw1cztbpft9b",
+          "name": "Kathmandu, Nepal - (KTM)",
+          "status": "operational",
+          "created_at": "2018-02-21T11:46:55.000Z",
+          "updated_at": "2026-10-08T17:38:18.000Z",
+          "position": 36,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-10-19T21:00:00.000Z",
+      "scheduled_until": "2026-10-20T01:00:00.000Z"
+    },
+    {
       "id": "zv27h8zlx55x",
       "name": "ZRH (Zurich) on 2026-10-19",
       "status": "scheduled",
       "created_at": "2026-10-09T10:30:29.000Z",
-      "updated_at": "2026-10-09T10:40:27.927Z",
+      "updated_at": "2026-10-09T10:40:27.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://www.cloudflarestatus.com/incidents/zv27h8zlx55x",
-      "started_at": "2026-10-09T10:30:29.795Z",
+      "started_at": "2026-10-09T10:30:29.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
@@ -9476,6 +9388,114 @@
       ],
       "scheduled_for": "2026-10-19T23:00:00.000Z",
       "scheduled_until": "2026-10-20T07:00:00.000Z"
+    },
+    {
+      "id": "n232t261lxg4",
+      "name": "BOM (Mumbai) on 2026-10-20",
+      "status": "scheduled",
+      "created_at": "2026-09-17T17:11:16.000Z",
+      "updated_at": "2026-09-17T17:11:16.000Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/n232t261lxg4",
+      "started_at": "2026-09-17T17:11:16.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "lrgxz5c14qxv",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in BOM (Mumbai) datacenter between 2026-10-20 21:00 and 2026-10-21 01:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "n232t261lxg4",
+          "created_at": "2026-09-17T17:11:16.585Z",
+          "updated_at": "2026-09-17T17:11:16.585Z",
+          "display_at": "2026-09-17T17:11:16.585Z",
+          "affected_components": [
+            {
+              "code": "t3d07wlg67nl",
+              "name": "Asia - Mumbai, India - (BOM)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "t3d07wlg67nl",
+          "name": "Mumbai, India - (BOM)",
+          "status": "operational",
+          "created_at": "2015-10-27T20:12:43.000Z",
+          "updated_at": "2026-10-09T02:50:15.000Z",
+          "position": 49,
+          "description": null,
+          "showcase": false,
+          "start_date": null,
+          "group_id": "77867vxkttgw",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-10-20T21:00:00.000Z",
+      "scheduled_until": "2026-10-21T01:00:00.000Z"
+    },
+    {
+      "id": "w1z0zy3g7dqp",
+      "name": "ZRH (Zurich) on 2026-10-20",
+      "status": "scheduled",
+      "created_at": "2026-10-09T10:40:28.000Z",
+      "updated_at": "2026-10-09T10:40:28.000Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/w1z0zy3g7dqp",
+      "started_at": "2026-10-09T10:40:28.000Z",
+      "page_id": "yh6f0r4529hb",
+      "incident_updates": [
+        {
+          "id": "hw30lnhym8hq",
+          "status": "scheduled",
+          "body": "We will be performing scheduled maintenance in ZRH (Zurich) datacenter between 2026-10-20 23:00 and 2026-10-21 07:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
+          "incident_id": "w1z0zy3g7dqp",
+          "created_at": "2026-10-09T10:40:28.400Z",
+          "updated_at": "2026-10-09T10:40:28.400Z",
+          "display_at": "2026-10-09T10:40:28.400Z",
+          "affected_components": [
+            {
+              "code": "7f4lcm62x6x2",
+              "name": "Europe - Zurich, Switzerland - (ZRH)",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7f4lcm62x6x2",
+          "name": "Zurich, Switzerland - (ZRH)",
+          "status": "operational",
+          "created_at": "2025-06-02T14:48:10.000Z",
+          "updated_at": "2026-03-16T04:26:21.000Z",
+          "position": 57,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-06-02",
+          "group_id": "zqxhg7y54vy8",
+          "page_id": "yh6f0r4529hb",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-10-20T23:00:00.000Z",
+      "scheduled_until": "2026-10-21T07:00:00.000Z"
     }
   ],
   "status": {
