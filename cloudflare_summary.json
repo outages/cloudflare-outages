@@ -1167,7 +1167,7 @@
     {
       "id": "m3639x4txd08",
       "name": "Middle East",
-      "status": "degraded_performance",
+      "status": "major_outage",
       "created_at": "2015-06-18T15:21:54.000Z",
       "updated_at": "2022-04-26T19:49:08.000Z",
       "position": 7,
@@ -2556,9 +2556,9 @@
     {
       "id": "wnbl5c6vrmv6",
       "name": "Guadalajara, Mexico - (GDL)",
-      "status": "major_outage",
+      "status": "operational",
       "created_at": "2023-06-07T11:00:38.000Z",
-      "updated_at": "2026-10-22T10:33:25.000Z",
+      "updated_at": "2026-10-22T12:04:04.000Z",
       "position": 18,
       "description": null,
       "showcase": false,
@@ -2766,9 +2766,9 @@
     {
       "id": "zblll6dmrh2d",
       "name": "Sulaymaniyah, Iraq - (ISU)",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2022-10-17T13:45:45.000Z",
-      "updated_at": "2026-10-14T23:12:20.000Z",
+      "updated_at": "2026-10-22T11:58:39.000Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -3638,7 +3638,7 @@
       "name": "Kampala, Uganda - (EBB)",
       "status": "operational",
       "created_at": "2024-07-17T09:56:48.000Z",
-      "updated_at": "2026-10-22T08:42:58.000Z",
+      "updated_at": "2026-10-22T15:52:29.000Z",
       "position": 30,
       "description": null,
       "showcase": false,
@@ -6846,9 +6846,9 @@
     {
       "id": "bjvy4v384csg",
       "name": "WARP",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2026-07-03T21:14:10.000Z",
-      "updated_at": "2026-10-16T18:04:05.000Z",
+      "updated_at": "2026-10-22T15:41:44.000Z",
       "position": 114,
       "description": null,
       "showcase": false,
@@ -6891,7 +6891,7 @@
     {
       "id": "57srcl8zcn7c",
       "name": "Workers",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2019-01-24T16:49:08.000Z",
       "updated_at": "2026-10-16T18:04:05.000Z",
       "position": 117,
@@ -7746,170 +7746,30 @@
   ],
   "incidents": [
     {
-      "id": "9g65dxfbcjln",
-      "name": "Incorrect geo location for some Cloudflare WARP users",
+      "id": "lhdg2tq46faq",
+      "name": "Cloudflare Workers API Latency",
       "status": "identified",
-      "created_at": "2026-08-27T18:46:19.000Z",
-      "updated_at": "2026-09-01T08:29:56.000Z",
+      "created_at": "2026-10-22T15:33:17.354Z",
+      "updated_at": "2026-10-22T15:33:17.354Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
-      "started_at": "2026-08-27T18:46:19.000Z",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/lhdg2tq46faq",
+      "started_at": "2026-10-22T15:33:17.354Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "jt9ms5c1pcps",
+          "id": "ns1korreirif",
           "status": "identified",
-          "body": "We are continuing to work on a fix for this issue.",
-          "incident_id": "9g65dxfbcjln",
-          "created_at": "2026-09-01T08:29:56.950Z",
-          "updated_at": "2026-09-01T08:29:56.950Z",
-          "display_at": "2026-09-01T08:29:56.950Z",
+          "body": "Cloudflare is investigating an increased latency when interacting with Workers API and Workers configuration in the dashboard. Customers might experience longer wait times on Workers endpoints, particularly when deploying a script. Workers that are already running in production are not affected. More updates to follow shortly.",
+          "incident_id": "lhdg2tq46faq",
+          "created_at": "2026-10-22T15:33:17.354Z",
+          "updated_at": "2026-10-22T15:33:17.354Z",
+          "display_at": "2026-10-22T15:33:17.354Z",
           "affected_components": [
             {
-              "code": "bjvy4v384csg",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "5yxztj7xrn7d",
-          "status": "identified",
-          "body": "We are continuing to work on a fix for this issue.",
-          "incident_id": "9g65dxfbcjln",
-          "created_at": "2026-08-31T15:15:03.346Z",
-          "updated_at": "2026-08-31T15:15:03.346Z",
-          "display_at": "2026-08-31T15:15:03.346Z",
-          "affected_components": [
-            {
-              "code": "bjvy4v384csg",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "hlz13grtq6l6",
-          "status": "identified",
-          "body": "We are continuing to work on a fix for this issue.",
-          "incident_id": "9g65dxfbcjln",
-          "created_at": "2026-08-30T15:51:03.453Z",
-          "updated_at": "2026-08-30T15:51:03.453Z",
-          "display_at": "2026-08-30T15:51:03.453Z",
-          "affected_components": [
-            {
-              "code": "bjvy4v384csg",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "4nr1l1cfzt6t",
-          "status": "identified",
-          "body": "We are continuing to work on a fix for this issue.",
-          "incident_id": "9g65dxfbcjln",
-          "created_at": "2026-08-29T15:31:17.830Z",
-          "updated_at": "2026-08-29T15:31:17.830Z",
-          "display_at": "2026-08-29T15:31:17.830Z",
-          "affected_components": [
-            {
-              "code": "bjvy4v384csg",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "gz6b2mdpbvjn",
-          "status": "identified",
-          "body": "We are continuing to work on a fix for this issue.",
-          "incident_id": "9g65dxfbcjln",
-          "created_at": "2026-08-28T11:30:28.324Z",
-          "updated_at": "2026-08-28T11:30:28.324Z",
-          "display_at": "2026-08-28T11:30:28.324Z",
-          "affected_components": [
-            {
-              "code": "bjvy4v384csg",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "sz6wrbzlnx1m",
-          "status": "identified",
-          "body": "We are continuing to work on a fix for this issue.",
-          "incident_id": "9g65dxfbcjln",
-          "created_at": "2026-08-28T00:55:12.489Z",
-          "updated_at": "2026-08-28T00:55:12.489Z",
-          "display_at": "2026-08-28T00:55:12.489Z",
-          "affected_components": [
-            {
-              "code": "bjvy4v384csg",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "tmxm91dk7f98",
-          "status": "identified",
-          "body": "The issue has been identified and we are working with third party providers to fix it.",
-          "incident_id": "9g65dxfbcjln",
-          "created_at": "2026-08-27T18:56:11.313Z",
-          "updated_at": "2026-08-28T00:55:08.181Z",
-          "display_at": "2026-08-27T18:56:11.000Z",
-          "affected_components": [
-            {
-              "code": "bjvy4v384csg",
-              "name": "Cloudflare Sites and Services - WARP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "fgk96scpz2l7",
-          "status": "investigating",
-          "body": "Cloudflare is investigating issues with Cloudflare WARP and Cloudflare Zero Trust users being incorrectly geolocated by some third party services.",
-          "incident_id": "9g65dxfbcjln",
-          "created_at": "2026-08-27T18:46:19.105Z",
-          "updated_at": "2026-08-27T18:46:19.105Z",
-          "display_at": "2026-08-27T18:46:19.105Z",
-          "affected_components": [
-            {
-              "code": "bjvy4v384csg",
-              "name": "Cloudflare Sites and Services - WARP",
+              "code": "57srcl8zcn7c",
+              "name": "Cloudflare Sites and Services - Workers",
               "old_status": "operational",
               "new_status": "degraded_performance"
             }
@@ -7921,15 +7781,15 @@
       ],
       "components": [
         {
-          "id": "bjvy4v384csg",
-          "name": "WARP",
+          "id": "57srcl8zcn7c",
+          "name": "Workers",
           "status": "degraded_performance",
-          "created_at": "2026-07-03T21:14:10.000Z",
+          "created_at": "2019-01-24T16:49:08.000Z",
           "updated_at": "2026-10-16T18:04:05.000Z",
-          "position": 114,
-          "description": null,
+          "position": 117,
+          "description": "Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure",
           "showcase": false,
-          "start_date": "2026-07-03",
+          "start_date": null,
           "group_id": "1km35smx8p41",
           "page_id": "yh6f0r4529hb",
           "group": false,
@@ -8103,31 +7963,31 @@
       "scheduled_until": "2026-10-22T22:00:00.000Z"
     },
     {
-      "id": "1xw37d5vkbc1",
+      "id": "q33mr33n35jm",
       "name": "DAC (Dhaka) on 2026-10-22",
       "status": "scheduled",
-      "created_at": "2026-10-08T16:20:54.000Z",
+      "created_at": "2026-10-08T16:20:55.000Z",
       "updated_at": "2026-10-08T16:20:55.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/1xw37d5vkbc1",
-      "started_at": "2026-10-08T16:20:54.000Z",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/q33mr33n35jm",
+      "started_at": "2026-10-08T16:20:55.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "rb617k2kzj4l",
+          "id": "v1678hjystvy",
           "status": "scheduled",
           "body": "We will be performing scheduled maintenance in DAC (Dhaka) datacenter between 2026-10-22 20:00 and 2026-10-23 00:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "1xw37d5vkbc1",
-          "created_at": "2026-10-08T16:20:55.053Z",
-          "updated_at": "2026-10-08T16:20:55.053Z",
-          "display_at": "2026-10-08T16:20:55.053Z",
+          "incident_id": "q33mr33n35jm",
+          "created_at": "2026-10-08T16:20:55.134Z",
+          "updated_at": "2026-10-08T16:20:55.134Z",
+          "display_at": "2026-10-08T16:20:55.134Z",
           "affected_components": [
             {
               "code": "hf1csyqv3x7s",
               "name": "Asia - Dhaka, Bangladesh - (DAC)",
-              "old_status": "under_maintenance",
+              "old_status": "operational",
               "new_status": "operational"
             }
           ],
@@ -8157,31 +8017,31 @@
       "scheduled_until": "2026-10-23T00:00:00.000Z"
     },
     {
-      "id": "q33mr33n35jm",
+      "id": "1xw37d5vkbc1",
       "name": "DAC (Dhaka) on 2026-10-22",
       "status": "scheduled",
-      "created_at": "2026-10-08T16:20:55.000Z",
+      "created_at": "2026-10-08T16:20:54.000Z",
       "updated_at": "2026-10-08T16:20:55.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://www.cloudflarestatus.com/incidents/q33mr33n35jm",
-      "started_at": "2026-10-08T16:20:55.000Z",
+      "shortlink": "https://www.cloudflarestatus.com/incidents/1xw37d5vkbc1",
+      "started_at": "2026-10-08T16:20:54.000Z",
       "page_id": "yh6f0r4529hb",
       "incident_updates": [
         {
-          "id": "v1678hjystvy",
+          "id": "rb617k2kzj4l",
           "status": "scheduled",
           "body": "We will be performing scheduled maintenance in DAC (Dhaka) datacenter between 2026-10-22 20:00 and 2026-10-23 00:00 UTC.\n\nTraffic might be re-routed from this location, hence there is a possibility of a slight increase in latency during this maintenance window for end-users in the affected region. For PNI / CNI customers connecting with us in this location, please make sure you are expecting this traffic to fail over elsewhere during this maintenance window as network interfaces in this datacentre may become temporarily unavailable.\n\nYou can now subscribe to these notifications via Cloudflare dashboard and receive these updates directly via email, PagerDuty and webhooks (based on your plan): https://developers.cloudflare.com/notifications/notification-available/#cloudflare-status.",
-          "incident_id": "q33mr33n35jm",
-          "created_at": "2026-10-08T16:20:55.134Z",
-          "updated_at": "2026-10-08T16:20:55.134Z",
-          "display_at": "2026-10-08T16:20:55.134Z",
+          "incident_id": "1xw37d5vkbc1",
+          "created_at": "2026-10-08T16:20:55.053Z",
+          "updated_at": "2026-10-08T16:20:55.053Z",
+          "display_at": "2026-10-08T16:20:55.053Z",
           "affected_components": [
             {
               "code": "hf1csyqv3x7s",
               "name": "Asia - Dhaka, Bangladesh - (DAC)",
-              "old_status": "operational",
+              "old_status": "under_maintenance",
               "new_status": "operational"
             }
           ],
